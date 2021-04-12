@@ -1,8 +1,8 @@
 **Wisp** | Pyro Killing
 __Basics__
-The Wisp visits a person each night, igniting them if they are powdered. 
+The Wisp visits a person each day, igniting them if they are powdered. 
 __Details__
-The Wisp may visit one person each night, if that person has been powdered, then the visited person is ignited immediately. 
+The Wisp may visit one person each day, if that person has been powdered, then the visited person is ignited immediately. 
 The Wisp is a member of the pyro team, but not a member of the pyro channel. That means they do not know the other members of their team. 
 If the Wisp is ignited by the pyros the Wisp will be alerted they were ignited, but will not be killed. 
 If no members of the pyro channel are left, the Wisp is informed. Afterwards, the Wisp may choose to powder a player, instead of visiting a player.
