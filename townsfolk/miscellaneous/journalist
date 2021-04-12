@@ -1,0 +1,7 @@
+**Journalist** | Townsfolk Miscellaneous
+__Basics__
+The Journalist can write a journal which a certain role will receive when the Journalist dies.
+__Details__
+The Journalist has a second secret channel. There they can write any information. When the Journalist dies, access to this channel will be granted to a player with a role that the Journalist selected. 
+The Journalist can select a role and update their targeted role once per phase, with 1 emergency change to be used whenever the Journalist wants. 
+If there are several people with the same role, a random player out of those is selected. If nobody has the role (anymore), nobody gains access to the channel.
