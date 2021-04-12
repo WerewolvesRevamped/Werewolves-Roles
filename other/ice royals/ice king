@@ -1,0 +1,7 @@
+**Ice King** | Ice Royals Power
+__Basics__
+Each night, the Ice King can submit a list of players. Every player the Ice King guesses correctly will have their public votes nulled.
+__Details__
+Each night, the Ice King can submit a list of players. The amount of guesses is limited by the amount of players at the start of the game. For every 5 players, the Ice King gets 1 guess. If they have submitted all their guesses, all the players that the Ice King guessed correctly will be frozen. Frozen players are not notified about this, but their votes will no longer count in the public votes. Instead the Ice King gains that vote. One exception is the mayor - the second mayor vote is still counted. Guessing roles and freezing players is an immediate ability.
+The Ice King is an ice royal, knows the other ice royals and works together with them. The ice royals win when all players, except the ice royals, are frozen or dead.
+When the Ice King dies, all frozen players will be unfrozen and their vote will count again.
