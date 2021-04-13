@@ -5,3 +5,4 @@ __Details__
 When the Trickster votes on public polls, their vote appears normally, however internally it is counted with the value -1. 
 If the Trickster becomes Mayor, their vote is counted as -2. 
 Results of players that receive 0 or less votes are not displayed.
+If the Trickster loses their role, their vote will count as that of a normal player.
