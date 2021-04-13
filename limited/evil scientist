@@ -13,7 +13,7 @@ N0 - Player is infected [Night Immediate]
 D1 - Player becomes contagious, and remains so till their death. Any player (except the
 Evil Scientist) who visits or is visited by a contagious player gets infected
 (group visits, such as werewolf kills counts as a visit, but only one random person who voted for the
-contagious player is infected) [End Day]
+contagious player is infected) [End-Day]
 N1 - Player is still contagious
-D2 - Player is informed of infection [End Day]
-N2 - Player dies (no possible way to survive), cause of death is announced publicly [End Night]
+D2 - Player is informed of infection [End-Day]
+N2 - Player dies (no possible way to survive), cause of death is announced publicly [End-Night]
