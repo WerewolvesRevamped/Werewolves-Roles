@@ -3,7 +3,7 @@ __Basics__
 The Reaper can give living players powers of dead players, temporarily. This turns them Sleepless. The Reaper wins when all living players have been turned Sleepless.
 __Details__
 The reaper knows the roles of all dead players. Each day, the reaper may select a dead player and a living player. The living player will gain the power of the dead player. 
-The empowered player becomes sleepless as an end night ability, and loses their power in the morning. If the targeted player in turn targets the Reaper with their power, the targeted player is instead immediately killed by the Reaper. 
+The empowered player becomes sleepless as an end-night ability, and loses their power in the morning. If the targeted player in turn targets the Reaper with their power, the targeted player is instead immediately killed by the Reaper. 
 If the empowered player dies, the Reaper gains immunity to all attacks for the next night. Abilities like the Macho still apply, but the power will not go through if it targets the Reaper. 
 Dead players may be the reaper's target multiple times, while each living player may only be the Reaper's target once. If, at any day start, all living players are Reapers or sleepless, the Reapers win.
 The powers of dead unaligned roles do not transfer to living players. It is as if the dead player was a citizen.
