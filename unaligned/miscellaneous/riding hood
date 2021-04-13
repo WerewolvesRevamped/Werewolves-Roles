@@ -3,4 +3,5 @@ __Basics__
 The Riding Hood wins when they are killed by the wolfpack.
 __Details__
 When the Riding Hood wins, the Riding Hood ascends and stops playing. The game continues.
-The Riding Hood will also win if they are killed by a lycan, rather than by the wolfpack's kill. If the Riding Hood is killed in another way, they lose. If the Riding Hood is protected they do not die and ascend. When the Riding Hood is killed by the wolfpack, the pack does not get a kill the following night.
+The Riding Hood will also win if they are killed by a lycan, rather than by the wolfpack's kill. If the Riding Hood is killed in another way, they lose. 
+If the Riding Hood is protected they neither die nor do they ascend. When the Riding Hood is killed by the wolfpack, the pack does not get a kill the following night.
