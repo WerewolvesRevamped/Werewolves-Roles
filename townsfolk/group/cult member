@@ -3,5 +3,5 @@ __Basics__
 The Cult Members and the leader have a secret channel where they can communicate among themselves securely. Each night, the cult votes to attack one player.
 __Details__
 The Cult Member is part of the cult. After the first night, the cult can attack one player each night. When the cult leader dies, the cult can no longer attack at night.
-The cult decides their victims by voting on whom they suspect most. The cult’s attack is an end night ability. 
+The cult decides their victims by voting on whom they suspect most. The cult’s attack is an end-night ability. 
 Any member of the cult, who no longer is a Cult Member or cult leader, can still vote on who to kill, but their vote isn’t counted. 
