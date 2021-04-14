@@ -3,4 +3,4 @@ __Basics__
 Each night, the Priest may use his holy water on a player. If that player is a lycan, that player will be attacked. Otherwise, the Priest risks their own death.
 __Details__
 If the targeted player is a lycan, they are attacked. If they are townsfolk, the Priest dies. If they are not lycan and not townsfolk, both the Priest and the target live. 
-Using holy water on a player is an end night ability.
+Using holy water on a player is an end-night ability.
