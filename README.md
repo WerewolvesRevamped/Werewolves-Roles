@@ -1,2 +1,2 @@
 # Werewolves-Roles
-The role book for Werewolves Revamped
+The role book for Werewolves Revamped.
