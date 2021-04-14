@@ -3,3 +3,4 @@ __Basics__
 The Plaguebearer is an alternative version of the vampire.
 __Details__
 Instead of demonizing, the Plaguebearer taints players. Instead of undead the Plaguebearer has zombies. A demonized player can't be tainted, and a tainted player can't be demonized. If tainting/demonizing fails the player is informed.
+Both the Plaguebearer and the Vampire cannot be demonized or tainted.
