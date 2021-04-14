@@ -2,5 +2,5 @@
 __Basics__
 Upon every death, the Coroner is informed how that participant died. 
 __Details__
-The Coroner will be told how every player that dies died, and if multiple causes of death are present, then all causes will be revealed to the Coroner. 
+The Coroner will be told the cause of death for every dead player, and if multiple causes of death are present, then all causes will be revealed to the Coroner. 
 The Coroner is only told the name of roles, and never the name of a player.
