@@ -1,7 +1,7 @@
-Shepherd | Flock Power
-Basics
+**Shepherd** | Flock Power
+__Basics__
 Each night, the Shepherd may choose one player to herd. When everyone is dead, herded or part of the flock the Shepherd wins.
-Details
+__Details__
 Whenever a player is herded, they will join a secret channel with the other herded players. The Shepherd may see everything said in this channel, from the safety of their secret channel. Members of the flock can not be herded.
 
 During the day, the Shepherd may steal a herded player's votes for the current day, however that player will be unherded. Players with negative votes can't have their negative votes stolen. The Shepherd is informed how many votes they have after stealing a vote.
