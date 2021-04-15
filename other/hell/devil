@@ -9,7 +9,8 @@ The Devil can't target soulless players. The wager is sent at the end of the day
 The Devil can anonymously communicate with the target & will be notified of the result of the wager - they will learn who was attacked/which person was inspected & what role the target saw. 
 
 If the player chooses to see another player’s role (immediate), it will be affected by weak disguises and obstructions. These effects are seen from the player’s perspective, not the Devil’s.
-If the player chooses to attack another player (soul sold: immediately; kill executed: end-night), then they will become soulless. The attacker is the Devil. Using the wager to attack the Devil always fails.
+If the player chooses to attack another player (soul sold: immediately; kill executed: end-night), then they will become soulless. The attacker is the Devil. 
+If the player chooses to attack the Devil the attack will not be executed, but they will not be informed of this. However, they still sell their soul to the Devil.
 
 The Devil can use a soul to protect someone else from all attacks for the next night (day; immediate) or kill a player of their liking (day/night; immediate). 
 If the Devil is attacked at night and they have spare souls, they will be protected and a soul will be used up automatically. 
