@@ -3,5 +3,5 @@ __Basics__
 Once per game, the Barber may choose to immediately attack one player during the day.
 __Details__
 After Day 1, at any time during the day, the Barber may once attack another player. 
-The Barber also receives the choice whether they want to be revealed or not. If they choose to be revealed both their role and name is announced, otherwise neither is.
+The Barber also chooses whether they want to be revealed or not. If they choose to be revealed both their role and name is announced, otherwise neither is.
 The Barber’s attack is an immediate ability.
