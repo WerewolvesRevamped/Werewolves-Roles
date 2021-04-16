@@ -1,3 +1,3 @@
-**Basics**
+**Details**
 If an attack is redirected onto another player, the attacker(s) is/are not informed of this. They simply get a generic failure message and may use #storytime to deduce what happened.
 If an action that would usually cause a reveal is redirected, the feedback is also failure. The action still happens (but with the player it was redirected onto and not the original target), but nobody is revealed.
