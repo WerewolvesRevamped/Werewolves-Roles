@@ -1,0 +1,36 @@
+role related rules
+/abilities
+/attacks
+/disguises
+/obstructions
+/role loss
+/first day
+
+townsfolk
+townsfolk/miscellaneous
+townsfolk/group
+townsfolk/power
+townsfolk/investigative
+townsfolk/killing
+
+werewolves
+/wolfpack and lycans
+werewolves/miscellaneous
+werewolves/power
+werewolves/investigative
+
+other
+/solo
+/flute
+/hell
+/pyro
+/underworld
+/ice royals
+
+unaligned
+unaligned/miscellaneous
+unaligned/align
+
+elected
+
+limited
