@@ -4,4 +4,4 @@ Throughout the game, all abilities used on the Bard, will be narrated to everyon
 __Details__ 
 When an immediate ability is used on the Bard, it is immediately narrated. End abilities are narrated at the end of the phase. If the Bard changes roles, abilities are no longer narrated. 
 The narrated info is precise and reveals both the ability (e.g. “attacked”) and the cause (e.g. “Assassin”), however further details are not revealed (e.g. if a tanner disguises the Bard, it is narrated that it happened, however the applied disguise is not revealed). If the Bard is attacked, the attacker’s role is the cause.
-
+The Bard is only affected by strong disguises.
