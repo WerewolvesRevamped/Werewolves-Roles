@@ -3,6 +3,6 @@ __Basics__
 The Coward may select a player to redirect one wolf action to. 
 __Details__
 The Coward may target a player. They can update this target once per phase, with 1 emergency change to be used whenever the Coward wants. 
-When the Coward is affected by any wolf power, it will be redirected to the target without the wolves being informed. 
+When the Coward is affected by a wolf power, that is not an attack, it will be redirected to the target without the wolves being informed. 
 The Coward cannot redirect a wolf power onto a wolf in the pack, and if the Coward tries to, then the redirection will silently fail. 
 The Coward's redirection power can only be used once per game.
