@@ -7,3 +7,4 @@ The Grandma's vote still looks like a normal vote, but can also count as 0 or 2,
 The 2 chosen players will additionally be added to a private channel, where the Grandma can anonymously talk to them. 
 If the Grandma selects a player with several votes (e.g. Mayor or Grandma), they only lose 1 of their votes, but keep the others. The Grandma also only gains 1 vote, like normally. 
 Players with negative votes can't have their negative votes stolen (and the Grandma is informed), but are still added to the channel. The Mayors extra vote cannot be stolen.
+The Grandma my select themself.
