@@ -10,5 +10,5 @@ This effect will disappear once all members of the flute team are dead. The play
 Enchanting a player is an immediate ability. 
 If there are multiple Flute Players, then they are one team, and they will work together. 
 The Flute Player is able to enchant 1 player for every ten players in the game (rounded up). The number of enchants per night does not change throughout the game.
-If there is more than one player in the Flute Player channel, each Flute Player will only be able to enchant 1 player for every twenty players in the game (rounded up).
+If there is more than one player in the Flute Player channel (not counting Flute Apprentices), each Flute Player will only be able to enchant 1 player for every twenty players in the game (rounded up).
 If a Flute Player turns undead, they will lose their ability to enchant players, however if there is still one or more Flute Player(s) alive, the turned Flute Player will still be asked to enchant somebody.
