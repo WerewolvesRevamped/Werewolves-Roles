@@ -2,5 +2,5 @@
 __Basics__
 The Town Crier knows another townsfolks's role at the start of the game.
 __Details__
-The Town Crier will be told the role of one other random person from the Townsfolk team at the start of the game. This information is one-directional.
+The Town Crier will be told the role and identity of one other arbitrary person from the Townsfolk team at the start of the game. This information is one-directional.
 The role given is not under the influence of any other powers, and therefore is completely reliable. 

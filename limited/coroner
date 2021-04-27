@@ -1,6 +1,7 @@
 **Coroner** | Townsfolk Investigative
 __Basics__
-Once per day, the Coroner can check how a dead participant died. 
+Upon every death, the Coroner is informed how that participant died. 
 __Details__
-Each day, the Coroner can inspect a dead participant. The Coroner will be told how that specific player died, if multiple causes of death were present, then all causes will be revealed to the Coroner. 
-The Coroner is only told the name of roles, and never the name of a player. Inspecting a player is an immediate ability. 
+The Coroner will be told the cause of death for every dead player, and if multiple causes of death are present, then all causes will be revealed to the Coroner. 
+The Coroner is told the name of role that killed the player as well as the name (but not the role) of the player that died. 
+The Coroner is not affected by any disguises.

@@ -1,10 +1,10 @@
 **Disguised Fox** | Werewolf Power
 __Basics__
-Each day, the Disguised Fox must select a disguise. Once per game, the Disguised Fox may alternatively join the wolfpack as a regular wolf.
+Each day, the Disguised Fox may select a disguise, and the disguise will be announced to the Wolfpack. Once per game, the Disguised Fox may alternatively join the wolfpack as a regular wolf.
 __Details__
-Each day, the Disguised Fox must either select a disguise or choose to join the wolfpack. 
+Each day, the Disguised Fox may either select a disguise or choose to join the wolfpack. 
 If the Disguised Fox does not select a disguise, they will be disguised as a citizen. The Disguised Fox's disguise is a strong disguise. 
 The Hosts announce to the wolfpack at the start of each night what disguise the Disguised Fox has chosen. The Disguised Fox's disguise wears off at the end of each night. 
 The Disguised Fox and wolfpack do not know each other's identities, as the Disguised Fox is not a lycan, nor a member of the wolfpack. 
 If the Disguised Fox chooses to join the wolfpack, they may not select a disguise for that night, and will lose their power as they will become a regular wolf. 
-Joining the wolfpack is an immediate ability.
+Joining the wolfpack is an immediate ability and selecting a disguise is an end effect.
