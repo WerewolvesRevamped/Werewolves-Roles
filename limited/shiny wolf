@@ -1,5 +1,7 @@
 **Shiny Wolf** | Werewolf Miscellaneous
 __Basics__
-The Shiny Wolf
+The Shiny Wolf redirects all non-killing powers back to the source of that power.
 __Details__
-At the start of the game the Knowledge Wolf is told all the roles of the role list.
+When the Shiny wolf is affected by a power, that is not an attack, it will be redirected back to the source of that power.
+The Shiny Wolf not be informed when this happens, nor will the source of that power. Killing powers like priest's water will not be redirected.
+Powers with multiple targets will only redirect the one power back to the source. Powers that could not normally target themselves will still be redirected.
