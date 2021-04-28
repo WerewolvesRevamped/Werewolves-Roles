@@ -1,9 +1,7 @@
 **Mirror** | Townsfolk Miscellaneous
 __Basics__
-The Mirror redirects all non-killing powers back to the source of that power. If the mirror is killed or lynched, the source is cursed with bad luck.
+The Mirror redirects all non-killing powers back to the source of that power.
 __Details__
 When the Mirror is affected by a power, that is not an attack, it will be redirected back to the source of that power.
 The Mirror not be informed when this happens, nor will the source of that power. Killing powers like wolf attacks will not be redirected.
 Powers with multiple targets will only redirect a single target back to the source. Powers that could not normally target themselves will still be redirected.
-When the mirror is killed at night, the source of the killing is cursed with bad luck. They lose their next night action. If killed by the wolfpack, the wolfpack skips a kill.
-If the mirror is lynched, they curse those who voted for them with bad luck. Those who voted for the mirror lose their vote in the next election.
