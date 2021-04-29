@@ -5,7 +5,7 @@ Just like the devil the Demon can use the hell team's pool of souls.
 __Details__
 At the start of the game, the Demon may choose a role as a weak disguise. If the Demon doesn’t choose a role, they will show up as a citizen.
 
-The Demon is soulless and their soul is in the hell team's pool of souls.
+At the start of the game the Demon's soul is added to the hell team's pool of souls, and they are soulless afterwards.
 The Demon may use souls from the pool to protect or attack somebody. 
 If the Demon is attacked while a soul is in the pool, a soul will automatically be used to protect the Demon. 
 Use `$info souls` for a detailed explanation.
