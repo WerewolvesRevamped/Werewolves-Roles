@@ -7,7 +7,7 @@ When everyone is dead or soulless the Devil wins.
 __Details__
 At the start of the game, the Devil may choose a role as a weak disguise. If the Devil doesn’t choose a role, they will show up as a citizen.
 
-The Devil is soulless and their soul is in the hell team's pool of souls.
+At the start of the game the Devil's soul is added to the hell team's pool of souls, and they are soulless afterwards.
 The Devil may use souls from the pool to protect or attack somebody. 
 If the Devil is attacked while a soul is in the pool, a soul will automatically be used to protect the Devil. 
 Use `$info souls` for a detailed explanation.
