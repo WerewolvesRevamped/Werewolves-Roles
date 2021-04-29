@@ -4,4 +4,4 @@ Every night, the Oracle can select two players and see if they have the same ali
 __Details__
 Each night, the Oracle can inspect two players. The Oracle will be told whether their roles have the same alignment or not. This result is not affected by disguises. 
 The Oracle can select itself as one of the two players, but can only select each player once throughout the game. 
-Inspecting players is an immediate ability. Unaligned roles have the same alignment, solo roles do not.
+Inspecting players is an immediate ability. Unaligned roles have the same alignment as each other, solo roles on opposing teams do not.
