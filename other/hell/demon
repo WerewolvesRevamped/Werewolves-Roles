@@ -7,7 +7,7 @@ At the start of the game, the Demon may choose a role as a weak disguise. If the
 
 The Demon is soulless and their soul is in the hell team's pool of souls.
 The Demon may use souls from the pool to protect or attack somebody. 
-If the Demon is attacked while a soul is in the pool the soul will automatically be used to protect the Demon. 
+If the Demon is attacked while a soul is in the pool, a soul will automatically be used to protect the Demon. 
 Use `$info souls` for a detailed explanation.
 
 Members of the Hell team cannot change role or betray the team in any way.
