@@ -1,10 +1,10 @@
 **Clairvoyant Fox** | Werewolf Investigative
 __Basics__
-Each day, the Clairvoyant Fox may investigate a player, and the results will be known to both the Clairvoyant Fox and the Wolfpack. Once per game, the Clairvoyant Fox may alternatively join the wolfpack as a regular wolf.
+Each day, the Clairvoyant Fox may investigate a player, and the results will be known to both them and the Wolfpack. Once per game, the Clairvoyant Fox may alternatively join the wolfpack as a regular wolf.
 __Details__
-Each day, the Clairvoyant Fox may either investigate a player or choose to join the wolfpack.
-The Hosts announce the results of the investigation to the wolfpack at the start of each night.
+Each day, the Clairvoyant Fox may either investigate a player or choose to join the wolfpack. 
+When the Clairvoyant Fox investigates a player they see that player's role. The investigation is affected by weak disguises and obstructions.
+If the Clairvoyant Fox survives the day, the result of the investigation is announced to them as well as to the wolfpack at the start of the night. The wolfpack only sees the result - they don't know who was checked.
 The Clairvoyant Fox and wolfpack do not know each other's identities, as the Clairvoyant Fox is not a lycan, nor a member of the wolfpack. 
 If the Clairvoyant Fox chooses to join the wolfpack, they may not investigate that day, and will lose their power as they will become a regular wolf. 
-Joining the wolfpack is an immediate ability. The Clairvoyant Fox is affected by strong disguises and obstructions.
-The Clairvoyant Fox may not investigate themself.
+Joining the wolfpack is an immediate ability and investigating a player is an end effect. 
