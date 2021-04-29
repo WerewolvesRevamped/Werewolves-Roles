@@ -1,0 +1,8 @@
+**Assistant** | Townsfolk Miscellaneous
+__Basics__
+The Assistant may select a player to redirect one wolf action to. 
+__Details__
+The Assistant may target a player. They can update this target once per phase, with 1 emergency change to be used whenever the Assistant wants. 
+When the Assistant is affected by a wolf power, that is not an attack, it will be redirected to the target without the wolves being informed. 
+The Assistant cannot redirect a wolf power onto a wolf in the pack, and if the Assistant tries to, then the redirection will silently fail. 
+The Assistant's redirection power can only be used once per game.
