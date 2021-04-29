@@ -4,7 +4,7 @@ Each night, the Shepherd may choose one player to herd. When everyone is dead, h
 __Details__
 Whenever a player is herded, they will join a secret channel with the other herded players. Herding a player is an immediate effect. The Shepherd may see everything said in this channel, from the safety of their secret channel. Members of the flock can not be herded.
 
-During the day, the Shepherd may steal a herded player's votes for the current day, however that player will be unherded. Players with negative votes can't have their negative votes stolen. The Shepherd is informed how many votes they have after stealing a vote.
+During the day, the Shepherd may steal one herded player's votes for the current day, however that player will be unherded. Players with negative votes can't have their negative votes stolen. The Mayors extra vote cannot be stolen. The Shepherd is informed how many votes they have after stealing a vote.
 
 During the night, if there's two or more herded players, the Shepherd is protected from attacks. Every time the Shepherd is attacked, two random herded players will immediately be unherded instead. 
 
