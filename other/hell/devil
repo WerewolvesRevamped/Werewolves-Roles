@@ -1,22 +1,21 @@
 **Devil** | Solo Killing - Hell Team
 __Basics__
 Each day, the Devil may choose a player to send the devil’s wager to. 
-The target may choose to either learn another player’s role, or attack another player, but sell their soul in the process. 
-The Devil has a variety of uses for souls. 
+The devil's wager recipient may choose one of four options.
+The Devil can use the hell team's pool of souls.
 When everyone is dead or soulless the Devil wins.
 __Details__
-The Devil can't target soulless players. The wager is sent at the end of the day. 
-The Devil can anonymously communicate with the target & will be notified of the result of the wager - they will learn who was attacked/which person was inspected & what role the target saw. 
-
-If the player chooses to see another player’s role (immediate), it will be affected by weak disguises and obstructions. These effects are seen from the player’s perspective, not the Devil’s.
-If the player chooses to attack another player (soul sold: immediately; kill executed: end-night), then they will become soulless. The attacker is the Devil. 
-If the player chooses to attack the Devil the attack will not be executed, but they will not be informed of this. However, they still sell their soul to the Devil.
-
-The Devil can use a soul to protect someone else from all attacks for the next night (day; immediate) or kill a player of their liking (day/night; immediate). 
-If the Devil is attacked at night and they have spare souls, they will be protected and a soul will be used up automatically. 
-
-The Devil starts the game off with a single soul that they can use whenever.
 At the start of the game, the Devil may choose a role as a weak disguise. If the Devil doesn’t choose a role, they will show up as a citizen.
 
-The Devil starts out soulless.
+At the start of the game the Devil's soul is added to the hell team's pool of souls, and they are soulless afterwards.
+The Devil may use souls from the pool to protect or attack somebody. 
+If the Devil is attacked while a soul is in the pool, a soul will automatically be used to protect the Devil. 
+Use `$info souls` for a detailed explanation.
+
+The Devil can't send the wager to soulless players. The wager is sent at the end of the day. 
+The Devil can anonymously communicate with the recipient.
+The recipient may choose to sell their soul to protect or attack somebody, or to share their identity to learn the role of another player. 
+Alternatively, they may also ignore the wager.
+Use `$info wager` for a detailed explanation.
+
 Members of the Hell team cannot change role or betray the team in any way.
