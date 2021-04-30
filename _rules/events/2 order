@@ -1,0 +1,20 @@
+**Event Order**
+
+__Day__
+Immediate Day Effects - Effects that happen immediately during the game. For example barber's kill.
+
+Lynch - The lynch poll is closed and votes are counted, a winner is chosen but nothing else happens.
+Election - The election poll is closed and votes are counted, a winner is chosen but nothing else happens.
+Lynch Block - The lynch is possibly cancelled (Royal Knight).
+Election Block - The election is possibly cancelled (Royal Wolf).
+Lynch Consequences - The lynch winner is lynched, and consequences (death/ascension) of it happen.
+Election Consequences - The election winner is elected, and consequences (election/ascension) of it happen.
+
+End Day Effects - End day effects (Devil's Wager, Chef's Poison) happen - if the player doing them is still alive.
+End Day Effect Consequences - Consequences of the end day effects happen (e.g. somebody being poisoned).
+
+__Night__
+Immediate Night Effects - Effects that happen immediately during the game. For example most investigations.
+
+End Night Effects - End night effects happen. E.g. the wolfpack's kill. If a player is alive during this stage and executes an effect, the effect happens even if they die as a consequence of an end night effect.
+End Night Effects Consequences - Consequences of the end night effects happen (e.g. somebody being attacked).
