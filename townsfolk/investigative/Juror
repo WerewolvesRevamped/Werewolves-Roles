@@ -1,0 +1,9 @@
+**Juror** | Townsfolk Investigative/Group
+__Basics__
+The Jurors have a secret channel where they can communicate among themselves securely. On alternate days, the Jury votes to arraign and investigate a player.
+If the Jury successfuly arraigns a non-town role, it is announced.
+__Details__
+The Juror is part of the Jury. After Day 0, on odd days, the cult can arraign a player, investigating them. 
+The Jury recieves the result of the investigation at the end of the day. If the result of the investigation shows a non-town role, the role is immediately announced publicly.
+The Jury is disbanded if there are 1 or more Jurors left; this means the Jury is active only if atleast two Jurors are alive. 
+Any member of the Jury, even if they lose their role, can still vote on who to arraign. The Jury is affected by weak disguises and obstructions.
