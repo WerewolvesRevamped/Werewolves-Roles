@@ -2,7 +2,7 @@
 __Basics__
 Whenever the Executioner is chosen to be lynched, it will be prevented, and a player chosen by the Executioner will be lynched in their place.
 __Details__
-The Executioner may target a player. This target can be updated once per phase, with 1 emergency change to be used whenever the Executioner wants to. This player will be lynched instead of the Executioner. 
-The Executioner may alternatively choose to not target any player. 
+The Executioner may target a player. This target can be updated once per phase, with 1 emergency change to be used whenever the Executioner wants to. Targetting a player is an immediate effect.
+This player will be lynched instead of the Executioner. The Executioner may alternatively choose to not target any player. 
 When the lynch fails, the Executioner’s role is revealed to all, and the targeted player is lynched immediately. 
 After the failed lynch, the Executioner, can no longer use their ability.
