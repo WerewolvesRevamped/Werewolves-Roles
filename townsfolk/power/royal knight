@@ -2,6 +2,6 @@
 __Basics__
 Once per game, the Royal Knight may cancel the lynch.
 __Details__
-The Royal Knight may cancel the lynch at any time of day or night, and it will apply to the next lynch.
+The Royal Knight may cancel the lynch at any time of day or night, and it will apply to the current (or if there is none the next) lynch. If there are several lynches the Royal Knight may only cancel one of them.
 Cancelling the lynch is an immediate ability. However, the fact that the lynch has been canceled will only be revealed at the end of the day. 
 The Royal Knight also receives the choice whether they want to be revealed or not. Cancelling the lynch results in nobody dying from the lynch that day. 

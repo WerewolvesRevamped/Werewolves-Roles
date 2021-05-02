@@ -1,6 +1,13 @@
-**Demon** | Hell Miscellaneous
+**Demon** | Solo Killing - Hell Team
 __Basics__
 The Demon wins with the devil and joins a channel with the devil to communicate securely.
+Just like the devil the Demon can use the hell team's pool of souls.
 __Details__
-The Demon is usually the result of someone copying the devil for various reasons. This is because the devil is too powerful for there to be two. 
-Their win condition is the same as the Devil’s. The Demon starts out soulless.
+At the start of the game, the Demon may choose a role as a weak disguise. If the Demon doesn’t choose a role, they will show up as a citizen.
+
+At the start of the game the Demon's soul is added to the hell team's pool of souls, and they are soulless afterwards.
+The Demon may use souls from the pool to protect or attack somebody. 
+If the Demon is attacked while a soul is in the pool, a soul will automatically be used to protect the Demon. 
+Use `$info souls` for a detailed explanation.
+
+Members of the Hell team cannot change role or betray the team in any way.

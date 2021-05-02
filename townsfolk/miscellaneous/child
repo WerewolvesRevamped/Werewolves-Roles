@@ -1,7 +1,6 @@
 **Child** | Townsfolk Miscellaneous
 __Basics__
 The day after the Child dies, there will be two lynches instead of one.
-__Details__
-Whenever the Child dies, there are two lynches the next day. 
-It is allowed to lynch the same player twice. This is useful in scenarios where the werewolves want to lynch an Executioner, who can avoid one lynch. 
-Each royal knight can only cancel one lynch.
+__Details__ 
+Whenever the Child dies, there is an additional lynch the next day. If more than one Child dies, there can be more than two lynches.
+It is allowed to lynch the same player several times. This is useful in scenarios where the werewolves want to lynch an Executioner, who can avoid one lynch. 
