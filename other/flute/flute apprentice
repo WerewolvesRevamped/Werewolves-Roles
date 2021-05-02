@@ -1,8 +1,7 @@
-**Flute Apprentice** | Solo/Flute Power
+**Flute Apprentice** | Solo Power - Flute Team
 __Basics__
-The Flute Apprentice is a Flute Player that can’t enchant other players; instead, they can join the enchanted channel.
+The Flute Apprentice is a Flute Player that can’t enchant other players; instead, they can become the Flute Player if no Flute Players remain. Additionally, the Flute Apprentice can redirect the abilities of enchanted players.
 __Details__
-Once, at any point during the game, the Flute Apprentice can join the enchanted channel. 
-When the Flute Apprentice joins the enchanted channel it will seem like the Flute Apprentice was enchanted.
 The Flute Apprentice may target a player, and update this target whenever they like. 
 If any player that is enchanted uses an ability on the Flute Apprentice, the ability is instead redirected onto the Flute Apprentice's target. The original player is not informed about this.
+If no Flute Players remain, the Flute Apprentice turns into a Flute Player and loses their redirection power.

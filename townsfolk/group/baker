@@ -4,4 +4,4 @@ There is always more than one Baker. All the Bakers have a secret channel where 
 __Details__
 Bakers are a special type of townsfolk; they know all other players who gained the Baker role. They can fully trust and rely on each other. Bakers share a private channel, where they can communicate with each other. 
 If a Baker loses their role, they will still keep access to the channel. This means that at some point, a Baker may betray the group. 
-If a Baker is infected by the infected wolf their role changes to bloody butcher, instead of werewolf. If this happens, all other Bakers become butchers, and are notified. 
+If a Baker is infected by the infected wolf their role changes to bloody butcher, instead of wolf. If this happens, all other Bakers become butchers, and are notified of this change. 
