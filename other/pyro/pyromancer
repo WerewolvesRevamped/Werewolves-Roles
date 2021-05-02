@@ -1,6 +1,6 @@
 **Pyromancer** | Solo Killing - Pyro Team
 __Basics__
-Each night, the Pyromancer may either powder a player or ignite all currently powdered players.
+Each night, the Pyromancer may either powder one player or ignite all currently powdered players.
 __Details__
 Each night the Pyromancer may either powder or ignite all currently powdered people.
 When a Pyromancer chooses to ignite, all powdered players will be attacked by them. If a powdered player survives the attack, they still remain powdered.
