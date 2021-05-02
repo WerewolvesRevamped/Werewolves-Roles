@@ -1,12 +1,19 @@
 # Werewolves-Roles
 The role book for Werewolves Revamped.  
 
-# Pull Requests
+# Public Information 
+Please add all new roles in the "limited" folder, as all roles we add usually go through a testing process first before being fully added. 
+Please make sure that your has a name that won't be confused with an existing role and please specify the category of the role. Look at other roles for reference. 
+Only Solo roles also specify their team (if they have one).
+In a role's description the name of the role itself is captialized, but other role names are not.
+
+# Game Master Information
+## Pull Requests
 All pull requests should be reviewed & approved by an Admin that didn't make it. Grammar changes & similiar can be commited without a Pull Requests, but please use Pull Requests for any actual changes.  
 
-# Information
 ## Auto Role Sync
-Anything within the "elected" and "limited" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories".  
+Anything within the "elected" and "limited" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories". 
+Anything within the "channels" folder is considered a channel description.
 
 ## Book Generation
 The "book" file determines in which order the categories are displayed. Within a category elements are displayed alphabetically.  
