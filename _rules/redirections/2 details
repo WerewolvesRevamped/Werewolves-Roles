@@ -3,3 +3,4 @@ If an attack is redirected onto another player, the attacker(s) is/are not infor
 If an action that would usually cause a reveal is redirected, the feedback is also failure. The action still happens (but with the player it was redirected onto and not the original target), but nobody is revealed.
 If any other action (for example investigation or targetting) is redirected, the action happens as if it was directly used on the player who it is redirected on to, but it is not stated that the ability was used on a different player than selected.
 When an action is redirected it is still attributed to the player that originally executed it and not the player that redirected it. Actions may be redirected several times in a row.
+Actions can not be redirected onto a dead player, if attempted, the redirection doesn't happen and the action happens as usual.
