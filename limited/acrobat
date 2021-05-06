@@ -4,4 +4,5 @@ Twice per game, if attacked by a werewolf team member, the Acrobat shall escape.
 __Details__
 When they are attacked, the Acrobat will not die, but after the second attack they will be vulnerable to future attacks. 
 Acrobats are informed that they were attacked. If an Acrobat evades a wolfpack kill, the wolfpack is told why. If an Acrobat evades a kill from a wolf outside of the pack, the wolf responsible is told why.
+The information provided is the same as if a Runner was attacked. That means attacking an Acrobat or a Runner will result in the same message.
 If an Acrobat is targeted by any attack other than a werewolf attack, they will die the first time. 
