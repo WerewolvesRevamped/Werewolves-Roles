@@ -8,4 +8,4 @@ If the Evil Scientist attempts to infect an already infected player, they are in
 Infecting a player is an end-night ability. Infected players are contagious, and remains so till their death.
 Any player who visits or is visited by a contagious player is immediately infected. 
 At the start of the first night after being infected the player is informed that they are infected.
-At ehe end of the second night after being infected the player will die (cannot be avoided).
+At the end of the second night after being infected the player will die (cannot be avoided).
