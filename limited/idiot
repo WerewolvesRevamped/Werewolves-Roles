@@ -4,3 +4,4 @@ If the Idiot dies for the first time, they instead live, but lose their voting p
 __Details__
 If the Idiot dies due to the lynch or due to an attack, the first death will be prevented.
 However, the Idiot loses their vote and is informed about this.
+If the Idiot is Mayor, they will still have their Mayor vote.
