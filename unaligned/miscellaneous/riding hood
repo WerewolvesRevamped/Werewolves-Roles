@@ -3,7 +3,7 @@ __Basics__
 The Riding Hood wins when they are killed by a werewolf.
 __Details__
 When the Riding Hood wins, the Riding Hood ascends and stops playing. The game continues.
-The Riding Hood will also win if they are killed by a werewolf, rather than by the wolfpack's kill. If the Riding Hood is killed in another way, they lose. 
+The Riding Hood will both win if they are killed by a werewolf or by the wolfpack's kill. If the Riding Hood is killed in another way, they lose. 
 If the Riding Hood is protected they neither die nor do they ascend. When the Riding Hood is killed by the wolfpack, the wolfpack may not attack anyone the following night.
 When the Riding Hood is killed by a werewolf (but not the wolfpack's kill), that werewolf will be unable to kill the following night. If that werewolf is also part of the wolfpack they do not get a vote on the wolfpack's kill for that night.
 If no werewolves are left and if the wolfpack either has no players left or is disbanded the Riding Hood dies.
