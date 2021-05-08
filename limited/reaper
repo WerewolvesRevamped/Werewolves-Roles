@@ -6,6 +6,7 @@ __Details__
 The Reaper knows the roles of all dead players. At night the Reaper will be able to use the power of every player that has died since the start of the previous night.
 The gained abilities can only be used during this night, and are lost after that.
 If one of the dead players had a disguise, their disguise is applied to the Reaper as a weak disguise for the night.
+Use `$info reaper abilities` for a detailed explanation on how the reaper can use certain abilities.
 
 When the Reaper uses a power on another player the targeted player turns sleepless. 
 Players are privately informed when they become sleepless. 
