@@ -12,7 +12,7 @@ Group roles don't give the reaper any powers, nor does the Reaper gain access to
 Any immediate day or end day abilities turn into immediate night and end night abilities.
 Abilities that involve effects (e.g. enchanting, powdering, igniting powdered players) instead work with the sleepless effect.
 If an ability results in a role change (e.g. Look-Alike, Infected Wolf), no role change happens, instead a strong disguise of the role that the player would have turned into is applied to the player. The Reaper is informed which disguise is being used.
-All abilities involving anonymous communication (e.g. Devil, Stalker, Disguised Fox) happen in the #reaper_selected channel, instead of their normal one.
+All abilities involving anonymous communication (e.g. Devil, Stalker) happen in the #reaper_selected channel, instead of their normal one.
 End effects to select a target for anonymous communication are turned into immediate effects.
 If the Reaper dies, any abilities with effects that would occur in a later phase do not trigger.
 
