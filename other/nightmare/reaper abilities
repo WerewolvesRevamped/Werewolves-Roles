@@ -3,7 +3,6 @@ If the Reaper uses a power on another player (e.g. targeting or investigation) t
 
 __Limitations__
 If a role with limited uses of their power dies, the Reaper will only receive a power if it has uses left. However, emergency changes are always unavailable.
-For example, if a witch dies that has already used their potion of death, the Reaper will only receive the potion of life.
 Other limitations, like only being able to select every player once or only being able to select specific players still apply, but the Reaper is not informed which player can't be selected. If they select an invalid player, they are informed that their power failed.
 
 __Powers__
