@@ -6,7 +6,7 @@ __Details__
 The Reaper knows the roles of all dead players. At night the Reaper will be able to use the power of every player that has died since the start of the previous night.
 If a role with limited uses of their power dies, the Reaper will only receive a power if it has uses left. However, emergency changes are always unavailable.
 For example, if a witch dies that has already used their potion of death, the Reaper will only receive the potion of life.
-Other limitations, like only being able to select every player once still apply, but the Reaper is not informed which player can't be selected. If they select an invalid player, they are informed that their power failed.
+Other limitations, like only being able to select every player once or only being able to select specific players still apply, but the Reaper is not informed which player can't be selected. If they select an invalid player, they are informed that their power failed.
 The gained abilities can only be used during this night, and are lost after that.
 
 The Reaper is able to use passive powers. They are also able to use powers involving a reveal, however nobody will be revealed. Group roles don't give the reaper any powers, nor does the Reaper gain access to any secret channels.
