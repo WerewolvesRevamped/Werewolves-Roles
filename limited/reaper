@@ -13,6 +13,6 @@ If the Reaper uses a power on another player (e.g. targeting or investigation) t
 Any immediate day or end day abilities turn into immediate night and end night abilities.
 Abilities that usually apply effects (e.g. enchanting, powdering) instead just turn the player sleepless.
 If an ability results in a role change (e.g. Look-Alike, Infected Wolf), no role change happens, instead a weak disguise of the role that the player would have turned into is applied to the player. The Reaper is informed which disguise is being used.
-All abilities involving anonymous communication (e.g. Devil, Stalker) happen without the communication taking place or the targeted player being aware, for those abilities where another player needs to make a choice (e.g. Devil's Wager), the Reaper may choose for the targeted player.
+All abilities involving anonymous communication (e.g. Devil, Stalker, Disguised Fox) happen without the communication taking place or the targeted player being aware, for those abilities where another player needs to make a choice (e.g. Devil's Wager), the Reaper may choose for the targeted player.
 
 Players are privately informed when they become sleepless. When a sleepless player uses a power on the Reaper, their power fails and they die.
