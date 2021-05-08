@@ -9,14 +9,7 @@ For example, if a witch dies that has already used their potion of death, the Re
 Other limitations, like only being able to select every player once or only being able to select specific players still apply, but the Reaper is not informed which player can't be selected. If they select an invalid player, they are informed that their power failed.
 The gained abilities can only be used during this night, and are lost after that.
 If one of the dead players had a disguise, their disguise is applied to the Reaper as a weak disguise for the night.
+If the Reaper uses a power on another player the targeted player turns sleepless. 
 
-The Reaper is able to use passive powers. They are also able to use powers involving a reveal, however nobody will be revealed. Group roles don't give the reaper any powers, nor does the Reaper gain access to any secret channels (e.g. Journal) or info (e.g. Psychopath List, Town Crier) the dead player had.
-If the Reaper uses a power on another player (e.g. targeting or investigation) the targeted player turns sleepless. 
-Any immediate day or end day abilities turn into immediate night and end night abilities.
-Abilities that involve effects (e.g. enchanting, powdering, igniting powdered players) instead work with the sleepless effect.
-If an ability results in a role change (e.g. Look-Alike, Infected Wolf), no role change happens, instead a strong disguise of the role that the player would have turned into is applied to the player. The Reaper is informed which disguise is being used.
-All abilities involving anonymous communication (e.g. Devil, Stalker, Disguised Fox) happen in the #reaper_selected channel, instead of their normal one.
-End effects to select a target for anonymous communication are turned into immediate effects.
-If the Reaper dies, any abilities with effects that would occur in a later phase do not trigger.
-
-Players are privately informed when they become sleepless. When a sleepless player uses a power on the Reaper, their power fails and they die.
+Players are privately informed when they become sleepless. 
+When a sleepless player uses a power on the Reaper, their power fails and they die.
