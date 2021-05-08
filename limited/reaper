@@ -1,9 +1,17 @@
 **Reaper** | Solo Power - Nightmare Team
 __Basics__
-The Reaper can give living players powers of dead players, temporarily. This turns them Sleepless. The Reaper wins when all living players have been turned Sleepless.
+The Reaper may use the powers of dead players, temporarily. When the Reaper uses a power on a player they turn sleepless. 
+The Reaper wins when all living players have been turned sleepless.
 __Details__
-The reaper knows the roles of all dead players. Each day, the reaper may select a dead player and a living player. The living player will gain the power of the dead player. 
-The empowered player becomes sleepless as an end-night ability, and loses their power in the morning. If the targeted player in turn targets the Reaper with their power, the targeted player is instead immediately killed by the Reaper. 
-If the empowered player dies, the Reaper gains immunity to all attacks for the next night. Abilities like the Macho still apply, but the power will not go through if it targets the Reaper. 
-Dead players may be the reaper's target multiple times, while each living player may only be the Reaper's target once. If, at any day start, all living players are Reapers or sleepless, the Reapers win.
-The powers of dead unaligned roles do not transfer to living players. It is as if the dead player was a citizen.
+The Reaper knows the roles of all dead players. At night the Reaper will be able to use the power of every player that has died since the start of the previous night.
+If a role with limited uses of their power dies, the Reaper will only receive a power if it has uses left.
+For example, if a witch dies that has already used their potion of death, the Reaper will only receive the potion of life.
+The gained abilities can only be used during this night, and are lost after that.
+
+If the Reaper uses a power on another player (e.g. targeting or investigation) the targeted player turns sleepless. 
+Any immediate day or end day abilities turn into immediate night and end night abilities.
+Abilities that usually apply effects (e.g. enchanting, powdering) instead just turn the player sleepless.
+If an ability results in a role change (e.g. Look-Alike, Infected Wolf), no role change happens, instead a weak disguise of the role that the player would have turned into is applied to the player. The Reaper is informed which disguise is being used.
+All abilities involving anonymous communication (e.g. Devil, Stalker) happen without the communication taking place or the targeted player being aware, for those abilities where another player needs to make a choice (e.g. Devil's Wager), the Reaper may choose for the targeted player.
+
+Players are privately informed when they become sleepless. When a sleepless player uses a power on the Reaper, their power fails and they die.
