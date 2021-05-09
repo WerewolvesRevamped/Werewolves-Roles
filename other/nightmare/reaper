@@ -9,7 +9,7 @@ If one of the dead players had a disguise when they died, their disguise is appl
 Use `$info reaper abilities` for a detailed explanation on how the reaper can use certain abilities.
 
 When the Reaper uses a power on another player the targeted player becomes sleepless. 
-Players are privately informed when they become sleepless. 
+Players are privately informed when they become sleepless. The Reaper cannot become sleepless.
 The Reaper cannot use any powers on a player they have already turned sleepless.
 However, when a sleepless player uses a power on the Reaper, their power fails and they die. 
 One exception is that sleepless players may still target the Reaper.
