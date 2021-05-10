@@ -7,5 +7,5 @@ The Juror is part of the jury. After Day 0, on odd days, the jury can vote to in
 The jury recieves the result of the investigation at the end of the day. If the result of the investigation shows a non-town role, the role is immediately announced publicly.
 The jury is disbanded if there are 1 or less Jurors left; this means the jury is active only if atleast two Jurors are alive. 
 Any member of the jury, even if they lose their role, can still vote on who to investigate. 
-One of the Jurors that has voted for the jury's target is chosen as the investigator, who performs the investigations. 
+One of the Jurors that has voted for the jury's target is randomly chosen as the investigator, who performs the investigations. 
 The jury is affected by weak disguises and obstructions. These effects are seen from the investigator's perspective.
