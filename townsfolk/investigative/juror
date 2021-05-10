@@ -1,6 +1,6 @@
 **Juror** | Townsfolk Group
 __Basics__
-The Jurors have a secret channel where they can communicate among themselves securely. On alternate days, the Jury votes to investigate a player.
+The Jurors have a secret channel where they can communicate among themselves securely. On odd days, the Jury votes to investigate a player.
 If the Jury successfuly investigates a non-town role, it is announced.
 __Details__
 The Juror is part of the Jury. After Day 0, on odd days, the Jury can vote to investigate a player. 
