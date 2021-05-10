@@ -12,7 +12,7 @@ In a role's description the name of the role itself is captialized, but other ro
 All pull requests should be reviewed & approved by an Admin that didn't make it. Grammar changes & similiar can be commited without a Pull Requests, but please use Pull Requests for any actual changes.  
 
 ## Auto Role Sync
-Anything within the "elected" and "limited" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories". 
+Anything within the "elected", "limited", "categories" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories". 
 Anything within the "channels" folder is considered a channel description.
 
 ## Book Generation
