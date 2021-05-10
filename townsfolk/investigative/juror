@@ -6,4 +6,6 @@ __Details__
 The Juror is part of the Jury. After Day 0, on odd days, the Jury can vote to investigate a player. 
 The Jury recieves the result of the investigation at the end of the day. If the result of the investigation shows a non-town role, the role is immediately announced publicly.
 The Jury is disbanded if there are 1 or less Jurors left; this means the Jury is active only if atleast two Jurors are alive. 
-Any member of the Jury, even if they lose their role, can still vote on who to investigate. The Jury is affected by weak disguises and obstructions.
+Any member of the Jury, even if they lose their role, can still vote on who to investigate. 
+One of the Jurors that has voted for the Jury's target is chosen as the investigator, who performs the investigations. 
+The Jury is affected by weak disguises and obstructions. These effects are seen from the investigator's perspective.
