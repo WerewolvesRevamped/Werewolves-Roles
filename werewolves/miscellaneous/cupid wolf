@@ -1,0 +1,8 @@
+**Cupid Wolf** | Werewolf Miscellaneous
+__Basics__
+The Cupid Wolf is a cupid that has been infected by the infected wolf.
+__Details__
+Instead of turning into a wolf, the cupid turns into an Cupid Wolf. 
+The Cupid Wolf works like the cupid, with one exception: The Cupid Wolf's default win condition is to win with the werewolf team.
+If the lover is on a different team, they will only win when both win conditions are fulfilled. For example, if the couple is Cupid and a citizen, everyone else must die. If the lover is also part of the werewolf team, they belong to the werewolf team and can win together with them. 
+If the lover is unaligned, the couple can either win with the werewolf team or with the lover's win condition.
