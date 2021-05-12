@@ -1,6 +1,7 @@
 **Blessed Wolf** | Werewolf Miscellaneous
 __Basics__
-The Blessed Wolf will be protected from any night attacks to target them.
+The Blessed Wolf will be protected from any night attacks to target them and will be informed how they were attacked.
 __Details__
-The Blessed Wolf will escape unharmed from any attacks to target it at night. They are informed that they were attacked. 
+The Blessed Wolf will escape unharmed from any attacks to target it at night. They are also informed what role they were attacked by. 
 If a Blessed Wolf evades an attack, the attacker is told why.
+If the Blessed Wolf is attacked several times in one night, they learn the role of each attack.
