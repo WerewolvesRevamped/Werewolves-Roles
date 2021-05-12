@@ -7,3 +7,4 @@ Making food and selecting a customer is an end-night ability. Eating the food is
 Once a customer has eaten food, they can no longer be sent food.
 Each game has a certain amount of players that are “waiters” - one from the townsfolk team, one from the werewolf team, and one from each solo team. Waiters are not informed about this, nor does it affect their win condition or ability. The waiters are on different teams. The Chef wins, if at least one waiter, and the Chef itself are alive when the game ends. The Chef is able to win with any team, even if that teams win condition is to kill all others.
 The Chef dies once they are unable to win; this usually happens when the last waiter dies.
+The Chef may not select themself as customer.
