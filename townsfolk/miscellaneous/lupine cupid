@@ -2,7 +2,7 @@
 __Basics__
 The Lupine Cupid is a cupid whose lover is a member of the werewolf team or wolfpack.
 __Details__
-If the cupid selects a lover from the wolf team or wolfpack, the cupid turns into a Lupine Cupid.
+If the cupid selects a lover from the wolf team or wolfpack, or if their lover joins the wolf team or wolfpack, the cupid turns into a Lupine Cupid.
 The Lupine Cupid works like the cupid, with a one exception: The Lupine Cupid cannot be killed by the werewolves.
 If any werewolf or member of the wolfpack attacks the Lupine Cupid the attack fails. Additionally, they are a lycan, but do not join the pack.
 The Lupine Cupid's win condition is not changed.
