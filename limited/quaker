@@ -1,0 +1,7 @@
+**Quaker** | Townsfolk Power
+__Basics__
+The Quaker selects a role and is informed when the last player with that role dies.
+__Details__
+The Quaker may change their target once per phase, with 1 emergency change to be used whenever the Quaker wants to. 
+If several players died at the same time the Quaker is not informed which of the players had their selected role.
+If there are no players of the selected role, or if the last player with the selected role changes to a different role, the Quaker is not informed.
