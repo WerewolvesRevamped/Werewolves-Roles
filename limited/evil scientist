@@ -4,8 +4,8 @@ The Evil Scientist has invented a new disease, lethal and highly contagious. The
 __Details__
 They start off with vials of a substrate containing the disease. They have one vial for every six players in the game (rounded).
 During every night, they may use one of their vials to contaminate another player. Contaminated players will be affected by the disease.
-If the Evil Scientist attempts to contaminate an already contaminated player, they are informed, but the vial is used up.
+If the Evil Scientist attempts to contaminate an already contaminated player, they are informed, but the vial is still used up.
 Contaminating a player is an end-night ability. Contaminated players are contagious, and remains so till their death.
-Any player who visits or is visited by a contagious player is also immediately contaminated. 
-At the start of the first night after being contaminated the player is informed that they are contaminated.
-At the end of the second night after being contaminated the player will die (cannot be avoided).
+Any player who visits or is visited by a contagious player is also immediately contaminated. Any type of action (target, attack, investigation, etc) is counted as a visit.
+At the start of the second night after being contaminated the player is informed that they are contaminated.
+At the end of the second night after being contaminated the player will die (cannot be avoided, not counted as an attack).
