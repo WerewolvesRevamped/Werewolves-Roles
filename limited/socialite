@@ -1,0 +1,8 @@
+**Socialite** | Townsfolk Group
+__Basics__
+The Socialite is included in all townsfolk secret channels, and counts as every role for some abilities.
+__Details__
+The Socialite will always join baker, butcher, and cult chat channels. They will receive a cult vote.
+The Socialite add 1 to all receptionist results, and always give a positive result to Psychic Wolf and Crown Seeker guesses.
+Journalist journals will be received by the Socialite if no other player is the named role.
+Role checking, threat checking, and "part of the wolfpack" checks function as normal.
