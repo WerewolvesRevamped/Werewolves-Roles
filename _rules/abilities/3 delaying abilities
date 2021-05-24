@@ -1,2 +1,4 @@
 **Delaying Abilities**
-Delaying Immediate Abilities is not possible. One exception is that an immediate ability can be chosen one phase before it has to be executed (e.g. a Fortune Teller choosing a target during the day). If this is the case, the Game Masters will execute the immediate ability at an arbitrary time during its phase (the time can not be chosen).
+Delaying Immediate Abilities is possible in two ways:
+1) An immediate ability can be chosen one phase before it has to be executed (e.g. a Fortune Teller choosing a target during the day). If this is the case, the Game Masters will execute the immediate ability at an arbitrary time during its phase (the time can not be chosen).
+2) An immediate ability may be executed just before the next phase change, if requested. If several conflicting immediate abilities happen just before phase change, the order in which they were requested is preserved. Abilities delayed this way can be cancelled/rerequested.
