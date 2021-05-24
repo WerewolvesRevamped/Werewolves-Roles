@@ -1,0 +1,15 @@
+**Reaper** | Solo Power - Nightmare Team 
+__Basics__
+The Reaper may use the powers of dead players, temporarily. When the Reaper uses a power on a player they turn sleepless. 
+The Reaper wins when all living players have been turned sleepless.
+__Details__
+The Reaper knows the roles of all dead players. At night the Reaper will be able to use the power of every player that has died since the start of the previous night.
+The gained abilities can only be used during this night, and are lost after that.
+If one of the dead players had a disguise when they died, their disguise is applied to the Reaper as a weak disguise for the night.
+Use `$info reaper abilities` for a detailed explanation on how the reaper can use certain abilities.
+
+When the Reaper uses a power on another player the targeted player becomes sleepless. 
+Players are privately informed when they become sleepless. The Reaper cannot become sleepless.
+The Reaper cannot use any powers on a player they have already turned sleepless.
+However, when a sleepless player uses a power on the Reaper, their power fails and they die. 
+One exception is that sleepless players may still target the Reaper.
