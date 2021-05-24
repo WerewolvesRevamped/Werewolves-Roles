@@ -5,7 +5,7 @@ The role book for Werewolves Revamped.
 Please add all new roles in the "limited" folder, as all roles we add usually go through a testing process first before being fully added. 
 Please make sure that your has a name that won't be confused with an existing role and please specify the category of the role. Look at other roles for reference. 
 Only Solo roles also specify their team (if they have one).
-In a role's description the name of the role itself is captialized, but other role names are not.
+In a role's description the name of the role itself is capitalized, but other role names are not.
 
 # Game Master Information
 ## Pull Requests
