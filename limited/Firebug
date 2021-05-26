@@ -1,0 +1,8 @@
+**Firebug** | Pyro Power
+__Basics__
+Each day the Firebug can choose to powder a player, this will be communicated to the main pyromancers at the start of the night and can be cancelled at any point in the night, who will then be powdered at the end of the next night. 
+__Details__
+During the day the Firebug may choose one player to powder or unpowder, this can be changed at any point before the end of the day, the player the Firebug chose to powder will be communicated in the pyro channel.
+At any point in the night the Firebug can choose to cancel their powder, the pyros will be told if the Firebug cancels it, if the Firebug doesn’t cancel their powder in the night the player will be powdered.
+The Firebug is told if they are powdered and can unpowder themselves if they are powdered.
+The Firebug is not a member of the pyro team and channel. If all the main team pyros die the Firebug will be promoted to a pyromancer.
