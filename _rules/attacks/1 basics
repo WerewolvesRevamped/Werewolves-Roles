@@ -1,3 +1,4 @@
 **Basics**
 Many roles or groups can attack. Attacks generally result in the attacked player dying, unless their role explicitly says otherwise. The player attacking another player is known as “Attacker”.
-Unless explicitly stated otherwise, an attack is considered successful if the player ends up dead as a result of the attack and unsuccessful if the player survives.
+Unless explicitly stated otherwise, an attack is considered successful if a player ends up dead as a result of the attack and unsuccessful if the player survives.
+Attacks are considered a success if they kill anyone, even if that person wasn't the intended target.
