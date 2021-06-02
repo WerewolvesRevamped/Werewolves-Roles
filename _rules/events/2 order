@@ -7,7 +7,7 @@ Immediate Day Effects - Effects that happen immediately during the game. For exa
 Lynch - The lynch poll is closed and votes are counted, a winner is chosen but nothing else happens.
 Election - The election poll is closed and votes are counted, a winner is chosen but nothing else happens.
 Lynch Block - The lynch is possibly cancelled (Royal Knight).
-Election Block - The election is possibly cancelled (Royal Wolf).
+Election Block - The election is possibly cancelled (Corrupt Wolf).
 Lynch Consequences - The lynch winner is lynched, and consequences (death/ascension) of it happen.
 Election Consequences - The election winner is elected, and consequences (election/ascension) of it happen.
 
