@@ -1,3 +1,4 @@
 **Basics** 
 In the game various events and effects happen throughout a day. A "day" is split into two phases: Daytime and Nighttime. 
 A lot of events/effects are end effects - they happen at the end of a phase. Some effects are immediate effects and happen immediately in the middle of a phase.
+ 
