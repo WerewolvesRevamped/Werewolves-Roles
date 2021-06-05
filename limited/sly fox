@@ -4,7 +4,7 @@ Each day the Sly Fox may choose a player and hide in their house. They will not 
 Once per game, the Sly Fox may alternatively join the wolfpack as a regular wolf. 
 __Details__
 Each day the Sly Fox may ever hide in someone's house that night or choose to join the wolfpack. 
-Since the Sly Fox is at the other player’s house and not at home, any attacks targeting the Hooker in the night will fail; however, if the person they’re hiding with is being attacked, then they both are attacked.
+Since the Sly Fox is at the other player’s house and not at home, any attacks targeting the Sly Fox in the night will fail; however, if the person they’re hiding with is being attacked, then they both are attacked.
 The wolfpack is informed at the start of the night who's house the Sly Fox is hiding in. 
 The Sly Fox and wolfpack do not know each other's identities, as the Sly Fox is not a lycan, nor a member of the wolfpack. 
 If the Sly Fox chooses to join the wolfpack, they may not hide that day, and will lose their power as they will become a regular wolf. 
