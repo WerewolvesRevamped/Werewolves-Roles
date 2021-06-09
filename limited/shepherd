@@ -3,7 +3,7 @@ __Basics__
 Each night, the Shepherd may tag two players. If two tagged players visit each other, they both become herded. When everyone is dead, herded or part of the flock the Shepherd wins.
 __Details__
 When a tagged player visits another tagged player they become herded but remain tagged, if they then visit or are visited by another tagged player who is not herded then that player is then also herded. Tagging a player is an immediate ability.
-Whenever a player is herded, they will join a secret channel with the other herded players. Becoming herded is a consiquence of the action. The Shepherd may see everything said in this channel, from the safety of their secret channel. 
+Whenever a player is herded, they will join a secret channel with the other herded players. Becoming herded is a consequence of the action. The Shepherd may see everything said in this channel, from the safety of their secret channel. 
 Members of the flock can not be tagged or herded.
 During the day, the Shepherd may steal one herded player's votes for the current day, however that player will be unherded. Players with negative votes can't have their negative votes stolen. The Mayors extra vote cannot be stolen. The Shepherd is informed how many votes they have after stealing a vote.
 During the night, if there's two or more herded players, the Shepherd is protected from attacks. Every time the Shepherd is attacked, two random herded players will immediately be unherded instead. 
