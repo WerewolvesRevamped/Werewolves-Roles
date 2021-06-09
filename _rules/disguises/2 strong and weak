@@ -2,3 +2,4 @@
 There are two types of disguises: strong ones and weak ones. If not explicitly listed otherwise, every investigative role is affected by strong disguises, and not affected by weak ones.
 If the topmost disguise is a weak disguise, and a role is immune to weak disguises, the topmost strong disguise is relevant to that role.
 When a player dies they first lose all weak disguises, and then all further consequences are executed, Lastly, all strong disguises are lost.
+ 
