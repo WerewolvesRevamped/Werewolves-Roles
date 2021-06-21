@@ -2,6 +2,8 @@
 __Basics__
 Each night, the Poisoner may poison a player, weakening them.
 __Details__
-Each night, the Poisoner may poison a player. Poisoning a player is an immediate ability. The player is informed they are poisoned.
+Each night, the Poisoner may poison a player. Poisoning a player is an immediate ability. 
+The target is informed they are poisoned. If a werewolf is poisoned this way, the target is also informed who poisoned them.
 The following night, the poison will disable passive protection abilities. This makes roles like macho susceptible to night kills.
+Poisoning will only work on Town and Werewolf roles.
 The Poisoner is not a lycan, nor are they a member of the wolfpack.
