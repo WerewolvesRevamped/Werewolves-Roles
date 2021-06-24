@@ -1,0 +1,5 @@
+**Attack Order**
+If a player is attacked several times in one night, the list of blocks is synchronously handled step by step for all attacks. 
+For conflicts (e.g. when a Lone Wolf and the wolfpack attack the same Runner) roles are first prioritized according to their team (Townsfolk first, then Werewolf, and lastly any other role), then, if necessary, alphabetically within these three categories (e.g. Assassin before Priest).
+If a conflict still exists (two Lone Wolves attacking the same Runner) a random attacker is chosen to be prioritized.
+Groups are a special case and are prioritized before any single role attacks and sorted alphabetically according to the group name, not the attacker's role.
