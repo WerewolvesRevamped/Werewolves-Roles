@@ -2,7 +2,7 @@
 __Basics__
 Each night, the Lone Wolf may attack one player. When the first member of the wolfpack dies, the Lone Wolf joins the wolfpack.
 __Details__
-The Lone Wolf doesn’t know the other werewolves, and starts off all alone, they are not a member of the wolfpack. 
-Each night, they may kill one player on their own. If they kill someone who isn’t on the Townsfolk team or a Solo role, the Lone Wolf dies. 
+The Lone Wolf doesn’t know the other werewolves, and starts off all alone, they are not a member of the wolfpack. However, they are still a lycan.
+Each night, they may kill one player on their own. If they kill someone who isn’t townsfolk or solo aligned, the Lone Wolf dies. 
 When a member of the wolfpack dies, the Lone Wolf loses their powers and joins the wolfpack.
 Killing a player is an end-night ability.

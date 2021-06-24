@@ -20,7 +20,7 @@ townsfolk/investigative
 townsfolk/killing
 
 werewolves
-/wolfpack and lycans
+/wolves
 werewolves/miscellaneous
 werewolves/power
 werewolves/investigative
@@ -38,6 +38,7 @@ unaligned
 unaligned/miscellaneous
 unaligned/align
 unaligned/align - cupid
+unaligned/align - hag
 
 elected
 
