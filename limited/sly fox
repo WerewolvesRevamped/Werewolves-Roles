@@ -1,10 +1,11 @@
-**Sly Fox** | Werewolf Power
+**Sly Fox** | Werewolf Power | Limited
 __Basics__
-Each day the Sly Fox may choose a player and hide in their house, protecting them from any attack targeted at them but not the house they are hidden in, the wolfpack is informed at the start of the night where the Sly Fox is hidden. Once per game, the Sly Fox may alternatively join the wolfpack as a regular wolf. 
+Each day the Sly Fox may choose a player to kidnap. Kidnapped players will not be killed by attacks on them, but will be affected by those taking place at the Sly Fox’s house. The wolfpack is informed at the start of the night who the Sly Fox has kidnapped. 
+Once per game, the Sly Fox may alternatively join the wolfpack as a regular wolf. 
 __Details__
-Each day the Sly Fox may ever hide in someone's house that night or choose to join the wolfpack. 
-When the Sly Fox hides in someone's house they will be immune to any attack targeting them but will be attacked if the person they hide behind is attacked
-The wolfpack is informed at the start of the night who's house the Sly Fox is hiding in. 
+Each day the Sly Fox may either kidnap someone that night or choose to join the wolfpack. 
+Since the kidnapped player is at the Sly Fox house and not at home, any attacks targeting the kidnapped player in the night will fail; however, if the Sly Fox is attacked, then they both are attacked.
+The wolfpack is informed at the start of the night who the Sly Fox kidnapped. 
 The Sly Fox and wolfpack do not know each other's identities, as the Sly Fox is not a lycan, nor a member of the wolfpack. 
-If the Sly Fox chooses to join the wolfpack, they may not hide that day, and will lose their power as they will become a regular wolf. 
+If the Sly Fox chooses to join the wolfpack, they may not kidnap someone that day, and will lose their power as they will become a regular wolf. 
 Joining the wolfpack is an immediate ability and hiding is an end effect.
