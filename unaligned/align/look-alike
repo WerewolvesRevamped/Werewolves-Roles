@@ -5,3 +5,4 @@ __Details__
 During Night 1, the Look-Alike must choose one other player. All data, including whether they are enchanted or not, demonized, in love, etc, is copied. If the Look-Alike does not copy a player in time, a target will be randomly selected for them.
 The Look-Alike may not copy themself. Choosing a player to copy is an immediate ability.
 The target is not told they have been copied by the Look-Alike. This means that if the Look-Alike copies a wolf, they will join the wolf ranks, but the werewolves will not be told who has been copied; it could be that they copied the white werewolf, after all. After using their ability the Look-Alike is no longer unaligned.
+Some Look-Alike special cases can be seen under `$i la cases`.
