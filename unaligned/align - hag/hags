@@ -3,3 +3,4 @@ The Hags win if they're alive at the end of the game, as long as the winning tea
 If a Hag is attacked, killed or has their role changed the team of the player responsible has wronged the Hags. If a Hag is lynched the team(s) which had the most votes on the lynched Hag has wronged the Hags. If a Hag is lynched by unusual means, the team of the player responsible has wronged the Hags. If a solo power role applies an effect to a Hag, they have wronged the Hags. Unaligned players cannot wrong the hags.
 Each Hag can use one specific spell. Hags may only use their spell once, however every time a Hag is wronged they gain an additional use for their spell. Hags are allowed to wait until their spell has several uses and then use it more than once in one night.
 Even when the Hags win condition is changed, they are still considered Unaligned (unless they turn into Bitter Hags).
+Use `$i uah` for a list of all hags.
