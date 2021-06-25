@@ -1,0 +1,9 @@
+**Matchmaker** | Solo Killing
+__Basics__
+Each night the matchmaker either attacks someone, or matches two players together. Matched players die when their match dies.
+__Details__
+The Matchmaker is immune to all night kill effects. They are not be informed when they are attacked.
+The Matchmaker may only attack a total of 3 times throughout a game.
+The Matchmaker's attack is an end-night ability. Matching two players is an immediate effect.
+Matched players are not informed they are matched. Players can have more than one match.
+The Matchmakers wins when they are the last one alive.
