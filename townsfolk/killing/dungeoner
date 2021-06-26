@@ -1,0 +1,10 @@
+**Dungeoner** | Townsfolk Killing
+__Basics__
+The Dungeoner has two prisoners, from two different teams. If killed, their targeted prisoner will also die.
+__Details__
+At the start of the game, the Dungeoner is assigned two players. They interrogate their prisoners and, before the Dungeoner dies, they must choose one of the two assigned players to take with them to their death.
+If the Dungeoner has not targeted a prisoner when they die, a random prisoner will be killed.  
+They will have a secret channel together with their two prisoners, and they also have a channel alone, where they will decide on who they want to attack if they are killed. 
+The two prisoners are always on two different teams (excluding Unaligned). These teams are either Townsfolk, Werewolves or any of the different Solo teams.
+The Dungeoner can choose a prisoners, even if the prisoners is already dead. Attacking the other player is an immediate ability.
+When the Dungeoner kills, they are revealed as the Dungeoner.
