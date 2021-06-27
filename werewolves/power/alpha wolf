@@ -3,6 +3,6 @@ __Basics__
 The Alpha Wolf has two votes on the wolfpack poll. Additionally, the Alpha Wolf may once overwrite the decision of the wolfpack.
 __Details__
 When the Alpha Wolf votes on the wolfpack poll, their vote appears normally, however internally it is counted with the value 2. 
-Once per game, the Alpha Wolf may determine the target of one wolfpack attack, instead of it being decided by the wolfpack. If there are several wolfpack polls the Alpha Wolf can choose which one to overwrite.
+Once per game, the Alpha Wolf may determine the target of one wolfpack attack, instead of it being decided by the wolfpack. If there are several wolfpack polls the Alpha Wolf can choose which one to overwrite. If there are none, they can not use their power.
 Overwriting the wolfpack poll is an end night ability and makes the Alpha Wolf execute the attack. The wolfpack is informed that their attack was overwritten and who was attacked at the end of the night.
 When they overwrite the wolfpack poll, the Alpha Wolf may also choose to reveal themself to the pack.
