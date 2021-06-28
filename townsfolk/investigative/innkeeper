@@ -1,0 +1,6 @@
+**Innkeeper** | Townsfolk Investigative
+__Basics__
+Each night, the Innkeeper may check any role to determine the number of players currently alive with that role.
+__Details__
+Each night the Innkeeper can get a status on a specific role. Checking the status of a specific role will let the Innkeeper know how many players with that role are left in the game. Checking the status of a specific role is an immediate ability.
+Checking status on roles works on any role whether in the game or not. The Innkeeper is affected by strong disguises.

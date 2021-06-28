@@ -1,0 +1,3 @@
+**Tie**
+A Tie happens when players from more than one team win and neither can kill the players from the other team (without dying themselves).
+A Tie is equal to a Live Win for everyone remaining alive, but a Death Loss for everyone that's dead (even if one of their allies is included in the Tie)

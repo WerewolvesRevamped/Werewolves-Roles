@@ -1,0 +1,2 @@
+**Draw**
+A Draw happens when the game is ended early (e.g. due to a host mistake), a Draw counts a bit more than a Live Loss, but can basically be considered a Live Loss. When a game ends in a Draw, all remaining alive players end the game with a Draw, all dead players end the game with a Dead Loss, players that have already won by ascension keep their Live Win.
