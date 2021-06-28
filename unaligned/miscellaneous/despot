@@ -1,7 +1,6 @@
 **Despot** | Unaligned Miscellaneous
 __Basics__
-If the Despot is elected mayor, they win. All players who voted for them as mayor will lose their public voting power for the next day phase.
+If the Despot is elected mayor, they win. The next day, the election will be skipped.
 __Details__
-When the Despot wins, the Despot ascends and stops playing. The game continues. 
-The votes of all players whose votes contributed to the Despot’s victory will be nullified the next day phase, for both the election and the lynch.
-The Mayor's extra vote is not nullified. Some players, like the Grandma, may be able to regain their public voting power before the next day phase.
+When the Despot wins, the Despot ascends and stops playing. The game continues.
+The next day, no election will take place.
