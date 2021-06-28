@@ -1,9 +1,9 @@
 **Guardian** | Elected
 __Basics__
-The Guardian protects the town. When there are 12 or fewer players, the Guardian may choose one player. This player cannot be lynched the following day. When there are more than 12 they may choose up to two.
+The Guardian protects the town. When there are 15 or fewer players, the Guardian may choose one player. This player cannot be killed by attacks during the current night. When there are more than 15 they may choose up to two.
 __Details__
-The Guardian chooses their protected player(s) during the night, and they will be protected from the lynch for the following day. They may not change targets during the day. 
-Guardians may not protect the same player two days in a row, but may protect itself and/or alternate between two or more players. 
-The people that are protected by the Guardian simply can't be voted for on the lynch. 
+The Guardian chooses their protected player(s) during the night, and they will be protected from attacks during the current night. 
+They may not protect the same player two days in a row, but may protect themself and/or alternate between two or more players. 
+Any attack against a player protected by the Guardian fails, however a protected player may still die through other means.
 The Guardian is elected on the first full day with a living Mayor, a living Reporter and no living Guardian.
-Protecing players from the lynch is an immediate effect.
+Protecing players from attacks is an immediate effect.
