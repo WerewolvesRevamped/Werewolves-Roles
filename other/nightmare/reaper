@@ -4,8 +4,8 @@ Each night the Reaper may turn one player sleepless.
 The Reaper wins when all living players have been turned sleepless.
 Additionally, the Reaper may use the powers of dead players, temporarily.
 __Details__
-The Reaper knows the roles of all dead players, and is informed as soon as they die. During the next day/night the Reaper will be able to use the power of every player that has died since the start of the previous day/night.
-The gained abilities can only be used during this phase, and are lost after that. Day abilities have to be used during the day and night abilities during the night.
+The Reaper knows the roles of all dead players, and is informed as soon as they die. During the next day and/or night the Reaper will be able to use the power of every player that has died since the start of the previous day/night.
+The gained abilities can only be used during this/these phase(s), and are lost after that. Day abilities have to be used during the day and night abilities during the night. General abilities can be used during both the next day and night.
 If one of the dead players had a disguise when they died, their disguise is applied to the Reaper for two phases.
 Use `$info reaper abilities` for a detailed explanation on how the reaper can use certain abilities.
 
