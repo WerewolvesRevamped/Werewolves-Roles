@@ -4,7 +4,7 @@ The Gray Werewolf is a werewolf who is not satisfied with merely killing the tow
 On even numbered nights, the Gray Werewolf may attack a member of the wolfpack.
 __Details__
 The Gray Werewolf is similar to the White Werewolf. A difference is that the Gray Werewolf can also win while one other player is alive. 
-The Gray Werewolf wins when the only remaining players are the Gray Werewolf and optionally another player. 
+The Gray Werewolf wins when the only remaining players are the Gray Werewolf and optionally another player. The other player also wins, however the rest of their team does not. 
 Unlike the White Werewolf, the Gray Werewolf does not have a disguise. 
 Attacking a member of the wolfpack is an end effect.
 If only werewolves and the Gray Werewolf are left alive, the game will continue until either all werewolves are dead or the Gray Werewolf is dead.
