@@ -21,12 +21,12 @@ Examples:
 6) Vampire Demonized
 
 __How to figure out what happens__
-1) Compile a list of attack causes, sorted by the role priority list (e.g. `Wolfpack, Pyromancer`)
-2) go through the block priority list step by step, for each of the steps go through the entire list of attacks (in the way it's ordered) and see if it's affected.
+1) Compile a list of attack causes, sorted by the role priority list (e.g. `Wolfpack, Pyromancer`).
+2) Go through the block priority list step by step, for each of the steps go through the entire list of attacks (in the way it's ordered) and see if that attack is affected by the current block.
 
-__Potential Edge Cases__
-1) If two attacks are the same type (e.g. 2 `Lone Wolf`'s) a random one is prioritized
+__Edge Cases__
+1) If two attacks are the same type (e.g. 2 `Lone Wolf`'s) a random one is prioritized.
 
 __Examples__
-1) If both the wolfpack and a lone wolf attacks a runner, both of those could be blocked by 2), however because wolfpack has higher priority than lone wolf only the wolfpack attack is blocked (and they'll be notified their target ran away), the lone wolf's attack will succeed
-2) If both an assassin and the wolfpack attack a demonized Runner, the wolfpack one is escaped (in 2)) and the assassin one converts (in 5)) - there is no conflict in any of the blocking steps
+1) If both the wolfpack and a lone wolf attacks a runner, both of those could be blocked by 2), however because wolfpack has higher priority than lone wolf only the wolfpack attack is blocked (and they'll be notified their target ran away), the lone wolf's attack will succeed.
+2) If both an assassin and the wolfpack attack a demonized Runner, the wolfpack one is escaped (in 2)) and the assassin one converts (in 5)) - there is no conflict in any of the blocking steps.
