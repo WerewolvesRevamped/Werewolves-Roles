@@ -14,3 +14,4 @@ Players are privately informed when they become sleepless. The Reaper cannot bec
 The Reaper cannot use any powers on a player they have already turned sleepless.
 However, when a sleepless player uses a power on the Reaper, their power fails and they die. 
 One exception is that sleepless players may still target the Reaper.
+If no members of the nightmare team remain all players are no longer sleepless, however they are not informed about this.
