@@ -3,4 +3,5 @@ __Basics__
 The Cautious Hag can win with any team, unless that team has wronged the hags. The Cautious Hag can protect a player.
 __Details__
 The Cautious Hag is one of the hags (`$i hags`).
-The Cautious Hag may use their spell to protect a player. The Cautious Hag may protect themself. This power is not affected by redirections.
+During the night, the Cautious Hag may use their spell to protect a player. The Cautious Hag may protect themself. This power is not affected by redirections.
+Protecting a player is an immediate effect.
