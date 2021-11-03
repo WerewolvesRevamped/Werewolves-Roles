@@ -10,3 +10,4 @@ Contaminating a player is an end-night ability. Contaminated players are contagi
 Any player who visits or is visited by a contagious player is also immediately contaminated. Any type of action (target, attack, investigation, etc) is counted as a visit.
 At the start of the second night after being contaminated the player is informed that they are contaminated.
 At the end of the second night after being contaminated the player will die (cannot be avoided, not counted as an attack).
+If no members of the plague team remain all players are no longer contaminated, however they are not informed about this.
