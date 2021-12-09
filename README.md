@@ -12,7 +12,7 @@ In a role's description the name of the role itself is capitalized, but other ro
 All pull requests should be reviewed & approved by an Admin that didn't make it. Grammar changes & similiar can be commited without a Pull Requests, but please use Pull Requests for any actual changes.  
 
 ## Auto Role Sync
-Anything within the "elected", "limited", "categories" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories". 
+Anything within the "elected", "limited", "categories", "archive" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories". 
 Anything within the "channels" folder is considered a channel description.
 
 ## Book Generation
@@ -26,6 +26,6 @@ This is then followed by both the category and subfolder (e.g. "townsfolk/miscel
 The path of the category is automatically used as the name of the category ("limited" => "Limited", "townsfolk/miscellaneous" => "Townsfolk Miscellaneous", "/hell" => "Hell").  
 The path of the category is automatically used to display a category header ("limited" => "limited", "townsfolk/miscellaneous" => "townsfolk miscellaneous", "/hell" => "hell") from the "\_categories" folder. This has to exist, but can be empty.  
 
-Contents of the "\_rules" folder can be referenced just like roles, however they will never be added to the bot.  
+Contents of the "\_rules" folder can be referenced just like roles. They will also be added to the bot as a role, though new rules will require aliases to be usable. The top line of rules is automatically updated to a name based on the file name.
 
 Empty lines will be ignored entirely.  
