@@ -9,3 +9,4 @@ During the day, the Shepherd may steal one herded player's votes for the current
 During the night, if there's two or more herded players, the Shepherd is protected from attacks. Every time the Shepherd is attacked, two random herded players will immediately be unherded instead. 
 At the start of the game, the Shepherd may choose a role as a strong disguise. If the Shepherd doesn’t choose a role, they will be disguised as a citizen.
 If the game started with more than 20 players, the Shepherd may tag three players each night, instead of two.
+If no members of the flock team remain all players are no longer herded, however they are not informed about this.
