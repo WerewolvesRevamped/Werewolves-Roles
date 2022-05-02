@@ -1,9 +1,9 @@
 **Plague Doctor** | Unaligned Miscellaneous | Limited
 __Basics__
-The Plague Doctor is mostly immune to the plague bearer’s disease and requires the plague team to be eliminated in order to win. They may check if players have the plague.
+The Plague Doctor is mostly immune to the plague bearer’s disease and requires the plague team to be eliminated in order to win. They may check a player for symptoms of the plague.
 __Details__
 As soon as the plague team is eliminated, the Plague Doctor ascends and wins.
-Each night, the Plague Doctor may check a player to see if they have the plague and, if they do, since when they have it. This is an immediate ability.
-Members of the plague team will *never* show up as having the plague.
+Each night, the Plague Doctor may check a player for symptoms of the plague. The Plague Doctor will immediately be informed if and since when their target has had the plague.
+Members of the plague team do not have any symptoms and will *never* show up as having the plague.
 If the plague bearer attempts to contaminate the Plague Doctor with one of their rodents, the Plague Doctor dies (unavoidable).
 Otherwise, the Plague Doctor is immune to the disease.
