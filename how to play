@@ -6,6 +6,25 @@ __**How to play Werewolves Revamped**__
 
 🏠 Townsfolk
 @ _rules/alignments/1 townsfolk
+
+🐺 Werewolves
 @ _rules/alignments/2 werewolves
+
+🔥 Solo
 @ _rules/alignments/3 solo
+
+❓ Unaligned
 @ _rules/alignments/4 unaligned
+
+**The day/nighttime cycle**
+@ _categories/the day and nighttime cycle
+
+☀️ Daytime
+@ _rules/the day and nighttime cycle/1 daytime
+
+🌙 Nighttime
+@ _rules/the day and nighttime cycle/2 nighttime
+
+**Conspiracy Channels**
+@ _categories/conspiracy channels
+@ _rules/conspiracy channels/1
