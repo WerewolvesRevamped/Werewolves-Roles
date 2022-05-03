@@ -24,6 +24,7 @@ werewolves
 werewolves/miscellaneous
 werewolves/power
 werewolves/investigative
+werewolves/killing
 werewolves/transformation
 
 other
@@ -31,9 +32,6 @@ other
 /flute
 /hell
 /pyro
-/underworld
-/ice royals
-/nightmare
 
 unaligned
 unaligned/miscellaneous
