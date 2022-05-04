@@ -1,0 +1,7 @@
+**Trickster Wolf** | Werewolf Transformation
+__Basics__
+On all polls the Trickster Wolf's vote is counted as negative one.
+__Details__
+When the Trickster Wolf votes on public or private polls, their vote appears normally, however internally it is counted with the value -1.
+If the Trickster Wolf becomes Mayor, their vote is counted as -2. Results of players that receive 0 or less votes are not displayed.
+This role cannot be part of a role list and can only be created by another role changing into it during the game.
