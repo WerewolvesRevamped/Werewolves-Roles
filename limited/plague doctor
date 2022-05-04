@@ -10,3 +10,4 @@ The Plague Doctor starts off with vials that can cure the plague. They have one 
 Each night, the Plague Doctor may also choose to use one of their vials to immediately cure a player. Cured players no longer have the plague and stop being contagious, however they will not be informed of this.
 If the plague bearer attempts to contaminate the Plague Doctor with one of their rodents, the Plague Doctor dies (unavoidable).
 Otherwise, the Plague Doctor is immune to the disease.
+The Plague team cannot win while a Plague Doctor is alive.
