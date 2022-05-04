@@ -12,3 +12,4 @@ At the start of the second night after being contaminated the player is informed
 At the end of the second night after being contaminated the player will die (cannot be avoided, not counted as an attack).
 If no members of the plague team remain all players are no longer contaminated, however they are not informed about this.
 If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor dies (unavoidable) and the rodent is *not* used up.
+The Plague Bearer cannot win while a Plague Doctor is alive.
