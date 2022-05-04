@@ -2,8 +2,8 @@
 __Basics__ 
 The Plague Bearer's disease is lethal and highly contagious. Their desire is to kill off all other players.
 __Details__
-They start off with rodents that carry the plague. They have one rodent for every six players in the game (rounded).
-If there are several Plague Bearers they know each other and share their rodents.
+They start off with rodents that carry the plague. They have one rodent for every five players in the game (rounded).
+If there are several Plague Bearers they know each other. The Plague Bearers rodent counts are combined and each Plague Bearer may use one rodent per night. 
 During every night, they may free one of their rodents to contaminate another player. Contaminated players will be affected by the disease.
 If the Plague Bearer attempts to contaminate an already contaminated player, they are informed, but the rodent is still used up.
 Contaminating a player is an end-night ability. Contaminated players are contagious, and remain so till their death.
@@ -11,3 +11,5 @@ Any player who visits or is visited by a contagious player is also immediately c
 At the start of the second night after being contaminated the player is informed that they are contaminated.
 At the end of the second night after being contaminated the player will die (cannot be avoided, not counted as an attack).
 If no members of the plague team remain all players are no longer contaminated, however they are not informed about this.
+If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor dies (unavoidable) and the rodent is *not* used up.
+The Plague Bearer cannot win while a Plague Doctor is alive.
