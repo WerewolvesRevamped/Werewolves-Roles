@@ -31,4 +31,4 @@ Contents of the "\_rules" folder can be referenced just like roles. They will al
 Empty lines will be ignored entirely.  
 
 ## How To Play Generation
-You can write whatever text you want. If a line begins with `@` it will be considered a reference to another file. The syntax is `@x path` where x is the number of lines that should be skipped in that file (when that file has a heading that you want to skip), and path is the path to the file. E.g. `@0 _categories/how to play` 
+You can write whatever text you want. If a line begins with `@` it will be considered a reference to another file. The syntax is `@x path` where x is the number of lines that should be skipped in that file (when that file has a heading that you want to skip), and path is the path to the file. E.g. `@0 _categories/how to play`. Lines starting with `>` are treated like lines beginning with `@`, however `> ` is prepended to each line of the referenced file.
