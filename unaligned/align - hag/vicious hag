@@ -1,6 +1,7 @@
 **Vicious Hag** | Unaligned Align | Limited
 __Basics__
-The Vicious Hag can win with any team, unless that team has wronged the hags. The Vicious Hag can attack another player.
+The Vicious Hag can win with any team, unless that team has wronged the hags, however the hags cannot win if they have never been wronged.
+The Vicious Hag can attack another player.
 __Details__
 The Vicious Hag is one of the hags (`$i hags`).
 During the night, the Vicious Hag may once use their spell to attack another player. This power is not affected by redirections.
