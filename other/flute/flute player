@@ -6,7 +6,7 @@ __Details__
 Whenever a player is enchanted, they will immediately join a secret channel with the other enchanted players, but without the Flute Player(s). 
 The Flute Player(s) may see everything said in this channel, from the safety of their own secret channel.
 If an enchanted player is an investigative role, that is affected by obstructions, they will have a 60% chance that the player is displayed as a Flute Player, and a 40% chance for the inspection to happen normally, whenever they attempt to inspect a player.
-This effect will disappear once all members of the flute team are dead. The players are not told when the effect disappears.
+This effect will disappear once no members of the Flute Player channel or team remain. The players are not told when the effect disappears.
 
 The Flute Player is able to enchant 1 player for every ten players in the game (rounded). They may not enchant a member of the flute team or channel.
 If there is more than one player in the Flute Player channel (not counting Flute Apprentices), each Flute Player will only be able to enchant 1 player for every twenty players in the game (rounded).
