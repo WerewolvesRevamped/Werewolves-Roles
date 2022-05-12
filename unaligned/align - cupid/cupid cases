@@ -1,0 +1,20 @@
+**Cupid Special Cases**
+The Cupid can never change role to a role that isn't a cupid variant. Every time the Cupid would usually change role, they instead change to a different cupid variant. After picking a lover, or if the lover changes alignment, the cupid may also change role. The following cupid variants exist.
+
+__Cupid__
+This is the default cupid role, and the only one that can be in a role list. Unless another case applies the cupid stays as this role.
+
+__Cupid Wolf__
+If the cupid is targetted by the infecting wolf, they turn into a cupid wolf instead of a normal wolf.
+
+__Undead Cupid__
+If the cupid is demonized and then killed, they turn into an undead cupid instead of into an undead.
+
+__Demonic Cupid__
+If the cupid's lover is a member of hell, the cupid becomes a demonic cupid, and a full member of hell. Afterwards, the cupid cannot change role again.
+
+__Lupine Cupid__
+If the cupid's lover is a member of the wolfpack or wolf team, the cupid becomes a lupine cupid. This does not change the cupid's alignment.
+
+__Flaming Cupid__
+If the cupid's lover is a member of the pyro team, the cupid becomes a flaming cupid. This does not change the cupid's alignment.
