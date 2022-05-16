@@ -1,6 +1,7 @@
 **Basics**
 There are several ways to obtain disguises, which mask what role an investigative role (other types of roles are generally not affected) sees a player as when inspecting them. 
-Permanent disguises are either active from the start, or have to be selected once, and are always applied below all other disguises. 
-Non-permanent disguises are applied on top of all current disguises. 
+Permanent disguises are either active from the start, or have to be selected once, and are always applied below all other disguises. They last until the end of the game, but are lost when the player loses their role.
+Semi-permanent disguises work mostly like permanent disguises, with the exception that they can be changed. They last until the player chooses another disguise.
+Non-permanent disguises are applied on top of all current disguises. They usually only last a single phase.
 For roles affected by both types of disguises only the topmost (most recent) disguise is relevant. For roles affected only by strong disguises only the topmost *strong* disguise is relevant.
  
