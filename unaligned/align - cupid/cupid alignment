@@ -4,10 +4,11 @@ If a Cupid is in love with an unaligned, instead of their win conditions being c
  
 Cupid, Townsfolk/Unaligned: Townsfolk
 Cupid, Flute: Enchanted Townsfolk
+Cupid, Underworld: Couple
 Cupid, Werewolf/WWW: Impossible; Cupid becomes Lupine Cupid
 Cupid, Hell: Impossible; Cupid becomes Demonic Cupid
 Cupid, Pyro: Impossible; Cupid becomes Flaming Cupid
-Cupid, Underworld: Couple
+Cupid, Plague: Impossible; Cupid becomes Plagued Cupid
 
 Lupine Cupid, Werewolf/WWW: Couple
 Lupine Cupid, Any: Impossible
@@ -15,15 +16,18 @@ Lupine Cupid, Any: Impossible
 Flaming Cupid, Pyro: Couple
 Flaming Cupid, Any: Impossible
 
+Plagued Cupid, Plague: Couple
+Plagued Cupid, Any: Impossible
+
 Demonic Cupid, Hell: Soulless players, Hell
 Demonic Cupid, Any: Impossible
 
-Undead Cupid, Townsfolk/Werewolf/WWW/Pyro: Couple
+Undead Cupid, Townsfolk/Werewolf/WWW/Pyro/Plague: Couple
 Undead Cupid, Flute: Enchanted Underworld
 Undead Cupid, Underworld/Unaligned: Underworld
 Undead Cupid, Hell: Impossible
 
-Cupid Wolf, Townsfolk/WWW/Pyro/Underworld: Couple
+Cupid Wolf, Townsfolk/WWW/Pyro/Underworld/Plague: Couple
 Cupid Wolf, Flute: Enchanted Werewolves
 Cupid Wolf, Werewolf/Unaligned: Werewolves
 Cupid Wolf, Hell: Impossible
