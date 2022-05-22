@@ -7,4 +7,6 @@ Each Hag (with the exception of the plain Hag) has one specific spell, that they
 
 At the start of the game the Hags don't have an alignment, and cannot win, but as soon as they are wronged for the first time a new hag alignment is formed. Teams that have *not* wronged the Hags can still win together with the Hags, according to the standard Unaligned rules, however teams that have wronged the Hags need them dead in order to win. 
 
+If a cupid falls in love with a hag and the cupid is attacked, killed or lynched, the hags are wronged as if the cupid was a hag, other forms of wronging however do not apply.
+
 Use `$i uah` for a list of all hags.
