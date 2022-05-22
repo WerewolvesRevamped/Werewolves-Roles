@@ -9,6 +9,7 @@ Cupid, Werewolf/WWW: Impossible; Cupid becomes Lupine Cupid
 Cupid, Hell: Impossible; Cupid becomes Demonic Cupid
 Cupid, Pyro: Impossible; Cupid becomes Flaming Cupid
 Cupid, Plague: Impossible; Cupid becomes Plagued Cupid
+Cupid, Hag: Impossible; Cupid becomes Cupid Hag
 
 Lupine Cupid, Werewolf/WWW: Couple
 Lupine Cupid, Any: Impossible
@@ -22,12 +23,15 @@ Plagued Cupid, Any: Impossible
 Demonic Cupid, Hell: Soulless players, Hell
 Demonic Cupid, Any: Impossible
 
-Undead Cupid, Townsfolk/Werewolf/WWW/Pyro/Plague: Couple
+Cupid Hag, Hag: Hags
+Cupid Hag, Any: Impossible
+
+Undead Cupid, Townsfolk/Werewolf/WWW/Pyro/Plague/Hag: Couple
 Undead Cupid, Flute: Enchanted Underworld
 Undead Cupid, Underworld/Unaligned: Underworld
 Undead Cupid, Hell: Impossible
 
-Cupid Wolf, Townsfolk/WWW/Pyro/Underworld/Plague: Couple
+Cupid Wolf, Townsfolk/WWW/Pyro/Underworld/Plague/Hag: Couple
 Cupid Wolf, Flute: Enchanted Werewolves
 Cupid Wolf, Werewolf/Unaligned: Werewolves
 Cupid Wolf, Hell: Impossible
