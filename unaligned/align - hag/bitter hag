@@ -2,6 +2,7 @@
 __Basics__
 If the hags have been wronged by all remaining teams, they turn into Bitter Hags. The Bitter Hag wins if all remaining players are dead, unaligned or hags. The Bitter Hag may use each of the hag spells once.
 __Details__
-When hags become Bitter Hags they gain a new secret channel with the other Bitter Hags (if there are any). Each Bitter Hag may protect, investigate and attack a player once during a night. 
+When hags become Bitter Hags they gain a new secret channel with the other Bitter Hags (if there are any). Each Bitter Hag may protect, investigate and attack a player once during a night. However, if their previous spell had any uses left, they do not get to keep these upon changing to Bitter Hag.
 The spells of the Bitter Hag work like the spells of the cautious, vicious and prophetic hag and are not affected by any disguises, redirections or obstructions.
 The Bitter Hag cannot be part of role lists and can only be created by a hag turning into it.
+Sometime, hags may turn into Bitter Hags directly after wronging (if they are wronged by the last remaining team that hasn't wronged them), however they may also turn into Bitter Hags if the last remaining team that hasn't wronged them is eliminated, leaving only teams that have wronged the hags. 

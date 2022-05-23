@@ -2,7 +2,7 @@
 By default the Look-Alike simply copies the role of the other player. In many cases the Look-Alike doesn't just copy the role, but also joins the channels of the copied role.
 If a role that is part of a group is copied the Look-Alike always joins the group channels. For roles listed as 'Join' the Look-Alike additionally also joins the private secret channel.
 When a Look-Alike joins the private secret channel of another player, their actions are turned into polls, which also turns immediate abilities into end abilities.
-For roles listes as 'Special Copy' the Look-Alike instead turns into the listed role, instead of the copied one.
+For roles listed as 'Special Copy' the Look-Alike instead turns into the listed role, instead of the copied one.
 
 __Join__
 Bartender
@@ -13,11 +13,12 @@ Chef
 Psychopath
 Grandma
 Stalker
+Cupid (any variant)
 
 __Special Copy__
 Cult Leader => Cult Member
 Devil => Imp
+Plague Bearer => Plague Carrier
 
 *Shepherd => Herding Dog*
-*Plague Bearer => Plague Carrier*
 *Reaper => Wraith*

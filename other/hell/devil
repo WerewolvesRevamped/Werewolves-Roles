@@ -14,8 +14,8 @@ Use `$info souls` for a detailed explanation.
 
 The Devil can't send the wager to soulless players. The wager is sent at the end of the day. The wager cannot be redirected onto another player.
 The Devil can anonymously communicate with the recipient.
-The recipient may choose to sell their soul to protect or attack somebody, or to share their identity to learn the role of another player. 
-Alternatively, they may also ignore the wager.
+Until the end of the night, the recipient may choose to sell their soul to protect or attack somebody, or to share their identity to learn the role of another player. 
+Alternatively, they may also ignore the wager. 
 Use `$info wager` for a detailed explanation.
 
 Members of the Hell team cannot change role or betray the team in any way.
