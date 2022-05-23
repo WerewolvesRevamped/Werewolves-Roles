@@ -4,7 +4,7 @@ Each night, the Grandma can choose up to two players. The next day, these select
 __Details__
 Making players unable to vote is an immediate ability. If they still vote, their vote simply isn’t counted towards the final result. 
 The Grandma's vote still looks like a normal vote, but can also count as 0 or 2, depending on how many players the Grandma chose. 
-The two chosen players will additionally be added to a private channel, where the Grandma can anonymously talk to them. 
+The two chosen players will additionally be added to a private channel, where the Grandma can anonymously talk to them. At the end of the day the players are removed (even if the Grandma is dead at that point).
 If the Grandma selects a player with several votes (e.g. Mayor or Grandma), they only lose 1 of their votes, but keep the others. The Grandma also only gains 1 vote, like normally. 
 Players with negative votes or no votes can't have their negative votes stolen (and the Grandma is informed), but are still added to the channel. The Mayors extra vote cannot be stolen.
 The Grandma may select themself. The Grandma is not affected by redirections.
