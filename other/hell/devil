@@ -12,7 +12,7 @@ The Devil may use souls from the pool to protect or attack somebody.
 If the Devil is attacked while a soul is in the pool, a soul will automatically be used to protect the Devil. 
 Use `$info souls` for a detailed explanation.
 
-The Devil can't send the wager to soulless players. The wager is sent at the end of the day. The wager cannot be redirected onto another player.
+The Devil can't send the wager to soulless players. The wager is sent at the start of the night. The wager cannot be redirected onto another player.
 The Devil can anonymously communicate with the recipient.
 Until the end of the night, the recipient may choose to sell their soul to protect or attack somebody, or to share their identity to learn the role of another player. 
 Alternatively, they may also ignore the wager. 
