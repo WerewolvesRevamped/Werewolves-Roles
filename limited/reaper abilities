@@ -8,7 +8,7 @@ The Reaper is able to use passive powers.
 They are also able to use powers involving a reveal, however nobody will be revealed. 
 Group roles don't give the reaper any powers, nor does the Reaper gain access to any secret channels (e.g. Journal) or info (e.g. Psychopath List, Town Crier) the dead player had.
 Abilities that involve effects (e.g. enchanting, powdering, igniting powdered players) instead work with the sleepless effect. 
-During the two phases after another solo role's death, the powers of that solo's effects are additionally applied to the sleepless effect/nightmare team. 
+During the two phases after another solo role's death, the powers of that solo's effects are additionally applied to/converted to the sleepless effect/nightmare team. 
 If an ability results in a role change (e.g. Look-Alike, Infected Wolf), no role change happens, instead a permanent strong disguise of the role that the player would have turned into is applied to the player. The Reaper is informed which disguise is being used.
 All abilities involving private anonymous communication (e.g. Devil, Stalker) happen in reaper specific channels, instead of their normal one.
 If the Reaper dies, any abilities with effects that would occur in a later phase do not trigger, but those that still happen in the same phase do trigger.
