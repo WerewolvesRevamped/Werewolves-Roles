@@ -2,8 +2,9 @@
 __Basics__
 Each night, the Zombie may bite another player. If a player is bitten a second time they become a Zombie.
 __Details__
-When a Zombie bites a player a second time, they immediately become a Zombie. The bitten player betrays their team and joins the graveyard channel. They can also immediately bite another player. If they previously were part of another group, they remain in it, but lose their vote. If all members of a certain group have been turned or are dead, their ability will be lost and the group is disbanded.
+When a Zombie bites another player they become "bitten". They do not know about this. When a Zombie bites a player that is already bitten, they immediately become a Zombie. That player betrays their team and joins the graveyard channel. They can also immediately bite another player. If they previously were part of another group, they remain in it, but lose their vote. If all members of a certain group have been turned or are dead, their ability will be lost and the group is disbanded.
 If a Zombie dies, every other Zombie that has been turned by the dying Zombie also dies. 
 The Zombies win when all players are either dead or part of the graveyard team.
+Zombies cannot bite other members of the graveyard channel.
 __Edge Cases__
-If a Zombie tries to bite a member of the hell team for a second time, their power backfires, and instead the Zombies becomes an imp. The turned Zombie will no longer die when its creator Zombie dies, nor will it cause the death of Zombies it has created (neither immediately, nor when it dies). Since members of hell can't be turned into Zombies, they may be bitten for a "second" time several times.
+If a Zombie tries to turn a member of the hell team (second bite), their power backfires, and instead the Zombies becomes an imp. The turned Zombie will no longer die when its creator Zombie dies, nor will it cause the death of Zombies it has created (neither immediately, nor when it dies). Since members of hell can't be turned into Zombies, they may be bitten for a "second" time several times.
