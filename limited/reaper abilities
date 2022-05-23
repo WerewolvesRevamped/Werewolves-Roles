@@ -11,6 +11,7 @@ Abilities that involve effects (e.g. enchanting, powdering, igniting powdered pl
 If an ability results in a role change (e.g. Look-Alike, Infected Wolf), no role change happens, instead a permanent strong disguise of the role that the player would have turned into is applied to the player. The Reaper is informed which disguise is being used.
 All abilities involving private anonymous communication (e.g. Devil, Stalker) happen in reaper specific channels, instead of their normal one.
 If the Reaper dies, any abilities with effects that would occur in a later phase do not trigger, but those that still happen in the same phase do trigger.
+Redirecting powers still apply, however if the redirected player was sleepless they still die.
 
 __Special Cases__
 • Foxes: The wolfpack is not informed of what the Reaper chooses
