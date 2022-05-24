@@ -9,4 +9,5 @@ The Zombies win when all players are either dead or part of the graveyard team.
 Zombies are part of the graveyard channel and know the other Zombies and corpses.
 Zombies cannot bite other members of the graveyard channel.
 __Edge Cases__
-If a Zombie tries to turn a member of the hell team (second bite), their power backfires, and instead the Zombies becomes an imp. The turned Zombie will no longer die when its creator Zombie dies, nor will it cause the death of Zombies it has created (neither immediately, nor when it dies). Since members of hell can't be turned into Zombies, they may be bitten for a "second" time several times.
+If a Zombie changes their role, they will no longer die when its creator Zombie dies, nor will it cause the death of Zombies it has created (neither immediately, nor when it dies).
+If a Zombie tries to turn a member of the hell team (second bite), their power backfires, and instead the Zombies becomes an imp. Since members of hell can't be turned into Zombies, they may be bitten for a "second" time several times.
