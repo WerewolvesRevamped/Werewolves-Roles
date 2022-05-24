@@ -2,7 +2,8 @@
 __Basics__
 Each night, the Zombie may bite another player. If a player is bitten a second time they become a Zombie.
 __Details__
-When a Zombie bites another player they become "bitten". They do not know about this. When a Zombie bites a player that is already bitten, they immediately become a Zombie. That player betrays their team and joins the graveyard channel. They can also immediately bite another player. If they previously were part of another group, they remain in it, but lose their vote. If all members of a certain group have been turned or are dead, their ability will be lost and the group is disbanded.
+When a Zombie bites another player they become "bitten". They do not know about this. When a Zombie bites a player that is already bitten, they immediately become a Zombie. 
+That player betrays their team and joins the graveyard channel. They can also immediately bite another player. If they previously were part of another group, they remain in it, but lose their vote. If all members of a certain group have been turned or are dead, their ability will be lost and the group is disbanded.
 If a Zombie dies, every other Zombie that has been turned by the dying Zombie also dies. 
 The Zombies win when all players are either dead or part of the graveyard team.
 Zombies are part of the graveyard channel and know the other Zombies and corpses.
