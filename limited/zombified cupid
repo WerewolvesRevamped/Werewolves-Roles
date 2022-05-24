@@ -4,5 +4,5 @@ The Zombified Cupid is a cupid that has been bitten twice by the zombies.
 __Details__
 Instead of turning into a zombie, the cupid turns into a Zombified Cupid. 
 The Zombified Cupid works like the cupid, with one exception: The Zombified Cupid's base alignment is graveyard.
-If the lover is part of a different alignment, they will only win when both win conditions are fulfilled. For example, if the couple is Zombified Cupid and a werewolf, everyone else must die. If the lover is also part of the graveyard alignment, they are graveyard aligned and can win together with them. 
+If the lover is part of a different alignment, they will only win when both win conditions are fulfilled. For example, if the couple is a Zombified Cupid and a werewolf, everyone else must die. If the lover is also part of the graveyard alignment, they are graveyard aligned and can win together with them. 
 If the lover is unaligned, the couple can either win with the graveyard team or with the lover's win condition.
