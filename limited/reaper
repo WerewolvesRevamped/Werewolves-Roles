@@ -11,7 +11,7 @@ Use `$info reaper abilities` for a detailed explanation on how the reaper can us
 
 Each night, the Reaper can immediately turn one player sleepless. 
 Players are privately informed when they become sleepless. The Reaper cannot become sleepless, nor can other members of the nightmare team or channel.
-The Reaper cannot use any powers on a player they have already turned sleepless.
+The Reaper cannot use any powers on a player they have already turned sleepless, unless it's a power that specifically requires sleepless players to work.
 However, when a sleepless player uses a power on the Reaper, their power fails and the Reaper automatically attacks them (immediate). 
 One exception is that sleepless players may still target the Reaper.
 If no members of the nightmare team or channel remain all players are no longer sleepless, however they are not informed about this.
