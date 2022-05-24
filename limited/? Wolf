@@ -2,11 +2,10 @@
 __Basics__
 Each night, the ? Wolf may find out how much of a danger a player is to the pack
 __Details__
-Each night the ? Wolf may check a player and will recieve the responce of a number based on how dangerous to the pack they are.
-If the player is another wolf or unaligned the ? Wolf will recieve a 0.
-If the player is a town miscellaneous, town group or solo miscellaneous the ? Wolf will recieve a 1.
-If the player is a town power the ? Wolf will recieve a 2.
-If the player is a town killing or town investigative the ? Wolf will recieve a 3.
-If the Player is a solo Killing or solo power the ? wolf will recieve a 4.
-The only exception is the white werewolf who appears as a 0.
-The ? Wolf’s check is an immediate ability. Since the ? Wolf does not check the role itself, they are not affected by any disguises or obstructions, but are affected by redirections.
+Each night the ? Wolf may check a player to find out how much of a threat they are to the pack.
+The ? Wolf checks the category of their target's role, and receives an answer based on that.
+Investigative and Killing roles of other alignments are considered a major threat.
+Power and Group roles of other alignments are a significant threat.
+Werewolf Killing roles, as well as Miscellaneous roles of another alignment are slightly threatening.
+All the remaining werewolf categories, as well as all unaligned categories are not a threat. 
+The ? Wolf’s check is an immediate ability. The ? Wolf is affected by strong disguises and redirections, but not by weak disguises or obstructions.
