@@ -3,5 +3,5 @@ __Basics__
 The Herding Dog wins with the shepherd and joins a channel with the shepherd to communicate securely.
 __Details__
 During the day, the Herding Dog can un-herd a herded player to steal that player's vote. Players with negative votes can't have their negative votes stolen (but will still be unherded).
-During the night, if the Herding Dog is attacked and there are two or more herded players, two herded players will be automatically unherded to protect the Herding Dog.
+During the night, if the Herding Dog is attacked and there is at least one herded player, a random herded players will be automatically unherded to protect the Herding Dog. However, protecting the Shepherd is prioritized.
 The Herding Dog is usually the result of someone copying the shepherd for various reasons. This is because the shepherd is too powerful for there to be two. Their win condition is the same as the shepherd’s.
