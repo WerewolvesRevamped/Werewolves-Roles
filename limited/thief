@@ -2,7 +2,7 @@
 __Basics__ 
 Each night, the Thief chooses one player to switch roles with. 
 __Details__
-When they switch with a player, they become that player's role, and the other player becomes the Thief. 
+When they switch with a player, they become that player's role, and the other player becomes the Thief. Role specific disguises are also switched.
 Selecting a player to switch with is an immediate effect, but switching roles is an end night action and happens after any other end night actions such as night kills. The Thief can switch with a dead player, if the player was alive when they selected them. 
 When switching with another player, all their channels are switched. Effects such as being powdered are not swapped. 
 If the Thief does not select a target, a random player is chosen. Each Thief may only select every player once. 
