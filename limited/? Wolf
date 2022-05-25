@@ -4,5 +4,5 @@ Each night, the ? Wolf may find out how much of a threat a player is to the pack
 __Details__
 Each night, the ? Wolf may check the category of a player's role to find out how much of a threat they are to the pack. The ? Wolf only learns how much of a threat the player is and not the role's category.
 For categories of other alignments, investigative and killing roles are considered a major threat; power, recruitment and group roles a significant threat; and miscellaneous roles a slight threat.
-Werewolf Killing roles are also a slight threat and all remaining werewolf categories, as well as all unaligned categories are not a threat.
+Additionally, werewolf killing roles are also a slight threat, but all remaining werewolf categories, as well as all unaligned categories are not a threat.
 The ? Wolf’s check is an immediate ability. The ? Wolf is affected by strong disguises and redirections, but not by weak disguises or obstructions.
