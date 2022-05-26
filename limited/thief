@@ -8,3 +8,4 @@ When switching with another player, all their channels are switched. Effects suc
 If the Thief does not select a target, a random player is chosen. Each Thief may only select every player once. 
 The Thief wins if they are still alive at the end of the game or alternatively if there's no or only Unaligned players left to select, the Thief immediately ascends and wins. This can happen immediately after selecting a player.
 The Thief's ability is more powerful than any other mechanic. If a Thief switches with a member of Hell, the current member of Hell betrays their team and becomes a Thief. If the Thief switches with a member of a cupid couple, that member betrays the couple to become a thief and the former thief joins the couple instead. 
+The Thief is not affected by redirections.
