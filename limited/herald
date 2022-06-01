@@ -7,3 +7,6 @@ If several players die at the same time the Herald is not informed which of the 
 If there are no players of the selected role, or if the last player with the selected role changes to a different role, the Herald is not informed.
 The Herald is not affected by any disguises.
 The Herald may use their power several times.
+
+__Simplified__
+The Herald selects a role and is informed when the last player with that role dies. Once that happens, they may select a new role.
