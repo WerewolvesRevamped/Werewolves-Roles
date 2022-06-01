@@ -14,3 +14,7 @@ Once all members have either been turned or are dead, the group is disbanded and
 __Edge Cases__
 If a Zombie changes their role, they will no longer die when its creator Zombie dies, nor will it cause the death of Zombies it has created (neither immediately, nor when it dies).
 If a Zombie tries to turn a member of the hell team (second bite), their power backfires, and instead the Zombie becomes an imp. Since members of hell can't be turned into Zombies, they may be bitten for a “second“ time several times.
+
+__Simplified__
+Each night, the Zombie may bite another player. If a player is bitten a second time they become a Zombie and join the graveyard channel. They win when all players are either dead or part of the graveyard team.
+If a Zombie dies, every other Zombie that has been turned by the dying Zombie also dies.

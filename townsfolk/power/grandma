@@ -8,3 +8,6 @@ The two chosen players will additionally be added to a private channel, where th
 If the Grandma selects a player with several votes (e.g. Mayor or Grandma), they only lose 1 of their votes, but keep the others. The Grandma also only gains 1 vote, like normally. 
 Players with negative votes or no votes can't have their negative votes stolen (and the Grandma is informed), but are still added to the channel. The Mayors extra vote cannot be stolen.
 The Grandma may select themself. The Grandma is not affected by redirections.
+
+__Simplified__
+Each night, the Grandma can choose up to two players. The next day, these selected players' vote won't count, instead the Grandma will get the same amount of votes as people they selected. The Grandma can anonymously talk with their selected players.
