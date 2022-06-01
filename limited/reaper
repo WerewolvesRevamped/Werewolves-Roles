@@ -15,3 +15,9 @@ The Reaper cannot use any powers on a player they have already turned sleepless,
 However, when a sleepless player uses a power on the Reaper, their power fails and the Reaper automatically attacks them (immediate). 
 One exception is that sleepless players may still target the Reaper.
 If no members of the nightmare team or channel remain all players are no longer sleepless, however they are not informed about this.
+
+__Simplified__
+Each night the Reaper may turn one player sleepless.
+The Reaper wins when all living players have been turned sleepless or are part of the nightmare team.
+Additionally, the Reaper may use the powers of dead players, temporarily.
+When a sleepless player attempts to use a power on the Reaper, it fails and the Reaper immediately attacks them.

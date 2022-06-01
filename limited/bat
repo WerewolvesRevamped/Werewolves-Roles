@@ -6,3 +6,8 @@ Since the Bat is at the other player’s house and not at home, any attacks targ
 The Bat may not haunt the same player twice and can only haunt demonized players or members of the underworld team.
 If the Bat is haunting another player while being protected from attacks, the protection is ignored; only protections for the player they are haunting apply.
 The Bat is part of the Underworld team and channel. The Bat is demonized from the start of the game and might be turned into an undead at some point.
+
+__Simplified__
+Each day, the Bat may choose one player to haunt in the following night, but they must be demonized or part of the underworld. The Bat will not be affected by attacks targetting them, but will instead be affected by those taking place at their target’s house. 
+Any player that interacts with the Bat's target while the Bat is visiting also becomes demonized.
+The Bat is demonized from the start.
