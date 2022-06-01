@@ -11,4 +11,4 @@ If the Cupid loses their role before selecting a lover, a random lover is chosen
 The Cupid can never change role to anything but another cupid variant (more info in `$info cupid variants`).
 
 __Simplified__
-The Cupid choose one player to become their lover. They can never betray eachother and one dies, the other does too.
+The Cupid choose one player to become their lover. They can never betray eachother and one dies, the other does too. The Cupid's base alignment is Townsfolk.
