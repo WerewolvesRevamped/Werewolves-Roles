@@ -11,5 +11,5 @@ Any player who visits or is visited by a contagious player is also immediately c
 At the start of the second night after being contaminated the player is informed that they are contaminated.
 At the end of the second night after being contaminated the player will stop being contagious and die (not an attack).
 If no members of the plague team remain all players are no longer contaminated, however they are not informed about this.
-If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor dies (not an attack) and the rodent is *not* used up.
+If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor immediately dies (not an attack) and the rodent is *not* used up.
 The Plague Bearer cannot win while a Plague Doctor is alive.
