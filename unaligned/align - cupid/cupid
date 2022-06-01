@@ -2,9 +2,10 @@
 __Basics__
 The Cupid chooses one player to be their lover, and forms an inseparable team with that player.
 __Details__
-During Night 1, the Cupid must choose one player to become their lover. If the Cupid does not choose in time, they will fall in love with a random player. The lover is added to the Cupid’s secret channel.
+During Night 1, the Cupid must choose one player to become their lover. If the Cupid does not choose in time, they will fall in love with a random player. The lover is added to the Cupid’s secret channel and the lover's role is revealed to the Cupid.
 The Cupid and their lover form an inseparable team; they will die if the other player dies. When this happens it is announced. Choosing a lover is an immediate ability.
-By default the Cupid wins with the townsfolk team. If the lover is on a different team, they will only win when both win conditions are fulfilled. For example, if the couple is Cupid and a wolf, everyone else must die. If the lover is townsfolk, they are townsfolk aligned and can win together with them. 
+By default the Cupid wins with the townsfolk team. If the lover is on a different team, they will only win when both win conditions are fulfilled. For example, if the couple is Cupid and a wolf, everyone else must die. If the lover is a townsfolk role, they are townsfolk aligned and can win together with them (more examples can be found in `$info cupid alignment`).
 The Cupid’s love overrides any other mechanic that may cause a player to change teams for any reason; the Cupid is always on the same team as their lover. 
-After choosing a lover, unless they are also unaligned, the Cupid is no longer unaligned. If the lover is unaligned, the couple can either win with townsfolk or with the lover's win condition.
+After choosing a lover, unless they are also unaligned, the Cupid is no longer unaligned. If the lover is unaligned, the couple can either win with townsfolk or with the lover's win condition, however even though they have a second win condition they are simply considered to be townsfolk aligned.
 If the Cupid loses their role before selecting a lover, a random lover is chosen.
+The Cupid can never change role to anything but another cupid variant (more info in `$info cupid variants`).

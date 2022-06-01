@@ -1,7 +1,8 @@
 **Prophetic Hag** | Unaligned Align | Limited
 __Basics__
-The Prophetic Hag can win with any team, unless that team has wronged the hags. The Prophetic Hag can see the current alignment of another player.
+The Prophetic Hag can win with any team, unless that team has wronged the hags, however the Prophetic Hag cannot win if the hags have never been wronged.
+The Prophetic Hag can see the current alignment of another player.
 __Details__
 The Prophetic Hag is one of the hags (`$i hags`).
-During the night, the Prophetic Hag may use their spell to see the current alignment of another player. This check is not affected by any disguises, obstructions or redirections.
-Investigating a player is an immediate effect.
+During the night, the Prophetic Hag may once use their spell to see the current alignment of another player. This check is not affected by any disguises, obstructions or redirections.
+Checking a player is an immediate effect.

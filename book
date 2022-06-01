@@ -5,6 +5,7 @@ how to play
 
 role related rules
 /abilities
+/ability types
 /attacks
 /disguises
 /obstructions
@@ -25,12 +26,15 @@ werewolves/miscellaneous
 werewolves/power
 werewolves/investigative
 werewolves/killing
+werewolves/transformation
 
 other
 /solo
 /flute
 /hell
 /pyro
+/plague
+/underworld
 
 unaligned
 unaligned/miscellaneous

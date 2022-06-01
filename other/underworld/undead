@@ -1,0 +1,7 @@
+**Undead** | Solo Miscellaneous - Underworld Team
+__Basics__
+The Undead is a part of the vampire’s secret army and pretends to be their old role. If a demonized player dies during the night, they will not die, and will instead lose their original role and become an Undead.
+__Details__
+An Undead has the same win condition as the vampire; they will win when all remaining players are part of the underworld team.
+They lose their previous role, but if they were part of a group like the wolfpack, they will remain in the channel and will still be able to vote (though internally their vote won't be counted) as long as at least one other member of their group is still alive. 
+Once all members have either been turned or are dead, the group is disbanded and any abilities it may have had are lost.
