@@ -5,3 +5,6 @@ __Details__
 The Huntress may target a player. They can update this target once per phase, with 1 emergency change to be used whenever the Huntress wants. 
 When the Huntress dies in any way other than by directly being lynched, their target will be attacked by them. The other player is attacked immediately and if it succeeds, the Huntress’s role is revealed to all. 
 If the Huntress did not target a living player, the Huntress’s role isn’t revealed.
+
+__Simplified__
+The Huntress may select a player to attack with their dying breath.

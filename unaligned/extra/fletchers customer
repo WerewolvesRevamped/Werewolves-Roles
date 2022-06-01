@@ -6,3 +6,7 @@ The Fletcher's Customer may target a player. They can update this target once pe
 When the Fletcher's Customer dies in any way other than by directly being lynched, their target will be attacked by them. The other player is attacked immediately and if it succeeds, their status as Fletcher's Customer’s is revealed to all. 
 If the Fletcher's Customer did not target a living player, the Fletcher’s Customer isn’t revealed.
 At any point while the Fletcher is alive, the Fletcher may irreversibly revoke Fletcher’s Customer's abilities.
+
+__Simplified__
+The Fletcher's Customer is chosen by the Fletcher. The Fletcher's Customer may select a player to attack with their dying breath. The Fletcher can irreversibly revoke this ability.
+The Fletcher's Customer is an extra role that doesn't replace the player's current role.
