@@ -10,3 +10,7 @@ The Wisp is a member of the pyro team, but not a member of the pyro channel. Tha
 If the Wisp is ignited by the pyros the Wisp will be alerted they were ignited, but will not be killed. Whoever ignited the Wisp will be informed that their target could not be ignited. This message is unique and different from other ways the igniting could fail.
 When no members of the pyro channel are left, the Wisp is informed and turns into a pyromancer at the start of the next phase and joins the pyro channel.
 If several Wisps exist when the last member of the pyro channel dies, all of them turn into pyromancers and join the pyro channel.
+
+__Simplified__
+The Wisp may visit one person each day, if that person has been powdered, then the Wisp ignites the visited person at the end of the day. If that person is not powdered, the Wisp powders that person.
+The Wisp is a member of the pyro team, but not a member of the pyro channel. The Wisp cannot be ignited.

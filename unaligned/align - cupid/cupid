@@ -9,3 +9,7 @@ The Cupid’s love overrides any other mechanic that may cause a player to chang
 After choosing a lover, unless they are also unaligned, the Cupid is no longer unaligned. If the lover is unaligned, the couple can either win with townsfolk or with the lover's win condition, however even though they have a second win condition they are simply considered to be townsfolk aligned.
 If the Cupid loses their role before selecting a lover, a random lover is chosen.
 The Cupid can never change role to anything but another cupid variant (more info in `$info cupid variants`).
+
+__Simplified__
+The Cupid choose one player to become their lover. They can never betray each other and if one dies, the other does too. The Cupid's base alignment is Townsfolk.
+If their lover is of a different alignment, they must fulfill both win conditions, usually meaning they must kill everyone else, leaving only the couple.

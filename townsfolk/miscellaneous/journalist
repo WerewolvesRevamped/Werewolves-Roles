@@ -6,3 +6,6 @@ The Journalist has a second secret channel. There they can write any information
 The Journalist can select a role and update their targeted role once per phase, with 1 emergency change to be used whenever the Journalist wants. 
 If there are several people with the same role, a random player out of those is selected. If nobody has the role (anymore), nobody gains access to the channel.
 If the Journalist loses their role, the journal is lost.
+
+__Simplified__
+The Journalist can write a journal which a player with a role of their choice will receive when the Journalist dies.

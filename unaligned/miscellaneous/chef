@@ -10,3 +10,7 @@ Each game has a certain amount of players that are “waiters” - one from the 
 If a new solo team is created during the game, they do not gain a waiter.
 When the last waiter dies, the Chef stops playing, descends and loses.
 The Chef may not select themself as customer.
+
+__Simplified__
+The Chef can send protecting food or poisoned food each night to a customer they select. The customer can decide to eat it the next day and either gains protection for the following night or they die at the end of the day.
+The Chef also has waiters, one from every team except unaligned. When all the waiters are dead, the Chef stops playing, descends and loses.
