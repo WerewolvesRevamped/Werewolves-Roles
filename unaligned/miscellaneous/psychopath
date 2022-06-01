@@ -4,3 +4,7 @@ At the start of the game, the Psychopath is given an arbitrary list with one thi
 __Details__
 When the Psychopath wins, the Psychopath ascends and stops playing. The game continues. If the number of players excluding the Psychopath is not divisible by 3, the number of players on the list is rounded up. The Psychopath can’t win when they are dead. 
 The Psychopath may strongly disguise themself as any role. The disguise is applied immediately. They can update this disguise once per phase, with 1 emergency change to be used whenever the Psychopath wants to. If the Psychopath changes role, the disguise is lost.
+
+__Simplified__
+The Psychopath has a list with 1/3rd of all the players on it. If all players on that list are dead, the Psychopath wins, ascends and stops playing. The game continues.
+The Psychopath also has a disguise that they can choose.
