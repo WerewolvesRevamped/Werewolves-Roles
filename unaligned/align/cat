@@ -5,3 +5,6 @@ __Details__
 If the dog chooses town crier, the Cat will turn into wolf; cursed civilian will turn the Cat into a psychopath with the dog in the list; and wolf will turn the Cat into a town crier.
 Changing role is an immediate consequence of the dog choosing.
 For each Cat in the game, there must be a corresponding dog. Neither the Cat, nor the dog will know their counterpart.
+
+__Simplified__
+For each Cat, there is a corresponding dog. The Cat will become the opposite of the role the dog chose.
