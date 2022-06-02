@@ -6,3 +6,7 @@ The Aura Teller cannot see a player’s role, but they can check whether or not 
 The Aura Teller’s inspection is an immediate ability.
 Some roles or players may be able to kill, but will not show up as threats as they are neither lycans nor a role classified as a killing role.
 The Aura Teller is affected by strong disguises and redirections, but not by obstructions.
+
+__Simplified__
+Each night, the Aura Teller may check a player. Lycans, and roles classified as killing roles show up as a threat, while all other roles are not a threat.
+They are affected by strong disguises and redirections, but not by obstructions.

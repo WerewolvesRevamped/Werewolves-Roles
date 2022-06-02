@@ -7,3 +7,7 @@ The Oracle can select itself as one of the two players, but can only select each
 Inspecting players is an immediate ability. Unaligned roles (if they are still unaligned) have the same alignment as each other, solo roles on opposing teams do not.
 Some roles' current alignments may be different than their role's starting alignment (e.g. Cupid, Cupid's Lover).
 The Oracle is not affected by disguises or obstructions, but is affected by redirections.
+
+__Simplified__
+Every night, the Oracle can select two players and see if they have the same current alignment as each other. Each player can only be checked once.
+This is not affected by disguises or obstructions, but is affected by redirections.

@@ -6,3 +6,6 @@ If the cupid selects a lover from the pyro team, or if their lover joins the pyr
 The Flaming Cupid works like the cupid, with an exception: The Flaming Cupid cannot be powdered or ignited by the pyro team.
 If any member of the pyro team powders the Flaming Cupid it silently fails. If any member of the pyro team attacks the Flaming Cupid the attack fails. 
 The Flaming Cupid's win condition is not changed.
+
+__Simplified__
+The Flaming Cupid is a cupid whose lover is a member of the pyro team. The Flaming Cupid's base alignment is Townsfolk.

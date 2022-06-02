@@ -2,6 +2,9 @@
 __Basics__
 Each night, the Stalker may assign two extra votes to a player in the next day’s polls.
 __Details__
-Each night, the Stalker may threaten a player. The day after, that player has 2 more invisible votes against them on the daily polls. These additional votes are revealed when the polls close. The threatened player is privately notified of the threat.
-Threatening a player is an immediate ability. The Stalker can anonymously talk to the person they’re threatening.
+Each night, the Stalker may threaten a player. The day after, that player has 2 more invisible votes against them on the daily polls. These additional votes are revealed when the polls close. The threatened player is privately notified of the threat and added to a channel.
+Threatening a player is an immediate ability. The Stalker can anonymously talk to the person they’re threatening. At the end of the day the player is removed from the channel and the invisible votes are removed (even if the Stalker is dead at that point).
 The Stalker may select themself. The Stalker is not affected by redirections.
+
+__Simplified__
+Each night, the Stalker may assign two extra votes to a player in the next day’s polls. They will be able to anonymously talk to the person they selected.
