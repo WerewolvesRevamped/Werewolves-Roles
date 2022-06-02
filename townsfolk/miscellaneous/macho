@@ -8,3 +8,6 @@ The Macho will know who attacked them, and it is up to them to decide whether th
 If it’s a group that attacked the Macho, the attacker’s name is told to the Macho. 
 If the Macho is attacked multiple times in a single night, they will not be killed by any of them, and the kill they are informed of will be chosen randomly from all their attackers.
 If the Macho is lynched, they will die as usual. 
+
+__Simplified__
+If attacked at night, the Macho will be told the name of one of their attackers and will not die until the beginning of the next night.

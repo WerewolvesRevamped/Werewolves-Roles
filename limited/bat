@@ -6,3 +6,8 @@ Choosing a player to haunt is an end-day ability. Throughout the following night
 The Bat may not haunt the same player twice and can only haunt demonized players or members of the underworld team. If they select an invalid player, their action will fail and they will be informed.
 If the Bat is haunting another player while being protected from attacks, the protection is ignored; only protections for the player they are haunting apply.
 The Bat is part of the Underworld team and channel. The Bat is demonized from the start of the game and may be turned into an undead.
+
+__Simplified__
+Each day, the Bat may choose one player to haunt in the following night, but they must be demonized or part of the underworld. The Bat will not be affected by attacks targetting them, but will instead be affected by those taking place at their target’s house. 
+Any player that interacts with the Bat's target while the Bat is visiting also becomes demonized.
+The Bat is demonized from the start.

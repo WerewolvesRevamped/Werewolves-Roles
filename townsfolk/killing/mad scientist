@@ -8,3 +8,6 @@ They will have a secret channel together with their two targets, and they also h
 The two targets are always on two different teams (excluding Unaligned). These teams are either Townsfolk, Werewolves or any of the different Solo teams.
 The Mad Scientist can choose a target, even if the target is already dead. Attacking the other player is an immediate ability.
 When the Mad Scientist kills, they are revealed as the Mad Scientist.
+
+__Simplified__
+The Mad Scientist has two subjects, from two different teams, one of which they must choose. If killed, their targeted subject will also die.
