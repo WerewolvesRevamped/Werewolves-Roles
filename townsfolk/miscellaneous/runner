@@ -5,3 +5,6 @@ __Details__
 When they are attacked by a werewolf, the Runner will not die, but will be vulnerable to future attacks. 
 If a Runner is targeted by any kill other than a werewolf kill, they will die the first time. 
 Runners are informed that they were attacked. If a Runner evades a wolfpack kill, the wolfpack is told their target ran away. If a Runner evades a kill from a wolf outside of the pack, that wolf is informed instead.
+
+__Simplified__
+Once per game, if attacked by the werewolves, the Runner will escape.
