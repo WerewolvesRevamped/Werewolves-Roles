@@ -6,7 +6,7 @@ When a tagged player visits another tagged player they become herded but remain 
 Additionally each night the Shepherd can choose to make one Tagged player Herded as an end night effect.
 Whenever a player is herded, they will join a secret channel with the other herded players. Becoming herded is a consequence of the action. The Shepherd may see everything said in this channel, from the safety of their secret channel. 
 Members of the flock can not be tagged or herded.
-Each phase end the Shepherd will learn all chenges to the herd.
+Each phase end the Shepherd will learn all changes to the herd.
 During the day, the Shepherd may temporarily steal the votes of herded players; players who have their votes stolen will be unherded, but remain tagged. Players with negative votes can't have their negative votes stolen (but will still be unherded). The Mayor's extra vote cannot be stolen. The Shepherd is informed how many votes they have after stealing votes. After the day ends, the votes are returned to normal.
 During the night, if there's two or more herded players, the Shepherd is protected from attacks. Every time the Shepherd is attacked, two random herded players will immediately be unherded instead. 
 At the start of the game, the Shepherd may choose a role as a strong disguise. If the Shepherd doesn’t choose a role, they will be disguised as a citizen. If the Shepherd changes role, the disguise is lost.
