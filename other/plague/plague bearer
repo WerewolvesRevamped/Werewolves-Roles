@@ -9,7 +9,7 @@ If the Plague Bearer attempts to contaminate an already contaminated player, the
 Contaminating a player is an immediate ability. Contaminated players are contagious, and remain so till their death.
 Any player who visits or is visited by a contagious player is immediately contaminated. Any type of action (target, attack, investigation, etc) is counted as a visit.
 At the start of the second night after being contaminated the player is informed that they are contaminated.
-At the end of the second night after being contaminated the player will cease being contagious and die. This is not an attack.
+At the end of the second night after being contaminated the player will stop being contagious and die. This is not an attack.
 If no members of the plague team or channel remain, all players are no longer contaminated, although they are not informed about this.
 If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor immediately dies (not an attack), and the rodent is *not* used up.
 The Plague Bearer cannot win while a Plague Doctor is alive.
