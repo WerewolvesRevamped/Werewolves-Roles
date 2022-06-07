@@ -6,3 +6,7 @@ The Witch has two potions; a potion of life and a potion of death.
 Each night, they can choose whether they want to use either of those potions. Each potion can only be used once. They can also be used simultaneously in one night. 
 If they use the potion of life, then three players, which the Witch chooses, as well as the Witch themself are protected from attacks during that night (immediate). 
 If they use the potion of death, they can choose one player to attack (end-night). 
+
+__Simplified__
+Once per game, at night, the Witch may choose three players (as well as themselves) to protect from any attack for one night.
+Once per game, at night, the Witch may attack one player.

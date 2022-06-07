@@ -2,6 +2,9 @@
 __Basics__
 The Fortune Apprentice will take the place of the first town investigative role to die.
 __Details__
-At the start of the first day where a town investigative role died the previous day or night, the Fortune Apprentice will become the role of the first town investigative role that died. 
+At the start of the first day where a town investigative role died or lost their role the previous day or night, the Fortune Apprentice will become the role of the first town investigative role that died or lost their role. 
 The Fortune Apprentice does not know the identity of the previous town investigative role, nor do they know the checks made by this person.
 This will not happen if the Fortune Apprentice’s role has changed.
+
+__Simplified__
+The Fortune Apprentice will take the place of the first town investigative role to die, turning into their role, but will not learn their identity nor the results of their checks.

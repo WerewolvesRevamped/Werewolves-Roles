@@ -1,0 +1,21 @@
+**Plague Bearer** | Solo Killing - Plague Team
+__Basics__ 
+The Plague Bearer's disease is lethal and highly contagious. Their desire is to kill off all other players.
+__Details__
+The Plague Bearer starts the game with rodents that carry the plague. They have one rodent for every five players in the game (rounded).
+If there are several Plague Bearers then they know each other, and their rodent counts are combined. Each Plague Bearer may use one rodent per night. 
+Each night, the Plague Bearer may free one of their rodents to contaminate another player. Contaminated players will be affected by the disease. The Plague Bearer cannot be contaminated.
+If the Plague Bearer attempts to contaminate an already contaminated player, they are informed, but the rodent is still used up.
+Contaminating a player is an immediate ability. Contaminated players are contagious, and remain so till their death.
+Any player who visits or is visited by a contagious player is immediately contaminated. Any type of action (target, attack, investigation, etc) is counted as a visit.
+At the start of the second night after being contaminated the player is informed that they are contaminated.
+At the end of the second night after being contaminated the player will stop being contagious and die. This is not an attack.
+If no members of the plague team or channel remain, all players are no longer contaminated, although they are not informed about this.
+If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor immediately dies (not an attack), and the rodent is *not* used up.
+The Plague Bearer cannot win while a Plague Doctor is alive.
+
+__Simplified__
+The Plague Bearer can send rodents towards players to give them the plague. The may release one rodent each night. 
+Contaminated players can spread the plague through any type of actions they use or that is used on them.
+At the start of the second night after being contaminated the player is informed that they are contaminated. At the end of that night they will die.
+The Plague Bearer wins when all other players are dead, unaligned or Plague Team. The Plague Bearer cannot win while a Plague Doctor is alive.

@@ -6,3 +6,7 @@ During each night the Medium has access to a second secret channel, where they c
 All dead participants are able to vote on it during the day. Of course, there can be members of all teams in the dead participants.
 The question needs to be one simple yes/no question without any hidden meaning to it. Not voting as a dead participant should not give the Medium any information. 
 Once the day ends, the poll is closed, and the Medium gains access to the second secret channel again.
+
+__Simplified__
+Each night, the Medium may ask the dead players a yes or no question.
+The dead players will be able to vote during the day, and when it ends the Medium learns the result, but not who voted what.

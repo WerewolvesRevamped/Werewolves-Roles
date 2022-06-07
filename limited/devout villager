@@ -1,0 +1,8 @@
+**Devout Villager** | Townsfolk Miscellaneous | Limited
+__Basics__
+The Devout Villager is a normal citizen, with one exception: they can never change role.
+__Details__
+When a role changing ability affects the Devout Villager, it fails. If the infecting wolf tries to infect the devout villager the infection fails and nothing happens. If a vampire tries to demonize the Devout Villager it happens normally, however if the Devout Villager is attacked they will die instead of turning undead. 
+
+__Simplified__
+The Devout Villager is a normal citizen, with one exception: they can never change role.

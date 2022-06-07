@@ -5,3 +5,6 @@ __Details__
 When the Trickster Wolf votes on public or private polls, their vote appears normally, however internally it is counted with the value -1.
 If the Trickster Wolf becomes Mayor, their vote is counted as -2. Results of players that receive 0 or less votes are not displayed.
 This role cannot be part of a role list and can only be created by another role changing into it during the game.
+
+__Simplified__
+The Trickster Wolf can only be created when a trickster is infected by the infected wolf. Their vote counts as -1 on all polls.
