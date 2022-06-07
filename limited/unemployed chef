@@ -8,3 +8,6 @@ Each game has a certain amount of players that are “waiters” - one from the 
 If a new solo team is created during the game, they do not gain a waiter.
 When the last waiter dies, the Unemployed Chef stops playing, descends and loses.
 The Unemployed Chef may not protect themself.
+
+__Simplified__
+The Unemployed Chef is a variant of the chef. They may not send out food like the chef does, instead they can directly protect one player each night.
