@@ -3,7 +3,7 @@ __Basics__
 Each night, the Shepherd may tag two players. If two tagged players visit each other, they both become herded. When everyone is dead, herded or part of the flock team the Shepherd wins.
 __Details__
 When a tagged player visits another tagged player they become herded but remain tagged, if they then visit or are visited by another tagged player who is not herded then that player is then also herded. Tagging a player is an immediate ability.
-Additionally each night the Shepherd can choose to make one Tagged player Herded as an end night effect.
+Additionally each night the Shepherd can choose to make one tagged player herded as an end night effect.
 Whenever a player is herded, they will join a secret channel with the other herded players. Becoming herded is a consequence of the action. The Shepherd may see everything said in this channel, from the safety of their secret channel. 
 Members of the flock can not be tagged or herded.
 Every time someone is herded or unherded the Shepherd will be informed.
