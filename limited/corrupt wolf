@@ -1,10 +1,12 @@
 **Corrupt Wolf** | Werewolf Power | Limited
 __Basics__
-Once per game, the Corrupt Wolf may cancel the election.
+The Corrupt Wolf can manipulate a player's votes in the next day's public polls.
 __Details__
-The Corrupt Wolf may cancel the election at any time of day or night, and it will apply to the current (or if there is none the next) election. If there are several elections the Corrupt Wolf may only cancel one of them.
-Cancelling the election is an immediate ability. However, the fact that the election has been canceled will only be revealed at the end of the day. 
-Cancelling the election results in nobody getting elected from the election that day.
+Each night, the Corrupt Wolf may select a player and a number of votes (2 or -1). The next day, the selected player has the chosen vote value instead of their usual value. 
+The number of votes replaces the player's vote, it is not additive. However, the Mayor retains their extra vote.
+Manipulating a vote is immediate. The Corrupt Wolf may manipulate a member of the wolfpack. The Corrupt Wolf may also communicate with their chosen player in a whispers channel during the day.
+The Corrupt Wolf is a lycan and also part of the pack.
 
 __Simplified__
-Once per game, the Corrupt Wolf may cancel the election.
+The Corrupt Wolf can manipulate a player's votes in the next day's public polls, changing their number of votes to either 2 or -1.
+Additionally, the Corrupt Wolf can anonymously talk to their target.
