@@ -1,0 +1,1 @@
+"angel" "%r" "infopin angel,players set public_votes %r -1,delay 1 delete 1"
