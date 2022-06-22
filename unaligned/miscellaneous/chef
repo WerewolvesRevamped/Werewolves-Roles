@@ -12,5 +12,6 @@ When the last waiter dies, the Chef stops playing, descends and loses.
 The Chef may not select themself as customer.
 
 __Simplified__
-The Chef can send protecting food or poisoned food each night to a customer they select. The customer can decide to eat it the next day and either gains protection for the following night or they die at the end of the day.
-The Chef also has waiters, one from every team except unaligned. When all the waiters are dead, the Chef stops playing, descends and loses.
+The Chef has one waiter from every team, and their goal is to keep at least one alive.
+They may send protective or poisoned food to one person each night. During the day their target can choose to eat it.
+They then are eithered killed at the end of the day or protected during the following night.
