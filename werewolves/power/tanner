@@ -7,3 +7,8 @@ The Tanner may disguise themself. Disguising players is an immediate effect.
 If the Tanner disguises a player who is part of the wolfpack, the Tanner is informed by the Hosts that “At least one of the players you tanned today is part of the wolfpack”. 
 If the Tanner dies, the assigned players will keep their disguises for the night. All players lose their disguise at the end of the night.
 The Tanner is not a lycan, is not part of the wolfpack, and is not affected by strong disguises.
+
+__Simplified__
+The Tanner and the wolfpack do not know each other.
+Each day, the Tanner may weakly disguise up to two players as roles of the Tanner’s choosing for the following night.
+If at least one of the players is a member of the wolfpack, the Tanner is informed.

@@ -4,3 +4,7 @@ Each night, the Huntsman may check a target to determine if they are “part of 
 __Details__
 The Huntsman cannot see a player’s role, but they can check whether a player is in the wolfpack. 
 The Huntsman’s inspection is an immediate ability. Since the Huntsman does not check the role itself, they are not affected by any disguises or obstructions, but are affected by redirections.
+
+__Simplified__
+Each night, the Huntsman may check a target to determine if they are part of the wolfpack or not.
+They are not affected by any disguises or obstructions, but are affected by redirections.

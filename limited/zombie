@@ -2,12 +2,19 @@
 __Basics__
 Each night, the Zombie may bite another player. If a player is bitten a second time they become a Zombie.
 __Details__
-When a Zombie bites another player they become "bitten". The bitten player does not know about this. When a Zombie bites a player that is already bitten, they immediately become a Zombie. 
-That player betrays their team and joins the graveyard channel. They can also immediately bite another player. If they previously were part of another group, they remain in it, but lose their vote. If all members of a certain group have been turned or are dead, their ability will be lost and the group is disbanded.
+When a Zombie bites another player they become “bitten“. The bitten player does not know about this. When a Zombie bites a player that is already bitten, they immediately become a Zombie.
 If a Zombie dies, every other Zombie that has been turned by the dying Zombie also dies. 
 The Zombies win when all players are either dead or part of the graveyard team.
 Zombies are part of the graveyard channel and know the other Zombies and corpses.
 Zombies cannot bite other members of the graveyard channel.
+
+When a player turns into a Zombie, they betray their team and join the graveyard channel. They can also immediately bite another player. 
+They lose their previous role, but if they were part of a group like the wolfpack, they will remain in the channel and will still be able to vote (though internally their vote won't be counted) as long as at least one other member of their group is still alive. 
+If all members of a group have changed role or died, the group is disbanded and any abilities it may have had are lost. 
 __Edge Cases__
 If a Zombie changes their role, they will no longer die when its creator Zombie dies, nor will it cause the death of Zombies it has created (neither immediately, nor when it dies).
-If a Zombie tries to turn a member of the hell team (second bite), their power backfires, and instead the Zombie becomes an imp. Since members of hell can't be turned into Zombies, they may be bitten for a "second" time several times.
+If a Zombie tries to turn a member of the hell team (second bite), their power backfires, and instead the Zombie becomes an imp. Since members of hell can't be turned into Zombies, they may be bitten for a “second“ time several times.
+
+__Simplified__
+Each night, the Zombie may bite another player. If a player is bitten a second time they become a Zombie and join the graveyard channel. They win when all players are either dead or part of the graveyard team.
+If a Zombie dies, every other Zombie that has been turned by the dying Zombie also dies.

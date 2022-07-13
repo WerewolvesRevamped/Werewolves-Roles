@@ -6,3 +6,7 @@ __Details__
 The Cautious Hag is one of the hags (`$i hags`).
 During the night, the Cautious Hag may once use their spell to protect a player. The Cautious Hag may protect themself. This power is not affected by redirections. 
 Protecting a player is an immediate effect. Protected players will be immune to attacks for the rest of the night. If the protected player is a hag, they can also not be affected by any other action that is counted as “wronging“ (e.g. Solo Power Effects).
+
+__Simplified__
+The Cautious Hag is one of the hags and can win with any team that hasn't wronged the hags, but cannot win if they have never been wronged.
+The Cautious Hag may once protect a player, including themself.

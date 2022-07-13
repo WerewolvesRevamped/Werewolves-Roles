@@ -8,3 +8,8 @@ When a demonized player is killed in the night, they will turn into an undead. T
 If there are several Vampires, they work together.
 Demonizing a player is an immediate ability.
 If no members of the underworld channel remain, all demonized players are no longer demonized.
+
+__Simplified__
+Each night, the Vampire may demonize one player. During even numbered nights, they may demonize two. The target will not know they are demonized.
+If a demonized player is killed in the night, they will instead turn into an undead and join the Underworld Team.
+The Vampire wins the game if all players are either Vampire, dead or undead.
