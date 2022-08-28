@@ -12,5 +12,5 @@ When no members of the pyro channel are left, the Wisp is informed and turns int
 If several Wisps exist when the last member of the pyro channel dies, all of them turn into pyromancers and join the pyro channel.
 
 __Simplified__
-The Wisp may visit one person each day, if that person has been powdered, then the Wisp ignites the visited person at the end of the day. If that person is not powdered, the Wisp powders that person.
+The Wisp may visit one person each day, killing them if powdered, and otherwise powdering them.
 The Wisp is a member of the pyro team, but not a member of the pyro channel. The Wisp cannot be ignited.

@@ -7,5 +7,5 @@ If any player that is enchanted uses an ability on the Flute Apprentice, the abi
 If no Flute Players remain, the Flute Apprentice turns into a Flute Player and loses their redirection power.
 
 __Simplified__
-The Flute Apprentice is a Flute Player that can’t enchant other players; instead, they can become the Flute Player if no Flute Players remain.
+The Flute Apprentice becomes a Flute Player if none remain.
 Additionally, the Flute Apprentice can redirect the abilities of enchanted players.
