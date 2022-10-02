@@ -1,6 +1,6 @@
 <?CharmedFood:🍽> You have been selected by the Chef! <?PoisonedFood:🥗> 
 
-The Chef <?Chef:> has sent you food. Either it is charmed food <?CharmedFood:> or it is poisoned food <?PoisonedFood:>. 
+The Chef has sent you food. Either it is charmed food <?CharmedFood:> or it is poisoned food <?PoisonedFood:>. 
 If you eat the food and it is poisoned, you die at the end of this day. If you eat the food and it is charmed, you are invulnerable from night attacks for the next night.
 
 You have to decide to either:
