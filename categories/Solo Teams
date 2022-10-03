@@ -7,9 +7,9 @@
 <?Rodent:> Plague
 <?Vampire:> Underworld
 
-<?Reaper:> *Nightmare*
+<?NightmareTeam:> *Nightmare*
 <?Shepherd:> *Flock*
 <?BitterHag:> *Hag\**
-<?Zombie:> *Graveyard*
+<?GraveyardTeam:> *Graveyard*
 
 \* Teams can only be created mid-game
