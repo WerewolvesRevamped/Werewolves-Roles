@@ -2,7 +2,7 @@
 The role book for Werewolves Revamped.  
 
 # Related Repositories
-[Werewolves Icons](https://github.com/venomousbirds/Werewolves-Icons/)
+[Werewolves Icons](https://github.com/venomousbirds/Werewolves-Icons/)  
 [Werewolves Bot](https://github.com/McTsts/Werewolves-Bot)
 
 # Public Information 
