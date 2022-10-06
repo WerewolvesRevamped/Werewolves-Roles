@@ -4,7 +4,7 @@ At the end of Day 0, the Horseman becomes one of the other Horseman roles.
 __Details__
 The Horseman can not immediately become an Apocalyptic Horseman.
 Each Horseman can doom a player every night, the effect of which depends on the type of Horseman.
-When a Horseman attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them.
+When a Horseman attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them. Doomed players can be doomed again by the same or a different Horseman.
 When all remaining Horsemen are united and all remaining players doomed, Doomsday is unleashed. Once that happens, all Horsemen turn into Apocalyptic Horsemen, with the ability to kill a player each night. The Horsemen win when everyone else is dead.
 
 __Simplified__
