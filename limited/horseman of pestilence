@@ -3,7 +3,7 @@ __Basics__
 Each night, the Horseman of Pestilence may doom a player. Too sick to act, any attempt of that player to use an ability during the night and next day will fail.
 __Details__
 Dooming a player is an immediate effect. For the rest of the night and the following day, any attempts to use an ability will fail for that player. For some abilities, this may be indistinguishable from other failures (attacks), while others have no other way of failing (investigations).
-When the Horseman of Pestilence attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them.
+When the Horseman of Pestilence attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them. Doomed players can be doomed again by the same or a different Horseman.
 When all remaining Horsemen are united and all remaining players doomed, Doomsday is unleashed. Once that happens, the Horseman of Pestilence turns into an Apocalyptic Horseman, with the ability to kill a player each night. The Horsemen win when everyone else is dead.
 
 __Simplified__
