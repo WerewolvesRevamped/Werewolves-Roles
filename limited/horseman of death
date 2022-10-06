@@ -3,7 +3,7 @@ __Basics__
 Each night, the Horseman of Death may doom a player. The Horseman marks the player, and they will die the next night.
 __Details__
 Dooming a player is an immediate effect. Players doomed by the Horseman of Death will die at the end of the next night (not an attack).
-When the Horseman of Death attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them.
+When the Horseman of Death attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them. Doomed players can be doomed again by the same or a different Horseman.
 When all remaining Horsemen are united and all remaining players doomed, Doomsday is unleashed. Once that happens, the Horseman of Death turns into an Apocalyptic Horseman, with the ability to kill a player each night. The Horsemen win when everyone else is dead.
 
 __Simplified__
