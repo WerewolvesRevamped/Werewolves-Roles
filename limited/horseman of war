@@ -3,7 +3,7 @@ __Basics__
 Each night, the Horseman of War may doom a player. During war there is no time for elections, thus during the next day they will lose their vote and cannot be elected.
 __Details__
 Dooming a player is an immediate effect. The public vote of players doomed by the Horseman of War will not count during the next day, and should they be elected, the election fails and nobody is elected instead.
-When the Horseman of War attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them.
+When the Horseman of War attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them. Doomed players can be doomed again by the same or a different Horseman.
 When all remaining Horsemen are united and all remaining players doomed, Doomsday is unleashed. Once that happens, the Horseman of War turns into an Apocalyptic Horseman, with the ability to kill a player each night. The Horsemen win when everyone else is dead.
 
 __Simplified__
