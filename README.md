@@ -8,7 +8,6 @@ The role book for Werewolves Revamped.
 # Related Repositories
 [Werewolves Icons](https://github.com/venomousbirds/Werewolves-Icons/)  
 [Werewolves Bot](https://github.com/McTsts/Werewolves-Bot)
-
   
 # Public Information 
 Please add all new roles in the "limited" folder, as all roles we add usually go through a testing process first before being fully added. 
