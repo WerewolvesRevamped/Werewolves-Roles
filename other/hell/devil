@@ -1,5 +1,5 @@
 **Devil** | Solo Killing - Hell Team
-__Basics__
+__Basics__ 
 Each day, the Devil may choose one player to send the devil’s wager to. 
 The devil's wager recipient may choose one of four options.
 The Devil can use the hell team's pool of souls.
@@ -14,7 +14,7 @@ Use `$info souls` for a detailed explanation.
 
 The Devil can't send the wager to soulless players. The wager is sent at the start of the night. The wager cannot be redirected onto another player.
 The Devil can anonymously communicate with the recipient.
-Until the end of the night, the recipient may choose to sell their soul to protect or attack somebody, or to share their identity to learn the role of another player. 
+Until the end of the night, the recipient may choose to sell their soul to protect or attack somebody, or to share their identity to learn the role of another player, which the devil will also see. 
 Alternatively, they may also ignore the wager. 
 If the Devil dies before the night ends, the recipient is not informed, however no wager action can happen anymore.
 Use `$info wager` for a detailed explanation.
@@ -22,9 +22,11 @@ Use `$info wager` for a detailed explanation.
 Members of the Hell team cannot change role or betray the team in any way.
 
 __Simplified__
-Each day, the Devil may choose one player to send the devil’s wager to. The devil's wager recipient may choose one of four options: Kill, protect, investigate or ignore.
-If the devil's wager recipient chooses to protect or kill a player, their soul is sold and put into the hell team's pool of souls. Alternatively, the devil's wager recipient can check another player, and the Devil will get to know the devil's wager recipient's role.
-The Devil can use the hell team's pool of souls. The hell team can use these souls to protect or kill players.
+Each day, the Devil may choose one player to send the devil’s wager to, who may then choose one of four options: Kill, protect, investigate or ignore.
+Should they choose to kill or protect, their soul is sold and added to the hell team's pool.
+If they instead choose to investigate, the devil will learn their role, and both will learn the role of the player chosen for investigation.
+The hell team can use obtained souls for protection or to kill players.
+
 The Devil can choose a weak disguise at the start of the game.
 When everyone is dead, unaligned or soulless the Devil wins.
 Members of the Hell team cannot change role or betray the team in any way.

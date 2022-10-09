@@ -12,6 +12,6 @@ The jury is affected by weak disguises and obstructions. These effects are seen 
 The jury's first check happens during Night 2. If the jury started with two Jurors they may check again each night. For every additional Juror the jury started with they have to wait an additional night between checks.
 
 __Simplified__
-The Jurors have a secret channel where they can communicate among themselves securely. During certain nights, the jury votes to investigate a player.
+The Jurors share a secret channel and know each other. During certain nights, the jury votes to investigate a player.
 If the jury successfuly investigates a non-town role, it is announced publically.
 The jury is disbanded if there are 1 or less Jurors left.

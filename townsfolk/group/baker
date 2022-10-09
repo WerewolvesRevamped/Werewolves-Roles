@@ -7,4 +7,4 @@ If a Baker loses their role, they will still keep access to the channel. This me
 If a Baker is infected by the infecting wolf their role changes to bloody butcher, instead of wolf. If this happens, all other Bakers become butchers, and are notified of this change. 
 
 __Simplified__
-There is always more than one Baker. All the Bakers have a secret channel where they can communicate with the other Bakers securely.
+All the Bakers share a secret channel and know each other.

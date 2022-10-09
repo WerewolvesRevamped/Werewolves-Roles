@@ -8,4 +8,4 @@ The target is not told they have been copied by the Look-Alike. This means that 
 Some Look-Alike special cases can be seen under `$i la cases`.
 
 __Simplified__
-During Night 1, the Look-Alike must choose one other player. All data, including whether they are enchanted or not, demonized, in love, etc, is copied.
+During Night 1, the Look-Alike must choose one other player to copy. All data, including whether they are enchanted or not, demonized, in love, etc, is copied.
