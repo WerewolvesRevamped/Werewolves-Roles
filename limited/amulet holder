@@ -2,7 +2,7 @@
 __Actions__
 At the start of the game, the Amulet Holder is the first holder of the *Amulet of Protection*. Whoever holds the amulet is protected from attacks during the night, but must pass it to another player during the day.
 __Basics__
-When passing the amulet, up to three players may be specified (either at once or separately) and the amulet will be passed to the first player who has not previously had the amulet. Selecting a target is an immediate effect and should the selection fail the holder is immediately informed, however passing the amulet is an end day effect. If the holder of the amulet does not or cannot choose a player to pass the amulet to, it shatters at the end of the day, killing the holder.
+When passing the amulet, up to three players may be specified (either at once or separately) and the amulet will be passed to the first player who has not previously had the amulet. Selecting a target is an immediate effect and should the selection fail the holder is immediately informed, however passing the amulet is an end-day ability. If the holder of the amulet does not or cannot choose a player to pass the amulet to, it shatters at the end of the day, killing the holder.
 Holders of the amulet do not know who gave them the amulet, nor do they know who has previously held it.
 The Amulet Holder must pass the amulet during Day 1.
 Once per game, the Amulet Holder may choose to shatter the amulet during the day, destroying it and immediately attacking the holder. 
