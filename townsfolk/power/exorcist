@@ -4,7 +4,7 @@ Each day, the Exorcist may remove negative effects from one player.
 __Details__
 Each day, the Exorcist can exorcise one player. All negative effects caused by solo roles are removed from the player and the Exorcist is informed which effects were removed. Exorcising a player is an immediate effect.
 Players that have already been exorcised can not be exorcised again. The Exorcist can not cure players if they have changed role as the result of an effect, such as the Undead, but can still remove other possible effects the Undead has. 
-The solo team whose effect is cured is informed about this.
+All the members of the solo team whose effect is cured are informed about this.
 __Negative Effects__
 The following effects can be removed by the Exorcist:
 
