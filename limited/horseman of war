@@ -1,11 +1,11 @@
 **Horseman of War** | Solo Power - Horsemen Team
 __Basics__
-Each night, the Horseman of War may doom a player. During war there is no time for elections, thus during the next day they will lose their vote and cannot be elected.
+Each night, the Horseman of War may doom a player. There is no time for elections whilst war is raging: during the next day they will lose their vote and cannot be elected.
 __Details__
-Dooming a player is an immediate effect. The public vote of players doomed by the Horseman of War will not count during the next day, and should they be elected, the election fails and nobody is elected instead.
-When the Horseman of War attempts to doom another Horseman it fails and the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them. Doomed players can be doomed again by the same or a different Horseman.
-Dooming and the effect with it persist even if the Horseman of War dies, but immediately disappears when no Horsemen are left.
-When all remaining Horsemen are united and all remaining players doomed, Doomsday is unleashed. Once that happens, the Horseman of War turns into an Apocalyptic Horseman, with the ability to kill a player each night. The Horsemen win when everyone else is dead.
+Dooming a player is an immediate effect. The public vote of players doomed by the Horseman of War will not count during the day after their dooming, and should they win the election poll, the election fails and nobody is elected.
+When the Horseman of War attempts to doom another Horseman, it fails: the two Horsemen unite, joining a shared channel. Doomed players are informed that they have been doomed, but not which Horseman doomed them. Doomed players can be doomed again by the same or a different Horseman.
+Dooming and its associated effect persist even if the Horseman of War dies, but immediately disappear when no Horsemen remain.
+When all remaining Horsemen are united and all remaining players doomed, Doomsday is unleashed: the Horseman of War turns into an Apocalyptic Horseman, with the ability to kill a player each night. The Horsemen win when everyone else is dead.
 
 __Simplified__
-Each night, the Horseman of War may doom a player, removing their public vote and making them unelectable for a day. If they attempt to doom another Horseman they instead join a shared channel. When all players are doomed, each Horseman may kill a player every night. The Horsemen win when everyone else is dead.
+Each night, the Horseman of War may doom a player, removing their public vote and making them unelectable for a day. If they attempt to doom another Horseman, they instead join a shared channel. When all players are doomed, each Horseman may kill a player every night. The Horsemen win when everyone else is dead.
