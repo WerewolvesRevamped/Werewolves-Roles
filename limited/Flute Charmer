@@ -4,10 +4,10 @@ The Flute Charmer is a flute player that can’t enchant other players; instead,
 __Details__
 During the day, the Flute Charmer may charm a player, the charmed player is not informed about this. This action is immediate. 
 Successfully charming a player will tell the Flute Charmer their targets role. This result is affected by strong disguises, redirections, and obstructions. Charmed players are weakly disguised as flute player.
+This effect will disappear once no members of the Flute Player channel or team remain. The players are not told when the effect disappears.
 When a player is both charmed and enchanted, the charmed status is removed.
 The Flute Charmer can target themself or other members of the flute team.
 If no flute players remain, the Flute Charmer turns into a flute player and loses their current powers.
-When the flute team is disbanded, the charmed status is removed from all players.
 
 __Simplified__
 The Flute Charmer becomes a flute player if none remain.
