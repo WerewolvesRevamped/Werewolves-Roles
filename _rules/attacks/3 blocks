@@ -1,5 +1,5 @@
 **Blocks**
-There's several ways an attack can be stopped. These sort of abilities/effects are applied in the following order:
+There are several ways an attack (or kill) can be stopped. These sort of abilities/effects are applied in the following order:
 
 1) Absences (such as hooker)
 2) Effect Based Defenses (such as the witch's potion of life or the chef's charmed food)
@@ -8,4 +8,4 @@ There's several ways an attack can be stopped. These sort of abilities/effects a
 5) Role Based Role Changes (such as Cursed Civilian)
 6) Effect Based Role Changes (such as vampire's demonization)
 
-If a player is attacked, all points apply. If a player is killed or dies, the first four points are skipped, and only role changes can still stop the death.
+For both attacks and direct kills all six points apply, though most defensive abilities apply only to attacks.

@@ -13,7 +13,7 @@ All pull requests should be reviewed & approved by an Admin that didn't make it.
 
 ## Auto Role Sync
 Anything within the "elected", "limited", "categories", "archive" folders is considered a role. Anything in subfolders of "werewolves", "townsfolk", "other" and "unaligned" is also considered a role.    Roles are sorted into categories according to what folder they're in. Each category has a header in "\_categories". 
-Anything within the "channels" folder is considered a channel description.
+The "channels" folder is responsible for channel commands and info.
 
 ## Book Generation
 The "book" file determines in which order the categories are displayed. Within a category elements are displayed alphabetically.  
