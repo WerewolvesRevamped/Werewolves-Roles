@@ -3,9 +3,9 @@ __Basics__
 Each night, the Saboteur Wolf may select one player to disqualify from the public election poll.
 __Details__
 Each night, the Saboteur Wolf may select one player. 
-That player can not be voted for in the election poll in the following day phase. The selected player can still be lynched and can still vote in the election poll. 
+That player can still be voted for in the election poll in the following day phase, but should they win, nobody is elected. The selected player can still be lynched and can still vote in the election poll. 
 The Saboteur Wolf may not sabotage the same player two nights in a row, but can sabotage themself or others in the wolfpack.
 Sabotaging is an immediate ability.
 
 __Simplified__
-Each night, the Saboteur Wolf may select one player to disqualify from the next day's public election poll.
+Each night, the Saboteur Wolf may select one player to disqualify from the next day's public election. If voted for, they will not be elected. 
