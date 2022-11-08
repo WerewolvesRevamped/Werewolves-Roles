@@ -3,7 +3,7 @@ __Basics__
 The Flute Apprentice is a Flute Player that can’t enchant other players; instead, they can become the Flute Player if no Flute Players remain. Additionally, the Flute Apprentice can redirect the abilities of enchanted players.
 __Details__
 The Flute Apprentice may target a player. They can update this target once per phase, with 1 emergency change to be used whenever the Flute Apprentice wants. 
-If any player that is enchanted uses an ability on the Flute Apprentice, the ability is instead redirected onto the Flute Apprentice's target. The original player is not informed about this, but the Flute Apprentice is informed that an ability was redirected. 
+If any player that is enchanted uses an ability on the Flute Apprentice, the ability is instead redirected onto the Flute Apprentice's target. The original player is not informed about this.
 If no Flute Players remain, the Flute Apprentice turns into a Flute Player and loses their redirection power.
 
 __Simplified__

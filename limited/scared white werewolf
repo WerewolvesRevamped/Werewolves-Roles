@@ -1,0 +1,10 @@
+**Scared White Werewolf** | Solo Killing - White Wolves | Limited
+__Basics__
+The Scared White Werewolf is a werewolf who is not satisfied with merely killing the townsfolk; they must kill all the werewolves as well.
+__Details__
+The Scared White Werewolf is a variant of the white werewolf intended for bigger games.
+It works exactly like the White Werewolf (`$info white werewolf`), with one exception: 
+They will be protected from the first night attack to target them. They are informed that they were attacked. After being attacked once, it will lose this ability.
+
+__Simplified__
+The Scared White Werewolf is a variant of the White Werewolf, with one difference: They will be protected from the first night attack to target them. 
