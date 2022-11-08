@@ -1,6 +1,10 @@
 # Werewolves-Roles
 The role book for Werewolves Revamped.  
 
+# Versions of the Role Book
+[Simplified Role Book Website](http://werewolves.me/)  
+[Role Book Document](https://docs.google.com/document/d/1WeoM3uYWlOb_G8uhJTSeW116m86XwZeJ1zjfES6Jbyw)  
+
 # Related Repositories
 [Werewolves Icons](https://github.com/venomousbirds/Werewolves-Icons/)  
 [Werewolves Bot](https://github.com/McTsts/Werewolves-Bot)

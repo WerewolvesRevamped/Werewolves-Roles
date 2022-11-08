@@ -1,23 +1,25 @@
-**Reaper** | Solo Power - Nightmare Team 
+**Reaper** | Solo Killing - Nightmare Team 
 __Basics__
 Each night the Reaper may turn one player sleepless.
 The Reaper wins when all living players have been turned sleepless or are part of the nightmare team.
-Additionally, the Reaper may use the powers of dead players, temporarily.
+Additionally, the Reaper may use the general powers of dead players, temporarily.
 __Details__
-The Reaper knows the roles of all dead players, and is informed as soon as they die. During the next day and/or night the Reaper will be able to use the power of every player that has died since the start of the previous day/night.
-The gained abilities can only be used during this/these phase(s), and are lost after that. Day abilities have to be used during the day and night abilities during the night. General abilities can be used during both the next day and night.
-If one of the dead players had a disguise when they died, their disguise is applied to the Reaper for two phases.
-Use `$info reaper abilities` for a detailed explanation on how the reaper can use certain abilities.
-
 Each night, the Reaper can immediately turn one player sleepless. 
-Players are privately informed when they become sleepless. The Reaper cannot become sleepless, nor can other members of the nightmare team or channel.
-The Reaper cannot use any powers on a player they have already turned sleepless, unless it's a power that specifically requires sleepless players to work.
-However, when a sleepless player uses a power on the Reaper, their power fails and the Reaper automatically attacks them (immediate). 
-One exception is that sleepless players may still target the Reaper.
+The Reaper knows the final role of all dead players, and is informed the night after they die. During the night the Reaper will be able to use a power depending on the category of every player that has died since the start of the previous night.
+The gained abilities can only be used during this phase, and are lost after that.
+
+Killing roles allow the Reaper to attack one player during the night (end night).
+Power roles allow the Reaper to turn an additional player sleepless.
+Investigative roles allow the Reaper to check the role of one player (affected by weak disguises, redirections, and obstructions).
+Recruitment roles allow the Reaper to convert a player into a spirit.
+When another role dies, the Reaper gains a strong disguise for the current night and the following day. This disguise is chosen at the start of the game.
+
+Players are privately informed when they become sleepless. Members of the nightmare team or channel cannot be turned sleepless.
+When a sleepless player uses a power (except for targeting) on the Reaper, their power fails and the Reaper automatically attacks them (immediate). 
 If no members of the nightmare team or channel remain all players are no longer sleepless, however they are not informed about this.
 
 __Simplified__
 Each night the Reaper may turn one player sleepless.
 The Reaper wins when all living players have been turned sleepless or are part of the nightmare team.
-Additionally, the Reaper may use the powers of dead players, temporarily.
+Additionally, the Reaper may use a set of powers based on the roles of dead players, temporarily.
 When a sleepless player attempts to use a power on the Reaper, it fails and the Reaper immediately attacks them.
