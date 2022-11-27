@@ -3,8 +3,8 @@ __Basics__
 Once per game, if attacked by a wolflike player, the Runner shall escape.
 __Details__
 When they are attacked by a wolflike player, the Runner will not die, but will be vulnerable to future attacks. 
-If a Runner is targeted by any kill other than by a wolflike player's kill, they will die the first time. 
-Runners are informed that they were attacked. If a Runner evades a wolfpack kill, the wolfpack is told their target ran away. If a Runner evades any other kill, the wolflike player responsible is informed instead.
+If a Runner is targeted by any attack other than by a wolflike player's attack, they will die the first time. 
+Runners are informed that they were attacked. If a Runner evades a wolfpack attack, the wolfpack is told their target ran away. If a Runner evades any other attack, the wolflike player responsible is informed instead.
 
 __Simplified__
 Once per game, if attacked by the werewolves, the Runner will escape.
