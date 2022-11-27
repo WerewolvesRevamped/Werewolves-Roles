@@ -1,11 +1,11 @@
 **Cult Member** | Townsfolk Group
 __Basics__
-The Cult Members and the leader have a secret channel where they can communicate among themselves securely. Each night, the cult votes to attack one player.
+The Cult Member shares a secret channel with the other cultists, where they can communicate among themselves securely. Each night, the cult votes to attack one player.
 __Details__
 The Cult Member is part of the cult. After Night 1, the cult can attack one player each night. When the cult leader dies, the cult can no longer attack at night.
 The cult decides their victims by voting on whom they suspect most. The cult’s attack is an end-night ability. 
-Any member of the cult, who no longer is a Cult Member or cult leader, can still vote on who to attack. 
+Any member of the cult, who no longer has their original role, can still vote on who to attack.
 
 __Simplified__
-The Cult Members and the leader share a secret channel and know each other.
+The Cult Member shares a secret channel with the other cultists.
 After Night 1, the cult can vote to attack one player each night. When the cult leader dies, the cult is disbanded.
