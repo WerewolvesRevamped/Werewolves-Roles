@@ -13,6 +13,8 @@ Power roles allow the Reaper to turn an additional player sleepless.
 Investigative roles allow the Reaper to check the role of one player (affected by weak disguises, redirections, and obstructions).
 Recruitment roles allow the Reaper to convert a player into a spirit.
 When another role dies, the Reaper gains a strong disguise for the current night and the following day. This disguise is chosen at the start of the game.
+If the Reaper doesn’t choose a role, they will be disguised as a citizen.
+If the Reaper changes role, the disguise is lost.
 
 Players are privately informed when they become sleepless. Members of the nightmare team or channel cannot be turned sleepless.
 When a sleepless player uses a power (except for targeting) on the Reaper, their power fails and the Reaper automatically attacks them (immediate). 
