@@ -27,13 +27,13 @@ Wolf Cub
 *Recluse*
 *Tracking Wolf*
 
-
 __Non-Werewolves:__
 Cupid Wolf
 Lupine Cupid
 White Werewolf
 
 __Conditional:__
-Imp (if originally in wolfpack)
-Undead (if originally in wolfpack)
-Zombie (if originally in wolfpack)
+Imp (if in wolfpack)
+Undead (if in wolfpack)
+Zombie (if in wolfpack)
+Spirit (if in wolfpack)
