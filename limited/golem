@@ -4,7 +4,8 @@ If the Golem is elected guardian, they win. The next night, players that opposed
 __Details__
 When the Golem wins, the Golem ascends and stops playing. The game continues.
 The next night, everyone that didn't vote for the Golem will be protected from attacks.
-Each night, the Golem may choose one player, and they will immediately be protected from attacks during the remainder of the current night. 
+Each night, the Golem may choose one player, and they will immediately be protected from attacks (end-night). 
+The Golem can only select each player once throughout the game.
 Any attack against a player protected by the Golem's ability or election fails, however a protected player may still die through other means.
 
 __Simplified__
