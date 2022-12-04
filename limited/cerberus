@@ -3,7 +3,7 @@ __Basics__
 The Cerberus wins with the devil and joins a channel with the devil to communicate securely. 
 The Cerberus can choose every day to send an offer of protection to another player in exchange for their soul.
 __Details__
-At the start of the game, the Cerberus may choose a role as a weak disguise. If the Cerberus doesn’t choose a role, they will show up as a citizen.
+During the first phase, the Cerberus may choose a role as a weak disguise (defaults to citizen).
 
 At the start of the game the Cerberus’ soul is added to the hell team’s pool of souls, and they are soulless afterwards. 
 The Cerberus cannot use souls from the soul pool.
