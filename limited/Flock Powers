@@ -1,0 +1,6 @@
+__Flock Powers__
+
+During the day, members of the flock team may temporarily steal the votes of herded players; players who have their votes stolen will be unherded, but remain tagged. Players with negative votes can't have their negative votes stolen (but will still be unherded). The Mayor's extra vote cannot be stolen. The flock team member is informed how many votes they have after stealing votes. After the day ends, the votes are returned to normal.
+During the night, if there's two or more herded players, the Shepherd is protected from attacks. Every time the Shepherd is attacked, two random herded players will immediately be unherded instead.
+During the night, if at least one herded player, the Herding Dog is also protected from attacks. Every time the Herding Dog is attacked, a random herded player will immediately be unherded instead.
+During the first phase members of the flock team can choose a role as a strong disguise (defaults to citizen). If the flock team member changes role, the disguise is lost.
