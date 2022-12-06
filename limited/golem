@@ -1,12 +1,14 @@
 **Golem** | Unaligned Miscellaneous | Limited
 __Basics__
-If the Golem is elected guardian, they win. The next night, players that opposed the Golem's election will be protected.
+If the Golem is elected guardian, they win. The next night, players that opposed the Golem's election will be protected. Additionally, there will cease to be elections for guardian.
 __Details__
 When the Golem wins, the Golem ascends and stops playing. The game continues.
-The next night, everyone that didn't vote for the Golem will be protected from attacks.
-Each night, the Golem may choose one player, and they will immediately be protected from attacks during the remainder of the current night. 
+The next night, everyone that didn't vote for the Golem will be protected from attacks. Additionally, there will cease to be elections for guardian.
+Each night, the Golem may choose one player, and they will be protected from attacks (end-night). 
+The Golem can only select each player once throughout the game.
+Additionally, each night, the Golem must choose a player that they will not be able to select for the rest of the game (Immediate). This must be a currently selectable player. If no player is selected, a random one will be selected instead. 
 Any attack against a player protected by the Golem's ability or election fails, however a protected player may still die through other means.
 
 __Simplified__
 Each night, the Golem may protect a player.
-If the Golem is elected guardian, they win and stop playing, but the game still continues. The next night, everyone that didn't vote for the Golem will be protected.
+If the Golem is elected guardian, they win and stop playing, but the game still continues. The next night, everyone that didn't vote for the Golem will be protected. Additionally, there will cease to be elections for guardian.
