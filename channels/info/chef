@@ -1,4 +1,4 @@
-<?CharmedFood:🍽> You have been selected by the Chef! <?PoisonedFood:🥗> 
+<?ChefMenu:🍽> You have been selected by the Chef! <?ChefMenu:🥗> 
 
 The Chef has sent you food. It either is charmed food <?CharmedFood:> or poisoned food <?PoisonedFood:>. 
 Should you eat poisoned food, you die at the end of the day, however charmed food will keep you safe from attacks for the next night.
