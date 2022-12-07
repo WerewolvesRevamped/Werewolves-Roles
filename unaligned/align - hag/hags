@@ -1,17 +1,17 @@
 **The Hags** | Additional Information | Limited
 __General__
-The Hags do not know each other, but always have the same win condition and alignment. Hags cannot win while dead.
+The Hags do not know each other, but always have the same win condition and alignment. Unlike other unaligned roles, Hags can win while dead, as long as one Hag survives.
 
 __Win Conditions__
-At the start of the game, the Hags cannot win. Once they have been wronged by either the townsfolk or werewolf team, they can win with any team that hasn't wronged the hags.
+At the start of the game, the Hags cannot win. Once they have been wronged by a team, they can win with any team that hasn't wronged the hags.
 If all remaining teams have wronged the Hags, all remaining Hags turn into bitter hags.
 
 __Wronging__
-If a Hag is killed, has their role changed, or is selected by a 'power' role, the team of the player responsible has wronged the Hags. If a Hag is lynched the team(s) which had the most voters on the lynched Hag has wronged the Hags.
+If a Hag is killed or has their role changed the team of the player(s) responsible has wronged the Hags. If a Hag is lynched, all teams who voted for the Hag, wrong the Hags.
 Unaligned players cannot wrong the hags.
 When the Hags are wronged it is announced, including which team has wronged the Hags, even if no Hags are left.
 
 __Powers__
-Each Hag (with the exception of the plain Hag) has one specific spell, that they can use during the night. Hags may only use their spell once, however every time a Hag is wronged they gain an additional use for their spell. Hags are allowed to wait until their spell has several uses and then use it more than once in one night.
+Each Hag (with the exception of the plain hag and the cupid hag) has one specific spell, that they can use during the night. Hags may only use their spell once, however every time a Hag is wronged they gain an additional use for their spell. Hags are allowed to wait until their spell has several uses and then use it more than once in one night.
 
 Use `$i uah` for a list of all hags.
