@@ -3,10 +3,10 @@ __Basics__
 The Vampire wins by secretly turning all the living players into undead. 
 The Vampire demonizes players; if a demonized player is killed in the night, they will instead turn into an undead.
 __Details__
-Each night, the Vampire may demonize one player. On even numbered nights, the Vampire may demonize a second player. The target will not know about it by that time. Vampires cannot demonize themselves or other members of the underworld.
+Each night, the Vampire may demonize one player. On even numbered nights, the Vampire may demonize a second player. The player will not know they have been demonised. Vampires cannot demonize themselves or other members of the underworld.
 When a demonized player is killed in the night, they will turn into an undead. The Vampire wins the game, along with the undead, if all players are either Vampire, dead or undead. 
-If there are several Vampires, they work together.
 Demonizing a player is an immediate ability.
+If there are several Vampires, they work together.
 If no members of the underworld channel remain, all demonized players are no longer demonized.
 
 __Simplified__
