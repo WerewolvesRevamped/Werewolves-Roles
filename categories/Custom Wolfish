@@ -17,6 +17,7 @@ Saboteur Wolf
 Scared Wolf
 Sneaking Wolf
 Tanner
+Trickster Wolf (T)
 Warlock
 Wolf
 Wolf Cub
@@ -28,12 +29,12 @@ Wolf Cub
 *Tracking Wolf*
 
 __Non-Werewolves:__
-Cupid Wolf
-Lupine Cupid
+Cupid Wolf (T)
+Lupine Cupid (T)
 White Werewolf
 
 __Conditional:__
-Imp (if in wolfpack)
-Undead (if in wolfpack)
+Imp (T; if in wolfpack)
+Undead (T; if in wolfpack)
 Zombie (if in wolfpack)
-Spirit (if in wolfpack)
+Spirit (T; if in wolfpack)

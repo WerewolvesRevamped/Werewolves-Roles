@@ -1,5 +1,5 @@
 **Wolfpack**
-*The wolfpack is a group consisting out of most (but not all) werewolf roles. Each night, the wolfpack votes to attack one player. Most members of the wolfpack are lycans. The wolfpack may also contain traitors.*
+*The wolfpack is a group consisting out of most (but not all) werewolf roles. Each night, the wolfpack votes to attack one player. Most members of the wolfpack are lycans. The wolfpack may also contain traitors. Some other roles may be in the wolfpack as well if they started out as a member of the wolfpack and then transformed into another role.*
 
 __Werewolves__
 Alpha Wolf
@@ -12,6 +12,7 @@ Psychic Wolf
 Saboteur Wolf
 Scared Wolf
 Sneaking Wolf
+Trickster Wolf (T)
 Wolf
 Wolf Cub
 
@@ -20,5 +21,5 @@ Wolf Cub
 *Tracking Wolf*
 
 __Traitors__
-Cupid Wolf
+Cupid Wolf (T)
 White Werewolf
