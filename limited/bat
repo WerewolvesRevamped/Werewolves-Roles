@@ -5,7 +5,7 @@ Any player that interacts with the Bat's target while the Bat is visiting become
 __Details__
 Since the Bat is haunting another player's house and not at home, any attack targeting the Bat will fail; however if the person they're haunting is attacked, then they're both attached.
 Choosing a player to haunt is an end day ability, and the Bat will stay with their target the whole night
-Additionally any player uses an ability on the Haunted player will be demonised, the Bat learns the name of all visitors of its target.
+Additionally, any player that uses an ability on the haunted player will be demonized, and the Bat will be told their name.
 If the Bat is haunting another player while being protected from attacks, the protection is ignored; only protections for the player they are haunting apply.
 The Bat is part of the Underworld team and channel. The Bat is demonized from the start of the game and may be turned into an undead.
 
