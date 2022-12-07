@@ -2,10 +2,11 @@
 __Basics__
 Each day, the Archivist Fox will learn roles from two categories, and one of them will be told to the Wolfpack. Once per game, the Archivist Fox may alternatively join the wolfpack as a regular wolf.
 __Details__
-The Archivist Fox can only be in games with partial role lists. Each day, they may pick two *different* categories from the role; they will be told a role from each category. They may than pick one of these roles, and if they survive the day, this role is announced to the wolfpack at the start of the night. The wolfpack knows this information is from the Archivist Fox, but doesn't know the second role they learned. 
-The Archivist Fox is not affected by any disguises, obstructions or redirections, as they check the role list rather than any players. They can only learn each role once, except when the role is on the role list several times, in which case they may see the role as many times as it is on the list. The Archivist Fox will never be informed that they themselves are part of the role list, but may be informed about other Archivist Foxes. If there are no roles remaining unchecked in a category, the Archivist Fox is informed that no roles remain. If the Archivist Fox fails to find any role or doesn't choose, the wolfpack will be informed that the Archivist Fox didn't find anything.
-The Archivist Fox and wolfpack do not know each other's identities. The Archivist Fox is neither a lycan, nor a member of the wolfpack. 
-If the Archivist Fox chooses to join the wolfpack, they may not investigate that day, and will lose their power as they will become a regular wolf. 
+Each day, they may pick two *different* categories from the role list; they will be told a role from each category. They may than pick one of these roles, and if they survive the day, the wolfpack will be informed that the Archivist Fox has archived this role.
+The Archivist Fox will only see each entry on the role list once (however, a role that exists twice can be seen twice, etc), but will never see themself.
+When the Archivist Fox checks a category without remaining roles, they are informed, and should both categories have no remaining roles, the wolfpack is informed of this instead.
+The Archivist Fox is unaffected by disguises, obstructions and redirections.
+The Archivist Fox is neither a lycan, nor a member of the wolfpack. 
 Joining the wolfpack and learning a role are immediate abilities.
 
 __Simplified__

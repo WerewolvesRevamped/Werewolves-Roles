@@ -5,7 +5,7 @@ The devil's wager recipient may choose one of four options.
 The Devil can use the hell team's pool of souls.
 When everyone is dead, unaligned or soulless the Devil wins.
 __Details__
-At the start of the game, the Devil may choose a role as a weak disguise. If the Devil doesn’t choose a role, they will show up as a citizen.
+During the first phase, the Devil may choose a role as a weak disguise (defaults to citizen).
 
 At the start of the game the Devil's soul is added to the hell team's pool of souls, and they are soulless afterwards.
 The Devil may use souls from the pool to protect or attack somebody. 
@@ -19,13 +19,13 @@ Alternatively, they may also ignore the wager.
 If the Devil dies before the night ends, the recipient is not informed, however no wager action can happen anymore.
 Use `$info wager` for a detailed explanation.
 
-Members of the Hell team cannot change role or betray the team in any way.
+Members of the Hell team cannot betray the team in any way.
 
 __Simplified__
-Each day, the Devil may choose one player to send the devil’s wager to, who may then choose one of four options: Kill, protect, investigate or ignore.
-Should they choose to kill or protect, their soul is sold and added to the hell team's pool.
+Each day, the Devil may choose one player to send the devil’s wager to, who may then choose one of four options: Attack, protect, investigate or ignore.
+Should they choose to attack or protect, their soul is sold and added to the hell team's pool.
 If they instead choose to investigate, the devil will learn their role, and both will learn the role of the player chosen for investigation.
-The hell team can use obtained souls for protection or to kill players.
+The hell team can use obtained souls for protection or to attack players.
 
 The Devil can choose a weak disguise at the start of the game.
 When everyone is dead, unaligned or soulless the Devil wins.

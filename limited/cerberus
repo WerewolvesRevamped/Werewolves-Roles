@@ -3,19 +3,23 @@ __Basics__
 The Cerberus wins with the devil and joins a channel with the devil to communicate securely. 
 The Cerberus can choose every day to send an offer of protection to another player in exchange for their soul.
 __Details__
+During the first phase, the Cerberus may choose a role as a weak disguise (defaults to citizen).
+
 At the start of the game the Cerberus’ soul is added to the hell team’s pool of souls, and they are soulless afterwards. 
 The Cerberus cannot use souls from the soul pool.
 
-Every day the Cerberus can choose to send an offer of protection to another player. The Cerberus cannot send their offer to a soulless player. 
-The offer is sent at the start of the night. The recipient then may choose to accept the offer or ignore it. 
-Accepting the offer is immediate and cannot be changed. Once the offer is accepted the recipient’s soul is immediately added to the soul pool. 
-After accepting the offer, the recipient is protected from any attacks for the rest of the night. 
-Should the recipient be attacked and die, the Cerberus dies instead and the role and identity of the attacker is revealed in the Hell team’s channel.
+The Cerberus can't send the offer to soulless players. The offer is sent at the start of the night. The offer cannot be redirected onto another player.
+The Cerberus can anonymously communicate with the recipient.
+The recipient accept or ignore the offer. Accepting the offer, immediately adds the recipient's soul to the soul pool, and cannot be changed. 
+Should the recipient be attacked and die after accepting the offer, the Cerberus dies instead and the role and identity of the attacker is revealed in the Hell team’s channel.
 
-Members of the Hell team cannot change role or betray the team in any way.
+Members of the Hell team cannot betray the team in any way.
+
+If the Cerberus is the last living member of the Hell team/channel, they turn into a demon.
 
 __Simplified__
 The Cerberus wins with the devil and joins a channel with the devil.
+The Cerberus can choose a weak disguise at the start of the game.
 Every day the Cerberus can choose a player to send an offer of protection, in exchange for their soul, to. 
 Should the player accept, they are protected from any attack for the rest of the night. 
 Should the recipient be killed, the Cerberus is killed instead, and the identity and role of the attacker is revealed in the Hell team’s channel.

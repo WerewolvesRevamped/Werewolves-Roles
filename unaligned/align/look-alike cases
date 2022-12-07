@@ -12,14 +12,17 @@ Town Crier
 Chef
 Psychopath
 Grandma
-Stalker
 Cupid (any variant)
 White Werewolf
+Corrupt Wolf
+Unemployed Chef
+Amulet Holder
 
 __Special Copy__
-Cult Leader => Cult Member
-Devil => Imp
-Plague Bearer => Plague Carrier
+<?CultLeader:> Cult Leader => Cult Member
+<?Devil:> Devil, Cerberus => Demon
+<?PlagueBearer:> Plague Bearer => Plague Carrier
 
-*Shepherd => Herding Dog*
-*Reaper => Spirit*
+<?Shepherd:> *Shepherd => Herding Dog*
+<?Reaper:> *Reaper => Wraith*
+<?Zombie:> *Zombie => Corpse*

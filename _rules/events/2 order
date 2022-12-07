@@ -4,7 +4,7 @@ The order of various events throughout day and night.
 __Day__ 
 Start Day Effects - Start day effects happen after end night effects and their consequences have been fully completed - if the player doing them is still alive. 
 
-Immediate Day Effects - Effects that happen immediately during the game. For example barber's kill.
+Immediate Day Effects - Effects that happen immediately during the game. For example barber's attack.
 
 Lynch - The lynch poll is closed and votes are counted, a winner is chosen but nothing else happens.
 Election - The election poll is closed and votes are counted, a winner is chosen but nothing else happens.
@@ -21,7 +21,7 @@ Start Night Effects - Start night effects (e.g. Devil's Wager) happen after end 
 
 Immediate Night Effects - Effects that happen immediately during the game. For example most investigations.
 
-End Night Effects - End night effects happen. E.g. the wolfpack's kill. If a player is alive during this stage and executes an effect, the effect happens even if they die as a consequence of an end night effect.
+End Night Effects - End night effects happen. E.g. the wolfpack's attack. If a player is alive during this stage and executes an effect, the effect happens even if they die as a consequence of an end night effect.
 End Night Effects Consequences - Consequences of the end night effects happen (e.g. somebody being attacked).
 
 __Conflicts__
