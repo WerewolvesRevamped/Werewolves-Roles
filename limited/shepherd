@@ -5,6 +5,7 @@ __Details__
 When a tagged player visits another tagged player both tagged players become herded but remain tagged. Tagging a player is an immediate ability.
 Additionally each night the Shepherd can choose to make one tagged player herded as an end night effect.
 Members of the flock can not be tagged or herded.
+During the first phase, the Shepherd can choose a role as a strong disguise (defaults to citizen).
 More herding information can be found using `$i herding`
 Members of the flock team may use Herded players to gain temporary powers, more information can be found in `$i Flock Power`
 
