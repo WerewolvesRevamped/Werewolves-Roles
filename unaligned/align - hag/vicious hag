@@ -1,6 +1,6 @@
 **Vicious Hag** | Unaligned Align | Limited
 __Basics__
-The Vicious Hag can win with any team, unless that team has wronged the hags, however the Vicious Hag cannot win if neither town nor wolves have wronged the hags.
+The Vicious Hag can win with any team, unless that team has wronged the hags, however the Vicious Hag cannot win if the hags have never been wronged.
 The Vicious Hag can attack another player.
 __Details__
 The Vicious Hag is one of the hags (`$i hags`).
@@ -9,5 +9,4 @@ Attacking a player is an end effect.
 The Vicious Hag is strongly disguises as a Hag.
 
 __Simplified__
-The Vicious Hag is one of the hags and can win with any team that hasn't wronged the hags, but cannot win if neither town nor wolves have wronged the hags.
-The Vicious Hag may once attack a player.
+The Vicious Hag is one of the hags and can win with any team that hasn't wronged the hags, but cannot win if they have never been wronged.
