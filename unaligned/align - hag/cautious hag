@@ -1,6 +1,6 @@
 **Cautious Hag** | Unaligned Align | Limited
 __Basics__
-The Cautious Hag can win with any team, unless that team has wronged the hags, however the Cautious Hag cannot win if neither town nor wolves have wronged the hags.
+The Cautious Hag can win with any team, unless that team has wronged the hags, however the Cautious Hag cannot win if the hags have never been wronged.
 The Cautious Hag can protect a player.
 __Details__
 The Cautious Hag is one of the hags (`$i hags`).
@@ -9,5 +9,5 @@ Protecting a player is an immediate effect. Protected players will be immune to 
 The Cautious Hag is strongly disguises as a Hag.
 
 __Simplified__
-The Cautious Hag is one of the hags and can win with any team that hasn't wronged the hags, but cannot win if neither town nor wolves have wronged the hags.
+The Cautious Hag is one of the hags and can win with any team that hasn't wronged the hags, but cannot win if they have never been wronged.
 The Cautious Hag may once protect a player, including themself.
