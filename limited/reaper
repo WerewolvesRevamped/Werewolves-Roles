@@ -10,8 +10,8 @@ The gained abilities can only be used during this phase, and are lost after that
 
 Killing roles allow the Reaper to attack one player during the night (end night).
 Power roles allow the Reaper to turn an additional player sleepless.
-Investigative roles allow the Reaper to check the role of one player (affected by weak disguises, redirections, and obstructions).
-Recruitment roles allow the Reaper to convert a player into a spirit.
+Investigative roles allow the Reaper to check the role of one player (immediate, affected by weak disguises, redirections, and obstructions).
+Recruitment and Align roles allow the Reaper to convert a player into a spirit (immediate).
 When another role dies, the Reaper gains a strong disguise for the current night and the following day. This disguise is chosen during the first phase (and defaults to citizen).
 If the Reaper changes role, the disguise is lost.
 
