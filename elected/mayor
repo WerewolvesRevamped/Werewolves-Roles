@@ -1,15 +1,15 @@
 **Mayor** | Elected
 __Basics__
 The Mayor leads the town. They have the privilege of being able to post in #story_time. 
-When there are more than 15 living players, each night the Mayor chooses whether the top one or two players being voted on will be lynched during the next day. When there are 15 or less living players, the Mayor instead receives an extra vote in polls.
+When there are more than 15 living players, each night the Mayor chooses whether a second player will be lynched during the next day. When there are 15 or less living players, the Mayor instead receives an extra vote in polls.
 __Details__
 The Mayor can be a powerful role to help either the innocent team or the werewolves team, but they tend to garner a lot of attention and may be killed quickly. 
 If the Mayor misuses their ability to post in #story_time, they may be demoted or killed at the discretion of the Game Masters. 
-If there is no mayor, the lynch vote always only kills the top voted player.
+If the mayor chooses that two people should be lynched, there will be a second lynch poll during the next day.
 The Mayor's extra vote cannot be nullified, stolen or removed under any circumstances.
 If the Mayor's normal vote is a negative vote, the extra vote becomes a negative vote too.
 
 __Simplified__
 The Mayor is elected before the other elected roles. They are able to post in #story_time.
-When there are 15 or more players, they may decide that two players will be lynched during the next lynch.
+When there are 15 or more players, they may decide that a second player will be lynched during the next day.
 When there are less than 15 players, they instead get 2 votes on the public polls.
