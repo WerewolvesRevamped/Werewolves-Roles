@@ -1,1 +1,1 @@
-"amulet holder" "%r" "channels infopin amulet-of-protection"
+"amulet holder" "%r" "channels infopin amulet-of-protection,connection add amulet%n,delay 1 delete 1"
