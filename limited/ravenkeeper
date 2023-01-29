@@ -1,0 +1,8 @@
+**Ravenkeeper** | Townsfolk Investigative | Limited
+__Basics__
+Each night, the Ravenkeeper may either assign one of its birds, or use them to spy. When using the birds to spy, the Ravenkeeper will learn if any of them interact with each other.
+__Details__
+The Ravenkeeper starts out with 1 raven for every 5 players in the game (rounded down). Each night, the Ravenkeeper may assign one of them to another player. Ravens can also be reassigned from one player to another. Assigning a raven is an immediate effect. Ravens assigned to dead players automatically return to the Ravenkeeper. Ravens not assigned to another player are considered to be assigned to the Ravenkeeper.
+Instead of assigning a raven, the Ravenkeeper can also use their ravens to spy. Using the ravens to spy is an immediate effect. For the rest of the night, the Ravenkeeper will be told when a player with a raven uses an action on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done.
+The Ravenkeeper is affected by redirections.
+
