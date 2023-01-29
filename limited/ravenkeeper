@@ -6,3 +6,6 @@ The Ravenkeeper starts out with 1 raven for every 5 players in the game (rounded
 Instead of assigning a raven, the Ravenkeeper can also use their ravens to spy. Using the ravens to spy is an immediate effect. For the rest of the night, the Ravenkeeper will be told when a player with a raven uses an action on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done.
 The Ravenkeeper is affected by redirections.
 
+__Simplified__
+Each night, the Ravenkeeper may either assign a raven or spy. Ravens not assigned to a living player are assigned to the Ravenkeeper.
+IF the Ravenkeeper chooses to spy, it will be told the names of any two players with ravens that interact with each other.
