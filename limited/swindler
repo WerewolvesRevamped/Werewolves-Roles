@@ -3,9 +3,9 @@ __Basics__
 The Swindler's goal is to use deception in order to deprive players of their votes. It can swindle one person into losing the value of their voting ballot each night.
 When a third of the currently living players have been swindled, the Swindler wins. After the Swindler wins, the votes are slowly returned once per night in the order they were stolen in. However if they die, the votes are immediately returned instead.
 __Details__
-Each night, the Swindler can swindle one player. This is an immediate ability
+Each night, the Swindler can swindle one player. This is an immediate ability.
 The target will have their voting ballot swapped for one with a voting power of 0, however a Mayor will retain their +1 vote. If the targets voting value is updated after being swindled, the Swindler overrides it and it stays 0.
-A Swindler may select themself, and swindling someone does not affect their own voting value.
+A Swindler may select themself, and swindling someone does not affect its own voting value.
 When 1/3 of the currently living players (rounded up), including themself, have all been swindled, the Swindler ascends and stops playing. The game continues. The Swindler can’t win when they are dead. 
 If the Swindler dies, all the lost votes are immediately returned. But if the Swindler wins, one vote will be returned each night after their ascension, in the order they were lost in. So at the start of the first night after the Swindler's ascension, the first swindled vote is returned, etc.
 
