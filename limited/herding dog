@@ -1,10 +1,12 @@
 **Herding Dog** | Solo Power - Flock Team | Limited
 __Basics__
 The Herding Dog wins with the shepherd and joins a channel with the shepherd to communicate securely.
+The Herding Dog can choose to communicate securely with a herded player each night.
+The Herding Dog can also infiltrate the Herded channel in place of another player being herded
 __Details__
-The Herding Dog has access to the powers of the Flock Team, more information of this can be found at `$i flock powers`
-The Herding Dog is usually the result of someone copying the shepherd for various reasons. This is because the shepherd is too powerful for there to be two. Their win condition is the same as the shepherd’s.
-During the first phase, the Herding Dog can choose a role as a strong disguise (defaults to citizen).
+Each night the Herding Dog can choose a herded player and add them to a seperate channel to anonymously communicate with them
+The Herding Dog can also choose to become herded in place of another person that night, while herded the Herding Dog becomes immune to attacks like other herded players
+The Herding Dog can 
 
 __Simplified__
 The Herding Dog wins with the shepherd and joins a channel with the shepherd to communicate securely.
