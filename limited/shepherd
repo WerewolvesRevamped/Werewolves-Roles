@@ -4,11 +4,11 @@ Each night, the Shepherd may herd a certain amount of players.
 If all living players are herded, unaligned or part of the Flock team/channel Members the Flock Team wins.
 __Details__
 Whenever a player is herded by the Shepherd they are added to the herded channel, here the Shepherd can anonymously talk with herded players.
-Herded players cannot be killed, instead they will become unherded, neither can the Shepherd be killed by herded players.
-Herded players are informed they are Herded.
-At the end of each night the Shepherd is informed of everyone who is herded and Unherded that phase.
+At night, herded players cannot be killed, instead they will become unherded, when this happens the Shepherd is informed who got unherded. 
+Herded players are informed they are herded.
+Whenever a herded player attempts to attack the Shepherd, the attack fails.
 
-The Shepherd is able to herd 1 player for every 15 players in the game (rounded). They may not herd a member of the flock team or channel
+The Shepherd is able to herd 1 player for every 15 players in the game (rounded; this means ≤22 ⇒ 1 herding, >22 ⇒ 2 herdings). They may not herd a member of the flock team or channel.
 The amount of players used is the amount of players that are apart of the game, not alive players.
 
 The Shepherd will work together with any herding dogs, they will all be part of a flock channel where they can communicate securely.
