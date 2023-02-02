@@ -1,0 +1,11 @@
+**Bear** | Unaligned Miscellaneous | Limited
+__Basics__
+The Bear is not hostile unless visited. If it's visited it will attack the visitors. The Bear wins by attacking two people.
+__Details__
+Visiting a Bear will not cause your action to fail, however it will result in the bear attacking you. The bear does not consider targetting actions as visits, but any other kind of power or attack does count.
+The Bear's attack is immediate.
+The Bear is invulnerable to night attacks.
+When the Bear wins, it ascends and stops playing. The game continues.
+
+__Simplified__
+If visited the Bear will attack the visitors. It wins by attacking two people, afterwards it stops playing and the game continues. The Bear has protection against attacks during the night, and does not count targetting actions as visits.
