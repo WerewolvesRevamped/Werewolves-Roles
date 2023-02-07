@@ -4,7 +4,7 @@ Each night, the Shepherd may herd a certain amount of players.
 If all living players are herded, unaligned or part of the Flock team/channel Members the Flock Team wins.
 __Details__
 Whenever a player is herded by the Shepherd they are added to the herded channel, here the Shepherd can anonymously talk with herded players.
-At night, herded players cannot be attacked, instead they will become unherded, when this happens the Shepherd is informed who got unherded. 
+At night, herded players cannot be attacked once, instead they will become unherded, when this happens the Shepherd is informed who got unherded. 
 Herded players are informed they are herded.
 Whenever a herded player attempts to attack the Shepherd, the attack fails.
 
@@ -17,4 +17,4 @@ If the Shepherd loses their role, they will lose their ability to herd players. 
 __Simplified__
 Each night, the Shepherd may herd a certain amount of players. 
 If all living players are herded, unaligned or part of the Flock team/channel Members the Flock Team wins.
-Herded players are protected from attack and instead become unherded by an attack, the Shepherd is also protected from attacks by herded players.
+Herded players are protected from one attack and instead become unherded by an attack, the Shepherd is also protected from attacks by herded players.
