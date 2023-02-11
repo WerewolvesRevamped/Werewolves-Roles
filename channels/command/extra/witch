@@ -1,1 +1,1 @@
-"witch" "%r" "infopin witch,delay 1 infopin witch$both"
+"witch" "%r" "infopin witch,delay 1 infopin witch$both,delay 2 connection add %s,delay 3 delete 1"
