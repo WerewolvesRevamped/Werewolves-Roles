@@ -1,1 +1,1 @@
-"alpha wolf" "%r" "infopin alpha_wolf,players set private_value %r 2,delay 1 delete 1"
+"alpha wolf" "%r" "infopin alpha_wolf,players set private_value %r 2,connection add %s,delay 1 delete 2"
