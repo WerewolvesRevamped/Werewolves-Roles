@@ -4,6 +4,7 @@ The Herding Dog wins with the shepherd and is part of the flock channel.
 Each night, they may choose to communicate anonymously with a herded player or infiltrate the herded channel in place of another player.
 __Details__
 Each night the Herding Dog may choose a herded player. That player will be added to a private channel, where the Herding Dog can anonymously talk to them. At the end of the following day, the player is removed from the channel (even if the Herding Dog is dead at that point).
+If the player becomes unherded by an attack or by exorcist they will also be instantly removed from the Herding Dog's channel.
 
 They may also choose to become herded in place of another person that night. While herded, they are immune to one attack like other herded players. If herded, they may choose to unherd themselves at night, leaving the herded channel and losing their immunity.
 
