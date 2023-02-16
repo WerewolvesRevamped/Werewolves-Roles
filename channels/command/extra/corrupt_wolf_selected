@@ -1,1 +1,1 @@
-"corrupt wolf,lone corrupt wolf" " " "channels infopin corrupt_wolf,connection add corrupt_wolf%n,delay 1 delete 1"
+"corrupt wolf" " " "channels infopin corrupt_wolf,connection add corrupt_wolf%n,delay 1 delete 1"
