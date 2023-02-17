@@ -6,5 +6,6 @@ As long as you hold the amulet, you cannot die by attacks during the night.
 Durinf the day you may specify up to three players (either at once or separately) and the amulet will be passed to the first player who has not previously had the amulet.
 Selecting a target is an immediate effect and should the selection fail you are immediately informed, however passing the amulet is an end-day ability. 
 If you fail to select a valid target, the amulet shatters, killing you at the end of the day.
+If the current target to gain the amulet dies during the day the next eligable player will recieve the amulet, if there are no other eligable players are in the list the amulet shatters and kills the current holder.
 The origional Amulet Holder can also choose to Shatter the Amulet during the day, killing you immediately.
 Holders of the amulet do not know who gave them the amulet, nor do they know who has previously held it.
