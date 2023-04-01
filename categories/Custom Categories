@@ -1,10 +1,10 @@
 **Categories**
-Miscellaneous (TM, WM, SM, UAM)
-Power (TP, WP, SP)
-Investigative (TI, WI)
-Group (TG, WG)
-Killing (TK, WK, SK)
-Recruitment (SR)
-Align (UAA)
+<?CategoryMiscellaneous:> Miscellaneous (TM, WM, SM, UAM)
+<?CategoryPower:> Power (TP, WP, SP)
+<?CategoryInvestigative:> Investigative (TI, WI)
+<?CategoryGroup:> Group (TG, WG)
+<?CategoryKilling:> Killing (TK, WK, SK)
+<?CategoryRecruitment:> Recruitment (SR)
+<?CategoryAlign:> Align (UAA)
 
-Extra (UAE)
+<?CategoryExtra:> Extra (UAE)

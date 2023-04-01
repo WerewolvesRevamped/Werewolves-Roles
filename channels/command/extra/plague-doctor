@@ -1,1 +1,1 @@
-"plague doctor" "%r" "infopin plague_doctor,delay 1 infopin pd$vials"
+"plague doctor" "%r" "infopin plague_doctor,delay 1 infopin pd$vials,delay 2 connection add %r,delay 3 delete 1"

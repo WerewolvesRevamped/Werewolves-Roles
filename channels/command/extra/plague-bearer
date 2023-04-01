@@ -1,0 +1,1 @@
+"plague bearer" "%r" "infopin plague_bearer,delay 1 infopin pb$rodents,delay 2 connection add %r,delay 3 delete 1"
