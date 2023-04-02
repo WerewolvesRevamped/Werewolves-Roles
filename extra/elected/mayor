@@ -1,4 +1,4 @@
-**Mayor** | Elected
+**Mayor** | Extra Elected
 __Basics__
 The Mayor can post in #story_time. 
 When there are 15 or less living players, the Mayor receives an extra vote in polls.
@@ -8,8 +8,3 @@ The Mayor's extra vote cannot be nullified, stolen or removed under any circumst
 If the Mayor's normal vote is a negative vote, the extra vote becomes a negative vote too.
 The Mayor may resign at the end of any phase. 
 The Mayor gains an additional secret channel, which is reused for any subsequent Mayors.
-
-__Simplified__
-The Mayor is elected before the other elected roles. They are able to post in #story_time.
-When there are 15 or more players, they may decide that a second player will be lynched during the next day.
-When there are less than 15 players, they instead get 2 votes on the public polls.
