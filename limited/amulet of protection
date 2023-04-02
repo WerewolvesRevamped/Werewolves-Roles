@@ -2,10 +2,8 @@
 __Basics__
 As long as you hold the amulet, you cannot die by attacks during the night, but you must pass it to another player during the day.
 __Details__
-As long as you hold the amulet, you cannot die by attacks during the night.
-Durinf the day you may specify up to three players (either at once or separately) and the amulet will be passed to the first player who has not previously had the amulet.
-Selecting a target is an immediate effect and should the selection fail you are immediately informed, however passing the amulet is an end-day ability. 
-If you fail to select a valid target, the amulet shatters, killing you at the end of the day.
-If the current target to gain the amulet dies during the day the next eligable player will recieve the amulet, if there are no other eligable players are in the list the amulet shatters and kills the current holder.
-The origional Amulet Holder can also choose to Shatter the Amulet during the day, killing you immediately.
+While you cannot die through an attack, you can still die by other means. If that happens, the amulet shatters.
+When passing the amulet, up to three players may be specified (either at once or separately) and the amulet will be passed to the first player who has not previously had the amulet. Selecting a target is an immediate effect and, should the selection fail, the holder is immediately informed (and if applicable, the next selection is attempted). However, passing the amulet is an end-day ability. If the holder does not or cannot choose a player to pass the amulet to, it shatters at the end of the day, instead of being passed. 
+If the current target to gain the amulet dies during the day the next eligible player will recieve the amulet, if there are no other eligible players left in the list the amulet shatters.
 Holders of the amulet do not know who gave them the amulet, nor do they know who has previously held it.
+If the original amulet holder dies or choose to, the amulet shatters. When the amuelt shatter, the current holder is attacked by the original amulet holder.
