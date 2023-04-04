@@ -1,5 +1,0 @@
-**Basics**
-Many roles or groups can attack. The player attacking another player is known as “Attacker”.
-If a player is “attacked” and the attack isn't blocked, the attacked player is “killed”, should that also not be blocked, the player dies. Most “blocks” apply only to “attacks”, but some apply to “kills”. Some roles skip the “attack” part and directly “kill”, avoiding most blocks.
-Unless explicitly stated otherwise, an attack is considered successful if *any* player (even if that person wasn't the intended target) ends up dead as a result of the attack and unsuccessful otherwise.
-If the target of an attack was already killed by another attack occuring at the same time, then the attack is still considered a success.
