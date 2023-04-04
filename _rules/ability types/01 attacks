@@ -1,4 +1,15 @@
-**Attacks**
-Attacks are a type of ability that aims to kill another player, however success of this isn't guaranteed (See Protections/Defenses), making it different from killing (however killing isn't always guaranteed to succeed either). Some of the most generic attacks are the Assassin and the Wolfpack. Attacks usually, but not always, happen at the end of a phase. When an attack succeeds, the attacked player is killed.
-Attacks are explained in detail in the Attacks section.
+**Attacks** | Ability Type
+__Basics__
+Attacks are a type of ability that aims to kill another player, however success of this isn't guaranteed (See `$i defenses`), making it different from killing (however killing isn't always guaranteed to succeed either). Some of the most generic attacks are the Assassin and the Wolfpack. Attacks usually, but not always, happen at the end of a phase. When an attack succeeds, the attacked player is killed.
+Most roles with the ability to attack are considered _Killing_ roles.
+__Details__
+Many roles or groups can attack. The player attacking another player is known as “Attacker”.
+If a player is “attacked” and the attack isn't blocked, the attacked player is “killed”, should that also not be blocked, the player dies. Most “blocks” (= Defenses, see `$i defenses`) apply only to “attacks”, but some apply to “kills”. Some roles skip the “attack” part and directly “kill”, avoiding most blocks. (See `$i killing`)
+Unless explicitly stated otherwise, an attack is considered successful if *any* player (even if that person wasn't the intended target) ends up dead as a result of the attack and unsuccessful otherwise.
+If the target of an attack was already killed by another attack occuring at the same time, then the attack is still considered a success.
+__Groups__
+When a group (such as Cult or Werewolves) attacks a player, a random member of the group (who voted for the target with at least 1 vote) is chosen as the attacker. The group is informed who is chosen. Unless explicitly listed otherwise, this attacker is always considered as the sole cause of the attack, and never the group.
+
+__Simplified__
+Attacks are a type of ability that aims to kill another player, however success of this isn't guaranteed. Attacks usually, but not always, happen at the end of a phase.
 Most roles with the ability to attack are considered _Killing_ roles.
