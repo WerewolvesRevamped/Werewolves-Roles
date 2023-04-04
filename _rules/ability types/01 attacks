@@ -9,6 +9,8 @@ Unless explicitly stated otherwise, an attack is considered successful if *any* 
 If the target of an attack was already killed by another attack occuring at the same time, then the attack is still considered a success.
 __Groups__
 When a group (such as Cult or Werewolves) attacks a player, a random member of the group (who voted for the target with at least 1 vote) is chosen as the attacker. The group is informed who is chosen. Unless explicitly listed otherwise, this attacker is always considered as the sole cause of the attack, and never the group.
+__Edge Cases__
+For edge cases with conflicting attack order check `$i attack order`.
 
 __Simplified__
 Attacks are a type of ability that aims to kill another player, however success of this isn't guaranteed. Attacks usually, but not always, happen at the end of a phase.
