@@ -1,3 +1,17 @@
-**Defenses**
+**Defenses** | Ability Type
+__Basics__
+Defenses are a type of passive ability, which is used to evade potential deaths. Protections are active abilities that grant defenses.
+__Details__
+There are several ways an attack (or kill) can be stopped. These sort of abilities/effects are applied in the following order:
+
+1) Absences (such as hooker)
+2) Effect Based Defenses (such as the witch's potion of life or the chef's charmed food)
+3) Role Based Defenses (such as runner or scared wolf)
+4) Partial Defenses (such as macho or idiot)
+5) Role Based Role Changes (such as cursed civilian)
+6) Effect Based Role Changes (such as vampire's demonization)
+
+For both attacks and direct kills all six points apply, though most defensive abilities apply only to attacks (defined in the ability).
+
+__Simplified__
 Defenses are a type of passive ability, similiar to protections. An example of a defense is the Scared Wolf, a role that will survive the first attack on it.
-For more on defenses look at the attacks section.
