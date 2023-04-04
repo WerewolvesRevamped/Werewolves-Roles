@@ -8,5 +8,7 @@ Permanent disguises are chosen once, usually at the start of the game (e.g Devil
 
 Take a Sneaking Wolf who has during the last day phase been disguised as a Demon by a Pack Tanner. During the night phase, the player will have two disguises, a strong permanent Citizen disguise and a weak non-permanent Demon disguise. A Fortune Teller would see the Sneaking Wolf as a Demon, as that is the most recent disguise; an Aura Teller would see the Sneaking Wolf as not a threat, as they are only affected by strong disguises; a Huntsman would see the Sneaking Wolf as part of the pack, as they are not affected by disguises at all (they check pack status, not role).
 
+For a complete list of disguises check `$i disguises list`.
+
 __Simplified__
 Disguising is a type of ability that aids in hiding from Investigative abilities. There are strong and weak disguises. Some roles have a disguise they can not alter (e.g. White Werewolf, Devil), others can even disguise other people (e.g. Tanner).
