@@ -1,0 +1,32 @@
+**Attack Order Examples**
+__Role Priority:__ 
+Cult, Wolfpack || Assassin, Priest, Witch | Lone Wolf | Devil, Pyromancer, WWW
+*(Not a complete list. Sorted alphabetically. Groups first, then town, then wolf, then others)*
+
+__Block Priority:__ 
+1) Absences 
+2) Effect Defenses
+3) Role Defenses
+4) Partial Defenses
+5) Role Based Role Changes
+6) Effect Based Role Changes
+7) Death
+
+Examples:
+1) Hooker
+2) Witch PoL, Chef's Charmed Food, Devil's Soul Defense
+3) Scared Wolf, Runner, Idiot
+4) Macho
+5) Cursed Civilian
+6) Vampire Demonized
+
+__How to figure out what happens__
+1) Compile a list of attack causes, sorted by the role priority list (e.g. `Wolfpack, Pyromancer`).
+2) Go through the block priority list step by step, for each of the steps go through the entire list of attacks (in the way it's ordered) and see if that attack is affected by the current block.
+
+__Edge Cases__
+1) If two attacks are the same type (e.g. 2 `Lone Wolf`'s) a random one is prioritized.
+
+__Examples__
+1) If both the wolfpack and a lone wolf attacks a runner, both of those could be blocked by 2), however because wolfpack has higher priority than lone wolf only the wolfpack attack is blocked (and they'll be notified their target ran away), the lone wolf's attack will succeed.
+2) If both an assassin and the wolfpack attack a demonized Runner, the wolfpack one is escaped (in 2)) and the assassin one converts (in 5)) - there is no conflict in any of the blocking steps.
