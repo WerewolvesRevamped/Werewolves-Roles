@@ -3,9 +3,8 @@ __Basics__
 The Rogue Wolf is a lycan who decries the behaviour of the other wolves and seeks to eliminate them. The Rogue Wolf may attack a player on nights after a successful wolfpack kill.
 __Details__
 The Rogue Wolf is not a member of the werewolf team or wolfpack, and doesn't know the other werewolves. However, they are still a lycan.
-Each night the Rogue Wolf learns if the wolfpack successfully executed a kill the previous night or not.
-If the Wolfpack successfully killed the previous night then the Rogue Wolf may themselves attack a player.
-The Rogue Wolf is strongly disguised as an arbitrary most common role in the wolfpack, excepting those with permanent or semi-permanent disguises.
+Each night the Rogue Wolf learns if the wolfpack successfully executed a kill the previous night or not. If they did, the Rogue Wolf may themselves attack a player during the night.
+The Rogue Wolf is strongly disguised as an arbitrary most common role in the wolfpack, excluding those with permanent or semi-permanent disguises.
 Attacking a player is an end-night ability.
 
 __Simplified__
