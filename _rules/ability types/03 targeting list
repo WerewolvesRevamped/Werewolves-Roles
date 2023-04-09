@@ -1,0 +1,12 @@
+**Current targeting roles**
+• Angel - If lynched, their target will be killed if they were one of the voters.
+• Assistant - The first wolfish non-attack action used on the assistant will be redirected to their target
+• Executioner - If lynched, it will be prevented, and their target will be lynched in their place.
+• Flute Apprentice - Enchanted players that use an action on the Flute Apprentice have their action be redirected on the Flute Apprentice's target
+• Herald - Targets a role and is informed when the last player with that role is killed.
+• Huntress - If killed by method other than a direct lynch, their target will be attacked by them.
+• Journalist - Targets a role and if killed, someone with their targeted role will recieve their journal.
+• Mad Scientist - If killed, their targeted subject will also die.
+• Ranger - If killed by method other than a direct lynch, their target's role will be revealed in story time.
+
+• *Reaper - Can redirect the abilities of non-sleepless players to their target*
