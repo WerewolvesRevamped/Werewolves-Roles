@@ -1,15 +1,14 @@
 **Greater Coyote** | Werewolf Killing
 
 __Basics__
-The Greater Coyote acts as a regular member of the coyotes except if the Greater Coyote dies the coyotes lose their abilities and their kill, instead all remaining coyotes join the wolfpack
+The Greater Coyote shares a channel with the other coyotes: however, none of the coyotes know the identities of any other wolves. If the Greater Coyote dies, the coyote group is disbanded.
 __Details__
-If the wolfpack fails to kill a townsfolk on any given night the Greater Coyote gives the coyotes the ability to kill on the next night.
-When the Greater Coyote dies the coyotes are disbanded  removing the coyotes ability to gain a kill and all coyotes with abilities lose them, all alive coyotes then join the wolfpack.
-If the Greater Coyote loses their role, the coyotes continues to exist, until the original Greater Coyote dies.
-Any member of the coyotes, who no longer has their original role, can still vote on who to attack.
-The coyotes decides their victims by voting on whom they suspect most. The coyotes' attack is an end-night ability.
+If the wolfpack fails to kill a townsfolk on any given night, the coyotes may kill a player during the following night.
+If the Greater Coyote dies, the coyote group is disbanded. All other coyotes lose any remaining abilities and join the wolfpack. This is not triggered by the Greater Coyote changing role.
+Any member of the coyote group without their original role can still vote on who to attack.
+The coyotes' attack is an end-night ability.
 
 __Simplified__
 The Greater Coyote shares a secret channel with the other coyotes.
-If the pack fails to kill a towsfolk, the coyotes can vote to attack one player the next night. 
-When the Greater Coyote dies, the coyoteslose their abilities and are disbanded, instead joining the wolfpack.
+If the pack fails to kill a townsfolk, the coyotes can vote to attack one player during the following night. 
+When the Greater Coyote dies, the coyotes lose their abilities and are disbanded, joining the wolfpack instead.
