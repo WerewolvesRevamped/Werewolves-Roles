@@ -1,0 +1,12 @@
+**Baroness** | Werewolf Investigative
+__Basics__
+During the night the Baroness can learn the information received by a selected role.
+__Details__
+During the day the Baroness can choose any investigative role or any role that receives information (these roles and their interactions can be found in `$i Baroness Roles`), targeting is an end day action.
+The following night and day they will learn the players or roles targeted by any player with the selected role as well as any information that player received.
+The Baroness cannot target the same role twice in a row.
+The Baroness is not a lycan, nor are they a member of the wolfpack.
+
+__Simplified__
+The Baroness can target a role during the day and learn any information that a player with that role would learn the following phases
+The Baroness is not a lycan, nor are they a member of the wolfpack.
