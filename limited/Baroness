@@ -1,6 +1,6 @@
 **Baroness** | Werewolf Investigative
 __Basics__
-During the night the Baroness can learn the information received by players with another role.
+The Baroness can learn the information received by other players.
 __Details__
 During the day, the Baroness can choose to target one of a selection of roles, including all investigative roles. All roles and interactions can be found under `$i baroness_roles`). Targeting is an end day action.
 For the next two phases, when any player with the targeted role uses an ability, the Baroness will learn both who the player targeted and any information the player received about their target(s).
