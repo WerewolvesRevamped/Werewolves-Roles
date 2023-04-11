@@ -1,6 +1,6 @@
 **Redirections** | Ability Type
 __Basics__
-Redirections are abilities that redirect attacks, investigations and/or other actions onto another player. By default, all roles are affected by redirections, unless explicitly stated otherwise.
+Redirections are abilities that redirect attacks, investigations and/or other actions onto another player. By default, all roles are affected by redirections, unless explicitly stated otherwise. The exception is whisper abilities, which are immune.
 __Details__
 If an attack is redirected onto another player, the attacker(s) is/are not informed of this. They simply get a generic failure message and may use #storytime to deduce what happened.
 If an action that would usually cause a reveal is redirected, the feedback is also failure. The action still happens (but with the player it was redirected onto and not the original target), but the original executor is not revealed.
