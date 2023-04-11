@@ -1,3 +1,3 @@
-**Protections**
-Protections are a type of ability which is intended to stop attacks from succeeding. A protected player will not be harmed by attacks. 
-More information about protections can be found in the attacks section.
+**Protections** | Ability Type
+__Basics__
+Protections are a type of ability which is intended to stop attacks from succeeding. A protected player will not be harmed by attacks - instead they will be defended (see `$i defenses`).
