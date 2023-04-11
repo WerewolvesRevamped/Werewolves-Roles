@@ -10,6 +10,7 @@ Each game has a certain amount of players that are “waiters” - one from the 
 If a new solo team is created during the game, they do not gain a waiter.
 When the last waiter dies, the Chef stops playing, descends and loses.
 The Chef may not select themself as customer.
+The Chef is not affected by redirections.
 
 __Simplified__
 The Chef has one waiter from every team, and their goal is to keep at least one alive. When the last waiter dies, the Chef dies and loses.
