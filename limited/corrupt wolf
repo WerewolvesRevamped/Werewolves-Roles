@@ -6,7 +6,7 @@ Each night, the Corrupt Wolf may select a player and a number of votes (2 or -1)
 The number of votes replaces the player's vote, it is not additive. However, the Mayor retains their extra vote.
 Manipulating a vote is immediate. The Corrupt Wolf may manipulate a member of the wolfpack. The Corrupt Wolf may also communicate with their chosen player in a whispers channel during the day.
 The Corrupt Wolf is a lycan and also part of the pack.
-The Corrupt Wolf is affected by redirections.
+The Corrupt Wolf is not affected by redirections.
 
 __Simplified__
 The Corrupt Wolf can manipulate a player's votes in the next day's public polls, changing their number of votes to either 2 or -1.
