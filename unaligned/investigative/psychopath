@@ -1,0 +1,12 @@
+**Psychopath** | Unaligned Miscellaneous
+__Basics__
+At the start of the game, the Psychopath is given an arbitrary list with one third of the town’s population, rounded up, on it. If all players on that list are dead, and the Psychopath is still alive, the Psychopath wins.
+__Details__
+When the Psychopath wins, the Psychopath ascends and stops playing. The game continues. The Psychopath can’t win when they are dead. 
+The Psychopath's list will always contain at least one player from every team that has at least two players.
+The Psychopath may strongly disguise themself as any role. The disguise is applied immediately. They can update this disguise once per phase, with 1 emergency change to be used whenever the Psychopath wants to. If the Psychopath changes role, the disguise is lost.
+Additionally, the Psychopath may choose to either investigate or weakly disguise a player each day, but not both. Their investigation is affected by all disguises, redirections and obstructions. Their disguise lasts for the current and next phase.
+
+__Simplified__
+The Psychopath has a list with 1/3rd of all the players on it. If all players on that list are dead, the Psychopath wins and stops playing. The game continues.
+The Psychopath is strongly disguised as a role of their choosing. Additionally, they may either investigate or weakly disguise others each day.
