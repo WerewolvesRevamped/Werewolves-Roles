@@ -1,0 +1,17 @@
+**Chef** | Unaligned Miscellaneous
+__Basics__ 
+The Chef can choose to make charmed food or poisoned food each night, and select a customer. The following day, the customer can decide to eat the food, and, depending on the food, gain invulnerability for the night or die. The Chef wins if they are alive at the end of the game, and at least one waiter remains.
+__Details__
+At the beginning of each day, the customer chosen by the Chef is given the opportunity to eat the food. They can choose yes or no, but they don’t know what food the Chef sent them. If they eat the poisoned food, they die at the end of the day. If they eat the charmed food, they are invulnerable from night attacks for the next night. After the night ends, the effect of the charmed food disappears. 
+Making food and selecting a customer is a start-day ability. Eating the food is an end-day ability.
+If the Chef dies during the day, the customer is immediately removed from the restaurant without having eaten the food.
+Once a customer has eaten food, they can no longer be sent food.
+Each game has a certain amount of players that are “waiters” - one from the townsfolk team, one from the werewolf team, and one from each solo team. Waiters are not informed about this, nor does it affect their win condition or ability. The waiters are on different teams. The Chef wins, if at least one waiter, and the Chef itself are alive when the game ends. The Chef is able to win with any team, even if that teams win condition is to kill all others.
+If a new solo team is created during the game, they do not gain a waiter.
+When the last waiter dies, the Chef stops playing, descends and loses.
+The Chef may not select themself as customer.
+
+__Simplified__
+The Chef has one waiter from every team, and their goal is to keep at least one alive. When the last waiter dies, the Chef dies and loses.
+They may send protective or poisoned food to one person each night. During the day their target can choose to eat it.
+They then are either killed at the end of the day or protected during the following night.
