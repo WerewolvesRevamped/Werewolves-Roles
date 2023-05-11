@@ -1,1 +1,1 @@
-"grandma" "%r" "connection add grandma%n grandma,delay 1 delete 1"
+"grandma" "%r" "channels infopin whispers,connection add grandma%n grandma,delay 1 delete 1"
