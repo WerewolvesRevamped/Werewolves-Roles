@@ -1,1 +1,1 @@
-"shepherd" "shepherd" "connection add shepherd shepherd,delay 1 delete 1"
+"shepherd" "shepherd" "channels infopin whispers_herd,connection add shepherd shepherd,delay 1 delete 1"
