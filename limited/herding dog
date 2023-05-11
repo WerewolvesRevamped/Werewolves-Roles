@@ -5,7 +5,7 @@ Similar to the shepherd the Herding Dog can communicate with herded players secu
 Additionaly they can also infiltrate the Herded channel in place of another player being herded.
 __Details__
 Each night the Herding Dog can choose a herded player and add them to a seperate channel to anonymously communicate with them.
-In addition to this the Herding Dogcan also choose to become herded in place of another player or uhnerd themselves that night, while herded the Herding Dog becomes immune to one attack like other herded players.
+The Herding Dog can be herded by the Shepherd.
 
 The Herding Dog will work together with the shepherd and any other Herding Dogs, they will all be part of a flock channel where they can communicate securely.
 If the Herding Dog loses their role, they will lose their abilities, they will remain herded if they are herded when losing their role. Role changes are not revealed to the other Flock Team members.
