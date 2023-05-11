@@ -25,6 +25,7 @@ Examples of visits:
 - When an enchanted player's investigation is obstructed by being enchanted, this is not an additional visit between investigator and flute player
 - When a player dies by the plague there is no visit from the Plague Bearer
 - The amulet of protection blocking an attack does not cause an additional visit between the attacker and the amulet crafter
+- Using any action on yourself
 
 __Simplified__
 In some cases the term 'visit' is used. This refers to any use of an ability and always involves two players. In some cases, abilities that involved several players are split into several visits. Visits happen for both role based abilities as well as other abilities.
