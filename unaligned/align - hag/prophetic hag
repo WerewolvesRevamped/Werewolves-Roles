@@ -1,6 +1,6 @@
 **Prophetic Hag** | Unaligned Investigative | Limited
 __Basics__
-The Prophetic Hag can win with any team, unless that team has wronged the hags, however the Prophetic Hag cannot win if the hags have never been wronged.
+The Prophetic Hag can win with any team, unless that team has wronged the coven, however the Prophetic Hag cannot win if the coven has never been wronged.
 The Prophetic Hag can see the current alignment of another player.
 __Details__
 The Prophetic Hag is one of the hags (`$i hags`).
@@ -9,5 +9,5 @@ Checking a player is an immediate effect.
 The Prophetic Hag is strongly disguises as a Hag.
 
 __Simplified__
-The Prophetic Hag is one of the hags and can win with any team that hasn't wronged the hags, but cannot win if they have never been wronged.
+The Prophetic Hag is one of the hags and can win with any team that hasn't wronged the coven, but cannot win if they have never been wronged.
 The Prophetic Hag may once check a player's alignment.
