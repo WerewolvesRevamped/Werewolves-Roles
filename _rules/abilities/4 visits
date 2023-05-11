@@ -1,0 +1,29 @@
+**Visits**
+__Basics__
+In some cases the term 'visit' is used. This refers to any use of an ability and always involves two players.
+__Details__
+Some roles/abilities involved several players at the same time, these abilities are split up into several visits (examples below). Visits happen for both role based abilities as well as other abilities. The ability type targeting is counted as a visit, though in many cases roles will use phrasing such as "all visits (except targeting)". Actions resulting from an effect only count as a visit on effect application, not when the effect does something (examples below). 
+
+Examples of visits:
+- An assassin attacks another player
+- The Amulet of Protection is passed from one player to another
+- A Huntress targets another player
+- A Witch protects players (split into three separate visits executed in order, one per player)
+- The Cult attacks (Visit from the chosen attacker to the target)
+- The Oracle checks players (split into two separate visits executed in order, one per player)
+- The Fletcher selects a customer
+- Fletcher's Customer selects a target
+- The Assistant redirects an ability (Visit from the ability user to the assistant, as well as a visit from the ability user to the final target)
+- The Warlock investigates another player
+- Devil's Wager Recipient sells their soul to investigate another player (Devil visits Recipient, then Devil visits investigation target)
+- The Guardian protects another player
+- Someody receives the devil's wager
+
+**NOT** a visit:
+- When a demonized player is turned into an Undead this is not a visit between the Vampire and the attacker - only between the attacker and the attacked
+- When an enchanted player's investigation is obstructed by being enchanted, this is not an additional visit between investigator and flute player
+- When a player dies by the plague there is no visit from the Plague Bearer
+- The amulet of protection blocking an attack does not cause an additional visit between the attacker and the amulet crafter
+
+__Simplified__
+In some cases the term 'visit' is used. This refers to any use of an ability and always involves two players. In some cases, abilities that involved several players are split into several visits. Visits happen for both role based abilities as well as other abilities.
