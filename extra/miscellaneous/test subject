@@ -1,0 +1,10 @@
+**Test Subject** | Extra Miscellaneous
+__Basics__
+The Test Subject is a member of the laboratory with the mad scientist.
+__Details__
+Two Test Subjects and the mad scientist share the laboratory secret channel. The mad scientist must target one of the two test subjects (though they may target a dead test subject). When the mad scientist is killed, their targeted subject dies. 
+The Test Subject does not know the identity of the mad scientist, they only know it must be one of the other two players in the laboratory.
+The two Test Subjects never start out as the same team.
+
+__Simplified__
+Two Test Subjects and the mad scientist share the laboratory secret channel. The mad scientist must target one of the two test subjects. When the mad scientist is killed, their targeted subject dies. 
