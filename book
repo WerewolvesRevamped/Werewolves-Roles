@@ -2,14 +2,11 @@ how to play
 /alignments
 /the day and nighttime cycle
 /conspiracy channels
+/results
 
 role related rules
 /abilities
 /ability types
-/attacks
-/disguises
-/obstructions
-/redirections
 /role loss
 /events
 
@@ -42,6 +39,8 @@ unaligned/align
 unaligned/align - cupid
 unaligned/align - hag
 
-elected
+extra
+extra/elected
+extra/miscellaneous
 
 limited

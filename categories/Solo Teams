@@ -1,16 +1,15 @@
 **Solo Teams**
-<?Devil:> Hell
-<?Pyromancer:> Pyro
+<?HellCard:> Hell
+<?PyroCard:> Pyro
 <?Flute:> Flute
 <?WhiteWerewolf:> White Wolves
 <?Lover:> Cupid\*
 <?Rodent:> Plague
-<?Vampire:> Underworld
+<?UnderworldCard:> Underworld
 
 <?NightmareTeam:> *Nightmare*
 <?FlockTeam:> *Flock*
 <?BitterHag:> *Hag\**
-<?GraveyardTeam:> *Graveyard*
 <?Horsemen:> *Horsemen*
 
 \* Teams can only be created mid-game

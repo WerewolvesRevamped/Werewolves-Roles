@@ -1,1 +1,1 @@
-"chef" "%r" "infopin chef,delay 1 infopin chef$list"
+"chef" "%r" "infopin chef,delay 1 infopin chef$list,delay 2 connection add %r,delay 3 delete 1"

@@ -1,2 +1,10 @@
-**Obstructions**
+**Obstructions** | Ability Type
+__Basics__
+Obstructions are another type of ability which aids in hiding from investigative powers. Instead of disguising a specific player, obstructions affect all results of affected investigative roles in some way.
+__Details__
+If not explicitly listed otherwise, every role is not affected by obstructions.
+
+For a complete list of obstructions check `$i obstructions list`.
+
+__Simplified__
 Obstructions are another type of ability which aids in hiding from investigative powers. Instead of disguising a specific player, obstructions affect all results of affected investigative roles in some way.

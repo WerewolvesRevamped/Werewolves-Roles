@@ -1,1 +1,1 @@
-"cerberus" "cerberus" "connection add cerberus cerberus,delay 1 delete 1"
+"cerberus,lone cerberus" "cerberus,lone cerberus" "channels infopin whispers,connection add cerberus cerberus,delay 1 delete 1"

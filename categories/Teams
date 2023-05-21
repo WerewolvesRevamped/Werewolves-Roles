@@ -1,4 +1,4 @@
 **Teams**
-Townsfolk
-Werewolves
-Solo Teams
+<?TownsfolkCard:> Townsfolk
+<?WolfCard:> Werewolves
+<?SoloPlaceholder:> Solo Teams
