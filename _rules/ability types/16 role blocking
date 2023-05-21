@@ -3,6 +3,6 @@ __Basics__
 Role Blocking is a rare type of ability that stops other players from successfully using their abilities.
 __Details__
 Role blocked players are not informed they have been blocked, unless specified otherwise. When a role blocked player attempts to use an ability the action will result in a failure. For some ability types, such as attacks, this will be indistinguishable from other types of failure (e.g. hitting a protected player is indistinguishable from the attack failing due to a role block). However, for many ability types the only way the action can fail through role blocking (e.g. investigations). For group actions (e.g. wolfpack attack), role blocked players can still be chosen to execute the action, however if they are, the action will fail. Completely passive abilities, like Runner, as well as the ability to whisper, are not affected.
-
+ 
 __Simplified__
 Role Blocking is a rare type of ability that stops other players from successfully using their abilities. When a role blocked player attempts to use an ability the action will result in a failure, which in some cases is indistinguishable from other types of failures.
