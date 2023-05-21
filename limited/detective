@@ -1,9 +1,9 @@
-**Detective** | Unaligned Miscellaneous | Limited
+**Detective** | Unaligned Investigative | Limited
 __Basics__
 During the day, the detective compiles information on other players. At night, they try to solve the mystery by guessing the contents of the role list. If their guess is correct, the Detective wins.
 __Details__
 Each day, the detective has to choose between guessing one player's current role or learning the final role of a dead player. If they guess a player's current role correctly, it is confirmed. The detective is not affected by any disguises, obstructions or redirections.
-Each night, the detective must try to submit the contents (players and their roles) of the entire initial role list in their secret channel. If their guess is correct, they ascend and win the game. If their guess is wrong, they are informed how many guesses (but not which) were correct.
+Each night, the detective must try to submit the contents (players and their roles) of the entire initial role list in their secret channel. If their guess is correct, they ascend and win the game. If their guess is wrong, they are informed how many guesses (but not which) were correct. The Detective may also only submit a partial list, however they cannot win if they do so.
 
 __Simplified__
 The Detective wins by figuring out the original roles of all players, however the game continues afterwards.

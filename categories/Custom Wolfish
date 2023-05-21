@@ -13,6 +13,7 @@ Knowledgeable Wolf
 Lone Warlock
 Lone Wolf
 Psychic Wolf
+Recluse
 Saboteur Wolf
 Scared Wolf
 Sneaking Wolf
@@ -26,7 +27,6 @@ Wolf Cub
 *Baroness*
 *Corrupt Wolf*
 *Pack Tanner*
-*Recluse*
 *Tracking Wolf*
 
 __Non-Werewolves:__
@@ -34,8 +34,9 @@ Cupid Wolf (T)
 Lupine Cupid (T)
 White Werewolf
 
+*Rogue Wolf*
+
 __Conditional:__
 Imp (T; if in wolfpack)
-Undead (T; if in wolfpack)
-Zombie (if in wolfpack)
 Spirit (T; if in wolfpack)
+Undead (T; if in wolfpack)
