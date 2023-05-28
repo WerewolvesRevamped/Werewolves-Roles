@@ -4,8 +4,8 @@ The Hag can win with any team, unless that team has wronged the coven, but canno
 The Hag will turn into a specific type of hag at the end of the day.
 __Details__
 The Hag is one of the hags (`$i hags`).
-At the start of the game, the Hag may name one other hag role. 
-At the end of the day the Hag turns into one of the other hag roles (vicious, cautious or prophetic).
+At the start of the game, the Hag may discard one hag role (vicious, cautious or prophetic). 
+At the end of the day, the Hag turns into an undiscarded hag role.
 The Hag does not have a spell at the start of the game, but gains one later, once they turn into another hag role.
 
 __Simplified__
