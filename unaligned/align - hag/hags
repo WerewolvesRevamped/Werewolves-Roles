@@ -12,6 +12,6 @@ Unaligned players cannot wrong the coven.
 When the coven is wronged it is announced, including which team has wronged the coven, even if no Hags are left.
 
 __Powers__
-Each Hag (with the exception of the plain hag and the cupid hag) has one specific spell, that they can use during the night. Hags may only use their spell once, however every time the coven is wronged they gain an additional use for their spell. Hags are allowed to wait until their spell has several uses and then use it more than once in one night.
+Each Hag (with the exception of the plain hag and the cupid hag) has one specific spell that they can use during the night. Hags may only use their spell once, however every time a Hag is wronged they gain an additional use for their spell. Hags are allowed to wait until their spell has several uses and then use it more than once in one night.
 
 Use `$i uah` for a list of all hags.
