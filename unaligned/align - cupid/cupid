@@ -8,6 +8,8 @@ The Cupid will gain the same alignment as their lover, however if the Cupid or t
 If the Cupid's lover is unaligned they can only win with their lover's win condition.
 The Cupid’s love overrides any other mechanic that may cause a player to change teams for any reason; the Cupid is always on the same team as their lover. 
 After choosing a lover, unless they are also unaligned, the Cupid is no longer unaligned.
+If the Cupid chooses a lover who does not yet have a win condition (e.g Unaligned Align roles) then the Cupid will gain the alignment of the first role that player recieves.
+If somehow the Cupid's lover is another Cupid who's lover is the Cupid, or a Cupid loves themself then their goal becomes to survive as a couple to the end of the game.
 If the Cupid loses their role before selecting a lover, a random lover is chosen.
 The Cupid can never change role to anything but another cupid variant (more info in `$info cupid variants`).
 If the Cupid's lover is solo then the Cupid is immune to that team's effects or their consiquences (e.g powdering, death by plague, sleepless, ect)
