@@ -1,28 +1,19 @@
 **Cupid Alignment Examples** 
 Since it can be difficult to figure out the exact win condition of the cupid couple, here is a list of examples. For each couple a list of players that may remain alive is provided, unless everyone else must die, it can always implicitly be assumed that the couple can remain alive, without needing to meet any other conditions. For all couples Unaligned players may remain alive, so Unaligned is never listed.
-If a Cupid is in love with an unaligned, instead of their win conditions being combined, the couple has two possible win conditions and may win with either. If the lover ascends, so does the Cupid. In couples with an Unaligned player, the secondary unaligned win condition is not listed.
+If a Cupid is in love with an unaligned, instead of their win conditions being combined, the couple has two possible win conditions and may win with either. If the lover ascends, so does the Cupid. In couples with an Unaligned player, the secondary unaligned win condition is not listed. Some couples have ”Any” as the lover, this means this case applies for any alignment not previously listed.
  
 Same Alignment: Lover's alignment
 
 Werewolf; Flute: Only Enchanted Wolves alive
 Werewolf; Nightmare: Only Sleepless Wolves alive
 Werewolf; Flock: Only Herded Wolves alive
-Werewolf; Townsfolk: Only Couple alive
-Werewolf; Pyromancer: Only Couple alive
-Werewolf; Plague: Only Couple alive
-Werewolf; Underworld: Only Couple alive
-Werewolf; Horsemen: Only Couple alive
-Werewolf; Graveyard: Only Couple alive
+Werewolf; Any: Only Couple alive
 Werewolf aligned Cupid; Imp (Infected Wolf): Demonic Cupid
 
 Underworld; Flute: Only Enchanted Underworld alive
 Underworld; Nightmare: Only Sleepless Underworld alive
 Underworld; Flock: Only Herded Underworld alive
-Underworld; Townsfolk: Only Couple alive
-Underworld; Pyromancer: Only Couple alive
-Underworld; Plague: Only Couple alive
-Underworld; Horsemen: Only Couple alive
-Underworld; Graveyard: Only Couple alive
+Underworld; Any: Only Couple alive
 
 Nightmare; Flute: Only Enchanted Nightmare and Sleepless Flute alive
 Nightmare; Flock: Only Herded Nightmare and Sleepless Flock alive
@@ -34,10 +25,7 @@ Nightmare; Graveyard: Only Sleepless Graveyard alive
 
 Graveyard; Flute: Only Enchanted Graveyard alive
 Graveyard; Flock: Only Herded Graveyard alive
-Graveyard; Townsfolk: Only Couple alive
-Graveyard; Pyromancer: Only Couple alive
-Graveyard; Plague: Only Couple alive
-Graveyard; Horsemen: Only Couple alive
+Graveyard; Any: Only Couple alive
 
 Unaligned; Werewolf: Werewolves or Ascension
 Unaligned; Underworld: Underworld or Ascension
