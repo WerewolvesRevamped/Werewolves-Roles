@@ -1,2 +1,14 @@
-**Redirections**
+**Redirections** | Ability Type
+__Basics__
+Redirections are abilities that redirect attacks, investigations and/or other actions onto another player. All roles (excepting those with whisper abilities) are affected by redirections unless explicitly stated otherwise.
+__Details__
+If an attack is redirected onto another player, the attacker is not informed of this. They receive a generic failure message.
+If an action that would usually cause a reveal is redirected, the feedback is also failure. The action still happens (but with the player it was redirected onto, not the original target), but the original executor is not revealed.
+If any other action (such as an investigation or targetting) is redirected, the action happens as if it was directly used on the player who it is redirected on to. It is not stated that the ability was used on a different player than selected.
+When an action is redirected, it is still attributed to the player that originally executed it - not the player that redirected it. Actions may be redirected several times in a row.
+Actions can not be redirected onto a dead player: if attempted, the redirection doesn't happen and the action occurs as usual.
+
+For a complete list of redirections, check `$i redirections list`.
+ 
+__Simplified__
 Redirections are a rare type of ability that changes the selected player of another player's ability to a different one. This generally means that using an ability on a redirector will result in the ability happening with/to the redirector's target instead.

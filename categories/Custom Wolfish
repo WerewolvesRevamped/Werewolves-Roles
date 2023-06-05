@@ -3,6 +3,7 @@
 
 __Werewolves:__
 Alpha Wolf
+Archivist Fox
 Bloody Butcher
 Clairvoyant Fox
 Direwolf
@@ -18,15 +19,17 @@ Saboteur Wolf
 Scared Wolf
 Sneaking Wolf
 Tanner
+Tracking Wolf
 Trickster Wolf (T)
 Warlock
 Wolf
 Wolf Cub
 
-*Archivist Fox*
+*Baroness*
 *Corrupt Wolf*
+*Greater Coyote*
+*Lesser Coyote*
 *Pack Tanner*
-*Tracking Wolf*
 
 __Non-Werewolves:__
 Cupid Wolf (T)
@@ -37,6 +40,5 @@ White Werewolf
 
 __Conditional:__
 Imp (T; if in wolfpack)
-Undead (T; if in wolfpack)
-Zombie (if in wolfpack)
 Spirit (T; if in wolfpack)
+Undead (T; if in wolfpack)

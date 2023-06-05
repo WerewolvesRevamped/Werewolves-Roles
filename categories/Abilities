@@ -1,16 +1,16 @@
 **Abilities**
-Attacks
-Investigation
-Targeting
-Disguises
-Protections
-Defenses
-Redirections
-Killing
-Vote Manipulation
-Whispering
-Inflicting
-Obstructions
-Group Membership
-Lynching
-Ascension & Descension
+<?CategoryKilling:> Attacks
+<?CategoryInvestigative:> Investigation
+<?CategoryMiscellaneous:> Targeting
+<?Disguise:> Disguises
+<?Protect:> Protections
+<?Defense:> Defenses
+<?Redirect:> Redirections
+<?CategoryKilling:> Killing
+<?VotingBooth:> Vote Manipulation
+<?Whispering:> Whispering
+<?CategoryPower:> Inflicting
+<?BotDeveloper:> Obstructions
+<?CategoryGroup:> Group Membership
+<?VotingBooth:> Lynching
+<?Ascension:> Ascension & Descension

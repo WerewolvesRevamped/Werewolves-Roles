@@ -1,0 +1,13 @@
+**Unemployed Chef** | Unaligned Miscellaneous | Archive
+__Basics__
+The Unemployed Chef can use their charmed food to protect one player each night. The Unemployed Chef wins if they are alive at the end of the game, and at least one waiter remains.
+__Details__
+Protecting a player is an immediate night effect. A protected player is invulnerable from night attacks for the current night. After the night ends, the effect of the charmed food disappears. 
+Once a player has received charmed food, they can no longer be protected.
+Each game has a certain amount of players that are “waiters” - one from the townsfolk team, one from the werewolf team, and one from each solo team. Waiters are not informed about this, nor does it affect their win condition or ability. The waiters are on different teams. The Unemployed Chef wins, if at least one waiter, and the Unemployed Chef themself are alive when the game ends. The Unemployed Chef is able to win with any team, even if that teams win condition is to kill all others.
+If a new solo team is created during the game, they do not gain a waiter.
+When the last waiter dies, the Unemployed Chef stops playing, descends and loses.
+The Unemployed Chef may not protect themself.
+
+__Simplified__
+The Unemployed Chef is a variant of the chef. They may not send out food like the chef does, instead they can directly protect one player each night.

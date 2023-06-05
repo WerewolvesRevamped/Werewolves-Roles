@@ -1,0 +1,12 @@
+**Reporter** | Extra Elected
+__Basics__
+The Reporter is notified of the roles of the dead.
+__Details__
+The Reporter has access to a secret channel with the roles of the dead. The roles given are impervious to powers such as the flute player or tanner. 
+The roles given are always the role that player was originally assigned; a dog who chooses to become a cursed civilian, then gets turned into a wolf and finally dies will be shown to the Reporter as 'dog'. 
+The Reporter is elected on the first full day with a living Mayor and no living Reporter. 
+The Reporter may resign at the end of any phase. 
+The Reporter gains an additional secret channel, which is reused for any subsequent Reporters.
+
+__Simplified__
+When there is a Mayor, a Reporter is elected. They will be able to see the starting roles of all players that have died.

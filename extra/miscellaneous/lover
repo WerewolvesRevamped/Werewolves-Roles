@@ -1,0 +1,13 @@
+**Lover** | Extra Miscellaneous
+__Basics__
+A player becomes a Lover when they are chosen by a cupid, and forms an inseparable team with that cupid.
+__Details__
+During Night 1, each cupid must choose one player to become their Lover. The Lover is added to the cupid’s secret channel.
+The Lover and their cupid form an inseparable team; they will die if the other player dies. When this happens it is announced that the lovers died.
+The Lover keeps their role, however their base alignment is combined with the cupid's base alignment (usually townsfolk). If the cupid and lover have different base alignments, they will only win when both of their base alignment's win conditions are fulfilled, forming a new alignment separate from either of their base alignments. For example, if the couple is cupid (townsfolk base alignment) and a wolf (werewolf base alignment), everyone else must die (newly formed solo cupid alignment). Or, if they’re both townsfolk base alignment (e.g. cupid and citizen), they both are part of the townsfolk alignment and can win together with the other townsfolk. 
+The Lover’s love overrides any other mechanic that may cause a player to change alignment for any reason; the Lover is always on the same alignment as their cupid.
+This is a role that is gained on top of your original role - it does not replace it.
+
+__Simplified__
+A player becomes a Lover when they are chosen by a cupid, and forms an inseparable team with that cupid. The Lover always has the same alignment as their cupid.
+The Lover is an extra role that doesn't replace the player's current role. It can however change the player's alignment.

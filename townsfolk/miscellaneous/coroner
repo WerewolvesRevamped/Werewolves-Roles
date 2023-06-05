@@ -1,0 +1,10 @@
+**Coroner** | Townsfolk Miscellaneous
+__Basics__
+Upon every death, the Coroner is informed how that participant died. 
+__Details__
+The Coroner will be told the cause of death for every dead player, and if multiple causes of death are present, then all causes will be revealed to the Coroner. 
+The Coroner is told the name of role that killed the player (if applicable) and the type of death (this can be either "kill", "suicide", "lynch" or "descension"), as well as the name (but not the role) of the player that died. 
+The Coroner is not affected by any disguises.
+
+__Simplified__
+Upon every death, the Coroner is informed how that participant died.

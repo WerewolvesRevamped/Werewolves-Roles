@@ -1,1 +1,1 @@
-"6" "info" " channels infopin voting-booth"
+"6" "info" " channels infopin voting-booth,connection add voting-booth,delay 1 delete 1"
