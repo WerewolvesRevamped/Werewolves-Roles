@@ -3,7 +3,7 @@ __Basics__
 If attacked, the Macho will be told the name of their attacker and will not die until the beginning of the next night.
 __Details__
 If the Macho is attacked during the night, they will survive until the end of the next day, and will be able to attempt to spread the word about their attacker.
-If a Macho is attacked, the fact that the Macho was attacked that night is announced in storytime.
+If a Macho is attacked in a way that will result in the Macho's death at the beginning of the next night, the name of the Macho and the fact that they were attacked will be revealed in storytime.
 The Macho will know who attacked them, and it is up to them to decide whether they want to share this information or not. At the end of that day, the Macho dies. 
 If it’s a group that attacked the Macho, the attacker’s name is told to the Macho. 
 If the Macho is attacked multiple times in a single night, they will not be killed by any of them, and the attacker they are informed of will be chosen randomly.
