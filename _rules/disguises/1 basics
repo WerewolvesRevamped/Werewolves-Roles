@@ -1,8 +1,0 @@
-**Basics**
-Disguises affect what role an investigative role sees a player as when inspecting them.
-
-Permanent disguises are chosen once, usually at the start of the game (e.g Devil). Semi-permanent disguises are permanent disguises which the player may choose to change at any point (e.g Psychopath). Non-permanent disguises usually last a single phase and, unlike permanent and semi-permanent disguises, may be applied to a player by a different player (e.g Tanner).
-
-Disguises may be either weak or strong. Disguises are applied in chronological order: an investigative role will see the most recently applied disguise of the strength they are affected by. As a general rule, only investigative roles which inspect a player's role are affected by disguises (e.g Warlock, Aura Teller). Investigative roles which inspect other attributes, such as alignment (e.g Oracle, Huntsman) see past any disguises.
-
-Take a Sneaking Wolf who has during the last day phase been disguised as a Demon by a Pack Tanner. During the night phase, the player will have two disguises, a strong permanent Citizen disguise and a weak non-permanent Demon disguise. A Fortune Teller would see the Sneaking Wolf as a Demon, as that is the most recent disguise; an Aura Teller would see the Sneaking Wolf as not a threat, as they are only affected by strong disguises; a Huntsman would see the Sneaking Wolf as part of the pack, as they are not affected by disguises at all (they check pack status, not role).
