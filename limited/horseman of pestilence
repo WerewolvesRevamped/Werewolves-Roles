@@ -2,7 +2,7 @@
 __Basics__
 Each night, the Horseman of Pestilence may doom a player. Too sick to act, any attempt of that player to use an ability during the following day and night will fail.
 __Details__
-Dooming a player is an immediate effect. For the following day and night, any attempts to use an active ability will fail for that player. This also applies for group actions, should the doomed player be chosen to execute it. For some abilities, this may be indistinguishable from other failures (attacks), while others have no other way of failing (investigations). Passive abilities, like Runner, are not affected.
+Dooming a player is an immediate effect. For the following day and night, any attempts to use an active ability will fail for that player, as they will be *role blocked*. 
 For more information, check `$i doom`.
 The Horsemen win when everyone else is dead.
 
