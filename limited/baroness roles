@@ -4,4 +4,5 @@ Medium - Learns the question asked and the result of the poll for that question
 Tanner - Learns targets and if one was a wolfpack member
 Innkeeper - Learns the selected role and how many of that role are alive
 
+*Juror* - Learns the target of the jury and their target's role
 *Ravenkeeper* - Learns if a player with a raven visited another player with a raven from the same ravenkeeper
