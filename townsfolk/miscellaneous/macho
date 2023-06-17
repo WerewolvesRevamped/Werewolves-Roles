@@ -1,6 +1,6 @@
 **Macho** | Townsfolk Miscellaneous
 __Basics__
-If attacked, the Macho will be told the name of their attacker and will not die until the beginning of the next night.
+If attacked, the Macho will be told the name of their attacker and will not die until the end of the next day.
 __Details__
 If the Macho is attacked during the night, they will survive until the end of the next day, and will be able to attempt to spread the word about their attacker.
 If a Macho is attacked in a way that will result in the Macho's death at the beginning of the next night, the name of the Macho and the fact that they were attacked will be revealed in storytime.
@@ -10,4 +10,4 @@ If the Macho is attacked multiple times in a single night, they will not be kill
 If the Macho is lynched, they will die as usual. 
 
 __Simplified__
-If attacked at night, the Macho will be told the name of one of their attackers and will not die until the beginning of the next night.
+If attacked at night, the Macho will be told the name of one of their attackers and will not die until the end of the next day.
