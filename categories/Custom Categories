@@ -1,9 +1,9 @@
 **Categories**
 <?CategoryMiscellaneous:> Miscellaneous (TM, WM, SM, UAM, EM)
-<?CategoryPower:> Power (TP, WP, SP)
-<?CategoryInvestigative:> Investigative (TI, WI)
+<?CategoryPower:> Power (TP, WP, SP, UAP)
+<?CategoryInvestigative:> Investigative (TI, WI, SI, UAI)
 <?CategoryGroup:> Group (TG, WG)
-<?CategoryKilling:> Killing (TK, WK, SK)
+<?CategoryKilling:> Killing (TK, WK, SK, UAK)
 <?CategoryRecruitment:> Recruitment (SR)
 <?CategoryAlign:> Align (UAA)
 <?VotingBooth:> Elected (EE)

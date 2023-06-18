@@ -1,1 +1,1 @@
-"flute player" "flute player" "connection add flute Flute-Player,delay 1 delete 1"
+"flute player" "flute player" "channels infopin whispers_flute,connection add flute Flute-Player,delay 1 delete 1"

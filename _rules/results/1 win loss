@@ -1,3 +1,5 @@
 **Win/Loss**
 Games will usually end with a win for one team, and a loss for all other teams. This will usually happen when only one team (and potentially unaligned players) remain, but some solo teams may also win if enemies remain alive if a certain criteria is met (flute team wins as long as all enemies are either dead or enchanted). 
 Some Unaligned roles may leave the game early with a win (ascension) or loss (descension).
+
+Win Conditions are evaluated at the start of any phase (before anything else happens), as well as after the completion of each immediate action, including all its consequences. 

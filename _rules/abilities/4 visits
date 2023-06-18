@@ -1,0 +1,33 @@
+**Visits**
+__Basics__
+*Warning: This is a highly technical description and generally not worth reading. Use `.visits` for a simple explanation.*
+In some cases the term 'visit' is used. This refers to any use of an ability and always involves two players.
+__Details__
+A visit always consists out of one player visiting a *different* player. Some roles/abilities involve several players simultaneously: these abilities are split up into several visits which happen simultaneously (examples below). Visits happen for both role based abilities and other abilities. The ability type targeting is counted as a visit, though in many cases roles will use phrasing such as "all visits (except targeting)". Actions resulting from an effect only count as a visit on effect application, not when the effect does something (examples below). The player performing the visit is always the player who chooses to act (e.g. uses an ability, accepts an offer). When neither player is making an active choice (e.g. a Huntress killing on death) the player who has the role that the relevant ability belongs to is performing the visit.
+
+Examples of visits:
+- An assassin attacks another player
+- The Amulet of Protection is passed from one player to another
+- A Huntress targets another player
+- A Huntress kills a player on death
+- A Witch protects players (split into three separate visits executed simultaneously, one per player)
+- The Cult attacks (visit from the chosen attacker to the target)
+- The Oracle checks players (split into two separate visits executed simultaneously, one per player)
+- The Fletcher selects a customer
+- Fletcher's Customer selects a target
+- The Assistant redirects an ability (visit from the ability user to the assistant, as well as a visit from the ability user to the final target)
+- The Warlock investigates another player
+- Devil's Wager Recipient sells their soul to investigate another player (Recipient visits Devil, then Devil visits investigation target)
+- The Guardian protects another player
+- Somebody receives the devil's wager
+- Chef's Food Recipient eats food
+
+**NOT** a visit:
+- When a demonized player is turned into an Undead, there is no visit between the Vampire and any other player, unless the Vampire is the attacker - only between the attacker and the attacked
+- When an enchanted player's investigation is obstructed by being enchanted, there is no visit between the investigator and the Flute Player, unless the Flute Player is the target
+- When a player dies by the plague, there is no visit between the Plague Bearer and the player
+- The Amulet of Protection blocking an attack does not constitute a visit between the attacker and the amulet crafter
+- Using any action on yourself
+
+__Simplified__
+In some cases the term 'visit' is used. This refers to any use of an ability and always involves two players. In some cases, abilities that involved several players are split into several visits. Visits happen for both role based abilities as well as other abilities (e.g. Guarding protecting and using Devil's Wager abilities).

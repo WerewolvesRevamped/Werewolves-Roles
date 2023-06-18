@@ -1,41 +1,23 @@
 **Cupid Alignment Examples** 
 Since it can be difficult to figure out the exact win condition of the cupid couple, here is a list of examples. For each couple a list of players that may remain alive is provided, unless everyone else must die, it can always implicitly be assumed that the couple can remain alive, without needing to meet any other conditions. For all couples Unaligned players may remain alive, so Unaligned is never listed.
-If a Cupid is in love with an unaligned, instead of their win conditions being combined, the couple has two possible win conditions and may win with either. If the lover ascends, so does the Cupid. In couples with an Unaligned player, the secondary unaligned win condition is not listed. Some couples are impossible, but are listed as impossible for clarification. Some couples have ”Any” as the lover, this means this case applies for any alignment not previously listed.
+If a Cupid changes role into another alignment and is in love with an unaligned player, instead of their win conditions being combined, the couple has two possible win conditions and may win with either. If the lover ascends, so does the Cupid. In couples with an Unaligned player, the secondary unaligned win condition is not listed. Some couples have ”Any” as the lover, this means this case applies for any alignment not previously listed.
  
-Cupid, Townsfolk/Unaligned: Townsfolk
-Cupid, Flute: Enchanted Townsfolk
-Cupid, Underworld: Couple
-Cupid, Werewolf/WWW: Impossible; Cupid becomes Lupine Cupid
-Cupid, Hell: Impossible; Cupid becomes Demonic Cupid
-Cupid, Pyro: Impossible; Cupid becomes Flaming Cupid
-Cupid, Plague: Impossible; Cupid becomes Plagued Cupid
-Cupid, Hag: Impossible; Cupid becomes Cupid Hag
-Cupid, Horseman: Impossible; Cupid becomes Apocalyptic Cupid
+Same Alignment: Lover's alignment
 
-Lupine Cupid, Werewolf/WWW: Couple
-Lupine Cupid, Any: Impossible
+Werewolf; Flute: Only Enchanted Wolves alive
+Werewolf; Nightmare: Only Sleepless Wolves alive
+Werewolf; Flock: Only Herded Wolves alive
+Werewolf; Any: Only Couple alive
+Werewolf aligned Cupid; Imp (Infected Wolf): Demonic Cupid
 
-Flaming Cupid, Pyro: Couple
-Flaming Cupid, Any: Impossible
+Underworld; Flute: Only Enchanted Underworld alive
+Underworld; Nightmare: Only Sleepless Underworld alive
+Underworld; Flock: Only Herded Underworld alive
+Underworld; Any: Only Couple alive
 
-Apocalyptic Cupid, Horseman: Couple
-Apocalyptic Cupid, Any: Impossible
-
-Plagued Cupid, Plague: Couple
-Plagued Cupid, Any: Impossible
-
-Demonic Cupid, Hell: Soulless players, Hell
-Demonic Cupid, Any: Impossible
-
-Cupid Hag, Hag: Hags
-Cupid Hag, Any: Impossible
-
-Undead Cupid, Townsfolk/Werewolf/Other Solos: Couple
-Undead Cupid, Flute: Enchanted Underworld
-Undead Cupid, Underworld/Unaligned: Underworld
-Undead Cupid, Hell: Impossible
-
-Cupid Wolf, Townsfolk/Other Solos: Couple
-Cupid Wolf, Flute: Enchanted Werewolves
-Cupid Wolf, Werewolf/Unaligned: Werewolves
-Cupid Wolf, Hell: Impossible
+Nightmare; Flute: Only Enchanted Nightmare and Sleepless Flute alive
+Nightmare; Flock: Only Herded Nightmare and Sleepless Flock alive
+Nightmare; Townsfolk: Only Sleepless Townsfolk alive
+Nightmare; Pyro: Only Sleepless Pyromancers alive
+Nightmare; Plague: Only Sleepless Plague alive
+Nightmare; Horsemen: Only Sleepless Horsemen alive

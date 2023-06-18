@@ -1,0 +1,13 @@
+**Baroness** | Werewolf Investigative
+__Basics__
+The Baroness can learn the information received by other players.
+__Details__
+During the day, the Baroness may either select an investigative role or another information-receiving role (see `$i baroness roles`).
+For the next two phases, when any player with the targeted role uses an ability, the Baroness will learn all information the player receives. If no player with the selected role is alive, the Baroness receives no information.
+Selecting a role is an end day ability.
+The Baroness cannot select the same role during consecutive days.
+The Baroness is not a lycan, nor are they a member of the wolfpack.
+
+__Simplified__
+The Baroness can select a role during the day and learn any information that a player with that role would learn the during the following two phases.
+The Baroness is not a lycan, nor are they a member of the wolfpack.
