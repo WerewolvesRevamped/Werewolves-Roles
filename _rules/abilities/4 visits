@@ -18,7 +18,7 @@ Examples of visits:
 - The Assistant redirects an ability (visit from the ability user to the assistant, as well as a visit from the ability user to the final target)
 - The Warlock investigates another player
 - Devil's Wager Recipient sells their soul to protect another player (Recipient visits Devil, then Devil visits protection target)
-- Devil's Wager Recipient sells their identity to protect another player (Recipient visits Devil, then Devil visits investigation target, then Devil visits Recipient)
+- Devil's Wager Recipient sells their identity to investigate another player (Recipient visits Devil, then Devil visits investigation target, then Devil visits Recipient)
 - The Guardian protects another player
 - Somebody receives the devil's wager
 - Chef's Food Recipient eats food
