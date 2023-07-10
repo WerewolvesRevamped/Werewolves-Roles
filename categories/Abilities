@@ -1,5 +1,5 @@
 **Abilities**
-<?CategoryKilling:> Attacks
+<?Attack:> Attacks
 <?CategoryInvestigative:> Investigation
 <?CategoryMiscellaneous:> Targeting
 <?Disguise:> Disguises
@@ -7,11 +7,11 @@
 <?Defense:> Defenses
 <?Redirect:> Redirections
 <?CategoryKilling:> Killing
-<?VotingBooth:> Vote Manipulation
+<?VoteManipulation:> Vote Manipulation
 <?Whispering:> Whispering
 <?CategoryPower:> Inflicting
 <?BotDeveloper:> Obstructions
 <?CategoryGroup:> Group Membership
-<?VotingBooth:> Lynching
+<?Lynch:> Lynching
 <?Ascension:> Ascension & Descension
 <?RoleBlocking:> Role Blocking
