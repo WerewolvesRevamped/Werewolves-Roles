@@ -1,1 +1,1 @@
-"chef" "%r" "connection add chef%n chef,delay 1 delete 1"
+"chef" "%r" "channels infopin whispers,connection add chef%n chef,delay 1 delete 1"
