@@ -4,6 +4,7 @@ The day after the Child dies, there will be two lynches instead of one.
 __Details__ 
 Whenever the Child dies, there is an additional lynch the next day. If more than one Child dies, there can be more than two lynches.
 It is allowed to lynch the same player several times. This is useful in scenarios where the werewolves want to lynch an Executioner, who can avoid one lynch. 
+This ability is triggered when a player who at any point had the role of Child dies, not when a Child loses their role.
 
 __Simplified__
 The day after the Child dies, there will be two lynches instead of one.
