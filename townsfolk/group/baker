@@ -1,8 +1,11 @@
 **Baker** | Townsfolk Group
 __Basics__
 There is always more than one Baker. All the Bakers have a secret channel where they can communicate with the other Bakers securely.
+Whenever the wolves eat a Baker, they will be able to use their powers twice.
 __Details__
-Bakers are a special type of townsfolk; they know all other players who gained the Baker role. They can fully trust and rely on each other. Bakers share a private channel, where they can communicate with each other. 
+Bakers share a private channel, where they can communicate with each other. 
+When the Wolfpack kills a Baker, each member of the pack will be able to use any of their role's powers another time during the next day/night. If a wolfish player kills a Baker, without using the pack's attack, only they will be able to use their power an additional time.
+__Edge Cases__
 If a Baker loses their role, they will still keep access to the channel. This means that at some point, a Baker may betray the group. 
 If a Baker is infected by the infecting wolf their role changes to bloody butcher, instead of wolf. If this happens, all other Bakers become butchers, and are notified of this change. 
 
