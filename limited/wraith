@@ -2,7 +2,7 @@
 __Basics__
 The Wraith wins with the reaper and joins a channel with the reaper to communicate securely.
 __Details__
-The Wraith does not have any special abilities. If somebody tries to copy the reaper a Wraith is created instead. The Wraith cannot become sleepless.
+The Wraith does not have any special abilities. If somebody tries to copy the reaper a Wraith is created instead. The Wraith starts out sleepless.
 When a sleepless player uses a power on the Wraith, their power fails and the Wraith immediately attacks them.
 One exception is that sleepless players may still target the Wraith.
 If the (original) Reaper dies, the Wraith may turn one player sleepless each night.
