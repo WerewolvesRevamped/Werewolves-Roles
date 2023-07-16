@@ -1,11 +1,11 @@
 **Grandma** | Townsfolk Power
 __Basics__
-Each night, the Grandma can choose up to two players. The next day, these selected players can’t vote. That day, Grandma will get the same amount of votes as people they selected.
+Each night, the Grandma may choose exactly two players. The next day, these selected players can’t vote, instead the Grandma will have two votes.
 __Details__
 Making players unable to vote is an immediate ability. If they still vote, their vote simply isn’t counted towards the final result. 
-The Grandma's vote still looks like a normal vote, but can count as 0, 1 or 2, depending on how many players the Grandma chose. 
+The Grandma's vote still looks like a normal vote, but can count as 0 or 2 votes, depending on if the Grandma chose to use their power. The Grandma must either select exactly two players (at the same time), or no players at all.
 The two chosen players will additionally be added to a private channel, where the Grandma can anonymously talk to them. At the end of the day the players are removed and the votes are restored (even if the Grandma is dead at that point).
-If the Grandma selects a player with several votes (e.g. Mayor or Grandma), they only lose 1 of their votes, but keep the others. The Grandma also only gains 1 vote, like normally. 
+If the Grandma selects a player with several votes (e.g. another Grandma), they only lose 1 of their votes, but keep the others.
 Players with negative votes or no votes won't have their amount of votes changed (and the Grandma is informed), but are still added to the channel. The Mayors extra vote can never be removed by the Grandma.
 The Grandma may select themself. The Grandma is not affected by redirections.
 
