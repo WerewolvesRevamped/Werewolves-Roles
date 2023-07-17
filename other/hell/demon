@@ -10,7 +10,7 @@ The Demon may use souls from the pool to protect or attack somebody.
 If the Demon is attacked while a soul is in the pool, a soul will automatically be used to protect the Demon. 
 Use `$info souls` for a detailed explanation.
 
-Members of the Hell team cannot betray the team in any way.
+Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
 
 __Simplified__
 The Demon wins with the devil and joins a channel with the devil. The Demon can use the hell team's pool of souls.
