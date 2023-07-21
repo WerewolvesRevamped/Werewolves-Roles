@@ -19,7 +19,7 @@ Alternatively, they may also ignore the wager.
 If the Devil dies before the night ends, the recipient is not informed, however no wager action can happen anymore.
 Use `$info wager` for a detailed explanation.
 
-Members of the Hell team cannot betray the team in any way.
+Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
 
 __Simplified__
 Each day, the Devil may choose one player to send the devil’s wager to, who may then choose one of four options: Attack, protect, investigate or ignore.
@@ -29,4 +29,4 @@ The hell team can use obtained souls for protection or to attack players.
 
 The Devil can choose a weak disguise at the start of the game.
 When everyone is dead, unaligned or soulless the Devil wins.
-Members of the Hell team cannot change role or betray the team in any way.
+Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
