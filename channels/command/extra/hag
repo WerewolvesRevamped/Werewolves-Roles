@@ -1,1 +1,0 @@
-"hag" "%r" "infopin hag,delay 1 infopin hag$spells0,delay 2 connection add %r,delay 3 delete 1"
