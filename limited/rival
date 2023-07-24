@@ -1,0 +1,14 @@
+**Rival** | Unaligned Investigative | Limited Transformation
+
+__Basics__
+The Rival can only win when there are no other Rivals left in the game. 
+Every night after Night 1, the Rival can investigate a player and will learn their role and if the investigation was affected by disguises.
+__Details__
+The Rival can only exist with another rival in the game. The Rival ascends when the other Rival in the game has died.
+Every night after Night 1, the Rival can investigate a player and will learn their role.
+The Rival is affected by weak disguises, obstructions and redirections. They are told specifically if the investigation was affected by a disguise, an obstruction, a redirection or none at all.
+If the win condition of the Rival changes in any way, they do not require the other Rival to die. 
+If the win condition of the other Rival changes in any way, the Rival still requires the other Rival to die. 
+
+__Simplified__
+Every night after Night 1, the Rival can investigate a player and will learn their role, the Rival can only win when there are no other Rivals left in the game. 
