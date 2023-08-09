@@ -1,13 +1,13 @@
 **Grandma** | Townsfolk Power
 __Basics__
-Each night, the Grandma may choose exactly two players. The next day, these selected players can’t vote, instead the Grandma will have two votes.
+Each night, the Grandma may choose exactly two players. The next day, these selected players have no vote: the Grandma will have two votes instead.
 __Details__
-Making players unable to vote is an immediate ability. If they still vote, their vote simply isn’t counted towards the final result. 
-The Grandma's vote still looks like a normal vote, but can count as 0 or 2 votes, depending on if the Grandma chose to use their power. The Grandma must either select exactly two players (at the same time), or no players at all.
-The two chosen players will additionally be added to a private channel, where the Grandma can anonymously talk to them. At the end of the day the players are removed and the votes are restored (even if the Grandma is dead at that point).
-If the Grandma selects a player with several votes (e.g. another Grandma), they only lose 1 of their votes, but keep the others.
-Players with negative votes or no votes won't have their amount of votes changed (and the Grandma is informed), but are still added to the channel. The Mayors extra vote can never be removed by the Grandma.
+Stealing players' votes is an immediate ability. Players with stolen votes may still vote on public polls, but it will not be counted.
+The Grandma's vote appears to be a normal vote, but can count as 0 or 2 votes, depending on whether the Grandma chooses to use their power. The Grandma must select either exactly two players simultaneously, or no players at all.
+The two chosen players will be added to a private channel, where the Grandma can anonymously talk to them. At the end of the day, the players are removed and the votes are restored (even if the Grandma is dead at that point).
+If the Grandma selects a player with several votes (e.g. another Grandma), the targeted player only loses 1 of their votes.
+Players with negative votes or no vote will experience no change in vote value (and the Grandma is informed), but are still added to the channel. The Mayor's extra vote can never be removed by the Grandma.
 The Grandma may select themself. The Grandma is not affected by redirections.
 
 __Simplified__
-Each night, the Grandma may choose exactly two players. The next day, these selected players' vote won't count, instead the Grandma will have two votes. The Grandma can anonymously talk with their selected players.
+Each night, the Grandma may choose exactly two players. The next day, these selected players' votes won't count: the Grandma will have two votes instead. The Grandma can anonymously talk with their selected players.
