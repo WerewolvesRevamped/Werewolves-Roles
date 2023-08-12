@@ -6,7 +6,7 @@ __Details__
 The Reaper is permanently sleepless and shares a channel with other members of the nightmare team.
 
 At the start of every night, the Reaper will be informed of which powers they may use that night. These powers correspond to the role categories of the players who have died since the start of the previous night. Each power is immediate, and turns its target sleepless: some powers have an additional effect, applied to the same target.
-For *Killing* roles the additional effect is an attack; for *Investigative* roles it is a role investigation; *Recruitment* and *Align* roles let the Reaper turn another player into a spirit.
+For *Killing* roles the additional effect is an attack; for *Investigative* roles it is a role investigation; for *Recruitment* and *Align* roles it turns the target into a spirit.
 All other role categories have no additional effect.
 
 The Reaper is not told which role category the dead players belonged to: they are only informed of which powers (kills, investigations, conversions, and basic powers) are available to them. If the Reaper chooses not to use one of their powers during the night, they may not then use it the next night.
