@@ -1,10 +1,11 @@
 **Cat** | Unaligned Align
 __Basics__
-During Night 1, the Cat will immediately become the opposite role dog choses for the rest of the game. 
+During Night 1, the Cat will become the counter-role to that which the dog has chosen. 
 __Details__
-If the dog chooses journalist, the Cat will turn into wolf; cursed civilian will turn the Cat into a psychopath with the dog in the list; and wolf will turn the Cat into a journalist.
-Changing role is an immediate consequence of the dog choosing.
-For each Cat in the game, there must be a corresponding dog. Neither the Cat, nor the dog will know their counterpart.
+If the dog chooses fortune teller, the Cat will turn into warlock, and vice versa. The dog choosing rival will turn the Cat into an opposing rival.
+Changing role is an immediate consequence of the dog choosing. A Cat which becomes a fortune teller or a warlock may not use that role's investigation during Night 1.
+For each Cat in the game, there must be a corresponding dog. Neither player will know their counterpart.
+The Cat is strongly disguised as Cat: this will persist despite any role changes.
 
 __Simplified__
 For each Cat, there is a corresponding dog. The Cat will become the opposite of the role the dog chose.
