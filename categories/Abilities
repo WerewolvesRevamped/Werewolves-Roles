@@ -1,15 +1,18 @@
 **Abilities**
+__Main Ability Types__
 <?Attack:> Attacks
 <?CategoryInvestigative:> Investigation
 <?CategoryMiscellaneous:> Targeting
 <?Disguise:> Disguises
 <?Protect:> Protections
 <?Defense:> Defenses
+<?CategoryPower:> Inflicting
+
+__Other Ability Types__
 <?Redirect:> Redirections
 <?CategoryKilling:> Killing
 <?VoteManipulation:> Vote Manipulation
 <?Whispering:> Whispering
-<?CategoryPower:> Inflicting
 <?BotDeveloper:> Obstructions
 <?CategoryGroup:> Group Membership
 <?Lynch:> Lynching
