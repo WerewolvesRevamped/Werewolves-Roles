@@ -1,0 +1,13 @@
+**Role Changes** | Ability Type
+__Basics__
+Role Changes are a rare type of ability that causes a player's role to change from one role to another.
+__Details__
+We differentiate between five types of role changes:
+Promotion: A promotion is a role change that triggers automatically when some condition is met and 'promotes' the player to a stronger role of the same alignment.
+Recruitment: A recruitment is any type of role change from one alignment (or unaligned) to another alignment. The player is 'recruited' into the new team. Recruitments happen without any intent of the recruited player.
+Demotion: A demotion is the opposite of a promotion. They trigger when a condition is met or an action is done by the player that 'demotes' them to a weaker role of the same alignment.
+Selection: A selection is an active action from the relevant player. They 'select' a role or player which will determine their new role.
+Assignment: An assignment is the counterpart of a selection. A player is 'assigned' a new role, usually as a consequence of another player's selection. 
+ 
+__Simplified__
+Role Changes are a rare type of ability that causes a player's role to change from one role to another. Role Changes may target the player themselves, or another player entirely.
