@@ -1,29 +1,29 @@
 **Abilities**
 __Main Ability Types__
 <?Attack:> Attacks
-<?CategoryInvestigative:> Investigation
+<?CategoryInvestigative:> Investigations
 <?CategoryMiscellaneous:> Targeting
 <?Disguise:> Disguises
 <?Protect:> Protections
 <?Defense:> Defenses
-<?CategoryPower:> Inflicting
+<?CategoryPower:> Inflictions
 
 __Other Ability Types__
 <?Redirect:> Redirections
 <?CategoryKilling:> Killing
-<?VoteManipulation:> Vote Manipulation
-<?Whispering:> Whispering
+<?VoteManipulation:> Vote Manipulations
+<?Whispering:> Whispers
 <?BotDeveloper:> Obstructions
 <?CategoryGroup:> Group Membership
-<?Lynch:> Lynching
-<?Ascension:> Ascension & Descension
-<?RoleBlocking:> Role Blocking
-<?CategoryAlign:> Role Change 
+<?Lynch:> Lynchings
+<?Ascension:> Ascensions & Descensions
+<?RoleBlocking:> Role Blocks
+<?CategoryAlign:> Role Changes
 <?Soul:> Loyalty
-<?KWList:> Announcement
-<?VotingBooth:> Poll Manipulation
+<?KWList:> Announcements
+<?VotingBooth:> Poll Manipulations
 <?PlagueDoctor:> Curing
 <?Extra:> Granting
 <?KWList:> Private Information
-<?CategoryAlign:> Alignment Change
-<?LookAlike:> Ability Copying
+<?CategoryAlign:> Alignment Changes
+<?LookAlike:> Ability Copies
