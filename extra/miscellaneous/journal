@@ -1,0 +1,7 @@
+**Journal** | Extra Miscellaneous
+
+__Basics__
+When a journalist dies a player receives their journal.
+
+__Details__
+A journalist has their own journal channel to write anything they want. They can also target a role. When the journalist dies, the journal will be given to a random person of the targeted role, giving them access to the journal channel. If there are no living players with the targeted role the journal will be lost.
