@@ -1,10 +1,10 @@
 **Restauraunt Customer** | Extra Miscellaneous 
 
 __Basics__
-A player becomes a restaurant customer when a Chef invites them to their restaurant for a day phase, where they may choose whether or not to eat the chef's food
+When a chef chooses to send food to a player, that player becomes a Restaurant Customer for the duration of the following day phase.
 
 __Details__
-When a chef selects a restaurant customer, their target will be added to a restaurant channel where the chef can anonymously communicate with the restaurant customer. The Chef selects one of two types of food ahead of time and the restaurant customer has the choice of eating it or not. 
-Charmed food offers protection the following night phase and poisoned food kills the restaurant customer at the end of the day phase.
-If a player eats a chef's food, they can no longer become a customer again.
-At the end of the phase, the player leaves the restaurant and is no longer a restaurant customer.
+When a chef selects a Restaurant Customer, their target will be added to a restaurant channel where the chef can anonymously communicate with them. The Restaurant Customer may choose whether to eat the food or not: they do not know whether it is charmed or poisoned. 
+Charmed food offers protection for the duration of the following night phase. Poisoned food kills the restaurant customer at the end of the day phase.
+If the Restauarnt Customer eats a chef's food, they can no longer become a Restauarant Customer again, even if a different chef attempts to send them food.
+At the end of the day phase, the player leaves the restaurant and loses the Restaurant Customer role.
