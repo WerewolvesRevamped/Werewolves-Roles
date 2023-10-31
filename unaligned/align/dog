@@ -1,8 +1,11 @@
 **Dog** | Unaligned Align
 __Basics__
-During Night 1, the Dog may choose between journalist, cursed civilian or wolf, and will immediately become this role for the rest of the game.
+During Night 1, the Dog must choose to immediately become either a fortune teller, a warlock, or a specific unaligned role.
 __Details__
-Choosing a role is an immediate ability. If the Dog hasn’t chosen a role before the night ends, the dog will become a journalist. After choosing a role the Dog is no longer unaligned.
+Choosing a role is an immediate ability. If the Dog hasn’t chosen a role before the night ends, they will become a Fortune Teller.
+If there is a cat corresponding to the Dog, the unaligned role the Dog may become is rival - otherwise, it is psychopath.
+A Dog which becomes a fortune teller or a warlock may not use that role's investigation during Night 1.
+The Dog is strongly disguised as Dog: this persists despite role changes.
 
 __Simplified__
-During Night 1, the Dog may choose between journalist, cursed civilian or wolf, and will immediately become this role for the rest of the game.
+During Night 1, the Dog may choose between fortune teller, warlock, and either rival or psychopath. It will immediately become this role for the rest of the game.

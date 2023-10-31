@@ -1,0 +1,5 @@
+**Journal Recipient** | Extra Miscellaneous
+__Basics__
+When a journalist dies, a player receives their journal.
+__Details__
+A journalist has their own journal channel in which they can write anything they wish. The journalist can target a role. When the journalist dies, one player with the targeted role will become the Journal Recipient and receive access to the journal. If there are no living players with the targeted role, the journal will be lost.
