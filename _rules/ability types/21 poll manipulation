@@ -7,4 +7,4 @@ This ability can affect one of five things related to polls:
 • Creation: The role itself is what causes the poll to exist
 • Cancellation: After the poll has been closed, the resulting effect is cancelled
 • Deletion: Remove a poll that was supposed to otherwise exist
-• Candidate Manipulation: Modify the results of the poll
+• Result Manipulation: Modify the results of the poll
