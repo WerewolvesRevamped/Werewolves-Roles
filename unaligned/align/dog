@@ -6,6 +6,7 @@ Choosing a role is an immediate ability. If the Dog hasn’t chosen a role befor
 If there is a cat corresponding to the Dog, the unaligned role the Dog may become is rival - otherwise, it is psychopath.
 A Dog which becomes a fortune teller or a warlock may not use that role's investigation during Night 1.
 The Dog is strongly disguised as Dog: this persists despite role changes.
+The Dog is nonaligned until it changes role.
 
 __Simplified__
 During Night 1, the Dog may choose between fortune teller, warlock, and either rival or psychopath. It will immediately become this role for the rest of the game.
