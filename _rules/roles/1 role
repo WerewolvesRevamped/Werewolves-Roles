@@ -5,6 +5,6 @@ __Details__
 Roles come in five categories: Townsfolk, Werewolves, Solo, Unaligned and Extra.
 Townsfolks, Werewolves and Solo roles each have an alignment, which defines their win condition.
 Unaligned roles are non-aligned (or at least start out as such) and come either with a specific win condition or a way to join/gain an alignment.
-Extra roles are added on top of a player's primary role and do not affect their alignment or win condition. Any cases where a player's role are referenced in the signluar form it can be assumed only the primary role (and not Extra roles) are being referenced.
+Extra roles are added on top of a player's primary role and do not affect their alignment or win condition. Any cases where a player's role are referenced in the singular form it can be assumed only the primary role (and not Extra roles) are being referenced.
 Roles also specify the abilities the player starts out with. These may be passive, active or reactive powers. Role's abilities are split into various ability types (see `$i ability types`).
 Role also can have role attributes, which are attached to the role (e.g. a role's category or whether a role is wolfish).
