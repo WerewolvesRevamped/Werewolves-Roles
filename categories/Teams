@@ -1,4 +1,4 @@
 **Teams**
-<?TownsfolkCard:> Townsfolk
-<?WolfCard:> Werewolves
-<?SoloPlaceholder:> Solo Teams
+<?TownsfolkCard:> Townsfolk (`$i townsfolk`)
+<?WolfCard:> Werewolves (`$i werewolves`)
+<?SoloPlaceholder:> Solo Teams (`$i solo teams`)
