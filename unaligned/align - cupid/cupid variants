@@ -1,8 +1,8 @@
 **Cupid Variants**
-The Cupid can never change role to a role that isn't a cupid variant. Every time the Cupid would usually change role, they instead change to a different cupid variant. After picking a lover, or if the lover changes alignment, the cupid may also change role. The following cupid variants exist.
+The cupid can never change role to a role that isn't a Cupid Variant. Every time the cupid would usually change role, they instead change to a different Cupid Variant. After picking a lover, or if the lover changes alignment, the cupid may also change role. The following Cupid Variants exist.
 
 __Cupid__
-This is the default cupid role, and the only one that can be in a role list. Unless another case applies the cupid stays as this role.
+This is the default cupid role, and the only one that can be in a role list. Unless another case applies, the cupid stays as this role.
 
 __Cupid Wolf__
 If the cupid is targetted by the infecting wolf, they turn into a cupid wolf instead of a normal wolf.
@@ -14,7 +14,7 @@ __Spectral Cupid__
 If the cupid is recruited onto the nightmare team, they turn into a spectral cupid instead of into a spirit.
 
 __Demonic Cupid__
-If the cupid's lover is a member of hell, the cupid becomes a demonic cupid, and a full member of hell. Afterwards, the cupid cannot change role again.
+If the cupid's lover is a member of the hell team, the cupid becomes a demonic cupid and a full member of hell. Afterwards, the cupid cannot change role again.
 
 __Cupid Hag__
 If the cupid's lover is a hag, the cupid becomes a cupid hag. The cupid hag shares the win condition of the hags and can be wronged.

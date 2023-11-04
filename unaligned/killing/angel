@@ -2,12 +2,12 @@
 __Basics__
 The Angel wins when they are lynched.
 __Details__
-When the Angel wins, the Angel ascends and stops playing and the game continues. In addition, the following lynch will be canceled.
-The Angel may select a player that dies when the Angel is lynched, if this player has voted for the Angel when the Angel is lynched, it is announced and they will also die. 
+When the Angel wins, the Angel ascends and stops playing. The game continues. In addition, the following lynch will be cancelled.
+The Angel may select a player. If this player has voted for the Angel when the Angel is lynched, they will also die. If the Angel has not selected a target, or the selected target did not vote for and did not apply any invisible votes on the Angel, a random player who did vote for the Anegl will die instead. The cause of their death is announced.
+If the Angel is lynched by unusual means (e.g. by the invisible Stalker votes or the Executioner selecting them) the player responsible for this will die with the Angel in place of the chosen target. If nobody except the Angel has voted for the Angel, the Angel dies and does not win.
 The Angel may change their target once per phase, with 1 emergency change to be used whenever the Angel wants to. The Angel cannot select themself. Targetting a player is an immediate effect. The Angel may choose to target nobody.
-If they haven’t selected a (valid) target, a random player that has voted for the Angel is selected instead. If the Angel is lynched by unusual means (e.g. by the invisible Stalker votes or the Executioner selecting them) the player responsible for this will die with the Angel. If nobody except the Angel has voted for the Angel, the Angel dies and does not win.
-If the Angel's target didn't vote for the Angel, but did put invisible votes on the Angel, they are considered a valid target.
+The Angel is nonaligned.
 
 __Simplified__
-The Angel wins when they are lynched, however the game continues afterwards. In addition, the following lynch will be canceled.
+The Angel wins when they are lynched: the game continues afterwards. In addition, the following lynch will be cancelled.
 The Angel may select a player that dies when the Angel is lynched, but only if the target is voting for the Angel. 

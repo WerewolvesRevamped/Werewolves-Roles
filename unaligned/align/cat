@@ -6,6 +6,7 @@ If the dog chooses fortune teller, the Cat will turn into warlock, and vice vers
 Changing role is an immediate consequence of the dog choosing. A Cat which becomes a fortune teller or a warlock may not use that role's investigation during Night 1.
 For each Cat in the game, there must be a corresponding dog. Neither player will know their counterpart.
 The Cat is strongly disguised as Cat: this will persist despite any role changes.
+The Cat is nonaligned until it changes role.
 
 __Simplified__
 For each Cat, there is a corresponding dog. The Cat will become the opposite of the role the dog chose.
