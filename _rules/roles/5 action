@@ -1,0 +1,13 @@
+**Action** | Werewolves Revamped
+__Basics__
+A player may submit an Action to use one of their active abilities.
+__Details__
+An action is tied to one or more abilities.
+
+Action Timing: Actions have different timings, which determine when the connected ability get used. (Day/Night) Immediate actions trigger their ability immediately. End (day/night) phase actions trigger their ability at the end of a certain phase. Compound actions trigger several abilities and may combine several of the previous action timings.
+Once an immediate action is submitted, it can no longer be taken back and is immediately evaluated. End phase actions can be cancelled or changed until the ability is triggered. Compound actions can be changed until the first action is triggered.
+
+Action Restriction: There are also action restriction, which may block certain actions from being possible. Possible action restrictions are for example time based ones (Can't use Action before Night 2), effect or attribute based ones (Can't use Action with X effect/attribute) or disallowing consecutive use of an action.
+When an action triggers several abilities at the same time, they are executed parallely (unless specified otherwise). That is to say, that all abilities will be indepedent of each other and not affected by each other's results. 
+
+Action Scaling: An action can also use scaling - an action may be used several times depending on the amount of present players.
