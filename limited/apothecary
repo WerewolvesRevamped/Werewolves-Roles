@@ -1,0 +1,8 @@
+**Apothecary** | Townsfolk Killing
+__Basics:__
+Each night, the Apothecary may poison a player, killing them at the end of the next night. Alternatively, they may cure the player they last poisoned.
+__Details:__
+The Apothecary starts the game with three flasks of poison and a single antidote.
+When the Apothecary poisons a player, that player will be killed at the end of the next night (this is not an attack). This will only happen if the Apothecary survives until the end of that night. 
+Instead of poisoning a player, the Apothecary may also use their antidote to cure the player they have previously poisoned, saving them from death.
+Both actions are immediate abilities.
