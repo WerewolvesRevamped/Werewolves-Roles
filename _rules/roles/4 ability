@@ -1,6 +1,6 @@
 **Ability** | Werewolves Revamped
 __Basics__
-Abilities can either be manually or automatically used by players in order to affect the game in various ways. To trigger a manual ("active") ability, players can use an *action*. Other abilities are used automatically.
+Abilities can either be manually or automatically used by players in order to affect the game in various ways. To trigger a manual ("active") ability, players can use an *action* (see `$i action`). Other abilities are used automatically.
 __Details__
 Most roles have one or several abilities.
 Abilities consist out of two different elements. Abilities are assigned to a role/player, herefore refered as the current player.
