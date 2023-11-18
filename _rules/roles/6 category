@@ -1,0 +1,13 @@
+**Category** | Werewolves Revamped
+__Basics__
+Each role is part of a Category. Categories give a general idea of what abilities a role may have and are sometimes used in role lists or by some abilities in place of roles.
+__Details:__
+The following categories exist and roles are assigned to them with a priority of top to bottom:
+<?VotingBooth:> (E) Elected: Roles that are obtained through election
+<?CategoryAlign:> (A) Align: Roles that change alignment without role change or that start out nonaligned and join an alignment
+<?CategoryRecruitment:> (R) Recruitment: Role that can directly change other players alignment
+<?CategoryKilling:> (K) Killing: Roles that can kill, indirectly lynch or attack
+<?CategoryGroup:> (G) Group: Roles that are part of a group (excluding default groups of teams)
+<?CategoryInvestigative:> (I) Investigative: Roles with an active investigative ability
+<?CategoryPower:> (P) Power: Roles with an active ability besides targeting
+<?CategoryMiscellaneous:> (M) Miscellaneous: All remaining roles
