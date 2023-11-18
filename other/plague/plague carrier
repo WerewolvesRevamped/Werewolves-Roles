@@ -5,7 +5,7 @@ __Details__
 The Plague Carrier does not have any special abilities. If somebody tries to copy a plague bearer, a Plague Carrier is created instead. 
 The Plague Carrier can become contaminated. A contaminated Plague Carrier will never die due to the plague.
 A plague bearer may not attempt to directly contaminate the Plague Carrier using one of their rodents.
-If the last plague bearer dies, and there are rodents left, the Plague Carrier becomes a plague bearer. A Plague Carrier who is contaminated ceases to be so before becoming a plague bearer.
+If the last plague bearer dies, and there are rodents left, the Plague Carrier stops being contaminated and becomes a plague bearer.
 At the start of every phase, the Plague Carrier is told the amount of living contaminated players.
 
 __Simplified__
