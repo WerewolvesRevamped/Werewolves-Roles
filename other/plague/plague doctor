@@ -3,7 +3,7 @@ __Basics__
 The Plague Doctor requires the plague to be eliminated in order to win.
 Each night, the Plague Doctor may check a player for symptoms of the plague. They are also capable of curing players during the day.
 __Details__
-As soon as the plague is eliminated, the Plague Doctor ascends and wins. The plague is eliminated if these two conditions are met: there are no living contaminated players and there are either no remaining plague bearers or no remaining rats. The Plague Doctor cannot win whilst dead.
+As soon as the plague is eliminated, the Plague Doctor ascends and wins. The plague is eliminated if these two conditions are met: there are no living contaminated players and there are either no remaining plague bearers or no remaining rodents. The Plague Doctor cannot win whilst dead.
 Each night, the Plague Doctor may check a player for symptoms of the plague. The Plague Doctor will immediately be informed if their target has the plague: if the target does, they are also informed of which phase the target contracted it in.
 Members of the plague team do not have any symptoms and will *never* show up as having the plague.
 The Plague Doctor starts off with vials that can cure the plague. They have one vial for every five players in the game (rounded).
