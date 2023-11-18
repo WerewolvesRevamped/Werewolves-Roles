@@ -1,17 +1,17 @@
 **Plague Doctor** | Unaligned Investigative
 __Basics__
-The Plague Doctor is mostly immune to the plague bearer’s disease and requires the plague to be eliminated in order to win.
-Each night, they may check a player for symptoms of the plague. Additionally, they are also able to cure players during the day.
+The Plague Doctor requires the plague to be eliminated in order to win.
+Each night, the Plague Doctor may check a player for symptoms of the plague. They are also capable of curing players during the day.
 __Details__
-As soon as the plague is eliminated, the Plague Doctor ascends and wins. The plague is eliminated if these two conditions are met: there are no living contaminated players and there are either no remaining plague bearers or no remaining rats. The Plague Doctor cannot win while dead.
-Each night, the Plague Doctor may check a player for symptoms of the plague. The Plague Doctor will immediately be informed if and since when their target has had the plague.
+As soon as the plague is eliminated, the Plague Doctor ascends and wins. The plague is eliminated if these two conditions are met: there are no living contaminated players and there are either no remaining plague bearers or no remaining rats. The Plague Doctor cannot win whilst dead.
+Each night, the Plague Doctor may check a player for symptoms of the plague. The Plague Doctor will immediately be informed if their target has the plague: if the target does, they are also informed of which phase the target contracted it in.
 Members of the plague team do not have any symptoms and will *never* show up as having the plague.
 The Plague Doctor starts off with vials that can cure the plague. They have one vial for every five players in the game (rounded).
-Each day, the Plague Doctor may also choose to use one of their vials to immediately cure a player. Cured players no longer have the plague and stop being contagious, however they will not be informed of this.
-If the plague bearer attempts to contaminate the Plague Doctor with one of their rodents, the Plague Doctor immediately dies (not an attack).
-Otherwise, the Plague Doctor is immune to the disease.
+Each day, the Plague Doctor may choose to use one of their vials to immediately cure a player. Cured players stop being contaminated: they will not be informed of this. Players who have been cured can become contaminated again.
+The Plague Doctor cannot be contaminated. If the plague bearer attempts to contaminate the Plague Doctor with one of their rodents, the Plague Doctor immediately dies - this is not an attack. Visits from contaminated players do not cause the PLague Doctor to become contaminated.
+The Plague Doctor is nonaligned.
 
 __Simplified__
-The Plague Doctor is mostly immune to the plague bearer’s disease, but dies if directly targeted by a rodent, and requires the team to be eliminated in order to win. As soon as the plague is eliminated (nobody is or can be contaminated), the Plague Doctor ascends and wins.
-Each night, the Plague Doctor may check one player for whether they have the plague, and may also use one of their vials during the day to immediately cure a player.
-The Plague Doctor cannot win while dead.
+The Plague Doctor is partially immune to the plague bearer’s disease, but dies if directly targeted by a rodent. As soon as the plague is eliminated (nobody is or can be contaminated), the Plague Doctor ascends and wins.
+Each night, the Plague Doctor may check one player for whether they have the plague. They may use one of their vials during the day to immediately cure a player.
+The Plague Doctor cannot win whilst dead.
