@@ -1,12 +1,11 @@
 **Cult Leader** | Townsfolk Killing
 __Basics__
-The Cult Leader acts as a cult member, except that if the Cult Leader dies the cult loses its ability to attack at night.
+The Cult Leader acts as a cult member, but if the Cult Leader dies then the cult loses its ability to attack at night.
 __Details__
 The Cult Leader is part of the cult. After Night 1, the cult can attack one player each night.
-When the Cult Leader dies, the cult is disbanded and can no longer attack at night.
-If the Cult Leader loses their role, the cult continues to exist, until the original Cult Leader dies.
-Any member of the cult, who no longer has their original role, can still vote on who to attack.
-The cult decides their victims by voting on whom they suspect most.
+If at any point there is no living Cult Leader, the cult is disbanded and can no longer attack at night.
+All members of the cult can vote, even if they have lost their original role.
+The cult decides their victims by voting on whom they wish to attack.
 The cult’s attack is an end-night ability and is always reactively executed by a Cult Leader.
 
 __Simplified__
