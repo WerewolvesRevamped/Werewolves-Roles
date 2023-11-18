@@ -1,5 +1,5 @@
 **Reactive Ability** | Ability Category
 __Basics__
-Abilities used automatically, but with a target that was selected through a previous ability.
+Reactive Abilities are used automatically, but can only be used after the player has used a related ability.
 __Details__
-Reactive abilities are similiar to passive abilities, but differ in that a reactive ability always has a target of some sort, which was previously selected through another ability. For example, the huntress actively targets a player and then reactively attacks them when they die and the cult leader passively creates the cult poll and then reactively attacks the selected target.
+Reactive abilities are similiar to passive abilities, but differ in that a Reactive Ability only becomes available to be used because the player has previously used a separate ability. The huntress targets a player as an active ability, which then lets them attack the targeted player upon death as a Reactive Ability. The cult leader creates the cult poll as a passive ability, which then lets them attack the player chosen on the poll as a Reactive Ability.
