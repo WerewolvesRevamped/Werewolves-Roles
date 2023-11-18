@@ -1,12 +1,12 @@
 **Ability** | Werewolves Revamped
 __Basics__
-Abilities can either be manually or automatically used by players in order to affect the game in various ways. To trigger a manual ("active") ability, players can use an *action* (see `$i action`). Other abilities are used automatically.
+Abilities can be used by players either manually or automatically in order to affect the game in various ways. To trigger a manual ("active") ability, players can use an *action* (see `$i action`). Other abilities are used automatically.
 __Details__
 Most roles have one or several abilities.
-Abilities consist out of two different elements. Abilities are assigned to a role/player, hereafter referred as the current player.
+Abilities consist out of two different elements. Abilities are assigned to a role/player, hereafter referred to as the current player.
 • Ability Categories:
   ‣ Active: Abilities directly resulting from the current player's action
   ‣ Passive: Abilities used automatically and indepedently of any of the current player's actions
-  ‣ Reactive: Abilities used automatically, but that can only be used after the player has used a related ability
-  ‣ Starting: Abilities automatically used at the start of the game
+  ‣ Reactive: Abilities used automatically, but their occurence and target are dependent on the player having previously used an ability to select a target
+  ‣ Starting: Abilities automatically used when the player gains the role
 • Ability Type: Abilities are split into various types. Each ability has exactly one type. Find a list of types under `$i ability types`.
