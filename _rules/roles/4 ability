@@ -3,10 +3,10 @@ __Basics__
 Abilities can either be manually or automatically used by players in order to affect the game in various ways. To trigger a manual ("active") ability, players can use an *action* (see `$i action`). Other abilities are used automatically.
 __Details__
 Most roles have one or several abilities.
-Abilities consist out of two different elements. Abilities are assigned to a role/player, herefore refered as the current player.
+Abilities consist out of two different elements. Abilities are assigned to a role/player, hereafter referred as the current player.
 • Ability Categories:
   ‣ Active: Abilities directly resulting from the current player's action
-  ‣ Passive: Abilities resulting completely indepedent of any of the current player's actions, but possibly occuring directly as the consequence of another player's action
-  ‣ Reactive: Abilities used automatically, but with a target that was selected through a previous ability
+  ‣ Passive: Abilities used automatically and indepedently of any of the current player's actions
+  ‣ Reactive: Abilities used automatically, but that can only be used after the player has used a related ability
   ‣ Starting: Abilities automatically used at the start of the game
-• Ability Type: Abilities are split into various different types. Each ability has exactly one type. Find a list of types under `$i ability types`.
+• Ability Type: Abilities are split into various types. Each ability has exactly one type. Find a list of types under `$i ability types`.
