@@ -6,7 +6,8 @@ The Cult Leader is part of the cult. After Night 1, the cult can attack one play
 When the Cult Leader dies, the cult is disbanded and can no longer attack at night.
 If the Cult Leader loses their role, the cult continues to exist, until the original Cult Leader dies.
 Any member of the cult, who no longer has their original role, can still vote on who to attack.
-The cult decides their victims by voting on whom they suspect most. The cult’s attack is an end-night ability. 
+The cult decides their victims by voting on whom they suspect most.
+The cult’s attack is an end-night ability and is always executed by the Cult Leader.
 
 __Simplified__
 The Cult Leader shares a secret channel with the other cultists.
