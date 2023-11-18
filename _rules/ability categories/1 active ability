@@ -2,4 +2,4 @@
 __Basics__
 Active Abilities are abilities directly resulting from a player's action.
 __Details__
-When a player uses an *action* to trigger an ability, the ability is active. When a fortune teller investigates a player immediately or when an assassin attacks a player at the end of the phase, they use an Active Ability.
+When a player uses an *action* to trigger an ability, the ability is active. The fortune teller investigates a player immediately as an Active Ability. The assassin attacks a player at the end of the phase as an Active Ability.
