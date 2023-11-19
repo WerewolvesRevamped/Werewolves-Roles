@@ -7,3 +7,6 @@ When the Apothecary poisons a player, that player will be killed at the end of t
 Instead of poisoning a player, the Apothecary may also use their antidote to cure the player they have previously poisoned, saving them from death.
 Players are not notified of being poisoned or cured.
 Both actions are immediate abilities.
+
+__Simplified__
+Each night, the Apothecary may poison a player, killing them at the end of the next night. Alternatively, they may cure the player they last poisoned.
