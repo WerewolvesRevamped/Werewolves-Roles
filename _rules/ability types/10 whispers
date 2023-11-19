@@ -6,3 +6,4 @@ For a complete list of roles with whisper abilities, check `$i whispers list`.
 __Details__
 Examles: The Bartender may anonymously send messages in public, while roles such as the Corrupt Wolf can anonymously communicate with one player of their choice each day.
 The Whispering ability is activated at the start of the anonymous communication and stops when the anonymous communication ends.
+Whispering always comes with a whisper talk channel for the role that has the whispering ability, and in some cases, but not always, with a whisper target channel. In some cases, instead of a new whisper target channel, an existing channel is used (e.g. Bartender whispers to tavern channel and devil whispers to the wager recipient extra role's channel) 
