@@ -1,0 +1,11 @@
+**Poll** | Werewolves Revamped
+__Basics__
+Polls are a game element of Werewolves Revamped which allow either a group of players, or all players to collectively make a decision through voting.
+__Details__
+Each player may vote for exactly one option on each Poll available to them. Players can see the votes of all other players at all times, both while the Poll is open and after it has been closed. By the default, the votes of all players count the same.
+Polls come in several types:
+• Public Polls: These Polls are visible to everyone and all living players may vote on them. The votable options on these Polls are all living players. By default, a *lynch poll* and an *election poll* (if applicable) is created at the start of each day and closed just before the day ends.
+• Private Polls: These Polls are visible only to all members of a group, and all living members may vote on them. The votable options on these Polls are all living players. The details of private polls are defined by the group or player who creates them.
+• Special Polls: These Polls are unique to a group or role who creates them and the details are completely defined by them.
+
+Public and private polls can also always be affected through vote manipulation abilities.
