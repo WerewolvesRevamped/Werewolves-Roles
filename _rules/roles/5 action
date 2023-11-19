@@ -2,12 +2,14 @@
 __Basics__
 A player may submit an Action to use one of their active abilities.
 __Details__
-An action is tied to one or more abilities.
+An Action is tied to one or more abilities. Actions consist of several elements:
 
-Action Timing: Actions have different timings, which determine when the connected ability get used. (Day/Night) Immediate actions trigger their ability immediately. End (day/night) phase actions trigger their ability at the end of a certain phase. Compound actions trigger several abilities and may combine several of the previous action timings.
-Once an immediate action is submitted, it can no longer be taken back and is immediately evaluated. End phase actions can be cancelled or changed until the ability is triggered. Compound actions can be changed until the first action is triggered.
+• Action Timing: Actions have different timings, which determine when the connected ability get used. (Day/Night) Immediate Actions trigger their ability immediately. End (day/night) phase Actions trigger their ability at the end of a certain phase. Compound Actions trigger multiple abilities and may combine several action timings.
+Once an immediate Action is submitted, it cannot be cancelled or changed: it is immediately evaluated. End phase Actions can be cancelled or changed until the ability is triggered. Compound Actions can be cancelled or changed until the first Action is triggered.
 
-Action Restriction: There are also action restriction, which may block certain actions from being possible. Possible action restrictions are for example time based ones (Can't use Action before Night 2), effect or attribute based ones (Can't use Action with X effect/attribute) or disallowing consecutive use of an action.
-When an action triggers several abilities at the same time, they are executed parallely (unless specified otherwise). That is to say, that all abilities will be indepedent of each other and not affected by each other's results. 
+• Action Restriction: Action restrictions block certain Actions from being possible. Action restrictions include temporal restrictions (being unable to use an Action during certain phases), attribute restrictions (being unable to use an Action whilst possessing a certain attribute), and succession restrictions (being unable to use consecutive Actions on the same target).
+When an Action triggers several abilities at the same time, they are executed in parallel (unless specified otherwise): all abilities will occur indepedently and will not affect the execution of the other abilities.
 
-Action Scaling: An action can also use scaling - an action may be used several times depending on the amount of present players.
+• Action Scaling: Actions may scale, in that the amount of times they may be used (overall or during a single phase) is affected by player count.
+
+• Action Compulsion: Some Actions are forced Actions. The abilities from forced Actions cannot be blocked. If a forced Action is not used voluntarily, it is instead automatically executed with any selections or choices randomised. An Action being automatically executed does not affect ability activity status.
