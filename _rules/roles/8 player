@@ -2,11 +2,12 @@
 __Basics__
 A Player is a participant in a Werewolves Revamped game.
 __Details__
-Each Player consists out of five elements:
+Each Player consists out of six elements:
 • Person: The person behind the Player and their username.
 • Ingame Identity: The nickname and emoji representing the the Player ingame.
 • Primary Role: The Player's *role*. Each Player has exactly one role from the townsfolk, werewolf, unaligned or solo category.
 • Extra Roles: Additional *roles* of the *extra* category.
-• Player Attributes: Player's may receive *player attributes* throughout the game.
+• Player Attributes: Players may receive *player attributes* throughout the game.
+• Living Status: Players are either dead or alive. Unless mentioned otherwise dead players are not affected by any abilities.
 
 A Player's person and ingame identity may be replaced with another person and ingame identity in case a substitution happens. All substitutions are announced.
