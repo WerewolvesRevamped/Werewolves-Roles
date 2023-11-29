@@ -2,9 +2,9 @@
 __Basics__
 Each night, the Ravenkeeper may assign up to two of its ravens to players. The Ravenkeeper will learn if any of the players with ravens interact with each other.
 __Details__
-The Ravenkeeper starts out with 1 raven for every 3 players in the game (rounded down). Each night, the Ravenkeeper may assign up to two ravens to other players. Ravens can also be reassigned from one player to another (ravens that were assigned to dead players will immediately return to the Ravenkeeper upon the player's death). Assigning a raven is an immediate effect. Ravens not assigned to another player are considered to be assigned to the Ravenkeeper.
-At the end of each phase, the Ravenkeeper will be told if a player with a raven used an action on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done, targeting is not an action.
-The Ravenkeeper is affected by redirections.
+The Ravenkeeper starts out with 1 raven for every 3 players in the game (rounded down). Each night, the Ravenkeeper may assign up to two ravens to other players. Ravens can also be reassigned from one player to another (ravens that were assigned to dead players will immediately return to the Ravenkeeper upon the player's death). Assigning a raven is an *immediate effect*. Ravens not assigned to another player are considered to be assigned to the Ravenkeeper.
+At the end of each phase, the Ravenkeeper will be told if a player with a raven used an *action* on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done. *Passive abilities*, *starting abilities*, and *targeting* are not treated as an action, and neither is players using actions on themself. 
+The Ravenkeeper is affected by *redirections*.
 If there are several Ravenkeepers, their ravens are separate.
 
 __Simplified__
