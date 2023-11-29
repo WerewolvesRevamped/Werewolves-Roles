@@ -3,9 +3,9 @@ __Basics__
 The Greater Coyote is a packless non-lycan wolf who shares a channel with the other coyotes: however, none of the coyotes know the identities of any other wolves. If the Greater Coyote dies, the coyote group is disbanded.
 __Details__
 If the wolfpack fails to kill a townsfolk on any given night, the coyotes may kill a player during the following night. The coyotes decides their target by voting.
-If the Greater Coyote dies, the coyote group is disbanded. All other coyotes lose any remaining abilities and join the wolfpack. This is not triggered by the Greater Coyote changing role.
+If at any point there is no living Greater Coyote, the coyote group is disbanded. All other coyotes lose any remaining abilities and join the wolfpack.
 Any member of the coyote group without their original role can still vote on who to attack.
-The coyotes' attack is an end-night ability.
+The coyotes' attack is an end-night ability and is always reactively executed by a Greater Coyote.
 
 __Simplified__
 The Greater Coyote shares a secret channel with the other coyotes.

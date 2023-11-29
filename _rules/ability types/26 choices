@@ -1,0 +1,9 @@
+**Choices** | Ability Type
+__Basics__
+Choice is an ability type in which a choice can be created or a choice's option can be chosen, which may lead to other abilities.
+__Details__
+Choice has two subtypes:
+• Choice Creation: A role may *actively* create a choice with several options, some of which may be tied to another ability, which the role will *reactively* execute once an option is chosen.
+• Choice Choosing: A player/role may *actively* choose one option of a choice. This may directly lead to role who created said choice to *reactively* execute another ability.
+
+For example, the chef creates a choice for the restaurant customer. The customer can choose which may lead to the chef *reactively* killing or protecting the customer.

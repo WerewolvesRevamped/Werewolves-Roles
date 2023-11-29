@@ -5,18 +5,19 @@ how to play
 
 townsfolk
 townsfolk/miscellaneous
-townsfolk/group
 townsfolk/power
 townsfolk/investigative
+townsfolk/group
 townsfolk/killing
 
 werewolves
 /wolves
 werewolves/miscellaneous
-werewolves/group
 werewolves/power
 werewolves/investigative
+werewolves/group
 werewolves/killing
+werewolves/recruitment
 
 other
 /white wolves
@@ -37,8 +38,11 @@ unaligned/align - cupid
 unaligned/align - hag
 
 extra
-extra/elected
 extra/miscellaneous
+extra/power
+extra/group
+extra/killing
+extra/elected
 
 limited
 
