@@ -1,0 +1,6 @@
+**Daytime**
+In daytime, players can vote on a lynch poll and an election poll. At the end of the day, the lynch poll kills the top voted player. 
+At the same time, the top voted player in the election poll gets a special public role on top of their current role. The elected roles are Mayor, Reporter and Guardian. Each of the elected roles is elected, if at the start of the day there is a living player with the previous elected role.
+Some roles may affect the amount and occurences of the polls that are held during the day.
+Games generally start with a Day 0. Day 0 differs from other days in that it doesn't have any election or lynch.
+Each Day is followed by a Night and vice versa.
