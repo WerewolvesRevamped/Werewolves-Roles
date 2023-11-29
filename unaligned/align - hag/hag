@@ -1,12 +1,13 @@
 **Hag** | Unaligned Miscellaneous | Limited
 __Basics__
-The Hag can win with any team, unless that team has wronged the coven, but cannot win if the coven has never been wronged.
+The Hag can win with any team, unless that team has wronged the coven: however, they cannot win if the coven has never been wronged.
 The Hag will turn into a specific type of hag at the end of the day.
 __Details__
 The Hag is one of the hags (`$i hags`).
 At the start of the game, the Hag may discard one hag role (vicious, cautious or prophetic). 
 At the end of the day, the Hag turns into an undiscarded hag role.
-The Hag does not have a spell at the start of the game, but gains one later, once they turn into another hag role.
+The Hag does not have a spell at the start of the game, but gains one once they turn into another hag role.
+The Hag is coven-aligned.
 
 __Simplified__
 The Hag can win with any team, unless that team has wronged the coven, but cannot win if they have never been wronged.

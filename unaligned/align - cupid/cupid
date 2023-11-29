@@ -4,15 +4,15 @@ The Cupid chooses one player to be their lover, and forms an inseparable team wi
 __Details__
 During Night 1, the Cupid must choose one player to become their lover. If the Cupid does not choose in time, they will fall in love with a random player. The lover is added to the Cupid’s secret channel and the lover's role is revealed to the Cupid.
 The Cupid and their lover form an inseparable team; they will die if the other player dies. When this happens it is announced. Choosing a lover is an immediate ability.
-The Cupid will gain the same alignment as their lover, however if the Cupid changes role then the Cupid and their lover receive a new win condition based on a combination of their win conditions.
+The Cupid will always have the same alignment as their lover.
 If the Cupid's lover is unaligned they can only win with their lover's win condition.
 The Cupid’s love overrides any other mechanic that may cause a player to change teams for any reason; the Cupid is always on the same team as their lover. 
 After choosing a lover, unless they are also unaligned, the Cupid is no longer unaligned.
 If a Cupid couple ends up without a win condition (e.g. two Cupids falling in love with each other), their goal is to survive until the end of the game and win with whatever team remains.
 If the Cupid loses their role before selecting a lover, a random lover is chosen immediately.
 The Cupid can never change role to anything but another cupid variant (more info in `$info cupid variants`).
-If the Cupid's lover is part of a solo team or channel then the Cupid is immune to that team's effects or their consequences (e.g powdering, death by plague, sleepless, etc)
+If the Cupid's lover is part of a solo team or channel then the Cupid is immune to that team's effects or their consequences (e.g powdering, death by plague, sleepless, etc).
+The Cupid is nonaligned unless they gain an alignment from their lover.
 
 __Simplified__
 The Cupid chooses one player to become their lover. They can never betray each other and if one dies, the other does too. The Cupid's alignment is the same as their lover's alignment.
-If the Cupid changes role to another alignment, they must fulfill both win conditions, usually meaning they must kill everyone else, leaving only the couple.

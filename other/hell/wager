@@ -1,19 +1,23 @@
-**Devil's Wager** | Additional Info - Hell Team
-The Devil's Wager recipient may choose one of these four options:
-1) The recipient may choose to sell their soul, to attack another player. 
-Selling the soul immediately adds it to the pool. At the end of the night the devil will attack the player chosen by the recipient.
-If the recipient chooses a member of the hell team, they will sell their soul as normal, but the devil will not execute the attack. The recipient is not informed.
+**Wager** | Additional Info - Hell Team
+The Wager recipient may choose one of four options:
 
-2) The recipient may choose to sell their soul, to protect a player.
-Selling the soul immediately adds it to the pool. For the rest of the night the player chosen by the recipient will be protected from any attacks to target them.
-The recipient may choose to protect themself.
+1) The Wager recipient may choose to sell their soul in order to attack another player. 
+Selling the soul immediately adds it to the hell team's soul pool. The Wager recipient then becomes soulless. At the end of the night, the devil will attack the player chosen by the Wager recipient. If the Devil dies before the night ends, the attack is not executed.
+Once the Wager recipient has chosen this option, they may change the target of the attack, or they may choose to change their chosen option to a protection. They cannot otherwise revoke their choice of option.
+If the Wager recipient chooses to attack a member of the hell team, they will sell their soul as normal, but the devil will not execute the attack. The Wager recipient is not informed of this.
+The Devil is, but the Wager recipient is not, informed of whether the attack fails or succeeds.
 
-3) The recipient may choose to sell their identity, to see another player’s role.
-Checking another player is an immediate effect, and the role is shown to both the recipient and the devil. Afterwards, the devil is privately informed what role the recipient has.
-Both of the investigations are affected by weak disguises. Checking the other player is affected by redirections and obstructions, but checking the recipient is not. These effects are seen from the devil’s perspective, not the recipient’s.
+2) The Wager recipient may choose to sell their soul in order to protect a player.
+Selling the soul immediately adds it to the pool. The Wager recipient then becomes soulless. For the rest of the night, the player chosen by the Wager recipient will be protected from any attacks which target them. If the Devil dies before the night ends, this does not negate the protection.
+Once the Wager recipient has chosen this option, they may not revoke their choice of option nor their choice of target.
+The Wager recipient may choose to protect themself.
 
-4) The recipient may choose to ignore the devil's wager. 
+3) The Wager recipient may choose to sell their identity in order to see a player’s role.
+The devil immediately checks the chosen player's role, and the result is shown to both the recipient and the devil. Afterwards, the devil investigates the Wager recipient's role. The result of this is shown only to the devil.
+Both of the investigations are affected by weak and strong disguises. Checking the other player is affected by redirections and obstructions, but checking the Wager recipient is not.
+Once the Wager recipient has chosen this option, they may not revoke their choice of option nor their choice of target.
 
-The Devil's Wager recipient may choose until the end of the night, if they have not chosen by then, the wager is automatically ignored. At the end of the night, the recipient is removed from the Wager channel.
-If the Devil dies before the night ends, the recipient is not informed, but no new wager action can happen anymore. 
-The recipient cannot undo selling their soul, but if they have chosen an attack, they may change the target until the end of the night, or switch to a protection instead. Protections are immediate and cannot be changed.
+4) The recipient may choose to ignore the Wager.
+If the Wager recipient chooses this option, they may choose another option before the end of the night if they wish to.
+
+At the end of the night phase, the recipient is removed from the Wager channel. If the Devil dies before the night ends, the recipient is not informed, but no further wager actions may be executed.

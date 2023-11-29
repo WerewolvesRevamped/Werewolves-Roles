@@ -1,5 +1,8 @@
 **Flute Team**
-Flute Player
-Flute Apprentice
+Members of this team win when all players are dead, unaligned, enchanted, or part of the flute team. All members of the team know each other.
 
-*Flute Charmer*
+__Roles:__
+<?FlutePlayer:> Flute Player
+<?FluteApprentice:> Flute Apprentice
+
+<?FluteCharmer:> *Flute Charmer*

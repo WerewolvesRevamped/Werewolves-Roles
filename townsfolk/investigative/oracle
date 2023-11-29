@@ -1,13 +1,13 @@
 **Oracle** | Townsfolk Investigative
 __Basics__
-Every night, the Oracle can select two players and see if they have the same current alignment as each other. Each player can only be checked once.
+Every night, the Oracle can select two players and see if they have the same alignment as each other. Each player can only be selected once.
 __Details__
-Each night, the Oracle can inspect two players. The Oracle will be told whether they have the same current alignment or not. 
+Each night, the Oracle can inspect two players. The Oracle will be told whether they have the same alignment. 
 The Oracle can select itself as one of the two players, but can only select each player once throughout the game. 
-Inspecting players is an immediate ability. Unaligned roles (if they are still unaligned) have the same alignment as each other, solo roles on opposing teams do not.
-Some roles' current alignments may be different than their role's starting alignment (e.g. Cupid, Cupid's Lover).
+Inspecting players is an immediate ability. Nonaligned roles have the same alignment as each other: roles with differing alignments do not. A nonaligned role does not have the same alignment as an aligned role.
+Some unaligned roles may gain alignments during the game (e.g. Cupid).
 The Oracle is not affected by disguises or obstructions, but is affected by redirections.
 
 __Simplified__
-Every night, the Oracle can select two players and see if they have the same current alignment as each other. Each player can only be checked once.
+Every night, the Oracle can select two players and see if they have the same alignment as each other. Each player can only be selected once.
 This is not affected by disguises or obstructions, but is affected by redirections.

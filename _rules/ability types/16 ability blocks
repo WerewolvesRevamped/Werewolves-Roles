@@ -1,0 +1,8 @@
+**Ability Blocks** | Ability Type
+__Basics__
+Ability Blocking is a rare type of ability that stops other players from successfully using their abilities.
+__Details__
+Ability blocked players are not informed they have been blocked (unless specified otherwise). When an ability blocked player attempts to use an ability, the action will result in a failure. For some ability types (e.g. attacks), this will be indistinguishable from other types of failure; for others (e.g investigations), the only way the action can fail is through ability blocking. For group abilities (e.g. wolfpack attack), an ability blocked player being chosen to execute the action causes it to fail. Passive, starting, forced and already ongoing abilities cannot be ability blocked.
+ 
+__Simplified__
+Ability Blocking is a rare type of ability that stops other players from successfully using their abilities. When an ability blocked player attempts to use an ability, the action will result in a failure.

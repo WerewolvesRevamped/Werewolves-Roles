@@ -7,7 +7,8 @@ The Rival can only exist with another rival in the game. The Rival ascends when 
 Every night after Night 1, the Rival can investigate a player and will learn their role.
 The Rival is affected by weak disguises, obstructions and redirections. They are told specifically if an investigation was affected by a disguise, an obstruction, or a redirection - if it was unaffected, they are informed of this too.
 If the win condition of the Rival changes in any way, they do not require the other Rival to die. 
-If the win condition or role of another Rival changes in any way, the Rival still requires any other (original) Rivals to die. 
+If the win condition or role of another Rival changes in any way, the Rival still requires any other (original) Rivals to die.
+The Rival is nonaligned.
 
 __Simplified__
 Every night after Night 1, the Rival can investigate a player and will learn their role. 
