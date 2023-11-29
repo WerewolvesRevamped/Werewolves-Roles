@@ -5,7 +5,7 @@ __Details__
 The Cult Acolyte is part of the cult. After Night 1, the cult can attack one player each night. When the cult leader dies, the Cult Acolyte becomes the new cult leader at the start of the next night. If there are several Cult Acolytes, an arbitrary one becomes the new leader. 
 The cult decides their victims by voting on whom they suspect most. The cult’s attack is an end-night ability.
 Any member of the cult, who no longer has their original role, can still vote on who to attack.
-The ability to give the cult an additional attack is triggered when a player who at any point had the role of Cult Acolyte dies, not when a Cult Acolyte loses their role, but it does not trigger at all if the Cult Acolyte becomes a new cult leader.
+A Cult Acolyte losing their role does not cause an additional lynch.
 
 __Simplified__
 The Cult Acolyte shares a secret channel with the other cultists.
