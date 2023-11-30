@@ -8,3 +8,6 @@ Runners are informed that they were attacked. If a Runner evades a wolfpack atta
 
 __Simplified__
 Once per game, if attacked by the werewolves, the Runner will escape.
+
+__Formalized__
+Passive: Protection from @Player with wolfish attribute [Quantity: 1]
