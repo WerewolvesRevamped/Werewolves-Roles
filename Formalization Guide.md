@@ -6,7 +6,13 @@
 - [Role](#role)
 - [Abilities](#abilities)
   - [Ability](#ability)
+  - [Target Types](#target-types)
+  - [Duration Types](#duration-types)
   - [Ability Type](#ability-type)
+    - [Killing](#killing)
+    - [Investigating](#investigating)
+    - [Targeting](#targeting)
+    - [Disguising](#disguising)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -48,6 +54,51 @@ The three elements `[<Action Restriction>]`, `{<Action Compulsion>}` and `<<Acti
 
 - Ability Type: Specifies which ability type and how to execute it
 
+### Target Types
+
+Within abilities a selection by the player often affects the execution of the abilities. We use target types to refer to the player, their selection or similar. The following target types exist:
+
+- `@Self`: Uses the player who this ability belongs to
+- `@Selection`: Uses the player/role/etc selected in the action
+- `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
+
+### Duration Types
+
+Many abilities apply attributes and need to specify an attribute duration. The following attribute duration types may be used:
+
+- `~Permanent`: Lasts until role loss
+- `~Persistent`: Lasts even past role lose
+- `~Phase`: Lasts until the end of the current phase
+- `~NextDay`, `~NextNight`: Lasts until the end of the next day/night
+
 ### Ability Type
 
-  
+#### Killing
+
+Format: `<Subtype> <Target>`
+
+- Subtypes: `Kill`, `Attack`, `Lynch` and `True Kill`
+- Target: A target type
+
+#### Investigating
+
+Format: `<Subtype> Investigate <Target> (<Relevant Effects>)`
+
+- Subtypes: None
+- Target: A target type
+- Relevant Effects: A comma separated list of the following three values: `WD` (Weak Disguises), `SD` (Strong Disguises), `OB` (Obstructions), listing all of those the investigation is affected by
+
+#### Targetting
+
+Format: `Target <Target>`
+
+- Target: A target type
+
+#### Disguising
+
+Format: `<Subtype> Disguise <Target> as <Role> (<Duration>)`
+
+- Subtype: `Weakly` or `Strongly`
+- Target: A target type
+- Role: A role
+- Duration: A duration type
