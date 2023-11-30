@@ -26,6 +26,7 @@
     - [Joining](#joining)
     - [Granting](#granting)
     - [Loyalty](#loyalty)
+    - [Obstructing](#obstructing)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -167,8 +168,8 @@ Format: `<Subtype> <Target>`
 #### Investigating
 
 Format:
-- `<Subtype> Investigate <Target> (<Relevant Effects>)`
-- `Attribute Investigate <Target> for <Attribute>`
+- `<Subtype> Investigate <Target> (<Relevant Effects>)` (Investigate role/alignment/category)
+- `Attribute Investigate <Target> for <Attribute>` (Look if a certain attribute is present)
 
 - Subtypes: `Role`, `Alignment` or `Category`
 - Target: A target type, specifying who is getting attacked
@@ -201,7 +202,7 @@ Format:
 - `Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> during <Phase> (<Duration>)`
 - `Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> (<Duration>)`
 - `Protect <Target> from '<KillingSubtype>' through <Subtype> during <Phase> (<Duration>)`
-- `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`
+- `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)` 
 
 - Target: A target type, specifying who is protected.
 - KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches` or `All`
@@ -217,8 +218,8 @@ As a result of a Protecting the <Target> receives a defense attribute.
 #### Applying
 
 Format:
-- `Apply <Attribute> to <Target> (<AdditionalAttributeData>)`
-- `Remove <Attribute> from <Target>`
+- `Apply <Attribute> to <Target> (<AdditionalAttributeData>)` (Add a custom attribute)
+- `Remove <Attribute> from <Target>` (Remove a custom or standard attribute)
 
 - Attribute: A defined custom attribute
 - Target: A target type
@@ -230,8 +231,8 @@ As a result of an Applying the <Target> receives a custom attribute.
 #### Redirecting
 
 Format:
-- `Redirect '<Subtype>' to <Target>`
-- `Redirect '<Subtype>' from <Source> to <Target>`
+- `Redirect '<Subtype>' to <Target>` (Redirect all player's abilities)
+- `Redirect '<Subtype>' from <Source> to <Target>` (Redirect only specific player's abilities)
 
 - Subtype: An ability type name, or `all` or `non-killing abilities`
 - Target: A target type, specifying who to redirect to
@@ -272,8 +273,8 @@ As a result of a Joining the <Target> receives a group membership attribute.
 #### Granting
 
 Format:
-- `Grant '<ExtraRole>' to <Target>`
-- `Revoke '<ExtraRole>' to <Target>`
+- `Grant '<ExtraRole>' to <Target>` (Grant an extra role)
+- `Revoke '<ExtraRole>' to <Target>` (Remove an extra role)
 
 - ExtraRole: A defined extra role
 - Target: A target type, specifying who gains the extra role
@@ -289,3 +290,18 @@ Format: `Loyalty to '<Name>' (<Subtype>)`
 - Subtype: `Group` or `Alignment`
 
 Loyalty is applied only to yourself.
+
+---
+#### Obstructing
+
+Format:
+- `Obstruct <Target>` (Block all ability types)
+- `Obstruct <Ability Type> for <Target>` (Block only a certain ability type)
+- `Obstruct <Ability Subtype> for <Target>` (Block only a certain ability subtype)
+- `Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback>` (Block a certain ability type and return fake feedback)
+
+- Target: A target type, specifying which player should be obstructed
+- Ability Type: An ability type, specifying which ability types should be obstructed
+- Ability Subtype: The full name of an ability subtype, usually gained from appending the ability type name to the ability subtype name
+- Feedback: A custom feedback that should be returned. The feedback is given in the normal format of the specified ability type. Possible values for the `Killing` ability type would be `Failure` or `Success`. Possible values for the `Role Investigation` ability subtype would be any role.
+
