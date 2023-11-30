@@ -31,6 +31,7 @@
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
 - `[<Argument1> | <Argument2>]`: Should be replaced by one of the options within `[]` which are separated by `|`, e.g. `[<Argument1> | <Argument2>]` ⇒ `<Argument1>` ⇒ `Example1`  
 - `[<Argument1> | Text1 | Text2]`: Should be replaced by one of the options within `[]`, e.g. `[<Argument1> | Text1 | Text2]` ⇒ `Text1`
+- `[<Argument>]`: Should be replaced either by `<Argument>` or removed entirely
 
 Due to technical limitations if you see `'`'s within `this text` consider them to be \`'s.
 
@@ -160,7 +161,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 Format: `<Subtype> <Target>`
 
 - Subtypes: `Kill`, `Attack`, `Lynch` and `True Kill`
-- Target: A target type
+- Target: A target type, specifying who is getting killed
 
 ---
 #### Investigating
@@ -170,16 +171,16 @@ Format:
 - `Attribute Investigate <Target> for <Attribute>`
 
 - Subtypes: `Role`, `Alignment` or `Category`
-- Target: A target type
+- Target: A target type, specifying who is getting attacked
 - Relevant Effects: A comma separated list of the following three values: `WD` (Weak Disguises), `SD` (Strong Disguises), `OB` (Obstructions), listing all of those the investigation is affected by
-- Attribute: An attribute
+- Attribute: An attribute which is getting checked for
 
 ---
 #### Targeting
 
 Format: `Target <Target>`
 
-- Target: A target type
+- Target: A target type, specifying what is getting targeted
 
 ---
 #### Disguising
@@ -187,19 +188,25 @@ Format: `Target <Target>`
 Format: `<Subtype> Disguise <Target> as '<Role>' (<Duration>)`
 
 - Subtype: `Weakly` or `Strongly`
-- Target: A target type
-- Role: A role
+- Target: A target type, specifiying who is disguised
+- Role: A role, that will be the disguise
 - Duration: A duration type
 
 ---
 #### Protecting
 
-Format: `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`
+Format:
+- `Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> during <Phase> (<Duration>)`
+- `Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> (<Duration>)`
+- `Protect <Target> from '<KillingSubtype>' through <Subtype> during <Phase> (<Duration>)`
+- `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`
 
-- Target: A target type
-- KillingSubtype: `Attacks`, `Kills`, `Lynches`, `All` or `Attacks & Kills`
+- Target: A target type, specifying who is protected.
+- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches` or `All`
+- Selector: A target type, limits the protection to only work against certain players.
 - Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense` or `Partial Defense`
   - Location: Either a channel (`#channelName`) or a target type
+- Phase: `Night` or `Day`, limits the protection to only be active during a certain phase. 
 - Duration: A duration type
 
 ---
@@ -219,25 +226,25 @@ Format:
 Format: `Redirect '<Subtype>' to <Target>`
 
 - Subtype: An ability type name, or `all` or `non-killing abilities`
-- Target: A target type
+- Target: A target type, specifying who to redirect to
 
 ---
 #### Vote Manipulating
 
 Format: `Manipulate <Target>'s '<Subtype>' to '<Value>'`
 
-- Target: A target type
+- Target: A target type, specifying who is being manipulated
 - Subtype: `public voting power`, `private voting power` or `public starting votes`
-- Value: A target type
+- Value: A target type, specifying the amount of votes
 
 ---
 #### Whispering
 
 Format: `Whisper to <Location> as '<Disguise>' (<Duration>)`
 
-- Location: Either a channel (`#channelName`) or a target type
+- Location: Either a channel (`#channelName`) or a target type, specifying to which player or channel to whisper
 - Disguise: A role, or if none, remove `as <Disguise>`
-- Duration: A duration type
+- Duration: A duration type, specifying for how long the whispers lasts
 
 ---
 #### Joining
@@ -254,12 +261,12 @@ Format:
 - `Revoke '<ExtraRole>' to <Target>`
 
 - ExtraRole: A defined extra role
-- Target: A target type
+- Target: A target type, specifying who gains the extra role
 
 ---
 #### Loyalty
 
-Format: `Loyalty to '<Target>' (<Subtype>)`
+Format: `Loyalty to '<Name>' (<Subtype>)`
 
-- Target: The name of a defined group (if subtype is group) or a defined team (if subtype is alignment)
+- Name: The name of a defined group (if subtype is group) or a defined team (if subtype is alignment)
 - Subtype: `Group` or `Alignment`
