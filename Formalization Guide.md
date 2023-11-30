@@ -52,16 +52,16 @@ Single Ability
 Multiple Abilities
 ```
 <Trigger Type>:
-  - <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
-  - <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
 ```
 The three elements `[<Action Restriction>]`, `{<Action Compulsion>}` and `<<Action Scaling>>` should be left out if unnecessary.
 
 If a single trigger does several abilities at once, they can be listed as part of one trigger as shown above.
 
 - Trigger Type: One of the following:
-  - An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Immediate`) if the ability occurs in connection to a non-compund action
-  - `Compound` **WIP**
+  - An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Immediate`) if the ability occurs in connection to a non-compound action
+  - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
   - `Starting` for starting abilities
   - `Passive` for constantly active abilities
 - Action Restrictions: One of the following:
@@ -71,7 +71,26 @@ If a single trigger does several abilities at once, they can be listed as part o
 - Action Scaling: **WIP**
 - Action Compulsion: `Forced` for forced actions, blank otherwise
 
-- Ability Type: Specifies which ability type and how to execute it
+- Ability Type: Specifies which ability type and how to execute it, see [here](#ability-types)
+
+### Compound Actions
+
+Compound actions uses an extended format. The trigger type is set as Compound, but a newline separated list of abilities is provided instead of a single ability type.
+
+Example 1:
+```
+Compound:
+  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+```
+Example 2:
+```
+<Compound>:
+  • <Trigger Type>:
+    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+```
 
 
 ### Target Types
