@@ -13,6 +13,14 @@
     - [Investigating](#investigating)
     - [Targeting](#targeting)
     - [Disguising](#disguising)
+    - [Protecting](#protecting)
+    - [Applying](#applying)
+    - [Redirecting](#redirecting)
+    - [Vote Manipulating](#vote-manipulating)
+    - [Whispering](#whispering)
+    - [Joining](#joining)
+    - [Granting](#granting)
+    - [Loyalty](#loyalty)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -104,7 +112,7 @@ Format: `<Subtype> Investigate <Target> (<Relevant Effects>)`
 - Relevant Effects: A comma separated list of the following three values: `WD` (Weak Disguises), `SD` (Strong Disguises), `OB` (Obstructions), listing all of those the investigation is affected by
 
 ---
-#### Targetting
+#### Targeting
 
 Format: `Target <Target>`
 
@@ -143,7 +151,7 @@ Format:
 - Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute
 
 ---
-#### Redirection
+#### Redirecting
 
 Format: `Redirect <Subtype> to <Target>`
 
