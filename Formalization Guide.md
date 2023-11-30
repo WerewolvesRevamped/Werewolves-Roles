@@ -126,7 +126,7 @@ Format: `<Subtype> <Target>`
 
 Format: `<Subtype> Investigate <Target> (<Relevant Effects>)`
 
-- Subtypes: None
+- Subtypes: `Role` or `Alignment` (**WIP**, more to be added)
 - Target: A target type
 - Relevant Effects: A comma separated list of the following three values: `WD` (Weak Disguises), `SD` (Strong Disguises), `OB` (Obstructions), listing all of those the investigation is affected by
 
