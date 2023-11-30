@@ -1,0 +1,8 @@
+**Whispers** | Ability Type
+__Basics__
+Whispering is a type of ability that allows roles to anonymously communicate in some way. Whispering abilities are immune to redirection.
+__Details__
+When a whispering ability is used a whispering connection is opened. Depending on what is defined by the role this may stay open until the end of the game or until the end of a certain phase.
+For a complete list of roles with whisper abilities, check `$i whispers list`.
+Examles: The Bartender may anonymously send messages in the tavern channel, while roles such as the Corrupt Wolf can anonymously communicate with one player of their choice each day.
+Whispering always comes with a whisper talk channel for the role that has the whispering ability, and in some cases, but not always, with a whisper target channel. In some cases, instead of a new whisper target channel, an existing channel is used (e.g. Bartender whispers to tavern channel and devil whispers to the wager recipient extra role's channel) 
