@@ -1,0 +1,7 @@
+**Granting** | Ability Type
+__Basics__
+Granting is the ability type that grants an Extra role to a player.
+__Details__
+Extra roles usually do not affect alignment, but always give players an extra secret channel and sometimes extra abilities. They are not always permanent. See `$i Extra` for a list of extra roles.
+Roles from the *Extra Elected* category cannot be granted by roles.
+The term 'Revoking' is used to describe 'ungranting' (removing an Extra role from a player).
