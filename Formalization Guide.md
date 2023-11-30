@@ -192,6 +192,8 @@ Format: `<Subtype> Disguise <Target> as '<Role>' (<Duration>)`
 - Role: A role, that will be the disguise
 - Duration: A duration type
 
+As a result of a Disguising the <Target> receives a Disguised attribute.
+
 ---
 #### Protecting
 
@@ -209,6 +211,8 @@ Format:
 - Phase: `Night` or `Day`, limits the protection to only be active during a certain phase. 
 - Duration: A duration type
 
+As a result of a Protecting the <Target> receives a defense attribute.
+
 ---
 #### Applying
 
@@ -219,6 +223,8 @@ Format:
 - Attribute: A defined custom attribute
 - Target: A target type
 - Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute
+
+As a result of an Applying the <Target> receives a custom attribute.
 
 ---
 #### Redirecting
@@ -237,6 +243,8 @@ Format: `Manipulate <Target>'s '<Subtype>' to '<Value>'`
 - Subtype: `public voting power`, `private voting power` or `public starting votes`
 - Value: A target type, specifying the amount of votes
 
+As a result of a Vote Manipulation the <Target> receives a vote manipulated attribute.
+
 ---
 #### Whispering
 
@@ -246,12 +254,16 @@ Format: `Whisper to <Location> as '<Disguise>' (<Duration>)`
 - Disguise: A role, or if none, remove `as <Disguise>`
 - Duration: A duration type, specifying for how long the whispers lasts
 
+As a result of a Whispering, a whispering connection is opened.
+
 ---
 #### Joining
 
 Format: `Join '<GroupName>'`
 
 - GroupName: The name of a defined group
+
+As a result of a Joining the <Target> receives a group membership attribute.
 
 ---
 #### Granting
@@ -263,6 +275,8 @@ Format:
 - ExtraRole: A defined extra role
 - Target: A target type, specifying who gains the extra role
 
+As a result of a Granting the <Target> receives an Extra Role.
+
 ---
 #### Loyalty
 
@@ -270,3 +284,5 @@ Format: `Loyalty to '<Name>' (<Subtype>)`
 
 - Name: The name of a defined group (if subtype is group) or a defined team (if subtype is alignment)
 - Subtype: `Group` or `Alignment`
+
+Loyalty is applied only to yourself.
