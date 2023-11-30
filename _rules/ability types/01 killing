@@ -9,7 +9,7 @@ There are four types of Killing:
 • True Kills: This type of killing can not be stopped by any protections.
 
 Many roles or groups can kill/attack. The player executing the killing is known as the “Killer”/“Attacker”.
-Unless explicitly stated otherwise, an attack is considered successful if *any* player (even if that person wasn't the intended target) ends up dead as a result of the attack and unsuccessful otherwise.
+Unless explicitly stated otherwise, an attack is considered successful if *any* player (even if that person wasn't the intended target) ends up dead as a result of the attack and unsuccessful otherwise. The role or group responsible for the attack is informed of success or failure, but by default receives no information beyond that.
 If the target of an attack was already killed by another attack occuring at the same time, then the attack is still considered a success.
 __Groups__
 When a group (such as Werewolves) attacks a player, a random member of the group (who voted for the target with at least 1 vote) is chosen as the attacker. The group is informed who is chosen. Unless explicitly listed otherwise, this attacker is always considered as the sole cause of the attack, and never the group.
