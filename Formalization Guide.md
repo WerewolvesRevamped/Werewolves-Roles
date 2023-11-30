@@ -64,7 +64,7 @@ If a single trigger does several abilities at once, they can be listed as part o
   - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
   - `Starting` for starting abilities
   - `Passive` for constantly active abilities
-- Action Restrictions: One ore mof of the following in a comma separated list:
+- Action Restrictions: One or more of the following in a comma separated list:
   - Temporal Restriction:
     - `Temporal: <Phase>`, may only be used in `<Phase>`, e.g. `Temporal: Day 0`
     - `Temporal: <Phase>+`, may only be in `<Phase>` or after, e.g. `Temporal: Night 2+`
