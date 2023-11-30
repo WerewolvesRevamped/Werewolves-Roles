@@ -6,6 +6,11 @@
 - [Role](#role)
 - [Abilities](#abilities)
   - [Ability](#ability)
+    - [Trigger Types](#trigger-types)
+    - [Action Restrictions](#action-restrictions)
+    - [Action Scaling](#action-scaling)
+    - [Action Compulsion](#action-compulsion)
+    - [Compund Actions](#compound-actions)
   - [Target Types](#target-types)
   - [Duration Types](#duration-types)
   - [Ability Type](#ability-type)
@@ -44,6 +49,8 @@ Due to technical limitations if you see `'`'s within `this text` consider them t
 
 ## Abilities
 
+----
+----
 ### Ability
 Single Ability
 ```
@@ -59,30 +66,50 @@ The three elements `[<Action Restriction>]`, `{<Action Compulsion>}` and `<<Acti
 
 If a single trigger does several abilities at once, they can be listed as part of one trigger as shown above.
 
-- Trigger Type: One of the following:
-  - An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Immediate`) if the ability occurs in connection to a non-compound action
-  - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
-  - `Starting` for starting abilities
-  - `Passive` for constantly active abilities
-- Action Restrictions: One or more of the following in a comma separated list:
-  - Temporal Restriction:
-    - `Temporal: <Phase>`, may only be used in `<Phase>`, e.g. `Temporal: Day 0`
-    - `Temporal: <Phase>+`, may only be in `<Phase>` or after, e.g. `Temporal: Night 2+`
-  - Attribute Restriction:
-    - `Attribute: has <Attribute>`, may only be used if `<Attribute>` is present
-    - `Attribute: lacks <Attribute>`, may only be used if `<Attribute>` is not present
-    - `Attribute: <Target> [has | lacks] <Attribute>`, may only be used if `<Target>` (a target type) has/lacks `<Attribute>`
-  - Succession Restrictions:
-    - `Succession: No Succession`, may not be used in in succession
-    - `Succession: No Target Succession`, may not be used successively on the same target 
-  - Quantity Restrictions:
-    - `Quantity: <Value>`, may only used a maximum of `<Value>` times
-- Action Scaling: **WIP**
-- Action Compulsion: `Forced` for forced actions, blank otherwise
+- Trigger Types: Specifies when the ability is used. See [here](#trigger-types)
+- Action Restrictions: Specifies if there are restrictions on the action. See [here](#action-restrictions)
+- Action Scaling: Specifies if the amount of actions scales with player count. See [here](#action-scaling)
+- Action Compulsion: Specifies if the ability is forced. See [here](#action-compulsion)
+- Ability Type: Specifies which ability type and how to execute it. See [here](#ability-types)
 
-- Ability Type: Specifies which ability type and how to execute it, see [here](#ability-types)
+----
+#### Trigger Types
 
-### Compound Actions
+Trigger types can be one of the following:
+- An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Immediate`) if the ability occurs in connection to a non-compound action
+- `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
+- `Starting` for starting abilities
+- `Passive` for constantly active abilities
+
+----
+#### Action Restrictions
+
+Action Restrictions can be one or more of the following in a comma separated list:
+- Temporal Restriction:
+  - `Temporal: <Phase>`, may only be used in `<Phase>`, e.g. `Temporal: Day 0`
+  - `Temporal: <Phase>+`, may only be in `<Phase>` or after, e.g. `Temporal: Night 2+`
+- Attribute Restriction:
+  - `Attribute: has <Attribute>`, may only be used if `<Attribute>` is present
+  - `Attribute: lacks <Attribute>`, may only be used if `<Attribute>` is not present
+  - `Attribute: <Target> [has | lacks] <Attribute>`, may only be used if `<Target>` (a target type) has/lacks `<Attribute>`
+- Succession Restrictions:
+  - `Succession: No Succession`, may not be used in in succession
+  - `Succession: No Target Succession`, may not be used successively on the same target 
+- Quantity Restrictions:
+  - `Quantity: <Value>`, may only used a maximum of `<Value>` times
+
+----
+#### Action Scaling
+
+**WIP**
+
+----
+#### Action Compulsion
+
+Action Compulsion can be `Forced` for forced actions or blank otherwise
+
+----
+#### Compound Actions
 
 Compound actions uses an extended format. The trigger type is set as Compound, but a newline separated list of abilities is provided instead of a single ability type.
 
@@ -101,7 +128,8 @@ Example 2:
   • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
 ```
 
-
+----
+----
 ### Target Types
 
 Within abilities a selection by the player often affects the execution of the abilities. We use target types to refer to the player, their selection or similar. The following target types exist:
@@ -111,6 +139,8 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
 
+----
+----
 ### Duration Types
 
 Many abilities apply attributes and need to specify an attribute duration. The following attribute duration types may be used:
@@ -120,6 +150,8 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 - `~Phase`: Lasts until the end of the current phase
 - `~NextDay`, `~NextNight`: Lasts until the end of the next day/night
 
+----
+----
 ### Ability Type
 
 ---
