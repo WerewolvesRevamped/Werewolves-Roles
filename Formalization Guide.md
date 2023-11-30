@@ -83,6 +83,8 @@ Trigger types can be one of the following:
 - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
 - `Starting` for starting abilities
 - `Passive` for constantly active abilities
+- `On Death` for an ability that triggers on death
+- `On Visit [[<Action Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player
 
 ----
 #### Action Restrictions
