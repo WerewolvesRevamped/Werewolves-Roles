@@ -1,8 +1,0 @@
-**Group Membership** | Ability Type
-__Basics__
-Group membership is a passive ability that makes the role be part of a group.
-__Details__
-Usually roles are part of a group from the start of the game (e.g. Baker, Wolf), however some roles can join groups at a later point in the game, either passively (e.g. Lone Wolf) or actively (e.g. Disguised Fox). 
-Townsfolk roles that are part of a group are classified as *Townsfolk Group* roles, Werewolf roles are classified as *Werewolf Group*, if they are part of a second group ontop of the wolfpack. Solo roles are usually part of groups by default, so they are not categorized differently.
-In some games, player can betray their group by changing their role (e.g. by turning undead or being infected by the Infecting Wolf), however they will still remain a member of the group.
-The Group Membership ability is the *addition* to a group, not the state of being in a group. This means losing a role with a group membership ability will not affect your membership in the group.

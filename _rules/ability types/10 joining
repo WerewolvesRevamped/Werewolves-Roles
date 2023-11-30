@@ -1,0 +1,11 @@
+**Joining (Group Membership)** | Ability Type
+__Basics__
+Joining is an ability type that grants a player a group membership. Roles with a joining ability are *Group* roles.
+__Details__
+While more commonly refered to as Group Membership, the actual ability is 'joining' and refers to the ability to join a group by receiving a group membership attribute. This means losing a role with a group membership ability will not affect your membership in the group.
+Usually roles are part of a group from the start of the game (e.g. Baker, Wolf), however some roles can join groups at a later point in the game, either passively (e.g. Lone Wolf) or actively (e.g. Disguised Fox). 
+Roles that join a group as part of a team wide ability are *not* considered to be *Group* roles.
+In some games, player can betray their group by changing their role (e.g. by turning undead or being infected by the Infecting Wolf), however they will still remain a member of the group.
+
+__Simplified__
+Joining is an ability type that grants a player a group membership. Roles with a joining ability are *Group* roles.
