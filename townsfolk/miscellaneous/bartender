@@ -8,3 +8,6 @@ The Bartender is often used together with the Alcoholic, in which case it is imp
 
 __Simplified__
 The Bartender can talk in the tavern without having their identity revealed.
+
+__Formalized__
+Starting: Whisper to #tavern as `Bartender` [~Permanent]
