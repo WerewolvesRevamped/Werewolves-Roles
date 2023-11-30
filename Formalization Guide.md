@@ -229,10 +229,13 @@ As a result of an Applying the <Target> receives a custom attribute.
 ---
 #### Redirecting
 
-Format: `Redirect '<Subtype>' to <Target>`
+Format:
+- `Redirect '<Subtype>' to <Target>`
+- `Redirect '<Subtype>' from <Source> to <Target>`
 
 - Subtype: An ability type name, or `all` or `non-killing abilities`
 - Target: A target type, specifying who to redirect to
+- Source: A target type, specifying abilities from which players should be redirected
 
 ---
 #### Vote Manipulating
