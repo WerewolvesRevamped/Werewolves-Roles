@@ -73,7 +73,7 @@ If a single trigger does several abilities at once, they can be listed as part o
     - `Attribute: lacks <Attribute>`, may only be used if `<Attribute>` is not present
     - `Attribute: <Target> [has | lacks] <Attribute>`, may only be used if `<Target>` (a target type) has/lacks `<Attribute>`
   - Succession Restrictions:
-    - `Succession: Non Succession`, may not be used in in succession
+    - `Succession: No Succession`, may not be used in in succession
     - `Succession: No Target Succession`, may not be used successively on the same target 
   - Quantity Restrictions:
     - `Quantity: <Value>`, may only used a maximum of `<Value>` times
