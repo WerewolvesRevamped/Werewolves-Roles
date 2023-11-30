@@ -73,6 +73,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 
 ### Ability Type
 
+---
 #### Killing
 
 Format: `<Subtype> <Target>`
@@ -80,6 +81,7 @@ Format: `<Subtype> <Target>`
 - Subtypes: `Kill`, `Attack`, `Lynch` and `True Kill`
 - Target: A target type
 
+---
 #### Investigating
 
 Format: `<Subtype> Investigate <Target> (<Relevant Effects>)`
@@ -88,12 +90,14 @@ Format: `<Subtype> Investigate <Target> (<Relevant Effects>)`
 - Target: A target type
 - Relevant Effects: A comma separated list of the following three values: `WD` (Weak Disguises), `SD` (Strong Disguises), `OB` (Obstructions), listing all of those the investigation is affected by
 
+---
 #### Targetting
 
 Format: `Target <Target>`
 
 - Target: A target type
 
+---
 #### Disguising
 
 Format: `<Subtype> Disguise <Target> as <Role> (<Duration>)`
