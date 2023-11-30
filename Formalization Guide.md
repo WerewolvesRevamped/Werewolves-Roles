@@ -28,6 +28,7 @@
     - [Loyalty](#loyalty)
     - [Obstructing](#obstructing)
     - [Poll Manipulating](#poll-manipulating)
+    - [Announcements](#announcements)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -84,7 +85,8 @@ Trigger types can be one of the following:
 - `Starting` for starting abilities
 - `Passive` for constantly active abilities
 - `On Death` for an ability that triggers on death
-- `On Visit [[<Action Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player
+- `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player
+- `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
 
 ----
 #### Action Restrictions
@@ -144,6 +146,7 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
 - `@(<Attribute>)`: Uses all players that have the `<Attribute>` (e.g. `@(Wolfish)`)
+- `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 
 ----
 ----
@@ -325,3 +328,14 @@ Format:
   - `Unvotable`: The player cannot be voted for on the poll
   - `Disqualified`: The player cannot win the poll, but can be voted for
 
+---
+#### Announcements
+
+Format:
+- `Reveal <Target> to <Location>` (Self Reveal, Public Information)
+- ?? (Private Information)
+- `Know <Information>` (Private Knowledge)
+
+- Target: A target type, specifying what to reveal. This may be a player or a piece of information.
+- Location: A channel to reveal information too
+- Information: **WIP**
