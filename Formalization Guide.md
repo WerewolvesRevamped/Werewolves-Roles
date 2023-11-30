@@ -150,10 +150,10 @@ Format: `<Subtype> Disguise <Target> as '<Role>' (<Duration>)`
 ---
 #### Protecting
 
-Format: `Protect <Target> from <KillingSubtype> through <Subtype> (<Duration>)`
+Format: `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`
 
 - Target: A target type
-- KillingSubtype: One of the subtypes of the killing ability.
+- KillingSubtype: `Attacks`, `Kills`, `Lynches`, `All` or `Attacks & Kills`
 - Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense` or `Partial Defense`
   - Location: Either a channel (`#channelName`) or a target type
 - Duration: A duration type
