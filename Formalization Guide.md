@@ -143,6 +143,7 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
+- `@(<Attribute>)`: Uses all players that have the `<Attribute>`
 
 ----
 ----
