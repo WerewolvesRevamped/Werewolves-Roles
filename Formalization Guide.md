@@ -10,7 +10,7 @@
     - [Action Restrictions](#action-restrictions)
     - [Action Scaling](#action-scaling)
     - [Action Compulsion](#action-compulsion)
-    - [Compund Actions](#compound-actions)
+    - [Compound Actions](#compound-actions)
   - [Target Types](#target-types)
   - [Duration Types](#duration-types)
   - [Ability Type](#ability-type)
