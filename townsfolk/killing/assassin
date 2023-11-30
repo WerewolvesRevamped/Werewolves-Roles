@@ -8,5 +8,4 @@ __Simplified__
 After night 1, the Assassin may choose one player to attack during the night. They may only attack 3 times throughout the game.
 
 __Formalized__
-End-Night: Attack @Selection
-Temporal Restriction: Night 2+
+End Night: Attack @Selection [Temporal: Night 2+, Quantity: 3]
