@@ -1,5 +1,13 @@
 # A guide on how to formalize roles/groups/teams/attributes
 
+## Contents
+
+- [Basics](#basics)
+- [Role](#role)
+- [Abilities](#abilities)
+  - [Ability](#ability)
+  - [Ability Type](#ability-type)
+
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
 - `[<Argument1> | <Argument2>]`: Should be replaced by one of the options within `[]` which are separated by `|`, e.g. `[<Argument1> | <Argument2>]` ⇒ `<Argument1>` ⇒ `Example1`  
