@@ -158,6 +158,7 @@ Format: `Redirect <Subtype> to <Target>`
 - Subtype: An ability type name, or `all` or `non-killing abilities`
 - Target: A target type
 
+---
 #### Vote Manipulating
 
 Format: `Manipulate <Target>'s <Subtype> to '<Value>'`
