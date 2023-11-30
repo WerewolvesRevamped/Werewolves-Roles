@@ -64,10 +64,19 @@ If a single trigger does several abilities at once, they can be listed as part o
   - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
   - `Starting` for starting abilities
   - `Passive` for constantly active abilities
-- Action Restrictions: One of the following:
-  - Temporal Restriction: **WIP**
-  - Attribute Restriction: **WIP**
-  - Succession Restrictions: **WIP**
+- Action Restrictions: One ore mof of the following in a comma separated list:
+  - Temporal Restriction:
+    - `Temporal: <Phase>`, may only be used in `<Phase>`, e.g. `Temporal: Day 0`
+    - `Temporal: <Phase>+`, may only be in `<Phase>` or after, e.g. `Temporal: Night 2+`
+  - Attribute Restriction:
+    - `Attribute: has <Attribute>`, may only be used if `<Attribute>` is present
+    - `Attribute: lacks <Attribute>`, may only be used if `<Attribute>` is not present
+    - `Attribute: <Target> [has | lacks] <Attribute>`, may only be used if `<Target>` (a target type) has/lacks `<Attribute>`
+  - Succession Restrictions:
+    - `Succession: Non Succession`, may not be used in in succession
+    - `Succession: No Target Succession`, may not be used successively on the same target 
+  - Quantity Restrictions:
+    - `Quantity: <Value>`, may only used a maximum of `<Value>` times
 - Action Scaling: **WIP**
 - Action Compulsion: `Forced` for forced actions, blank otherwise
 
