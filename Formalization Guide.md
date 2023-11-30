@@ -27,6 +27,7 @@
     - [Granting](#granting)
     - [Loyalty](#loyalty)
     - [Obstructing](#obstructing)
+    - [Poll Manipulating](#poll-manipulating)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -304,4 +305,20 @@ Format:
 - Ability Type: An ability type, specifying which ability types should be obstructed
 - Ability Subtype: The full name of an ability subtype, usually gained from appending the ability type name to the ability subtype name
 - Feedback: A custom feedback that should be returned. The feedback is given in the normal format of the specified ability type. Possible values for the `Killing` ability type would be `Failure` or `Success`. Possible values for the `Role Investigation` ability subtype would be any role.
+
+---
+#### Poll Manipulating
+
+Format:
+- `Add <PollType> Poll` (Duplicate an existing poll)
+- `Create <PollType> Poll` (Creates a poll and the role will execute the resulting ability)
+- `Cancel <PollType> Poll` (Cancel the poll's resulting ability)
+- `Delete <PollType> Poll` (Remove a poll that would otherwise exist)
+- `Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)
+
+- Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
+- Target: A target type, specifying which player should be manipulated on the poll
+- ManipulationType: Specifies how the player should be manipulated on the poll:
+  - `Unvotable`: The player cannot be voted for on the poll
+  - `Disqualified`: The player cannot win the poll, but can be voted for
 
