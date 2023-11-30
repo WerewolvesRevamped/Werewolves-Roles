@@ -6,3 +6,7 @@ The Assassin may only attack a total of 3 times throughout a game. The Assassinâ
 
 __Simplified__
 After night 1, the Assassin may choose one player to attack during the night. They may only attack 3 times throughout the game.
+
+__Formalized__
+End-Night: Attack @Selection
+Temporal Restriction: Night 2+
