@@ -6,3 +6,6 @@ When a role changing ability affects the Devout Villager, it fails. If the infec
 
 __Simplified__
 The Devout Villager is a normal citizen, with one exception: they can never change role.
+
+__Formalized__
+Passive: Loyalty to @Self (Alignment)
