@@ -153,7 +153,7 @@ Format:
 ---
 #### Redirecting
 
-Format: `Redirect <Subtype> to <Target>`
+Format: `Redirect '<Subtype>' to <Target>`
 
 - Subtype: An ability type name, or `all` or `non-killing abilities`
 - Target: A target type
@@ -161,7 +161,7 @@ Format: `Redirect <Subtype> to <Target>`
 ---
 #### Vote Manipulating
 
-Format: `Manipulate <Target>'s <Subtype> to '<Value>'`
+Format: `Manipulate <Target>'s '<Subtype>' to '<Value>'`
 
 - Target: A target type
 - Subtype: `public voting power`, `private voting power` or `public starting votes`
@@ -170,7 +170,7 @@ Format: `Manipulate <Target>'s <Subtype> to '<Value>'`
 ---
 #### Whispering
 
-Format: `Whisper to <Location> as <Disguise> (<Duration>)`
+Format: `Whisper to <Location> as '<Disguise>' (<Duration>)`
 
 - Location: Either a channel (`#channelName`) or a target type
 - Disguise: A role, or if none, remove `as <Disguise>`
@@ -179,7 +179,7 @@ Format: `Whisper to <Location> as <Disguise> (<Duration>)`
 ---
 #### Joining
 
-Format: `Join <GroupName>`
+Format: `Join '<GroupName>'`
 
 - GroupName: The name of a defined group
 
@@ -196,7 +196,7 @@ Format:
 ---
 #### Loyalty
 
-Format: `Loyalty to <Target> (<Subtype>)`
+Format: `Loyalty to '<Target>' (<Subtype>)`
 
 - Target: The name of a defined group (if subtype is group) or a defined team (if subtype is alignment)
 - Subtype: `Group` or `Alignment`
