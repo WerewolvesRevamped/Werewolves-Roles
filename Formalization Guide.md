@@ -85,9 +85,9 @@ Single Ability
 ```
 Multiple Abilities
 ```
-<Trigger Type>:
-  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+<Trigger Type>: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • <Ability Type> 
+  • <Ability Type> 
 ```
 The three elements `[<Action Restriction>]`, `{<Action Compulsion>}` and `⟨<Action Scaling>⟩` should be left out if unnecessary.
 
