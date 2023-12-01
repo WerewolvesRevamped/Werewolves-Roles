@@ -172,8 +172,17 @@ Format:
   • Action: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
   • Process:
     ‣ <Ability Type>
+    ‣ <Ability Type>
   • Evaluate:
     ‣ [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
+    ‣ [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
+```
+Compact Format:
+```
+<Trigger Type>:
+  • Action: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • Process: <Ability Type>
+  • Evaluate: [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
 ```
 
 If no action restriction/compulsion/scaling applies, the `Action` line should be left out.
