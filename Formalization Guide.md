@@ -208,9 +208,9 @@ Format: `<Subtype> <Target>`
 ---
 #### Investigating
 
-Format:
-- `<Subtype> Investigate <Target> (<Relevant Effects>)` (Investigate role/alignment/category)
-- `Attribute Investigate <Target> for <Attribute>` (Look if a certain attribute is present)
+Format: 
+- `<Subtype> Investigate <Target> (<Relevant Effects>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category
+- `Attribute Investigate <Target> for <Attribute>` (Look if a certain attribute is present) - Returns Success/Failure
 
 - Subtypes: `Role`, `Alignment` or `Category`
 - Target: A target type, specifying who is getting attacked
