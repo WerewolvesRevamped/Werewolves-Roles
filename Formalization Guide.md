@@ -67,7 +67,7 @@ Teams use the same general format as roles. Some trigger types are not compatibl
 
 ## Groups
 ```
-**<Group Name>** | <Related Team Name>
+**<Group Name>** | <Related Team Name> Group
 [<Role Ability List> | No Abilities]
 ```
 
