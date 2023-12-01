@@ -33,6 +33,7 @@
     - [Poll Manipulating](#poll-manipulating)
     - [Announcements](#announcements)
     - [Role Change](#role-change)
+    - [Copying](#copying)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -434,3 +435,14 @@ Format:
 
 - Target: A target type, specifying which player's role to change
 - Role: A target type or constant role, specifying the player's new role
+
+---
+#### Copying
+
+Format:
+- `Copy <Target>` (Copies all abilities of target role or player to yourself)
+- `Duplicate <Target>'s abilities` (Copies all abilities of target role or player to themself)
+- `Copy <Target> to <Target2>` (Copies all abilities of a target role or player to another player)
+
+- Target: A target type, specifying a role or player to copy from
+- Target2: Another target type, specifying who should get the copied ability
