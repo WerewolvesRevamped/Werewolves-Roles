@@ -169,11 +169,14 @@ An action can consist of several abilities chained together. The action will sti
 Format:
 ```
 <Trigger Type>:
+  • Action: [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
   • Process:
-    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+    ‣ <Ability Type>
   • Evaluate:
     ‣ [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
 ```
+
+If no action restriction/compulsion/scaling applies, the `Action` line should be left out.
 
 As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player.
 
