@@ -414,9 +414,9 @@ Format:
 
 Format:
 - `Reveal <Target> to <Location>` (Self Reveal, Public Information)
-- ?? (Private Information)
-- `Know <Information>` (Private Knowledge)
+- `Learn '<Information>'` (Private Information)
+- `Know '<Information>'` (Private Knowledge)
 
 - Target: A target type, specifying what to reveal. This may be a player or a piece of information.
 - Location: A channel to reveal information too
-- Information: **WIP**
+- Information: May be text that the player directly receives
