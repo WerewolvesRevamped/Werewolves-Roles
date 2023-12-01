@@ -9,3 +9,6 @@ If the Trickster loses their role, their vote will count as that of a normal pla
 
 __Simplified__
 On polls the Trickster's vote is counted as negative one.
+
+__Formalized__
+Starting: Manipulate @Self's `public voting power` to `-1` (~Permanent)
