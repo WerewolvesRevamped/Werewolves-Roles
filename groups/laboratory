@@ -1,0 +1,6 @@
+**Laboratory** | Townsfolk Team Group
+__Basics__
+The Laboratory contains the Mad Scientist and their two subjects from other teams. The Mad Scientist must choose a subject that will be killed should they die.
+__Members__
+<?MadScientist:> Mad Scientist
+<?TestSubject:> Test Subject
