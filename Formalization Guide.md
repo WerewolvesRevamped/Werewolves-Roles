@@ -109,7 +109,7 @@ Trigger types can be one of the following:
 - `Passive` for constantly active abilities
 - `Passive [End Day|End Night|Start Day|Start Night]` for abilities that passively/automatically trigger at the start or end of a phase
 - `On Death` for an ability that triggers on death
-- `On Killed` for an ability that triggers when (true) killed
+- `On Killed` for an ability that triggers when a player dies through a (true) kill
 - `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor)
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
 - `On Disbandment` for an ability that triggers when a group disbands
