@@ -452,7 +452,7 @@ Format:
 
 Choice Creation Format:
 ```
-Choice '<Name>' Creation [for <Target|Location>]:
+'<Name>' Choice Creation [for <Target|Location>]:
   • <Option Name>
     ‣ <Resulting Ability>
     ‣ <Resulting Ability>
@@ -467,7 +467,7 @@ Choice '<Name>' Creation [for <Target|Location>]:
 
 Choice Choosing Format:
 ```
-Choice '<Name>' Choose '<Option Name>'
+'<Name>' Choice Choose '<Option Name>'
 ```
 
 - Name: The choice to choose one
