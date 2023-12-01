@@ -106,11 +106,11 @@ Trigger types can be one of the following:
 - `Starting` for starting abilities
 - `Passive` for constantly active abilities
 - `On Death` for an ability that triggers on death
-- `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player
+- `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor)
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
 - `On Disbandment` for an ability that triggers when a group disbands
-- `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided)
-- `On [Passive|Partial] Defense` for an ability that triggers when a passive or partial defense is used
+- `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch)
+- `On [Passive|Partial] Defense` for an ability that triggers when a passive or partial defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used.)
 
 ----
 #### Action Restrictions
