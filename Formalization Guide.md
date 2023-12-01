@@ -292,7 +292,7 @@ Format: `<Subtype> Disguise <Target> as '<Role>' (<Duration>)`
 - Subtype: `Weakly` or `Strongly`
 - Target: A target type, specifiying who is disguised
 - Role: A role, that will be the disguise
-- Duration: A duration type
+- Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
 
 As a result of a Disguising the <Target> receives a `Disguise` attribute.
 
@@ -311,7 +311,7 @@ Format:
 - Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense` or `Partial Defense`
   - Location: Either a channel (`#channelName`) or a target type
 - Phase: `Night` or `Day`, limits the protection to only be active during a certain phase. 
-- Duration: A duration type
+- Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
 
 As a result of a Protecting the <Target> receives a `Defense` attribute.
 
@@ -325,7 +325,7 @@ Format:
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
 - Target: A target type 
-- Duration: A duration type
+- Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
 - Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute. Leave out if unnecessary.
 
 As a result of an Applying the <Target> receives a custom attribute.
@@ -351,7 +351,7 @@ Format: `Manipulate <Target>'s '<Subtype>' to '<Value>' (<Duration>)`
 - Target: A target type, specifying who is being manipulated
 - Subtype: `public voting power`, `private voting power` or `public starting votes`
 - Value: A target type, specifying the amount of votes
-- Duration: A duration type, specifying for how long the vote manipulation lasts
+- Duration: A duration type, specifying for how long the vote manipulation lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
 As a result of a Vote Manipulation the <Target> receives a `Manipulation` attribute.
 
@@ -362,7 +362,7 @@ Format: `Whisper to <Location> as '<Disguise>' (<Duration>)`
 
 - Location: Either a channel (`#channelName`) or a target type, specifying to which player or channel to whisper
 - Disguise: A role, or if none, remove `as <Disguise>`
-- Duration: A duration type, specifying for how long the whispers lasts
+- Duration: A duration type, specifying for how long the whispers lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
 As a result of a Whispering, a whispering connection is opened.
 
@@ -403,16 +403,17 @@ May be used in combination with a `Passive` trigger.
 #### Obstructing
 
 Format:
-- `Obstruct <Target>` (Block all ability types)
-- `Obstruct <Ability Type> for <Target>` (Block only a certain ability type)
-- `Obstruct <Ability Subtype> for <Target>` (Block only a certain ability subtype)
-- `Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback>` (Block a certain ability type and return fake feedback)
+- `Obstruct <Target> (<Duration>)` (Block all ability types)
+- `Obstruct <Ability Type> for <Target> (<Duration>)` (Block only a certain ability type)
+- `Obstruct <Ability Subtype> for <Target> (<Duration>)` (Block only a certain ability subtype)
+- `Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback> (<Duration>)` (Block a certain ability type and return fake feedback)
 
 - Target: A target type, specifying which player should be obstructed
 - Ability Type: An ability type, specifying which ability types should be obstructed
 - Ability Subtype: The full name of an ability subtype, usually gained from appending the ability type name to the ability subtype name
 - Feedback: A custom feedback that should be returned. The feedback is given in the normal format of the specified ability type. Possible values for the `Killing` ability type would be `Failure` or `Success`. Possible values for the `Role Investigation` ability subtype would be any role.
-- 
+- Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
+
 As a result of an Obstruction the <Target> receives an `Obstructed` attribute.
 
 ---
