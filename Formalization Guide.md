@@ -147,10 +147,10 @@ Format:
   • Process:
     ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
   • Evaluate:
-    ‣ [<Condition> | Otherwise]: ['<Feedback>' | <Ability>]
+    ‣ [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
 ```
 
-As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability)
+As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player.
 
 Afterwards, each evaluate line is evaluated.
 Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Several conditions may trigger together.
@@ -164,9 +164,10 @@ Condition Format:
 A condition may either be a pure condition, or conditions combined with logial operations.
 A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>`
 
-If a condition triggers there are two options:
+If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
 - Execute another `<Ability>` and return that ability's feedback
+- Use `<Target>` to return the feedback of one of the original abilities
 
 ----
 ----
