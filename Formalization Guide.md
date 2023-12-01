@@ -280,7 +280,7 @@ Format: `<Subtype> Disguise <Target> as '<Role>' (<Duration>)`
 - Role: A role, that will be the disguise
 - Duration: A duration type
 
-As a result of a Disguising the <Target> receives a Disguised attribute.
+As a result of a Disguising the <Target> receives a `Disguise` attribute.
 
 ---
 #### Protecting
@@ -299,7 +299,7 @@ Format:
 - Phase: `Night` or `Day`, limits the protection to only be active during a certain phase. 
 - Duration: A duration type
 
-As a result of a Protecting the <Target> receives a defense attribute.
+As a result of a Protecting the <Target> receives a `Defense` attribute.
 
 ---
 #### Applying
@@ -337,7 +337,7 @@ Format: `Manipulate <Target>'s '<Subtype>' to '<Value>' (<Duration>)`
 - Value: A target type, specifying the amount of votes
 - Duration: A duration type, specifying for how long the vote manipulation lasts
 
-As a result of a Vote Manipulation the <Target> receives a vote manipulated attribute.
+As a result of a Vote Manipulation the <Target> receives a `Manipulation` attribute.
 
 ---
 #### Whispering
@@ -357,7 +357,7 @@ Format: `Join '<GroupName>'`
 
 - GroupName: The name of a defined group
 
-As a result of a Joining the <Target> receives a group membership attribute.
+As a result of a Joining the <Target> receives a `Group Membership` attribute.
 
 ---
 #### Granting
