@@ -32,6 +32,7 @@
     - [Obstructing](#obstructing)
     - [Poll Manipulating](#poll-manipulating)
     - [Announcements](#announcements)
+    - [Role Change](#role-change)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
