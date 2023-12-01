@@ -14,4 +14,4 @@ Immediate: Target @Selection (Player)
 Immediate: Target @Selection (Player) [Quantity: 1]
 On Killed: 
   • Process: Attack @Target
-  • Evaluate: @Result is `Success`: Reveal `Huntress @Self killed @Target`
+  • Evaluate: @Result is `Success`: Reveal `Huntress @Self killed @Target` to #story_time
