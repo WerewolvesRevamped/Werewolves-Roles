@@ -400,6 +400,8 @@ Format:
 - Ability Type: An ability type, specifying which ability types should be obstructed
 - Ability Subtype: The full name of an ability subtype, usually gained from appending the ability type name to the ability subtype name
 - Feedback: A custom feedback that should be returned. The feedback is given in the normal format of the specified ability type. Possible values for the `Killing` ability type would be `Failure` or `Success`. Possible values for the `Role Investigation` ability subtype would be any role.
+- 
+As a result of an Obstruction the <Target> receives an `Obstructed` attribute.
 
 ---
 #### Poll Manipulating
