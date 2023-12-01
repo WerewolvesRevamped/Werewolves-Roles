@@ -129,7 +129,12 @@ Action Restrictions can be one or more of the following in a comma separated lis
 ----
 #### Action Scaling
 
-**WIP**
+May be one of the following:
+- Static Scaling: The action can always be used several times
+  - `x<Value>`, specify a number that determines how many times the action can be used
+- Dynamic Scaling: Amount of action usages depend on total player count
+  - `Players/<Value>` the action can be used exactly as many times as the player count divided by the specified value, rounded down
+  - `<Comparison><Value> -> <Count>` a comma separated list of conditions, where commparison may be `<`, `>` or `=` and value is a constant number specifying a player amount and count is the amount of available uses
 
 ----
 #### Action Compulsion
