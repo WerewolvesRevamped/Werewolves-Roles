@@ -34,6 +34,7 @@
     - [Announcements](#announcements)
     - [Role Change](#role-change)
     - [Copying](#copying)
+    - [Choices](#choices)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -446,3 +447,31 @@ Format:
 
 - Target: A target type, specifying a role or player to copy from
 - Target2: Another target type, specifying who should get the copied ability
+
+---
+#### Choices
+
+Choice Creation Format:
+```
+Choice '<Name>' Creation [for <Target|Location>]:
+  • <Option Name>
+    ‣ <Resulting Ability>
+    ‣ <Resulting Ability>
+  • <Option Name>
+    ‣ <Resulting Ability>
+```
+
+- Name: Gives the choice a name to reference later
+- Target|Location: Optional, specifies to which player, target type or location the choice should be sent. If not specified the current player chooses.
+- Option Name: The names for each option which are what can be selected by choice choosing
+- Resulting Ability: Abilities that result after a choice choosing, executed by the role who created the choice
+
+Choice Choosing Format:
+```
+Choice '<Name>' Choose '<Option Name>'
+```
+
+- Name: The choice to choose one
+- Option Name: The name of the chosen option
+
+
