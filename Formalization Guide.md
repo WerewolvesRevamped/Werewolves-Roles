@@ -416,10 +416,10 @@ Format:
 #### Announcements
 
 Format:
-- `Reveal <Target> to <Location>` (Self Reveal, Public Information)
+- `Reveal [<Target>|<Information>] to <Location>` (Self Reveal, Public Information)
 - `Learn '<Information>'` (Private Information)
 - `Know '<Information>'` (Private Knowledge)
 
 - Target: A target type, specifying what to reveal. This may be a player or a piece of information.
 - Location: A channel to reveal information too
-- Information: May be text that the player directly receives
+- Information: (reveal) Text that is revealed, (learn, know) Text the player receives 
