@@ -6,6 +6,10 @@ After Day 1, the Royal Knight may cancel the lynch at any time of day or night, 
 Cancelling the lynch is an immediate ability. However, the fact that the lynch has been cancelled will only be revealed at the end of the day. 
 The Royal Knight also chooses whether they want to be revealed or not. If they choose to be revealed, both their role and name are announced: otherwise, neither is.
 
-
 __Simplified__
 After Day 1, the Royal Knight may cancel the lynch once.
+
+__Formalized__
+Compound: [Quantity: 1, Temporal: Night 2+]
+  • Immediate: Cancel `Lynch` Poll 
+  • End Day: Reveal `Royal Knight @Self cancelled lynch`
