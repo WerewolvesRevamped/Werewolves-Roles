@@ -8,3 +8,6 @@ This ability is triggered when a player who at any point had the role of Child d
 
 __Simplified__
 The day after the Child dies, there will be two lynches instead of one.
+
+__Formalized__
+On Death: Add `Lynch` Poll
