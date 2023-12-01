@@ -9,3 +9,6 @@ The Warlock is not a lycan, nor are they a member of the wolfpack.
 __Simplified__
 The Warlock and wolfpack do not know each other.
 Each night, the Warlock may check one player’s role. This is affected by weak disguises, redirections, and obstructions. 
+
+__Formalized__
+Immediate Night: Role Investigate @Selection (SD, WD)
