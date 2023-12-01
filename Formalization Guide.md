@@ -187,7 +187,7 @@ Compact Format:
 
 If no action restriction/compulsion/scaling applies, the `Action` line should be left out.
 
-As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player.
+As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player. In case of a single process step only, the result can be accessed through `@Result`.
 
 Afterwards, each evaluate line is evaluated.
 Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Several conditions may trigger together.
