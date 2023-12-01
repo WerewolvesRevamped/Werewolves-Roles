@@ -7,3 +7,13 @@ Using holy water on a player is an end-night ability.
 
 __Simplified__
 Each night, the Priest may use their holy water on a player. If that player is a lycan, that player will be attacked. If they are townsfolk aligned, the Priest dies.
+
+__Formalized__
+End Night:
+  • Process:
+    ‣ Attribute Investigate @Selection for `Lycan`
+    ‣ Alignment Investigate @Selection
+  • Evaluate
+    ‣ @Result1 is `Success`: Attack @Selection
+    ‣ @Result2 is `Townsfolk`: True Kill @Selection
+    ‣ Otherwise: `Failure`
