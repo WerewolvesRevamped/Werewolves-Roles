@@ -17,6 +17,6 @@ Starting: Protect @Self from `Attacks` through `Partial Defense` during `Night` 
 On Partial Defense:
   • Learn `Attacked by @Attacker`
   • Protect @Self from `all` through `Passive Defense` (~Permanent)
-  • Reveal `Macho @Self was attacked` to #storytime
+  • Reveal `Macho @Self was attacked` to #story_time
   • Apply `Marker` to @Self
 Passive End Day: True Kill @Self [Attribute: has `Marker`]
