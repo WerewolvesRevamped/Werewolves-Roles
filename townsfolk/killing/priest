@@ -15,5 +15,5 @@ End Night:
     ‣ Alignment Investigate @Selection
   • Evaluate:
     ‣ @Result1 is `Success`: Attack @Selection
-    ‣ @Result2 is `Townsfolk`: True Kill @Selection
+    ‣ @Result2 is `Townsfolk`: True Kill @Self
     ‣ Otherwise: `Failure`
