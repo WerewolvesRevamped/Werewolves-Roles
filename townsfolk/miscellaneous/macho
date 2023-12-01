@@ -19,4 +19,4 @@ On Partial Defense:
   • Protect @Self from `all` through `Passive Defense` (~Permanent)
   • Reveal `Macho @Self was attacked` to #storytime
   • Apply `Marker` to @Self
-End Day: True Kill @Self [Attribute: has `Marker`]
+Passive End Day: True Kill @Self [Attribute: has `Marker`]
