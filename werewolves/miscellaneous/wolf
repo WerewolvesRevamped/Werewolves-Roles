@@ -6,3 +6,8 @@ The Wolf is a player who acts like a regular player during the day, but secretly
 
 __Simplified__
 The Wolf has no special abilities.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Inherit: `Pack`
+Inherit: `Lycan`
