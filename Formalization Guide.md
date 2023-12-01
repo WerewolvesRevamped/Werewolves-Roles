@@ -226,6 +226,8 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
 
+- `@Attribute(<Target Type>, <Attribute Type>)`: Uses an attirbute applied by a specified target, with a specified attribute type.
+
 ----
 ----
 ### Duration Types
