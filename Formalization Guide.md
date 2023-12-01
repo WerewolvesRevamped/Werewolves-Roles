@@ -104,7 +104,6 @@ If a single trigger does several abilities at once, they can be listed as part o
 
 Trigger types can be one of the following:
 - An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Immediate`) if the ability occurs in connection to a non-compound action
-- A more specific action timing such as `Start Night 1` or `Immediate Day 2`
 - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
 - `Starting` for starting abilities
 - `Passive` for constantly active abilities
