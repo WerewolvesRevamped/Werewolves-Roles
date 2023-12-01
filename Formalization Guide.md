@@ -328,11 +328,12 @@ May be used in combination with a `Passive` trigger.
 ---
 #### Vote Manipulating
 
-Format: `Manipulate <Target>'s '<Subtype>' to '<Value>'`
+Format: `Manipulate <Target>'s '<Subtype>' to '<Value>' (<Duration>)`
 
 - Target: A target type, specifying who is being manipulated
 - Subtype: `public voting power`, `private voting power` or `public starting votes`
 - Value: A target type, specifying the amount of votes
+- Duration: A duration type, specifying for how long the vote manipulation lasts
 
 As a result of a Vote Manipulation the <Target> receives a vote manipulated attribute.
 
