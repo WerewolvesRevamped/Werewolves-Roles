@@ -373,6 +373,8 @@ Format: `Loyalty to '<Name>' (<Subtype>)`
 
 Loyalty is applied only to yourself.
 
+May be used in combination with a `Passive` trigger.
+
 ---
 #### Obstructing
 
