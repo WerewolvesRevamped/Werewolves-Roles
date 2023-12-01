@@ -11,4 +11,4 @@ __Simplified__
 On polls the Trickster's vote is counted as negative one.
 
 __Formalized__
-Starting: Manipulate @Self's `public voting power` to `-1` (~Permanent)
+Starting: Manipulate @Self's `public voting power` to `-1`
