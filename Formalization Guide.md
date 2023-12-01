@@ -264,9 +264,10 @@ Format:
 ---
 #### Targeting
 
-Format: `Target <Target>`
+Format: `Target <Target> [<Type>]`
 
 - Target: A target type, specifying what is getting targeted
+- Type: Specifies what type of object can be targeted. May be `Player`, `Role`, `Attribute` or `List: <ListElements>` (with several `Elements` that are comma separated)
 
 ---
 #### Disguising
@@ -422,4 +423,13 @@ Format:
 
 - Target: A target type, specifying what to reveal. This may be a player or a piece of information.
 - Location: A channel to reveal information too
-- Information: (reveal) Text that is revealed, (learn, know) Text the player receives 
+- Information: (reveal) Text that is revealed, (learn, know) Text the player receives
+
+---
+#### Role Change
+
+Format:
+- `Role Change <Target> to <Role>`
+
+- Target: A target type, specifying which player's role to change
+- Role: A target type or constant role, specifying the player's new role
