@@ -4,6 +4,8 @@
 
 - [Basics](#basics)
 - [Role](#role)
+- [Teams](#teams) 
+- [Groups](#groups) 
 - [Abilities](#abilities)
   - [Ability](#ability)
     - [Trigger Types](#trigger-types)
@@ -42,7 +44,7 @@ Due to technical limitations if you see `'`'s within `this text` consider them t
 ## Role
 
 ```
-<Role Name> | <Role Group> <Role Category> <Role Team>
+**<Role Name>** | <Role Group> <Role Category> <Role Team>
 [<Role Ability List> | No Abilities]
 ```
 - Role Name: May be anything  
@@ -51,6 +53,23 @@ Due to technical limitations if you see `'`'s within `this text` consider them t
 - Role Team: Should be kept blank for any role group besides `Solo`, should be set to `- <Team Name>`, where `<Team Name>` is the name of a defined team  
 
 - Role Ability List: A newline separated list of `Abilities`
+
+## Teams
+```
+**<Team Name>**
+[<Role Ability List> | No Abilities]
+```
+
+Teams use the same general format as roles. Some trigger types are not compatible with teams.
+
+## Groups
+```
+**<Group Name>** | <Related Team Name>
+[<Role Ability List> | No Abilities]
+```
+
+Groups use the same general format as roles. Some trigger types are not compatible with groups.
+When a group creates a poll, a random voting member is selected to execute the resulting ability. 
 
 ## Abilities
 
@@ -88,6 +107,7 @@ Trigger types can be one of the following:
 - `On Death` for an ability that triggers on death
 - `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
+- `On Disbandment` for an ability that triggers when a group disbands
 
 ----
 #### Action Restrictions
@@ -181,6 +201,7 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@Target`: Uses the current target set by the player
 - `@(<Attribute>)`: Uses all players that have the `<Attribute>` (e.g. `@(Wolfish)`)
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
+- `@Members`: Uses all players that are part of the current group or team
 
 ----
 ----
