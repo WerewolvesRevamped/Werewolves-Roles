@@ -9,3 +9,9 @@ The Crowd Seeker is affected by all disguises, redirections, and obstructions. T
 __Simplified__
 The Crowd Seeker may investigate up to 3 players each night by guessing their roles. Each correct guess is confirmed.
 This is affected by weak disguises, redirections, and obstructions. 
+
+__Formalized__
+Immediate Night: 
+  • Action: ⟨x3⟩
+  • Process: Role Investigate @Selection (SD, WD, OB)
+  • Evaluate: @Result is @SecondarySelection: `Success`
