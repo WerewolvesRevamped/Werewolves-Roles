@@ -2,7 +2,7 @@
 __Basics__ 
 Each night, the Chef can choose a restaurant customer to send either charmed or poisoned food to. Eating charmed food confers attack invulnerability: eating poisoned food kills the restaurant customer. The Chef wins if they are alive at the end of the game, and at least one of their waiters remains.
 __Details__
-At the beginning of each day, the restaurant customer chosen by the Chef is added to the resturant channel, in which the Chef can anonymously communicate with them, and offered the opportunity to eat the food. The resturant customer is not told the type of food they have been sent. If the restaurant customer eats poisoned food, they die at the end of the day. If they eat charmed food, they are invulnerable from night attacks during the following night phase only. 
+At the beginning of each day, the restaurant customer chosen by the Chef is added to the resturant channel, in which the Chef can anonymously communicate with them, and offered the opportunity to eat the food. The resturant customer is not told the type of food they have been sent. If the restaurant customer eats poisoned food, they are *killed* at the end of the following night. If they eat charmed food, they are invulnerable from night attacks during the following night phase only. 
 Selecting a restaurant customer and sending food are start-day abilities. Eating food is an end-day ability.
 If the Chef dies during the day, the customer is immediately removed from the restaurant, and loses the opportunity to eat the food.
 Once a customer has eaten food, they can no longer be sent food.
