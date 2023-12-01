@@ -10,6 +10,6 @@ Once an immediate Action is submitted, it cannot be cancelled or changed: it is 
 • Action Restriction: Action restrictions block certain Actions from being possible. Action restrictions include temporal restrictions (being unable to use an Action during certain phases), attribute restrictions (being unable to use an Action whilst possessing a certain attribute), succession restrictions (being unable to use consecutive Actions on the same target) and quantity restrictions (being only able to use an action a certain amount of times)
 When an Action triggers several abilities at the same time, they are executed in parallel (unless specified otherwise): all abilities will occur indepedently and will not affect the execution of the other abilities.
 
-• Action Scaling: Actions may scale, in that the amount of times they may be used (overall or during a single phase) is affected by player count.
+• Action Scaling: Actions may scale, in that the amount of times they may be used (overall or during a single phase) is affected by player count. Some actions may also be scaled by a constant value. Scaled actions all have to be submitted at the same time.
 
 • Action Compulsion: Some Actions are forced Actions. The abilities from forced Actions cannot be blocked. If a forced Action is not used voluntarily, it is instead automatically executed with any selections or choices randomised. An Action being automatically executed does not affect ability activity status.
