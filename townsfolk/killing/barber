@@ -8,3 +8,6 @@ The Barber’s attack is an immediate ability. If the Barber's attack fails, the
 
 __Simplified__
 After Day 1, the Barber may once per game choose to immediately attack one player during the day.
+
+__Formalized__
+Immediate Day: Attack @Selection [Temporal: Day 2+, Quantity: 1]
