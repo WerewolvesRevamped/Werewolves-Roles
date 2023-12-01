@@ -195,13 +195,14 @@ Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only
 If only a single condition line with feedback "Success" is provided, an `Otherwise: Failure` line is implied.
 
 Condition Format:
-- `<Target> is [<Target> | '<Value>']`
+- `<Target> is [<Target> | '<Value>']` (Pure)
+- `<Target> is not [<Target> | '<Value>']` (Pure)
 - `not (<Condition>)`
 - `(<Condition>) and (<Condition>)`
 - `(<Condition>) or (<Condition>)`
 
 A condition may either be a pure condition, or conditions combined with logial operations.
-A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>`
+A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match)
 
 If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
