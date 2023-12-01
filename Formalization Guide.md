@@ -160,9 +160,9 @@ Compound:
 Example 2:
 ```
 <Compound>:
-  • <Trigger Type>:
-    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • <Trigger Type>: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+    ‣ <Ability Type>
+    ‣ <Ability Type>
   • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
 ```
 
