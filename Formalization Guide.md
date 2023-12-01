@@ -14,6 +14,7 @@
     - [Action Compulsion](#action-compulsion)
     - [Compound Actions](#compound-actions)
     - [Complex Actions](#complex-actions)
+  - [Ability Set](#ability-set) 
   - [Target Types](#target-types)
   - [Duration Types](#duration-types)
   - [Ability Type](#ability-type)
@@ -34,7 +35,7 @@
     - [Announcements](#announcements)
     - [Role Change](#role-change)
     - [Copying](#copying)
-    - [Choices](#choices)
+    - [Choices](#choices)  
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -215,6 +216,16 @@ If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
 - Execute another `<Ability>` and return that ability's feedback
 - Use `<Target>` to return the feedback of one of the original abilities
+
+---
+---
+### Ability Set
+
+A role can inherit abilities shared by several roles through an ability set.
+
+To inherit all abilities from an ability set use the trigger type `Inherits: <AbilitySetName>`
+
+An ability set has the same format as a role, except for the first line which is `**<AbilitySetName>** | Ability Set`
 
 ----
 ----
