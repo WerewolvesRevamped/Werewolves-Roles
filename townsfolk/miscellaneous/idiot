@@ -10,8 +10,8 @@ __Simplified__
 If the Idiot dies for the first time, they instead live, but lose their voting power.
 
 __Formalized__
-Starting: Protect @Self from `All` through `Partial Defense` (~Permanent)
+Starting: Protect @Self from `All` through `Partial Defense`
 On Partial Defense:
   • Learn `Defense was used`
-  • Manipulate @Self's `public voting power` to `0` (~Permanent)
+  • Manipulate @Self's `public voting power` to `0`
   • Remove `Defense` applied by @Self from @Self
