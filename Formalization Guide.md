@@ -256,12 +256,12 @@ Format: `<Subtype> <Target>`
 #### Investigating
 
 Format: 
-- `<Subtype> Investigate <Target> (<Relevant Effects>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category
+- `<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category
 - `Attribute Investigate <Target> for <Attribute>` (Look if a certain attribute is present) - Returns Success/Failure
 
 - Subtypes: `Role`, `Alignment` or `Category`
 - Target: A target type, specifying who is getting attacked
-- Relevant Effects: A comma separated list of the following three values: `WD` (Weak Disguises), `SD` (Strong Disguises), `OB` (Obstructions), listing all of those the investigation is affected by
+- Relevant Effects: A comma separated list of the following twi values: `WD` (Weak Disguises) or `SD` (Strong Disguises), listing all of those the investigation is affected by
 - Attribute: An attribute which is getting checked for
 
 ---
