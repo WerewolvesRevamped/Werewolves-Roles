@@ -9,3 +9,9 @@ The Assistant's redirection power can only be used once per game. The Assistant 
 __Simplified__
 The Assistant may select a player to redirect one werewolf action to. The action cannot be an attack.
 They will be informed when their ability is used.
+
+__Formalized__
+Immediate: Target @Selection (Player) 
+Immediate: Target @Selection (Player) [Quantity: 1]
+Passive: Redirect `non-killing abilities` from @(Wolfish) to @Target [Quantity: 1]
+On Action [Redirect]: Learn `Redirect was used`
