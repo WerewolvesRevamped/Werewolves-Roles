@@ -135,6 +135,38 @@ Example 2:
   • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
 ```
 
+---
+#### Complex Actions
+
+An action can consist of several abilities chained together. The action will still have a singular feedback.
+
+Format:
+```
+<Trigger Type>:
+  • Process:
+    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • Evaluate:
+    ‣ [<Condition> | Otherwise]: ['<Feedback>' | <Ability>]
+```
+
+As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability)
+
+Afterwards, each evaluate line is evaluated.
+Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Several conditions may trigger together.
+
+Condition Format:
+- `<Target> is [<Target> | '<Value>']`
+- `not (<Condition>)`
+- `(<Condition>) and (<Condition>)`
+- `(<Condition>) or (<Condition>)`
+
+A condition may either be a pure condition, or conditions combined with logial operations.
+A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>`
+
+If a condition triggers there are two options:
+- Specify a certain `<Feedback>` that should be returned
+- Execute another `<Ability>` and return that ability's feedback
+
 ----
 ----
 ### Target Types
