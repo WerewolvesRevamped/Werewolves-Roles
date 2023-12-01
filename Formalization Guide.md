@@ -192,6 +192,8 @@ As a first step all the abilities from the process step are evaluated, and their
 Afterwards, each evaluate line is evaluated.
 Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Several conditions may trigger together.
 
+If only a single condition line with feedback "Success" is provided, an `Otherwise: Failure` line is implied.
+
 Condition Format:
 - `<Target> is [<Target> | '<Value>']`
 - `not (<Condition>)`
