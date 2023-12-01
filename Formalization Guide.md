@@ -78,15 +78,15 @@ When a group creates a poll, a random voting member is selected to execute the r
 ### Ability
 Single Ability
 ```
-<Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+<Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
 ```
 Multiple Abilities
 ```
 <Trigger Type>:
-  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
-  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
 ```
-The three elements `[<Action Restriction>]`, `{<Action Compulsion>}` and `<<Action Scaling>>` should be left out if unnecessary.
+The three elements `[<Action Restriction>]`, `{<Action Compulsion>}` and `⟨<Action Scaling>⟩` should be left out if unnecessary.
 
 If a single trigger does several abilities at once, they can be listed as part of one trigger as shown above.
 
@@ -149,16 +149,16 @@ Compound actions uses an extended format. The trigger type is set as Compound, b
 Example 1:
 ```
 Compound:
-  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
-  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
 ```
 Example 2:
 ```
 <Compound>:
   • <Trigger Type>:
-    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
-    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
-  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+    ‣ <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
 ```
 
 ---
@@ -169,7 +169,7 @@ An action can consist of several abilities chained together. The action will sti
 Format:
 ```
 <Trigger Type>:
-  • Action: [<Action Restriction>] {<Action Compulsion>} <<Action Scaling>>
+  • Action: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
   • Process:
     ‣ <Ability Type>
   • Evaluate:
