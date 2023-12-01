@@ -8,4 +8,4 @@ __Simplified__
 The Devout Villager is a normal citizen, with one exception: they can never change role.
 
 __Formalized__
-Passive: Loyalty to @Self (Alignment)
+Passive: Loyalty to `Townsfolk` (Alignment)
