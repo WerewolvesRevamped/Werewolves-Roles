@@ -8,3 +8,9 @@ If the Idiot is Mayor, they will still have their Mayor vote.
 
 __Simplified__
 If the Idiot dies for the first time, they instead live, but lose their voting power.
+
+__Formalized__
+Starting: Protect @Self from `All` through `Partial Defense` (~Permanent)
+On Partial Defense:
+  • Learn `Defense was used`
+  • Manipulate @Self's `public voting power` to `0` (~Permanent)
