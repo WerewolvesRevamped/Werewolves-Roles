@@ -226,8 +226,6 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
 
-- `@Attribute(<Target Type>, <Attribute Type>)`: Uses an attirbute applied by a specified target, with a specified attribute type.
-
 ----
 ----
 ### Duration Types
@@ -307,8 +305,9 @@ As a result of a Protecting the <Target> receives a `Defense` attribute.
 Format:
 - `Apply <Attribute> to <Target> (<AdditionalAttributeData>)` (Add a custom attribute)
 - `Remove <Attribute> from <Target>` (Remove a custom or standard attribute)
+- `Remove <Attribute> applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)
 
-- Attribute: A defined custom attribute
+- Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
 - Target: A target type
 - Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute
 
