@@ -11,6 +11,7 @@
     - [Action Scaling](#action-scaling)
     - [Action Compulsion](#action-compulsion)
     - [Compound Actions](#compound-actions)
+    - [Complex Actions](#complex-actions)
   - [Target Types](#target-types)
   - [Duration Types](#duration-types)
   - [Ability Type](#ability-type)
