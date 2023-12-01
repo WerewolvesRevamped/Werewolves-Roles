@@ -13,7 +13,7 @@ End Night:
   • Process:
     ‣ Attribute Investigate @Selection for `Lycan`
     ‣ Alignment Investigate @Selection
-  • Evaluate
+  • Evaluate:
     ‣ @Result1 is `Success`: Attack @Selection
     ‣ @Result2 is `Townsfolk`: True Kill @Selection
     ‣ Otherwise: `Failure`
