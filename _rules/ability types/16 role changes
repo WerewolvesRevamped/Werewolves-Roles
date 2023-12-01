@@ -7,7 +7,12 @@ We differentiate between five types of role changes:
 • Recruitment: A recruitment is any type of role change from one alignment (or unaligned) to another alignment. The player is 'recruited' into the new team. Recruitments happen without any intent of the recruited player.
 • Demotion: A demotion is the opposite of a promotion. They trigger when a condition is met or an action is done by the player that 'demotes' them to a weaker role of the same alignment.
 • Selection: A selection is an active action from the relevant player. They 'select' a role or player which will determine their new role.
-• Assignment: An assignment is the counterpart of a selection. A player is 'assigned' a new role, usually as a consequence of another player's selection. 
+• Assignment: An assignment is the counterpart of a selection. A player is 'assigned' a new role, usually as a consequence of another player's selection.
+
+There is also an additional special type of role change:
+• Alignment: An alignment change changes only the role's alignment and not the role itself. This can only happen with Unaligned roles.
+
+Roles that change alignment without role change or that start out nonaligned and join an alignment are considered to be `Align` roles.
  
 __Simplified__
 Role Changes are a rare type of ability that causes a player's role to change from one role to another. Role Changes may target the player themselves, or another player entirely.
