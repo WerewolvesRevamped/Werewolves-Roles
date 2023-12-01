@@ -322,6 +322,8 @@ Format:
 - Target: A target type, specifying who to redirect to
 - Source: A target type, specifying abilities from which players should be redirected
 
+May be used in combination with a `Passive` trigger.
+
 ---
 #### Vote Manipulating
 
