@@ -319,13 +319,14 @@ As a result of a Protecting the <Target> receives a `Defense` attribute.
 #### Applying
 
 Format:
-- `Apply '<Attribute>' to <Target> (<AdditionalAttributeData>)` (Add a custom attribute)
+- `Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)
 - `Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)
 - `Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
-- Target: A target type
-- Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute
+- Target: A target type 
+- Duration: A duration type
+- Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute. Leave out if unnecessary.
 
 As a result of an Applying the <Target> receives a custom attribute.
 
