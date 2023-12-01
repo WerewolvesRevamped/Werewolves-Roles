@@ -14,3 +14,4 @@ Starting: Protect @Self from `All` through `Partial Defense` (~Permanent)
 On Partial Defense:
   • Learn `Defense was used`
   • Manipulate @Self's `public voting power` to `0` (~Permanent)
+  • Remove `Defense` applied by @Self from @Self
