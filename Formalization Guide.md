@@ -453,10 +453,10 @@ Format:
 Choice Creation Format:
 ```
 '<Name>' Choice Creation [for <Target|Location>]:
-  • <Option Name>
+  • <Option Name>:
     ‣ <Resulting Ability>
     ‣ <Resulting Ability>
-  • <Option Name>
+  • <Option Name>:
     ‣ <Resulting Ability>
 ```
 
