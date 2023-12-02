@@ -9,3 +9,10 @@ The Ranger is affected by strong disguises.
 
 __Simplified__
 The Ranger may select a player to reveal with their dying breath. Both their target and their role will be revealed. This is affected by strong disguises.
+
+__Formalized__
+Immediate: Target @Selection (Player) 
+Immediate: Target @Selection (Player) [Quantity: 1]
+On Killed: 
+  • Process: Role Investigate @Target (SD)
+  • Evaluation: Reveal Ranger @Self reveals @Target as @Result to #Story_Time
