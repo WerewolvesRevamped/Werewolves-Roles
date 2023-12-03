@@ -9,6 +9,7 @@ There are many types of investigations:
 • Alignment Investigation: See the alignment of another player
 • Category Investigation: See the category of a player's role
 • Attribute Investigation: See if a certain attribute is present on a player
+• Role Count Investigation: See the amount of times a certain role exists
 
 __Simplified__
 Investigations are a type of ability that gets information about the current game state. Roles with the ability to actively investigate are *Investigative* roles. Redirections, Obstructions and Disguises may lead to Investigations returning false information.
