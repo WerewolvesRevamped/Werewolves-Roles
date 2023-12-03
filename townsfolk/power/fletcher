@@ -1,11 +1,10 @@
 **Fletcher** | Townsfolk Power
 __Basics__
-During Day 0, the Fletcher selects a target. Unless the Fletcher changes their mind before they die, their target gains the abilities of a Huntress.
+During Day 0, the Fletcher selects a target. The chosen target will gain the abilities of a Huntress.
 __Details__
 The Fletcher must choose a target to be “Fletcher’s Customer” at the start of the game. Their target can not be changed. 
 If no target is selected when Day 0 ends, a target is randomly assigned. The Fletcher cannot target themself.
 Fletcher’s Customer gains a private channel and may select a target of their own who will be killed if Fletcher’s Customer is killed. 
-At any point while the Fletcher is alive, the Fletcher may irreversibly revoke Fletcher’s Customer's abilities. Choosing and revoking a customer are immediate abilities.
 
 __Simplified__
-During Day 0, the Fletcher must select a target. Unless the Fletcher changes their mind before they die, their target gains the abilities of a Huntress.
+During Day 0, the Fletcher must select a target. The target gains the abilities of a Huntress.
