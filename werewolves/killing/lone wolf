@@ -10,3 +10,16 @@ Attacking a player is an end-night ability.
 __Simplified__
 Each night, the Lone Wolf may attack one player. If that player is townsfolk aligned, that player will be attacked. If they are wolfish, the Lone Wolf dies.
 The Lone Wolf and wolfpack do not know each other, however once a member of the wolfpack dies, the Lone Wolf will lose their power and join the pack as a regular wolf.
+
+__Formalized__
+Inherit: `Lycan`
+End Night:
+  • Process: 
+    ‣ Alignment Investigate @Selection
+    ‣ Attribute Investigate @Selection for `Wolfish`
+  • Evaluate:
+    ‣ @Result1 is `Townsfolk`: Attack @Selection
+    ‣ @Result2 is `Success`: Kill @Self
+    ‣ Otherwise: `Failure`
+
+On @[Wolfpack] Death: Role Change @Self to Wolf
