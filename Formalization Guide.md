@@ -270,7 +270,7 @@ Format: `<Subtype> <Target>`
 Format: 
 - `<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category
 - `Attribute Investigate <Target> for '<Attribute>'` (Look if a certain attribute is present) - Returns Success/Failure
-- `Investigate '<Target>' Role Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)
+- `Investigate <Target> Role Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)
 
 - Subtypes: `Role`, `Alignment` or `Category`
 - Target: A target type, specifying who is getting attacked
