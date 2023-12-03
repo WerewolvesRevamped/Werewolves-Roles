@@ -1,11 +1,11 @@
 **Role** | Werewolves Revamped
 __Basics__
-In Werewolves Revamped, each player is assigned a role. A player's role determines their abilities, alignment, and win condition.
+In Werewolves Revamped, each player is assigned a Role. A player's Role determines their abilities, alignment, and win condition.
 __Details__
 Roles come in five groups: townsfolk, werewolves, solo, unaligned, and extra.
-Townsfolk, werewolves, and solo roles each have an alignment, which defines their win condition.
-Unaligned roles start as nonaligned and have either a specific win condition or the potential to gain an alignment.
-Extra roles are added on top of a player's primary role and do not affect their alignment or win condition. Where a player's 'role' is referenced, the role in question is the primary role: only when a player's 'roles' are referenced does this include any extra roles they have.
-Roles also specify the abilities the player starts out with. These may be passive, active or reactive powers. Role abilities are split into various ability types (see `$i ability types`). Active powers are used through actions, other powers are used automatically.
-Roles also have role attributes, which are attached to the role (e.g. a role's category or whether a role is wolfish).
-Each role (including extra roles) comes with a role channel.
+Townsfolk, werewolves, and solo Roles each have an alignment, which defines their win condition.
+Unaligned Roles start as nonaligned and have either a specific win condition or the potential to gain an alignment.
+Extra Roles are added on top of a player's primary Role and do not affect their alignment or win condition. Where a player's 'Role' is referenced, the Role in question is the primary Role: only when a player's 'Roles' are referenced does this include any extra Roles they have.
+Roles also specify the abilities the player starts out with. Role abilities are split into various ability types (see `$i ability types`).
+Roles also have Role attributes, which are attached to the Role (e.g. a Role's category or whether a Role is wolfish).
+Each Role (including extra Roles) comes with a Role channel.
