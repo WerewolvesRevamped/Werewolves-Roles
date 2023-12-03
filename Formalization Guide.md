@@ -111,6 +111,7 @@ Trigger types can be one of the following:
 - `Passive` for constantly active abilities
 - `Passive [End Day|End Night|Start Day|Start Night]` for abilities that passively/automatically trigger at the start or end of a phase
 - `On Death` for an ability that triggers on death
+- `On <Target> Death` for an ability that triggers on the death of a certain target type (when several players are contained in the target, it triggers when *any* player from that target type dies)
 - `On Killed` for an ability that triggers when a player dies through a (true) kill
 - `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor)
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
@@ -245,6 +246,7 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
 - `@(<Attribute>)`: Uses all players that have the `<Attribute>` (e.g. `@(Wolfish)`)
+- `@[<Group>]`: Uses all players that are part of the `<Group>`
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
 
