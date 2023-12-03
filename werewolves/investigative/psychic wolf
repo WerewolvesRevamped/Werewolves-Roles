@@ -6,3 +6,9 @@ The Psychic Wolf is affected by weak disguises, redirections, and obstructions. 
 
 __Simplified__
 Each night, the Psychic Wolf may guess one player's role, and if their guess is correct, it is confirmed. This is affected by weak disguises, redirections, and obstructions.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Immediate Night:
+  • Process: Role Investigate @Selection (SD, WD)
+  • Evaluate: @Result is @SecondarySelection: `Success`
