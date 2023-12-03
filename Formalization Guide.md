@@ -382,7 +382,7 @@ As a result of a Joining the <Target> receives a `Group Membership` attribute.
 
 Format:  
 `Grant '<ExtraRole>' to <Target>` (Grant an extra role)  
-`Revoke '<ExtraRole>' to <Target>` (Remove an extra role)  
+`Revoke '<ExtraRole>' from <Target>` (Remove an extra role)  
 
 - ExtraRole: A defined extra role
 - Target: A target type, specifying who gains the extra role
