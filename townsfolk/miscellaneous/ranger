@@ -15,4 +15,4 @@ Immediate: Target @Selection (Player)
 Immediate: Target @Selection (Player) [Quantity: 1]
 On Killed: 
   • Process: Role Investigate @Target (SD)
-  • Evaluation: Reveal `Ranger @Self reveals @Target as @Result` to #Story_Time
+  • Evaluation: Reveal `Ranger @Self reveals @Target as @Result` to #story_time
