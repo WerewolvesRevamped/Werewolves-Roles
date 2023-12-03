@@ -35,7 +35,8 @@
     - [Announcements](#announcements)
     - [Role Change](#role-change)
     - [Copying](#copying)
-    - [Choices](#choices)  
+    - [Choices](#choices)
+    - [Ascend / Descend](#ascend-descend)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -491,4 +492,10 @@ Choice Choosing Format:
 - Name: The choice to choose one
 - Option Name: The name of the chosen option
 
+---
+#### Ascend Descend
+
+Format:
+- `Ascend`
+- `Descend`
 
