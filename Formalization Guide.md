@@ -379,9 +379,12 @@ As a result of a Whispering, a whispering connection is opened.
 ---
 #### Joining
 
-Format: `Join '<GroupName>'`
+Format:  
+`Join '<GroupName>'`  
+`Join '<GroupName>' as '<MembershipType>'`
 
 - GroupName: The name of a defined group
+- MembershipType: Either `Member`, `Owner` or `Visitor`. Defaults to `Member`when not specified.
 
 As a result of a Joining the <Target> receives a `Group Membership` attribute.
 
