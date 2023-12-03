@@ -1,15 +1,14 @@
 **Disguises** | Ability Type
 __Basics__
-Disguises affect what role an investigative role sees a player as when inspecting them.
+Disguises can affect what information an investigation retrieves by applying a disguise attribute. Disguises change the role a player appears as.
 __Details__
 A disguising ability applies a disguise attribute to a player.
-Disguises may be either weak or strong. Disguises are applied in chronological order: an investigative role will see the most recently applied disguise of the strength they are affected by. As a general rule, only investigative roles which inspect a player's role (or an attribute of the role) are affected by disguises (e.g Warlock, Aura Teller). Investigative roles which inspect other attributes, such as alignment (e.g Oracle, Huntsman) generally see past any disguises.
-
+Disguises may be either weak or strong. Disguises are applied in chronological order: an investigative role will see the most recently applied disguise of the strength they are affected by. Only investigative roles which inspect a player's role or a role-relevant attribute are affected by disguises (e.g warlock, aura teller).
 Some disguises are permanent (stay until manually removed or role change) and others are non-permanent (disappear automatically after a certain phase).
 
-Take a Sneaking Wolf who has during the last day phase been disguised as a Demon by a Pack Tanner. During the night phase, the player will have two disguises, a strong Citizen disguise and a weak Demon disguise. A Fortune Teller would see the Sneaking Wolf as a Demon, as that is the most recent disguise; an Aura Teller would see the Sneaking Wolf as not a threat, as they are only affected by strong disguises; a Huntsman would see the Sneaking Wolf as part of the pack, as they are not affected by disguises at all (they check pack status, not role).
+A sneaking wolf who has during the previous phase been disguised as a demon by a pack tanner will have two disguises: a strong citizen disguise and a weak demon disguise. A fortune teller would see the sneaking wolf as a demon; an aura teller would see them as a non-threat; a huntsman would see them as part of the pack.
 
-For a complete list of disguises check `$i disguises list`.
+For a complete list of disguises, check `$i disguises list`.
 
 __Simplified__
-Disguising is a type of ability that applies a disguise attribute to aid in hiding from Investigative abilities. There are strong and weak disguises. Some roles have a disguise they can not alter (e.g. White Werewolf, Devil), others can even disguise other people (e.g. Tanner).
+Disguises can affect what information an investigation retrieves by applying a disguise attribute. Disguises change the role a player appears as. There are strong and weak disguises.
