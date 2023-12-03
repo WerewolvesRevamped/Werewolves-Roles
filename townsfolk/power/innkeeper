@@ -7,3 +7,6 @@ Checking status on roles works on any role whether in the game or not. The Innke
 
 __Simplified__
 Each night, the Innkeeper may check any role to determine the number of living players with that role. This is affected by strong disguises.
+
+__Formalized__
+Immediate Night: Investigate @Selection Role Count (SD)
