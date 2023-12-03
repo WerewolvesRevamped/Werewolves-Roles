@@ -11,3 +11,8 @@ The Lone Warlock is not a lycan, and is not a member of the wolfpack.
 __Simplified__
 Each night, the Lone Warlock may check one player’s role. This is affected by weak disguises, redirections, and obstructions. 
 The Lone Warlock and wolfpack do not know each other, however once a member of the wolfpack dies, the Lone Warlock will lose their power and join the pack as a regular wolf.
+
+__Formalized__
+Inherit: `Wolfish`
+Immediate Night: Role Investigate @Selection (SD, WD)
+On @[Wolfpack] Death: Role Change @Self to Wolf
