@@ -6,3 +6,8 @@ If it is attacked by anyone at night, it will escape unharmed the first time. Th
 
 __Simplified__
 The Scared Wolf will be protected from the first night attack to target them.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Starting: Protect @Self from `Attacks` through `Passive Defense`
+On Passive Defense: Learn `Defense Used`
