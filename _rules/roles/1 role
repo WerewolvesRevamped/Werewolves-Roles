@@ -1,11 +1,11 @@
 **Role** | Werewolves Revamped
 __Basics__
-In Werewolves Revamped, each player is assigned a role. A player's role determines their abilities, alignment and win conditions.
+In Werewolves Revamped, each player is assigned a role. A player's role determines their abilities, alignment, and win condition.
 __Details__
-Roles come in five groups: Townsfolk, Werewolves, Solo, Unaligned and Extra.
-Townsfolks, Werewolves and Solo roles each have an alignment, which defines their win condition.
-Unaligned roles are non-aligned (or at least start out as such) and come either with a specific win condition or a way to join/gain an alignment.
-Extra roles are added on top of a player's primary role and do not affect their alignment or win condition. Any cases where a player's role are referenced in the singular form it can be assumed only the primary role (and not Extra roles) are being referenced.
-Roles also specify the abilities the player starts out with. These may be passive, active or reactive powers. Role's abilities are split into various ability types (see `$i ability types`). Active powers are used through actions, other powers are used automatically.
-Role also can have role attributes, which are attached to the role (e.g. a role's category or whether a role is wolfish).
+Roles come in five groups: townsfolk, werewolves, solo, unaligned, and extra.
+Townsfolk, werewolves, and solo roles each have an alignment, which defines their win condition.
+Unaligned roles start as nonaligned and have either a specific win condition or the potential to gain an alignment.
+Extra roles are added on top of a player's primary role and do not affect their alignment or win condition. Where a player's 'role' is referenced, the role in question is the primary role: only when a player's 'roles' are referenced does this include any extra roles they have.
+Roles also specify the abilities the player starts out with. These may be passive, active or reactive powers. Role abilities are split into various ability types (see `$i ability types`). Active powers are used through actions, other powers are used automatically.
+Roles also have role attributes, which are attached to the role (e.g. a role's category or whether a role is wolfish).
 Each role (including extra roles) comes with a role channel.
