@@ -504,3 +504,5 @@ Format:
 - `Ascend`
 - `Descend`
 
+Both ascend/descend automatically also true kill. 
+
