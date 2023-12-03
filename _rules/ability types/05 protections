@@ -1,19 +1,19 @@
 **Protections** | Ability Type
 __Basics__
-Protections are a type of ability which is intended to stop killings from succeeding. A protected player will not be harmed by attacks - instead they will be defended.
+Protections are a type of ability which can block killings from succeeding.
 __Details__
-Protections grant a defense attribute which protect from certain types of killings. There are four types of defense attributes:
-• Absences (such as hooker)
-• Effect Based Defenses (such as the witch's potion of life or the chef's charmed food)
-• Role Based Defenses (such as runner or scared wolf)
-• Partial Defenses (such as macho or idiot)
+Protections grant a defense attribute which can protect against certain types of killings. There are four types of defense attributes:
+• Absences: The player is not present for the attack (such as hooker)
+• Active Defenses: An effect blocks the killing (such as the witch's potion of life)
+• Passive Defenses: A defense built in to the player's role blocks the killing (such as runner)
+• Partial Defenses: A defense built in to the player's role prevents them from dying at the point of attack, but has other consequences (such as macho or idiot)
 
 Defense attributes can have limitations applied that limit from what they protect:
-• Killing Type Limitation: Limits from which types of killing the defense protects (e.g. only from attacks)
-• Phase Limitation: Limits in which phase the defense protects (e.g. only during night)
-• Killing Source Limitation: Limits killings from which sources are protected against (e.g. only killings from a wolfish player)
+• Type Limitation: Limits which types of killing the defense protects against (e.g. only from attacks)
+• Phase Limitation: Limits in which phases the defense protects (e.g. only during night)
+• Source Limitation: Limits which sources of killings the defense protects against (e.g. only killings from a wolfish player)
 
-For killing, lynching and attack all four defense attribute types apply, though most defensive attributes limit themselves to only apply to attacks.
+Protections may block standard killings, attacks, and lynches.
 
 __Simplified__
 Protections are a type of ability which applies a defense attribute to protect from killings.
