@@ -7,5 +7,11 @@ Usually roles are part of a group from the start of the game (e.g. Baker, Wolf),
 Roles that join a group as part of a team wide ability are *not* considered to be *Group* roles.
 In some games, player can betray their group by changing their role (e.g. by turning undead or being infected by the Infecting Wolf), however they will still remain a member of the group.
 
+There are three types of group membership:
+• Member: The default group membership. If no members or owners are left, the group is immediately disbanded.
+• Owner: Same as Member, but if the last owner of a group dies, the group is immediately disbanded. Groups do not need to have an owner.
+• Visitor: Same as Member, but does not count towards the disbandement condition. If only visitors are left, the group is immediately disbanded.
+
+
 __Simplified__
 Joining is an ability type that grants a player a group membership. Roles with a joining ability are *Group* roles.
