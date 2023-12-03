@@ -147,7 +147,7 @@ May be one of the following:
   - `x<Value>`, specify a number (`Value`) that determines how many times the action can be used
 - Dynamic Scaling: Amount of action usages depend on total player count
   - `[Total|Living] Players/<Value>` the action can be used exactly as many times as the player count divided by the specified `Value`, rounded down
-  - `[Total|Living] Players: <Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses
+  - `[Total|Living] Players: <Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses. The default is always 1, so in situations with two cases, where the count for one case is 1, it suffices to specify the other case.
 
 ----
 #### Action Compulsion
