@@ -1,12 +1,11 @@
 **Vote Manipulations** | Ability Type
 __Basics__
-Vote Manipulation is an ability types that affects voting in some way.
+Vote Manipulation is an ability type that affects voting in some way.
 __Details__
 Vote Manipulation applies a manipulated attribute.
-There are three types of vote manipulation:
+There are three types of Vote Manipulation:
 • Public Voting Power Manipulation: Affects the voting power of someone on public polls (e.g. Grandma (active), Trickster (passive)).
-• Private Voting Power Manipulation: Affects the voting power on private polls (e.g. Alpha Wolf (passive))
-• Public (Lynch/Election) Starting Vote Manipulation: Affects how many votes a certain player has on public votes on top of the normal amount of votes they receive. These votes are not revealed in the final poll result, they will only be counted for who is announced as the poll winner (thus a player who seemingly didnt win a poll may win it). This can be applied separately for lynch and election or together for both.
-
+• Private Voting Power Manipulation: Affects the voting power of someone on private polls (e.g. Alpha Wolf (passive))
+• Public Starting Vote Manipulation: Affects how many votes a certain player receives on public votes. Extra votes are not revealed in the final poll result: they will only be counted for who is announced as the poll winner.
 __Simplified__
-Vote Manipulation is an ability types that affects voting in some way.
+Vote Manipulation is an ability type that affects voting in some way.
