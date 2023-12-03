@@ -1,15 +1,15 @@
 **Redirections** | Ability Type
 __Basics__
-Redirection is an ability type that causes abilties to be used on another player. All roles and ability types (except whispering) are affected by redirections unless explicitly stated otherwise.
+Redirection is an ability type that causes abilties to be used on another player. All roles and ability types (except whispering) are affected by Redirections unless explicitly stated otherwise.
 __Details__
 If an attack is redirected onto another player, the attacker receives a generic failure message.
 If an ability that would usually cause a reveal is redirected, the feedback is also failure. The ability still occurs, affecting the player it was redirected onto, but the original executor is not revealed.
 If any other ability (such as an investigation or targeting) is redirected, the ability occurs as if it were directly used on the player who it is redirected onto. It is not stated that the ability was used on a different player than selected.
-When an action is redirected, it is still attributed to the player that originally executed it - not the player that redirected it. (This means a visit from the original executor to the redirector occurs, then a visit from the executor to the final target, but *no* visit between the redirector and the final target during the redirection process.)
+When an action is redirected, it is still attributed to the player that originally executed it - not the player that redirected it. (This means a visit from the original executor to the redirector occurs, then a visit from the executor to the final target, but *no* visit between the redirector and the final target during the Redirection process.)
 Actions may be redirected several times in a row.
 Actions cannot be redirected onto a dead player.
 
-For a complete list of redirections, check `$i redirections list`.
+For a complete list of Redirections, check `$i redirections list`.
  
 __Simplified__
-Redirections are a rare type of ability that changes the selected player of another player's ability to a different one. This generally means that using an ability on a redirector will result in the ability happening to the redirector's target instead.
+Redirections are a type of ability that changes the selected player of another player's ability to a different one. This generally means that using an ability on a redirector will result in the ability happening to the redirector's target instead.
