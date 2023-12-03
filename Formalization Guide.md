@@ -268,10 +268,10 @@ Format: `<Subtype> <Target>`
 ---
 #### Investigating
 
-Format: 
-`<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category
-`Attribute Investigate <Target> for '<Attribute>'` (Look if a certain attribute is present) - Returns Success/Failure
-`Investigate <Target> Role Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)
+Format:  
+`<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category  
+`Attribute Investigate <Target> for '<Attribute>'` (Look if a certain attribute is present) - Returns Success/Failure  
+`Investigate <Target> Role Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)  
 
 - Subtypes: `Role`, `Alignment` or `Category`
 - Target: A target type, specifying who is getting attacked
@@ -301,11 +301,11 @@ As a result of a Disguising the <Target> receives a `Disguise` attribute.
 ---
 #### Protecting
 
-Format:
-`Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> during <Phase> (<Duration>)`
-`Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> (<Duration>)`
-`Protect <Target> from '<KillingSubtype>' through <Subtype> during <Phase> (<Duration>)`
-`Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)` 
+Format:  
+`Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> during <Phase> (<Duration>)`  
+`Protect <Target> from '<KillingSubtype>' by <Selector> through <Subtype> (<Duration>)`  
+`Protect <Target> from '<KillingSubtype>' through <Subtype> during <Phase> (<Duration>)`  
+`Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`   
 
 - Target: A target type, specifying who is protected.
 - KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches` or `All`
@@ -320,10 +320,10 @@ As a result of a Protecting the <Target> receives a `Defense` attribute.
 ---
 #### Applying
 
-Format:
-`Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)
-`Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)
-`Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)
+Format:  
+`Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)  
+`Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)  
+`Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)  
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
 - Target: A target type 
@@ -335,9 +335,9 @@ As a result of an Applying the <Target> receives a custom attribute.
 ---
 #### Redirecting
 
-Format:
-`Redirect '<Subtype>' to <Target>` (Redirect all player's abilities)
-`Redirect '<Subtype>' from <Source> to <Target>` (Redirect only specific player's abilities)
+Format:  
+`Redirect '<Subtype>' to <Target>` (Redirect all player's abilities)  
+`Redirect '<Subtype>' from <Source> to <Target>` (Redirect only specific player's abilities)  
 
 - Subtype: An ability type name, or `all` or `non-killing abilities`
 - Target: A target type, specifying who to redirect to
@@ -380,9 +380,9 @@ As a result of a Joining the <Target> receives a `Group Membership` attribute.
 ---
 #### Granting
 
-Format:
-`Grant '<ExtraRole>' to <Target>` (Grant an extra role)
-`Revoke '<ExtraRole>' to <Target>` (Remove an extra role)
+Format:  
+`Grant '<ExtraRole>' to <Target>` (Grant an extra role)  
+`Revoke '<ExtraRole>' to <Target>` (Remove an extra role)  
 
 - ExtraRole: A defined extra role
 - Target: A target type, specifying who gains the extra role
@@ -404,11 +404,11 @@ May be used in combination with a `Passive` trigger.
 ---
 #### Obstructing
 
-Format:
-`Obstruct <Target> (<Duration>)` (Block all ability types)
-`Obstruct <Ability Type> for <Target> (<Duration>)` (Block only a certain ability type)
-`Obstruct <Ability Subtype> for <Target> (<Duration>)` (Block only a certain ability subtype)
-`Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback> (<Duration>)` (Block a certain ability type and return fake feedback)
+Format:  
+`Obstruct <Target> (<Duration>)` (Block all ability types)  
+`Obstruct <Ability Type> for <Target> (<Duration>)` (Block only a certain ability type)  
+`Obstruct <Ability Subtype> for <Target> (<Duration>)` (Block only a certain ability subtype)  
+`Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback> (<Duration>)` (Block a certain ability type and return fake feedback)  
 
 - Target: A target type, specifying which player should be obstructed
 - Ability Type: An ability type, specifying which ability types should be obstructed
@@ -421,12 +421,12 @@ As a result of an Obstruction the <Target> receives an `Obstructed` attribute.
 ---
 #### Poll Manipulating
 
-Format:
-`Add <PollType> Poll` (Duplicate an existing poll)
-`Create <PollType> Poll` (Creates a poll and the role will execute the resulting ability)
-`Cancel <PollType> Poll` (Cancel the poll's resulting ability)
-`Delete <PollType> Poll` (Remove a poll that would otherwise exist)
-`Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)
+Format:  
+`Add <PollType> Poll` (Duplicate an existing poll)  
+`Create <PollType> Poll` (Creates a poll and the role will execute the resulting ability)  
+`Cancel <PollType> Poll` (Cancel the poll's resulting ability)  
+`Delete <PollType> Poll` (Remove a poll that would otherwise exist)  
+`Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
 
 - Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
 - Target: A target type, specifying which player should be manipulated on the poll
@@ -437,10 +437,10 @@ Format:
 ---
 #### Announcements
 
-Format:
-`Reveal [<Target>|<Information>] to <Location>` (Self Reveal, Public Information)
-`Learn '<Information>'` (Private Information)
-`Know '<Information>'` (Private Knowledge)
+Format:  
+`Reveal [<Target>|<Information>] to <Location>` (Self Reveal, Public Information)  
+`Learn '<Information>'` (Private Information)  
+`Know '<Information>'` (Private Knowledge)  
 
 - Target: A target type, specifying what to reveal. This may be a player or a piece of information.
 - Location: A channel to reveal information too
@@ -457,10 +457,10 @@ Format: `Role Change <Target> to <Role>`
 ---
 #### Copying
 
-Format:
-`Copy <Target>` (Copies all abilities of target role or player to yourself)
-`Duplicate <Target>'s abilities` (Copies all abilities of target role or player to themself)
-`Copy <Target> to <Target2>` (Copies all abilities of a target role or player to another player)
+Format:  
+`Copy <Target>` (Copies all abilities of target role or player to yourself)  
+`Duplicate <Target>'s abilities` (Copies all abilities of target role or player to themself)  
+`Copy <Target> to <Target2>` (Copies all abilities of a target role or player to another player)  
 
 - Target: A target type, specifying a role or player to copy from
 - Target2: Another target type, specifying who should get the copied ability
