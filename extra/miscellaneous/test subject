@@ -8,3 +8,6 @@ The two Test Subjects never start out as the same team.
 
 __Simplified__
 Two Test Subjects and the mad scientist share the laboratory secret channel. The mad scientist must target one of the two test subjects. When the mad scientist is killed, their targeted subject dies. 
+
+__Formalized__
+Starting: Join `Laboratory`
