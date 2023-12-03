@@ -3,18 +3,18 @@ __Basics__
 Killing is a type of ability which attempts to cause another player's death. Roles with the ability to kill other players are *Killing* roles. Killing can be avoided by being *protected*.
 __Details__
 There are four types of Killing:
-• Standard Kills/Dying: This is usually just refered to as "killing", or in some cases where the kill is accidental or passive as "dying". This type of killing can be avoided by a few, but not many protections. When a standard killing is not blocked, the player dies.
-• Attacks: This is the most common type of killing. However, attacking can be blocked by many protections. Attacks are blocked by all protections that block standard kills or attacks.
-• Lynches: There are two types of lynches: a direct lynch occurs only as a consequence of a lynch poll, indirect lynches are executed by a role. Lynches differ from standard kills in that they are affected by different protections.
-• True Kills: This type of killing can not be stopped by any protections.
+• Standard Kills: This is usually referred to simply as "killing". In cases where the kill is accidental or passive, it may be referred to as "dying". This type of Killing can be avoided by some types of protection.
+• Attacks: This is the most common type of Killing. Attacks can be blocked by all protections that block standard kills or attacks.
+• Lynches: There are two types of lynches. A direct lynch occurs when the player in question is voted on a lynch poll. Indirect lynches are executed by a role. Lynches differ from standard kills in that they are affected by different types of protection.
+• True Kills: This type of Killing can not be blocked by any types of protection.
 
-Many roles or groups can kill/attack. The player executing the killing is known as the “Killer”/“Attacker”.
-Unless explicitly stated otherwise, an attack is considered successful if *any* player (even if that person wasn't the intended target) ends up dead as a result of the attack and unsuccessful otherwise. The role or group responsible for the attack is informed of success or failure, but by default receives no information beyond that.
-If the target of an attack was already killed by another attack occuring at the same time, then the attack is still considered a success.
+Many roles or groups can kill. The player executing the Killing is known as the “Killer”/“Attacker”.
+Unless explicitly stated otherwise, an attack is considered successful if *any* player (even if they weren't the intended target) ends up dead as a result of the attack. The role or group responsible for the attack is informed of success or failure, but by default receives no information beyond that.
+If the target of an attack is killed by another attack occuring at the same time, both attacks are considered successes.
 __Groups__
-When a group (such as Werewolves) attacks a player, a random member of the group (who voted for the target with at least 1 vote) is chosen as the attacker. The group is informed who is chosen. Unless explicitly listed otherwise, this attacker is always considered as the sole cause of the attack, and never the group.
+When a group (such as Werewolves) attacks a player, a random member of the group (who voted for the target with at least 1 vote) is chosen as the attacker. The group is informed who is chosen. Unless explicitly listed otherwise, this attacker is considered the cause of the attack.
 __Edge Cases__
-For edge cases with conflicting attack order check `$i killing order`.
+For edge cases with conflicting attack order, check `$i killing order`.
 
 __Simplified__
 Killing is a type of ability which attempts to cause another player's death. Roles with the ability to kill other players are *Killing* roles. Killing can be avoided by being *protected*.
