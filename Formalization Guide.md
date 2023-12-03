@@ -121,6 +121,8 @@ Trigger types can be one of the following:
 ----
 #### Action Restrictions
 
+Marked by square brackets: []
+
 Action Restrictions can be one or more of the following in a comma separated list:
 - Temporal Restriction:
   - `Temporal: <Phase>`, may only be used in `<Phase>`, e.g. `Temporal: Day 0`
@@ -138,6 +140,8 @@ Action Restrictions can be one or more of the following in a comma separated lis
 ----
 #### Action Scaling
 
+Marked by angle brackets: ⟨⟩
+
 May be one of the following:
 - Static Scaling: The action can always be used several times
   - `x<Value>`, specify a number (`Value`) that determines how many times the action can be used
@@ -147,6 +151,8 @@ May be one of the following:
 
 ----
 #### Action Compulsion
+
+Marked by curly brackets: {}
 
 Action Compulsion can be `Forced` for forced actions or blank otherwise
 
