@@ -8,3 +8,6 @@ The Huntsman’s inspection is an immediate ability. Since the Huntsman does not
 __Simplified__
 Each night, the Huntsman may check a target to determine if they are part of the wolfpack or not.
 They are not affected by any disguises or obstructions, but are affected by redirections.
+
+__Formalized__
+Immediate Night: Attribute Investigate @Selection for `GroupMembership:Wolfpack`
