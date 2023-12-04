@@ -192,6 +192,7 @@ Trigger types can be one of the following:
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
 - `On Disbandment` for an ability that triggers when a group disbands
 - `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch)
+- `On [Mayor|Reporter|Guardian] Election` for an ability that triggers when a player is elected as any role (`On Election`) or as a specific role
 - `On [Passive|Partial] Defense` for an ability that triggers when a passive or partial defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used.)
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
