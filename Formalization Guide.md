@@ -86,6 +86,8 @@ When a group creates a poll, a random voting member is selected to execute the r
 
 ## Attributes
 
+---
+---
 ### Standard Attributes
 
 Like all attributes standard attributes have source role and source player value. Additionally, each type of standard attribute has additional values.
@@ -97,12 +99,14 @@ Examples:
 
 There are a few types of standard attributes:
 
+---
 #### Disguise Attributes
 
 Disguise attributes have two additional values:
 - Disguise Role: The role of the disguise
 - Disguise Strength: Whether the disguise is weak or strong
 
+---
 #### Defense Attributes
 
 Defense attributes have four additional values:
@@ -111,12 +115,14 @@ Defense attributes have four additional values:
 - Affected Players: A group of players for which the defense works (defaults to all players)
 - Affected Phase: Specifies if the defense is only active during day or night (defaults to both)
 
+---
 #### Manipulation Attributes
 
 Manipulation attributes have two additional values:
 - Manipulation Subtype: Which type of vote manipulation is applied
 - Manipulation Value: The value of the vote manipulation
 
+---
 #### Group Membership Attributes
 
 Group Membership attributes have two additional values:
@@ -125,6 +131,7 @@ Group Membership attributes have two additional values:
 
 A group membership attribute can additionally be refered to by `GroupMembership:<GroupName>`, e.g. `GroupMembership:Baker`.
 
+---
 #### Obstruction Attributes
 
 Obstruction attributes have two additional values:
