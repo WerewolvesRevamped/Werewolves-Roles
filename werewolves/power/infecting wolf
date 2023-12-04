@@ -6,10 +6,9 @@ If the Infecting Wolf fails to choose a player during Night 1, a random player w
 Infecting a player is an immediate ability. 
 __Edge Cases__
 If a member of the wolfpack or the werewolf team is picked, the power fails and wastes the ability.
-If a hell team member is picked the power backfires and the Infecting Wolf becomes an imp.
+If a hell team member is picked, the power fails and wastes the ability.
 If a baker or butcher is picked they become a bloody butcher.
 If a cupid is picked they become a cupid wolf.
-If a trickster is picked they become a trickster wolf.
 
 __Simplified__
 During Night 1, the Infecting Wolf must choose one player to convert to a wolf. This power may backfire or fail if used on certain roles.
