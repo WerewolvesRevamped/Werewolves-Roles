@@ -201,8 +201,16 @@ Compact Format:
   • Process: <Ability Type>
   • Evaluate: [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
 ```
+No Process Format:
+```
+<Trigger Type>:
+  • Action: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • Evaluate: [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
+```
 
 If no action restriction/compulsion/scaling applies, the `Action` line should be left out.
+
+In rare cases Process can be left out. Then evaluate can only be used to evaluate preexisting info.
 
 As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player. In case of a single process step only, the result can be accessed through `@Result`.
 
