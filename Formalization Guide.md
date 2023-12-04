@@ -262,7 +262,7 @@ Role attributes are defined the same way as other attributes, but operate differ
 
 Within abilities a selection by the player often affects the execution of the abilities. We use target types to refer to the player, their selection or similar. The following target types exist:
 
-- `@Self`: Uses the player who this ability belongs to
+- `@Self`: Uses the player who this ability belongs to, or when using it inside a group, the current group
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
