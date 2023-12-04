@@ -470,7 +470,7 @@ Format:
 ---
 #### Role Change
 
-Format: `Role Change <Target> to <Role>`
+Format: `Role Change <Target> to '<Role>'`
 
 - Target: A target type, specifying which player's role to change
 - Role: A target type or constant role, specifying the player's new role
