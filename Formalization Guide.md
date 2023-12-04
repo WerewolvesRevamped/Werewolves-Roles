@@ -88,17 +88,48 @@ When a group creates a poll, a random voting member is selected to execute the r
 
 ### Standard Attributes
 
+Like all attributes standard attributes have source role and source player value. Additionally, each type of standard attribute has additional values.
+
+All attributes can be refered to by `<AttributeType>:<SourceRole>` or `<AttributeType>:<SourcePlayer>`.
+Examples:
+- `Disguise:Tanner`, a disguise applied by a tanner
+- `Defense:@Target`, a defense applied by the player's current target
+
 There are a few types of standard attributes:
 
 #### Disguise Attributes
 
+Disguise attributes have two additional values:
+- Disguise Role: The role of the disguise
+- Disguise Strength: Whether the disguise is weak or strong
+
 #### Defense Attributes
+
+Defense attributes have four additional values:
+- Defense Subtype: Which type of defense is used (passive/partial/active/absence)
+- Killing Subtype: Which type of killing is defended against
+- Affected Players: A group of players for which the defense works (defaults to all players)
+- Affected Phase: Specifies if the defense is only active during day or night (defaults to both)
 
 #### Manipulation Attributes
 
+Manipulation attributes have two additional values:
+- Manipulation Subtype: Which type of vote manipulation is applied
+- Manipulation Value: The value of the vote manipulation
+
 #### Group Membership Attributes
 
+Group Membership attributes have two additional values:
+- Group Name: The name of the relevant group
+- Membership Type: The type of group membership (defaults to Member)
+
+A group membership attribute can additionally be refered to by `GroupMembership:<GroupName>`, e.g. `GroupMembership:Baker`.
+
 #### Obstruction Attributes
+
+Obstruction attributes have two additional values:
+- Affected Abilities: A list of ability types or subtypes that are affected by the obstruction
+- Obstruction Feedback: The fake feedback which is returned (if applicable) (defaults to none)
 
 ----
 ----
