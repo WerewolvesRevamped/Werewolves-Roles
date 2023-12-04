@@ -21,5 +21,4 @@ End Night:
     ‣ @Result1 is `Townsfolk`: Attack @Selection
     ‣ @Result2 is `Success`: Kill @Self
     ‣ Otherwise: `Failure`
-
 On @[Wolfpack] Death: Role Change @Self to Wolf
