@@ -7,3 +7,8 @@ The Despot is nonaligned.
 
 __Simplified__
 If the Despot is elected, they win and stop playing, but the game still continues. The next day, the election will be cancelled.
+
+__Formalized__
+On Election: 
+  • Ascend
+  • Delete `Election` Poll
