@@ -15,4 +15,4 @@ __Formalized__
 End Night: Attack @Selection [Quantity: 1]
 Compound:
   • Immediate Night: Protect @Selection from `Attacks` (~Phase) [Quantity: 1] ⟨x3⟩ 
-  • On Action [Protection]: Protect @Self  from `Attacks` (~Phase)
+  • Afterwards: Protect @Self  from `Attacks` (~Phase)
