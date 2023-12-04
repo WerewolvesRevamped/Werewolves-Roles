@@ -13,6 +13,6 @@ Using a power on the Wraith will result in a counter-attack.
 __Formalized__
 Starting: Join `Nightmare`
 Immediate Night: Apply `Sleepless` to @Selection
-On Visit from `Sleepless` @Visitor:
+On Visit from @(Sleepless) @Visitor:
   • Ability Block @Visitor (~Phase)
   • Attack @Visitor
