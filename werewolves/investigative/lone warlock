@@ -15,4 +15,4 @@ The Lone Warlock and wolfpack do not know each other, however once a member of t
 __Formalized__
 Inherit: `Wolfish`
 Immediate Night: Role Investigate @Selection (SD, WD)
-On @[Wolfpack] Death: Role Change @Self to Wolf
+On @[Wolfpack] Death: Role Change @Self to `Wolf`
