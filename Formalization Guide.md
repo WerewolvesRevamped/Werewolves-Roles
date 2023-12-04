@@ -5,7 +5,15 @@
 - [Basics](#basics)
 - [Role](#role)
 - [Teams](#teams) 
-- [Groups](#groups) 
+- [Groups](#groups)
+- [Attributes](#attributes)
+  - [Standard Attributes](#standard-attributes)
+    - [Disguise Attributes](#disguise-attributes)
+    - [Defense Attributes](#defense-attributes)
+    - [Manipulation Attributes](#manipulation-attributes)
+    - [Group Membership Attributes](#group-membership-attributes)
+    - [Obstruction Attributes](#obstruction-attributes)
+  - [Custom Attributes](#custom-attributes) 
 - [Abilities](#abilities)
   - [Ability](#ability)
     - [Trigger Types](#trigger-types)
@@ -75,6 +83,34 @@ Teams use the same general format as roles. Some trigger types are not compatibl
 
 Groups use the same general format as roles. Some trigger types are not compatible with groups.
 When a group creates a poll, a random voting member is selected to execute the resulting ability. 
+
+## Attributes
+
+### Standard Attributes
+
+There are a few types of standard attributes:
+
+#### Disguise Attributes
+
+#### Defense Attributes
+
+#### Manipulation Attributes
+
+#### Group Membership Attributes
+
+#### Obstruction Attributes
+
+----
+----
+### Custom Attributes
+```
+**<AttributeName>** | Attribute
+[<Role Ability List> | No Abilities]
+```
+
+Attributes use the same general format as roles. Some trigger types are not compatible with attributes.
+
+To reference a custom attribute simply using `'<AttributeName>'` suffices.
 
 ## Abilities
 
