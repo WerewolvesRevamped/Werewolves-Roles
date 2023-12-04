@@ -346,8 +346,10 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@Target`: Uses the current target set by the player
 - `@(<Attribute>)`: Uses all players that have the `<Attribute>` (e.g. `@(Wolfish)`)
 - `@[<Group>]`: Uses all players that are part of the `<Group>`
+- `@{<Alignment>}`: Uses all players that are pf the `<Alignment>`
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
+- `@All`: Uses all players
 
 ----
 ----
