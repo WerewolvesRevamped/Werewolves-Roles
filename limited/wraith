@@ -9,3 +9,10 @@ If the (original) reaper dies, the Wraith may turn one player sleepless each nig
 __Simplified__
 The Wraith wins with the reaper and joins a channel with the reaper to communicate securely.
 Using a power on the Wraith will result in a counter-attack.
+
+__Formalized__
+Starting: Join `Nightmare`
+Immediate Night: Apply `Sleepless` to @Selection
+On Visit from `Sleepless` @Visitor:
+  • Ability Block @Visitor (~Phase)
+  • Attack @Visitor
