@@ -4,4 +4,4 @@ Loyalty is a passive ability type that affects whether roles can betray their al
 __Details__
 There are two types of loyalty:
 • Alignment Loyalty: Some roles are loyal to their alignment - they cannot be affected by attempts to recruit them onto another team
-• Group Loyalty: Some roles are only loyal to their group - they can still betray the group, but there will be consequences for the group and how it operates (e.g. disbandment) 
+• Group Loyalty: Some roles are only loyal to their group - they can still change role to a role that wouldn't be part of the group, but it will cause a *betrayal*, which causes consequences for the group and how it operates (e.g. disbandment) 
