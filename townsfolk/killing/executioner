@@ -9,3 +9,10 @@ This ability will only work once. Future lynches will behave as normal.
 
 __Simplified__
 After Day 1, whenever the Executioner is chosen to be lynched, it will be prevented, and a player chosen by the Executioner will be lynched in their place.
+
+__Formalized__
+Immediate: Target @Selection (Player) 
+Immediate: Target @Selection (Player) [Quantity: 1]
+On Lynch:
+  ‣ @Target is `Alive`: Redirect 'Lynch' from @Self to @Target
+  ‣ Otherwise: Failure
