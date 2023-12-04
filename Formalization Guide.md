@@ -246,6 +246,16 @@ To inherit all abilities from an ability set use the trigger type `Inherits: '<A
 
 An ability set has the same format as a role, except for the first line which is `**<AbilitySetName>** | Ability Set`
 
+---
+---
+### Role Attributes
+
+A role can get role attributes.
+
+To receive a single role attribute use `Role Attribute: '<Attribute Name>'`
+
+Role attributes are defined the same way as other attributes, but operate differently from other attributes in that they are part of the role, not the player and can thus be hidden by disguises.
+
 ----
 ----
 ### Target Types
@@ -289,7 +299,7 @@ Format: `<Subtype> <Target>`
 
 Format:  
 `<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category  
-`Attribute Investigate <Target> for '<Attribute>'` (Look if a certain attribute is present) - Returns Success/Failure  
+`Attribute Investigate <Target> for '<Attribute>' (<Disguise Level>)` (Look if a certain attribute is present) - Returns Success/Failure  
 `Investigate <Target> Role Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)  
 
 - Subtypes: `Role`, `Alignment` or `Category`
