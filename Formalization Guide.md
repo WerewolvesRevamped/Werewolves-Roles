@@ -623,6 +623,7 @@ Host Information is specific information provided by the host and is part of the
 Host Information comes in the following forms:
 
 - `%Role%`, an arbitrary role
+- `%Role:<Target>%`, an arbitrary role from a provided target type
 - `%Player%`, an arbitrary player
 - `%Player:<Target>%`, an arbitrary player from a provided target type
 
