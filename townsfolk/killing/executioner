@@ -13,8 +13,9 @@ After Day 1, whenever the Executioner is chosen to be lynched, it will be preven
 __Formalized__
 Immediate: Target @Selection (Player) 
 Immediate: Target @Selection (Player) [Quantity: 1]
-On Lynch [Quantity: 1]:
+Starting: Protect @Self from `Lynches` through `Passive Defense` (~UntilUse)
+On Passive Defense:
   • Process: Lynch @Target
-  • Evaluate: @Result is `Success`: 
-    ‣ Cancel Lynch Poll
-    ‣ Reveal `Executioner @Self lynched @Target` to #story_time
+  • Evaluate:
+    ‣ not (@Target exists): Lynch @Self
+    ‣ @Result is `Success`: Reveal `Executioner @Self lynched @Target` to #story_time
