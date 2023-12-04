@@ -46,6 +46,7 @@
     - [Choices](#choices)
     - [Ascend / Descend](#ascend-descend)
 - [Host Information](#host-information)
+- [Utility Functions](#utility-functions)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -622,3 +623,14 @@ Host Information comes in the following forms:
 - `%Role%`, an arbitrary role
 - `%Player%`, an arbitrary player
 - `%Player:<Target>%`, an arbitrary player from a provided target type
+
+## Utility Functions
+
+Utility functions apply an operation on an input.
+
+The following utility functions exist:
+
+- `randomize(<InputList>)`, randomize an input list and returns a single random element.
+- `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
+
+`<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@[Group]`)
