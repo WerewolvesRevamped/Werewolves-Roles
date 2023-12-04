@@ -45,6 +45,7 @@
     - [Copying](#copying)
     - [Choices](#choices)
     - [Ascend / Descend](#ascend-descend)
+- [Host Information](#host-information)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -611,3 +612,13 @@ Format:
 
 Both ascend/descend automatically also true kill. 
 
+
+## Host Information
+
+Host Information is specific information provided by the host and is part of the game setup, same as the role list.
+
+Host Information comes in the following forms:
+
+- `%Role%`, an arbitrary role
+- `%Player%`, an arbitrary player
+- `%Player:<Target>%`, an arbitrary player from a provided target type
