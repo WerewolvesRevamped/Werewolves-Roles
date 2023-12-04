@@ -626,6 +626,7 @@ Host Information comes in the following forms:
 - `%Role:<Target>%`, an arbitrary role from a provided target type
 - `%Player%`, an arbitrary player
 - `%Player:<Target>%`, an arbitrary player from a provided target type
+- `%Option1|Option2|Option3%`, one arbitrary option out of several options
 
 ## Utility Functions
 
