@@ -9,5 +9,5 @@ The Scared Wolf will be protected from the first night attack to target them.
 
 __Formalized__
 Inherit: `Pack Lycan`
-Starting: Protect @Self from `Attacks` through `Passive Defense`
+Starting: Protect @Self from `Attacks` through `Passive Defense` (~UntilUse)
 On Passive Defense: Learn `Defense Used`
