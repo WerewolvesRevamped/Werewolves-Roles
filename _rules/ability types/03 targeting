@@ -1,6 +1,7 @@
 **Targeting** | Ability Type
 __Basics__
 Targeting is a type of ability that on its own does not do much. Targeting is usually used by roles that cannot decide when their primary ability triggers, so in advance they may select a player (or other type of target) that should be targeted by their ability once it does trigger.
+For each player, a target can be stored. This target is reset when the player changes roles or when the target dies.
 
 For a complete list of targeting check `$i targeting list`.
 __Details__
