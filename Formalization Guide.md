@@ -86,17 +86,18 @@ When a group creates a poll, a random voting member is selected to execute the r
 
 ## Attributes
 
----
----
-### Standard Attributes
-
-Like all attributes standard attributes have source role and source player value. Additionally, each type of standard attribute has additional values.
+All attributes have source role and source player value. 
 
 All attributes can be refered to by `<AttributeType>:<SourceRole>` or `<AttributeType>:<SourcePlayer>`.
 Examples:
 - `Disguise:Tanner`, a disguise applied by a tanner
 - `Defense:@Target`, a defense applied by the player's current target
 
+---
+---
+### Standard Attributes
+
+Each type of standard attribute has additional values.
 There are a few types of standard attributes:
 
 ---
