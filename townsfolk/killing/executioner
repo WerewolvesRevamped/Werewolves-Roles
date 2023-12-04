@@ -14,5 +14,7 @@ __Formalized__
 Immediate: Target @Selection (Player) 
 Immediate: Target @Selection (Player) [Quantity: 1]
 On Lynch [Quantity: 1]:
-  ‣ @Target is `Alive`: Redirect 'Lynch' from @Self to @Target
-  ‣ Otherwise: Failure
+  • Process: Lynch @Target
+  • Evaluate: @Result is `Success`: 
+    ‣ Cancel Lynch Poll
+    ‣ Reveal `Executioner @Self lynched @Target` to #story_time
