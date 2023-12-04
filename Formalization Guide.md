@@ -481,7 +481,9 @@ Format:
 ---
 #### Role Change
 
-Format: `Role Change <Target> to '<Role>'`
+Format:  
+`Role Change <Target> to '<Role>'` (Change a player's role)  
+`Group Change <Target> to '<Group>'` (Change a group's name, but not member roles)  
 
 - Target: A target type, specifying which player's role to change
 - Role: A target type or constant role, specifying the player's new role
