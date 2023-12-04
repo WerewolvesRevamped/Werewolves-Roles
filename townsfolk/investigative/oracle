@@ -11,3 +11,13 @@ The Oracle is not affected by disguises or obstructions, but is affected by redi
 __Simplified__
 Every night, the Oracle can select two players and see if they have the same alignment as each other. Each player can only be selected once.
 This is not affected by disguises or obstructions, but is affected by redirections.
+
+__Formalized__
+Immediate Night:
+  • Action: ?? sth here
+  • Process:
+    ‣ Alignment Investigate @Selection
+    ‣ Alignment Investigate @SecondarySelection
+  • Evaluate:
+    ‣ @Result1 is @Result2: `Same Alignment`
+    ‣ Otherwise: `Different Alignment`
