@@ -346,10 +346,11 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
-- `@(<Attribute>)`: Uses all players that have the `<Attribute>` attribute (e.g. `@(Wolfish)`)
-- `@[<Group>]`: Uses all players that are part of the `<Group>` group
-- `@{<Alignment>}`: Uses all players that are of the `<Alignment>` alignment
-- `@⟨<Role>⟩`: Uses all players that have the `<Role>` role
+- `@(Attr:<Attribute>)`: Uses all players that have the `<Attribute>` attribute (e.g. `@(Wolfish)`)
+- `@(Group:<Group>)`: Uses all players that are part of the `<Group>` group
+- `@(Align:<Alignment>)`: Uses all players that are of the `<Alignment>` alignment
+- `@(Role:<Role>)`: Uses all players that have the `<Role>` role
+- `@(Cat:<Category>)`: Uses all players who's role is in the `<Category>` category
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
 - `@All`: Uses all players
