@@ -342,6 +342,7 @@ Role attributes are defined the same way as other attributes, but operate differ
 
 Within abilities a selection by the player often affects the execution of the abilities. We use target types to refer to the player, their selection or similar. The following target types exist:
 
+__General Target Types__
 - `@Self`: Uses the player who this ability belongs to, or when using it inside a group, the current group
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
@@ -351,9 +352,16 @@ Within abilities a selection by the player often affects the execution of the ab
 - `@(Align:<Alignment>)`: Uses all players that are of the `<Alignment>` alignment
 - `@(Role:<Role>)`: Uses all players that have the `<Role>` role
 - `@(Cat:<Category>)`: Uses all players who's role is in the `<Category>` category
+- `@All`: Uses all players
+
+__Limited Target Types__  
+These target types are only available in some contexts:
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
-- `@All`: Uses all players
+- `@Attacker`: Uses the attacker/killers in `On Death`, `On <Target> Death`, `On Killed`, `On Defense` and `On Lynch` triggers
+- `@DeathType`: Set to the type of death in `On Death` and `On <Target> Death` triggers
+- `@This`: Set to the player who died in the `On <Target> Death` trigger
+- `@Visitor`: Set to the visitor in `On Visit` trigger
 
 ----
 ----
