@@ -10,6 +10,6 @@ The Town Crier learns the role of another townsfolk at the start of Night 1.
 
 __Formalized__
 Starting: Target `%Player:@{Townsfolk}%`
-Passive Start Night: [Temporal: Night 1]:
-- Process: Role Investigation @Target
-- Evaluation: Learn: @Target @Result
+Passive Start Night: [Temporal: Night 1]
+• Process: Role Investigation @Target
+• Evaluation: Learn `@Target is @Result`
