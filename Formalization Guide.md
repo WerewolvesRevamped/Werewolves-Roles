@@ -342,14 +342,14 @@ Role attributes are defined the same way as other attributes, but operate differ
 
 Within abilities a selection by the player often affects the execution of the abilities. We use target types to refer to the player, their selection or similar. The following target types exist:
 
-__General Target Types__
+__General Target Types__  
 - `@Self`: Uses the player who this ability belongs to, or when using it inside a group, the current group
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
 - `@All`: Uses all players
 
-__Advanced Target Types__
+__Advanced Target Types__  
 Select players by a certain attribute of them or their role.
 - `@(Attr:<Attribute>)`: Uses all players that have the `<Attribute>` attribute (e.g. `@(Wolfish)`)
 - `@(Group:<Group>)`: Uses all players that are part of the `<Group>` group
@@ -359,7 +359,7 @@ Select players by a certain attribute of them or their role.
 
 These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`
 
-__Limited Target Types__  
+__Limited Target Types__   
 These target types are only available in some contexts:
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
