@@ -12,6 +12,7 @@ Each night, the Tracking Wolf may find out how much of a threat a player is to t
 The Tracking Wolf is affected by strong disguises and redirections, but not by obstructions.
 
 __Formalized__
+Inherit: `Pack Lycan`
 Immediate Night:
   • Process:
     ‣ Class Investigate @Selection (SD)
