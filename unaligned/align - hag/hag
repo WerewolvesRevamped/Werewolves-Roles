@@ -12,3 +12,12 @@ The Hag is coven-aligned.
 __Simplified__
 The Hag can win with any team, unless that team has wronged the coven, but cannot win if they have never been wronged.
 The Hag will turn into a specific type of hag at the end of the day.
+
+__Formalized__
+Immediate Day: Target @:Role
+Passive End Day: [Temporal: Day 0]
+  - Evaluate:
+   ‣ @:Target is `Vicious Hag`: Role Change @Self to randomize(Cautious Hag, Prophetic Hag)
+   ‣ @:Target is `Cautious Hag`: Role Change @Self to randomize(Vicious Hag, Prophetic Hag)
+   ‣ @:Target is `Prophetic Hag`: Role Change @Self to randomize (Vicious Hag, Cautious Hag)
+   ‣ Otherwise: Role Change @Self to randomize (Vicious Hag, Cautious Hag, Prophetic Hag)
