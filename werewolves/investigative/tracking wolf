@@ -10,3 +10,22 @@ The Tracking Wolf’s check is an immediate ability. The Tracking Wolf is affect
 __Simplified__
 Each night, the Tracking Wolf may find out how much of a threat a player is to the pack. This is based on the role category of that player's role.
 The Tracking Wolf is affected by strong disguises and redirections, but not by obstructions.
+
+__Formalized__
+Immediate Night:
+  • Process:
+    ‣ Class Investigate @Selection (SD)
+    ‣ Category Investigate @Selection (SD)
+  • Evaluate:
+    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Investigative`): `Major Threat`
+    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Killing`): `Major Threat`
+    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Power`): `Significant Threat`
+    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Group`): `Significant Threat`
+    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Miscellaneous`): `Slight Threat`
+    ‣ (@Result1 is `Solo`) and (@Result2 is `Investigative`): `Major Threat`
+    ‣ (@Result1 is `Solo`) and (@Result2 is `Killing`): `Major Threat`
+    ‣ (@Result1 is `Solo`) and (@Result2 is `Power`): `Significant Threat`
+    ‣ (@Result1 is `Solo`) and (@Result2 is `Group`): `Significant Threat`
+    ‣ (@Result1 is `Solo`) and (@Result2 is `Miscellaneous`): `Slight Threat`
+    ‣ (@Result1 is `Werewolf`) and (@Result2 is `Kiling`): `Slight Threat`
+    ‣ Otherwise: `No Threat`
