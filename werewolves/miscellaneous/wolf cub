@@ -7,3 +7,6 @@ This ability is triggered when a player who at any point had the role of Wolf Cu
 
 __Simplified__
 The night after the Wolf Cub dies, the wolfpack will be able to kill an additional player.
+
+__Formalized__
+On Death: Add `Wolfpack` Poll
