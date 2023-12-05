@@ -2,7 +2,7 @@
 __Basics__
 In Werewolves Revamped, each player is assigned a Role. A player's Role determines their abilities, alignment, and win condition.
 __Details__
-Roles come in five groups: townsfolk, werewolves, solo, unaligned, and extra.
+Roles come in five classes: townsfolk, werewolves, solo, unaligned, and extra.
 Townsfolk, werewolves, and solo Roles each have an alignment, which defines their win condition.
 Unaligned Roles start as nonaligned and have either a specific win condition or the potential to gain an alignment.
 Extra Roles are added on top of a player's primary Role and do not affect their alignment or win condition. Where a player's 'Role' is referenced, the Role in question is the primary Role: only when a player's 'Roles' are referenced does this include any extra Roles they have.
