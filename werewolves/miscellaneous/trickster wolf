@@ -10,6 +10,7 @@ __Simplified__
 The Trickster Wolf can only be created when a trickster is infected by the infected wolf. Their vote counts as -1 on all polls.
 
 __Formalized__
+Inherit: `Pack Lycan`
 Starting: Manipulate @Self's `public voting power` to `-1`
 On @(Group:Wolfpack) Death:
   • Process: Investigate @(Group:Wolfpack) Count
