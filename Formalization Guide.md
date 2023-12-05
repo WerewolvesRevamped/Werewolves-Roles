@@ -347,12 +347,17 @@ __General Target Types__
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
+- `@All`: Uses all players
+
+__Advanced Target Types__
+Select players by a certain attribute of them or their role.
 - `@(Attr:<Attribute>)`: Uses all players that have the `<Attribute>` attribute (e.g. `@(Wolfish)`)
 - `@(Group:<Group>)`: Uses all players that are part of the `<Group>` group
 - `@(Align:<Alignment>)`: Uses all players that are of the `<Alignment>` alignment
 - `@(Role:<Role>)`: Uses all players that have the `<Role>` role
 - `@(Cat:<Category>)`: Uses all players who's role is in the `<Category>` category
-- `@All`: Uses all players
+
+These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`
 
 __Limited Target Types__  
 These target types are only available in some contexts:
