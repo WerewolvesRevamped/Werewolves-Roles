@@ -407,11 +407,11 @@ Format: `<Subtype> <Target>`
 #### Investigating
 
 Format:  
-`<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category) - Returns the Role/Alignment/Category  
+`<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category/class) - Returns the Role/Alignment/Category  
 `Attribute Investigate <Target> for '<Attribute>' (<Disguise Level>)` (Look if a certain attribute is present) - Returns Success/Failure  
 `Investigate <Target> Role Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)  
 
-- Subtypes: `Role`, `Alignment` or `Category`
+- Subtypes: `Role`, `Alignment`, `Category` or `Class`
 - Target: A target type, specifying who is getting attacked
 - Relevant Effects: A comma separated list of the following two values: `WD` (Weak Disguises) or `SD` (Strong Disguises), listing all of those the investigation is affected by. Leave this out if not affected by any disguises.
 - Attribute: An attribute which is getting checked for
