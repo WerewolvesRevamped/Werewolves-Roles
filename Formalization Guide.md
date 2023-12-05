@@ -190,7 +190,7 @@ Trigger types can be one of the following:
 - `Passive` for constantly active abilities
 - `Passive [End Day|End Night|Start Day|Start Night]` for abilities that passively/automatically trigger at the start or end of a phase. These occur at the same time as action timings from above, but *automatically*.
 - `On Death` for an ability that triggers on death (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player)
-- `On <Target> Death` for an ability that triggers on the death of a certain target type (when several players are contained in the target, it triggers when *any* player from that target type dies) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@This` to reference the player that died and `@ThisRole` to reference their role)
+- `On <Target> Death` for an ability that triggers on the death of a certain target type (when several players are contained in the target, it triggers when *any* player from that target type dies) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@This` to reference the player that died)
 - `On Killed` for an ability that triggers when a player dies through a (true) kill (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing)
 - `On Visit [[<Ability Type>]]` for triggering when any (`On Visit`) or a specific ability (e.g. `On Visit [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor)
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
@@ -367,6 +367,15 @@ These target types are only available in some contexts:
 - `@DeathType`: Set to the type of death in `On Death` and `On <Target> Death` triggers
 - `@This`: Set to the player who died in the `On <Target> Death` trigger
 - `@Visitor`: Set to the visitor in `On Visit` trigger
+
+__Property Access__  
+When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
+
+- `<TargetType>->Role`, to get the role of a player target type
+- `<TargetType>->Alignment`, to get the alignment of a player target type
+- `<TargetType>->Category`, to get the category of a role target type
+
+Property access can be chained such as `@Target->Role->Category`
 
 ----
 ----
