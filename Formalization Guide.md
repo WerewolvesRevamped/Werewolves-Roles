@@ -239,7 +239,7 @@ May be one of the following:
 
 Marked by curly brackets: {}
 
-Action Compulsion can be `Forced` for forced actions or blank otherwise. By default a forced action randomly selects a target where necessary. If a forced action should select a specific target use `Forced: <Default Target` instead.
+Action Compulsion can be `Forced` for forced actions or blank otherwise. By default a forced action randomly selects a target where necessary. If a forced action should select a specific target use `Forced: <Default Target>` instead.
 
 ----
 #### Compound Actions
