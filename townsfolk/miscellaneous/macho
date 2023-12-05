@@ -14,9 +14,9 @@ If attacked at night, the Macho will be told the name of one of their attackers 
 
 __Formalized__
 Starting: Protect @Self from `Attacks` through `Partial Defense` during `Night`
-On Partial Defense:
-  • Learn `Attacked by @Attacker`
-  • Protect @Self from `all` through `Passive Defense`
-  • Reveal `Macho @Self was attacked` to #story_time
-  • Apply `Marker` to @Self
-Passive End Day: True Kill @Self [Attribute: has `Marker`]
+Compound:
+  • On Partial Defense:
+    ‣ Learn `Attacked by @Attacker`
+    ‣ Protect @Self from `all` through `Passive Defense`
+    ‣ Reveal `Macho @Self was attacked` to #story_time
+  • Passive End Day: True Kill @Self
