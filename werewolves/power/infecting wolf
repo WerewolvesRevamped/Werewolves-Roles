@@ -17,4 +17,11 @@ During Night 1, the Infecting Wolf must choose one player to convert to a wolf. 
 __Formalized__
 Inherit: `Pack Lycan`
 Immediate Night: [Temporal: Night 1] {Forced}
-  • Role Change @Target to `Wolf`
+  • Process
+    ‣ Alignment Investigate @Selection
+    ‣ Role Investigate @Selection
+    ‣ Attribute Investigate @Selection for GroupMembership:Wolfpack
+  • Evaluate:
+    ‣ (@Result1 is `Werewolf`) or (@Result3 is `True`): Failure
+    ‣ (@Result2 is `Baker`) or (@Result2 `Butcher`): Role Change @Selection to `Bloody Butcher`
+    ‣ Otherwise: Role Change @Selection to `Wolf`
