@@ -219,6 +219,8 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Succession: No Target Succession`, may not be used successively on the same target 
 - Quantity Restrictions:
   - `Quantity: <Value>`, may only used a maximum of `<Value>` times
+- Target Restrictions:
+  - `Target: exists`, requires the player's target to exist 
 
 ----
 #### Action Scaling
