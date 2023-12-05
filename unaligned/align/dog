@@ -10,3 +10,11 @@ The Dog is nonaligned until it changes role.
 
 __Simplified__
 During Night 1, the Dog may choose between fortune teller, warlock, and either rival or psychopath. It will immediately become this role for the rest of the game.
+
+__Formalized__
+Starting:
+  • Evaluate:
+    ‣ @(Role:Cat) exists: Target `Rival`
+    ‣ Otherwise: Target `Psychopath`
+Immediate Night: Target @Selection [List: Fortune Teller, Warlock, @Target] {Forced: Fortune Teller}
+On Action [Target]: Role Change @Self to @Target
