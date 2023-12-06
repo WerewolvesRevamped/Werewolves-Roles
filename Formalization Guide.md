@@ -481,12 +481,12 @@ Format:
 `Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)  
 `Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)  
 `Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)  
-`Increment '<Attribute>'` (increment the count value of an attribute)  
-`Decrement '<Attribute>'`(decrement the count value of an attribute)  
-`Set '<Attribute>' to '<Value>'` (set the count value of an attribute)  
+`Increment '<Attribute>' for <Target>` (increment the count value of an attribute)  
+`Decrement '<Attribute>' for <Target>`(decrement the count value of an attribute)  
+`Set '<Attribute>' to '<Value>' for <Target>` (set the count value of an attribute)  
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
-- Target: A target type 
+- Target: A target type (a player or a group)
 - Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
 - Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute. Leave out if unnecessary.
 - Value: A numeric value
