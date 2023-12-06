@@ -14,10 +14,12 @@ This is not affected by disguises or obstructions, but is affected by redirectio
 
 __Formalized__
 Immediate Night:
-  • Action: ?? sth here
+  • Action: [Attribute: @Selection lacks `OracleSelected:@Self`, Attribute: @SecondarySelection lacks `OracleSelected:@Self`]
   • Process:
     ‣ Alignment Investigate @Selection
     ‣ Alignment Investigate @SecondarySelection
+    ‣ Apply `OracleSelected` to @Selection
+    ‣ Apply `OracleSelected` to @SecondarySelection
   • Evaluate:
     ‣ @Result1 is @Result2: `Same Alignment`
     ‣ Otherwise: `Different Alignment`
