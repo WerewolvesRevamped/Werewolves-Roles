@@ -4,3 +4,7 @@ Plague Team wins when all players are either dead, unaligned or part of the Plag
 __Roles:__
 <?PlagueBearer:> Plague Bearer
 <?PlagueCarrier:> Plague Carrier
+
+__Formalized__
+Win Condition: `@(Alignment:Plague)`
+Starting: Join `Plague Team`
