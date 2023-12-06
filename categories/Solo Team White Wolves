@@ -3,3 +3,6 @@ White Wolves always start out with just themselves on their team, however they p
 
 __Roles:__
 <?WhiteWerewolf:> White Werewolf
+
+__Formalized__
+Win Condition: `@(Alignment:White Wolves)`
