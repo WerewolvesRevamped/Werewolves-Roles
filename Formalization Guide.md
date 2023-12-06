@@ -72,8 +72,11 @@ Due to technical limitations if you see `'`'s within `this text` consider them t
 ## Teams
 ```
 **<Team Name>**
-[<Role Ability List> | No Abilities]
+Win Condition: <Target List>
+<Role Ability List>
 ```
+
+Win Condition: A comma separated list of target types. The team wins when all remaining players are either nonaligned or match one or more of the targets.
 
 Teams use the same general format as roles. Some trigger types are not compatible with teams.
 
