@@ -56,6 +56,14 @@
 
 Due to technical limitations if you see `'`'s within `this text` consider them to be \`'s.
 
+In cases where lists within lists within lists are used, use the following format:
+
+```
+• Level 1
+  ‣ Level 2
+    ◦ Level 3
+```
+
 ## Role
 
 ```
