@@ -13,6 +13,5 @@ Each night, the Lone Warlock may check one player’s role. This is affected by 
 The Lone Warlock and wolfpack do not know each other, however once a member of the wolfpack dies, the Lone Warlock will lose their power and join the pack as a regular wolf.
 
 __Formalized__
-Inherit: `Wolfish`
 Immediate Night: Role Investigate @Selection (SD, WD)
 On @(Group:Wolfpack) Death: Role Change @Self to `Wolf`
