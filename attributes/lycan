@@ -1,6 +1,28 @@
 **Lycan** | Attribute
 __Basics__
-An attribute marking all players that are 'wolves' - not counting human allies of the werewolf team, such as warlocks.
+Most, but not all werewolves are lycans. Whether a role is a lycan or not is relevant for roles including the aura teller and the priest. Some roles that aren't werewolves are also considered to be lycans. For a list of non-lycans run `$i lycanless`.*
+
+__Roles__
+*Werewolves:*
+Alpha Wolf
+Bloody Butcher
+Corrupt Wolf
+Direwolf
+Infecting Wolf
+Knowledgeable Wolf
+Lone Wolf
+Psychic Wolf
+Saboteur Wolf
+Scared Wolf
+Sneaking Wolf
+Tracking Wolf
+Trickster Wolf (T)
+Wolf
+Wolf Cub
+
+*Non-Werewolves:*
+Cupid Wolf (T)
+White Werewolf
 
 __Formalized__
 No Abilities
