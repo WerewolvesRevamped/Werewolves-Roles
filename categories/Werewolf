@@ -7,3 +7,8 @@ __Role Categories:__
 <?CategoryPower:> Werewolf Power (WP)
 <?CategoryInvestigative:> Werewolf Investigative (WI)
 <?CategoryKilling:> Werewolf Killing (WK)
+
+__Formalized__
+Werewolf
+Win Condition: `@(Alignment:Werewolf)`
+Inherit: `Wolfish`
