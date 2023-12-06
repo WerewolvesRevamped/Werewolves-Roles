@@ -10,8 +10,10 @@ If the Journalist loses their role, the journal is lost.
 __Simplified__
 The Journalist can write a journal which a player with a role of their choice will receive when the Journalist dies.
 
+__Formalized__
+Starting: Starting: Grant `Journal Holder` to @Self
 Immediate: Target @Selection (Role)
 Immediate: Target @Selection (Role) [Quantity: 1]
 On Death: 
 - Target randomize(@(Role:@Target))
-- Grant `Journal Holder` to @Target
+- Transfer `Journal Holder` from @Self to @Target
