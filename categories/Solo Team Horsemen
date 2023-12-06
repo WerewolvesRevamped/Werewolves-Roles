@@ -8,3 +8,6 @@ Horseman of Death
 Horseman of Famine
 Horseman of Pestilence
 Horseman of War
+
+__Formalized__
+Win Condition: `@(Alignment:Horsemen)`
