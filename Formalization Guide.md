@@ -524,6 +524,7 @@ As a result of a Joining the <Target> receives a `Group Membership` attribute.
 Format:  
 `Grant '<ExtraRole>' to <Target>` (Grant an extra role)  
 `Revoke '<ExtraRole>' from <Target>` (Remove an extra role)  
+`Transfer '<ExtraRole>' from <Target> to <Target>` (transfer an extra role, retaining the same secret channel)
 
 - ExtraRole: A defined extra role
 - Target: A target type, specifying who gains the extra role
