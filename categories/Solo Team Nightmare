@@ -5,3 +5,8 @@ __Roles:__
 <?Reaper:> *Reaper*
 <?Wraith:> *Wraith*
 <?Spirit:> *Spirit (T)*
+
+__Formalized__
+Win Condition: `@(Attribute:Sleepless)`
+Inherit: `Sleepless`
+Starting: Join `Nightmare`
