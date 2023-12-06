@@ -9,6 +9,7 @@ __Roles:__
 
 <?Cerberus:> *Cerberus*
 
+__Formalized__
 Win Condition: `@(Attribute:Soulless)`
 Inherit: `Soulless`
 ~Smth for increase soul count by 1
