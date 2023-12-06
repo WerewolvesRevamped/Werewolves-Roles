@@ -5,6 +5,6 @@ __Roles:__
 <?Vampire:> Vampire
 <?Undead:> Undead (T)
 
-Underworld
+__Formalized__
 Win Condition: `@(Alignment:Underworld)`
 Starting: Join `Underworld`
