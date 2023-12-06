@@ -1,0 +1,11 @@
+**Horsemen** | Additional Information | 
+
+The Horsemen is a team usually consisting of around two to four players. The Horsemen can either start out as the *Horseman* role or as a specific Horseman, but never as an Apocalyptic Horseman.
+
+The goal of the Horsemen is to kill everyone, however they only gain a killing power if they have *doomed* all aligned players. Dooming a player has a different effect depending on the type of Horseman.
+
+At the start of the game, the Horsemen do not know each other, but if a Horseman attempts to doom another Horseman, it fails and the Horseman unite instead. When that happens they both keep their powers, but join a shared Horsemen channel and can now coordinate their actions. United Horsemen are considered to be doomed, which is relevant should they lose their role.
+
+If there is only a single Horseman (left) and all other aligned players are doomed, they become an Apocalyptic Horseman.
+
+For a list of Horsemen run `$i horsemen team`.

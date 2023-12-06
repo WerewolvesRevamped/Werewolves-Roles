@@ -1,18 +1,18 @@
 **Demon** | Solo Killing - Hell Team
 __Basics__
-The Demon wins with the devil and joins a channel with the devil to communicate securely.
-Just like the devil the Demon can use the hell team's pool of souls.
+The Demon wins with the devil. It joins a channel with the devil to communicate securely.
+The Demon can use the hell team's soul pool.
 __Details__
-During the first phase, the Demon may choose a role as a weak disguise (defaults to citizen).
+During the first phase, the Demon may choose a role as a weak disguise. This defaults to citizen.
 
-At the start of the game the Demon's soul is added to the hell team's pool of souls, and they are soulless afterwards.
-The Demon may use souls from the pool to protect or attack somebody. 
+At the start of the game, the Demon's soul is added to the hell team's soul pool. The Demon then becomes soulless.
+The Demon may use souls from the pool to protect or attack a player. 
 If the Demon is attacked while a soul is in the pool, a soul will automatically be used to protect the Demon. 
-Use `$info souls` for a detailed explanation.
+See `$info souls` for a detailed explanation.
 
-Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
+Members of the Hell team cannot betray the team in any way. Any attempts at conversion or recruitment of a member will fail in some manner.
 
 __Simplified__
 The Demon wins with the devil and joins a channel with the devil. The Demon can use the hell team's pool of souls.
-The Demon can choose a weak disguise at the start of the game.
+
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.

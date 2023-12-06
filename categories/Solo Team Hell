@@ -1,14 +1,13 @@
 **Hell Team**
 'Hell Team' is the team of the Devil. Hell Team wins when all players are either dead, unaligned, soulless or part of the Hell team. All members of the team know each other and can never betray each other.
 
-__Roles:__
+__Roles__
 <?Devil:> Devil
 <?Demon:> Demon
 <?DemonicCupid:> Demonic Cupid (T)
 <?Imp:> Imp (T)
 
-<?Cerberus:> *Cerberus*
-
+__Formalized__
 Win Condition: `@(Attribute:Soulless)`
 Inherit: `Soulless`
 ~Smth for increase soul count by 1
