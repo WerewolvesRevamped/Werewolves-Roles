@@ -6,3 +6,7 @@ __Roles:__
 <?Wisp:> Wisp
 
 <?Firebug:> *Firebug*
+
+__Formalized__
+Pyromancer
+Win Condition: `@(Alignment:Pyro)`
