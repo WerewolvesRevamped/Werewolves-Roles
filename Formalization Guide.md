@@ -200,6 +200,7 @@ Trigger types can be one of the following:
 - `On [Passive|Partial] Defense` for an ability that triggers when a passive or partial defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used.)
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
+- `On Poll Closed` triggers when a poll created by the current player through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 
 ----
 #### Action Restrictions
@@ -369,6 +370,7 @@ These target types are only available in some contexts:
 - `@DeathType`: Set to the type of death in `On Death` and `On <Target> Death` triggers
 - `@This`: Set to the player who died in the `On <Target> Death` trigger
 - `@Visitor`: Set to the visitor in `On Visit` trigger
+- `@Winner`: Set to the winner of the poll in `On Poll Closed` trigger
 
 __Property Access__  
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
@@ -565,7 +567,7 @@ As a result of an Obstruction the <Target> receives an `Obstructed` attribute.
 
 Format:  
 `Add <PollType> Poll` (Duplicate an existing poll)  
-`Create <PollType> Poll` (Creates a poll and the role will execute the resulting ability)  
+`Create <PollType> Poll` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
 `Cancel <PollType> Poll` (Cancel the poll's resulting ability)  
 `Delete <PollType> Poll` (Remove a poll that would otherwise exist)  
 `Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
