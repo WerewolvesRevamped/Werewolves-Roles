@@ -8,3 +8,8 @@ __Roles:__
 <?Imp:> Imp (T)
 
 <?Cerberus:> *Cerberus*
+
+Win Condition: `@(Attribute:Soulless)`
+Inherit: `Soulless`
+~Smth for increase soul count by 1
+Starting: Join `Hell`
