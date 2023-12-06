@@ -166,6 +166,11 @@ Attributes use the same general format as roles. Some trigger types are not comp
 
 To reference a custom attribute simply using `'<AttributeName>'` suffices.
 
+---
+#### Count Value
+
+Some custom attributes may utilize a count value, which can be incremented/decremented. To target an attribute with a specific count value use `<AttributeName>:<CountValue>` and to target ranges do `<AttributeName>:[<|>]<CountValue>` or `<AttributeName>:<LowerBound>-<UpperBound>`
+
 ## Abilities
 
 ----
@@ -475,11 +480,15 @@ Format:
 `Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)  
 `Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)  
 `Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)  
+`Increment '<Attribute>'` (increment the count value of an attribute)  
+`Decrement '<Attribute>'`(decrement the count value of an attribute)  
+`Set '<Attribute>' to '<Value>'` (set the count value of an attribute)  
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
 - Target: A target type 
 - Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
 - Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute. Leave out if unnecessary.
+- Value: A numeric value
 
 As a result of an Applying the <Target> receives a custom attribute.
 
