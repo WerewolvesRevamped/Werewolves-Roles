@@ -20,7 +20,7 @@ Immediate Night: [Temporal: Night 1] {Forced}
   • Process
     ‣ Alignment Investigate @Selection
     ‣ Role Investigate @Selection
-    ‣ Attribute Investigate @Selection for GroupMembership:Wolfpack
+    ‣ Attribute Investigate @Selection for `GroupMembership:Wolfpack`
   • Evaluate:
     ‣ (@Result1 is `Werewolf`) or (@Result3 is `True`): Failure
     ‣ (@Result2 is `Baker`) or (@Result2 is `Butcher`): Role Change @Selection to `Bloody Butcher`
