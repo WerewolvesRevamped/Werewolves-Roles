@@ -339,7 +339,7 @@ If only a single condition line with feedback "Success" is provided, an `Otherwi
 
 Condition Format:
 - `<Target> is [<Target> | '<Value>']` (Pure)
-- `[<Target>|Counter] is [greater|lesser] than '<Value>'` (Pure)
+- `[<Target>|Counter] [>|<] '<Value>'` (Pure)
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
 - `<Target> has <Attribute>` (Pure)
