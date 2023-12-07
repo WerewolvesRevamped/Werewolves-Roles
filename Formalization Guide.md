@@ -26,6 +26,7 @@
     - [Complex Actions](#complex-actions)
   - [Ability Set](#ability-set) 
   - [Target Types](#target-types)
+    - [Property Access](#property-access)
   - [Duration Types](#duration-types)
   - [Ability Type](#ability-type)
     - [Killing](#killing)
@@ -408,12 +409,14 @@ These target types are only available in some contexts:
 - `@Winner`: Set to the winner of the poll in `On Poll Closed` trigger
 - `@Chosen`: Set to the choice chosen in a choice chosing
 
-__Property Access__  
+#### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
 
 - `<TargetType>->Role`, to get the role of a player target type
 - `<TargetType>->Alignment`, to get the alignment of a player target type
 - `<TargetType>->Category`, to get the category of a role target type
+- `<TargetType>->PublicVotingPower`, to get the public voting power of a player
+- `<TargetType>->PrivateVotingPower`, to get the private voting power of a player
 
 Property access can be chained such as `@Target->Role->Category`
 
