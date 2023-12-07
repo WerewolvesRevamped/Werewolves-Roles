@@ -17,3 +17,14 @@ Each night, the Plague Bearer may send a rodent to a player to give them the pla
 Contaminated players can spread the plague through using actions and through actions being used on them.
 At the start of the second night after being contaminated, the player is informed that they are contaminated. At the end of that night they will die.
 The Plague Bearer wins when all other players are dead, unaligned or Plague Team.
+
+__Formalized__
+Inherit: Plague Team
+Immediate Night: [Quantity: Total Players/5]
+  • Process:
+    ‣ Role Investigate @Selection
+  • Evaluate:
+    ‣ @Result1 is `Plague Doctor`
+      ‣ Failure
+      ‣ Kill @Selection
+    ‣ Otherwise: Apply `Contaminated` to @Selection
