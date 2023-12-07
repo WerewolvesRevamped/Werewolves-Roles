@@ -13,22 +13,21 @@ The Ravenkeeper will be told the names of any two players with ravens that inter
 
 __Formalized__
 Starting:
-  • Apply `RavenCount` to @Self 
   • Apply `Raven` to @Self
-  • Set `RavenCount` to calc(floor(total/3)) for @Self
+  • Set Counter to calc(floor(total/3)) for @Self
 Passive Start Night: `RavenAction` Choice Creation: ⟨x2⟩
   • `Assign`:
-    ‣ (@Self has `RavenCount:>0`) and not (@Selection has `Raven:@Self`):
+    ‣ (@Self->Counter > `0`) and not (@Selection has `Raven:@Self`):
       ◦ Apply `Raven` to @Selection (~Persistent)
-      ◦ Decrement `RavenCount` for @Self
+      ◦ Decrement Counter for @Self
   • `Reassign`:
     ‣ (@SecondarySelection has `Raven:@Self`) and not (@Selection has `Raven:@Self`):
       ◦ Revoke `Raven:@Self` from @SecondarySelection
       ◦ Apply `Raven` to @Selection (~Persistent)
 Immediate Night: ⟨x2⟩
   • `RavenAction` Choice Choose @Chosen
-  • (@Self has `RavenCount:>0`) and not (@Self has `Raven:@Self`): Apply `Raven` to @Self
-  • (@Self has `RavenCount:0`) and (@Self has `Raven:@Self`): Revoke `Raven:@Self` from @Self
+  • (@Self->Counter > `0`) and not (@Self has `Raven:@Self`): Apply `Raven` to @Self
+  • (@Self->Counter is `0`) and (@Self has `Raven:@Self`): Revoke `Raven:@Self` from @Self
 On @(Attr:Raven:@Self) Death:
-  • Increment `RavenCount` for @Self
+  • Increment Counter for @Self
   • not (@Self has `Raven:@Self`): Apply `Raven` to @Self
