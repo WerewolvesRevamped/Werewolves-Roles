@@ -17,7 +17,7 @@ During Night 1, the Infecting Wolf must choose one player to convert to a wolf. 
 __Formalized__
 Inherit: `Pack Lycan`
 Immediate Night: [Temporal: Night 1] {Forced}
-  • Process
+  • Process:
     ‣ Alignment Investigate @Selection
     ‣ Role Investigate @Selection
     ‣ Attribute Investigate @Selection for `GroupMembership:Wolfpack`
