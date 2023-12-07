@@ -18,6 +18,6 @@ Passive Start Day: `Fox` Choice Creation: ⟨x1⟩
     ‣  Immediate Day: Role Change @Self to `Wolf`
   • `Protect Player`
     ‣ Compound:
-      ◦ End Day: Protect @Selection from `Attacks & Lynches` (~NextDay)
+      ◦ End Day: Protect @Selection from `Attacks & Lynches` (~NextDay) [Succession: No Target Succession]
       ◦ Passive Start Night: Reveal `Gallant Fox protected @Selection` to #wolfpack
 Immediate Day: `Fox` Choice Choose @Chosen
