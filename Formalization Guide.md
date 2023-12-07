@@ -263,7 +263,7 @@ Action Compulsion can be `Forced` for forced actions or blank otherwise. By defa
 ----
 #### Compound Actions
 
-Compound actions uses an extended format. The trigger type is set as Compound, but a newline separated list of abilities is provided instead of a single ability type.
+Compound actions uses an extended format. The trigger type is set as Compound, but a newline separated list of abilities is provided instead of a single ability type. All trigger types are executed in order, though triggers that require the player to submit an action may be skipped if not marked as `Forced`.
 
 Example 1:
 ```
