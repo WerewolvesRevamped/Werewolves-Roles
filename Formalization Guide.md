@@ -710,7 +710,7 @@ Format:
 
 Each game element (role, group, team, etc) has a counter. The counting ability type manipulates this counter.
 
-Format: 
+Format:  
 `Increment Counter for <Target>` (increments the counter)  
 `Decrement Counter for <Target>`(decrement the counter)  
 `Set Counter to '<Value>' for <Target>` (set the counter)  
