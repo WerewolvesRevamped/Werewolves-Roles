@@ -305,14 +305,13 @@ Compact Format:
 ```
 No Process Format:
 ```
-<Trigger Type>:
-  • Action: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-  • Evaluate: [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
+<Trigger Type>: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
+  • [<Condition> | Otherwise]: ['<Feedback>' | <Ability> | <Target>]
 ```
 
 If no action restriction/compulsion/scaling applies, the `Action` line should be left out.
 
-In rare cases Process can be left out. Then evaluate can only be used to evaluate preexisting info.
+In some cases Process can be left out. Then evaluate doesn't have to be specified and can be used to evaluate preexisting info.
 
 As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player. In case of a single process step only, the result can be accessed through `@Result`.
 
@@ -325,12 +324,13 @@ Condition Format:
 - `<Target> is [<Target> | '<Value>']` (Pure)
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
+- `<Target> has <Attribute>` (Pure)
 - `not (<Condition>)`
 - `(<Condition>) and (<Condition>)`
 - `(<Condition>) or (<Condition>)`
 
 A condition may either be a pure condition, or conditions combined with logial operations.
-A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target)
+A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`
 
 If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
