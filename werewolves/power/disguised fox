@@ -13,3 +13,9 @@ __Simplified__
 The Disguised Fox and the wolfpack do not know each other.
 Each day, the Disguised Fox may strongly disguise themselves for the following night. At the end of the day, the wolfpack are told which disguise was chosen.
 Once per game, the Disguised Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Start Day: Choice Creation: ⟨x1⟩
+  • Immediate Day: Role Change @Self to `Wolf`
+  • Immediate Day: Strongly Disguise @Self as @Selection (~NextNight)
+    ‣ Passive Start Night: Reveal `Disguised Fox disguised as @Selection` to #wolfpack
