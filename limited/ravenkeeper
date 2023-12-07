@@ -10,3 +10,25 @@ If there are several Ravenkeepers, their ravens are separate.
 __Simplified__
 Each night, the Ravenkeeper may assign up to two ravens. Ravens not assigned to a living player are assigned to the Ravenkeeper.
 The Ravenkeeper will be told the names of any two players with ravens that interact with each other.
+
+__Formalized__
+Starting:
+  • Apply `RavenCount` to @Self 
+  • Apply `Raven` to @Self
+  • Set `RavenCount` to calc(floor(total/3)) for @Self
+Passive Start Night: `RavenAction` Choice Creation: ⟨x2⟩
+  • `Assign`:
+    ‣ (@Self has `RavenCount:>0`) and not (@Selection has `Raven:@Self`):
+      ◦ Apply `Raven` to @Selection (~Persistent)
+      ◦ Decrement `RavenCount` for @Self
+  • `Reassign`:
+    ‣ (@SecondarySelection has `Raven:@Self`) and not (@Selection has `Raven:@Self`):
+      ◦ Revoke `Raven:@Self` from @SecondarySelection
+      ◦ Apply `Raven` to @Selection (~Persisent)
+Immediate Night: ⟨x2⟩
+  • `RavenAction` Choise Choice @Chosen
+  • (@Self has `RavenCount:>0`) and not (@Self has `Raven:@Self`): Apply `Raven` to @Self
+  • (@Self has `RavenCount:0`) and (@Self has `Raven:@Self`): Revoke `Raven:@Self` from @Self
+On @(Attr:Raven:@Self) Death:
+  • Increment `RavenCount` for @Self
+  • not (@Self has `Raven:@Self`): Apply `Raven` to @Self
