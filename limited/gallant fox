@@ -11,3 +11,13 @@ Joining the wolfpack and choosing a target to protect are immediate abilities.
 __Simplified__
 The Gallant Fox and the wolfpack do not know each other.
 Each day, the Gallant Fox may select a player to protect from attacks and the lynch during the following night and day phases. At the end of the day, the chosen player will be announced to the wolfpack. Once per game, the Gallant Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Passive Start Day: `Fox` Choice Creation: ⟨x1⟩
+  • `Join Pack`:
+    ‣  Immediate Day: Role Change @Self to `Wolf`
+  • `Protect Player`
+    ‣ Compound:
+      ◦ Immediate Day: Protect @Selection from `Attacks & Lynches` (~NextDay)
+      ◦ Passive Start Night: Reveal `Gallant Fox protected @Selection` to #wolfpack
+Immediate Day: `Fox` Choice Choose @Chosen
