@@ -47,6 +47,7 @@
     - [Copying](#copying)
     - [Choices](#choices)
     - [Ascend / Descend](#ascend-descend)
+    - [Disband](#disband)
 - [Host Information](#host-information)
 - [Utility Functions](#utility-functions)
 
@@ -679,11 +680,20 @@ Choice Choosing Format:
 ---
 #### Ascend Descend
 
-Format:
-- `Ascend`
-- `Descend`
+Format:  
+`Ascend`  
+`Descend`  
 
 Both ascend/descend automatically also true kill. 
+
+---
+#### Disband
+
+Format:  
+`Disband` (disband current group)  
+`Disband <Target>`
+
+`Disband` disbands the current group if used within a group. Otherwise use `Disband <Target>` and specify a group to be disbanded.
 
 
 ## Host Information
