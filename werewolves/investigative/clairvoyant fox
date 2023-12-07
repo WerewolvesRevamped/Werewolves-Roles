@@ -17,8 +17,10 @@ __Formalized__
 Passive Start Day: `Fox` Choice Creation: ⟨x1⟩
   • `Join Pack`:
     ‣  Immediate Day: Role Change @Self to `Wolf`
-  • `Disguise Self`
+  • `Investigate`
     ‣ Compound:
-      ◦ Immediate Day: Role Investigate @Selection (SD, WD)
-      ◦ Passive Start Night: Reveal `Clairvoyant Fox investigated a @Result` to #wolfpack
+      ◦ Immediate Day:
+        · Process: Role Investigate @Selection (SD, WD)
+        · Evaluate: Target @Result
+      ◦ Passive Start Night: Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
 Immediate Day: `Fox` Choise Choose @Chosen
