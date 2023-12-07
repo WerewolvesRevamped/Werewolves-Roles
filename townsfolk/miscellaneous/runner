@@ -10,4 +10,8 @@ __Simplified__
 Once per game, if attacked by the werewolves, the Runner will escape.
 
 __Formalized__
-Passive: Protection from @Player with wolfish attribute [Quantity: 1]
+Starting: Protect @Self from `Attacks` by @(Attr:Wolfish) through Passive Defense during Night (~UntilUse)
+On Passive Defense:
+  • Evaluate:
+    ‣ @AttackSource is `Group:Wolfpack`: Reveal `@Self is Runner` to #wolfpack
+    ‣ Otherwise: Reveal `@Self is Runner` to @Attacker
