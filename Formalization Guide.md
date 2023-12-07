@@ -405,6 +405,7 @@ These target types are only available in some contexts:
 - `@This`: Set to the player who died in the `On <Target> Death` trigger or was visited in the `On <Target> Visited` trigger
 - `@Visitor`: Set to the visitor in `On Visited` and `On <Target> Visited` trigger
 - `@Winner`: Set to the winner of the poll in `On Poll Closed` trigger
+- `@Chosen`: Set to the choice chose in a choice chosing
 
 __Property Access__  
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
@@ -675,7 +676,7 @@ Choice Choosing Format:
 ```
 
 - Name: The choice to choose one
-- Option Name: The name of the chosen option
+- Option Name: The name of the chosen option. You may use `@Chosen` here. A choice may be submitted with a `@Selection` and a `@SecondarySelection`
 
 ---
 #### Ascend Descend
