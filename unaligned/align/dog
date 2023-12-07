@@ -13,8 +13,7 @@ During Night 1, the Dog may choose between fortune teller, warlock, and either r
 
 __Formalized__
 Starting:
-  • Evaluate:
-    ‣ @(Role:Cat) exists: Target `Rival`
-    ‣ Otherwise: Target `Psychopath`
+  • @(Role:Cat) exists: Target `Rival`
+  • Otherwise: Target `Psychopath`
 Immediate Night: Target @Selection [List: Fortune Teller, Warlock, @Target] {Forced: Fortune Teller}
 On Action [Target]: Role Change @Self to @Target
