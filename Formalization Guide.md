@@ -483,7 +483,7 @@ Format:
 `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`   
 
 - Target: A target type, specifying who is protected.
-- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches` or `All`
+- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches`, `Attacks & Lynches` or `All`
 - Selector: A target type, limits the protection to only work against certain players.
 - Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense` or `Partial Defense`
   - Location: Either a channel (`#channelName`) or a target type
