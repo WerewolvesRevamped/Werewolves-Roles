@@ -21,4 +21,4 @@ On Killed:
     ‣ Obstruct @Attacker (~NextNight)
     ‣ Ascend
 On @(Attribute:Wolfish) Death:
-  • Evaluate: not (@(Attr:Wolfish) exists): Descend
+  • not (@(Attr:Wolfish) exists): Descend
