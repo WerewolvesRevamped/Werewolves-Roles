@@ -280,6 +280,9 @@ Example 2:
   • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
 ```
 
+In compound actions the special trigger type `Wait` can be used, with the following format:  
+`Wait: <Value> Phases`, starts waiting for `<Value>` phases at the start of the next phase. Waits until the end of the `<Value>`-th phase, including the end of that phase itself.
+
 ---
 #### Complex Actions
 
