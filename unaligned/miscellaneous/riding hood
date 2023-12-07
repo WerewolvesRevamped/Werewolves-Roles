@@ -17,8 +17,8 @@ __Formalized__
 On Killed:
   • @AttackSource is Group:Wolfpack:
     ‣ Delete Wolfpack Poll
-  • @Attacker has Attribute:Wolfish:
+  • @Attacker has Attr:Wolfish:
     ‣ Obstruct @Attacker (~NextNight)
     ‣ Ascend
 On @(Attribute:Wolfish) Death:
-  • Evaluate: not (@(Attribute:Wolfish) exists): Descend
+  • Evaluate: not (@(Attr:Wolfish) exists): Descend
