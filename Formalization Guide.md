@@ -49,6 +49,7 @@
     - [Choices](#choices)
     - [Ascend / Descend](#ascend-descend)
     - [Disband](#disband)
+    - [Counting](#counting)
 - [Host Information](#host-information)
 - [Utility Functions](#utility-functions)
 
