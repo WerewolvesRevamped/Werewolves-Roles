@@ -15,7 +15,7 @@
     - [Group Membership Attributes](#group-membership-attributes)
     - [Obstruction Attributes](#obstruction-attributes)
   - [Custom Attributes](#custom-attributes)
-    - [Count Value](#count-value)
+- [Counter](#counter)
 - [Abilities](#abilities)
   - [Ability](#ability)
     - [Trigger Types](#trigger-types)
@@ -181,9 +181,9 @@ Attributes use the same general format as roles. Some trigger types are not comp
 To reference a custom attribute simply using `'<AttributeName>'` suffices.
 
 ---
-#### Count Value
+## Counter
 
-Some custom attributes may utilize a count value, which can be incremented/decremented. To target an attribute with a specific count value use `<AttributeName>:<CountValue>` and to target ranges do `<AttributeName>:[<|>]<CountValue>` or `<AttributeName>:<LowerBound>-<UpperBound>`
+All game elements have a counter. The value of the counter can be manipulated through [counting](#counting) and can be checked through [complex actions](#complex-actions).
 
 ## Abilities
 
@@ -339,7 +339,7 @@ If only a single condition line with feedback "Success" is provided, an `Otherwi
 
 Condition Format:
 - `<Target> is [<Target> | '<Value>']` (Pure)
-- `<Target> is [greater|lesser] than '<Value>'` (Pure)
+- `[<Target>|Counter] is [greater|lesser] than '<Value>'` (Pure)
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
 - `<Target> has <Attribute>` (Pure)
@@ -348,7 +348,7 @@ Condition Format:
 - `(<Condition>) or (<Condition>)`
 
 A condition may either be a pure condition, or conditions combined with logial operations.
-A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`, or if a numeric value is greater/lesser than another value
+A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`, or if a numeric value or the counter is greater/lesser than another value
 
 If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
@@ -504,15 +504,11 @@ Format:
 `Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)  
 `Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)  
 `Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)  
-`Increment '<Attribute>' for <Target>` (increment the count value of an attribute)  
-`Decrement '<Attribute>' for <Target>`(decrement the count value of an attribute)  
-`Set '<Attribute>' to '<Value>' for <Target>` (set the count value of an attribute)  
+
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
 - Target: A target type (a player or a group)
 - Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
-- Additional Attribute Data: A comma separated list of additional attribute data defined by the attribute. Leave out if unnecessary.
-- Value: A numeric value
 
 As a result of an Applying the <Target> receives a custom attribute.
 
@@ -706,6 +702,18 @@ Format:
 
 `Disband` disbands the current group if used within a group. Otherwise use `Disband <Target>` and specify a group to be disbanded.
 
+---
+#### Counting
+
+Each game element (role, group, team, etc) has a counter. The counting ability type manipulates this counter.
+
+Format: 
+`Increment Counter for <Target>` (increments the counter)  
+`Decrement Counter for <Target>`(decrement the counter)  
+`Set Counter to '<Value>' for <Target>` (set the counter)  
+
+- Target: A target type, specifying who's counter to manipulate
+- Value: A numeric value specifying a new counter value
 
 ## Host Information
 
