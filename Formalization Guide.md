@@ -716,5 +716,9 @@ The following utility functions exist:
 
 - `randomize(<InputList>)`, randomize an input list and returns a single random element.
 - `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
+- `calc(<math>)`, allows math operations:
+  - `floor(x)`, `ceil(x)`, `round(x)` - rounding
+  - `a/b`, `a*b`, `a+b`, `a-b` - basic math
+  - `total`, `alive` - player counts
 
 `<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@[Group]`)
