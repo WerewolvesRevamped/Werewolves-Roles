@@ -339,7 +339,7 @@ If only a single condition line with feedback "Success" is provided, an `Otherwi
 
 Condition Format:
 - `<Target> is [<Target> | '<Value>']` (Pure)
-- `[<Target>|Counter] [>|<] '<Value>'` (Pure)
+- `<Target> [>|<] '<Value>'` (Pure)
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
 - `<Target> has <Attribute>` (Pure)
@@ -418,6 +418,8 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Category`, to get the category of a role target type
 - `<TargetType>->PublicVotingPower`, to get the public voting power of a player
 - `<TargetType>->PrivateVotingPower`, to get the private voting power of a player
+- `<TargetType>->Counter`, to get the counter of a game element
+- `<TargetType>->Target`, to get the target of a game element
 
 Property access can be chained such as `@Target->Role->Category`
 
