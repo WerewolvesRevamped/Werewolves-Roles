@@ -339,6 +339,7 @@ If only a single condition line with feedback "Success" is provided, an `Otherwi
 
 Condition Format:
 - `<Target> is [<Target> | '<Value>']` (Pure)
+- `<Target> is [greater|lesser] than '<Value>'` (Pure)
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
 - `<Target> has <Attribute>` (Pure)
@@ -347,7 +348,7 @@ Condition Format:
 - `(<Condition>) or (<Condition>)`
 
 A condition may either be a pure condition, or conditions combined with logial operations.
-A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`
+A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`, or if a numeric value is greater/lesser than another value
 
 If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
