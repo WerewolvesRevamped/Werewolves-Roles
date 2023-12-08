@@ -10,3 +10,24 @@ Both actions are immediate abilities.
 
 __Simplified__
 Each night, the Apothecary may poison a player, killing them at the end of the next night. Alternatively, they may cure the player they last poisoned.
+
+__Formalized__
+Starting:
+  • Apply `CureAvailable` to @Self
+  • Set Counter to `3`
+Passive Start Night: `Apothecary` Choice Creation: 
+  • `Poison`:
+    ‣  Immediate Night:
+      ◦ @Self->Counter > 0:
+        · Apply `PoisonedInactive` to @Selection (~Persistent)
+        · Decrement Counter
+  • `Cure`: 
+    ‣ Immediate Night:
+      ◦ @Self has `CureAvailable`:
+        · Remove `Poisoned` from @Selection 
+        · Remove `CureAvailable` from @Self
+Immediate Night: `Apothecary` Choice Choose @Chosen
+Passive End Night:
+  • Kill @(Attr:Poisoned:@Self)
+  • Apply `Poisoned` to @(Attr:PoisonedInactive:@Self)
+  • Remove `PoisonedInactive:@Self` from @All
