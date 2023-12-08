@@ -11,6 +11,7 @@ __Simplified__
 At the start of the game, the Amulet Crafter is the first holder of the *Amulet of Protection*. Whoever holds the amulet is protected from attacks during the night, but must pass it to another player on the following day and may only hold the amulet once. When the Amulet Crafter dies, or chooses to, the amulet shatters, destroying it and attacking the holder.
 
 __Formalized__
+Unique Role
 Starting: Grant `Amulet of Protection` to @Self
 On Death:
   • Attack @(Role:Amulet of Protection)
