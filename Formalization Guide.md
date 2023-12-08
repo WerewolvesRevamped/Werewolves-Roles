@@ -508,7 +508,9 @@ Format:
 ---
 #### Targeting
 
-Format: `Target <Target> (<Type>)`
+Format:  
+`Target <Target> (<Type>)`  
+`Untarget`
 
 - Target: A target type, specifying what is getting targeted
 - Type: Specifies what type of object can be targeted. May be `Player` (a player besides the player themselves), `Role`, `Attribute` or `List: <ListElements>` (with several `Elements` that are comma separated). `Player` is the default value and may be left out.
