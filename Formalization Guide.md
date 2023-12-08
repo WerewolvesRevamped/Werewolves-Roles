@@ -422,6 +422,7 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->PrivateVotingPower`, to get the private voting power of a player
 - `<TargetType>->Counter`, to get the counter of a game element
 - `<TargetType>->Target`, to get the target of a game element
+- `<TargetType>->OriginalRole`, to get the original role(s) of a player
 
 Property access can be chained such as `@Target->Role->Category`
 
