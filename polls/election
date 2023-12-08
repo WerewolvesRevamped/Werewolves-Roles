@@ -1,0 +1,14 @@
+**Election** | Poll
+Available Options: @All
+Allowed Voters: @All
+Passive Start Day:
+  • (@(Role:Mayor) exists) and (@(Role:Reporter) exists) and not (@(Role:Guardian) exists):
+    ‣ Target `Guardian` (Role)
+    ‣ Create Poll
+  • (@(Role:Mayor) exists) and not (@(Role:Reporter) exists):
+    ‣ Target `Reporter` (Role)
+    ‣ Create Poll
+  • not (@(Role:Mayor) exists):
+    ‣ Target `Mayor` (Role)
+    ‣ Create Poll
+On Poll Closed: Grant @Target to @Winner 
