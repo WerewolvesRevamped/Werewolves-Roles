@@ -273,8 +273,8 @@ Action Restrictions can be one or more of the following in a comma separated lis
 - Target Restrictions:
   - `Target: exists`, requires the player's target to exist
 - Selection Restrictions:
-  - `Selection: in <Target>`, requires the selection (i.e. `@Selection`) to be inside a given target type
-  - `Selection: not in <Target>`, requires the selection (i.e. `@Selection`) to NOT be inside a given target type
+  - `Selection: in <Target>`, requires the selection (i.e. `@Selection`) to be inside a given target type or group name
+  - `Selection: not in <Target>`, requires the selection (i.e. `@Selection`) to NOT be inside a given target type or group name
 
 ----
 #### Action Scaling
