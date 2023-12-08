@@ -13,6 +13,7 @@ __Simplified__
 Each night, the Grandma may choose exactly two players. The next day, these selected players' votes won't count: the Grandma will have two votes instead. The Grandma can anonymously talk with their selected players.
 
 __Formalized__
+Unique Role
 Starting:
   • Whisper to `Grandma's House` as `Grandma`
   • Manipulate @Self's `public voting power` to `0`
