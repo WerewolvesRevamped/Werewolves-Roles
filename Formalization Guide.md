@@ -235,7 +235,7 @@ If a single trigger does several abilities at once, they can be listed as part o
 - Action Restrictions: Specifies if there are restrictions on the action. See [here](#action-restrictions)
 - Action Scaling: Specifies if the amount of actions scales with player count. See [here](#action-scaling)
 - Action Compulsion: Specifies if the ability is forced. See [here](#action-compulsion)
-- Ability Type: Specifies which ability type and how to execute it. See [here](#ability-types)
+- Ability Type: Specifies which ability type and how to execute it. See [here](#ability-types). If no ability is used, use `*Nothing*`
 
 ----
 #### Trigger Types
