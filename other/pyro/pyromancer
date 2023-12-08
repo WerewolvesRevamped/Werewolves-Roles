@@ -10,3 +10,13 @@ The Pyromancer is a member of the pyro team and channel. The pyro team wins when
 
 __Simplified__
 Each night the Pyromancer may either powder or ignite all currently powdered people. The Pyromancer is a member of the pyro team and channel. 
+
+__Formalized__
+Passive Start Night: `Pyromancer` Choice Creation: 
+  • `Powder`:
+    ‣  Immediate Night: Apply `Powdered` to @Selection (~Persistent)
+  • `Ignite`: 
+    ‣ Passive End Night:
+      ◦ Attack @(Attr:Powdered,Align:!Pyro)
+      ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+Immediate Night: `Pyromancer` Choice Choose @Chosen
