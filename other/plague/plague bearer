@@ -20,11 +20,6 @@ The Plague Bearer wins when all other players are dead, unaligned or Plague Team
 
 __Formalized__
 Inherit: Plague Team
-Immediate Night: [Quantity: Total Players/5]
-  • Process:
-    ‣ Role Investigate @Selection
-  • Evaluate:
-    ‣ @Result1 is `Plague Doctor`
-      ‣ Failure
-      ‣ Kill @Selection
-    ‣ Otherwise: Apply `Contaminated` to @Selection
+Immediate Night: [Quantity: Total Players/5, Selection: not in `Plague Team`]
+  • @Selection->Role is `Plague Doctor`: Kill @Selection
+  • Otherwise: Apply `Contaminated` to @Selection
