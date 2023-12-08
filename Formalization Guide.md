@@ -730,9 +730,11 @@ Format:
 
 Removes all messages from a group or extra role.
 
-Format: `Conversation Reset <Target>`  
+Format:  
+`Conversation Reset`  
+`Conversation Reset <Target>`    
 
-- Target: A target specifying what to reset. Can also directly be a `'Group Name'`.
+- Target: A target specifying what to reset. Can also directly be a `'Group Name'`. When no target is specified resets the current group or extra role.
 
 ## Host Information
 
