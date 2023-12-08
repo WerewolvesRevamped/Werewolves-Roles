@@ -21,6 +21,6 @@ Passive Start Day: `Fox` Choice Creation:
     ‣ Compound:
       ◦ Immediate Day:
         · Process: Role Investigate @Selection (SD, WD)
-        · Evaluate: Target @Result
+        · Evaluate: Target @Result (Role)
       ◦ Passive Start Night: Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
 Immediate Day: `Fox` Choice Choose @Chosen
