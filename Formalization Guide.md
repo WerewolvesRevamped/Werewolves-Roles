@@ -711,9 +711,12 @@ Format:
 Each game element (role, group, team, etc) has a counter. The counting ability type manipulates this counter.
 
 Format:  
-`Increment Counter for <Target>` (increments the counter)  
-`Decrement Counter for <Target>`(decrement the counter)  
-`Set Counter to '<Value>' for <Target>` (set the counter)  
+`Increment Counter` (increments own counter)  
+`Decrement Counter` (decrements own counter)   
+`Set Counter to '<Value>'` (set own counter)   
+`Increment Counter for <Target>` (increments a counter)  
+`Decrement Counter for <Target>`(decrement a counter)  
+`Set Counter to '<Value>' for <Target>` (set a counter)  
 
 - Target: A target type, specifying who's counter to manipulate
 - Value: A numeric value specifying a new counter value
