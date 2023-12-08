@@ -557,16 +557,17 @@ As a result of a Whispering, a whispering connection is opened.
 #### Joining
 
 Format:  
-`Join '<GroupName>'`  
-`Join '<GroupName>' as '<MembershipType>'`  
+`Join '<GroupName>' (<Duration>)`  
+`Join '<GroupName>' as '<MembershipType>' (<Duration>)`  
 `Leave '<GroupName>'`
-`Add <Target> to '<GroupName>'`  
-`Add <Target> to '<GroupName>' as '<MembershipType>`  
+`Add <Target> to '<GroupName>' (<Duration>)`  
+`Add <Target> to '<GroupName>' as '<MembershipType> (<Duration>)`  
 `Remove <Target> from '<GroupName>'`  
 
 - GroupName: The name of a defined group
 - MembershipType: Either `Member`, `Owner` or `Visitor`. Defaults to `Member`when not specified.
 - Target: A target type, specifying the player that gets added to the group
+- Duration: A duration type, specifying for how long the membership lasts. Defaults to `~Persisent`, leave out if unnecessary.
 
 As a result of a Joining the <Target> receives a `Group Membership` attribute.
 
