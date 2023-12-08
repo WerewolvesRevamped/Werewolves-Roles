@@ -419,7 +419,9 @@ Select players by a certain attribute of them or their role.
 - `@(Role:<Role>)`: Uses all players that have the `<Role>` role
 - `@(Cat:<Category>)`: Uses all players who's role is in the `<Category>` category
 
-These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`
+These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`  
+
+You can also use a not operation by using `!` after `:`, e.g. to select all non-townsfolk aligned players: `@(Align:!Townsfolk)`  
 
 __Limited Target Types__   
 These target types are only available in some contexts:
