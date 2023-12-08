@@ -1,8 +1,9 @@
-# A guide on how to formalize roles/groups/teams/attributes
+# A guide on how to formalize all the WWR game elements
 
 ## Contents
 
 - [Basics](#basics)
+- [Game Elements](#game-elements)
 - [Role](#role)
 - [Teams](#teams) 
 - [Groups](#groups)
@@ -70,6 +71,19 @@ In cases where lists within lists within lists are used, use the following forma
     ◦ Level 3
       · Level 4
 ```
+
+## Game Elements
+
+The game consists out of passive and active game elements. Active elements can be modified, while passive elements remain static.
+
+The following game elements exist:
+- Players (Active): Players consist out of roles (primary role and extra roles), their identity (person and ingame identity), player attributes, their living status (dead or alive), their alignment (always the same as the role's team for non-unaligned players), a target and a counter.
+- Roles (Passive): Roles consist out of a team, a category, a class, abilities and role attributes
+- Teams (Passive): Teams consist out of a class, team wide abilities and a counter
+- Groups (Active): Groups consist out of a team, group wide abilities and a counter
+- Polls (Active): Polls consist out of a type and votable options
+- Attributes (Active): Attributes consist out of several values such as duration, owner role, owner name and custom values
+- Abilities (Passive): Abilities consist out of an ability type and various parameters
 
 ## Role
 
