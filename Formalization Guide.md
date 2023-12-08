@@ -126,10 +126,12 @@ When using several instance of the same group they can be refered to as `<Group 
 ## Polls
 ```
 **<Poll Name>** | Poll
-[<Poll Ability List> | No Abilities]
+Available Options: <Options>
+Allowed Voters: <Voters>
 ```
 
-Polls use the same general format as roles. Many trigger types are not compatible with polls.
+- Options: A comma separated list of votable options. May contain one or more selectors.
+- Voters: A comma separated list of allowed voters. May contain one or more selectors.
 
 
 ## Attributes
@@ -413,7 +415,8 @@ __General Target Types__
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
-- `@All`: Uses all players
+- `@All`: Uses all living players
+- `@Dead`: Uses all dead players
 
 __Advanced Target Types__  
 Select players by a certain attribute of them or their role.
