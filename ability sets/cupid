@@ -2,6 +2,9 @@
 On Death:
   • True Kill @Target
   • Reveal `Cupid @Self died, killing Lover @Target` to #story_time
+On @Target Death:
+  • True Kill @Self
+  • Reveal `Lover @Target died, killing Cupid @Self` to #story_time
 Passive:
   • (@Target->Alignment is `Coven`) or (@Target->Role is `Hag`): Role Change @Self to `Cupid Hag`
   • @Target->Alignment is `Hell`: Role Change @Self to `Demonic Cupid`
