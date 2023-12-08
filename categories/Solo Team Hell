@@ -9,6 +9,7 @@ __Roles__
 
 __Formalized__
 Win Condition: @(Attribute:Soulless)
-Inherit: `Soulless`
-~Smth for increase soul count by 1
-Starting: Join `Hell`
+Starting:
+  • Join `Hell`
+  • Apply `Soulless` to @Self
+  • Increment Counter for `Hell`
