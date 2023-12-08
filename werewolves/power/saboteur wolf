@@ -9,3 +9,6 @@ Sabotaging is an immediate ability.
 
 __Simplified__
 Each night, the Saboteur Wolf may select one player to disqualify from the next day's public election. If voted for, they will not be elected. 
+
+__Formalized__
+Immediate Night: Manipulate Lynch Poll (@Selection is 'Disqualified') [Succession: No Target Succession]
