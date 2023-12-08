@@ -14,3 +14,11 @@ If several Wisps exist when the last member of the pyro channel dies, all of the
 __Simplified__
 The Wisp may visit one person each day, killing them if powdered or powdering them if not.
 The Wisp is a member of the pyro team, but not a member of the pyro channel. The Wisp cannot be ignited.
+
+__Formalized__
+Immediate Day: [Selection: not self]
+  • not (@Selection has `Powdered`): Apply `Powdered` to @Selection (~Persistent)
+  • Otherwise: Target @Selection (Player)
+End Day:
+  • @Target exists: Attack @Target
+  • Otherwise: Learn `You powdered`
