@@ -553,7 +553,6 @@ As a result of a Protecting the <Target> receives a `Defense` attribute.
 Format:  
 `Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)  
 `Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)  
-`Remove '<Attribute>' applied by <Target> from <Target>` (Remove a custom or standard attribute applied by a certain player)  
 
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
