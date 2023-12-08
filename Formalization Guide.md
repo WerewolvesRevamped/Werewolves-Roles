@@ -52,6 +52,7 @@
     - [Disband](#disband)
     - [Counting](#counting)
     - [Conversation Reset](#conversation-reset)
+    - [Cancel](#cancel)
 - [Host Information](#host-information)
 - [Utility Functions](#utility-functions)
 
@@ -766,6 +767,15 @@ Format:
 `Conversation Reset <Target>`    
 
 - Target: A target specifying what to reset. Can also directly be a `'Group Name'`. When no target is specified resets the current group or extra role.
+
+---
+#### Cancel
+
+Within `On Visit` triggers you can use `Cancel` to cancel the visit.
+
+Format:  
+`Cancel` (Cancels the visit with a resulting failure)  
+`Cancel with [Failure|Success|'<Custom Feedback>']` (Cancels the visit with specific feedback)  
 
 ## Host Information
 
