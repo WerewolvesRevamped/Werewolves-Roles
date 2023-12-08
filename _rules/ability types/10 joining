@@ -8,7 +8,7 @@ Roles which have a Joining ability that does not grant them membership of a prim
 Players can betray their group if their role changes (e.g. by turning undead), but they will still remain a member of the group.
 
 There are three types of group membership:
-• Member: The default group membership. If no members or owners are left, the group is immediately disbanded.
+• Member: The default group membership. If no members or owners are left, the group is immediately disbanded. When a Member changes roles, they instead become a Visitor.
 • Owner: If the last owner of a group dies, the group is immediately disbanded. Groups do not need to have an owner.
 • Visitor: If only visitors are left, the group is immediately disbanded.
 
