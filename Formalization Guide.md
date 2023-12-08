@@ -537,7 +537,7 @@ Format:
 `Manipulate <Target>'s '<Subtype>' by '<Value>' (<Duration>)` (relative manipulation)  
 
 - Target: A target type, specifying who is being manipulated
-- Subtype: `public voting power`, `private voting power` or `public starting votes` (also `lynch starting votes` and `election starting votes`)
+- Subtype: `public voting power`, `special public voting power`, `private voting power` or `public starting votes` (also `lynch starting votes` and `election starting votes`)
 - Value: A target type, specifying the amount of votes
 - Duration: A duration type, specifying for how long the vote manipulation lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
