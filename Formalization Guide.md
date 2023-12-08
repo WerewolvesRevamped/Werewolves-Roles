@@ -252,7 +252,7 @@ Trigger types can be one of the following:
 - `On [Passive|Partial] Defense` for an ability that triggers when a passive or partial defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack)
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
-- `On Poll Closed` triggers when a poll created by the current player through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
+- `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 
 ----
 #### Action Restrictions
