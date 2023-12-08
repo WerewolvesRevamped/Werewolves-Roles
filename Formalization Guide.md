@@ -121,6 +121,8 @@ Teams use the same general format as roles. Some trigger types are not compatibl
 Groups use the same general format as roles. Some trigger types are not compatible with groups.
 When a group creates a poll, a random voting member is selected to execute the resulting ability. 
 
+When using several instance of the same group they can be refered to as `<Group Name>:<Identifier>`, identifier may be a role/player/text/etc and is not visible to the members.
+
 ## Polls
 ```
 **<Poll Name>** | Poll
