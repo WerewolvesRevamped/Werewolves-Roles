@@ -417,7 +417,7 @@ Role attributes are defined the same way as other attributes, but operate differ
 Within abilities a selection by the player often affects the execution of the abilities. We use target types to refer to the player, their selection or similar. The following target types exist:
 
 __General Target Types__  
-- `@Self`: Uses the player who this ability belongs to, or when using it inside a group, the current group
+- `@Self`: Uses the player who this ability belongs to, or when using it inside a group, the current group, or when inside an attribute the player who has the attribute
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@Target`: Uses the current target set by the player
@@ -449,6 +449,7 @@ These target types are only available in some contexts:
 - `@Winner`: Set to the winner of the poll in `On Poll Closed` trigger
 - `@Chosen`: Set to the choice chosen in a choice chosing
 - `@Voters`: Set to all voters for the winning player in `On Lynch` and `On Election`
+- `@ThisAttr`: Set to the current attribute instance when inside an attribute
 
 #### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
