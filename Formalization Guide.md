@@ -284,6 +284,8 @@ May be one of the following:
 - Dynamic Scaling: Amount of action usages depend on total player count
   - `[Total|Living] Players/<Value>` the action can be used exactly as many times as the player count divided by the specified `Value`, rounded down
   - `[Total|Living] Players: <Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses. The default is always 1, so in situations with two cases, where the count for one case is 1, it suffices to specify the other case.
+- Phase Specific Scaling: The amount of action usages depends on the phase:
+  - `Even: <Value>, Odd: <Value>` to specify different multiplicities of ability use in even and odd nights. Set `<Value>` to one of the other scaling types, e.g. `Even: x1, Odd: x2`
 
 ----
 #### Action Compulsion
