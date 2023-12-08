@@ -17,3 +17,4 @@ When there are less than 15 players, they instead get 2 votes on the public poll
 __Formalized__
 Immediate Night: Add `Lynch` Poll ⟨Living Players: >15 ⇒ 1⟩
 Passive: Manipulate @Self's `special public voting power` to `1` ⟨Living Players: ≤15 ⇒ 1⟩
+End Phase: Revoke `Guardian` from @Self
