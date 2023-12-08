@@ -128,13 +128,13 @@ When using several instance of the same group they can be refered to as `<Group 
 **<Poll Name>** | Poll
 Available Options: <Options>
 Allowed Voters: <Voters>
-[<Poll Opening Ability>]
+[<Poll Opening Trigger>: Create Poll]
 [On Poll Closed: <Poll Close Ability>]
 ```
 
 - Options: A comma separated list of votable options. May contain one or more selectors.
 - Voters: A comma separated list of allowed voters. May contain one or more selectors.
-- Poll Opening Ability: The poll may open itself through a poll manipulation
+- Poll Opening Trigger: The poll may open on a specified trigger type
 - Poll Closed Ability: An ability to execute on poll closing
 
 
