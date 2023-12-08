@@ -12,6 +12,5 @@ There are three types of group membership:
 • Owner: If the last owner of a group dies, the group is immediately disbanded. Groups do not need to have an owner.
 • Visitor: If only visitors are left, the group is immediately disbanded.
 
-
 __Simplified__
 Joining is an ability type that grants a player a group membership.
