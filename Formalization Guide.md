@@ -134,7 +134,7 @@ Allowed Voters: <Voters>
 
 - Options: A comma separated list of votable options. May contain one or more selectors.
 - Voters: A comma separated list of allowed voters. May contain one or more selectors.
-- Poll Opening Trigger: The poll may open on a specified trigger type
+- Poll Opening Trigger: The poll may open on a specified trigger type. Additional abilities may be executed as part of this trigger.
 - Poll Closed Ability: An ability to execute on poll closing
 
 
