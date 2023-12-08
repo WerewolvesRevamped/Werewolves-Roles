@@ -12,6 +12,7 @@ __Simplified__
 Each night the Pyromancer may either powder or ignite all currently powdered people. The Pyromancer is a member of the pyro team and channel. 
 
 __Formalized__
+Starting: Join `Pyros`
 Passive Start Night: `Pyromancer` Choice Creation: 
   • `Powder`:
     ‣  Immediate Night: Apply `Powdered` to @Selection (~Persistent)
@@ -19,4 +20,5 @@ Passive Start Night: `Pyromancer` Choice Creation:
     ‣ Passive End Night:
       ◦ Attack @(Attr:Powdered,Align:!Pyro)
       ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+      ◦ Reveal `You were ignited` to @(Attr:Powdered,Align:Pyro)
 Immediate Night: `Pyromancer` Choice Choose @Chosen
