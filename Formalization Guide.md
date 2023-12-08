@@ -678,6 +678,7 @@ Format:
 
 Format:  
 `Role Change <Target> to '<Role>'` (Change a player's role)  
+`Alignment Change <Target> to '<Alignment>'` (changes a player's alignment - only valid of unaligned players)
 `Group Change <Target> to '<Group>'` (Change a group's name, but not member roles)  
 
 - Target: A target type, specifying which player's role to change
