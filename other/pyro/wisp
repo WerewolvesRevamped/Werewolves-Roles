@@ -23,3 +23,4 @@ End Day:
   • (@Target exists) and not (@Target->Alignment is `Pyro`): Attack @Target
   • (@Target exists) and (@Target->Alignment is `Pyro`): Learn `Ignition failed on @Target`
   • Otherwise: Learn `You powdered`
+Passive: not (@(Group:Pyros) exists): Role Change @Self to `Pyromancer`
