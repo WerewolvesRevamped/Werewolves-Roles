@@ -13,5 +13,6 @@ The Cult Leader shares a secret channel with the other cultists.
 After Night 1, the cult can vote to attack one player each night. When the Cult Leader dies, the cult is disbanded.
 
 __Formalized__
+Unique Role
 Passive Start Night: Create `Cult` Poll [Temporal: Night 2+]
 On Poll Closed: Attack @Winner 
