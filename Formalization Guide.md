@@ -464,6 +464,7 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->OriginalRole`, to get the original role(s) of a player
 - `<TargetType>->OwnerPlayer`, to get the owner player of an attribute
 - `<TargetType>->OwnerRole`, to get the owner role of an attribute
+- `<TargetType>->Value1`, to get the first custom value of an attribute
 
 Property access can be chained such as `@Target->Role->Category`
 
