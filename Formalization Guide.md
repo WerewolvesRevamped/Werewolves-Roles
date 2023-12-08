@@ -271,7 +271,10 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Quantity: <Value>`, may only used a maximum of `<Value>` times
   - `Quantity: Total Players/<Value>`, may only be used a maximum of `round(TotalPlayerCount/<Value>)` amount of times.
 - Target Restrictions:
-  - `Target: exists`, requires the player's target to exist 
+  - `Target: exists`, requires the player's target to exist
+- Selection Restrictions:
+  - `Selection: in <Target>`, requires the selection (i.e. `@Selection`) to be inside a given target type
+  - `Selection: not in <Target>`, requires the selection (i.e. `@Selection`) to NOT be inside a given target type
 
 ----
 #### Action Scaling
