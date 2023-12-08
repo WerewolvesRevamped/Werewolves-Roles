@@ -16,7 +16,7 @@ Starting:
   • Grant `Test Subject` to %Player1% 
   • Grant `Test Subject` to %Player2% 
   • Join `Laboratory`
-Target: Target @Selection (List: %Player1%, %Player2%) {Forced}
+Immediate: Target @Selection (List: %Player1%, %Player2%) {Forced}
 On Death: 
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Reveal `Mad Scientist @Self killed @Target` to #story_time
