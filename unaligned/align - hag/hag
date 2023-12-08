@@ -13,7 +13,7 @@ The Hag can win with any team, unless that team has wronged the coven, but canno
 The Hag will turn into a specific type of hag at the end of the day.
 
 __Formalized__
-Immediate Day: Target @Role [List: Vicious Hag, Cautious Hag, Prophetic Hag]
+Immediate Day: Target @Role (List: Vicious Hag, Cautious Hag, Prophetic Hag)
 Passive End Day: [Temporal: Day 0]
   • @Target is `Vicious Hag`: Role Change @Self to randomize(Cautious Hag, Prophetic Hag)
   • @Target is `Cautious Hag`: Role Change @Self to randomize(Vicious Hag, Prophetic Hag)
