@@ -26,3 +26,4 @@ Immediate Night:
   • Evaluate:
     ‣ @SecondarySelection->PublicVotingPower > `0`: Manipulate @SecondarySelection's `public voting power` by `-1` (~NextDay)
     ‣ Otherwise:  Learn `@SecondarySelection could not be manipulated`
+• Passive End Day: Conversation Reset `Grandma's House`
