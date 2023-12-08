@@ -50,6 +50,7 @@
     - [Ascend / Descend](#ascend-descend)
     - [Disband](#disband)
     - [Counting](#counting)
+    - [Conversation Reset](#conversation-reset)
 - [Host Information](#host-information)
 - [Utility Functions](#utility-functions)
 
@@ -723,6 +724,15 @@ Format:
 
 - Target: A target type, specifying who's counter to manipulate
 - Value: A numeric value specifying a new counter value
+
+---
+#### Conversation Reset
+
+Removes all messages from a group or extra role.
+
+Format: `Conversation Reset <Target>`  
+
+- Target: A target specifying what to reset. Can also directly be a `'Group Name'`.
 
 ## Host Information
 
