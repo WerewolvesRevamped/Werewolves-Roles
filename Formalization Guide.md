@@ -749,6 +749,8 @@ Host Information comes in the following forms:
 - `%Player:<Target>%`, an arbitrary player from a provided target type
 - `%Option1|Option2|Option3%`, one arbitrary option out of several options
 
+Use `%Role1%`, `%Role2%` / `%Player1%`, `%Player2`, etc when refering to several different host informations of the same type.
+
 ## Utility Functions
 
 Utility functions apply an operation on an input.
