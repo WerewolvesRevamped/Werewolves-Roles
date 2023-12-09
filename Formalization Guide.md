@@ -449,6 +449,7 @@ Select players by a certain attribute of them or their role.
 - `@(Align:<Alignment>)`: Uses all players that are of the `<Alignment>` alignment
 - `@(Role:<Role>)`: Uses all players that have the `<Role>` role
 - `@(Cat:<Category>)`: Uses all players who's role is in the `<Category>` category
+- `@(Class:<Class>)`: uses all player who are part of the specified role class (Townsfolk, Werewolf, Solo, Unaligned, Extra)
 
 These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`  
 
