@@ -125,6 +125,14 @@ Whe refering to a group you may use `#<GroupName>`.
 
 When using several instance of the same group they can be refered to as `#<Group Name>:<Identifier>`, identifier may be a role/player/text/etc and is not visible to the members.
 
+## Public Channels
+
+The following public channels exist and can be referenced like groups:
+- #story_time
+- #town_square
+- #tavern
+- #voting_booth
+
 ## Polls
 ```
 **<Poll Name>** | Poll
