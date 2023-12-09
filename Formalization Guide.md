@@ -451,9 +451,9 @@ Within abilities a selection by the player often affects the execution of the ab
 __General Target Types__  
 - `@Self`: Uses the player who this ability belongs to, or when using it inside a group, the current group, or when inside an attribute the player who has the attribute
 - `@Selection`: Uses the player/role/etc selected in the action
-- `@Selection:<Type>`: Specifies a selection must be from a specific type. Can be `Player`, `Role`, `Attribute` or `List: <List Elements>`.
+- `@Selection[<Type>]`: Specifies a selection must be from a specific type. Can be `Player`, `Role`, `Attribute` or `List: <List Elements>`.
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
-- `@SecondarySelection:<Type>`: See `@Selection:<Type>`
+- `@SecondarySelection[<Type>]`: See `@Selection:<Type>`
 - `@Target`: Uses the current target set by the player
 - `@All`: Uses all living players
 - `@Dead`: Uses all dead players
