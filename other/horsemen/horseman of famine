@@ -11,4 +11,8 @@ Each night, the Horseman of Famine may doom two players, disguising them as a Ho
 
 __Formalized__
 Inherit: `Horsemen`
-Immediate Night: Apply `Doomed` to @Selection (~Persistent) (Famine) ⟨x2⟩
+Immediate Night:
+  • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (Famine) ⟨x2⟩
+  • @Selection->Alignment is `Horsemen`:
+    ‣ Join `Horsemen`
+    ‣ Add @Selection to `Horsemen`
