@@ -3,6 +3,6 @@ __Basics__
 The attribute of the underworld team. Demonized players will turn into an undead if they die during the night.
 
 __Formalized__
-Starting: Protect @Self from `Kills` through `Recruitment Defense` during Night (~UntilUse)
+Starting: Protect @Self from `Kills` through `Recruitment Defense` during Night (~UntilUseAttribute)
 On Recruitment Defense: Role Change @Self to `Undead`
-On Role Change: (@Self->Alignment is not `Underworld`) and not (@Self has `Defense:Recruitment:@Self`): Protect @Self from `Attacks` through `Recruitment Defense` during Night (~Persistent)
+On Role Change: (@Self->Alignment is not `Underworld`) and not (@Self has `Defense:Recruitment:@Self`): Protect @Self from `Attacks` through `Recruitment Defense` during Night (~UntilUseAttribute)
