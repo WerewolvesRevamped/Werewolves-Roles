@@ -12,7 +12,7 @@ Each night, the Firebug may ward one player. If a warded player is attacked, the
 The Firebug is a member of the pyro team and channel.
 
 __Formalized__
-Starting: Join `Pyros`
+Starting: Join #Pyros
 Compound:
 - Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) 
 - Afterwards: Apply `Warded` to @Selection (~Phase)
