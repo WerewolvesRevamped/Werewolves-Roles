@@ -323,7 +323,9 @@ Marked by curly brackets: {}
 
 Action Compulsion can be `Forced` for forced actions or blank otherwise. By default a forced action randomly selects a target where necessary. If a forced action should select a specific target use `Forced: <Default Target>` instead.
 
-An an action may also be marked as `{Direct}` to make it unaffected by redirections.
+An action may also be marked as `{Direct}` to make it unaffected by redirections.
+
+An action may also be marked as `{Repeating}` in which case it can be repeated, assuming the restrictions allow it.
 
 ----
 #### Compound Actions
