@@ -299,7 +299,7 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Selection: not self`, requires the selection to not be the current player
 - Counter Restrictions:
   - `Counter: [>|<|=] <Value>`, current element's counter   
-  - `Counter: <Counter> [>|<|=] <Value>`, a specific counter   
+  - `Counter: <Target> [>|<|=] <Value>`, a specific target's counter   
 
 ----
 #### Action Scaling
