@@ -11,4 +11,8 @@ Each night, the Horseman of Death may doom a player, killing that player at the 
 
 __Formalized__
 Inherit: `Horsemen`
-Immediate Night: Apply `Doomed` to @Selection (~Persistent) (Death)
+Immediate Night:
+  • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (Death)
+  • @Selection->Alignment is `Horsemen`:
+    ‣ Join `Horsemen`
+    ‣ Add @Selection to `Horsemen`
