@@ -274,6 +274,7 @@ Trigger types can be one of the following:
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
+- `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
 
 ----
 #### Action Restrictions
@@ -530,6 +531,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 - `~NextDay`, `~NextNight`: Lasts until the end of the next day/night
 - `~UntilUse`: Lasts until the attribute is used. (For disguises this is when it affects an investigation. For defenses this is when it defends from a killing)
 - `~UntilSecondUse`: Lasts until the attribute is used twice
+- `~Attribute`: Last as long as the originating attribute is applied
 
 ----
 ----
