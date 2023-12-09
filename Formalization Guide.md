@@ -129,7 +129,7 @@ When using several instance of the same group they can be refered to as `<Group 
 Available Options: <Options>
 Allowed Voters: <Voters>
 [Show Voters: [Yes|No]]
-[<Poll Opening Trigger>: Create Poll]
+[<Poll Opening Trigger>: Create Poll in <Location>]
 [On Poll Closed: <Poll Close Ability>]
 ```
 
