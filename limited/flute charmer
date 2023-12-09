@@ -19,3 +19,4 @@ Starting: Join `Flutes`
 Immediate Day:
   • Apply `Charmed` to @Selection [Attribute: @Selection lacks `Enchanted`]
   • Role Investigate @Selection (SD, WD)
+Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
