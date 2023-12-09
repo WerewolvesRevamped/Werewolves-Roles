@@ -17,5 +17,5 @@ An enchanted player will lose the disguise given to them by Flute Charmer.
 __Formalized__
 Starting: Join `Flutes`
 Immediate Day:
-  • Apply `Charmed` to @Selection
+  • Apply `Charmed` to @Selection [Attribute: @Selection lacks `Enchanted`]
   • Role Investigate @Selection (SD, WD)
