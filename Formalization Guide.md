@@ -410,6 +410,16 @@ If a condition triggers there are three options:
 - Execute another `<Ability>` and return that ability's feedback
 - Use `<Target>` to return the feedback of one of the original abilities
 
+
+
+Another form of complex actions are for each actions, which run abilities for each player inside a target.
+
+For Each Format:
+```
+For Each <Target>:
+  • <Ability>
+```
+
 ---
 ---
 ### Ability Set
