@@ -9,4 +9,4 @@ __Role Categories__
 <?CategoryKilling:> Townsfolk Killing (TK)
 
 __Formalized__
-Win Condition: @(Align:Townsfolk)
+Win Condition: @(Align:Townsfolk), @(Class:Unaligned)
