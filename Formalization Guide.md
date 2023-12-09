@@ -112,6 +112,8 @@ Win Condition: A comma separated list of target types. The team wins when all re
 
 Teams use the same general format as roles. Some trigger types are not compatible with teams.
 
+When refering to a team you may use `&<TeamName>`.
+
 ## Groups
 ```
 **<Group Name>** | <Related Team Name> Group
@@ -121,7 +123,7 @@ Teams use the same general format as roles. Some trigger types are not compatibl
 Groups use the same general format as roles. Some trigger types are not compatible with groups.
 When a group creates a poll, a random voting member is selected to execute the resulting ability. 
 
-Whe refering to a group you may use `#<GroupName>`.
+When refering to a group you may use `#<GroupName>`.
 
 When using several instance of the same group they can be refered to as `#<Group Name>:<Identifier>`, identifier may be a role/player/text/etc and is not visible to the members.
 
@@ -487,6 +489,7 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->OwnerPlayer`, to get the owner player of an attribute
 - `<TargetType>->OwnerRole`, to get the owner role of an attribute
 - `<TargetType>->Value1`, to get the first custom value of an attribute
+- `<TargetType>->Members`, to get the members of a team
 
 Property access can be chained such as `@Target->Role->Category`
 
