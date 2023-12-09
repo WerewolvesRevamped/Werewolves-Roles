@@ -15,7 +15,7 @@ At the beginning of each night, the Tanner is informed if any living players cur
 
 __Formalized__
 Immediate Day: Weakly Disguise @Selection as @SecondarySelection (~NextNight) ⟨2⟩
-Passive Night Start: Attribute Investigate @(Attr:Disguised:@Self,Group:Wolfpack) Count
+Passive Night Start: Investigate @(Attr:Disguised:@Self,Group:Wolfpack) Count
   • Result is 0: `None of your living disguised players are in the wolfpack`
   • Otherwise: `At least one of your living disguised players are in the wolfpack`
   
