@@ -5,4 +5,8 @@ __Members__
 <?Baker:> Baker
 
 __Formalized__
+Starting: Set Counter to 1
+On @(GroupMembership:Baker) Death: [Counter: > 0]
+  • Add `Wolfpack` Poll
+  • Decrement Counter
 On Disbandment: Group Change @Self to `Butchers`
