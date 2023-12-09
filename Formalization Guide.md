@@ -488,6 +488,11 @@ These target types are only available in some contexts:
 - `@RoleChanger`: Set to the player who caused a role change
 - `@Ind`: Set to one player of a selector inside a for each complex action
 
+__Team Specific Selectors:__
+- `&<TeamName>`: Select a specific team
+- `&(Attr:<Attribute>)`: Select all teams with a specific attribute
+- `&(Attr:!<Attribute>)`: Select all teams without a specific attribute
+
 #### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
 
