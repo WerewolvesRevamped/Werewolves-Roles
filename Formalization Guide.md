@@ -855,7 +855,6 @@ Host Information comes in the following forms:
 - `%Role:<Target>%`, an arbitrary role from a provided target type
 - `%Player%`, an arbitrary player
 - `%Player:<Target>%`, an arbitrary player from a provided target type
-- `%Player:<Target>{<Value>}%`, several arbitrary players from a provided target type. `<Value>` may be a number or a `calc` utility function.
 - `%Option1|Option2|Option3%`, one arbitrary option out of several options
 - `%PartialRoleList%`, contains an arbitrary amount of information about the role list
 
