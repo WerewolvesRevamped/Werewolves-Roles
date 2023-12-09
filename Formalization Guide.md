@@ -466,6 +466,7 @@ These target types are only available in some contexts:
 - `@Chosen`: Set to the choice chosen in a choice chosing
 - `@Voters`: Set to all voters for the winning player in `On Lynch` and `On Election`
 - `@ThisAttr`: Set to the current attribute instance when inside an attribute
+- `@Chooser`: Set to the player who chose a choice through choice choosing in a choice inside of choice creations
 
 #### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
@@ -745,7 +746,7 @@ Choice Creation Format:
 - Name: Gives the choice a name to reference later
 - Target|Location: Optional, specifies to which player, target type or location the choice should be sent. If not specified the current player chooses.
 - Option Name: The names for each option which are what can be selected by choice choosing
-- Resulting Ability: Abilities that result after a choice choosing, executed by the role who created the choice
+- Resulting Ability: Abilities that result after a choice choosing, executed by the role who created the choice. Use `@Chooser` to reference the person who choice chose here
 
 Choice Choosing Format:
 ```
