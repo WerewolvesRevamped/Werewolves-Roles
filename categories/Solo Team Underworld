@@ -6,5 +6,5 @@ __Roles__
 <?Undead:> Undead (T)
 
 __Formalized__
-Win Condition: @(Alignment:Underworld)
+Win Condition: @(Alignment:Underworld), @(Class:Unaligned)
 Starting: Join #Underworld
