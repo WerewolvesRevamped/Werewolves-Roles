@@ -14,6 +14,6 @@ After Night 1, the cult can vote to attack one player each night. When the Cult 
 
 __Formalized__
 Unique Role
-Starting: Join `Cult` as `Owner`
+Starting: Join #Cult as `Owner`
 Passive Start Night: Create `Cult` Poll in #cult [Temporal: Night 2+]
 On Poll Closed: Attack @Winner 
