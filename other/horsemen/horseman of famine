@@ -8,3 +8,7 @@ The Horsemen win when everyone else is dead.
 
 __Simplified__
 Each night, the Horseman of Famine may doom two players, disguising them as a Horseman. If they attempt to doom another Horseman, they instead join a shared channel. When all players are doomed, each Horseman may attack a player every night. The Horsemen win when everyone else is dead.
+
+__Formalized__
+Inherit: `Horsemen`
+Immediate Night: Apply `Doomed` to @Selection (~Persistent) (Famine) ⟨x2⟩
