@@ -456,10 +456,11 @@ __General Target Types__
 - `@SecondarySelection[<Type>]`: See `@Selection:<Type>`
 - `@Target`: Uses the current target set by the player
 - `@All`: Uses all living players
+- `@Others`: Uses all living players except for `@Self`
 - `@Dead`: Uses all dead players
 
 __Advanced Target Types__  
-Select players by a certain attribute of them or their role.
+Select living players by a certain attribute of them or their role.
 - `@(Attr:<Attribute>)`: Uses all players that have the `<Attribute>` attribute (e.g. `@(Wolfish)`)
 - `@(Group:<Group>)`: Uses all players that are part of the `<Group>` group
 - `@(Align:<Alignment>)`: Uses all players that are of the `<Alignment>` alignment
