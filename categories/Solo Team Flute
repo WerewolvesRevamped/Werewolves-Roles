@@ -8,5 +8,5 @@ __Roles:__
 <?FluteCharmer:> *Flute Charmer*
 
 __Formalized__
-Win Condition: @(Alignment:Flute Team), @(Attribute:Enchanted)
+Win Condition: @(Alignment:Flute Team), @(Attribute:Enchanted), @(Class:Unaligned)
 Starting: Join #Flute-Team
