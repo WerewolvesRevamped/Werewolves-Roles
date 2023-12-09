@@ -420,6 +420,8 @@ For Each <Target>:
   • <Ability>
 ```
 
+Inside For Each you may use `@Ind` to reference the individual player.
+
 ---
 ---
 ### Ability Set
@@ -484,6 +486,7 @@ These target types are only available in some contexts:
 - `@ThisAttr`: Set to the current attribute instance when inside an attribute
 - `@Chooser`: Set to the player who chose a choice through choice choosing in a choice inside of choice creations
 - `@RoleChanger`: Set to the player who caused a role change
+- `@Ind`: Set to one player of a selector inside a for each complex action
 
 #### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
