@@ -15,4 +15,4 @@ __Formalized__
 Passive Start Night: Join `Medium:@Self`
 Passive Start Day:
   • Leave `Medium:@Self`
-  • Create `Medium` Poll
+  • Create `Medium` Poll in #medium_question
