@@ -453,6 +453,7 @@ __General Target Types__
 - `@Selection`: Uses the player/role/etc selected in the action
 - `@Selection:<Type>`: Specifies a selection must be from a specific type. Can be `Player`, `Role`, `Attribute` or `List: <List Elements>`.
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
+- `@SecondarySelection:<Type>`: See `@Selection:<Type>`
 - `@Target`: Uses the current target set by the player
 - `@All`: Uses all living players
 - `@Dead`: Uses all dead players
