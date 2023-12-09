@@ -12,3 +12,8 @@ __Simplified__
 The Tanner and the wolfpack do not know each other.
 Each day, the Tanner may weakly disguise up to two players as any role.
 At the beginning of each night, the Tanner is informed if any living players currently disguised by them are in the wolfpack.
+
+__Formalized__
+Compound:
+  • Immediate Day: Weakly Disguise @Selection as @SecondarySelection (~NextNight) <2>
+  • Night Start: Attribute Investigate @Selection for `GroupMembership:Wolfpack`
