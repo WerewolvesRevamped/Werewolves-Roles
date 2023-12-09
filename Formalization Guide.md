@@ -108,7 +108,7 @@ Win Condition: <Target List>
 <Role Ability List>
 ```
 
-Win Condition: A comma separated list of target types. The team wins when all remaining players are either nonaligned or match one or more of the targets.
+Win Condition: A comma separated list of target types. The team wins when all remaining players match one or more of the targets.
 
 Teams use the same general format as roles. Some trigger types are not compatible with teams.
 
