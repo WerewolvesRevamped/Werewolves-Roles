@@ -9,4 +9,4 @@ __Roles__
 <?CupidHag:> *Cupid Hag (T)*
 
 __Formalized__
-Win Condition: @(Alignment:Coven), &(Attr:!Wronger)->Members
+Win Condition: &(Attr:!Wronger)->Members
