@@ -8,7 +8,7 @@ __Roles__
 <?Imp:> Imp (T)
 
 __Formalized__
-Win Condition: @(Attribute:Soulless)
+Win Condition: @(Attribute:Soulless), @(Class:Unaligned)
 Starting:
   • Join #Hell
   • Apply `Soulless` to @Self
