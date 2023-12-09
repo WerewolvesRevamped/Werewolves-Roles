@@ -8,4 +8,4 @@ __Roles__
 <?Firebug:> *Firebug*
 
 __Formalized__
-Win Condition: @(Alignment:Pyro)
+Win Condition: @(Alignment:Pyro), @(Class:Unaligned)
