@@ -9,4 +9,4 @@ __Roles__
 __Formalized__
 Win Condition: @(Attribute:Sleepless)
 Inherit: `Sleepless`
-Starting: Join `Nightmare`
+Starting: Join #Nightmare
