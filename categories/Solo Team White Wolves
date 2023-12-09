@@ -5,4 +5,4 @@ __Roles__
 <?WhiteWerewolf:> White Werewolf
 
 __Formalized__
-Win Condition: @(Alignment:White Wolves)
+Win Condition: @(Alignment:White Wolves), @(Class:Unaligned)
