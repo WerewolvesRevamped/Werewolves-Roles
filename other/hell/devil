@@ -31,3 +31,23 @@ When everyone is dead, unaligned, or soulless, the Devil wins.
 __Formalized__
 Unique Role
 Inherit: `Souls`
+Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: Citizen}
+Start Night:
+  • Grant `Wager Recipient` to @Selection [Attribute: @Selection lacks `Soulless`] {Direct}
+  • Whisper to #Wager-Recipient as `Devil` (~Phase)
+  • `Wager` Choice Creation for #Wager-Recipient
+    ‣ `Attack`:
+      ◦ Afterwards: Apply `Souless` to @Chooser (~Persistent)
+      ◦ Afterwards: Increment Counter for #hell  
+      ◦ End Night: @Selection->Alignment is not `Hell`: Attack @Selection
+    ‣ `Protect`:
+      ◦ Afterwards: Apply `Souless` to @Chooser (~Persistent)
+      ◦ Afterwards: Increment Counter for #hell  
+      ◦ Afterwards: Protect @Selection from `Attacks` through Active Defense (~Phase)
+    ‣ `Investigate`:
+      ◦ Process: Role Investigate @Selection (WD, SD)
+      ◦ Evaluate: Reveal `@Selection is @Result` to #Wager-Recipient
+      ◦ Role Investigate @Chooser (WD, SD) {Direct}
+    ‣ `Ignore`:
+      ◦ *Nothing*
+Passive End Night: Revoke `Wager Recipient` from @(Role:Wager Recipient)
