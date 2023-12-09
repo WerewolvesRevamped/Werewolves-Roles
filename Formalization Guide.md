@@ -557,7 +557,7 @@ Format:
 - Target: A target type, specifying who is protected.
 - KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches`, `Attacks & Lynches` or `All`
 - Selector: A target type, limits the protection to only work against certain players.
-- Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense` or `Partial Defense`
+- Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense`, `Partial Defense` or `Recruitment Defense`
   - Location: Either a channel (`#channelName`) or a target type
 - Phase: `Night` or `Day`, limits the protection to only be active during a certain phase. 
 - Duration: A duration type. Defaults to `~Permanent`, leave out if unnecessary.
