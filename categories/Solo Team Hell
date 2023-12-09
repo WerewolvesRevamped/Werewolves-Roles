@@ -10,7 +10,7 @@ __Roles__
 __Formalized__
 Win Condition: @(Attribute:Soulless)
 Starting:
-  • Join `Hell`
+  • Join #Hell
   • Apply `Soulless` to @Self
   • Increment Counter for `Hell`
 Passive: Loyalty to `Hell` (Alignment) 
