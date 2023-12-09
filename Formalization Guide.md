@@ -668,7 +668,7 @@ Poll Manipulations can affect polls that do not yet exist. For example, a poll m
 
 Format:  
 `Add <PollType> Poll` (Duplicate an existing poll)  
-`Create <PollType> Poll` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
+`Create <PollType> Poll in <Location>` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
 `Cancel <PollType> Poll` (Cancel the poll's resulting ability)  
 `Delete <PollType> Poll` (Remove a poll that would otherwise exist)  
 `Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
