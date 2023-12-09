@@ -15,5 +15,5 @@ If a demonized player is killed in the night, they will instead turn into an und
 The Vampire wins the game if all players are either Vampire, dead or undead.
 
 __Formalized__
-Starting: Join `Vampires`
+Starting: Join #Vampires
 Immediate Night: Apply `Demonized` to @Selection (~Persistent) [Selection: not in `Underworld`] ⟨Odd: x1, Even: x2⟩
