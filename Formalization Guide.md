@@ -492,6 +492,7 @@ __Team Specific Selectors:__
 - `&<TeamName>`: Select a specific team
 - `&(Attr:<Attribute>)`: Select all teams with a specific attribute
 - `&(Attr:!<Attribute>)`: Select all teams without a specific attribute
+- `&(Align:!<Alignment>)`: Select all teams except for a certain alignment
 
 #### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
