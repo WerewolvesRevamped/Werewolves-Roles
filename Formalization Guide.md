@@ -177,7 +177,7 @@ Disguise attributes have two additional values:
 #### Defense Attributes
 
 Defense attributes have four additional values:
-- Defense Subtype: Which type of defense is used (passive/partial/active/absence)
+- Defense Subtype: Which type of defense is used (passive/partial/active/absence/recruitment)
 - Killing Subtype: Which type of killing is defended against
 - Affected Players: A group of players for which the defense works (defaults to all players)
 - Affected Phase: Specifies if the defense is only active during day or night (defaults to both)
@@ -267,7 +267,7 @@ Trigger types can be one of the following:
 - `On Disbandment` for an ability that triggers when a group disbands
 - `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player)
 - `On [Mayor|Reporter|Guardian] Election` for an ability that triggers when a player is elected as any role (`On Election`) or as a specific role (Use `@Voters` to select all people that voted for the elected player)
-- `On [Passive|Partial] Defense` for an ability that triggers when a passive or partial defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack)
+- `On [Passive|Partial|Recruitment] Defense` for an ability that triggers when a passive, partial or recruitment defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack)
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
