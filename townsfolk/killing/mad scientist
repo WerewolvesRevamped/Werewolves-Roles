@@ -16,7 +16,7 @@ Unique Role
 Starting:
   • Grant `Test Subject` to %Player1% 
   • Grant `Test Subject` to %Player2% 
-  • Join `Laboratory`
+  • Join #Laboratory
 Immediate: Target @Selection (List: %Player1%, %Player2%) {Forced}
 On Death: 
   • Process: Attack @Target
