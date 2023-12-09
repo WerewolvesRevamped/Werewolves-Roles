@@ -1,5 +1,7 @@
 **Attribute Types**
-Attributes are applied by roles and they affect interactions between abilities. There are standard ones, and custom ones exclusive to a role or team. Standard Attributes can have a few additional values attatched.
+Attributes are applied by roles and they affect interactions between abilities. There are standard ones, and custom ones exclusive to a role or team. Attributes can have a few additional values attatched.
+
+[] list the additional values for attributes
 
 __Standard Attributes__
 Disguises [Disguise Role, Disguise Strength]
@@ -7,8 +9,6 @@ Defense [Defense Subtype (passive/partial/active/absence/recruitment), Killing S
 Manipulation [Manipulation Subtype (vote/poll), Manipulation Value]
 Group Membership [Group Name, Membership Type]
 Obstruction [Affected Abilities, Obstruction Feedback]
-
-() list the additional values for standard attributes
 
 __Main Custom Attributes__
 Wolfish
@@ -31,7 +31,7 @@ OracleSelected
 *PoisonedInactive*
 *Poisoned*
 *CureAvailable*
-*RavenInformation*
+*RavenInformation* [Visitor]
 *Raven*
 *Wronger*
 *Unwrongable*
