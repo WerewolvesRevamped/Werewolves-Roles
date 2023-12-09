@@ -14,3 +14,6 @@ __Simplified__
 The Jurors share a secret channel and know each other. During certain nights, the jury votes to investigate a player.
 If the jury successfuly investigates a non-town role, it is announced publically.
 The jury is disbanded if there are 1 or fewer Jurors left.
+
+__Formalized__
+Starting: Join `Jury`
