@@ -10,4 +10,4 @@ Horseman of Pestilence
 Horseman of War
 
 __Formalized__
-Win Condition: @(Alignment:Horsemen)
+Win Condition: @(Alignment:Horsemen), @(Class:Unaligned)
