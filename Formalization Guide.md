@@ -458,6 +458,7 @@ __General Target Types__
 - `@All`: Uses all living players
 - `@Others`: Uses all living players except for `@Self`
 - `@Dead`: Uses all dead players
+- `@DeadAlive`: Uses **all** players, both dead and alive
 
 __Advanced Target Types__  
 Select living players by a certain attribute of them or their role.
