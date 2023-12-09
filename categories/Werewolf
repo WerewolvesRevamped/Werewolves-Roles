@@ -9,5 +9,5 @@ __Role Categories__
 <?CategoryKilling:> Werewolf Killing (WK)
 
 __Formalized__
-Win Condition: @(Alignment:Werewolf)
+Win Condition: @(Alignment:Werewolf), @(Class:Unaligned)
 Inherit: `Wolfish`
