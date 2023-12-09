@@ -1,6 +1,8 @@
 **Coven**
 __Formalized__
 Starting: Strongly Disguise @Self as `Hag`
+On Visit [Role Change]:
+  • @Self has `Unwrongable`: Cancel with Failure
 On Killed:
   • not (@Attacker->Alignment) has `Wronger`:
     ‣ Reveal `Hags were wronged by @Attacker->Alignment` to #story_time
