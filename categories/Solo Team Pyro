@@ -1,5 +1,5 @@
 **Pyro Team**
-The team wins when all players are dead, unaligned or part of the pyro team. Members of the Pyro Team do not know each other at the start of the game.
+The team wins when all players are dead, unaligned or part of the pyro team. By default, members of the Pyro Team do not know each other at the start of the game.
 
 __Roles__
 <?Pyromancer:> Pyromancer
