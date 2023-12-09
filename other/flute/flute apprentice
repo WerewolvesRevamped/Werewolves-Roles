@@ -8,4 +8,11 @@ If no Flute Players remain, the Flute Apprentice turns into a Flute Player and l
 
 __Simplified__
 The Flute Apprentice becomes a Flute Player if none remain.
-Additionally, the Flute Apprentice can redirect the abilities of enchanted players.
+Additionally, the Flute Apprentice can redirect the abilities of enchanted players to a target of their choosing.
+
+__Formalized__
+Starting: Join `Flutes`
+Immediate: Target @Selection (Player) 
+Immediate: Target @Selection (Player) [Quantity: 1]
+Passive: Redirect `all` from @(Attr:Enchanted) to @Target
+Passive: not (@(Role:Flute Player) exists): Role Change @Self to Flute Player
