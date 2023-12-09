@@ -14,6 +14,8 @@ Each day, the Tanner may weakly disguise up to two players as any role.
 At the beginning of each night, the Tanner is informed if any living players currently disguised by them are in the wolfpack.
 
 __Formalized__
-Compound:
-  • Immediate Day: Weakly Disguise @Selection as @SecondarySelection (~NextNight) <2>
-  • Night Start: Attribute Investigate @Selection for `GroupMembership:Wolfpack`
+Immediate Day: Weakly Disguise @Selection as @SecondarySelection (~NextNight) ⟨2⟩
+Passive Night Start: Attribute Investigate @(Attr:Disguised:@Self,Group:Wolfpack) Count
+  • Result is 0: `None of your living disguised players are in the wolfpack`
+  • Otherwise: `At least one of your living disguised players are in the wolfpack`
+  
