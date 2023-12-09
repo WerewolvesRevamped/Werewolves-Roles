@@ -15,12 +15,12 @@ Each night, the Grandma may choose exactly two players. The next day, these sele
 __Formalized__
 Unique Role
 Starting:
-  • Whisper to `Grandma's House` as `Grandma`
+  • Whisper to #Grandma's-House as `Grandma`
   • Manipulate @Self's `public voting power` to `0`
 Immediate Night:
   • Manipulate @Self's `public voting power` to `2` (~NextDay)
-  • Add @Selection to `Grandma's House` (~NextDay)
-  • Add @SecondarySelection to `Grandma's House` (~NextDay)
+  • Add @Selection to #Grandma's-House (~NextDay)
+  • Add @SecondarySelection to #Grandma's-House (~NextDay)
   • Evaluate:
     ‣ @Selection->PublicVotingPower > `0`: Manipulate @Selection's `public voting power` by `-1` (~NextDay)
     ‣ Otherwise: Learn `@Selection could not be manipulated`
