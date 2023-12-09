@@ -9,4 +9,6 @@ Starting: Set Counter to 1
 On @(GroupMembership:Baker) Death: [Counter: > 0]
   • Add `Wolfpack` Poll
   • Decrement Counter
-On Disbandment: Group Change @Self to `Butchers`
+On Betrayal:
+  • @(GroupMembership:Baker,Role:Bloody Butcher) exists: Group Change @Self to `Butchers`
+  • Otherwise: Disband
