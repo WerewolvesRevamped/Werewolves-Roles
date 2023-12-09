@@ -13,3 +13,9 @@ __Simplified__
 The Flute Charmer becomes a flute player if none remain.
 Additionally, once per day, the Flute Charmer can learn the role of a player and disguise them as flute player.
 An enchanted player will lose the disguise given to them by Flute Charmer.
+
+__Formalized__
+Starting: Join `Flutes`
+Immediate Day:
+  • Apply `Charmed` to @Selection
+  • Role Investigate @Selection (SD, WD)
