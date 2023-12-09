@@ -11,4 +11,4 @@ The Bloody Butcher is the disguised werewolf spy in the butcher group. They are 
 __Formalized__
 Inherit: `Pack Lycan`
 Starting: Strongly Disguise @Self as `Butcher`
-Starting: Join `Butchers`
+Starting: Join #Butchers
