@@ -531,7 +531,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 - `~NextDay`, `~NextNight`: Lasts until the end of the next day/night
 - `~UntilUse`: Lasts until the attribute is used. (For disguises this is when it affects an investigation. For defenses this is when it defends from a killing)
 - `~UntilSecondUse`: Lasts until the attribute is used twice
-- `~Attribute`: Last as long as the originating attribute is applied
+- `~Attribute`: Last as long as the originating attribute is applied, can only be used inside an attribute.
 
 ----
 ----
