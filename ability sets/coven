@@ -1,0 +1,19 @@
+**Coven**
+__Formalized__
+Starting: Strongly Disguise @Self as `Hag`
+On Killed:
+  • not (@Attacker->Alignment) has `Wronger`:
+    ‣ Reveal `Hags were wronged by @Attacker->Alignment` to #story_time
+    ‣ Apply `Wronger` to @Attacker->Alignment
+    ‣ Increment Counter
+On Lynch:
+  • For Each @Voters:
+    ‣ not (@Ind->Alignment) has `Wronger`:
+      ◦ Reveal `Hags were wronged by @Ind->Alignment` to #story_time
+      ◦ Apply `Wronger` to @Ind->Alignment 
+      ◦ Increment Counter
+On Role Change:
+  • not (@RoleChanger->Alignment) has `Wronger`:
+    ‣ Reveal `Hags were wronged by @Attacker->Alignment` to #story_time
+    ‣ Apply `Wronger` to @RoleChanger->Alignment
+    ‣ Increment Counter
