@@ -737,10 +737,10 @@ Choice Creation Format:
 ```
 '<Name>' Choice Creation [for <Target|Location>]:
   • <Option Name>:
-    ‣ <Resulting Ability>
-    ‣ <Resulting Ability>
+    ‣ <Trigger Type>: <Resulting Ability>
+    ‣ <Trigger Type>: <Resulting Ability>
   • <Option Name>:
-    ‣ <Resulting Ability>
+    ‣ <Trigger Type>: <Resulting Ability>
 ```
 
 - Name: Gives the choice a name to reference later
