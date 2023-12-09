@@ -15,4 +15,4 @@ Starting: Join `Flutes`
 Immediate: Target @Selection (Player) 
 Immediate: Target @Selection (Player) [Quantity: 1]
 Passive: Redirect `all` from @(Attr:Enchanted) to @Target
-Passive: not (@(Role:Flute Player) exists): Role Change @Self to Flute Player
+Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
