@@ -46,7 +46,9 @@ Start Night:
       ◦ Afterwards: Protect @Selection from `Attacks` through Active Defense (~Phase)
     ‣ `Investigate`:
       ◦ Process: Role Investigate @Selection (WD, SD)
-      ◦ Evaluate: Reveal `@Selection is @Result` to #Wager-Recipient
+      ◦ Evaluate:
+        · Reveal `@Selection is @Result` to #Wager-Recipient
+        · Reveal `@Selection is @Result` to @Self
       ◦ Role Investigate @Chooser (WD, SD) {Direct}
     ‣ `Ignore`:
       ◦ *Nothing*
