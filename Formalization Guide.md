@@ -271,7 +271,7 @@ Trigger types can be one of the following:
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
-- `On Role Change` triggers on a role change
+- `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
 
 ----
 #### Action Restrictions
@@ -471,6 +471,7 @@ These target types are only available in some contexts:
 - `@Voters`: Set to all voters for the winning player in `On Lynch` and `On Election`
 - `@ThisAttr`: Set to the current attribute instance when inside an attribute
 - `@Chooser`: Set to the player who chose a choice through choice choosing in a choice inside of choice creations
+- `@RoleChanger`: Set to the player who caused a role change
 
 #### Property Access
 When a target type refers to a single role or player, we can use `->` to access a property of the role or player (e.g. `@Target->Role` to get the target's role)
