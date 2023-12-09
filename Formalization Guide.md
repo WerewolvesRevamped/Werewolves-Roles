@@ -493,6 +493,7 @@ These target types are only available in some contexts:
 
 __Team Specific Selectors:__
 - `&<TeamName>`: Select a specific team
+- `&All`: Selects all teams
 - `&(Attr:<Attribute>)`: Select all teams with a specific attribute
 - `&(Attr:!<Attribute>)`: Select all teams without a specific attribute
 - `&(Align:!<Alignment>)`: Select all teams except for a certain alignment
@@ -874,4 +875,4 @@ The following utility functions exist:
   - `total`, `alive` - player counts
 - `most_freq_role(<Input List>)` - selects the most frequent role in a list of players or roles
 
-`<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@[Group]`)
+`<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@All`)
