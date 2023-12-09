@@ -152,7 +152,7 @@ Allowed Voters: <Voters>
 
 ## Attributes
 
-All attributes have source role and source player value. 
+All attributes have source role and source player value. Attribute abilities are executed by the attribute source player.
 
 All attributes can be refered to by `<AttributeType>:<SourceRole>` or `<AttributeType>:<SourcePlayer>`.
 Examples:
