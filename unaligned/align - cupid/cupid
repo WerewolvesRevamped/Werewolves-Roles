@@ -21,7 +21,7 @@ __Formalized__
 Inherit: `Cupid`
 Starting: Join #Couple:@Self
 Immediate Night: {Forced}
-  • Target @Selection [Condition: @Selection is not @Self] (Player)
+  • Target @Selection (Player) [Condition: @Selection is not @Self]
   • Grant `Lover` to @Target
   • Add @Target to #Couple:@Self 
   • Learn `@Target is @Target->Role`
