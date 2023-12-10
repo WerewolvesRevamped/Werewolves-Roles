@@ -295,15 +295,28 @@ Action Restrictions can be one or more of the following in a comma separated lis
 - Quantity Restrictions:
   - `Quantity: <Value>`, may only used a maximum of `<Value>` times
   - `Quantity: Total Players/<Value>`, may only be used a maximum of `round(TotalPlayerCount/<Value>)` amount of times.
+- Condition Restrictions:
+  - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
+ 
+
+TO BE REMOVED START
 - Target Restrictions:
   - `Target: exists`, requires the player's target to exist
+  -> Turns into `Condition: @Target exists`
 - Selection Restrictions:
   - `Selection: in [<Target>|'Group Name']`, requires the selection (i.e. `@Selection`) to be inside a given target type or group name
+  -> Turns into `Condition: @Selection is in '<GroupName>'`
   - `Selection: not in [<Target>|'Group Name']`, requires the selection (i.e. `@Selection`) to NOT be inside a given target type or group name
+  -> Turns into `Condition: not (@Selection is in '<GroupName>')`
   - `Selection: not self`, requires the selection to not be the current player
+  -> Turns into `Condition: @Selection is not @Self`
 - Counter Restrictions:
   - `Counter: [>|<|=] <Value>`, current element's counter   
-  - `Counter: <Target> [>|<|=] <Value>`, a specific target's counter   
+  -> Turns into `Condition: @Self->Counter [is|<|>] '<Value>'`
+  - `Counter: <Target> [>|<|=] <Value>`, a specific target's counter
+  -> Turns into `Condition: <Target>->Counter [is|<|>] '<Value>'`
+TO BE REMOVED END 
+
 
 ----
 #### Action Scaling
@@ -399,13 +412,14 @@ Condition Format:
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
 - `<Target> has <Attribute>` (Pure)
+- `<Target> is in <Group>` (Pure)
 - `<Target> is part of <Target>` (Pure)
 - `not (<Condition>)`
 - `(<Condition>) and (<Condition>)`
 - `(<Condition>) or (<Condition>)`
 
 A condition may either be a pure condition, or conditions combined with logial operations.
-A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`, or if a numeric value or the counter is greater/lesser than another value, or if a target is inside another target
+A pure condition can check if a `<Target>` (usually one of the `@Result<n>` values) matches another `<Target>` or a certain constant `<Value>` (or if it does not match), or if a certain `<Target>` exists (e.g. to check for a living target), or if a `<Target>` has a certain `<Attribute>`, or if a numeric value or the counter is greater/lesser than another value, or if a target is part of a group, or if a target is inside another target
 
 If a condition triggers there are three options:
 - Specify a certain `<Feedback>` that should be returned
