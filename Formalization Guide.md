@@ -301,26 +301,6 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
  
 
-TO BE REMOVED START  
-- Target Restrictions:
-  - `Target: exists`, requires the player's target to exist  
-  -> Turns into `Condition: @Target exists`
-- Selection Restrictions:
-  - `Selection: in [<Target>|'Group Name']`, requires the selection (i.e. `@Selection`) to be inside a given target type or group name  
-  -> Turns into `Condition: @Selection is in '<GroupName>'`
-  - `Selection: not in [<Target>|'Group Name']`, requires the selection (i.e. `@Selection`) to NOT be inside a given target type or group name  
-  -> Turns into `Condition: not (@Selection is in '<GroupName>')`
-  - `Selection: not self`, requires the selection to not be the current player  
-  -> Turns into `Condition: @Selection is not @Self`
-- Counter Restrictions:
-  - `Counter: [>|<|=] <Value>`, current element's counter     
-  -> Turns into `Condition: @Self->Counter [is|<|>] '<Value>'`
-  - `Counter: <Target> [>|<|=] <Value>`, a specific target's counter  
-  -> Turns into `Condition: <Target>->Counter [is|<|>] '<Value>'`
-
-TO BE REMOVED END 
-
-
 ----
 #### Action Scaling
 
