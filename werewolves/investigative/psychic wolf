@@ -12,5 +12,5 @@ Inherit: `Pack Lycan`
 Immediate Night:
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate: 
-    ◦ @Result is @SecondarySelection: Learn `Correct`
-    ◦ Otherwise: Learn `Incorrect`
+    ◦ @Result is @SecondarySelection: `Correct`
+    ◦ Otherwise: `Incorrect`
