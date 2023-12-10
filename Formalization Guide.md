@@ -482,6 +482,7 @@ Select living players by a certain attribute of them or their role.
 - `@(OrigRole:<Role>)`: Uses all players with a certain original role
 - `@(OrigAlign:<Alignment>)`: Uses all players with a certain original alignment
 - `@(AliveOnly:True)` / `@(AliveOnly:False)`: set to true by default, add this parameter as set to false to be able to access dead players too.
+- `@(SelectAll:True)` / `@(SelectAll:False)`: set to true by default, add this parameter as set to false to only retrieve a single player
 
 These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`  
 
