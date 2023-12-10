@@ -14,5 +14,5 @@ __Simplified__
 The Guardian is elected when there is a Mayor and a Reporter. Each night, they may protect a player from attacks. When there are 15 or more players, they may protect two.
 
 __Formalized__
-Immediate Night: Protect @Selection from `Attacks` (~Phase) [Succession: No Target Succession] ⟨x1, Living Players: >15 ⇒ x2⟩
+Immediate Night: Protect @Selection from `Attacks` (~Phase) [Succession: No Target Succession] ⟨x1, $living>15 ⇒ x2⟩
 End Phase: Revoke `Guardian` from @Self
