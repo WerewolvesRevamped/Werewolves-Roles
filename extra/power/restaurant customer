@@ -15,4 +15,6 @@ Once the food is eaten, the player cannot become a Restaraunt Customer again.
 
 __Formalized__
 Immediate Day: `Eat` Choice Choose @Chosen
-Passive Start Night: Conversation Reset
+Passive Start Night:
+  • Conversation Reset
+  • Revoke `Restaurant Customer` from @Self
