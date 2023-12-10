@@ -24,26 +24,25 @@ Abilities used on the Reaper will result in a counter-attack.
 
 __Formalized__
 Inherit: `Nightmares`
-On @All Death: Apply `ReaperPower` to @This
+On @All Death: Apply `ReaperPower` to @This (Inactive)
 Passive Start Night:
-  • Apply `ReaperUsable` to @(Attr:ReaperPower)
-  • Remove `ReaperPower` from @(Attr:ReaperPower)
-  • Learn `You may attack count(@(AliveOnly:False,Attr:ReaperUsable,Cat:Killing)) players`
-  • Learn `You may investigate count(@(AliveOnly:False,Attr:ReaperUsable,Cat:Investigative)) players`
-  • Learn `You may recruit count(@(AliveOnly:False,Attr:ReaperUsable,Cat:Align)) players`
-  • Learn `You may turn count(@(AliveOnly:False,Attr:ReaperUsable,Cat:!Killing,Cat:!Investigative,Cat:!Align)) players sleepless`
-Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperUsable,Cat:Killing) exists] {Repeating}
+  • Change `ReaperPower` value `1` to `Active` for @(Attr:ReaperPower)
+  • Learn `You may attack count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing)) players`
+  • Learn `You may investigate count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative)) players`
+  • Learn `You may recruit count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align)) players`
+  • Learn `You may turn count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)) players sleepless`
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
   ‣ Attack @Selection
-  ‣ Remove `ReaperUsable` from @(AliveOnly:False,SelectAll:False,Attr:ReaperUsable,Cat:Killing)
-Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperUsable,Cat:Investigative) exists] {Repeating}
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:Killing)
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
   ‣ Role Investigate @Selection (WD, SD)
-  ‣ Remove `ReaperUsable` from @(AliveOnly:False,SelectAll:False,Attr:ReaperUsable,Cat:Investigative)
-Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperUsable,Cat:Align) exists] {Repeating}
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:Investigative)
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
   ‣ Role Change @Selection to `Spirit`
-  ‣ Remove `ReaperUsable` from @(AliveOnly:False,SelectAll:False,Attr:ReaperUsable,Cat:Align)
-Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperUsable,Cat:!Killing,Cat:!Investigative,Cat:!Align) exists] {Repeating}
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower,Cat:Align)
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
-  ‣ Remove `ReaperUsable` from @(AliveOnly:False,SelectAll:False,Attr:ReaperUsable,Cat:!Killing,Cat:!Investigative,Cat:!Align)
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)
