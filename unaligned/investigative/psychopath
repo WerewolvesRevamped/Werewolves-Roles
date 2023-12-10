@@ -14,7 +14,7 @@ The Psychopath is strongly disguised as a role of their choosing. Additionally, 
 
 __Formalized__
 Starting:
-  • Set Counter to calc(ceil(total/3))
+  • Set Counter to calc(ceil($total/3))
   • Apply `PsychopathList` to @Self
   • For Each &All:
     ‣ @Ind->Members > `1`:
