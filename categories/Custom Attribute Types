@@ -20,8 +20,6 @@ Demonized
 Doomed [Doom Type]
 Soulless
 PsychopathList
-Eaten
-FoodType [Poisoned, Charmed]
 Waiter
 *Sleepless*
 *Charmed*
@@ -36,6 +34,8 @@ ArchivistSeen
 ArchivistOption
 ArchivistCandidate1
 ArchivistCandidate2
+Eaten
+FoodType [Food Type]
 *Poisoned* [Activeness]
 *CureAvailable*
 *RavenInformation* [Visitor]
