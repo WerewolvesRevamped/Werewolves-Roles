@@ -13,7 +13,7 @@ The Imp wins with the devil. It joins a channel with the devil to communicate se
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
 
 __Formalized__
-On Visit [Attack]: [Counter: #hell > 0]
+On Visit [Attack]: [Condition: #Hell->Counter > 0]
   • Cancel with Failure
-  • Decrement Counter for #hell 
-  • Reveal `@Self was attacked and protected` to #hell
+  • Decrement Counter for #Hell 
+  • Reveal `@Self was attacked and protected` to #Hell
