@@ -15,7 +15,7 @@ Each day, the Archivist Fox is told two roles from the role list, from categorie
 Once per game, the Archivist Fox may alternatively give up their power and join the wolfpack as a regular wolf.
 
 __Formalized__
-Starting: Apply `ArchivistSelected` to @Self
+Starting: Apply `ArchivistSeen` to @Self
 Passive Start Day: `Fox` Choice Creation:
   • `Join Pack`:
     ‣  Immediate Day: Role Change @Self to `Wolf`
@@ -23,9 +23,9 @@ Passive Start Day: `Fox` Choice Creation:
     ‣ Compound:
       ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
         · Untarget
-        · For Each @(AliveOnly:False,Attr:!ArchivistSelected:@Self,OrigFullCat:@Selection):
+        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@Selection):
           ⁃ Apply `ArchivistCandidate1` to @Ind 
-        · For Each @(AliveOnly:False,Attr:!ArchivistSelected:@Self,OrigFullCat:@SecondarySelection):
+        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@SecondarySelection):
           ⁃ Apply `ArchivistCandidate2` to @Ind 
         · Process:
           ⁃ randomize(@(Attr:ArchivistCandidate1))
@@ -33,6 +33,7 @@ Passive Start Day: `Fox` Choice Creation:
           ⁃ @Result exists:
             ⹀ Learn `@Result->OriginalRole exists`
             ⹀ Apply `ArchivistOption` to @Result
+            ⹀ Apply `ArchivistSeen` to @Result
           ⁃ Otherwise: Learn `No more @Selection exist`
         · Process:
           ⁃ randomize(@(Attr:ArchivistCandidate2))
@@ -40,6 +41,7 @@ Passive Start Day: `Fox` Choice Creation:
           ⁃ @Result exists:
             ⹀ Learn `@Result->OriginalRole exists`
             ⹀ Apply `ArchivistOption` to @Result
+            ⹀ Apply `ArchivistSeen` to @Result
           ⁃ Otherwise: Learn `No more @SecondarySelection exist`
         · Remove `ArchivistCandidate1` from @All
         · Remove `ArchivistCandidate2` from @All
@@ -48,7 +50,5 @@ Passive Start Day: `Fox` Choice Creation:
         · Otherwise: Target @Selection (List: `No Remaining Roles`)
       ◦ Passive Start Night:
         · Reveal `ArchivistFox archived a @Target` to #wolfpack
-        · For Each @(AliveOnly:False,Attr:ArchivistOption):
-          ⁃ @Ind->OriginalRole is @Target: Apply `ArchivistSelected` to @Ind
         · Remove `ArchivistOption:@Self` from @All
 Immediate Day: `Fox` Choice Choose @Chosen
