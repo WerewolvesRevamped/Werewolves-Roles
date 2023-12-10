@@ -22,5 +22,5 @@ The Flute Player causes an obstruction that messes up investigate roles affected
 
 __Formalized__
 Starting: Whisper to #Enchanted as `Flute Player`
-Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round(total/10))⟩ [Condition: count(@(OrigRole:Flute Player)) is `1`]
-Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round(total/20))⟩ [Condition: count(@(OrigRole:Flute Player)) is `>1`]
+Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round($total/10))⟩ [Condition: count(@(OrigRole:Flute Player)) is `1`]
+Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round($total/20))⟩ [Condition: count(@(OrigRole:Flute Player)) is `>1`]
