@@ -12,4 +12,9 @@ The Demonic Cupid is a cupid whose lover is a member of the hell team. The Demon
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
 
 __Formalized__
-No Abilities
+On Death:
+  • True Kill @Target
+  • Reveal `Cupid @Self died, killing Lover @Target` to #story_time
+On @Target Death:
+  • True Kill @Self
+  • Reveal `Lover @Target died, killing Cupid @Self` to #story_time
