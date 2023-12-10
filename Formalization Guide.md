@@ -4,6 +4,7 @@
 
 - [Basics](#basics)
 - [Game Elements](#game-elements)
+- [Variables](#variables)
 - [Role](#role)
 - [Teams](#teams) 
 - [Groups](#groups)
@@ -87,6 +88,13 @@ The following game elements exist:
 - Polls (Active): Polls consist out of a type, votable options, allowed voters, a target, and poll abilities
 - Attributes (Active): Attributes consist out of several values such as duration, owner role, owner name and custom values
 - Abilities (Passive): Abilities consist out of an ability type and various parameters
+
+## Variables
+
+Some game values can be accessed from variables:
+- `$total`: Retrieves the total player count
+- `$living`: Retrieves the amount of living players
+- `$phase`: Gets the current phase name
 
 ## Role
 
