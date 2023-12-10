@@ -14,13 +14,13 @@ __Simplified__
 Members of the hell team can use Souls - soul users - may use a Soul to protect or attack another player. If a soul user is attacked during the night and there is an available soul, they will be automatically protected.
 
 __Formalized__
-Immediate: [Counter: #hell > 0]
+Immediate: [Condition: #Hell->Counter > 0]
   • Protect @Selection from `Attacks` through Active Defense during Night (~NextNight)
-  • Decrement Counter for #hell 
-Immediate: [Counter: #hell > 0]
+  • Decrement Counter for #Hell 
+Immediate: [Condition: #Hell->Counter > 0]
   • Attack @Selection
-  • Decrement Counter for #hell 
-On Visit [Attack]: [Counter: #hell > 0]
+  • Decrement Counter for #Hell 
+On Visit [Attack]: [Condition: #Hell->Counter > 0]
   • Cancel with Failure
-  • Decrement Counter for #hell 
-  • Reveal `@Self was attacked and protected` to #hell
+  • Decrement Counter for #Hell 
+  • Reveal `@Self was attacked and protected` to #Hell
