@@ -1,0 +1,23 @@
+**Doomed** | Attribute
+__Basics__
+The attribute of the horsemen team. When all non-unaligned/horsemen players have been doomed and all horsemen united, all horsemen become apocalyptic horseman.
+
+  
+__Formalized__
+Starting:
+  • Learn `You have been doomed.`
+  • @ThisAttr->Value1 is `Famine`:
+    ‣ Process: randomize(@(OrigAlign:Horsemen,AliveOnly:False))
+    ‣ Evaluate:
+      ◦ @Result is `Horseman`: Strongly Disguise @Self as @Result->Target (~Persistent)
+      ◦ Otherwise: Strongly Disguise @Self as @Result (~Persistent)
+  • @ThisAttr->Value1 is `War`:
+    ‣ Manipulate @Self's `public voting power` to `0` (~NextDay)
+    ‣ Manipulate Election Poll (@Self is `Disqualified`)
+Compound:
+  • Passive Start Day: @ThisAttr->Value1 is `Pestilence`: Obstruct @Self (~NextNight)
+  • Passive End Night: @ThisAttr->Value1 is `Death`: Kill @Self
+On Removal: 
+  • Remove `Manipulation:Doomed`
+  • Remove `Disguise:Doomed`
+  • Remove `Obstructed:Doomed`
