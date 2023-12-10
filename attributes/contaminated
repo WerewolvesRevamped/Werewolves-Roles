@@ -3,11 +3,12 @@ __Basics__
 The attribute of the plague team. Contaminated players can apply the attribute to other players through visits. The second night after being contaminated the player will be informed they're contaminated and die.
 
 __Formalized__
-Starting: Set Counter to 0
-On Visit: Apply `Contaminated` to @Visitor
-On Action: Apply `Contaminated` to @ActionTarget
-Passive Start Night: Increment counter by 1
-Passive:
-- Compound: [@Counter is `2`, @Self is not `Plague Carrier`]
-     ‣ Start Night: Learn `You have the plague`
-     ‣ End Night: Kill @Self
+On Visit: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage)
+On Action: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage)
+Passive Start Night:
+  • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
+  • @ThisAttr->Value1 is `EarlyStage`: Change @ThisAttr value `1` to `MiddleStage` for @Self
+Passive: [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
+  • Compound: 
+    ‣ Start Night: Learn `You have the plague`
+    ‣ End Night: Kill @Self
