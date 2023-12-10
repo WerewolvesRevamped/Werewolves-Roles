@@ -18,7 +18,7 @@ Starting: Manipulate @Self's `Private Voting Power` to `2`
 End Night: [Quantity: 1]
 • Cancel Wolfpack Poll
 • Attack @Selection
-• Target @Selection (List: Reveal, NoReveal)
+• Target @Selection (List: Reveal, NoReveal) {Forced: NoReveal}
 • Evaluate:
   ‣ (@Target is NoReveal): Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
   ‣ Otherwise: Reveal `@Self is Alpha Wolf` to #wolfpack
