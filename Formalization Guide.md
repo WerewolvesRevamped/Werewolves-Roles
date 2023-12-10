@@ -71,6 +71,7 @@ In cases where lists within lists within lists are used, use the following forma
   ‣ Level 2
     ◦ Level 3
       · Level 4
+        ⁃ Level 5
 ```
 
 ## Game Elements
