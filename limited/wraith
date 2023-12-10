@@ -12,8 +12,5 @@ Each night, the Wraith may immediately turn one player sleepless.
 Using a power on the Wraith while sleepless will result in a counter-attack.
 
 __Formalized__
-Starting: Join #Nightmare
+Inherit: `Nightmares`
 Immediate Night: Apply `Sleepless` to @Selection
-On Visit from @(Attr:Sleepless) @Visitor:
-  • Ability Block @Visitor (~Phase)
-  • Attack @Visitor
