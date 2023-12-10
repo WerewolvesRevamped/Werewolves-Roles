@@ -6,7 +6,7 @@ __Members__
 
 __Formalized__
 Starting: Set Counter to 1
-On @(GroupMembership:Baker) Death: [Counter: > 0]
+On @(GroupMembership:Baker,Role:Baker) Death: [Counter: > 0]
   • Add `Wolfpack` Poll
   • Decrement Counter
 On Betrayal:
