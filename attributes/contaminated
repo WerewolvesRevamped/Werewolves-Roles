@@ -1,0 +1,13 @@
+**Contaminated** |Attribute
+__Basics__
+The attribute of the plague team. Contaminated players can apply the attribute to other players through visits. The second night after being contaminated the player will be informed they're contaminated and die.
+
+__Formalized__
+Starting: Set Counter to 0
+On Visit: Apply `Contaminated` to @Visitor
+On Action: Apply `Contaminated` to @ActionTarget
+Passive Start Night: Increment counter by 1
+Passive:
+- Compound: [@Counter is `2`, @Self is not `Plague Carrier`]
+     ‣ Start Night: Learn `You have the plague`
+     ‣ End Night: Kill @Self
