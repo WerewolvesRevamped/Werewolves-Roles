@@ -306,8 +306,7 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Succession: No Succession`, may not be used in in succession
   - `Succession: No Target Succession`, may not be used successively on the same target 
 - Quantity Restrictions:
-  - `Quantity: <Value>`, may only used a maximum of `<Value>` times
-  - `Quantity: Total Players/<Value>`, may only be used a maximum of `round(TotalPlayerCount/<Value>)` amount of times.
+  - `Quantity: <Value>`, may only used a maximum of `<Value>` times. You can use `calc()` in here.
 - Condition Restrictions:
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
  
@@ -321,8 +320,8 @@ May be one of the following:
 - Static Scaling: The action can always be used several times
   - `x<Value>`, specify a number (`Value`) that determines how many times the action can be used
 - Dynamic Scaling: Amount of action usages depend on total player count
-  - `[Total|Living] Players/<Value>` the action can be used exactly as many times as the player count divided by the specified `Value`, rounded down
-  - `[Total|Living] Players: <Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses. The default is always 0, so in situations with two cases, where the count for one case is 0, it suffices to specify the other case.
+  - `[$total|$living]/<Value>` the action can be used exactly as many times as the player count divided by the specified `Value`, rounded down
+  - `[$total|$living]<Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses. The default is always 0, so in situations with two cases, where the count for one case is 0, it suffices to specify the other case.
 - Phase Specific Scaling: The amount of action usages depends on the phase:
   - `Odd: <Value>, Even: <Value>` to specify different multiplicities of ability use in even and odd phases. Set `<Value>` to one of the other scaling types, e.g. `Odd: x1, Even: x2`
 
@@ -530,6 +529,7 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->OwnerPlayer`, to get the owner player of an attribute
 - `<TargetType>->OwnerRole`, to get the owner role of an attribute
 - `<TargetType>->Value1`, to get the first custom value of an attribute
+- `<TargetType>->Value2`, to get the second custom value of an attribute
 - `<TargetType>->Members`, to get the members of a team
 
 Property access can be chained such as `@Target->Role->Category`
@@ -895,7 +895,7 @@ The following utility functions exist:
 - `calc(<math>)`, allows math operations:
   - `floor(x)`, `ceil(x)`, `round(x)` - rounding
   - `a/b`, `a*b`, `a+b`, `a-b` - basic math
-  - `total`, `alive` - player counts
+  - `$total`, `$living` - player counts
 - `most_freq_role(<Input List>)` - selects the most frequent role in a list of players or roles
 - `count(<List>)` - return the amount of values inside the list
 
