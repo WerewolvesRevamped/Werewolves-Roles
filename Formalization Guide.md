@@ -279,6 +279,7 @@ Trigger types can be one of the following:
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
 - `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
+- `On End` triggers when the game ends
 
 ----
 #### Action Restrictions
