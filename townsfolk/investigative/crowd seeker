@@ -13,5 +13,5 @@ This is affected by weak disguises, redirections, and obstructions.
 __Formalized__
 Immediate Night: 
   • Action: ⟨x3⟩
-  • Process: Role Investigate @Selection (SD, WD, OB)
+  • Process: Role Investigate @Selection (SD, WD)
   • Evaluate: @Result is @SecondarySelection: `Success`
