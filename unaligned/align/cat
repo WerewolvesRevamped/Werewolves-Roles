@@ -10,3 +10,13 @@ The Cat is nonaligned until it changes role.
 
 __Simplified__
 For each Cat, there is a corresponding dog. The Cat will become the opposite of the role the dog chose.
+
+__Formalized__
+Starting: Target randomize(@(Role:Dog))
+Starting: Strongly Disguise @Self as `Cat` (~Persistent)
+Passive:
+• @Target->Role is `Fortune Teller`: Role Change @Self to `Warlock`
+• @Target->Role is `Rival`: Role Change @Self to `Rival`
+• @Target->Role is `Warlock`: Role Change @Self to `Fortune Teller`
+Passive End Night: @Target->Role is not `Dog`: Role Change @Self to `Fortune Teller`
+On Action [Role Change]: Obstruct Investigation for @Self (~Phase)
