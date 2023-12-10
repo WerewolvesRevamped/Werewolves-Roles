@@ -2,5 +2,4 @@
 Starting: Join #Nightmare
 On Visited: @Visitor has `Sleepless`:
   • Cancel
-  • Obstruct @Visitor (~Phase)
-  • Attack @Visitor
+  • @Visitor->Alignment is not `Nightmare`: Attack @Visitor
