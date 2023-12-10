@@ -413,7 +413,7 @@ Condition Format:
 - `<Target> is not [<Target> | '<Value>']` (Pure)
 - `<Target> exists` (Pure)
 - `<Target> has <Attribute>` (Pure)
-- `<Target> is in <Group>` (Pure)
+- `<Target> is in #<GroupName>` (Pure)
 - `<Target> is part of <Target>` (Pure)
 - `not (<Condition>)`
 - `(<Condition>) and (<Condition>)`
