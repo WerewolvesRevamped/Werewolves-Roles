@@ -15,7 +15,7 @@ The Prophetic Hag may check a player's alignment.
 
 __Formalized__
 Inherit: `Coven`
-Immediate Night: [Counter: > 0] {Repeating}
+Immediate Night: [Condition: @Self->Counter > 0] {Repeating}
   • Alignment Investigate @Selection
   • Decrement Counter
 Passive:
