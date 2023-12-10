@@ -470,9 +470,6 @@ Select living players by a certain attribute of them or their role.
 - `@(Role:<Role>)`: Uses all players that have the `<Role>` role
 - `@(Cat:<Category>)`: Uses all players who's role is in the `<Category>` category
 - `@(Class:<Class>)`: Uses all player who are part of the specified role class (Townsfolk, Werewolf, Solo, Unaligned, Extra)
-- `@(OrigRole:<Role>)`: Uses all players with a certain original role
-- `@(OrigAlign:<Alignment>)`: Uses all players with a certain original alignment
-- `@(AliveOnly:True)` / `@(AliveOnly:False)`: set to true by default, add this parameter as set to false to be able to access dead players too.
 
 These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`  
 
