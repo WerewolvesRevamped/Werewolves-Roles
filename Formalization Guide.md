@@ -314,7 +314,8 @@ TO BE REMOVED START
   - `Counter: [>|<|=] <Value>`, current element's counter     
   -> Turns into `Condition: @Self->Counter [is|<|>] '<Value>'`
   - `Counter: <Target> [>|<|=] <Value>`, a specific target's counter  
-  -> Turns into `Condition: <Target>->Counter [is|<|>] '<Value>'`  
+  -> Turns into `Condition: <Target>->Counter [is|<|>] '<Value>'`
+
 TO BE REMOVED END 
 
 
