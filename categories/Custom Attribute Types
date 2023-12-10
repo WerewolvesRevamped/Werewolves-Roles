@@ -17,7 +17,7 @@ Enchanted
 Powdered
 Contaminated
 Demonized
-Doomed
+Doomed [Doom Type]
 Soulless
 PsychopathList
 *Sleepless*
@@ -28,8 +28,7 @@ __Technical Custom Attributes__
 Exorcised
 HeraldSelected
 OracleSelected
-*PoisonedInactive*
-*Poisoned*
+*Poisoned* [Activeness]
 *CureAvailable*
 *RavenInformation* [Visitor]
 *Raven*
