@@ -11,40 +11,40 @@ Group Membership [Group Name, Membership Type]
 Obstruction [Affected Abilities, Obstruction Feedback]
 
 __Main Custom Attributes__
-Wolfish
-Lycan
-Enchanted
-Powdered
 Contaminated [Stage, AppliedPhase]
 Demonized
 Doomed [Doom Type]
-Soulless
+Enchanted
+Lycan
+Powdered
 PsychopathList
+Soulless
 Waiter
+Wolfish
+*Charmed*
 *Raven*
 *Sleepless*
-*Charmed*
 *Warded*
 ~~Bitten~~
 
 __Technical Custom Attributes__
-Exorcised
-HeraldSelected
-OracleSelected
-ArchivistSeen
-ArchivistOption
 ArchivistCandidate1
 ArchivistCandidate2
+ArchivistOption
+ArchivistSeen
 Eaten
+Exorcised
 FoodType [Food Type]
-*Poisoned* [Activeness]
-*CureAvailable*
-*RavenInformation* [Visitor]
-*Wronger*
-*Unwrongable*
-*Rival*
+HeraldSelected
+OracleSelected
 *CoyoteTrigger*
+*CureAvailable*
 *DetectiveGuess* [Role]
+*Poisoned* [Activeness]
+*RavenInformation* [Visitor]
+*Rival*
+*Unwrongable*
+*Wronger*
 
 \* refers to custom attributes exclusive to limited roles
 strikethrough refers to custom attributes exclusive to mini/variant/temporary roles
