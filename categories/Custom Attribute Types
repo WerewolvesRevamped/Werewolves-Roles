@@ -39,6 +39,7 @@ FoodType [Food Type]
 HasDoomed
 HeraldSelected
 OracleSelected
+*BaronessSpying*
 *CoyoteTrigger*
 *CureAvailable*
 *DetectiveGuess* [Role]
