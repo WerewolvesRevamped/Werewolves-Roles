@@ -756,7 +756,8 @@ Format:
 #### Role Change
 
 Format:  
-`Role Change <Target> to '<Role>'` (Change a player's role)  
+`Role Change <Target> to '<Role>'` (Change a player's role)
+`Surpressed Role Change <Target> to 'Role'` (Change a player's role, but surpress starting abilities)  
 `Alignment Change <Target> to '<Alignment>'` (changes a player's alignment - only valid of unaligned players)
 `Group Change <Target> to '<Group>'` (Change a group's name, but not member roles)  
 
