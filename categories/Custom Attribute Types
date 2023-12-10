@@ -36,6 +36,7 @@ ArchivistSeen
 Eaten
 Exorcised
 FoodType [Food Type]
+HasDoomed
 HeraldSelected
 OracleSelected
 *CoyoteTrigger*
@@ -46,6 +47,7 @@ OracleSelected
 *Rival*
 *Unwrongable*
 *Wronger*
+~~Thieved~~
 
 \* refers to custom attributes exclusive to limited roles
 strikethrough refers to custom attributes exclusive to mini/variant/temporary roles
