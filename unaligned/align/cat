@@ -15,8 +15,8 @@ __Formalized__
 Starting: Target randomize(@(Role:Dog))
 Starting: Strongly Disguise @Self as `Cat` (~Persistent)
 Passive:
-• @Target->Role is `Fortune Teller`: Role Change @Self to `Warlock`
-• @Target->Role is `Rival`: Role Change @Self to `Rival`
-• @Target->Role is `Warlock`: Role Change @Self to `Fortune Teller`
+  • @Target->Role is `Fortune Teller`: Role Change @Self to `Warlock`
+  • @Target->Role is `Rival`: Role Change @Self to `Rival`
+  • @Target->Role is `Warlock`: Role Change @Self to `Fortune Teller`
 Passive End Night: @Target->Role is not `Dog`: Role Change @Self to `Fortune Teller`
 On Action [Role Change]: Obstruct Investigation for @Self (~Phase)
