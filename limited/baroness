@@ -11,3 +11,8 @@ The Baroness is not a lycan, nor are they a member of the wolfpack.
 __Simplified__
 The Baroness can select a role during the day and learn any information that a player with that role would learn the during the following two phases.
 The Baroness is not a lycan, nor are they a member of the wolfpack.
+
+__Formalized__
+Passive Start Day: Untarget
+Immediate Day: Target @Selection (Role)
+Passive: Apply `BaronessSpying` to @(Role:@Target,Attr:!BaronessSpying:@Self)
