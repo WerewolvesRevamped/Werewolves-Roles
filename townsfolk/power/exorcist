@@ -34,7 +34,7 @@ Immediate Day: [Attribute: @Selection lacks `Exorcised:@Self`]
   • Evaluate:
     ‣ @Result1 is `Success`:
       ◦ Reveal `@Selection was cured of Enchanted` to @(Align:Flute)
-      ◦ Lean `@Selection was cured of Enchanted`
+      ◦ Learn `@Selection was cured of Enchanted`
     ‣ @Result2 is `Success`:
       ◦ Reveal `@Selection was cured of Charmed` to @(Align:Flute)
       ◦ Learn `@Selection was cured of Charmed`
