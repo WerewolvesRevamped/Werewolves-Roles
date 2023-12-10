@@ -223,6 +223,8 @@ Attributes use the same general format as roles. Some trigger types are not comp
 
 To reference a custom attribute simply using `'<AttributeName>'` suffices.
 
+To select a custom attribute with a specific custom value you can use `'<AttributeName>:<Value>'`
+
 ---
 ## Counter
 
