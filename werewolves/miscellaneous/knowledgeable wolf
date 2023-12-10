@@ -8,3 +8,7 @@ Alternatively, the Hosts may decide to tell the Knowledgeable Wolf about all the
 
 __Simplified__
 The Knowledgeable Wolf knows parts of the role list.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Starting: Learn `%PartialRoleList%`
