@@ -18,3 +18,4 @@ Immediate Day: `Eat` Choice Choose @Chosen
 Passive Start Night:
   • Conversation Reset
   • Revoke `Restaurant Customer` from @Self
+On Death: Conversation Reset
