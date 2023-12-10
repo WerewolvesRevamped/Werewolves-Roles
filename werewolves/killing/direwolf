@@ -10,8 +10,4 @@ The Direwolf may attack two people every night if they are the last player left 
 
 __Formalized__
 Inherit: `Pack Lycan`
-Compound:
-  • Passive Start Night:
-    ‣ count(#Wolfpack->Members) is `1`: Set Counter to `1`
-    ‣ Otherwise: Set Counter to `0`
-  • End Night: Attack @Selection [Counter: = 1]
+End Night: Attack @Selection [Condition: count(#Wolfpack->Members) is `1`]
