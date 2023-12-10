@@ -9,3 +9,8 @@ The Apocalyptic Horseman may not kill another player, if they have already attem
 __Simplified__
 Apocalyptic Horseman cannot die at night. Each night, the Apocalyptic Horseman may attack a player. The Horsemen win when everyone else is dead.
 The Horsemen turn into Apocalyptic Horsemen when they have doomed all players.
+
+__Formalized__
+Starting: Protect @Self from `all` through Passive Defense during Night
+End Night: Attack @Selection [Attribute: lacks `HasDoomed`]
+Passive End Night: Remove `HasDoomed` from @Self
