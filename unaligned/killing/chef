@@ -26,7 +26,7 @@ Start Day:
   • Grant `Restaurant Customer` to @Selection [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
   • Apply `FoodType` to @Selection (~Phase) (@SecondarySelection[Poisoned,Charmed])
   • Whisper to `Restaurant Customer` as `Chef` (~Phase)
-  • `FoodChoice` Choice Creation for @(Role:Restaurant Customer)
+  • `FoodChoice` Choice Creation for #Restaurant-Customer
     ‣ `Eat`:
       ◦ Afterwards: Apply `Eaten` to @Self
       ◦ Passive End Night: @Chooser has `FoodType:Charmed`: Kill @Chooser
