@@ -11,4 +11,6 @@ __Formalized__
 Inherit: `Pack Lycan`
 Immediate Night:
   • Process: Role Investigate @Selection (SD, WD)
-  • Evaluate: @Result is @SecondarySelection: `Success`
+  • Evaluate: 
+    ◦ @Result is @SecondarySelection: Learn `Correct`
+    ◦ Otherwise: Learn `Incorrect`
