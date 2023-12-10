@@ -11,3 +11,7 @@ At the start of every phase, the Plague Carrier is told the amount of living con
 __Simplified__
 The Plague Carrier wins with the plague bearers and joins a channel with them. The Plague Carrier can be a carrier of the plague, but can't die from it.
 At the start of every phase, the Plague Carrier is told the amount of living contaminated players.
+
+__Formalized__
+Passive Start Phase: Investigate @(Attr:Contaminated) Count
+Passive: not (@(Role:Plague Bearer) exists): Role Change @Self to `Plague Bearer`
