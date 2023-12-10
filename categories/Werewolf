@@ -10,4 +10,4 @@ __Role Categories__
 
 __Formalized__
 Win Condition: @(Alignment:Werewolf), @(Class:Unaligned)
-Inherit: `Wolfish`
+Starting: Apply `Wolfish` to @Self
