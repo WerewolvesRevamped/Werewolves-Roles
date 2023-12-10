@@ -14,5 +14,5 @@ __Formalized__
 Starting: Join #Flutes
 Immediate: Target @Selection (Player) 
 Immediate: Target @Selection (Player) [Quantity: 1]
-Passive: Redirect `all` from @(Attr:Enchanted) to @Target [Condition: @Target exists]
+Passive: Redirect `all` from @(Attr:Enchanted) to @Target [Condition: @Target exists]: Learn `An ability was redirected`
 Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
