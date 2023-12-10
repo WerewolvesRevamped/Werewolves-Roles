@@ -19,3 +19,8 @@ It is never revealed to the Flute Players how many or which players have been en
 __Simplified__
 Each night, the Flute Player may enchant a certain amount of players. If all living players are either enchanted, unaligned or Flute team members, the Flute team wins.
 The Flute Player causes an obstruction that messes up investigate roles affected by it. They will have a chance of getting the Flute Player as a result of their checks.
+
+__Formalized__
+Starting: Whisper to #Enchanted as `Flute Player`
+Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round(total/10))⟩ [Condition: count(@(OrigRole:Flute Player)) is `1`]
+Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round(total/20))⟩ [Condition: count(@(OrigRole:Flute Player)) is `>1`]
