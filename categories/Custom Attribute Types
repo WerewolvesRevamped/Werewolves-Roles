@@ -42,8 +42,10 @@ OracleSelected
 *CoyoteTrigger*
 *CureAvailable*
 *DetectiveGuess* [Role]
+*HeldAmulet*
 *RavenInformation* [Visitor]
 *ReaperPower* [Activeness]
+*ShatterAmulet*
 *Rival*
 *Unwrongable*
 *Wronger*
