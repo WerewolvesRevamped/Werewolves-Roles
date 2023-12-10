@@ -14,7 +14,7 @@ The Ravenkeeper will be told the names of any two players with ravens that inter
 __Formalized__
 Starting:
   • Apply `Raven` to @Self
-  • Set Counter to calc(floor(total/3))
+  • Set Counter to calc(floor($total/3))
 Passive Start Night: `RavenAction` Choice Creation: ⟨x2⟩
   • `Assign`:
     ‣ (@Self->Counter > `0`) and not (@Selection has `Raven:@Self`):
