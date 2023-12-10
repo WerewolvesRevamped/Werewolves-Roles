@@ -16,7 +16,7 @@ The Wisp may visit one person each day, killing them if powdered or powdering th
 The Wisp is a member of the pyro team, but not a member of the pyro channel. The Wisp cannot be ignited.
 
 __Formalized__
-Immediate Day: [Selection: not self]
+Immediate Day: [Condition: @Selection is not @Self]
   • not (@Selection has `Powdered`): Apply `Powdered` to @Selection (~Persistent)
   • Otherwise: Target @Selection (Player)
 End Day:
