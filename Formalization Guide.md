@@ -269,7 +269,7 @@ Trigger types can be one of the following:
 - `On Killed` for an ability that triggers when a player dies through a (true) kill or attack (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@AttackSource` to get the source of the attack). Differs from `On Death` in that it does not trigger on a lynch.
 - `On Visited [[<Ability Type>]]` for triggering when any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit). Triggers before any of the visits resulting abilities.
 - `On <Target> Visited [[<Ability Type>]]` for triggering when a certain target type is visited with any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) (use `@Visitor` within this trigger to reference the visitor, `@This` to reference the visited player, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit).  Triggers before any of the visits resulting abilities.
-- `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`)
+- `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`) (Use `@ActionTarget` to select the player the action is being used on)
 - `On Disbandment` for an ability that triggers when a group disbands
 - `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
 - `On [Mayor|Reporter|Guardian] Election` for an ability that triggers when a player is elected as any role (`On Election`) or as a specific role (Use `@Voters` to select all people that voted for the elected player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
@@ -499,6 +499,7 @@ These target types are only available in some contexts:
 - `@Chooser`: Set to the player who chose a choice through choice choosing in a choice inside of choice creations
 - `@RoleChanger`: Set to the player who caused a role change
 - `@Ind`: Set to one player of a selector inside a for each complex action
+- `@ActionTarget`: Set to the player an action is used on in `On Action` trigger
 
 __Team Specific Selectors:__
 - `&<TeamName>`: Select a specific team
