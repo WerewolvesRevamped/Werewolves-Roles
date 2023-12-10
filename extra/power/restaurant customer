@@ -14,7 +14,7 @@ If the food is poisoned then the Restaurant Customer will be *killed* at the end
 Once the food is eaten, the player cannot become a Restaraunt Customer again.
 
 __Formalized__
-Immediate Day: `Eat` Choice Choose @Chosen
+End Day: `FoodChoice` Choice Choose @Chosen
 Passive Start Night:
   • Conversation Reset
   • Revoke `Restaurant Customer` from @Self
