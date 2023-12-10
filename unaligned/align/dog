@@ -16,4 +16,6 @@ Starting:
   • @(Role:Cat) exists: Target `Rival` (Role)
   • Otherwise: Target `Psychopath` (Role)
 Immediate Night: Target @Selection [List: Fortune Teller, Warlock, @Target] {Forced: Fortune Teller}
-On Action [Target]: Role Change @Self to @Target
+On Action [Target]:
+  • Obstruct `Investigation` for @Self (~Phase)
+  • Role Change @Self to @Target
