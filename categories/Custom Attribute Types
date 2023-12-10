@@ -4,10 +4,10 @@ Attributes are applied by roles and they affect interactions between abilities. 
 [] list the additional values for attributes
 
 __Standard Attributes__
-Disguises [Disguise Role, Disguise Strength]
 Defense [Defense Subtype (passive/partial/active/absence/recruitment), Killing Subtype, Affected Players, Affected Phase]
-Manipulation [Manipulation Subtype (vote/poll), Manipulation Value]
+Disguises [Disguise Role, Disguise Strength]
 Group Membership [Group Name, Membership Type]
+Manipulation [Manipulation Subtype (vote/poll), Manipulation Value]
 Obstruction [Affected Abilities, Obstruction Feedback]
 
 __Main Custom Attributes__
