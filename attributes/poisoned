@@ -3,4 +3,4 @@ __Basics__
 An attribute marking players that were poisoned by the apothecary in the previous night.
 
 __Formalized__
-No Abilities
+Passive End Night: @ThisAttr->Value1 is `Active`: Kill @Self
