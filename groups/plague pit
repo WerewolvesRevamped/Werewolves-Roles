@@ -6,5 +6,4 @@ __Members__
 <?PlagueCarrier:> Plague Carrier
 
 __Formalized__
-Starting: Set Counter to calc(round(total/3))
 On Disbandment: Remove `Contaminated` from @All
