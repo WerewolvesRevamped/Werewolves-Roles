@@ -19,3 +19,5 @@ Immediate Night: [Counter: > 0] {Repeating}
   • Protect @Selection from `Attacks` through Active Defense during Night  (~Phase)
   • @Selection->Alignment is `Coven`: Apply `Unwrongable` to @Selection (~Phase)
   • Decrement Counter
+Passive:
+  • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
