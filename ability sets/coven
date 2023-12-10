@@ -19,5 +19,3 @@ On Role Change:
     ‣ Reveal `Hags were wronged by @Attacker->Alignment` to #story_time
     ‣ Apply `Wronger` to @RoleChanger->Alignment
     ‣ Increment Counter
-Passive:
-  • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
