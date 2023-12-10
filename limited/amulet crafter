@@ -19,7 +19,4 @@ On Death:
 Immediate Day: [Quantity: 1, Condition: @(Role:Amulet of Protection) exists]
   • Attack @(Role:Amulet of Protection)
   • Revoke `Amulet of Protection` from @(Role:Amulet of Protection)
-Passive: [Condition: @Self has `ShatterAmulet`]
-  • Attack @(Role:Amulet of Protection)
-  • Revoke `Amulet of Protection` from @(Role:Amulet of Protection)
 
