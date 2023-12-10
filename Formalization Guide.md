@@ -531,6 +531,7 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Value1`, to get the first custom value of an attribute
 - `<TargetType>->Value2`, to get the second custom value of an attribute
 - `<TargetType>->Members`, to get the members of a team
+- `<TargetType>->Attr(<Attribute>)`, to get a certain attribute of a player/team/group
 
 Property access can be chained such as `@Target->Role->Category`
 
