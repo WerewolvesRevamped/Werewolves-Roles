@@ -573,7 +573,7 @@ Format:
 `Untarget`
 
 - Target: A target type, specifying what is getting targeted
-- Type: Specifies what type of object can be targeted. May be `Player` (a player besides the player themselves), `Role`, `Attribute`, `Category` (e.g. Killing), `Full Category` (e.g. Townsfolk Group) or `List: <ListElements>` (with several `Elements` that are comma separated). `Player` is the default value and may be left out.
+- Type: Specifies what type of object can be targeted. May be `Player` (a living player besides the player themselves), `Dead` (a dead player), `Role`, `Attribute`, `Category` (e.g. Killing), `Full Category` (e.g. Townsfolk Group) or `List: <ListElements>` (with several `Elements` that are comma separated). `Player` is the default value and may be left out.
 
 ---
 #### Disguising
