@@ -1,0 +1,2 @@
+**Horsemen** | Ability Set
+Passive: not (@(Align:!Horsemen,Class:!Unaligned,Attr:!Doomed) exists) and not (@(Align:Horsemen,Group:!Horsemen) exists): Role Change @Self to `Apocalyptic Horseman`
