@@ -3,3 +3,13 @@ __Basics__
 The Jury is a trusted townsfolk group, with the special ability to investigate players. If fewer than two Jurors remain, the Jury is disbanded.
 __Members__
 <?Juror:> *Juror*
+
+__Formalized__
+Passive Start Night: Create `Jury` Poll in #Jury [Temporal: Night 2+]
+On Poll Closed:
+  • Process: Role Investigate @Winner (SD, WD)
+  • Evaluate:
+    ‣ Reveal `@Winner is @Result` to #Jury
+    ‣ @Result->Alignment is not `Townsfolk`: Reveal `Jury saw @Result` to #story_time
+On @Members Death:
+  • count(@Members) < 2: Disband
