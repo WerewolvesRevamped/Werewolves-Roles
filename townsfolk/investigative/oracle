@@ -21,5 +21,5 @@ Immediate Night:
     ‣ Apply `OracleSelected` to @Selection
     ‣ Apply `OracleSelected` to @SecondarySelection
   • Evaluate:
-    ‣ @Result1 is @Result2: Learn `Same Alignment`
-    ‣ Otherwise: Learn `Different Alignment`
+    ‣ @Result1 is @Result2: `Same Alignment`
+    ‣ Otherwise: `Different Alignment`
