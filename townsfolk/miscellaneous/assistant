@@ -13,5 +13,5 @@ They will be informed when their ability is used.
 __Formalized__
 Immediate: Target @Selection (Player) 
 Immediate: Target @Selection (Player) [Quantity: 1]
-Passive: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target [Quantity: 1]
+Passive: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target [Quantity: 1, Condition: @Target exists]
 On Action [Redirect]: Learn `Redirect was used`
