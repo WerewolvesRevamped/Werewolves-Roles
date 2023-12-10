@@ -15,5 +15,6 @@ Immediate Night:
   • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (Death)
   • @Selection->Alignment is `Horsemen`:
     ‣ Apply `Doomed` to @Selection (~Persistent)
+    ‣ Apply `Doomed` to @Self (~Persistent)
     ‣ Join `Horsemen`
     ‣ Add @Selection to `Horsemen`
