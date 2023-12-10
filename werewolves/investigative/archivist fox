@@ -24,11 +24,11 @@ Passive Start Day: `Fox` Choice Creation:
       ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
         · Untarget
         · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@Selection):
-          ⁃ Apply `ArchivistCandidate1` to @Ind 
+          ⁃ Apply `ArchivistCandidate` to @Ind (1)
         · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@SecondarySelection):
-          ⁃ Apply `ArchivistCandidate2` to @Ind 
+          ⁃ Apply `ArchivistCandidate` to @Ind (2)
         · Process:
-          ⁃ randomize(@(Attr:ArchivistCandidate1))
+          ⁃ randomize(@(Attr:ArchivistCandidate:1))
         · Evaluate:
           ⁃ @Result exists:
             ⹀ Learn `@Result->OriginalRole exists`
@@ -36,15 +36,14 @@ Passive Start Day: `Fox` Choice Creation:
             ⹀ Apply `ArchivistSeen` to @Result
           ⁃ Otherwise: Learn `No more @Selection exist`
         · Process:
-          ⁃ randomize(@(Attr:ArchivistCandidate2))
+          ⁃ randomize(@(Attr:ArchivistCandidate:2))
         · Evaluate:
           ⁃ @Result exists:
             ⹀ Learn `@Result->OriginalRole exists`
             ⹀ Apply `ArchivistOption` to @Result
             ⹀ Apply `ArchivistSeen` to @Result
           ⁃ Otherwise: Learn `No more @SecondarySelection exist`
-        · Remove `ArchivistCandidate1` from @All
-        · Remove `ArchivistCandidate2` from @All
+        · Remove `ArchivistCandidate` from @All
       ◦ Immediate Day:
         · @(AliveOnly:False,Attr:ArchivistOption) exists: Target @Selection (List: @(AliveOnly:False,Attr:ArchivistOption)->OriginalRole)
         · Otherwise: Target @Selection (List: `No Remaining Roles`)
