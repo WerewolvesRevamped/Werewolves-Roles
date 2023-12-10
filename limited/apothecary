@@ -19,7 +19,7 @@ Passive Start Night: `Apothecary` Choice Creation:
   • `Poison`:
     ‣  Immediate Night:
       ◦ @Self->Counter > 0:
-        · Apply `PoisonedInactive` to @Selection (~Persistent)
+        · Apply `Poisoned` to @Selection (~Persistent) (Inactive)
         · Decrement Counter
   • `Cure`: 
     ‣ Immediate Night:
@@ -27,7 +27,5 @@ Passive Start Night: `Apothecary` Choice Creation:
         · Remove `Poisoned` from @Selection 
         · Remove `CureAvailable` from @Self
 Immediate Night: `Apothecary` Choice Choose @Chosen
-Passive End Night:
-  • Kill @(Attr:Poisoned:@Self)
-  • Apply `Poisoned` to @(Attr:PoisonedInactive:@Self)
-  • Remove `PoisonedInactive:@Self` from @All
+Passive Start Day:
+  • Change `Poisoned` value `1` to `Active` for @(Attr:Poisoned:@Self)
