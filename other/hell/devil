@@ -52,6 +52,3 @@ Start Night:
       ◦ Role Investigate @Chooser (WD, SD) {Direct}
     ‣ `Ignore`:
       ◦ *Nothing*
-Passive End Night:
-  • Conversation Reset `Wager Recipient`
-  • Revoke `Wager Recipient` from @(Role:Wager Recipient)
