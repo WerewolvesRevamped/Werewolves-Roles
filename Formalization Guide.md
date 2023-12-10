@@ -768,6 +768,7 @@ Format:
 
 Format:  
 `Copy <Target> (<DurationType>)` (Copies all abilities of target role or player to yourself)  
+`Full Copy <Target>` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc)
 `Duplicate <Target>'s abilities (<DurationType>)` (Copies all abilities of target role or player to themself)  
 `Copy <Target> to <Target2> (<DurationType>)` (Copies all abilities of a target role or player to another player)  
 
