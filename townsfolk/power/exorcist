@@ -32,10 +32,24 @@ Immediate Day: [Attribute: @Selection lacks `Exorcised:@Self`]
     ‣ Remove `Sleepless` from @Selection
     ‣ Remove `Doomed` from @Selection
   • Evaluate:
-    ‣ @Result1 is `Success`: Reveal `@Selection was cured of Enchanted` to @(Align:Flute)
-    ‣ @Result2 is `Success`: Reveal `@Selection was cured of Charmed` to @(Align:Flute)
-    ‣ @Result3 is `Success`: Reveal `@Selection was cured of Powdered` to @(Align:Pyro)
-    ‣ @Result4 is `Success`: Reveal `@Selection was cured of Demonized` to @(Align:Underworld)
-    ‣ @Result5 is `Success`: Reveal `@Selection was cured of Contaminated` to @(Align:Plague)
-    ‣ @Result6 is `Success`: Reveal `@Selection was cured of Sleepless` to @(Align:Nightmare)
-    ‣ @Result7 is `Success`: Reveal `@Selection was cured of Doomed` to @(Align:Horsemen)
+    ‣ @Result1 is `Success`:
+      ◦ Reveal `@Selection was cured of Enchanted` to @(Align:Flute)
+      ◦ Lean `@Selection was cured of Enchanted`
+    ‣ @Result2 is `Success`:
+      ◦ Reveal `@Selection was cured of Charmed` to @(Align:Flute)
+      ◦ Learn `@Selection was cured of Charmed`
+    ‣ @Result3 is `Success`:
+      ◦ Reveal `@Selection was cured of Powdered` to @(Align:Pyro)
+      ◦ Learn `@Selection was cured of Powdered`
+    ‣ @Result4 is `Success`:
+      ◦ Reveal `@Selection was cured of Demonized` to @(Align:Underworld)
+      ◦ Learn `@Selection was cured of Demonized`
+    ‣ @Result5 is `Success`:
+      ◦ Reveal `@Selection was cured of Contaminated` to @(Align:Plague)
+      ◦ Learn `@Selection was cured of Contaminated`
+    ‣ @Result6 is `Success`:
+      ◦ Reveal `@Selection was cured of Sleepless` to @(Align:Nightmare)
+      ◦ Learn `@Selection was cured of Sleepless`
+    ‣ @Result7 is `Success`:
+      ◦ Reveal `@Selection was cured of Doomed` to @(Align:Horsemen)
+      ◦ Learn `@Selection was cured of Doomed`
