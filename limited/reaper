@@ -26,7 +26,8 @@ __Formalized__
 Inherit: `Nightmares`
 On @All Death: Apply `ReaperPower` to @This (Inactive)
 Passive Start Night:
-  • Change `ReaperPower` value `1` to `Active` for @(Attr:ReaperPower)
+  • Remove `ReaperPower` from @(AliveOnly:False,Attr:ReaperPower:Active)
+  • Change `ReaperPower` value `1` to `Active` for @(AliveOnly:False,Attr:ReaperPower)
   • Learn `You may attack count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing)) players`
   • Learn `You may investigate count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative)) players`
   • Learn `You may recruit count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align)) players`
