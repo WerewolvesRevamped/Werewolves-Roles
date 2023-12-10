@@ -15,7 +15,7 @@ The Vicious Hag may once attack a player.
 
 __Formalized__
 Inherit: `Coven`
-Compound: [Counter: > 0] {Repeating} 
+Compound: [Condition: @Self->Counter > 0] {Repeating} 
   • Immediate Night: Decrement Counter
   • End Night: Attack @Selection
 Passive:
