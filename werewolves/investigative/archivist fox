@@ -20,7 +20,7 @@ Passive Start Day: `Fox` Choice Creation:
   • `Join Pack`:
     ‣  Immediate Day: Role Change @Self to `Wolf`
   • `Investigate`
-    ‣ Compound:
+    ‣ Compound: {Visitless}
       ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
         · Untarget
         · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@Selection):
