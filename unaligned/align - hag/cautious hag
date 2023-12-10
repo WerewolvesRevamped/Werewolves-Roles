@@ -15,7 +15,7 @@ The Cautious Hag may protect a player, including themself.
 
 __Formalized__
 Inherit: `Coven`
-Immediate Night: [Counter: > 0] {Repeating}
+Immediate Night: [Condition: @Self->Counter > 0] {Repeating}
   • Protect @Selection from `Attacks` through Active Defense during Night  (~Phase)
   • @Selection->Alignment is `Coven`: Apply `Unwrongable` to @Selection (~Phase)
   • Decrement Counter
