@@ -44,6 +44,7 @@ FoodType [Food Type]
 *Unwrongable*
 *Rival*
 *CoyoteTrigger*
+*DetectiveGuess* [Role]
 
 \* refers to custom attributes exclusive to limited roles
 strikethrough refers to custom attributes exclusive to mini/variant/temporary roles
