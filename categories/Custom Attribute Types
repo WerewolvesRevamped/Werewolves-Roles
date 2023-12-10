@@ -21,6 +21,7 @@ Doomed [Doom Type]
 Soulless
 PsychopathList
 Waiter
+*Raven*
 *Sleepless*
 *Charmed*
 *Warded*
@@ -39,7 +40,6 @@ FoodType [Food Type]
 *Poisoned* [Activeness]
 *CureAvailable*
 *RavenInformation* [Visitor]
-*Raven*
 *Wronger*
 *Unwrongable*
 *Rival*
