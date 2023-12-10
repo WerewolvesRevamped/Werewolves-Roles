@@ -18,3 +18,5 @@ Inherit: `Coven`
 Compound: [Counter: > 0] {Repeating} 
   • Immediate Night: Decrement Counter
   • End Night: Attack @Selection
+Passive:
+  • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
