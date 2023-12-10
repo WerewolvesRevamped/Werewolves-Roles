@@ -13,3 +13,42 @@ __Simplified__
 The Archivist Fox and the wolfpack do not know each other.
 Each day, the Archivist Fox is told two roles from the role list, from categories they choose. They may choose one of them, and the wolfpack will be told this role.
 Once per game, the Archivist Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Starting: Apply `ArchivistSelected` to @Self
+Passive Start Day: `Fox` Choice Creation:
+  • `Join Pack`:
+    ‣  Immediate Day: Role Change @Self to `Wolf`
+  • `Investigate`
+    ‣ Compound:
+      ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
+        · Untarget
+        · For Each @(AliveOnly:False,Attr:!ArchivistSelected:@Self,OrigFullCat:@Selection):
+          ⁃ Apply `ArchivistCandidate1` to @Ind 
+        · For Each @(AliveOnly:False,Attr:!ArchivistSelected:@Self,OrigFullCat:@SecondarySelection):
+          ⁃ Apply `ArchivistCandidate2` to @Ind 
+        · Process:
+          ⁃ randomize(@(Attr:ArchivistCandidate1))
+        · Evaluate:
+          ⁃ @Result exists:
+            ⹀ Learn `@Result->OriginalRole exists`
+            ⹀ Apply `ArchivistOption` to @Result
+          ⁃ Otherwise: Learn `No more @Selection exist`
+        · Process:
+          ⁃ randomize(@(Attr:ArchivistCandidate2))
+        · Evaluate:
+          ⁃ @Result exists:
+            ⹀ Learn `@Result->OriginalRole exists`
+            ⹀ Apply `ArchivistOption` to @Result
+          ⁃ Otherwise: Learn `No more @SecondarySelection exist`
+        · Remove `ArchivistCandidate1` from @All
+        · Remove `ArchivistCandidate2` from @All
+      ◦ Immediate Day:
+        · @(AliveOnly:False,Attr:ArchivistOption) exists: Target @Selection (List: @(AliveOnly:False,Attr:ArchivistOption)->OriginalRole)
+        · Otherwise: Target @Selection (List: `No Remaining Roles`)
+      ◦ Passive Start Night:
+        · Reveal `ArchivistFox archived a @Target` to #wolfpack
+        · For Each @(AliveOnly:False,Attr:ArchivistOption):
+          ⁃ @Ind->OriginalRole is @Target: Apply `ArchivistSelected` to @Ind
+        · Remove `ArchivistOption:@Self` from @All
+Immediate Day: `Fox` Choice Choose @Chosen
