@@ -15,6 +15,6 @@ When there are 15 or more players, they may decide that a second player will be 
 When there are less than 15 players, they instead get 2 votes on the public polls.
 
 __Formalized__
-Immediate Night: Add `Lynch` Poll ⟨Living Players: >15 ⇒ x1⟩
-Passive: Manipulate @Self's `special public voting power` to `1` ⟨Living Players: ≤15 ⇒ x1⟩
+Immediate Night: Add `Lynch` Poll ⟨$living>15 ⇒ x1⟩
+Passive: Manipulate @Self's `special public voting power` to `1` ⟨$living≤15 ⇒ x1⟩
 End Phase: Revoke `Mayor` from @Self
