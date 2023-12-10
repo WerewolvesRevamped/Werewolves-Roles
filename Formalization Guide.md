@@ -54,6 +54,7 @@
     - [Counting](#counting)
     - [Conversation Reset](#conversation-reset)
     - [Cancel](#cancel)
+    - [Switching](#switching)
 - [Host Information](#host-information)
 - [Utility Functions](#utility-functions)
 
@@ -872,6 +873,15 @@ Within `On Visit` triggers you can use `Cancel` to cancel the visit.
 Format:  
 `Cancel` (Cancels the visit with a resulting failure)  
 `Cancel with [Failure|Success|'<Custom Feedback>']` (Cancels the visit with specific feedback)  
+
+---
+#### Switching
+
+Format:  
+`Switch with <Target>`  
+
+Does a thief switch with another player.
+- Target: A target specifying who to switch with
 
 ## Host Information
 
