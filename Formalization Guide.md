@@ -336,6 +336,8 @@ An action may also be marked as `{Direct}` to make it unaffected by redirections
 
 An action may also be marked as `{Repeating}` in which case it can be repeated, assuming the restrictions allow it.
 
+An action may also be marked as `{Visitless}` in which case it does not count as a visit and can additionally not be redirected.
+
 ----
 #### Compound Actions
 
