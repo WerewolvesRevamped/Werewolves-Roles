@@ -12,3 +12,7 @@ A Restaraunt Customer is a player whom a chef gives food to. The chef can anonym
 If the food is charmed then the Restaurant Customer gets *protection* for the following night phase.
 If the food is poisoned then the Restaurant Customer will be *killed* at the end of the following night phase.
 Once the food is eaten, the player cannot become a Restaraunt Customer again.
+
+__Formalized__
+Immediate Day: `Eat` Choice Choose @Chosen
+Passive Start Night: Conversation Reset
