@@ -21,4 +21,4 @@ Starting:
   • Target most_freq_role(@(Group:Wolfpack,Cat:!Group)) (Role)
   • Copy @Target
   • Strongly Disguise @Self as @Target->Role
-End Night: Attack @Selection [Selection: in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
+End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
