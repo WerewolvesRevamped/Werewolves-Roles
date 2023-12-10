@@ -23,6 +23,7 @@ PsychopathList
 *Sleepless*
 *Charmed*
 *Warded*
+~~Bitten~~
 
 __Technical Custom Attributes__
 Exorcised
@@ -36,3 +37,4 @@ OracleSelected
 *Unwrongable*
 
 \* refers to custom attributes exclusive to limited roles
+strikethrough refers to custom attributes exclusive to mini/variant/temporary roles
