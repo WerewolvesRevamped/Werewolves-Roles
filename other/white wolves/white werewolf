@@ -17,6 +17,7 @@ The White Werewolf imitates the most common werewolf role, being disguised as su
 
 __Formalized__
 Inherit: `Pack Lycan`
+Starting: Apply `Wolfish` to @Self
 Starting:
   • Target most_freq_role(@(Group:Wolfpack,Cat:!Group)) (Role)
   • Copy @Target
