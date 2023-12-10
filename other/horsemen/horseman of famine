@@ -14,5 +14,6 @@ Inherit: `Horsemen`
 Immediate Night:
   • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (Famine) ⟨x2⟩
   • @Selection->Alignment is `Horsemen`:
+    ‣ Apply `Doomed` to @Selection (~Persistent)
     ‣ Join `Horsemen`
     ‣ Add @Selection to `Horsemen`
