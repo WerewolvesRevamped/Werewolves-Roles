@@ -12,3 +12,6 @@ If the amulet crafter dies or choose to, the amulet shatters. When the amulet sh
 __Simplified__
 The Amulet of Protection is in play, if an Amulet Crafter is in the game. The Amulet Crafter is the original holder of the amulet.
 As long as you hold the amulet, you cannot die by attacks during the night, but you must pass it to another player during the day.
+
+__Formalized__
+ Passive End Day: Conversation Reset
