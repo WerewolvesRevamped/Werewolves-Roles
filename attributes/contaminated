@@ -6,6 +6,7 @@ __Formalized__
 On Visit: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage)
 On Action: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage)
 Passive Start Night:
+  • @ThisAttr->Value1 is `LateStage`: Change @ThisAttr value `1` to `Inactive` for @Self
   • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
   • @ThisAttr->Value1 is `EarlyStage`: Change @ThisAttr value `1` to `MiddleStage` for @Self
 Passive: [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
