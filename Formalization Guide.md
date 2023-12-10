@@ -609,7 +609,7 @@ As a result of a Protecting the <Target> receives a `Defense` attribute.
 Format:  
 `Apply '<Attribute>' to <Target> (<Duration>) (<AdditionalAttributeData>)` (Add a custom attribute)  
 `Remove '<Attribute>' from <Target>` (Remove a custom or standard attribute)  
-
+`Change '<Attribute>' value '<Index>' to '<NewValue>'` (Change an attributes value)  
 
 - Attribute: (apply) A defined custom attribute, (remove) a defined custom or a standard attribute 
 - Target: A target type (a player or a group)
