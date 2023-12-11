@@ -9,7 +9,7 @@ On Killed:
     ‣ Increment Counter
 On Lynch:
   • For Each @Voters:
-    ‣ (@Ind->Class is not `Unaligned`) and not (@Ind->Alignment) has `Wronger`:
+    ‣ (@Ind->Class is not `Unaligned`) and not (@Ind->Alignment has `Wronger`):
       ◦ Reveal `Hags were wronged by @Ind->Alignment` to #story_time
       ◦ Apply `Wronger` to @Ind->Alignment 
       ◦ Increment Counter
