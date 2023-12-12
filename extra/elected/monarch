@@ -1,0 +1,16 @@
+**Monarch** | Extra Elected | Limited
+__Basics__
+The Monarch is elected during Day 0.
+They may knight a player each day, temporarily granting them an extra vote, and negating a vote against them.
+__Details__
+The Monarch is *only* elected during Day 0 and the election is not repeated throughout the game. However, if the Monarch dies, the role is not lost, and instead it is passed on to their heir. The Monarch may select a player as their heir and they can update this target once per phase, with 1 emergency change to be used whenever the Monarch wants. 
+Neither the knighted player, nor the heir are aware of being selected by the Monarch.
+The knighted player's vote appears normally on votes, however internally an additional vote is counted. The negated vote is still shown in the vote results - however the total amount of votes for the knighted player is decreased by one.
+When the heir becomes the new Monarch, they are *not* revealed.
+If the Monarch dies without a living heir, the role is lost - there will not be another Monarch nor will there be another Monarch election.
+Knight a player and picking an heir are immediate abilities.
+
+__Simplified__
+The Monarch is elected during Day 0.
+They may secretly knight a player each day, temporarily granting them an extra vote, and negating a vote against them.
+They may secretly pick a player as their heir who will secretly receive the Monarch role on the current monarch's death.
