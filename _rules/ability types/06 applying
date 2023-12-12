@@ -1,0 +1,6 @@
+**Applying** | Ability Type
+__Basics__
+Applying is an ability type that applies a custom attribute to a player.
+__Details__
+Applying simply adds an attribute to a player. Custom attributes may themselves involve various other ability types.
+Removing an attribute (standard or custom) is also a type of Applying.
