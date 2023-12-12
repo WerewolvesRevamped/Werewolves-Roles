@@ -1,0 +1,19 @@
+**Cupid** | Ability Set
+On Death:
+  • True Kill @Target
+  • Reveal `Cupid @Self died, killing Lover @Target` to #story_time
+On @Target Death:
+  • True Kill @Self
+  • Reveal `Lover @Target died, killing Cupid @Self` to #story_time
+Passive:
+  • (@Target->Alignment is `Coven`) or (@Target->Role is `Hag`): Role Change @Self to `Cupid Hag`
+  • @Target->Alignment is `Hell`: Role Change @Self to `Demonic Cupid`
+Passive:
+  • @Target exists: Alignment Change @Self to @Target->Alignment
+  • Otherwise: Alignment Change @Self to @All->Alignment
+On Visited [Role Change]:
+  • Cancel with Success
+  • not (@Target) exists: Target randomize(@All)
+  • @VisitParameter is `Undead`: Role Change @Self to `Undead Cupid`
+  • @VisitParameter is `Spirit`: Role Change @Self to `Spectral Cupid`
+  • @VisitParameter is `Wolf`: Role Change @Self to `Cupid Wolf`

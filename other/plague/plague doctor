@@ -15,3 +15,14 @@ __Simplified__
 The Plague Doctor is partially immune to the plague bearer’s disease, but dies if directly targeted by a rodent. As soon as the plague is eliminated (nobody is or can be contaminated), the Plague Doctor ascends and wins.
 Each night, the Plague Doctor may check one player for whether they have the plague. They may use one of their vials during the day to immediately cure a player.
 The Plague Doctor cannot win whilst dead.
+
+__Formalized__
+Starting: Set Counter to calc(round($total/5))
+Immediate Night:
+  • (@Selection has `Contaminated`) and (@Selection->Alignment is not `Plague`):
+    ‣ Learn `@Selection has had the plague since @Selection->Attr(Contaminated)->Value2`
+Immediate Day:
+  • Remove `Contaminated` from @Selection 
+  • Decrement Counter
+Passive:
+  • not (@(Attr:Contaminated) exists) and (not (@(Role:Plague Bearer) exists) or (#Plague-Pit->Counter is `0`)): Ascend

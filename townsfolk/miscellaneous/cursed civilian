@@ -7,3 +7,7 @@ If attacked any other way than by a wolfish player, the Cursed Civilian will die
 
 __Simplified__
 If the Cursed Civilian is attacked by the werewolves, they will turn into a wolf instead of dying.
+
+__Formalized__
+Starting: Protect @Self from `Attack` by @(Attr:Wolfish) through Partial
+On Partial Defense: Role Change @Self to `Wolf`

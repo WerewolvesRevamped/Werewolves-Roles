@@ -10,3 +10,10 @@ The Bitter Hag is coven-aligned.
 
 __Simplified__
 If the hags have been wronged by all remaining teams, they turn into Bitter Hags. The Bitter Hag wins if all remaining players are dead, unaligned or hags. Each Bitter Hag may protect, investigate and attack a player once per night.
+
+__Formalized__
+Inherit: Coven
+Starting: Join #Bitter-Hags
+Immediate Night: Protect @Selection from `Attacks` (~Phase)
+Immediate Night: Alignment investigate @Selection
+End Night: Attack @Selection

@@ -1,7 +1,12 @@
 **Nightmare Team**
 Nightmare team wins when all players are either dead, unaligned, sleepless or part of the Nightmare team. All members of the team know each other.
 
-__Roles:__
+__Roles__
 <?Reaper:> *Reaper*
 <?Wraith:> *Wraith*
 <?Spirit:> *Spirit (T)*
+
+__Formalized__
+Win Condition: @(Attribute:Sleepless), @(Class:Unaligned)
+Inherit: `Sleepless`
+Starting: Join #Nightmare

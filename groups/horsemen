@@ -1,0 +1,8 @@
+**Horsemen** | Horsemen Team Group
+__Basics__
+Horsemen is the group for the horsemen team. The horsemen may join the group throughout the duration of the game, but do not start out as members.
+__Members__
+<?ApocalypticHorseman:>
+
+__Formalized__
+On Disbandment: not (@(Align:Horsemen) exists): Remove `Doomed` from @All

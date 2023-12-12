@@ -12,3 +12,15 @@ __Simplified__
 The Clairvoyant Fox and the wolfpack do not know each other.
 Each day, the Clairvoyant Fox may investigate one player. This is affected by weak disguises, redirections, and obstructions. At the end of the day the wolfpack is also told the role of that player, but they won't know which player was checked.
 Once per game, the Clairvoyant Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Passive Start Day: `Fox` Choice Creation:
+  • `Join Pack`:
+    ‣  Immediate Day: Role Change @Self to `Wolf`
+  • `Investigate`
+    ‣ Compound:
+      ◦ Immediate Day:
+        · Process: Role Investigate @Selection (SD, WD)
+        · Evaluate: Target @Result (Role)
+      ◦ Passive Start Night: Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
+Immediate Day: `Fox` Choice Choose @Chosen

@@ -27,3 +27,28 @@ The hell team can use obtained souls for protection or to attack players.
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
 
 When everyone is dead, unaligned, or soulless, the Devil wins.
+
+__Formalized__
+Unique Role
+Inherit: `Souls`
+Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: Citizen}
+Start Night:
+  • Grant `Wager Recipient` to @Selection [Attribute: @Selection lacks `Soulless`] {Direct}
+  • Whisper to #Wager-Recipient as `Devil` (~Phase)
+  • `Wager` Choice Creation for #Wager-Recipient
+    ‣ `Attack`:
+      ◦ Afterwards: Apply `Souless` to @Chooser (~Persistent)
+      ◦ Afterwards: Increment Counter for #hell  
+      ◦ End Night: @Selection->Alignment is not `Hell`: Attack @Selection
+    ‣ `Protect`:
+      ◦ Afterwards: Apply `Souless` to @Chooser (~Persistent)
+      ◦ Afterwards: Increment Counter for #hell  
+      ◦ Afterwards: Protect @Selection from `Attacks` through Active Defense (~Phase)
+    ‣ `Investigate`:
+      ◦ Process: Role Investigate @Selection (WD, SD)
+      ◦ Evaluate:
+        · Reveal `@Selection is @Result` to #Wager-Recipient
+        · Reveal `@Selection is @Result` to @Self
+      ◦ Role Investigate @Chooser (WD, SD) {Direct}
+    ‣ `Ignore`:
+      ◦ *Nothing*

@@ -7,3 +7,8 @@ They are strongly disguised as a Butcher.
 
 __Simplified__
 The Bloody Butcher is the disguised werewolf spy in the butcher group. They are part of both channels.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Starting: Strongly Disguise @Self as `Butcher`
+Starting: Join #Butchers

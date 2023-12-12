@@ -7,3 +7,7 @@ A Wolf Cub losing their role does not cause an additional lynch.
 
 __Simplified__
 The night after the Wolf Cub dies, the wolfpack will be able to kill an additional player.
+
+__Formalized__
+Inherit: `Pack Lycan`
+On Death: Add `Wolfpack` Poll

@@ -1,0 +1,6 @@
+**Waiter** | Attribute
+__Basics__
+Am attribute used by chef to mark its waiters. The Chef wins when at least one waiter survives until the end of the game.
+
+__Formalized__
+No Abilities

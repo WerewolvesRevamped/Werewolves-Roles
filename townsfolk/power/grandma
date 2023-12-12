@@ -11,3 +11,19 @@ The Grandma may select themself. The Grandma is not affected by redirections.
 
 __Simplified__
 Each night, the Grandma may choose exactly two players. The next day, these selected players' votes won't count: the Grandma will have two votes instead. The Grandma can anonymously talk with their selected players.
+
+__Formalized__
+Unique Role
+Starting:
+  • Whisper to #Grandma's-House as `Grandma`
+  • Manipulate @Self's `public voting power` to `0`
+Immediate Night:
+  • Manipulate @Self's `public voting power` to `2` (~NextDay)
+  • Add @Selection to #Grandma's-House (~NextDay)
+  • Add @SecondarySelection to #Grandma's-House (~NextDay)
+  • Evaluate:
+    ‣ @Selection->PublicVotingPower > `0`: Manipulate @Selection's `public voting power` by `-1` (~NextDay)
+    ‣ Otherwise: Learn `@Selection could not be manipulated`
+  • Evaluate:
+    ‣ @SecondarySelection->PublicVotingPower > `0`: Manipulate @SecondarySelection's `public voting power` by `-1` (~NextDay)
+    ‣ Otherwise:  Learn `@SecondarySelection could not be manipulated`

@@ -9,3 +9,10 @@ Should a wolfish player attempt to attack the Recluse, the attack fails.
 __Simplified__
 The Recluse and the wolfpack do not know each other.
 The Recluse is immediately notified of all powers used on them. When a werewolf uses a power on them, they are given that werewolf's identity.
+
+__Formalized__
+On Visited:
+  • @Visitor->Alignment is `Werewolf`: Learn `@Visitor->Role @Visitor used @VisitType on you`
+  • Otherwise:  Learn `@Visitor->Role used @VisitType on you`
+On Visited [Attack]:
+  • @Visitor has `Wolfish`: Cancel with Failure

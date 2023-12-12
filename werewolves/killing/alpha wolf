@@ -10,3 +10,15 @@ The Alpha Wolf's loyalty to the pack is so great that their alignment cannot be 
 
 __Simplified__
 The Alpha Wolf has two votes on the wolfpack poll. Additionally, the Alpha Wolf may once overwrite the decision of the wolfpack, and choose the target of wolfpack attack. The Alpha Wolf can not change alignments.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Passive: Loyalty to `Werewolf` (Alignment)
+Starting: Manipulate @Self's `Private Voting Power` to `2`
+End Night: [Quantity: 1]
+• Cancel Wolfpack Poll
+• Attack @Selection
+• Target @Selection (List: Reveal, NoReveal) {Forced: NoReveal}
+• Evaluate:
+  ‣ (@Target is NoReveal): Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
+  ‣ Otherwise: Reveal `@Self is Alpha Wolf` to #wolfpack

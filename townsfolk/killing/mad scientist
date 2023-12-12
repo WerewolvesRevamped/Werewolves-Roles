@@ -10,3 +10,14 @@ When the Mad Scientist kills, they are revealed as the Mad Scientist.
 
 __Simplified__
 The Mad Scientist has two subjects, from two different teams, one of which they must choose to die with them when they are killed.
+
+__Formalized__
+Unique Role
+Starting:
+  • Grant `Test Subject` to %Player1% 
+  • Grant `Test Subject` to %Player2% 
+  • Join #Laboratory
+Immediate: Target @Selection (List: %Player1%, %Player2%) {Forced}
+On Death: 
+  • Process: Attack @Target
+  • Evaluate: @Result is `Success`: Reveal `Mad Scientist @Self killed @Target` to #story_time
