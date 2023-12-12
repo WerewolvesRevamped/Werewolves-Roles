@@ -8,7 +8,3 @@ This will not happen if the Fortune Apprentice’s role has changed.
 
 __Simplified__
 The Fortune Apprentice will take the place of the first town investigative role to die, turning into their role, but will not learn their identity nor the results of their checks.
-
-__Formalized__
-On @(Cat:Investigative,Align:Townsfolk) Death: Target @This->Role
-Passive Start Day: Role Change @Self to @Target [Target: exists]
