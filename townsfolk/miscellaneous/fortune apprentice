@@ -1,10 +1,10 @@
 **Fortune Apprentice** | Townsfolk Miscellaneous
 __Basics__
-The Fortune Apprentice will assume the role of the first town investigative role to die.
+The Fortune Apprentice will assume the role of the first *town investigative* role to die.
 __Details__
-At the start of the first day after a town investigative role died or lost their role, the Fortune Apprentice will become the role of said town investigative. 
-The Fortune Apprentice does not know the identity of the previous town investigative role, nor do they know the checks made by this person.
-This will not happen if the Fortune Apprentice’s role has changed.
+At the start of the first day after a player with a *town investigative* role died or lost their role, the Fortune Apprentice will become the role of said *town investigative* player. 
+If there are several Fortune Apprentices when the role would be assumed, a random Fortune Apprentice is selected to assume the role. The rest remain Fortune Apprentices until the next town investigative role dies.
+The Fortune Apprentice does not know the identity of the previous *town investigative* role, nor do they know the checks made by this person.
 
 __Simplified__
-The Fortune Apprentice will take the place of the first town investigative role to die, turning into their role, but will not learn their identity nor the results of their checks.
+The Fortune Apprentice will take the place of the first *town investigative* role to die, turning into their role, but will not learn their identity nor the results of their checks.

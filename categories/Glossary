@@ -1,3 +1,31 @@
-**Glossary**
-Abilities
-Roles
+**v17 Approved Glossary**
+• Player: A person participating in a WWR game
+• Role: Determines *alignment*, *win condition*, *abilities*, *category* and *role attributes*
+• Attribute: Qualities of *players* or *roles* that affect the game
+  ‣ Role Attribute: An *attribute* attached to a *role*
+  ‣ Player Attribute: An *attribute* attached to a *player*
+• Alignment: Group of *players* that share a *win condition*
+• Ability: A feature of *roles* that allows them to affect the game in some way. Made up of an *ability type* and an *ability category*
+• Ability Category: Specifies what causes an *ability* to be activated
+  ‣ Active Ability: An *ability category* of *abilities* triggered directly from an *action*
+  ‣ Passive Ability: An *ability category* of *abilities* triggered automatically
+  ‣ Reactive Ability: An *ability category* of *abilities* triggered automatically, but affected by a prior *ability*
+  ‣ Starting Ability: An *ability category* of *abilities* triggered at the start of the game
+• Action: May be used by *players* to use their *role's* *active abilities*. *Action Timing*, *Action Restriction*, *Action Scaling* and *Action Compulsion* determine how/when the action may be used.
+  ‣ Action Timing: An element of an *action*, determining at what time it may be used
+    ‣ Immediate (Day/Night) Action: An *action* that is immediately evaluated (during *day*/*night*)
+    ‣ End Phase/Day/Night Action: An *action* that is evaluated at the end of the *phase*/*day*/*night*
+  ‣ Action Restriction: An element of an *action*, determining under what condition it may be used
+  ‣ Action Scaling: An element of an *action*, determing how often it may be used at once
+  ‣ Action Compulsion: An element of an *action*, determing if the *action* must be used
+    ‣ Forced Action: An *action* which must be used
+• Group: A group of *players*, who are mutually aware that they are part of the group
+• Category: A label for *roles*, showing their general purpose
+• Phases: A section of the game
+  ‣ Daytime: In this *phase*, *lynch* and *election* polls happen
+  ‣ Nighttime: In this *phase*, most *actions* can be used
+• Ability Type: Determines the general type of effect an *ability* has
+• Win Condition: A *role*'s requirements to win. Determined by *alignment* for aligned roles
+• Nonaligned: *Roles* that do not have an *alignment*
+• Lynch: A public vote during the day, eliminating the winner
+• Election: A public vote during the day, granting the winner additional powers

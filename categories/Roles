@@ -1,6 +1,12 @@
 **Roles**
-<?TownsfolkCard:> Townsfolk (Town)
-<?WolfCard:> Werewolves (WWs)
-<?SoloPlaceholder:> Solo Teams (Solos)
-<?UnalignedPlaceholder:> Unaligned (UA)
-<?Extra:> Extra (E)
+
+__Role Alignments:__
+<?TownsfolkCard:> Townsfolk (`$i Town`)
+<?WolfCard:> Werewolves (`$i WWs`)
+<?SoloPlaceholder:> Solo (`$i Solo`)
+<?UnalignedPlaceholder:> Unaligned (`$i ua`)
+<?Extra:> Extra (`$i extra`)
+
+__Role Types:__
+<?BotDeveloper:> Limited Roles (`$i limited`)
+Transformation Roles (`$i transformation`)

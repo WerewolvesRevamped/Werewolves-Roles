@@ -3,11 +3,12 @@ __Basics__
 The Riding Hood wins when they are killed by a wolfish player.
 __Details__
 When the Riding Hood wins, the Riding Hood ascends and stops playing. The game continues.
-The Riding Hood will win if they are killed by a wolfish player. If the Riding Hood is killed in another way, they lose. 
-If the Riding Hood is protected they neither die nor do they ascend. When the Riding Hood is killed by the wolfpack, the wolfpack may not attack *anyone* the following night.
-When the Riding Hood ascends any other way, the wolfish player responsible will be unable to kill/attack the following night.
+The Riding Hood will win if they are killed by a wolfish player. If the Riding Hood is killed in another way, they lose. If the Riding Hood is protected they neither die nor ascend. 
+When the Riding Hood is killed by the wolfpack, the wolfpack may not attack *anyone* the following night.
+When the Riding Hood ascends, the wolfish player responsible will be *ability blocked* the for following day and night.
 If no wolfish players remain, the Riding Hood stops playing, descends and loses.
+The Riding Hood is nonaligned.
 
 __Simplified__
-The Riding Hood wins when they are killed by a werewolf. They then stop playing, but the game continues. In the following night, the wolfpack cannot kill.
+The Riding Hood wins when they are killed by a werewolf. They then stop playing, but the game continues. During the following night, the werewolf responsible cannot kill.
 If they are killed in another way, they lose.

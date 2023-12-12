@@ -1,3 +1,6 @@
 **Plague Team**
-Plague Bearer
-Plague Carrier
+Plague Team wins when all players are either dead, unaligned or part of the Plague team. All members of the team know each other.
+
+__Roles:__
+<?PlagueBearer:> Plague Bearer
+<?PlagueCarrier:> Plague Carrier
