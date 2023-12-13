@@ -11,7 +11,7 @@ __Simplified__
 The Herald selects a role and is informed when the last player with that role dies.
 
 __Formalized__
-Immediate:
+Immediate: {Visitless}
   • Remove `HeraldSelected:@Self` from @All
   • Apply `HeraldSelected` to @(Role:@Selection) (~Persistent)
 On @(Attr:HeraldSelected:@Self) Death:
