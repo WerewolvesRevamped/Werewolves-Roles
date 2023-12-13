@@ -16,3 +16,26 @@ The Chef is nonaligned.
 __Simplified__
 The Chef has one waiter from every team, and their goal is to keep at least one alive. When the last waiter dies, the Chef dies and loses.
 They may send charmed or poisoned food to one person each night. A player who eats charmed food becomes invulnerable for a night: a player who eats poisoned food is *killed* at the end of the following night.
+
+__Formalized__
+Unique Role
+Starting:
+  • For Each &All:
+    ‣ Apply `Waiter` to randomize(@Ind->Members)
+Start Day:
+  • Grant `Restaurant Customer` to @Selection [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
+  • Apply `FoodType` to @Selection (~Phase) (@SecondarySelection[Poisoned,Charmed])
+  • Whisper to `Restaurant Customer` as `Chef` (~Phase)
+  • `FoodChoice` Choice Creation for #Restaurant-Customer
+    ‣ `Eat`:
+      ◦ Afterwards: Apply `Eaten` to @Self
+      ◦ Passive End Night: @Chooser has `FoodType:Charmed`: Kill @Chooser
+      ◦ Passive Start Night: Protect @Chooser from `Attacks` through Active Defense (~Phase)
+    ‣ `Ignore`:
+      ◦ *Nothing*
+On Death:
+  • Revoke `Restaurant Customer` from @All
+Passive:
+  • not (@(Attr:Waiter) exists): Descend
+On End:
+  • @(Attr:Waiter) exists: Ascend

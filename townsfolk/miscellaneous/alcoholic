@@ -7,3 +7,11 @@ The Alcoholic cannot exist without a bartender, and loses their power as soon as
 
 __Simplified__
 At night, the Alcoholic is immune against all attacks, but dies when the Bartender dies.
+
+__Formalized__
+Require: `Bartender`
+Starting: Protect @Self from 'Attacks' through Absence during Night
+On @(Role:Bartender) Death:
+  • not (@(Role:Bartender) exists): Remove 'Defense:Alcoholic' from @Self
+Passive End Night:
+  • not (@(Role:Bartender) exists): Kill @Self

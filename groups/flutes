@@ -1,0 +1,11 @@
+**Flutes** | Flute Team Group
+__Basics__
+Flutes is the group for the flute team.
+__Members__
+<?FlutePlayer:> Flute Player
+<?FluteApprentice:> Flute Apprentice
+
+<?FluteCharmer:> *Flute Charmer*
+
+__Formalized__
+On Disbandment: Remove `Obstructed:Enchanted` from @All 

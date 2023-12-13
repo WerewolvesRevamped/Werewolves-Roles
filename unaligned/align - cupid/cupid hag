@@ -9,3 +9,9 @@ The Cupid Hag is coven-aligned.
 
 __Simplified__
 The Cupid Hag is a cupid whose lover is a member of the coven team.
+
+__Formalized__
+Inherit: `Cupid`
+Inherit: `Coven`
+Passive:
+  • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Join #Bitter-Hags

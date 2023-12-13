@@ -2,7 +2,7 @@
 __Basics__
 The Cupid chooses one player to be their lover, and forms an inseparable team with that player.
 __Details__
-During Night 1, the Cupid must choose one player to become their lover. If the Cupid does not choose in time, they will fall in love with a random player. The lover is added to the Cupid’s secret channel and the lover's role is revealed to the Cupid.
+During Night 1, the Cupid must choose one player to become their lover. The Cupid cannot choose itself. If the Cupid does not choose in time, they will fall in love with a random player. The lover is added to the Cupid’s secret channel and the lover's role is revealed to the Cupid.
 The Cupid and their lover form an inseparable team; they will die if the other player dies. When this happens it is announced. Choosing a lover is an immediate ability.
 The Cupid will always have the same alignment as their lover.
 If the Cupid's lover is unaligned they can only win with their lover's win condition.
@@ -16,3 +16,12 @@ The Cupid is nonaligned unless they gain an alignment from their lover.
 
 __Simplified__
 The Cupid chooses one player to become their lover. They can never betray each other and if one dies, the other does too. The Cupid's alignment is the same as their lover's alignment.
+
+__Formalized__
+Inherit: `Cupid`
+Starting: Join #Couple:@Self
+Immediate Night: {Forced}
+  • Target @Selection (Player) [Condition: @Selection is not @Self]
+  • Grant `Lover` to @Target
+  • Add @Target to #Couple:@Self 
+  • Learn `@Target is @Target->Role`

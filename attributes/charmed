@@ -1,0 +1,8 @@
+**Charmed** | Attribute
+__Basics__
+An attribute given by a Flute Charmer. Being in possesion of this attribute *weakly disguises* the holder as a Flute Player
+When a player is both charmed and enchanted, the charmed attribute and its corresponding disguise is removed.
+When no members of the flute team remain, the attribute is automatically removed.
+
+__Formalized__
+Starting: Weakly Disguise @ThisAttr->OwnerPlayer as `Flute Player` (~Attribute)

@@ -7,3 +7,9 @@ The information given is not influenced by any other powers, and therefore is co
 
 __Simplified__
 The Town Crier learns the role of another townsfolk at the start of Night 1.
+
+__Formalized__
+Starting: Target `%Player:@(Align:Townsfolk)%` (Player)
+Passive Start Night: [Temporal: Night 1]
+  • Process: Role Investigate @Target
+  • Evaluate: Learn `@Target is @Result`

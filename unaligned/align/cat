@@ -2,7 +2,7 @@
 __Basics__
 During Night 1, the Cat will become the counter-role to that which the dog has chosen. 
 __Details__
-If the dog chooses fortune teller, the Cat will turn into warlock, and vice versa. The dog choosing rival will turn the Cat into an opposing rival.
+If the dog chooses fortune teller, the Cat will turn into warlock, and vice versa. The dog choosing rival will turn the Cat into an opposing rival. If the dog changed role before choosing a role, the Cat will become fortune teller at the end of night 1.
 Changing role is an immediate consequence of the dog choosing. A Cat which becomes a fortune teller or a warlock may not use that role's investigation during Night 1.
 For each Cat in the game, there must be a corresponding dog. Neither player will know their counterpart.
 The Cat is strongly disguised as Cat: this will persist despite any role changes.
@@ -10,3 +10,13 @@ The Cat is nonaligned until it changes role.
 
 __Simplified__
 For each Cat, there is a corresponding dog. The Cat will become the opposite of the role the dog chose.
+
+__Formalized__
+Starting: Target randomize(@(Role:Dog))
+Starting: Strongly Disguise @Self as `Cat` (~Persistent)
+Passive:
+  • @Target->Role is `Fortune Teller`: Role Change @Self to `Warlock`
+  • @Target->Role is `Rival`: Role Change @Self to `Rival`
+  • @Target->Role is `Warlock`: Role Change @Self to `Fortune Teller`
+Passive End Night: @Target->Role is not `Dog`: Role Change @Self to `Fortune Teller`
+On Action [Role Change]: Obstruct Investigation for @Self (~Phase)

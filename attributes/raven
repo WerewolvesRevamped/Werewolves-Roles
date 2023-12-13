@@ -1,0 +1,6 @@
+**Raven** | Attribute
+__Basics__
+The Raven attribute is applied by the ravenkeeper. If one player with a raven visits a player with a raven from the same ravenkeeper, the ravenkeeper is informed at the end of the phase.
+
+__Formalized__
+On Visited: @Visitor has `Raven:@ThisAttr->OwnerPlayer`: Apply `RavenInformation` to @ThisAttr->OwnerPlayer (@Visitor)

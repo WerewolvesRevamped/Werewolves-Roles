@@ -8,3 +8,6 @@ A Child losing their role does not cause an additional lynch.
 
 __Simplified__
 The day after the Child dies, there will be two lynches instead of one.
+
+__Formalized__
+On Death: Add `Lynch` Poll

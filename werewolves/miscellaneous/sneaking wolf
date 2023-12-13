@@ -7,3 +7,7 @@ If the Sneaking Wolf loses their role, they no longer appear as citizen.
 
 __Simplified__
 The Sneaking Wolf will appear as a citizen to most investigative roles, as they are strongly disguised as one.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Starting: Strongly Disguise @Self as `Citizen`

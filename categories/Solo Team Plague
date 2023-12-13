@@ -1,6 +1,10 @@
 **Plague Team**
 Plague Team wins when all players are either dead, unaligned or part of the Plague team. All members of the team know each other.
 
-__Roles:__
+__Roles__
 <?PlagueBearer:> Plague Bearer
 <?PlagueCarrier:> Plague Carrier
+
+__Formalized__
+Win Condition: @(Alignment:Plague), @(Class:Unaligned)
+Starting: Join #Plague-Pit

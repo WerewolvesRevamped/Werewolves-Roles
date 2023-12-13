@@ -1,0 +1,8 @@
+**Shatter Amulet** | Attribute
+__Basics__
+A technical attribute used by amulet of protection to cause a shattering.
+
+__Formalized__
+Passive:
+  • Attack @(Role:Amulet of Protection)
+  • Revoke `Amulet of Protection` from @(Role:Amulet of Protection)

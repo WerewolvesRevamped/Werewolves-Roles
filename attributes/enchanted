@@ -1,0 +1,8 @@
+**Enchanted** | Attribute
+__Basics__
+The attribute of the flute team. Enchanted players experience have their role investigations obstructed: 60% of time they will see the result as `Flute Player`.
+
+__Formalized__
+Starting:
+  • Obstruct Role Investigation for @Self ⇒ [0.6:`Flute Player`,0.4:@Result] (~Attribute)
+  • Join #Enchanted (~Attribute)

@@ -1,8 +1,12 @@
 **Flute Team**
 Members of this team win when all players are dead, unaligned, enchanted, or part of the flute team. All members of the team know each other.
 
-__Roles:__
+__Roles__
 <?FlutePlayer:> Flute Player
 <?FluteApprentice:> Flute Apprentice
 
 <?FluteCharmer:> *Flute Charmer*
+
+__Formalized__
+Win Condition: @(Alignment:Flute Team), @(Attribute:Enchanted), @(Class:Unaligned)
+Starting: Join #Flutes

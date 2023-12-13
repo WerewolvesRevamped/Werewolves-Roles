@@ -10,3 +10,8 @@ A Cult Acolyte losing their role does not cause an additional lynch.
 __Simplified__
 The Cult Acolyte shares a secret channel with the other cultists.
 After Night 1, the cult can vote to attack one player each night. When the cult leader dies, the Cult Acolyte becomes the new leader. If the Cult Acolyte dies before the leader, the cult gains an additional attack in the following night.
+
+__Formalized__
+Starting: Join #Cult
+On @(Role:Cult Leader) Death: Role Change @Self to `Cult Leader`
+On Death: Add `Cult` Poll
