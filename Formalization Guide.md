@@ -27,6 +27,7 @@
     - [Compound Actions](#compound-actions)
     - [Complex Actions](#complex-actions)
   - [Ability Set](#ability-set) 
+  - [Requirements](#requirements) 
   - [Target Types](#target-types)
     - [Property Access](#property-access)
   - [Duration Types](#duration-types)
@@ -448,7 +449,7 @@ An ability set has the same format as a role, except for the first line which is
 
 ---
 ---
-### Role Requirements
+### Requirements
 
 A role can require another role to exist.
 
