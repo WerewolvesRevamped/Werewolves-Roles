@@ -2,15 +2,17 @@
 __Basics__
 The Mayor can post in #story_time. 
 When there are 15 or less living players, the Mayor receives an extra vote in polls.
-When there are more than 15 living players, each night the Mayor instead chooses whether a second player will be lynched during the next day. 
+When there are more than 15 living players, each night the Mayor instead chooses whether a second lynch will take place during the next day. 
 __Details__
-The Mayor's extra vote cannot be nullified, stolen or removed under any circumstances.
-If the Mayor's normal vote is a negative vote, the extra vote becomes a negative vote too.
-The Mayor may resign at the end of any phase. 
+The Mayor's extra vote cannot be nullified, stolen, or removed under any circumstances.
+If the Mayor would normally have a negative vote, the extra vote becomes a negative vote too.
+The Mayor may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
+Choosing a double lynch is an immediate action. 
+If the number of living players becomes 15 or less, the Mayor immediately gains the extra vote and loses the ability to choose whether there is an additional lynch. If this happens after they have chosen to have an additional lynch, but before the lynch poll occurs, the additional poll will still be created. 
 The Mayor gains an additional secret channel, which is reused for any subsequent Mayors.
 
 __Simplified__
-The Mayor is elected before the other elected roles. They are able to post in #story_time.
+The Mayor is elected before the reporter and the guardian. They are able to post in #story_time.
 When there are 15 or more players, they may decide that a second player will be lynched during the next day.
 When there are less than 15 players, they instead get 2 votes on the public polls.
 
