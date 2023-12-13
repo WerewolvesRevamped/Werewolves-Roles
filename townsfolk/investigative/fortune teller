@@ -6,7 +6,7 @@ Each night, the Fortune Teller can inspect a player. The Fortune Teller will be 
 Inspecting a player is an immediate ability. The Fortune Teller gains more information, but is affected by weak disguises and redirections. 
 
 __Simplified__
-Each night, the Fortune Teller may check one player’s role. This is affected by weak disguises, redirections, and obstructions. 
+Each night, the Fortune Teller may check one player’s role. This is affected by weak disguises and redirections. 
 
 __Formalized__
 Immediate Night: Role Investigate @Selection (SD, WD)
