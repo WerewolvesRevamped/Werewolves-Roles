@@ -1,0 +1,1 @@
+"howling wolf" "%r" "infopin howling_wolf,delay 1 infopin howling_wolf$both,delay 2 connection add %r,delay 3 delete 1"
