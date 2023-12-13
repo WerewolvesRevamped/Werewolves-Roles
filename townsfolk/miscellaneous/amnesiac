@@ -13,4 +13,4 @@ At the start of the game, the Amnesiac will be told three townsfolk roles. At th
 __Formalized__
 Starting: Target %Role1% (Role)
 Starting: Learn `shuffle(%Role2%, %Role3%, @Target)`
-Passive Start Night: Role Change @Self to @Target [Temporal: Night 1]
+Passive Start Night: Role Change @Self to @Target [Temporal: Night 2]
