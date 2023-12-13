@@ -5,7 +5,7 @@ __Details__
 When the Psychopath wins, the Psychopath ascends and stops playing. The game continues. The Psychopath can’t win when they are dead. 
 The Psychopath's list will always contain at least one player from every team that has at least two players. Which players are on the list is determined arbitrarily.
 The Psychopath may strongly disguise themself as any role. The disguise is applied immediately. They can update this disguise once per phase, with 1 emergency change to be used whenever the Psychopath wants to. If the Psychopath changes role, the disguise is lost.
-Additionally, the Psychopath may choose to either investigate or weakly disguise a player each day, but not both. Their investigation is affected by all disguises, redirections and obstructions. Their disguise lasts for the current and following phase.
+Additionally, the Psychopath may choose to either investigate or weakly disguise a player each day, but not both. Their investigation is affected by all disguises and redirections. Their disguise lasts for the current and following phase.
 The Psychopath is nonaligned.
 
 __Simplified__
