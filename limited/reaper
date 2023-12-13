@@ -1,4 +1,4 @@
-**Reaper** | Solo Recruitment - Nightmare Team | Limited
+**Reaper** | Solo Power - Nightmare Team | Limited
 __Basics__
 The Reaper wins when all players are dead, unaligned, sleepless or nightmare-aligned.
 For each player that dies, the Reaper may use a power to turn another player sleepless.
@@ -6,7 +6,7 @@ __Details__
 The Reaper starts out sleepless and shares a channel with other members of the nightmare team.
 
 At the start of every night, the Reaper will be informed of which powers they may use that night. These powers correspond to the role categories of the players who have died since the start of the previous night. Each power is immediate, and turns its target sleepless: some powers have an additional effect, applied to the same target.
-For *Killing* roles the additional effect is an attack; for *Investigative* roles it is a role investigation; for *Recruitment* and *Align* roles it turns the target into a spirit.
+For *Killing* roles the additional effect is an attack; for *Investigative* roles it is a role investigation; for *Align* roles it turns the target into a spirit.
 All other role categories have no additional effect.
 
 The Reaper is not told which role category the dead players belonged to: they are only informed of which powers (kills, investigations, conversions, and basic powers) are available to them. If the Reaper chooses not to use one of their powers during the night, they may not then use it the next night.
@@ -21,3 +21,29 @@ __Simplified__
 The Reaper wins when all players are sleepless or dead.
 The Reaper may use a set of powers, based on the roles of dead players, to turn others sleepless.
 Abilities used on the Reaper will result in a counter-attack.
+
+__Formalized__
+Inherit: `Nightmares`
+On @All Death: Apply `ReaperPower` to @This (Inactive)
+Passive Start Night:
+  • Remove `ReaperPower` from @(AliveOnly:False,Attr:ReaperPower:Active)
+  • Change `ReaperPower` value `1` to `Active` for @(AliveOnly:False,Attr:ReaperPower)
+  • Learn `You may attack count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing)) players`
+  • Learn `You may investigate count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative)) players`
+  • Learn `You may recruit count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align)) players`
+  • Learn `You may turn count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)) players sleepless`
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing) exists] {Repeating}
+  ‣ Apply `Sleepless` to @Selection (~Persistent)
+  ‣ Attack @Selection
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:Killing)
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative) exists] {Repeating}
+  ‣ Apply `Sleepless` to @Selection (~Persistent)
+  ‣ Role Investigate @Selection (WD, SD)
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:Investigative)
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align) exists] {Repeating}
+  ‣ Apply `Sleepless` to @Selection (~Persistent)
+  ‣ Role Change @Selection to `Spirit`
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower,Cat:Align)
+Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align) exists] {Repeating}
+  ‣ Apply `Sleepless` to @Selection (~Persistent)
+  ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)

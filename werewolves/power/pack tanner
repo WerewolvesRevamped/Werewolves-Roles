@@ -9,3 +9,7 @@ The Pack Tanner is not a lycan, but is part of the wolfpack.
 
 __Simplified__
 Each day, the Pack Tanner may disguise one player as a role of the Pack Tanner’s choosing for the following night.
+
+__Formalized__
+Inherit: `Pack`
+Immediate Day: Weakly Disguise @Selection as @SecondarySelection (~NextNight) [Succession: No Target Succession]

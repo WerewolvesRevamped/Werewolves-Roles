@@ -19,3 +19,37 @@ Contaminated - Plague Team
 __Simplified__
 Each day, the Exorcist may exorcise one player, removing effects caused by solo roles from them.
 The Exorcist learns which effects were removed, and the solo team whose effect is cured is also informed.
+
+__Formalized__
+Immediate Day: [Attribute: @Selection lacks `Exorcised:@Self`]
+  • Apply `Exorcised` to @Selection (~Persistent)
+  • Process:
+    ‣ Remove `Enchanted` from @Selection
+    ‣ Remove `Charmed` from @Selection
+    ‣ Remove `Powdered` from @Selection
+    ‣ Remove `Demonized` from @Selection
+    ‣ Remove `Contaminated` from @Selection
+    ‣ Remove `Sleepless` from @Selection
+    ‣ Remove `Doomed` from @Selection
+  • Evaluate:
+    ‣ @Result1 is `Success`:
+      ◦ Reveal `@Selection was cured of Enchanted` to @(Align:Flute)
+      ◦ Learn `@Selection was cured of Enchanted`
+    ‣ @Result2 is `Success`:
+      ◦ Reveal `@Selection was cured of Charmed` to @(Align:Flute)
+      ◦ Learn `@Selection was cured of Charmed`
+    ‣ @Result3 is `Success`:
+      ◦ Reveal `@Selection was cured of Powdered` to @(Align:Pyro)
+      ◦ Learn `@Selection was cured of Powdered`
+    ‣ @Result4 is `Success`:
+      ◦ Reveal `@Selection was cured of Demonized` to @(Align:Underworld)
+      ◦ Learn `@Selection was cured of Demonized`
+    ‣ @Result5 is `Success`:
+      ◦ Reveal `@Selection was cured of Contaminated` to @(Align:Plague)
+      ◦ Learn `@Selection was cured of Contaminated`
+    ‣ @Result6 is `Success`:
+      ◦ Reveal `@Selection was cured of Sleepless` to @(Align:Nightmare)
+      ◦ Learn `@Selection was cured of Sleepless`
+    ‣ @Result7 is `Success`:
+      ◦ Reveal `@Selection was cured of Doomed` to @(Align:Horsemen)
+      ◦ Learn `@Selection was cured of Doomed`

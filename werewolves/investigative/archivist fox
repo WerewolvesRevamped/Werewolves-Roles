@@ -13,3 +13,41 @@ __Simplified__
 The Archivist Fox and the wolfpack do not know each other.
 Each day, the Archivist Fox is told two roles from the role list, from categories they choose. They may choose one of them, and the wolfpack will be told this role.
 Once per game, the Archivist Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Starting: Apply `ArchivistSeen` to @Self
+Passive Start Day: `Fox` Choice Creation:
+  • `Join Pack`:
+    ‣  Immediate Day: Role Change @Self to `Wolf`
+  • `Investigate`
+    ‣ Compound: {Visitless}
+      ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
+        · Untarget
+        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@Selection):
+          ⁃ Apply `ArchivistCandidate` to @Ind (1)
+        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@SecondarySelection):
+          ⁃ Apply `ArchivistCandidate` to @Ind (2)
+        · Process:
+          ⁃ randomize(@(Attr:ArchivistCandidate:1))
+        · Evaluate:
+          ⁃ @Result exists:
+            ⹀ Learn `@Result->OriginalRole exists`
+            ⹀ Apply `ArchivistOption` to @Result
+            ⹀ Apply `ArchivistSeen` to @Result
+          ⁃ Otherwise: Learn `No more @Selection exist`
+        · Process:
+          ⁃ randomize(@(Attr:ArchivistCandidate:2))
+        · Evaluate:
+          ⁃ @Result exists:
+            ⹀ Learn `@Result->OriginalRole exists`
+            ⹀ Apply `ArchivistOption` to @Result
+            ⹀ Apply `ArchivistSeen` to @Result
+          ⁃ Otherwise: Learn `No more @SecondarySelection exist`
+        · Remove `ArchivistCandidate` from @All
+      ◦ Immediate Day:
+        · @(AliveOnly:False,Attr:ArchivistOption) exists: Target @Selection (List: @(AliveOnly:False,Attr:ArchivistOption)->OriginalRole)
+        · Otherwise: Target @Selection (List: `No Remaining Roles`)
+      ◦ Passive Start Night:
+        · Reveal `ArchivistFox archived a @Target` to #wolfpack
+        · Remove `ArchivistOption:@Self` from @All
+Immediate Day: `Fox` Choice Choose @Chosen

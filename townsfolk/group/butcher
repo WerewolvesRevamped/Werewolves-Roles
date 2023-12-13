@@ -9,3 +9,6 @@ If a Butcher is infected by the infecting wolf their role changes to bloody butc
 __Simplified__
 All the Butchers share a secret channel and know each other.
 Exactly one Butcher is actually a werewolf spy called the bloody butcher.
+
+__Formalized__
+Starting: Join #Butchers

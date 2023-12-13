@@ -8,3 +8,7 @@ The Undead Cupid is nonaligned, unless they have gained an alignment from their 
 
 __Simplified__
 The Undead Cupid is a cupid that has been demonized and then killed.
+
+__Formalized__
+Inherit: `Cupid`
+Starting: Join #Underworld

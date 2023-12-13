@@ -9,3 +9,9 @@ If the Fletcher dies then the customer’s power will be lost.
 
 __Simplified__
 During Day 0, the Fletcher must select a target. As long as the Fletcher is alive, the target gains the abilities of a Huntress.
+
+__Formalized__
+Immediate Day: [Quantity: 1, Temporal: Day 0] {Forced}
+  • Target @Selection (Player)
+  • Grant `Fletcher's Customer` to @Selection
+Immediate: Revoke `Fletcher's Customer` from @Target [Quantity: 1]

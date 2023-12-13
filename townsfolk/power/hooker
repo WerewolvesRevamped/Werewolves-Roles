@@ -8,3 +8,6 @@ The Hooker may not sleep with the same player two nights in a row.
 
 __Simplified__
 Each night, the Hooker sleeps with another player. They will not be killed by attacks on them, but will instead be affected by those taking place at their target’s house.
+
+__Formalized__
+Immediate Night: Protect @Self from `Attacks` through Absence at @Selection

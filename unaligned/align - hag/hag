@@ -11,3 +11,11 @@ The Hag does not have a spell at the start of the game, but gains one once they 
 __Simplified__
 The Hag can win with any team, unless that team has wronged the coven, but cannot win if they have never been wronged.
 The Hag will turn into a specific type of hag at the end of the day.
+
+__Formalized__
+Immediate Day: Target @Role (List: Vicious Hag, Cautious Hag, Prophetic Hag)
+Passive End Day: [Temporal: Day 0]
+  • @Target is `Vicious Hag`: Role Change @Self to randomize(Cautious Hag, Prophetic Hag)
+  • @Target is `Cautious Hag`: Role Change @Self to randomize(Vicious Hag, Prophetic Hag)
+  • @Target is `Prophetic Hag`: Role Change @Self to randomize(Vicious Hag, Cautious Hag)
+  • Otherwise: Role Change @Self to randomize(Vicious Hag, Cautious Hag, Prophetic Hag)

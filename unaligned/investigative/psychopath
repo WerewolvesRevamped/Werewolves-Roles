@@ -11,3 +11,30 @@ The Psychopath is nonaligned.
 __Simplified__
 The Psychopath has a list with one third of all the players on it. If all players on that list are dead, the Psychopath wins and stops playing. The game continues.
 The Psychopath is strongly disguised as a role of their choosing. Additionally, they may either investigate or weakly disguise others each day.
+
+__Formalized__
+Starting:
+  • Set Counter to calc(ceil($total/3))
+  • Apply `PsychopathList` to @Self
+  • For Each &All:
+    ‣ @Ind->Members > `1`:
+      ◦ Decrement Counter
+      ◦ Apply `PsychopathList` to randomize(@Ind->Members)
+Passive:
+  • @Self->Counter > `0`:
+    ‣ Decrement Counter
+    ‣ Apply `PsychopathList` to randomize(@(Attr:!PsychopathList:@Self))
+  • @Self->Counter is `0`:
+    ‣ Remove `PsychopathList` from @Self
+    ‣ Learn `shuffle(@(Attr:PsychopathList:@Self))`
+    ‣ Decrement Counter
+  • not (@(Attr:PsychopathList:@Self) exists): 
+    ‣ Ascend
+Immediate: Strongly Disguise @Self as @Selection
+Immediate: Strongly Disguise @Self as @Selection [Quantity: 1]
+Passive Start Day: `Psychopath` Choice Creation:
+  • `Investigate`:
+    ‣ Role Investigate @Selection (WD, SD)
+  • `Disguise`:
+    ‣ Weakly Disguise @Selection as @SecondarySelection (~NextNight)
+Immediate Day: `Psychopath` Choice Choosing @Chosen

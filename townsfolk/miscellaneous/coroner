@@ -8,3 +8,6 @@ The Coroner is not affected by any disguises.
 
 __Simplified__
 Upon every death, the Coroner is informed how that participant died.
+
+__Formalized__
+On @All Death: Learn `@This died by @DeathType from @Attacker`

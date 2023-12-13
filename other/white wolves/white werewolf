@@ -14,3 +14,12 @@ The White Werewolf is not part of the werewolf team, but is still considered a l
 __Simplified__
 Every other night, the White Werewolf may attack a member of the wolfpack. The White Werewolf is not part of the werewolf team but is part of the wolfpack.
 The White Werewolf imitates the most common werewolf role, being disguised as such and gaining its abilities.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Starting: Apply `Wolfish` to @Self
+Starting:
+  • Target most_freq_role(@(Group:Wolfpack,Cat:!Group)) (Role)
+  • Copy @Target
+  • Strongly Disguise @Self as @Target->Role
+End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]

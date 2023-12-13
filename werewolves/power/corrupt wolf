@@ -11,3 +11,9 @@ The Corrupt Wolf is not affected by redirections.
 __Simplified__
 The Corrupt Wolf can manipulate a player's votes in the next day's public polls, changing their number of votes to a value within the range of -1 to 2.
 Additionally, the Corrupt Wolf can anonymously talk to their target.
+
+__Formalized__
+Inherit: `Pack Lycan`
+Immediate Night: 
+  • Whisper to @Selection (~Phase)
+  • Manipulate @Selection's `public voting power` to @SecondarySelection[-1,0,1,2] (~NextDay)
