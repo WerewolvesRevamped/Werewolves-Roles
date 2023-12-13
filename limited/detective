@@ -4,7 +4,7 @@ During the day, the Detective compiles information on other players. At night, t
 __Details__
 Each day, the Detective has to choose between guessing one player's current role or learning the final role of a dead player. If they guess a player's current role correctly, it is confirmed. The Detective is not affected by any disguises, obstructions, or redirections.
 Each night, the Detective must try to submit the contents (players and their roles) of the entire starting role configuration in their secret channel. If their guess is correct, they ascend and win the game. If their guess is wrong, they are informed how many guesses (but not which ones) were correct. The Detective may submit a partial configuration, but only a complete configuration can let them ascend.
-The Detective may receive a role list similar to that of the knowledgeable wolf at the start of the game.
+In games with a partial or private role list, the Detective may receive a role list similar to that of the knowledgeable wolf at the start of the game.
 
 __Simplified__
 The Detective wins by figuring out the original roles of all players.
