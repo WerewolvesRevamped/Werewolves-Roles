@@ -5,7 +5,6 @@ __Roles__
 <?Devil:> Devil
 <?Demon:> Demon
 <?DemonicCupid:> Demonic Cupid (T)
-<?Imp:> Imp (T)
 
 __Formalized__
 Win Condition: @(Attribute:Soulless), @(Class:Unaligned)

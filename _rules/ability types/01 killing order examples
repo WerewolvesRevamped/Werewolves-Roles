@@ -1,24 +1,21 @@
-**Attack Order Examples**
+**Killing Order Examples**
 __Role Priority:__ 
 Cult, Wolfpack || Assassin, Priest, Witch | Lone Wolf | Devil, Pyromancer, WWW
 *(Not a complete list. Sorted alphabetically. Groups first, then town, then wolf, then others)*
 
 __Block Priority:__ 
 1) Absences 
-2) Effect Defenses
-3) Role Defenses
+2) Active Defenses
+3) Passive Defenses
 4) Partial Defenses
-5) Role Based Role Changes
-6) Effect Based Role Changes
-7) Death
+5) Recruitment Defenses
 
 Examples:
 1) Hooker
 2) Witch PoL, Chef's Charmed Food, Devil's Soul Defense
-3) Scared Wolf, Runner, Idiot
-4) Macho
-5) Cursed Civilian
-6) Vampire Demonized
+3) Scared Wolf, Runner
+4) Macho, Idiot, Cursed Civilian
+5) Vampire Demonized
 
 __How to figure out what happens__
 1) Compile a list of attack causes, sorted by the role priority list (e.g. `Wolfpack, Pyromancer`).

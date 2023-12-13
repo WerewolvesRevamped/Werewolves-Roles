@@ -1,0 +1,5 @@
+**Killing Order**
+If a player is attacked/killed several times in one night, the list of protections is synchronously handled step by step for all attacks. This means first all attackers will simultaneously be affected by absences, then all of them will be affected by active protections, and so on. 
+Conflicts must be resolved when multiple killings would trigger the same ability. For conflicts, roles are prioritised alphabetically within their team. Townsfolk roles are considered first, then werewolf, then all other roles. If a conflict still exists then a random attacker is prioritised.
+Groups are a special case and are prioritised before any single role attacks. Groups are sorted alphabetically according to the group name, not the attacker's role.
+Several roles/players may succeed in killing the same player if the killings would occur synchronously and no abilities would be triggered multiple times.

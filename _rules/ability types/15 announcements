@@ -1,0 +1,10 @@
+**Announcements** | Ability Type
+__Basics__
+Announcements are messages triggered by certain role actions or game events.
+__Details__
+The content of an announcement depends on what triggered it, and may be announced either in the story-time channel or a secret channel. Announcements often, but not always, contain information about player roles and/or identities.
+There are four main types of announcements:
+• Self Reveal: The role announces itself as belonging to a specific player. This type of announcement is often done publicly.
+• Public Information: Reveals actions done to or done by a role to the public or a group, but the user of the role remains anonymous.
+• Private Information: Information is given privately to a player, based on the current game state.
+• Private Knowledge: Pre-determined information by the Hosts is given privately to a player.

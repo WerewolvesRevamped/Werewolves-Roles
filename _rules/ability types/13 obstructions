@@ -1,0 +1,15 @@
+**Obstructions** | Ability Type
+__Basics__
+Obstructions are a rare type of ability which blocks and manipulate the execution of abilities.
+__Details__
+When a player is getting obstructed, they receive an obstructed attribute.
+Obstructed players are not informed they have been obstructed (unless specified otherwise). When an obstructed player attempts to use an affected ability, the ability will result in a failure, unless the obstruction manipulates the feedback. For some ability types (e.g. attacks), this will be indistinguishable from other types of failure; for others (e.g investigations), the only way the action can fail is through obstructions. For group abilities (e.g. wolfpack attack), an obstructed player being chosen to execute the action causes it to fail. Passive, starting and forced abilities cannot be obstructed.
+
+Obstructions have several options:
+• Affected Abilities: Obstructions may be limited to certain ability types, or even ability subtypes. For example, an obstruction can only obstruct killings or it could obstruct role investigations specifically.
+• Feedback Manipulation: By default, an obstructed ability fails and informs the player of failure. An obstruction can instead define a custom feedback to suggest the ability suceeded when it did not.
+
+For a complete list of obstructions check `$i obstructions list`.
+
+__Simplified__
+Obstructions are a rare type of ability which blocks and manipulate the execution of abilities.
