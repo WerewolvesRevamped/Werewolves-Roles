@@ -448,6 +448,14 @@ An ability set has the same format as a role, except for the first line which is
 
 ---
 ---
+### Role Requirements
+
+A role can require another role to exist.
+
+To require a role use the trigger type `Require: '<RoleName>'`
+
+---
+---
 ### Role Attributes
 
 A role can get role attributes.
