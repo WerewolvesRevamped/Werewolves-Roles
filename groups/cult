@@ -4,6 +4,7 @@ The Cult is a trusted townsfolk group, containing (usually) one Cult Leader. At 
 __Members__
 <?CultMember:> Cult Member
 <?CultLeader:> Cult Leader
+<?CultistWolf:> Cultist Wolf (T)
 
 <?CultAcolyte:> *Cult Acolyte*
 
