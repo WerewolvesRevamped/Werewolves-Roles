@@ -3,12 +3,12 @@ __Basics__
 Each night, the Warlock may check one player’s role.
 __Details__
 Each night, the Warlock may inspect a player. They will be told what that player's role is. 
-Inspecting a player is an immediate ability. The Warlock is affected by weak disguises, redirections, and obstructions.
+Inspecting a player is an immediate ability. The Warlock is affected by all disguises and redirections.
 The Warlock is not a lycan, nor are they a member of the wolfpack.
 
 __Simplified__
 The Warlock and wolfpack do not know each other.
-Each night, the Warlock may check one player’s role. This is affected by weak disguises, redirections, and obstructions. 
+Each night, the Warlock may check one player’s role. This is affected by all disguises and redirections. 
 
 __Formalized__
 Immediate Night: Role Investigate @Selection (SD, WD)

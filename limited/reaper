@@ -13,7 +13,7 @@ The Reaper is not told which role category the dead players belonged to: they ar
 
 Sleepless players are not informed of their being sleepless: however, if a sleepless player uses an ability other than targeting on the Reaper, their ability fails and the Reaper immediately attacks them. 
 
-The Reaper is affected by all disguises, obstructions and redirections when using their powers. They gain powers solely based on the true roles of those who have died.
+The Reaper is affected by all disguises and redirections when using their powers. They gain powers solely based on the true roles of those who have died.
 
 If no members of the nightmare team or channel remain, the sleepless effect is silently removed from all players.
 
