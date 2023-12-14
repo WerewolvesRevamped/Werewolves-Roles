@@ -5,7 +5,7 @@ __Details__
 The Herald may select a role each phase, marking all players that currently have the role. This is not a visit. When the last marked players dies, the Herald is informed. A player remains marked until they die or the Herald selects another role.
 If several players die at the same time the Herald is not informed which of the players had their selected role.
 The Herald does not know which players they are marking.
-The Herald is not affected by any disguises, redirections or obstructions.
+The Herald is not affected by any disguises or redirections.
 
 __Simplified__
 The Herald selects a role and is informed when the last player with that role dies.
