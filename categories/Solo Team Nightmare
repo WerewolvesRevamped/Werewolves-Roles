@@ -4,7 +4,6 @@ Nightmare team wins when all players are either dead, unaligned, sleepless or pa
 __Roles__
 <?Reaper:> *Reaper*
 <?Wraith:> *Wraith*
-<?Spirit:> *Spirit (T)*
 
 __Formalized__
 Win Condition: @(Attribute:Sleepless), @(Class:Unaligned)
