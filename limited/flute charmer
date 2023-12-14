@@ -3,7 +3,7 @@ __Basics__
 The Flute Charmer is a flute player that can’t enchant other players; instead, they have the ability to charm one player each day, learning their role and disguising them as flute player. The Flute Charmer becomes a flute player if none remain.
 __Details__
 During the day, the Flute Charmer may charm a player, the charmed player is not informed about this. This action is immediate. 
-Successfully charming a player will tell the Flute Charmer their targets role, and weakly disguise them as flute player afterwards. This result is affected by all disguises, redirections, and obstructions. 
+Successfully charming a player will tell the Flute Charmer their targets role, and weakly disguise them as flute player afterwards. This result is affected by all disguises and redirections. 
 This effect (including the disguise) will disappear once no members of the Flute Player channel or team remain. The players are not told when the effect disappears.
 When a player is both charmed and enchanted, the charmed status and disguise is removed.
 The Flute Charmer can target themself or other members of the flute team.
@@ -13,3 +13,10 @@ __Simplified__
 The Flute Charmer becomes a flute player if none remain.
 Additionally, once per day, the Flute Charmer can learn the role of a player and disguise them as flute player.
 An enchanted player will lose the disguise given to them by Flute Charmer.
+
+__Formalized__
+Starting: Join #Flutes
+Immediate Day:
+  • Apply `Charmed` to @Selection [Attribute: @Selection lacks `Enchanted`]
+  • Role Investigate @Selection (SD, WD)
+Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`

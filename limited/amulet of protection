@@ -1,4 +1,4 @@
-**Amulet of Protection** | Extra Miscellaneous | Limited
+**Amulet of Protection** | Extra Power | Limited
 __Basics__
 The Amulet of Protection is in play, if an Amulet Crafter is in the game. The Amulet Crafter is the original holder of the amulet.
 As long as you hold the amulet, you cannot die by attacks during the night, but you must pass it to another player during the day.
@@ -12,3 +12,16 @@ If the amulet crafter dies or choose to, the amulet shatters. When the amulet sh
 __Simplified__
 The Amulet of Protection is in play, if an Amulet Crafter is in the game. The Amulet Crafter is the original holder of the amulet.
 As long as you hold the amulet, you cannot die by attacks during the night, but you must pass it to another player during the day.
+
+__Formalized__
+Starting:
+  • Protect @Self from `Attacks` through Passive Defense during Night (~NextNight)
+  • Apply `HeldAmulet` to @Self
+Passive Start Day: Untarget
+Immediate Day: ⟨*3⟩
+  • not (@Target exists) not (@Selection has `HeldAmulet`): Target @Selection
+  • Otherwise: `Failure`
+Passive End Day:
+  • Conversation Reset
+  • @Target exists: Transfer `Amulet of Protection` from @Self to @Target
+  • Otherwise: Apply `ShatterAmulet` to @(Role:Amulet Crafter)

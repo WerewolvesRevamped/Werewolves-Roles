@@ -5,3 +5,5 @@ These roles are elected in the particular order of precedence outlined below.
 3) Guardian
 Only one election takes place per day, for the topmost position on this list that is unoccupied at the start of that day. This means that the Mayor is elected first, followed by the Reporter, etc. However, if the Mayor dies, the next day will have a Mayor election instead of whatever role would have been next.
 A player that has an elected role may resign (end-night/end-day).
+
+*Limited: During some games the limited role Monarch will be elected during Day 0.*

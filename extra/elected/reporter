@@ -10,3 +10,7 @@ The Reporter gains an additional secret channel, which is reused for any subsequ
 
 __Simplified__
 When there is a Mayor, a Reporter is elected. They will be able to see the starting roles of all players that have died.
+
+__Formalized__
+On @All Death: Learn `@This->OriginalRole`
+End Phase: Revoke `Reporter` from @Self

@@ -1,0 +1,15 @@
+**Investigations** | Ability Type
+__Basics__
+Investigations retrieve information about the current game state. Roles with the ability to actively investigate are *Investigative* roles.
+__Details__
+Investigations retrieve information about the current game state. This generally means that they learn information about the role or actions of another player.
+Like other abilities, Investigations may be affected by *redirections*. They may also be affected by *disguises* and *obstructions*. As such, Investigations may return false information.
+There are several types of investigations:
+• Role Investigation: See the role of a player.
+• Alignment Investigation: See the alignment of a player.
+• Category Investigation: See the category of a player's role.
+• Attribute Investigation: See if a certain attribute is present on a player.
+• Role Count Investigation: See the quantity of a certain role ingame.
+
+__Simplified__
+Investigations retrieve information about the current game state. Roles with the ability to actively investigate are *Investigative* roles. Redirections, obstructions and disguises may lead to Investigations returning false information.

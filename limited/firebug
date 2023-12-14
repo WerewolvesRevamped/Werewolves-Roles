@@ -10,3 +10,18 @@ When the last original Pyromancer dies, the Firebug turns into a Pyromancer.
 __Simplified__
 Each night, the Firebug may ward one player. If a warded player is attacked, the attack backfires, causing an ignition. Otherwise, the warded player is powdered at the end of the night.
 The Firebug is a member of the pyro team and channel.
+
+__Formalized__
+Starting: Join #Pyros
+Compound:
+  • Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) 
+  • Afterwards: Apply `Warded` to @Selection (~Phase)
+On @(Attr:Warded:@Self) Visited [Attack]:
+  • not (@Visitor->Alignment is `Pyro`):
+    ‣ Apply `Powdered` to @Visitor (~Persistent)
+    ‣ Attack @(Attr:Powdered,Align:!Pyro)
+    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited to @(Attr:Powdered,Align:Pyro)`
+    ‣ Remove `Warded` from @(Attr:Warded:@Self)
+End Night: Apply `Powdered` to @(Attr:Warded:@Self) (~Persistent)
+Passive: not (@(Role:Pyromancer) exists): Role Change @Self to `Pyromancer`

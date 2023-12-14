@@ -1,13 +1,21 @@
-**Hag** | Unaligned Miscellaneous | Limited
+**Hag** | Unaligned Align | Limited
 __Basics__
-The Hag can win with any team, unless that team has wronged the coven, but cannot win if the coven has never been wronged.
 The Hag will turn into a specific type of hag at the end of the day.
 __Details__
 The Hag is one of the hags (`$i hags`).
+The hags can win with any team, unless that team has wronged the coven: however, they cannot win if the coven has never been wronged.
 At the start of the game, the Hag may discard one hag role (vicious, cautious or prophetic). 
-At the end of the day, the Hag turns into an undiscarded hag role.
-The Hag does not have a spell at the start of the game, but gains one later, once they turn into another hag role.
+At the end of the day, the Hag turns into an undiscarded hag role and becomes the coven-aligned.
+The Hag does not have a spell at the start of the game, but gains one once they turn into another hag role.
 
 __Simplified__
 The Hag can win with any team, unless that team has wronged the coven, but cannot win if they have never been wronged.
 The Hag will turn into a specific type of hag at the end of the day.
+
+__Formalized__
+Immediate Day: Target @Role (List: Vicious Hag, Cautious Hag, Prophetic Hag)
+Passive End Day: [Temporal: Day 0]
+  • @Target is `Vicious Hag`: Role Change @Self to randomize(Cautious Hag, Prophetic Hag)
+  • @Target is `Cautious Hag`: Role Change @Self to randomize(Vicious Hag, Prophetic Hag)
+  • @Target is `Prophetic Hag`: Role Change @Self to randomize(Vicious Hag, Cautious Hag)
+  • Otherwise: Role Change @Self to randomize(Vicious Hag, Cautious Hag, Prophetic Hag)

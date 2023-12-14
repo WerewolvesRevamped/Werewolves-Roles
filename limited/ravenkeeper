@@ -2,11 +2,32 @@
 __Basics__
 Each night, the Ravenkeeper may assign up to two of its ravens to players. The Ravenkeeper will learn if any of the players with ravens interact with each other.
 __Details__
-The Ravenkeeper starts out with 1 raven for every 3 players in the game (rounded down). Each night, the Ravenkeeper may assign up to two ravens to other players. Ravens can also be reassigned from one player to another (ravens that were assigned to dead players will immediately return to the Ravenkeeper upon the player's death). Assigning a raven is an immediate effect. Ravens not assigned to another player are considered to be assigned to the Ravenkeeper.
-At the end of each phase, the Ravenkeeper will be told if a player with a raven used an action on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done, targeting is not an action.
-The Ravenkeeper is affected by redirections.
+The Ravenkeeper starts out with 1 raven for every 3 players in the game (rounded down). Each night, the Ravenkeeper may assign up to two ravens to other players. Instead, they can also be reassigned from one player to another (ravens that were assigned to dead players will immediately return to the Ravenkeeper upon the player's death). Assigning a raven is an *immediate effect*. Ravens not assigned to another player are considered to be assigned to the Ravenkeeper.
+At the end of each phase, the Ravenkeeper will be told if a player with a raven used an *action* on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done. *Passive abilities*, *starting abilities*, and *targeting* are not treated as an action, and neither is players using actions on themself. 
+The Ravenkeeper is affected by *redirections*.
 If there are several Ravenkeepers, their ravens are separate.
 
 __Simplified__
 Each night, the Ravenkeeper may assign up to two ravens. Ravens not assigned to a living player are assigned to the Ravenkeeper.
 The Ravenkeeper will be told the names of any two players with ravens that interact with each other.
+
+__Formalized__
+Starting:
+  • Apply `Raven` to @Self
+  • Set Counter to calc(floor($total/3))
+Passive Start Night: `RavenAction` Choice Creation: ⟨x2⟩
+  • `Assign`:
+    ‣ (@Self->Counter > `0`) and not (@Selection has `Raven:@Self`):
+      ◦ Apply `Raven` to @Selection (~Persistent)
+      ◦ Decrement Counter
+  • `Reassign`:
+    ‣ (@SecondarySelection has `Raven:@Self`) and not (@Selection has `Raven:@Self`):
+      ◦ Revoke `Raven:@Self` from @SecondarySelection
+      ◦ Apply `Raven` to @Selection (~Persistent)
+Immediate Night: ⟨x2⟩
+  • `RavenAction` Choice Choose @Chosen
+  • (@Self->Counter > `0`) and not (@Self has `Raven:@Self`): Apply `Raven` to @Self
+  • (@Self->Counter is `0`) and (@Self has `Raven:@Self`): Revoke `Raven:@Self` from @Self
+On @(Attr:Raven:@Self) Death:
+  • Increment Counter
+  • not (@Self has `Raven:@Self`): Apply `Raven` to @Self

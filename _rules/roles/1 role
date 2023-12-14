@@ -1,0 +1,11 @@
+**Role** | Werewolves Revamped
+__Basics__
+In Werewolves Revamped, each player is assigned a Role. A player's Role determines their abilities, alignment, and win condition.
+__Details__
+Roles consist out of several elements:
+• Role Classes: Roles come in five classes: townsfolk, werewolves, solo, unaligned, and extra. Townsfolk, werewolves, and solo Roles each have an alignment, which defines their win condition. Unaligned Roles start as nonaligned and have either a specific win condition or the potential to gain an alignment. Extra Roles are added on top of a player's primary Role and do not affect their alignment or win condition. Where a player's 'Role' is referenced, the Role in question is the primary Role: only when a player's 'Roles' are referenced does this include any extra Roles they have.
+• Role Alignment: Townsfolk, werewolves and solo Roles have an alignment, for the first two this matches their class, for solo Roles it depends on their solo team. Unaligned roles are often nonaligned, but may sometimes join an alignment as well. Extra roles do not have an alignment.
+• Win Condition: For roles with an alignment, the win condition is given by their alignment. For nonaligned unaligned roles, a special win condition is given by the role.
+• Role Abilities: Roles also specify the abilities the player starts out with. Role abilities are split into various ability types (see `$i ability types`).
+• Role Attributes: Roles also have Role attributes, which are attached to the Role (e.g. a Role's category or whether a Role is wolfish).
+• Role Channel: Each Role (including extra Roles) comes with a Role channel.

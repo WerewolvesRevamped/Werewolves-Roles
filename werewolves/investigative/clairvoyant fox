@@ -6,9 +6,21 @@ When the Clairvoyant Fox investigates a player, they see that player's role. If 
 The Clairvoyant Fox is neither a lycan, nor a member of the wolfpack. 
 If the Clairvoyant Fox chooses to join the wolfpack, they may not investigate that day, and will lose their power as they will become a regular wolf. 
 Joining the wolfpack and investigating a player are immediate abilities.
-The investigation is affected by weak disguises, redirections, and obstructions.
+The investigation is affected by weak disguises and redirections.
 
 __Simplified__
 The Clairvoyant Fox and the wolfpack do not know each other.
 Each day, the Clairvoyant Fox may investigate one player. This is affected by weak disguises, redirections, and obstructions. At the end of the day the wolfpack is also told the role of that player, but they won't know which player was checked.
 Once per game, the Clairvoyant Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Passive Start Day: `Fox` Choice Creation:
+  • `Join Pack`:
+    ‣  Immediate Day: Role Change @Self to `Wolf`
+  • `Investigate`
+    ‣ Compound:
+      ◦ Immediate Day:
+        · Process: Role Investigate @Selection (SD, WD)
+        · Evaluate: Target @Result (Role)
+      ◦ Passive Start Night: Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
+Immediate Day: `Fox` Choice Choose @Chosen

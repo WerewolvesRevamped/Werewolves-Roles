@@ -1,7 +1,13 @@
 **Horsemen Team**
-*Apocalyptic Horseman (T)*
-*Horseman*
-*Horseman of Death*
-*Horseman of Famine*
-*Horseman of Pestilence*
-*Horseman of War*
+The Horsemen win when all players are either dead, unaligned or part of the Horsemen team. Members of the Horsemen Team do not know each other at the start of the game.
+
+__Roles__
+Apocalyptic Horseman (T)
+Horseman
+Horseman of Death
+Horseman of Famine
+Horseman of Pestilence
+Horseman of War
+
+__Formalized__
+Win Condition: @(Alignment:Horsemen), @(Class:Unaligned)

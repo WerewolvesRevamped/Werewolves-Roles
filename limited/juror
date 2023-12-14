@@ -8,9 +8,12 @@ The jury recieves the result of the investigation at the end of the night. If th
 The jury is disbanded if there are 1 or fewer Jurors left; this means the jury is active only if at least two Jurors are alive. 
 Any member of the jury, even if they lose their role, can still vote on who to investigate. 
 One of the Jurors that has voted for the jury's target is randomly chosen as the investigator, who performs the investigations. 
-The jury is affected by weak disguises and obstructions. These effects are seen from the investigator's perspective.
+The jury is affected by weak disguises. These effects are seen from the investigator's perspective.
 
 __Simplified__
 The Jurors share a secret channel and know each other. During certain nights, the jury votes to investigate a player.
 If the jury successfuly investigates a non-town role, it is announced publically.
 The jury is disbanded if there are 1 or fewer Jurors left.
+
+__Formalized__
+Starting: Join #Jury

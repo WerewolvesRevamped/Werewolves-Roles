@@ -1,17 +1,22 @@
 **Abilities**
-<?Attack:> Attacks
-<?CategoryInvestigative:> Investigation
+__Main Ability Types__
+<?CategoryKilling:> Killing
+<?CategoryInvestigative:> Investigations
 <?CategoryMiscellaneous:> Targeting
 <?Disguise:> Disguises
-<?Protect:> Protections
-<?Defense:> Defenses
+<?Defense:> Protections
+
+__Other Ability Types__
+<?CategoryPower:> Applying
 <?Redirect:> Redirections
-<?CategoryKilling:> Killing
-<?VoteManipulation:> Vote Manipulation
-<?Whispering:> Whispering
-<?CategoryPower:> Inflicting
+<?VoteManipulation:> Vote Manipulations
+<?Whispering:> Whispers
+<?CategoryGroup:> Joining
+<?Extra:> Granting
+<?Soul:> Loyalty
 <?BotDeveloper:> Obstructions
-<?CategoryGroup:> Group Membership
-<?Lynch:> Lynching
-<?Ascension:> Ascension & Descension
-<?RoleBlocking:> Role Blocking
+<?VotingBooth:> Poll Manipulations
+<?KWList:> Announcements
+<?CategoryAlign:> Role Changes
+<?LookAlike:> Ability Copying
+<?VotingBooth:> Choices

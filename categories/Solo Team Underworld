@@ -1,3 +1,10 @@
 **Underworld Team**
-Undead (T)
-Vampire
+Underworld Team wins when all players are dead, unaligned or part of the Underworld team. Members of the team know each other.
+
+__Roles__
+<?Vampire:> Vampire
+<?Undead:> Undead (T)
+
+__Formalized__
+Win Condition: @(Alignment:Underworld), @(Class:Unaligned)
+Starting: Join #Underworld

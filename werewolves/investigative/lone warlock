@@ -5,9 +5,13 @@ __Details__
 Each night, the Lone Warlock may inspect a player. The Lone Warlock will be told what their role is. 
 The Lone Warlock is a corrupted version of a fortune teller, with traits of the lone wolf. 
 When a member of the wolfpack dies, the Lone Warlock loses their powers and joins the wolfpack as a wolf.
-Inspecting a player is an immediate ability. The Lone Warlock is affected by weak disguises, redirections, and obstructions. 
+Inspecting a player is an immediate ability. The Lone Warlock is affected by all disguises and redirections. 
 The Lone Warlock is not a lycan, and is not a member of the wolfpack.
 
 __Simplified__
-Each night, the Lone Warlock may check one player’s role. This is affected by weak disguises, redirections, and obstructions. 
+Each night, the Lone Warlock may check one player’s role. This is affected by all disguises and redirections. 
 The Lone Warlock and wolfpack do not know each other, however once a member of the wolfpack dies, the Lone Warlock will lose their power and join the pack as a regular wolf.
+
+__Formalized__
+Immediate Night: Role Investigate @Selection (SD, WD)
+On @(Group:Wolfpack) Death: Role Change @Self to `Wolf`

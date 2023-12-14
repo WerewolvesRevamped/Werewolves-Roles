@@ -5,10 +5,22 @@ Every night after Night 1, the Rival can investigate a player. They will learn b
 __Details__
 The Rival can only exist with another rival in the game. The Rival ascends when all other Rivals have died.
 Every night after Night 1, the Rival can investigate a player and will learn their role.
-The Rival is affected by weak disguises, obstructions and redirections. They are told specifically if an investigation was affected by a disguise, an obstruction, or a redirection - if it was unaffected, they are informed of this too.
+The Rival is affected by weak disguises and redirections. They are told specifically if an investigation was affected by a disguise, an obstruction, or a redirection - if it was unaffected, they are informed of this too.
 If the win condition of the Rival changes in any way, they do not require the other Rival to die. 
-If the win condition or role of another Rival changes in any way, the Rival still requires any other (original) Rivals to die. 
+If the win condition or role of another Rival changes in any way, the Rival still requires any other (original) Rivals to die.
+The Rival is nonaligned.
 
 __Simplified__
 Every night after Night 1, the Rival can investigate a player and will learn their role. 
 The Rival can only win when there are no other Rivals left in the game. 
+
+__Formalized__
+Starting: Apply `Rival` to @Self (~Persistent)
+Immediate Night: [Temporal: Night 2+]
+  • Process:
+    ‣ Role Investigate @Selection (SD, WD)
+    ‣ @Selection->Role
+  • Evaluate:
+    ‣ @Result1 is @Result2: Learn `@Selection is @Result1 (Unaffected)`
+    ‣ Otherwise: Learn `@Selection is @Result1 (Affected)`
+Passive: not (@(Attr:Rival,Attr:!Rival:@Self) exists): Ascend

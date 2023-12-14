@@ -6,9 +6,12 @@ __Details__
 Bakers share a private channel, where they can communicate with each other. 
 When the Wolfpack kills a Baker for the first time, they will be able to kill an additional player in the next night.
 __Edge Cases__
-If a Baker loses their role, they will still keep access to the channel. This means that at some point, a Baker may betray the group. 
 If a Baker is infected by the infecting wolf, they will become a bloody butcher rather than a wolf: all other Bakers will become butchers. 
+If a Baker loses their role in some other way, the bakers will disband and all powers related to the bakers will no longer activate.
 
 __Simplified__
 All the Bakers share a secret channel and know each other.
 Whenever the wolves kill a Baker for the first time, they will be able to attack again.
+
+__Formalized__
+Starting: Join #Bakers

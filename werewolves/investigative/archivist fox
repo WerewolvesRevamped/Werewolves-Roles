@@ -5,7 +5,7 @@ __Details__
 Each day, they may pick two *different* categories from the role list; they will be told a role from each category. They may than pick one of these roles, and if they survive the day, the wolfpack will be informed that the Archivist Fox has archived this role.
 The Archivist Fox will only see each entry on the role list once (however, a role that exists twice can be seen twice, etc), but will never see themself.
 When the Archivist Fox checks a category without remaining roles, they are informed, and should both categories have no remaining roles, the wolfpack is informed of this instead.
-The Archivist Fox is unaffected by disguises, obstructions and redirections.
+The Archivist Fox is unaffected by disguises and redirections.
 The Archivist Fox is neither a lycan, nor a member of the wolfpack. 
 Joining the wolfpack and learning a role are immediate abilities.
 
@@ -13,3 +13,41 @@ __Simplified__
 The Archivist Fox and the wolfpack do not know each other.
 Each day, the Archivist Fox is told two roles from the role list, from categories they choose. They may choose one of them, and the wolfpack will be told this role.
 Once per game, the Archivist Fox may alternatively give up their power and join the wolfpack as a regular wolf.
+
+__Formalized__
+Starting: Apply `ArchivistSeen` to @Self
+Passive Start Day: `Fox` Choice Creation:
+  • `Join Pack`:
+    ‣  Immediate Day: Role Change @Self to `Wolf`
+  • `Investigate`
+    ‣ Compound: {Visitless}
+      ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
+        · Untarget
+        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@Selection):
+          ⁃ Apply `ArchivistCandidate` to @Ind (1)
+        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@SecondarySelection):
+          ⁃ Apply `ArchivistCandidate` to @Ind (2)
+        · Process:
+          ⁃ randomize(@(Attr:ArchivistCandidate:1))
+        · Evaluate:
+          ⁃ @Result exists:
+            ⹀ Learn `@Result->OriginalRole exists`
+            ⹀ Apply `ArchivistOption` to @Result
+            ⹀ Apply `ArchivistSeen` to @Result
+          ⁃ Otherwise: Learn `No more @Selection exist`
+        · Process:
+          ⁃ randomize(@(Attr:ArchivistCandidate:2))
+        · Evaluate:
+          ⁃ @Result exists:
+            ⹀ Learn `@Result->OriginalRole exists`
+            ⹀ Apply `ArchivistOption` to @Result
+            ⹀ Apply `ArchivistSeen` to @Result
+          ⁃ Otherwise: Learn `No more @SecondarySelection exist`
+        · Remove `ArchivistCandidate` from @All
+      ◦ Immediate Day:
+        · @(AliveOnly:False,Attr:ArchivistOption) exists: Target @Selection (List: @(AliveOnly:False,Attr:ArchivistOption)->OriginalRole)
+        · Otherwise: Target @Selection (List: `No Remaining Roles`)
+      ◦ Passive Start Night:
+        · Reveal `ArchivistFox archived a @Target` to #wolfpack
+        · Remove `ArchivistOption:@Self` from @All
+Immediate Day: `Fox` Choice Choose @Chosen

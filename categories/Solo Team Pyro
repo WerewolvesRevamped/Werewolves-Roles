@@ -1,5 +1,11 @@
 **Pyro Team**
-Pyromancer
-Wisp
+The team wins when all players are dead, unaligned or part of the pyro team. By default, members of the Pyro Team do not know each other at the start of the game.
 
-*Firebug*
+__Roles__
+<?Pyromancer:> Pyromancer
+<?Wisp:> Wisp
+
+<?Firebug:> *Firebug*
+
+__Formalized__
+Win Condition: @(Alignment:Pyro), @(Class:Unaligned)
