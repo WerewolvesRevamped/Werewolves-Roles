@@ -8,7 +8,7 @@ The Reaper starts out sleepless and shares a channel with other members of the n
 At the start of every night, the Reaper will be informed of which powers they may use that night. These powers correspond to the role categories of the players who have died since the start of the previous night.
 For each *Killing* role that has died, the Reaper may turn one player sleepless and attack them.
 For each *Investigative* role that has died, the Reaper may turn one player sleepless and investigate their role.
-For each *Power* role that has died, the Reaper may turn one player sleepless and nullify their public voting power.
+For each *Power* role that has died, the Reaper may turn one player sleepless and nullify their public voting power for as long as that player is sleepless.
 For all other roles that have died, the Reaper may turn one player sleepless.
 
 The Reaper is not told which role category the dead players belonged to: they are only informed of which powers (kills, investigations, vote nulifications, and basic powers) are available to them. If the Reaper chooses not to use one of their powers during the night, they lose that instance of the power.
