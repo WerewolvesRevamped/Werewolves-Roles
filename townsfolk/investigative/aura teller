@@ -9,7 +9,7 @@ The Aura Teller is affected by strong disguises and redirections.
 
 __Simplified__
 Each night, the Aura Teller may check a player. Lycans, and roles classified as killing roles show up as a threat, while all other roles are not a threat.
-They are affected by strong disguises and redirections, but not by obstructions.
+They are affected by strong disguises and redirections.
 
 __Formalized__
 Immediate Night: 
