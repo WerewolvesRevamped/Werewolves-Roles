@@ -1,6 +1,6 @@
 **Cupid Wolf** | Unaligned Align | Transformation
 __Basics__
-The Cupid Wolf is a cupid that has been infected by the infected wolf.
+The Cupid Wolf is a cupid that has been infected by the infecting wolf.
 __Details__
 If turned into a wolf in any way, the cupid turns into an Cupid Wolf instead. 
 The Cupid Wolf works like the cupid, with two exceptions: they are part of the wolfpack group and a lycan.
@@ -12,3 +12,6 @@ The Cupid Wolf is a cupid that has been infected by the infected wolf.
 __Formalized__
 Inherit: `Cupid`
 Inherit: `Pack Lycan`
+
+__Card__
+When the Cupid gets infected by the infecting wolf, they'll become a Cupid Wolf.
