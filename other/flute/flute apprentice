@@ -17,3 +17,6 @@ Immediate: Target @Selection (Player) [Quantity: 1]
 Passive: Redirect `all` from @(Attr:Enchanted) to @Target [Condition: @Target exists]
 On Action [Redirect]: Learn `An ability was redirected`
 Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
+
+__Card__
+The Flute Apprentice hopes to one day be a Flute Player.
