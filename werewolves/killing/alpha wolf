@@ -22,3 +22,6 @@ End Night: [Quantity: 1]
 • Evaluate:
   ‣ (@Target is NoReveal): Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
   ‣ Otherwise: Reveal `@Self is Alpha Wolf` to #wolfpack
+
+__Card__
+The Alpha Wolf is the leader of the wolfpack, overruling the other wolves when necessary.
