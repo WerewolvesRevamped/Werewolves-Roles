@@ -16,3 +16,6 @@ Immediate: Target @Selection (Player) [Quantity: 1]
 On Killed: [Condition: @Target exists]
   • Process: Role Investigate @Target (SD)
   • Evaluation: Reveal `Ranger @Self reveals @Target as @Result` to #story_time
+
+__Card__
+The Ranger keeps information that is revealed when they die.
