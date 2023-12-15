@@ -19,3 +19,6 @@ Immediate Night: Target @Selection [List: Fortune Teller, Warlock, @Target] {For
 On Action [Target]:
   • Obstruct `Investigation` for @Self (~Phase)
   • Role Change @Self to @Target
+
+__Card__
+Dogs and cats have always been enemies. They'll always want to beat eachother.
