@@ -1,4 +1,4 @@
-**Idiot** | Townsfolk Miscellaneous
+ **Idiot** | Townsfolk Miscellaneous
 __Basics__
 If the Idiot dies for the first time, they instead live, but lose their voting power.
 __Details__ 
@@ -16,4 +16,4 @@ On Partial Defense:
   • Manipulate @Self's `public voting power` to `0`
 
 __Card__
-When the Idiot dies they don't and lose their vote.
+The first time Idiot dies, they live and lose their vote.
