@@ -17,3 +17,6 @@ Immediate: Target @Selection (Player) [Quantity: 1]
 On Killed: [Condition: @Target exists]
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Reveal `Fletcher's Customer @Self killed @Target` to #story_time
+
+__Card__
+The Fletcher's Customer has been taught defend themselves with a bow and arrow.
