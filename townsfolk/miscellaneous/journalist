@@ -17,3 +17,6 @@ Immediate: Target @Selection (Role) [Quantity: 1]
 On Death: [Condition: @Target exists]
   • Target randomize(@(Role:@Target))
   • Transfer `Journal Holder` from @Self to @Target
+
+__Card__
+While alive the Journalist can write a journal that is passed to a player on their death.
