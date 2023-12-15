@@ -11,3 +11,6 @@ If the Cursed Civilian is attacked by the werewolves, they will turn into a wolf
 __Formalized__
 Starting: Protect @Self from `Attack` by @(Attr:Wolfish) through Partial
 On Partial Defense: Role Change @Self to `Wolf`
+
+__Card__
+The Cursed Civilian joins the wolves when attacked by one.
