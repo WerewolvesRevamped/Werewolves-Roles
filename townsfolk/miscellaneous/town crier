@@ -13,3 +13,6 @@ Starting: Target `%Player:@(Align:Townsfolk)%` (Player)
 Passive Start Night: [Temporal: Night 1]
   • Process: Role Investigate @Target
   • Evaluate: Learn `@Target is @Result`
+
+__Card__
+The Town Crier spreads their message of another townsperson.
