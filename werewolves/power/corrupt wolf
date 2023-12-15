@@ -17,3 +17,6 @@ Inherit: `Pack Lycan`
 Immediate Night: 
   • Whisper to @Selection (~Phase)
   • Manipulate @Selection's `public voting power` to @SecondarySelection[-1,0,1,2] (~NextDay)
+
+__Card__
+Quietly stealing vote ballots is the Corrupt Wolf's favorite pastime.
