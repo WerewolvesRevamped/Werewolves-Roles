@@ -19,3 +19,6 @@ Passive End Day: [Temporal: Day 0]
   • @Target is `Cautious Hag`: Role Change @Self to randomize(Vicious Hag, Prophetic Hag)
   • @Target is `Prophetic Hag`: Role Change @Self to randomize(Vicious Hag, Cautious Hag)
   • Otherwise: Role Change @Self to randomize(Vicious Hag, Cautious Hag, Prophetic Hag)
+
+__Card__
+A normal Hag has not yet received their spellcasting ability.
