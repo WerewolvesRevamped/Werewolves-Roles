@@ -20,3 +20,6 @@ Passive:
   • @Target->Role is `Warlock`: Role Change @Self to `Fortune Teller`
 Passive End Night: @Target->Role is not `Dog`: Role Change @Self to `Fortune Teller`
 On Action [Role Change]: Obstruct Investigation for @Self (~Phase)
+
+__Card__
+Cats and dogs have always been enemies. They'll always want to beat eachother.
