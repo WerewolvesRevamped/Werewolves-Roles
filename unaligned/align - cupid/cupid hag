@@ -15,3 +15,6 @@ Inherit: `Cupid`
 Inherit: `Coven`
 Passive:
   • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Join #Bitter-Hags
+
+__Card__
+When the Cupid falls in love with a hag, they'll become a Cupid Hag.
