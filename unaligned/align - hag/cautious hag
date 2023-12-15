@@ -21,3 +21,6 @@ Immediate Night: [Condition: @Self->Counter > 0] {Repeating}
   • Decrement Counter
 Passive:
   • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
+
+__Card__
+The Cautious Hag has learnt to use a powerful protection spell.
