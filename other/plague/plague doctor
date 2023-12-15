@@ -26,3 +26,6 @@ Immediate Day:
   • Decrement Counter
 Passive:
   • not (@(Attr:Contaminated) exists) and (not (@(Role:Plague Bearer) exists) or (#Plague-Pit->Counter is `0`)): Ascend
+
+__Card__
+The Plague Doctor seeks a cure for the disease the Plague Bearer brings.
