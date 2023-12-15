@@ -15,3 +15,6 @@ Immediate: Target @Selection (Player)
 Immediate: Target @Selection (Player) [Quantity: 1]
 Passive: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target [Quantity: 1, Condition: @Target exists]
 On Action [Redirect]: Learn `Redirect was used`
+
+__Card__
+The Assistant can redirect the first wolf ability.
