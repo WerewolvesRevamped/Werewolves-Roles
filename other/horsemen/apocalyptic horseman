@@ -14,3 +14,6 @@ __Formalized__
 Starting: Protect @Self from `all` through Passive Defense during Night
 End Night: Attack @Selection [Attribute: lacks `HasDoomed`]
 Passive End Night: Remove `HasDoomed` from @Self
+
+__Card__
+The Apocalyptic Horseman unleashes its fury upon its enemies.
