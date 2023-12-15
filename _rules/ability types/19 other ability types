@@ -1,0 +1,6 @@
+**Other Ability Types** | Ability Type
+• Disband: Can only affect a group, not a player. When a group is disbanded, all abilities that come from the group (not its members) will no longer activate. Some groups have abilities that trigger upon being disbanded. Disbandment also happens automatically when no members or owners of a group are alive.
+• Cancel: This cancels a visit or action, resulting in it being a failure. It is also possible for this to have custom feedback.
+• Conversation Reset: Some groups or extra roles delete all their messages at regular intervals, that ability is called conversation reset.
+• Counting: Some teams, roles, or groups have a counter relating to their abilities, such as Hell Teams souls. The ability type counting can increment, decrement, or set a counter to a specific value.
+• Switch: This is when players are swapped, such as with the thief role. 
