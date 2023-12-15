@@ -22,3 +22,6 @@ End Night:
     ‣ @Result2 is `Success`: Kill @Self
     ‣ Otherwise: `Failure`
 On @[Wolfpack] Death: Role Change @Self to `Wolf`
+
+__Card__
+The Lone Wolf is enraged, trying hard to find its pack.
