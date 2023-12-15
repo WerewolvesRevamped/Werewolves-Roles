@@ -14,3 +14,6 @@ When there is a Mayor, a Reporter is elected. They will be able to see the start
 __Formalized__
 On @All Death: Learn `@This->OriginalRole`
 End Phase: Revoke `Reporter` from @Self
+
+__Card__
+The Reporter is elected to find out the truth behind the dead.
