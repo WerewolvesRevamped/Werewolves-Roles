@@ -24,3 +24,6 @@ End Day:
   • (@Target exists) and (@Target->Alignment is `Pyro`): Learn `Ignition failed on @Target`
   • Otherwise: Learn `You powdered`
 Passive: not (@(Group:Pyros) exists): Role Change @Self to `Pyromancer`
+
+__Card__
+If you're not careful, a Wisp might spark a flame and burn a neighbor.
