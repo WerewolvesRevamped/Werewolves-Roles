@@ -22,3 +22,6 @@ Passive Start Night: `Pyromancer` Choice Creation:
       ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
       ◦ Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
 Immediate Night: `Pyromancer` Choice Choose @Chosen
+
+__Card__
+The flaming hot Pyromancer only wants to spread gunpowder and ignite some fires.
