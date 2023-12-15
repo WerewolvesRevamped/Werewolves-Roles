@@ -19,4 +19,4 @@ On Death: [Condition: @Target exists]
   • Transfer `Journal Holder` from @Self to @Target
 
 __Card__
-While alive the Journalist can write a journal that is passed to a player on their death.
+The Journalist keeps a journal throughout the game.
