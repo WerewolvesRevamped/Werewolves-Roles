@@ -18,4 +18,4 @@ On @(Attr:HeraldSelected:@Self) Death:
   • not (@(Attr:HeraldSelected:@Self) exists): Learn `Last marked player died`
 
 __Card__
-The Herald scouts the village and knows when someone's stopped practicing a certain occupation.
+The Herald scouts the village and knows when someone's stopped doing a certain occupation.
