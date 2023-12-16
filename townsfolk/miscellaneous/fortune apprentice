@@ -14,4 +14,4 @@ On @(Cat:Investigative,Align:Townsfolk) Death: Target @This->Role (Role)
 Passive Start Day: Role Change @Self to @Target [Condition: @Target exists]
 
 __Card__
-When their master dies, the Fortune Apprentice replaces them.
+When their master dies, the Fortune Apprentice takes their place.
