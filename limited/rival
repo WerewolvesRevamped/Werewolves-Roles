@@ -24,3 +24,6 @@ Immediate Night: [Temporal: Night 2+]
     ‣ @Result1 is @Result2: Learn `@Selection is @Result1 (Unaffected)`
     ‣ Otherwise: Learn `@Selection is @Result1 (Affected)`
 Passive: not (@(Attr:Rival,Attr:!Rival:@Self) exists): Ascend
+
+__Basics__
+The Rivals have a bitter rivalry, hoping for each other's deaths.
