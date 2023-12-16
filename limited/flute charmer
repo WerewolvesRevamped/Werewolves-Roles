@@ -22,4 +22,4 @@ Immediate Day:
 Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
 
 __Card__
-The Flute Charmer curses its targets to be seen as a flute player and have their true self be revealed.
+Those charmed by the Flute Charmer have their true self revealed and will be seen as a flute player.
