@@ -25,3 +25,6 @@ On @(Attr:Warded:@Self) Visited [Attack]:
     ‣ Remove `Warded` from @(Attr:Warded:@Self)
 End Night: Apply `Powdered` to @(Attr:Warded:@Self) (~Persistent)
 Passive: not (@(Role:Pyromancer) exists): Role Change @Self to `Pyromancer`
+
+__Card__
+The Firebug protects villagers with a fiery shield. Any harm done to them would turn into a flaming disaster.
