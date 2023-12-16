@@ -14,5 +14,8 @@ A Swindler can swindle one person each night, causing their target to have their
 After 1/3 of all living players (rounded up) have been swindled, counting the Swindler, they win and stop playing. The game continues.
 If the Swindler wins, the votes are slowly returned once per night following their ascension, in the order in which they were stolen in. However if they die, the votes are immediately returned instead.
 
+__Formalized__
+N/A
+
 __Card__
 The Swindler aims to sabotage the votes as much as they can.
