@@ -17,4 +17,4 @@ Passive End Night:
   • not (@(Role:Bartender) exists): Kill @Self
 
 __Card__
-The Alcoholic cannot be attacked as long as there is a bartender to serve them.
+The Alcoholic thinks of themself as invincible, as long as their glass is full.
