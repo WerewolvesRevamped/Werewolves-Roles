@@ -21,3 +21,6 @@ Immediate: Target @Selection (List: %Player1%, %Player2%) {Forced}
 On Death: 
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Reveal `Mad Scientist @Self killed @Target` to #story_time
+
+__Card__
+The Mad Scientist loves to experiment on their test subjects, no matter the concequences.
