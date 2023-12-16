@@ -19,4 +19,4 @@ On Death: [Condition: @Target exists]
   • Transfer `Journal Holder` from @Self to @Target
 
 __Card__
-The Journalist keeps a journal and passes it on death.
+The Journalist keeps a journal and passes it on to the archives when they die.
