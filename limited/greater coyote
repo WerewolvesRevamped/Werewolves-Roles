@@ -17,3 +17,6 @@ Unique Role
 Starting: Join #Coyotes as `Owner`
 Passive Start Night: &Werewolf has `CoyoteTrigger`: Create `Coyotes` Poll in #Coyotes [Temporal: Night 2+]
 On Poll Closed: Attack @Winner 
+
+__Card__
+As an ally of the wolfpack, the Greater Coyotes has their own pack attack when the wolves fail.
