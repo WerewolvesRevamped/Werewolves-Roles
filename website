@@ -1,0 +1,49 @@
+townsfolk
+townsfolk/miscellaneous
+townsfolk/power
+townsfolk/investigative
+townsfolk/group
+townsfolk/killing
+
+werewolves
+/wolves
+werewolves/miscellaneous
+werewolves/power
+werewolves/investigative
+werewolves/group
+werewolves/killing
+
+other
+/white wolves
+/flute
+/hell
+/pyro
+/plague
+/underworld
+/horsemen
+
+unaligned
+unaligned/miscellaneous
+unaligned/power
+unaligned/investigative
+unaligned/killing
+unaligned/align
+unaligned/align - cupid
+unaligned/align - hag
+
+extra
+extra/miscellaneous
+extra/power
+extra/group
+extra/killing
+extra/elected
+
+limited
+
+variant
+roles/jokes
+roles/mini wolves
+roles/modifiers
+roles/technical
+roles/temporary
+roles/variant
