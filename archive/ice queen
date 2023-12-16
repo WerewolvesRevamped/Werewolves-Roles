@@ -8,3 +8,6 @@ Day ability stay the same, and passive or permanent abilities can also be used b
 After correctly guessing a player, the same player can’t be guessed again. For a list of abilities the Ice Queen can use, look at the edge case sheet. 
 If the Ice Queen can’t use the ability of the guessed player, the guess is simply confirmed and nothing else happens. 
 The Ice Queen is an ice royal, knows the other ice royals and works together with them. The ice royals win when all players, except the ice royals, are frozen or dead.
+
+__Simplified__
+Each night, the Ice Queen can submit the role of one player, and if that guess is correct, the Ice Queen is able to use the guessed player’s ability on the next day.
