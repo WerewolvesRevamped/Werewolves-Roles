@@ -17,3 +17,6 @@ Unique Role
 Starting: Join #Cult as `Owner`
 Passive Start Night: Create `Cult` Poll in #cult [Temporal: Night 2+]
 On Poll Closed: Attack @Winner 
+
+__Card__
+The Cult Leader secretly gathers their cult in the forest, every single night.
