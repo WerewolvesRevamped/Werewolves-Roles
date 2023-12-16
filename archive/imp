@@ -18,5 +18,8 @@ On Visit [Attack]: [Condition: #Hell->Counter > 0]
   • Decrement Counter for #Hell 
   • Reveal `@Self was attacked and protected` to #Hell
 
+__Formalized__
+N/A
+
 __Card__
 The Imp is a failed wannabe devil, who allies with the devil.
