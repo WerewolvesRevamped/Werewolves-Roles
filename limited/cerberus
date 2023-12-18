@@ -1,0 +1,36 @@
+**Cerberus** | Solo Killing - Hell Team | Limited
+__Basics__
+Each night the Cerberus may guard a player, if attacked they will be protected in exchange for their soul, will be used to attack their attacker.
+The Cerberus wins with the devil. It joins a channel with the devil to communicate securely.
+The Cerberus can use the hell team's soul pool.
+__Details__
+Each night the Cerberus can select a player to guard, they may not select soulless players.
+If attacked the Cerberus will protect their target and in exchange take their soul, making them soulless, if the player has no soul they will no longer be protected.
+However, the soul does not add to hell's collective soul pool, and instead the Cerberus uses it to attack the player who attacked their target.
+
+During the first phase, the Cerberus may choose a role as a weak disguise. This defaults to citizen.
+
+At the start of the game, the Cerberus' soul is added to the hell team's soul pool. The Cerberus then becomes soulless.
+The Cerberus may use souls from the pool to protect or attack a player.
+If the Cerberus is attacked while a soul is in the pool, a soul will automatically be used to protect the Cerberus.
+See `$info souls` for a detailed explanation.
+
+Members of the Hell team cannot betray the team in any way. Any attempts at conversion or recruitment of a member will fail in some manner.
+
+__Simplified__
+Each night the Cerberus may guard a player, if attacked they will be protected in exchange for their soul, will be used to attack their attacker.
+The Cerberus wins with the devil and joins a channel with the devil. The Cerberus can use the hell team's pool of souls.
+
+Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
+
+__Formalized__
+Inherit: `Souls`
+Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: Citizen}
+Immediate Night: [Attribute: @Selection lacks Soulless]
+• Protect @Selection from Attacks through Active Defense (~Phase)
+• Target @Selection (~Phase)
+On @Target Visited [Attack, Attribute: @Target lacks Soulless]:
+• Apply `Soulless` to @Target (~Persistent) {Visitless}
+• Attack @Attacker
+• Remove `Defense:Cerberus` from @Target
+• Untarget
