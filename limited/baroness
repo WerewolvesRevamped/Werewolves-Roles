@@ -18,4 +18,4 @@ Immediate Day: Target @Selection (Role)
 Passive: Apply `BaronessSpying` to @(Role:@Target,Attr:!BaronessSpying:@Self) (~NextDay) {Visitless}
 
 __Card__
-With its ability to see through others, the Baroness receives information by spying on gifted villagers.
+With its ability to see through others, the Baroness receives information by spy- ing on gifted villagers.
