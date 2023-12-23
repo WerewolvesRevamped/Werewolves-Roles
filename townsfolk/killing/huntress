@@ -17,4 +17,4 @@ On Killed: [Condition: @Target exists]
   • Evaluate: @Result is `Success`: Reveal `Huntress @Self killed @Target` to #story_time
 
 __Card__
-The Huntress is trained well in archery. If attacked, they surely can shoot a final arrow with their trusty bow.
+The Huntress is trained well in archery. If attacked, they surely can shoot a final arrow with their bow.
