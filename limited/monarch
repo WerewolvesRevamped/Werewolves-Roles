@@ -8,6 +8,7 @@ Neither the knighted player nor the heir are aware of being selected by the Mona
 The knighted player's vote appears normally on votes: however, an additional vote is counted internally, and the total vote count in the vote results will be correct. Similarly, the vote against the knight that has been negated is still shown in the vote results and the total vote count is decreased by one. After the end of the day, the knighted player is no longer knighted.
 When the heir becomes the new Monarch, they are *not* revealed. If the Monarch dies without a living heir, the role is lost.
 Knighting a player and picking an heir are immediate abilities.
+The Monarch may not select themselves as knight or heir.
 
 __Simplified__
 The Monarch is elected during Day 0.
