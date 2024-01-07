@@ -921,7 +921,6 @@ The following utility functions exist:
 - `calc(<math>)`, allows math operations:
   - `floor(x)`, `ceil(x)`, `round(x)` - rounding
   - `a/b`, `a*b`, `a+b`, `a-b` - basic math
-  - `$total`, `$living` - player counts
 - `most_freq_role(<Input List>)` - selects the most frequent role in a list of players or roles
 - `count(<List>)` - return the amount of values inside the list
 
