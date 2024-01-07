@@ -1,0 +1,1 @@
+"knowledgeable wolf" "%r" "infopin knowledgeable_wolf,delay 1 infopin knowledgeable_wolf$list,delay 2 connection add %r,delay 3 delete 1"
