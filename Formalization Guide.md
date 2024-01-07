@@ -737,7 +737,7 @@ Format:
 `Obstruct <Ability Type> for <Target> (<Duration>)` (Block only a certain ability type)  
 `Obstruct <Ability Subtype> for <Target> (<Duration>)` (Block only a certain ability subtype)  
 `Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback> (<Duration>)` (Block a certain ability type and return fake feedback)  
-`Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ [<Chance>:<Feedback>,<Chance>:<Feedback>] (<Duration>)` (Block a certain ability type and return fake feedback with a certain chance, use `@Result` to refer to the default feedback)   
+`Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ (<Chance>:<Feedback>,<Chance>:<Feedback>) (<Duration>)` (Block a certain ability type and return fake feedback with a certain chance, use `@Result` to refer to the default feedback)   
 
 - Target: A target type, specifying which player should be obstructed
 - Ability Type: An ability type, specifying which ability types should be obstructed
