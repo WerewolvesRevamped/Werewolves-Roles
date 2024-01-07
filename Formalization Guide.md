@@ -690,7 +690,7 @@ As a result of a Whispering, a whispering connection is opened.
 Format:  
 `Join '<GroupName>' (<Duration>)`  
 `Join '<GroupName>' as '<MembershipType>' (<Duration>)`  
-`Leave '<GroupName>'`
+`Leave '<GroupName>'`  
 `Add <Target> to '<GroupName>' (<Duration>)`  
 `Add <Target> to '<GroupName>' as '<MembershipType> (<Duration>)`  
 `Remove <Target> from '<GroupName>'`  
