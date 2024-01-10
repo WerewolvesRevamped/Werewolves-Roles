@@ -47,7 +47,7 @@
     - [Obstructing](#obstructing)
     - [Poll Manipulating](#poll-manipulating)
     - [Announcements](#announcements)
-    - [Role Change](#role-change)
+    - [Changing](#changing)
     - [Copying](#copying)
     - [Choices](#choices)
     - [Ascend / Descend](#ascend-descend)
@@ -778,7 +778,7 @@ Format:
 - Information: (reveal) Text that is revealed, (learn, know) Text the player receives
 
 ---
-#### Role Change
+#### Changing
 
 Format:  
 `Role Change <Target> to '<Role>'` (Change a player's role)  
