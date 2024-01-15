@@ -13,5 +13,5 @@ After Night 1, the cult can vote to attack one player each night. When the cult 
 
 __Formalized__
 Starting: Join #Cult
-On @(Role:Cult Leader) Death: Role Change @Self to `Cult Leader`
+On @(Role:Cult-Leader) Death: Role Change @Self to `Cult Leader`
 On Death: Add `Cult` Poll
