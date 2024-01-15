@@ -14,5 +14,5 @@ Once per game, at night, the Witch may attack one player.
 __Formalized__
 End Night: Attack @Selection [Quantity: 1]
 Compound:
-  • Immediate Night: Protect @Selection from `Attacks` (~Phase) [Quantity: 1] ⟨x3⟩ 
+  • Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) [Quantity: 1] ⟨x3⟩ 
   • Afterwards: Protect @Self from `Attacks` (~Phase)
