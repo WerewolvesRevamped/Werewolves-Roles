@@ -15,7 +15,7 @@ __Formalized__
 Starting:
   • @(Role:Cat) exists: Target `Rival` (Role)
   • Otherwise: Target `Psychopath` (Role)
-Immediate Night: Target @Selection [List: Fortune Teller, Warlock, @Target] {Forced: Fortune Teller}
+Immediate Night: Target @Selection (List: Fortune Teller, Warlock, @Target) {Forced: Fortune Teller}
 On Action [Targeting]:
-  • Obstruct `Investigation` for @Self (~Phase)
+  • Obstruct Investigating for @Self (~Phase)
   • Role Change @Self to @Target
