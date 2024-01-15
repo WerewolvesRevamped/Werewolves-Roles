@@ -502,6 +502,8 @@ These advanced target types may also be combined by comma separating them, e.g. 
 
 You can also use a not operation by using `!` after `:`, e.g. to select all non-townsfolk aligned players: `@(Align:!Townsfolk)`  
 
+Within advanced target types, substitute spaces with `-`.
+
 __Limited Target Types__   
 These target types are only available in some contexts:
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
