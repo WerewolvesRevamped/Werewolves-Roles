@@ -755,11 +755,11 @@ As a result of an Obstruction the <Target> receives an `Obstructed` attribute.
 Poll Manipulations can affect polls that do not yet exist. For example, a poll manipulation may cancel a lynch during the night, which will cancel the next day's lynch.
 
 Format:  
-`Add <PollType> Poll` (Duplicate an existing poll)  
-`Create <PollType> Poll in <Location>` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
-`Cancel <PollType> Poll` (Cancel the poll's resulting ability)  
-`Delete <PollType> Poll` (Remove a poll that would otherwise exist)  
-`Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
+`Add '<PollType>' Poll` (Duplicate an existing poll)  
+`Create '<PollType>' Poll in <Location>` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
+`Cancel '<PollType>' Poll` (Cancel the poll's resulting ability)  
+`Delete '<PollType>' Poll` (Remove a poll that would otherwise exist)  
+`Manipulate '<PollType>' Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
 
 - Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
 - Target: A target type, specifying which player should be manipulated on the poll
