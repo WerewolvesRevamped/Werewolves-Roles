@@ -882,7 +882,7 @@ Format:
 ---
 #### Cancel
 
-Within `On Visit` triggers you can use `Cancel` to cancel the visit.
+Within `On Visited` triggers you can use `Cancel` to cancel the visit.
 
 Format:  
 `Cancel` (Cancels the visit with a resulting failure)  
