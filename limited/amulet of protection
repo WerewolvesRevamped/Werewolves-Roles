@@ -24,4 +24,4 @@ Immediate Day: ⟨*3⟩
 Passive End Day:
   • Conversation Reset
   • @Target exists: Transfer `Amulet of Protection` from @Self to @Target
-  • Otherwise: Apply `ShatterAmulet` to @(Role:Amulet Crafter)
+  • Otherwise: Apply `ShatterAmulet` to @(Role:Amulet-Crafter)
