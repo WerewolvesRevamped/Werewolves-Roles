@@ -15,5 +15,5 @@ Additionally, the Corrupt Wolf can anonymously talk to their target.
 __Formalized__
 Inherit: `Pack Lycan`
 Immediate Night: 
-  • Whisper to @Selection (~Phase)
+  • Whisper to @Selection as `Corrupt Wolf` (~Phase)
   • Manipulate @Selection's `public voting power` to @SecondarySelection[-1,0,1,2] (~NextDay)
