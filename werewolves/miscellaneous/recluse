@@ -14,5 +14,5 @@ __Formalized__
 On Visited:
   • @Visitor->Alignment is `Werewolf`: Learn `@Visitor->Role @Visitor used @VisitType on you`
   • Otherwise:  Learn `@Visitor->Role used @VisitType on you`
-On Visited [Attack]:
+On Visited [Attack Killing]:
   • @Visitor has `Wolfish`: Cancel with Failure
