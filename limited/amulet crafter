@@ -14,9 +14,9 @@ __Formalized__
 Unique Role
 Starting: Grant `Amulet of Protection` to @Self
 On Death:
-  • Attack @(Role:Amulet of Protection)
-  • Revoke `Amulet of Protection` from @(Role:Amulet of Protection)
-Immediate Day: [Quantity: 1, Condition: @(Role:Amulet of Protection) exists]
-  • Attack @(Role:Amulet of Protection)
-  • Revoke `Amulet of Protection` from @(Role:Amulet of Protection)
+  • Attack @(Role:Amulet-of-Protection)
+  • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
+Immediate Day: [Quantity: 1, Condition: @(Role:Amulet-of-Protection) exists]
+  • Attack @(Role:Amulet-of-Protection)
+  • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
 
