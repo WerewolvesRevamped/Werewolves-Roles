@@ -40,3 +40,17 @@ Empty lines will be ignored entirely.
 
 ## How To Play Generation
 You can write whatever text you want. If a line begins with `@` it will be considered a reference to another file. The syntax is `@x path` where x is the number of lines that should be skipped in that file (when that file has a heading that you want to skip), and path is the path to the file. E.g. `@0 _categories/how to play`. Lines starting with `>` are treated like lines beginning with `@`, however `> ` is prepended to each line of the referenced file.
+
+## Queries
+Within info messages you can use queries. 
+
+The queries follow the format of: `@Query;<Query>;<Format>@`
+
+A query will look for roles that match a <Query> and then for each output a line with a certain <Format>.
+
+Queries look like `<Key>=<Value>,<Key2>=<Value2>`, with allowed keys being `Team`, `Class`, `Category` and `Type`, so e..g `Team=townsfolk` or `Class=solo,Category=killing`
+
+Format can be any text (except `@`). Any occurence of the following strings will be replaced:  
+- `$.Name` -> Role Name
+- `$.Emoji` -> Role Emoji
+- `$.ClassCat` -> The Class/Category initials
