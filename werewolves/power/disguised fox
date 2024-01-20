@@ -17,7 +17,7 @@ Once per game, the Disguised Fox may alternatively give up their power and join 
 __Formalized__
 Passive Start Day: `Fox` Choice Creation:
   • `Join Pack`:
-    ‣  Immediate Day: Role Change @Self to `Wolf`
+    ‣ Immediate Day: Role Change @Self to `Wolf`
   • `Disguise Self`
     ‣ Compound:
       ◦ Immediate Day: Strongly Disguise @Self as @Selection (~NextNight)
