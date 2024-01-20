@@ -15,9 +15,9 @@ If they are killed in another way, they lose.
 
 __Formalized__
 On Killed:
-  • @AttackSource is Group:Wolfpack:
+  • @AttackSource is #wolfpack:
     ‣ Delete Wolfpack Poll
-  • @Attacker has Attr:Wolfish:
+  • @Attacker has `Wolfish`:
     ‣ Obstruct @Attacker (~NextNight)
     ‣ Ascend
 On @(Attribute:Wolfish) Death:

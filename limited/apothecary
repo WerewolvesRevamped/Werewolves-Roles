@@ -14,7 +14,7 @@ Each night, the Apothecary may poison a player, killing them at the end of the n
 __Formalized__
 Starting:
   • Apply `CureAvailable` to @Self
-  • Set Counter to `3`
+  • Set Counter to 3
 Passive Start Night: `Apothecary` Choice Creation: 
   • `Poison`:
     ‣  Immediate Night:

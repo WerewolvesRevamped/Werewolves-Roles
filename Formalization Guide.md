@@ -47,7 +47,7 @@
     - [Obstructing](#obstructing)
     - [Poll Manipulating](#poll-manipulating)
     - [Announcements](#announcements)
-    - [Role Change](#role-change)
+    - [Changing](#changing)
     - [Copying](#copying)
     - [Choices](#choices)
     - [Ascend / Descend](#ascend-descend)
@@ -502,6 +502,8 @@ These advanced target types may also be combined by comma separating them, e.g. 
 
 You can also use a not operation by using `!` after `:`, e.g. to select all non-townsfolk aligned players: `@(Align:!Townsfolk)`  
 
+Within advanced target types, substitute spaces with `-`.
+
 __Limited Target Types__   
 These target types are only available in some contexts:
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
@@ -690,7 +692,7 @@ As a result of a Whispering, a whispering connection is opened.
 Format:  
 `Join '<GroupName>' (<Duration>)`  
 `Join '<GroupName>' as '<MembershipType>' (<Duration>)`  
-`Leave '<GroupName>'`
+`Leave '<GroupName>'`  
 `Add <Target> to '<GroupName>' (<Duration>)`  
 `Add <Target> to '<GroupName>' as '<MembershipType> (<Duration>)`  
 `Remove <Target> from '<GroupName>'`  
@@ -737,7 +739,7 @@ Format:
 `Obstruct <Ability Type> for <Target> (<Duration>)` (Block only a certain ability type)  
 `Obstruct <Ability Subtype> for <Target> (<Duration>)` (Block only a certain ability subtype)  
 `Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ <Feedback> (<Duration>)` (Block a certain ability type and return fake feedback)  
-`Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ [<Chance>:<Feedback>,<Chance>:<Feedback>] (<Duration>)` (Block a certain ability type and return fake feedback with a certain chance, use `@Result` to refer to the default feedback)   
+`Obstruct [<Ability Type>|<Ability Subtype>] for <Target> ⇒ (<Chance>:<Feedback>,<Chance>:<Feedback>) (<Duration>)` (Block a certain ability type and return fake feedback with a certain chance, use `@Result` to refer to the default feedback)   
 
 - Target: A target type, specifying which player should be obstructed
 - Ability Type: An ability type, specifying which ability types should be obstructed
@@ -753,11 +755,11 @@ As a result of an Obstruction the <Target> receives an `Obstructed` attribute.
 Poll Manipulations can affect polls that do not yet exist. For example, a poll manipulation may cancel a lynch during the night, which will cancel the next day's lynch.
 
 Format:  
-`Add <PollType> Poll` (Duplicate an existing poll)  
-`Create <PollType> Poll in <Location>` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
-`Cancel <PollType> Poll` (Cancel the poll's resulting ability)  
-`Delete <PollType> Poll` (Remove a poll that would otherwise exist)  
-`Manipulate <PollType> Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
+`Add '<PollType>' Poll` (Duplicate an existing poll)  
+`Create '<PollType>' Poll in <Location>` (Creates a poll and the role will execute the resulting ability - for this use `On Poll Closed`)  
+`Cancel '<PollType>' Poll` (Cancel the poll's resulting ability)  
+`Delete '<PollType>' Poll` (Remove a poll that would otherwise exist)  
+`Manipulate '<PollType>' Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
 
 - Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
 - Target: A target type, specifying which player should be manipulated on the poll
@@ -778,11 +780,11 @@ Format:
 - Information: (reveal) Text that is revealed, (learn, know) Text the player receives
 
 ---
-#### Role Change
+#### Changing
 
 Format:  
-`Role Change <Target> to '<Role>'` (Change a player's role)
-`Alignment Change <Target> to '<Alignment>'` (changes a player's alignment - only valid of unaligned players)
+`Role Change <Target> to '<Role>'` (Change a player's role)  
+`Alignment Change <Target> to '<Alignment>'` (changes a player's alignment - only valid of unaligned players)  
 `Group Change <Target> to '<Group>'` (Change a group's name, but not member roles)  
 
 - Target: A target type, specifying which player's role to change
@@ -793,7 +795,7 @@ Format:
 
 Format:  
 `Copy <Target> (<DurationType>)` (Copies all abilities of target role or player to yourself)  
-`Full Copy <Target>` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc)
+`Full Copy <Target>` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc)  
 `Full Copy <Target> (Suppressed)` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc, but stops starting abilities from triggering)  
 `Duplicate <Target>'s abilities (<DurationType>)` (Copies all abilities of target role or player to themself)  
 `Copy <Target> to <Target2> (<DurationType>)` (Copies all abilities of a target role or player to another player)  
@@ -880,7 +882,7 @@ Format:
 ---
 #### Cancel
 
-Within `On Visit` triggers you can use `Cancel` to cancel the visit.
+Within `On Visited` triggers you can use `Cancel` to cancel the visit.
 
 Format:  
 `Cancel` (Cancels the visit with a resulting failure)  
@@ -921,7 +923,6 @@ The following utility functions exist:
 - `calc(<math>)`, allows math operations:
   - `floor(x)`, `ceil(x)`, `round(x)` - rounding
   - `a/b`, `a*b`, `a+b`, `a-b` - basic math
-  - `$total`, `$living` - player counts
 - `most_freq_role(<Input List>)` - selects the most frequent role in a list of players or roles
 - `count(<List>)` - return the amount of values inside the list
 

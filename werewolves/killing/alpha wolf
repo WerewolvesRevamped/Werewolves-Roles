@@ -14,9 +14,9 @@ The Alpha Wolf has two votes on the wolfpack poll. Additionally, the Alpha Wolf 
 __Formalized__
 Inherit: `Pack Lycan`
 Passive: Loyalty to `Werewolf` (Alignment)
-Starting: Manipulate @Self's `Private Voting Power` to `2`
+Starting: Manipulate @Self's `private voting power` to `2`
 End Night: [Quantity: 1]
-• Cancel Wolfpack Poll
+• Cancel `Wolfpack` Poll
 • Attack @Selection
 • Target @Selection (List: Reveal, NoReveal) {Forced: NoReveal}
 • Evaluate:

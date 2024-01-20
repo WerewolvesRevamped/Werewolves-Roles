@@ -16,7 +16,7 @@ Starting: Join #Pyros
 Compound:
   • Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) 
   • Afterwards: Apply `Warded` to @Selection (~Phase)
-On @(Attr:Warded:@Self) Visited [Attack]:
+On @(Attr:Warded:@Self) Visited [Attack Killing]:
   • not (@Visitor->Alignment is `Pyro`):
     ‣ Apply `Powdered` to @Visitor (~Persistent)
     ‣ Attack @(Attr:Powdered,Align:!Pyro)

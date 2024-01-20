@@ -14,8 +14,8 @@ If the hags have been wronged by all remaining teams, they turn into Bitter Hags
 __Formalized__
 Inherit: Coven
 Starting: Join #Bitter-Hags
-Immediate Night: Protect @Selection from `Attacks` (~Phase)
-Immediate Night: Alignment investigate @Selection
+Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase)
+Immediate Night: Alignment Investigate @Selection
 End Night: Attack @Selection
 
 __Card__
