@@ -2,8 +2,8 @@
 *Foxes are a special type of werewolf. They aren't part of the wolfpack, nor are they lycans. Each day, Foxes may join the wolfpack as a wolf, or use an ability. The wolfpack learns relevant information when a fox ability is used.*
 
 __List:__
-Archivist Fox
-Clairvoyant Fox
-Disguised Fox
+<?ArchivistFox:> Archivist Fox
+<?ClairvoyantFox:> Clairvoyant Fox
+<?DisguisedFox:> Disguised Fox
 
-*Gallant Fox*
+<?GallantFox:> *Gallant Fox*

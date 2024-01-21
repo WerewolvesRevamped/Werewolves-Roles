@@ -3,16 +3,16 @@
 All 'lone werewolves' and 'foxes' are considered to be packless.*
 
 __List:__
-Archivist Fox
-Clairvoyant Fox
-Disguised Fox
-Lone Wolf
-Lone Warlock
-Recluse
-Tanner
-Warlock
+<?ArchivistFox:> Archivist Fox
+<?ClairvoyantFox:> Clairvoyant Fox
+<?DisguisedFox:> Disguised Fox
+<?LoneWolf:> Lone Wolf
+<?LoneWarlock:> Lone Warlock
+<?Recluse:> Recluse
+<?Tanner:> Tanner
+<?Warlock:> Warlock
 
-*Baroness*
-*Gallant Fox*
-*Greater Coyote*
-*Lesser Coyote*
+<?Baroness:> *Baroness*
+<?GallantFox:> *Gallant Fox*
+<?GreaterCoyote:> *Greater Coyote*
+<?LesserCoyote:> *Lesser Coyote*

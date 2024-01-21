@@ -2,16 +2,16 @@
 *Most, but not all werewolves are lycans. Whether a role is a lycan or not is relevant for roles including the aura teller and the priest. This lists only members of the werewolf team that aren't lycans. For a list of lycans run `$i lycans`.*
 
 __Werewolves:__
-Archivist Fox
-Clairvoyant Fox
-Disguised Fox
-Lone Warlock
-Pack Tanner
-Recluse
-Tanner
-Warlock
+<?ArchivistFox:> Archivist Fox
+<?ClairvoyantFox:> Clairvoyant Fox
+<?DisguisedFox:> Disguised Fox
+<?LoneWarlock:> Lone Warlock
+<?PackTanner:> Pack Tanner
+<?Recluse:> Recluse
+<?Tanner:> Tanner
+<?Warlock:> Warlock
 
-*Baroness*
-*Gallant Fox*
-*Greater Coyote*
-*Lesser Coyote*
+<?Baroness:> *Baroness*
+<?GallantFox:> *Gallant Fox*
+<?GreaterCoyote:> *Greater Coyote*
+<?LesserCoyote:> *Lesser Coyote*
