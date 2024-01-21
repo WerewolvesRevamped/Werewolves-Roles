@@ -54,3 +54,4 @@ Format can be any text (except `@`). Any occurence of the following strings will
 - `$.Name` -> Role Name
 - `$.Emoji` -> Role Emoji
 - `$.ClassCat` -> The Class/Category initials
+- `$.Team` -> The role's team name
