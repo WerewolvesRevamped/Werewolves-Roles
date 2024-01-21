@@ -1,0 +1,6 @@
+**Extra Killing**
+@Query;Class=extra,Category=killing,Type=default;$.Emoji $.Name@
+
+@Query;Class=extra,Category=killing,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=extra,Category=killing,Type=transformation;$.Emoji $.Name@

@@ -1,0 +1,6 @@
+**Solo Killing** 
+@Query;Class=solo,Category=killing,Type=default;$.Emoji $.Name ($.Team Team)@
+
+@Query;Class=solo,Category=killing,Type=limited;$.Emoji *$.Name  ($.Team Team)*@
+
+@Query;Class=solo,Category=killing,Type=transformation;$.Emoji $.Name (T; $.Team Team)@

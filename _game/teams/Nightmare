@@ -1,0 +1,5 @@
+**Nightmare Team**
+__Formalized__
+Win Condition: @(Attribute:Sleepless), @(Class:Unaligned)
+Inherit: `Sleepless`
+Starting: Join #Nightmare

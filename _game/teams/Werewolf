@@ -1,0 +1,4 @@
+**Werewolves**
+__Formalized__
+Win Condition: @(Alignment:Werewolf), @(Class:Unaligned)
+Starting: Apply `Wolfish` to @Self

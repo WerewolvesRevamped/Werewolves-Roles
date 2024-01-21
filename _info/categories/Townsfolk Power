@@ -1,0 +1,6 @@
+**Townsfolk Power**
+@Query;Class=townsfolk,Category=power,Type=default;$.Emoji $.Name@
+
+@Query;Class=townsfolk,Category=power,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=townsfolk,Category=power,Type=transformation;$.Emoji $.Name (T)@

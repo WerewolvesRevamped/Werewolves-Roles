@@ -1,0 +1,9 @@
+**Underworld Team**
+Underworld Team wins when all players are dead, unaligned or part of the Underworld team. Members of the team know each other.
+
+__Roles__
+@Query;Team=underworld,Type=default;$.Emoji $.Name@
+
+@Query;Team=underworld,Type=limited;$.Emoji *$.Name*@
+
+@Query;Team=underworld,Type=transformation;$.Emoji $.Name (T)@

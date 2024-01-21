@@ -1,0 +1,6 @@
+**Extra Elected**
+@Query;Class=extra,Category=elected,Type=default;$.Emoji $.Name@
+
+@Query;Class=extra,Category=elected,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=extra,Category=elected,Type=transformation;$.Emoji $.Name@

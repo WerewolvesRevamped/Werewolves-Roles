@@ -1,0 +1,6 @@
+**Unaligned Investigative**
+@Query;Class=unaligned,Category=investigative,Type=default;$.Emoji $.Name@
+
+@Query;Class=unaligned,Category=investigative,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=unaligned,Category=investigative,Type=transformation;$.Emoji $.Name (T)@

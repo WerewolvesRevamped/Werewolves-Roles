@@ -1,0 +1,6 @@
+**Solo Investigative**
+@Query;Class=solo,Category=investigative,Type=default;$.Emoji $.Name ($.Team Team)@
+
+@Query;Class=solo,Category=investigative,Type=limited;$.Emoji *$.Name  ($.Team Team)*@
+
+@Query;Class=solo,Category=investigative,Type=transformation;$.Emoji $.Name (T; $.Team Team)@

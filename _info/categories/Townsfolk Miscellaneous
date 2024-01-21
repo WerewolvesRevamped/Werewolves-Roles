@@ -1,0 +1,6 @@
+**Townsfolk Miscellaneous**
+@Query;Class=townsfolk,Category=miscellaneous,Type=default;$.Emoji $.Name@
+
+@Query;Class=townsfolk,Category=miscellaneous,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=townsfolk,Category=miscellaneous,Type=transformation;$.Emoji $.Name (T)@

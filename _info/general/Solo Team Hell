@@ -1,0 +1,9 @@
+**Hell Team**
+'Hell Team' is the team of the Devil. Hell Team wins when all players are either dead, unaligned, soulless or part of the Hell team. All members of the team know each other and can never betray each other.
+
+__Roles__
+@Query;Team=hell,Type=default;$.Emoji $.Name@
+
+@Query;Team=hell,Type=limited;$.Emoji *$.Name*@
+
+@Query;Team=hell,Type=transformation;$.Emoji $.Name (T)@

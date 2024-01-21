@@ -1,0 +1,9 @@
+**White Wolves Team**
+White Wolves always start out with just themselves on their team, however they pretend to be a werewolf. They win when everyone else, excluding unaligned players, is dead. In rare circumstances (e.g. through copying or rule changes) the white wolves team may contain more than one player.
+
+__Roles__
+@Query;Team=white wolves,Type=default;$.Emoji $.Name@
+
+@Query;Team=white wolves,Type=limited;$.Emoji *$.Name*@
+
+@Query;Team=white wolves,Type=transformation;$.Emoji $.Name (T)@

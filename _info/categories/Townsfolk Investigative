@@ -1,0 +1,6 @@
+**Townsfolk Investigative**
+@Query;Class=townsfolk,Category=investigative,Type=default;$.Emoji $.Name@
+
+@Query;Class=townsfolk,Category=investigative,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=townsfolk,Category=investigative,Type=transformation;$.Emoji $.Name (T)@

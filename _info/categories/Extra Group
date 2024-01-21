@@ -1,0 +1,6 @@
+**Extra Group**
+@Query;Class=extra,Category=group,Type=default;$.Emoji $.Name@
+
+@Query;Class=extra,Category=group,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=extra,Category=group,Type=transformation;$.Emoji $.Name@

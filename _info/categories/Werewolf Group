@@ -1,0 +1,6 @@
+**Werewolf Group**
+@Query;Class=werewolf,Category=group,Type=default;$.Emoji $.Name@
+
+@Query;Class=werewolf,Category=group,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=werewolf,Category=group,Type=transformation;$.Emoji $.Name (T)@

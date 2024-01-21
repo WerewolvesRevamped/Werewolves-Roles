@@ -1,0 +1,9 @@
+**Nightmare Team**
+Nightmare team wins when all players are either dead, unaligned or sleepless. All members of the team know each other.
+
+__Roles__
+@Query;Team=nightmare,Type=default;$.Emoji $.Name@
+
+@Query;Team=nightmare,Type=limited;$.Emoji *$.Name*@
+
+@Query;Team=nightmare,Type=transformation;$.Emoji $.Name (T)@

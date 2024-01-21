@@ -1,0 +1,6 @@
+**Unaligned Miscellaneous**
+@Query;Class=unaligned,Category=miscellaneous,Type=default;$.Emoji $.Name@
+
+@Query;Class=unaligned,Category=miscellaneous,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=unaligned,Category=miscellaneous,Type=transformation;$.Emoji $.Name (T)@

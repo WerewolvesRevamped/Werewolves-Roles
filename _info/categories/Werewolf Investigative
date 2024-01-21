@@ -1,0 +1,6 @@
+**Werewolf Investigative**
+@Query;Class=werewolf,Category=investigative,Type=default;$.Emoji $.Name@
+
+@Query;Class=werewolf,Category=investigative,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=werewolf,Category=investigative,Type=transformation;$.Emoji $.Name (T)@

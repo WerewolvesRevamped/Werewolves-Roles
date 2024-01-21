@@ -1,0 +1,6 @@
+**Townsfolk Group**
+@Query;Class=townsfolk,Category=group,Type=default;$.Emoji $.Name@
+
+@Query;Class=townsfolk,Category=group,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=townsfolk,Category=group,Type=transformation;$.Emoji $.Name (T)@

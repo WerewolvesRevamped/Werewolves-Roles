@@ -1,0 +1,6 @@
+**Townsfolk Killing**
+@Query;Class=townsfolk,Category=killing,Type=default;$.Emoji $.Name@
+
+@Query;Class=townsfolk,Category=killing,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=townsfolk,Category=killing,Type=transformation;$.Emoji $.Name (T)@

@@ -1,0 +1,6 @@
+**Extra Miscellaneous**
+@Query;Class=extra,Category=miscellaneous,Type=default;$.Emoji $.Name@
+
+@Query;Class=extra,Category=miscellaneous,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=extra,Category=miscellaneous,Type=transformation;$.Emoji $.Name@

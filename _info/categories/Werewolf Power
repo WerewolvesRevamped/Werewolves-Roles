@@ -1,0 +1,6 @@
+**Werewolf Power**
+@Query;Class=werewolf,Category=killing,Type=default;$.Emoji $.Name@
+
+@Query;Class=werewolf,Category=killing,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=werewolf,Category=killing,Type=transformation;$.Emoji $.Name (T)@

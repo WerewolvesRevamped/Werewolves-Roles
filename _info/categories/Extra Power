@@ -1,0 +1,6 @@
+**Extra Power**
+@Query;Class=extra,Category=power,Type=default;$.Emoji $.Name@
+
+@Query;Class=extra,Category=power,Type=limited;$.Emoji *$.Name*@
+
+@Query;Class=extra,Category=power,Type=transformation;$.Emoji $.Name@
