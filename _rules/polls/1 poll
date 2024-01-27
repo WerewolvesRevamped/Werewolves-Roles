@@ -9,3 +9,5 @@ Polls come in several types:
 • Special Polls: These Polls are unique to a group or role who creates them and the details are completely defined by them.
 
 Public and private polls can also always be affected through vote manipulation abilities.
+
+When a player dies during a phase, they still remain a votable option on all polls where they previously were a votable option on. Should a dead player win a poll this way, the consequences of the poll are not executed.
