@@ -5,6 +5,7 @@ __Members__
 <?Baker:> Baker
 
 __Formalized__
+Unique Group
 Starting: Set Counter to 1
 On @(GroupMembership:Baker,Role:Baker) Death: [Condition: @Self->Counter > 0]
   • Add `Wolfpack` Poll
