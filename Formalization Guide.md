@@ -129,11 +129,13 @@ When refering to a team you may use `&<TeamName>`.
 ## Groups
 ```
 **<Group Name>** | <Related Team Name> Group
+[Unique Group]
 [<Group Ability List> | No Abilities]
 ```
 
 Groups use the same general format as roles. Some trigger types are not compatible with groups.
 When a group creates a poll, a random voting member is selected to execute the resulting ability. 
+- Unique Group: Set to `Unique Group` for unique group, otherwise remove the line entirely 
 
 When refering to a group you may use `#<GroupName>`.
 

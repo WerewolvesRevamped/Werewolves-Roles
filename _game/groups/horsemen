@@ -5,4 +5,5 @@ __Members__
 <?ApocalypticHorseman:>
 
 __Formalized__
+Unique Group
 On Disbandment: not (@(Align:Horsemen) exists): Remove `Doomed` from @All
