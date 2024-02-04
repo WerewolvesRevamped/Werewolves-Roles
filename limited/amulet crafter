@@ -16,7 +16,7 @@ Starting: Grant `Amulet of Protection` to @Self
 On Death:
   • Attack @(Role:Amulet-of-Protection)
   • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
-Immediate Day: [Quantity: 1, Condition: @(Role:Amulet-of-Protection) exists]
+End Night: [Quantity: 1, Condition: @(Role:Amulet-of-Protection) exists, Temporal: Night 2+]
   • Attack @(Role:Amulet-of-Protection)
   • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
 
