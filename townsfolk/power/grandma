@@ -27,3 +27,6 @@ Immediate Night:
   • Evaluate:
     ‣ @SecondarySelection->PublicVotingPower > `0`: Manipulate @SecondarySelection's `public voting power` by `-1` (~NextDay)
     ‣ Otherwise:  Learn `@SecondarySelection could not be manipulated`
+
+__Card__
+The Grandma knows what's best for town, and so she fills out more than just her own ballot.

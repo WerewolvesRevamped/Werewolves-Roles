@@ -17,3 +17,6 @@ The Vampire wins the game if all players are either Vampire, dead or undead.
 __Formalized__
 Starting: Join #Vampires
 Immediate Night: Apply `Demonized` to @Selection (~Persistent) [Condition: not (@Selection is in #Underworld)] ⟨Odd: x1, Even: x2⟩
+
+__Card__
+It's said that a Vampire's bite grants a person eternal life...

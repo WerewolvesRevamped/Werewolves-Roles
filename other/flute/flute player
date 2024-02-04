@@ -24,3 +24,6 @@ __Formalized__
 Starting: Whisper to #Enchanted as `Flute Player`
 Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round($total/10))⟩ [Condition: count(@(OrigRole:Flute Player)) is `1`]
 Immediate Night: Apply `Enchanted` to @Selection ⟨calc(round($total/20))⟩ [Condition: count(@(OrigRole:Flute Player)) is `>1`]
+
+__Card__
+The Flute Player seeks an end to all the violence by enchanting everyone.

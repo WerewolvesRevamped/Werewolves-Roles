@@ -14,3 +14,6 @@ Immediate Day: [Temporal: Day 2+, Quantity: 1]
   • Attack @Selection 
   • Target @Selection (List: Reveal, NoReveal) {Forced: NoReveal}
   • Evaluate: (@Result is `Success`) and (@Target is Reveal): Reveal `Barber @Self killed @Selection` to #story_time
+
+__Card__
+The Barber dreams of one day making a big scene and killing that annoying client.

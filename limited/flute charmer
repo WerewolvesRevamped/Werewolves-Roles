@@ -20,3 +20,6 @@ Immediate Day:
   • Apply `Charmed` to @Selection [Attribute: @Selection lacks `Enchanted`]
   • Role Investigate @Selection (SD, WD)
 Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
+
+__Card__
+Those charmed by the Flute Charmer have their true self revealed and will be seen as a flute player.

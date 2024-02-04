@@ -24,3 +24,6 @@ On Visited [Attack Killing]: [Condition: #Hell->Counter > 0]
   • Cancel with Failure
   • Decrement Counter for #Hell 
   • Reveal `@Self was attacked and protected` to #Hell
+
+__Card__
+Souls are a powerful essence that can be used by the devil to attack or protect.

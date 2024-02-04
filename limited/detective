@@ -26,3 +26,6 @@ Immediate Night:
     ‣ @Ind has `DetectiveGuess:@Ind->Role`: Increment Counter
   • @Self->Counter is count(@All): Ascend
   • Otherwise: Learn `@Self->Counter correct guesses`
+
+__Card__
+A new face in town, the Detective tries to find out everyone's occupation through research.

@@ -20,3 +20,5 @@ Immediate Day: [Quantity: 1, Condition: @(Role:Amulet-of-Protection) exists]
   • Attack @(Role:Amulet-of-Protection)
   • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
 
+__Card__
+The Amulet Crafter's amulet protects, but its spell- work is unstable, exploding if its owner falls.

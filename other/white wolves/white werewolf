@@ -24,3 +24,6 @@ Starting:
   • Copy @Target
   • Strongly Disguise @Self as @Target->Role
 End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
+
+__Card__
+The White Werewolf is the outcast in the wolfpack, rather seeing other wolves die than protect them.

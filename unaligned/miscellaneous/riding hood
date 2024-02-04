@@ -22,3 +22,6 @@ On Killed:
     ‣ Ascend
 On @(Attribute:Wolfish) Death:
   • not (@(Attr:Wolfish) exists): Descend
+
+__Card__
+Like the fairytale, the Riding Hood just needs to be eaten to win.

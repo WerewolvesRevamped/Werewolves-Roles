@@ -39,3 +39,6 @@ Passive:
   • not (@(Attr:Waiter) exists): Descend
 On End:
   • @(Attr:Waiter) exists: Ascend
+
+__Card__
+An excellent Chef serves their customers good food, most of the time...

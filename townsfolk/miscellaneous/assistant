@@ -15,3 +15,6 @@ Immediate: Target @Selection (Player)
 Immediate: Target @Selection (Player) [Quantity: 1]
 Passive: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target [Quantity: 1, Condition: @Target exists]
 On Action [Redirecting]: Learn `Redirect was used`
+
+__Card__
+All the mirrors in the Assistant's house may one day help them confuse an unwanted intruder.

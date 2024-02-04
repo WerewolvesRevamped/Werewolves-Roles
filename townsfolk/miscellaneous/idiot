@@ -1,4 +1,4 @@
-**Idiot** | Townsfolk Miscellaneous
+ **Idiot** | Townsfolk Miscellaneous
 __Basics__
 If the Idiot dies for the first time, they instead live, but lose their voting power.
 __Details__ 
@@ -14,3 +14,6 @@ Starting: Protect @Self from `All` through Partial Defense (~UntilUse)
 On Partial Defense:
   • Learn `Defense was used`
   • Manipulate @Self's `public voting power` to `0`
+
+__Card__
+The Idiot swore to have seen the light, but the townsfolk calls them crazy and revokes their vote.

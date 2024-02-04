@@ -50,3 +50,6 @@ Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align
 Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
   ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)
+
+__Card__
+The Reaper scares players into sleepless nights and gains power from those who have died.
