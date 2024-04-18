@@ -10,4 +10,4 @@ Polls come in several types:
 
 Public and private polls can also always be affected through vote manipulation abilities.
 
-When a poll executes action(s) as a result, a random player who voted for the winning option with at least 1 vote is chosen to execute the action(s). 
+When a poll executes (an) action(s) as a result, a random player who voted for the winning option (even if their vote doesn't actually count) is chosen to execute the action(s). 
