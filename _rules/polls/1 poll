@@ -9,3 +9,5 @@ Polls come in several types:
 • Special Polls: These Polls are unique to a group or role who creates them and the details are completely defined by them.
 
 Public and private polls can also always be affected through vote manipulation abilities.
+
+When a poll executes action(s) as a result, a random player who voted for the winning option with at least 1 vote is chosen to execute the action(s). 
