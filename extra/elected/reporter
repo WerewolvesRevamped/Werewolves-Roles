@@ -3,7 +3,7 @@ __Basics__
 The Reporter is notified of the roles of the dead.
 __Details__
 The Reporter has access to a secret channel with the roles of the dead.
-The roles given are always the role that player was originally assigned; a dog who chooses to become a cursed civilian, then gets turned into a wolf and finally dies will be shown to the Reporter as 'dog'.
+The roles given are always the role that player was originally assigned; a dog who chooses to become a fortune teller, then gets turned into an undead and finally dies will be shown to the Reporter as 'dog'.
 The Reporter is immune to disguises and redirections.  
 The Reporter is elected on the first full day with a living Mayor and no living Reporter. 
 The Reporter may resign at the end of any phase. 
