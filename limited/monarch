@@ -1,19 +1,19 @@
 **Monarch** | Extra Elected | Limited
 __Basics__
 The Monarch is elected during Day 0.
-They may knight a player each night, temporarily granting them an extra vote and negating a vote against them.
+They may select a heir, who will inherit the Monarch role, should the Monarch die.
+Additionally, they are granted an extra vote and a vote against them will be negated.
 __Details__
-The Monarch can *only* be elected once, usually this is during Day 0, but if no Monarch is elected the election will reoccur until a Monarch is elected. After a Monarch is elected, there will not be any further Monarch elections for the remainder of the game. However, if the Monarch dies, the role is passed on to their heir. The Monarch may select a player as their heir; they can update this target once per phase, with 1 emergency change to be used whenever the Monarch wants. 
-Neither the knighted player nor the heir are aware of being selected by the Monarch.
-The knighted player's vote appears normally on votes: however, an additional vote is counted internally, and the total vote count in the vote results will be correct. Similarly, the vote against the knight that has been negated is still shown in the vote results and the total vote count is decreased by one. After the end of the day, the knighted player is no longer knighted.
-When the heir becomes the new Monarch, they are *not* revealed. If the Monarch dies without a living heir, the role is lost.
-Knighting a player and picking an heir are immediate abilities.
-The Monarch may not select themselves as knight or heir.
+The Monarch can *only* be elected once, usually this is during Day 0, but if no Monarch is elected the election will reoccur until a Monarch is elected. After a Monarch is elected, there will not be any further Monarch elections for the remainder of the game. However, if the Monarch dies, the role is passed on to their heir. The Monarch must select another player as their heir; they can update this target once per phase, with 1 emergency change to be used whenever the Monarch wants. If no heir is selected, a random player is chosen.
+The heir is not aware of being selected by the Monarch.
+The heir's vote appears normally on votes: however, an additional vote is counted internally, and the total vote count in the vote results will be correct. Similarly, the vote against the heir that has been negated is still shown in the vote results and the total vote count is decreased by one. 
+When the heir becomes the new Monarch, they are *not* revealed.
+Picking an heir is immediate ability.
 
 __Simplified__
 The Monarch is elected during Day 0.
-They may secretly knight a player each night, temporarily granting them an extra vote and negating a vote against them.
 They may secretly pick a player to receive the Monarch role on the current Monarch's death.
+Additionally, that player is granted an extra vote and a vote against them will be negated.
 
 __Formalized__
 TBD
