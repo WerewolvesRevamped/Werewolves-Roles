@@ -20,3 +20,6 @@ Compound: [Condition: @Self->Counter > 0] {Repeating}
   • End Night: Attack @Selection
 Passive:
   • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
+
+__Card__
+The Vicious Hag uses their magic to attack their enemies.

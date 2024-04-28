@@ -9,7 +9,7 @@ At the start of every night, the Reaper will be informed of which powers they ma
 For each *Killing* role that has died, the Reaper may turn one player sleepless and attack them.
 For each *Investigative* role that has died, the Reaper may turn one player sleepless and investigate their role.
 For each *Power* role that has died, the Reaper may turn one player sleepless and nullify their public voting power for as long as that player is sleepless.
-For all other roles that have died, the Reaper may turn one player sleepless.
+For all other roles that have died, the Reaper may turn one player sleepless. These abilities are all immediate abilities.
 
 The Reaper is not told which role category the dead players belonged to: they are only informed of which powers (kills, investigations, vote nulifications, and basic powers) are available to them. If the Reaper chooses not to use one of their powers during the night, they lose that instance of the power.
 
@@ -50,3 +50,6 @@ Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align
 Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
   ‣ Remove `ReaperPower` from @(AliveOnly:False,SelectAll:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)
+
+__Card__
+The Reaper scares players into sleepless nights and gains power from those who have died.

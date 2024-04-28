@@ -26,3 +26,6 @@ Immediate Night:
     ‣ (@Result1 is `Werewolf`) or (@Result3 is `True`): Failure
     ‣ (@Result2 is `Baker`) or (@Result2 is `Butcher`): Role Change @Selection to `Bloody Butcher`
     ‣ Otherwise: Role Change @Selection to `Wolf`
+
+__Card__
+With one bite, the Infecting Wolf can turn anyone into a wolf.

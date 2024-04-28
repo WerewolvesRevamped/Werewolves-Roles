@@ -5,6 +5,7 @@ __Members__
 <?Juror:> *Juror*
 
 __Formalized__
+Unique Group
 Passive Start Night: Create `Jury` Poll in #Jury [Temporal: Night 2+]
 On Poll Closed:
   • Process: Role Investigate @Winner (SD, WD)

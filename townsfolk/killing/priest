@@ -17,3 +17,6 @@ End Night:
     ‣ @Result1 is `Success`: Attack @Selection
     ‣ @Result2 is `Townsfolk`: True Kill @Self
     ‣ Otherwise: `Failure`
+
+__Card__
+A Priest serves a god, but the wolves in the forest do not.

@@ -15,3 +15,6 @@ __Formalized__
 Starting: Join #Cult
 On @(Role:Cult-Leader) Death: Role Change @Self to `Cult Leader`
 On Death: Add `Cult` Poll
+
+__Card__
+The Cult Acolyte studies under the cult's leader hoping to succeed them one day.

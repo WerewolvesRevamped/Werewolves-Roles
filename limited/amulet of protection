@@ -25,3 +25,6 @@ Passive End Day:
   • Conversation Reset
   • @Target exists: Transfer `Amulet of Protection` from @Self to @Target
   • Otherwise: Apply `ShatterAmulet` to @(Role:Amulet-Crafter)
+
+__Card__
+Created by the amulet crafter, the Amulet of Protection protects its holder.

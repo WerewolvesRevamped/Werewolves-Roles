@@ -14,3 +14,6 @@ Starting: Protect @Self from `Attacks` by @(Attr:Wolfish) through Passive Defens
 On Passive Defense:
   • @AttackSource is `Group:Wolfpack`: Reveal `@Self ran away` to #wolfpack
   • Otherwise: Reveal `@Self ran away` to @Attacker
+
+__Card__
+The Runner is fast enough to outrun a wolf, but the wolf wins when it comes to stamina.

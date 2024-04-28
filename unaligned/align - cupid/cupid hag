@@ -1,4 +1,4 @@
-**Cupid Hag** | Unaligned Align | Limited Transformation
+**Cupid Hag** | Unaligned Align - Coven Team | Limited Transformation
 __Basics__
 The Cupid Hag is a cupid whose lover is a hag.
 __Details__
@@ -15,3 +15,6 @@ Inherit: `Cupid`
 Inherit: `Coven`
 Passive:
   • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Join #Bitter-Hags
+
+__Card__
+When the Cupid falls in love with a hag, they'll become a Cupid Hag.

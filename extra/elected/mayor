@@ -20,3 +20,6 @@ __Formalized__
 Immediate Night: Add `Lynch` Poll ⟨$living>15 ⇒ x1⟩
 Passive: Manipulate @Self's `special public voting power` to `1` ⟨$living≤15 ⇒ x1⟩
 End Phase: Revoke `Mayor` from @Self
+
+__Card__
+The Mayor is elected to lead the town.

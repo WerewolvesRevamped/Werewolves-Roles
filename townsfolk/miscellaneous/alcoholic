@@ -15,3 +15,6 @@ On @(Role:Bartender) Death:
   • not (@(Role:Bartender) exists): Remove 'Defense:Alcoholic' from @Self
 Passive End Night:
   • not (@(Role:Bartender) exists): Kill @Self
+
+__Card__
+The Alcoholic thinks of themself as invincible, as long as their glass is full.

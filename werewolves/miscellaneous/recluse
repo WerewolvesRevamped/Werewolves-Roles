@@ -2,7 +2,7 @@
 __Basics__
 The Recluse is immediately notified of all powers used on them. When a member of the werewolf team uses a power on them, they are given that werewolf's identity.
 __Details__
-The Recluse is told which role targeted them and what power was used on them, but not the identity of the player that used a power on them. An exception are members of the werewolf team - when they use a power on the Recluse, the Recluse is told the identity of that player as well.
+The Recluse is told which role targeted them and what power was used on them, but not the identity of the player that used a power on them. An exception are members of the werewolf team - when they use a power on the Recluse, the Recluse is told the identity of that player as well. When a player uses a power from an extra role on a Recluse, the Recluse sees the extra role, not the player's main role (but they still also see the player's identity for werewolf team members).
 The Recluse is not a lycan and is not part of the wolfpack.
 Should a wolfish player attempt to attack the Recluse, the attack fails.
 
@@ -16,3 +16,6 @@ On Visited:
   • Otherwise:  Learn `@Visitor->Role used @VisitType on you`
 On Visited [Attack Killing]:
   • @Visitor has `Wolfish`: Cancel with Failure
+
+__Card__
+Too smelly to live in the town, the Recluse has allied with the wolves instead.

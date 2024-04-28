@@ -11,3 +11,5 @@ Polls come in several types:
 Public and private polls can also always be affected through vote manipulation abilities.
 
 When a player dies during a phase, they still remain a votable option on all polls where they previously were a votable option on. Should a dead player win a poll this way, the consequences of the poll are not executed.
+
+When a poll executes (an) action(s) as a result, a random player who voted for the winning option (even if their vote doesn't actually count) is chosen to execute the action(s). 

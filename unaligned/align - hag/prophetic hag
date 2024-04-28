@@ -20,3 +20,6 @@ Immediate Night: [Condition: @Self->Counter > 0] {Repeating}
   • Decrement Counter
 Passive:
   • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
+
+__Card__
+The Prophetic Hag has learnt to use a powerful spell to see the truth in others.

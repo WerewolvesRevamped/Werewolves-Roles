@@ -15,3 +15,6 @@ Starting: Manipulate @Self's `public voting power` to `-1`
 On @(Group:Wolfpack) Death:
   • Process: Investigate @(Group:Wolfpack) Count
   • Evaluate: Role Change @Self to `Wolf`
+
+__Card__
+The Trickster Wolf was once a human trickster. Even lycanthropy could not put an end to their hijinks.

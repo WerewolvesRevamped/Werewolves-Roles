@@ -17,3 +17,6 @@ Immediate: Target @Selection (Role) [Quantity: 1]
 On Death: [Condition: @Target exists]
   • Target randomize(@(Role:@Target))
   • Transfer `Journal Holder` from @Self to @Target
+
+__Card__
+The Journalist keeps a journal and passes it on to the archives when they die.

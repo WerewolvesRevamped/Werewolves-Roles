@@ -5,7 +5,7 @@ __Details__
 Joining refers to the ability to join a group by receiving a group membership attribute. Losing a role with a Joining ability will not affect membership in the group.
 Joining is usually a starting ability (e.g. Baker, Wolf). Some roles can join groups at a later point in the game, either passively (e.g. Lone Wolf) or actively (e.g. Disguised Fox). 
 Roles which have a Joining ability that does not grant them membership of a primary team group are Group roles (unless they also qualify to be in a category with higher priority).
-Players can betray their group if their role changes (e.g. by turning undead), but they will still remain a member of the group.
+Players can betray their group if their role changes (e.g. by turning undead), but they will still remain a member of the group, when this happens their membership status is downgraded to Visitor.
 
 There are three types of group membership:
 • Member: The default group membership. If no members or owners are left, the group is immediately disbanded. When a Member changes roles, they instead become a Visitor.
