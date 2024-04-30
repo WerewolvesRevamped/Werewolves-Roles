@@ -3,8 +3,10 @@ __Basics__
 The Wraith wins with the reaper and joins a channel with the reaper to communicate securely.
 At night, the Wraith may turn a player sleepless.
 __Details__
-Each night, the Wraith may immediately turn one player sleepless. If somebody tries to copy the reaper, they become a Wraith instead. The Wraith starts out sleepless.
+Each night, the Wraith may immediately turn one player sleepless. If somebody tries to copy the reaper, they become a Wraith instead.
 When a sleepless player uses a power other than targeting on the Wraith, their power fails and the Wraith immediately attacks them.
+
+Any attempts to turn the Wraith sleepless fail.
 
 __Simplified__
 The Wraith wins with the reaper and joins a channel with the reaper to communicate securely.
