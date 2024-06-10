@@ -24,7 +24,6 @@ Wolfish
 *Charmed*
 *Poisoned* [Activeness]
 *Raven*
-*Sleepless*
 *Warded*
 ~~Bitten~~
 
@@ -45,7 +44,6 @@ OracleSelected
 *DetectiveGuess* [Role]
 *HeldAmulet*
 *RavenInformation* [Visitor]
-*ReaperPower* [Activeness]
 *ShatterAmulet*
 *Rival*
 *Unwrongable*

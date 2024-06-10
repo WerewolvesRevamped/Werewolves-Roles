@@ -10,9 +10,7 @@ The Town Crier learns the role of another townsfolk at the start of Night 1.
 
 __Formalized__
 Starting: Target `%Player:@(Align:Townsfolk)%` (Player)
-Passive Start Night: [Temporal: Night 1]
-  • Process: Role Investigate @Target
-  • Evaluate: Learn `@Target is @Result`
+Passive Start Night: Learn `@Target is @Target->Role` [Temporal: Night 1]
 
 __Card__
 A Town Crier must know everything about one of their neighbors.

@@ -445,7 +445,7 @@ Inside For Each you may use `@Ind` to reference the individual player.
 
 A role can inherit abilities shared by several roles through an ability set.
 
-To inherit all abilities from an ability set use the trigger type `Inherits: '<AbilitySetName>'`
+To inherit all abilities from an ability set use the trigger type `Inherit: '<AbilitySetName>'`
 
 An ability set has the same format as a role, except for the first line which is `**<AbilitySetName>** | Ability Set`
 
