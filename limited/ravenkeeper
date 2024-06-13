@@ -1,17 +1,19 @@
 **Ravenkeeper** | Townsfolk Power | Limited
 __Basics__
-Each night, the Ravenkeeper may assign up to two of its ravens to players. The Ravenkeeper will learn if any of the players with ravens interact with each other.
+Each night, the Ravenkeeper may assign one of its ravens to a player. The Ravenkeeper will learn if an ability is used on of the players with a raven.
 __Details__
-The Ravenkeeper starts out with 1 raven for every 3 players in the game (rounded down). Each night, the Ravenkeeper may assign up to two ravens to other players. Instead, they can also be reassigned from one player to another (ravens that were assigned to dead players will immediately return to the Ravenkeeper upon the player's death). Assigning a raven is an *immediate effect*. Ravens not assigned to another player are considered to be assigned to the Ravenkeeper.
-At the end of each phase, the Ravenkeeper will be told if a player with a raven used an *action* on another player with a raven. The Ravenkeeper will be told the names of both players, and who used the action, but not what sort of action was done. *Passive abilities*, *starting abilities*, and *targeting* are not treated as an action, and neither is players using actions on themself. 
-The Ravenkeeper is affected by *redirections*.
+The Ravenkeeper starts out with 1 raven for every 5 players in the game (rounded down). Each night, the Ravenkeeper may assign one raven to another player. Assigning a raven is an *immediate effect*.
+The first time an ability is used on a player with a raven, the raven heads back to the Ravenkeeper and lets the Ravenkeeper learn the type of ability that was used and which player it was used on. Ravens can usually only report on one ability, except when several abilities are used at the same time at the end of a phase (in this case the Ravenkeeper will learn all the ability types, but not duplicates). 
+The Ravenkeeper is affected by *redirections*, however the Ravenkeeper will know a raven got redirected when it returns and reports on an ability.
 If there are several Ravenkeepers, their ravens are separate.
+During the day, the Ravenkeeper may recall a raven. Recalling is an immediate effect.
+The Ravenkeeper cannot send several ravens to the same player, and attempting to do so results in failure.
 
 __Simplified__
-Each night, the Ravenkeeper may assign up to two ravens. Ravens not assigned to a living player are assigned to the Ravenkeeper.
-The Ravenkeeper will be told the names of any two players with ravens that interact with each other.
+Each night, the Ravenkeeper may assign a raven to a player. When an ability is used on a player with a raven, the raven returns, infomring the Ravenkeeper of the ability type.
 
 __Formalized__
+I currently do not have enough time to update this formalization so let this comment be a syntax error and problem for future me.
 Starting:
   • Apply `Raven` to @Self
   • Set Counter to calc(floor($total/3))
