@@ -1,19 +1,19 @@
-**Cleric** | Townsfolk Power
+**Cleric** | Townsfolk Power | Limited
 __Basics__
-When all hope seems lost, with no elected roles remaining, the clerics can once bless a player, protecting them for the night.
+When all hope seems lost, with no elected roles remaining, the Cleric can once bless a player, protecting them for the night.
 __Details__
 After Night 1, the Cleric may once per game bless a player at night. However, the Cleric may only use their powers if no elected roles exist. Blessing a player is an immediate ability.
-When the Cleric blesses a player, they cannot die in any way throughout the rest of the night.
+When the Cleric blesses a player, they cannot be killed by any attacks throughout the rest of the night.
 Blessing a player is an immediate action.
 The Cleric may bless themself.
 If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
 
 __Simplified__
-Once per game, at night, the Cleric may bless a player to protect them from any death for the remainder of the night.
+Once per game, at night, the Cleric may bless a player to protect them from any attacks for the remainder of the night.
 If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
 
 __Formalized__
 Immediate Night: [Quantity: 1, Condition: not ((@(Role:Mayor) exists) or (@(Role:Reporter) exists) or (@(Role:Guardian) exists))]
-    • Protect @Selection from `All` (~Phase)
+    • Protect @Selection from `Attacks` (~Phase)
     • Target @Selection (~Phase)
 On @Target Visited [Attack]: Reveal `@Target survived because they were blessed` to @Attacker
