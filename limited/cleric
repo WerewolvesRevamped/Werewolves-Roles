@@ -7,7 +7,7 @@ When the Cleric blesses a player, they cannot be killed by any attacks throughou
 If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
 
 __Simplified__
-Once per game, at night, the Cleric may bless a player to protect them from any attacks for the remainder of the night.
+Once per game, at night, the Cleric may bless another player and themself to protect them from any attacks for the remainder of the night.
 If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
 
 __Formalized__
