@@ -1,3 +1,7 @@
 **Ghost** | Haunting Information
 __Basics__
 A ghost is a player who has died, but is still playing. Their abilities to interact with the living players are limited, but unlike dead participants they are not completely eliminated.
+__Details__
+Ghosts retain access to their original channels, but cannot write messages in them anymore (except for their own personal secret channel).
+By default, ghosts cannot use their role abilities anymore (unless specified otherwise).
+Ghosts can talk to each other in the graveyard and create new CCs with each other, but not with the living players.
