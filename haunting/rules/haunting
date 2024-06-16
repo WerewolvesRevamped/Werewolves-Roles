@@ -8,3 +8,4 @@ Ghosts have their own elections (`$i ghost elections`) and a lynch equivalent (`
 When a ghost is banished, they are fully eliminated and no longer participate in the game.
 In the Haunting gamemode, the reporter role is replaced by the gravekeeper (`$i gravekeeper`).
 A list of all roles exclusive to the Haunting gamemode can be found under `$i haunted`.
+Win conditions are unchanged in this mode - whatever team reaches their win condition among the living players wins.
