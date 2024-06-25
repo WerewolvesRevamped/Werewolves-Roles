@@ -1,0 +1,11 @@
+**Haunting** | Haunting Information
+__Basics__
+Haunting is a gamemode in which you still play after dying.
+__Details__
+Players that die, turn into ghosts (`$i ghost`) instead of completely dying.
+Ghosts can no longer talk in the normal channels, but can interact with other ghosts in a graveyard channel and through ccs.
+Ghosts have their own elections (`$i ghost elections`) and a lynch equivalent (`$i banishment`), however banishment only occurs when so decreed by an elected role.
+When a ghost is banished, they are fully eliminated and no longer participate in the game.
+In the Haunting gamemode, the reporter role is replaced by the gravekeeper (`$i gravekeeper`).
+A list of all roles exclusive to the Haunting gamemode can be found under `$i haunted`.
+Win conditions are unchanged in this mode - whatever team reaches their win condition among the living players wins.
