@@ -706,6 +706,8 @@ Format:
 
 As a result of a Joining the <Target> receives a `Group Membership` attribute.
 
+When attempting to join a group the player is already part of, this fails, unless the new membership is of a higher tier, in which case the previous membership is replaced entirely.
+
 Changing roles automatically leads to a downgrade of all group memberships of member type to memberships of visitor type.
 
 ---
