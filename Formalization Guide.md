@@ -591,7 +591,7 @@ Format:
 `Investigate <Target> Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)  
 
 - Subtypes: `Role`, `Alignment`, `Category` or `Class`
-- Target: A target type, specifying who is getting attacked
+- Target: A target type, specifying who is getting investigated [Must be a player]
 - Relevant Effects: A comma separated list of the following two values: `WD` (Weak Disguises) or `SD` (Strong Disguises), listing all of those the investigation is affected by. Leave this out if not affected by any disguises.
 - Attribute: An attribute which is getting checked for
 
