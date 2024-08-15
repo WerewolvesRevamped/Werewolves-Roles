@@ -15,4 +15,4 @@ Immediate Night: [Quantity: 1, Condition: not ((@(Role:Mayor) exists) or (@(Role
     • Protect @Selection from `Attacks` (~Phase)
     • Protect @Self from `Attacks` (~Phase)
     • Target @Selection (~Phase)
-On @Target Visited [Attack]: Reveal `@Target survived because they were blessed` to @Attacker
+On @Target Visited [Killing]: Reveal `@Target survived because they were blessed` to @Attacker
