@@ -13,7 +13,7 @@ The Fletcher's Customer is an extra role that doesn't replace the player's curre
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-Immediate: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 On Killed: [Condition: @Target exists]
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Reveal `Fletcher's Customer @Self killed @Target` to #story_time
