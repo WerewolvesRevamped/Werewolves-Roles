@@ -11,7 +11,7 @@ The Huntress may select a player to attack with their dying breath.
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-Immediate: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 On Killed: [Condition: @Target exists]
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Reveal `Huntress @Self killed @Target` to #story_time
