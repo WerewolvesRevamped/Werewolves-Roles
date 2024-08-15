@@ -1,6 +1,6 @@
 **Coven** | Ability Set
 Starting: Strongly Disguise @Self as `Hag`
-On Visit [Role Change]:
+On Visited [Role Changing]:
   • @Self has `Unwrongable`: Cancel with Failure
 On Killed:
   • (@Attacker->Class is not `Unaligned`) and not (@Attacker->Alignment) has `Wronger`:
