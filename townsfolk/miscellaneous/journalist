@@ -13,7 +13,7 @@ The Journalist can write a journal which a player with a role of their choice wi
 __Formalized__
 Starting: Starting: Grant `Journal Holder` to @Self
 Immediate: Target @Selection (Role)
-Immediate: Target @Selection (Role) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Role) [Quantity: 1]
 On Death: [Condition: @Target exists]
   • Target randomize(@(Role:@Target))
   • Transfer `Journal Holder` from @Self to @Target
