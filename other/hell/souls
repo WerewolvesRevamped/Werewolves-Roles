@@ -13,18 +13,5 @@ When souls are used in an automatic protection, all members of the hell team are
 __Simplified__
 Members of the hell team can use Souls - soul users - may use a Soul to protect or attack another player. If a soul user is attacked during the night and there is an available soul, they will be automatically protected.
 
-__Formalized__
-OUTDATED - attack may not target hell/soulless
-Immediate: [Condition: #Hell->Counter > 0]
-  • Protect @Selection from `Attacks` through Active Defense during Night (~NextNight)
-  • Decrement Counter for #Hell 
-Immediate: [Condition: #Hell->Counter > 0]
-  • Attack @Selection
-  • Decrement Counter for #Hell 
-On Visited [Attack Killing]: [Condition: #Hell->Counter > 0]
-  • Cancel with Failure
-  • Decrement Counter for #Hell 
-  • Reveal `@Self was attacked and protected` to #Hell
-
 __Card__
 Souls are a powerful essence that can be used by the devil to attack or protect.
