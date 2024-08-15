@@ -31,7 +31,7 @@ Passive:
   • not (@(Attr:PsychopathList:@Self) exists): 
     ‣ Ascend
 Immediate: Strongly Disguise @Self as @Selection
-Immediate: Strongly Disguise @Self as @Selection [Quantity: 1]
+On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
 Passive Start Day: `Psychopath` Choice Creation:
   • `Investigate`:
     ‣ Role Investigate @Selection (WD, SD)

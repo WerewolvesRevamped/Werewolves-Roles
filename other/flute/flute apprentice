@@ -13,7 +13,7 @@ Additionally, the Flute Apprentice can redirect the abilities of enchanted playe
 __Formalized__
 Starting: Join #Flutes
 Immediate: Target @Selection (Player) 
-Immediate: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 Passive: Redirect `all` from @(Attr:Enchanted) to @Target [Condition: @Target exists]
 On Action [Redirecting]: Learn `An ability was redirected`
 Passive: not (@(Role:Flute Player) exists): Role Change @Self to `Flute Player`
