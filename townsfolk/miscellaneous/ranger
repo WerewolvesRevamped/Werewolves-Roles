@@ -12,7 +12,7 @@ The Ranger may select a player to reveal with their dying breath. Both their tar
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-Immediate: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 On Killed: [Condition: @Target exists]
   • Process: Role Investigate @Target (SD)
   • Evaluation: Reveal `Ranger @Self reveals @Target as @Result` to #story_time
