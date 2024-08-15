@@ -13,8 +13,8 @@ The Angel wins when they are lynched: the game continues afterwards. In addition
 The Angel may select a player that dies when the Angel is lynched, but only if the target is voting for the Angel. 
 
 __Formalized__
-Immediate: Target @Selection (Player) [Condition: @Selection is not @Self]
-Immediate: Target @Selection (Player) [Condition: @Selection is not @Self, Quantity: 1]
+Immediate: Target @Selection (Player)
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 On Lynch:
   • (@OtherVoters exists) or (@Attacker exists): 
     ‣ @Attacker exists: Target @Attacker (Player)
