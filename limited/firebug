@@ -21,7 +21,7 @@ On @(Attr:Warded:@Self) Visited [Attack Killing]:
     ‣ Apply `Powdered` to @Visitor (~Persistent)
     ‣ Attack @(Attr:Powdered,Align:!Pyro)
     ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
-    ‣ Reveal `You were ignited to @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited to @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
     ‣ Remove `Warded` from @(Attr:Warded:@Self)
 End Night: Apply `Powdered` to @(Attr:Warded:@Self) (~Persistent)
 Passive: not (@(Role:Pyromancer) exists): Role Change @Self to `Pyromancer`
