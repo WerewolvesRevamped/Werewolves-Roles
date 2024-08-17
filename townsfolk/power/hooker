@@ -10,7 +10,7 @@ __Simplified__
 Each night, the Hooker sleeps with another player. They will not be killed by attacks on them, but will instead be affected by those taking place at their target’s house.
 
 __Formalized__
-Immediate Night: Protect @Self from `Attacks` through Absence at @Selection (~Phase)
+Immediate Night: Protect @Self from `Attacks` through Absence at @Selection (~Phase) [Succession: No Target Succession]
 
 __Card__
 Spending each night in a different house, the Hooker is difficult to find for those who wish to harm them.
