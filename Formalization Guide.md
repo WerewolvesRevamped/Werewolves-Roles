@@ -513,6 +513,7 @@ These target types are only available in some contexts:
 - `@Attacker`: Uses the attacker/killers in `On Death`, `On <Target> Death`, `On Killed`, `On Defense` and `On Lynch` triggers
 - `@AttackSource`: Specifies where the attack came from. Uses the format `<SourceType>:<Source>`, so e.g. `Group:Wolfpack` for a wolfpack attack or `Role:Assassin` for the assassin attack. Available in `On Death`, `On <Target> Death`, `On Killed`, `On Defense` and `On Lynch` triggers. In cases of an attack originating from a poll or choice it specifies the creator of the poll/choice.
 - `@DeathType`: Set to the type of death in `On Death` and `On <Target> Death` triggers
+- `@KillingType`: Set to the type of killing in `On Defense` and `On <Type> Defense` triggers
 - `@This`: Set to the player who died in the `On <Target> Death` trigger or was visited in the `On <Target> Visited` trigger
 - `@Visitor`: Set to the visitor in `On Visited` and `On <Target> Visited` triggers
 - `@VisitType`: Set to the visiting ability type in `On Visited` and `On <Target> Visited` triggers
