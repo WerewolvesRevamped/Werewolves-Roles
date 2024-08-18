@@ -20,10 +20,10 @@ On Killed: Log @AttackSource as `OK - Attack Source`
 On @All Killed: Log @Attacker as `O@K - Attacker`
 On @All Killed: Log @DeathType as `O@K - Death Type`
 On @All Killed: Log @AttackSource as `O@K - Attack Source`
-On Defense: Log @AttackSource as `ODef - Attack Source`
+On Defense: Log @Attacker as `ODef - Attacker`
 On Defense: Log @KillingType as `ODef - Killing Type`
 On Defense: Log @AttackSource as `ODef - Attack Source`
-On Absence Defense: Log @AttackSource as `OADef - Attack Source`
+On Absence Defense: Log @Attacker as `OADef - Attacker`
 On Absence Defense: Log @KillingType as `OADef - Killing Type`
 On Absence Defense: Log @AttackSource as `OADef - Attack Source`
 
