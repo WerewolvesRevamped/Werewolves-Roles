@@ -1,4 +1,10 @@
 **Voting Booth**
+__Description__
+Each day all participants vote to lynch (kill) one player in this channel.
+Additionally, players are elected to the titles of Mayor, Reporter and Guardian in that order, as long as there are participants with the previous titles left.
+That means on the first day a Mayor is elected, and if they survive the night, a Reporter is elected on the next day.
+
+__Formalized__
 Sort Index: 5
 Members: *None*
 Viewers: *All*
