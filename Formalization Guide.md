@@ -9,6 +9,7 @@
 - [Teams](#teams) 
 - [Groups](#groups)
 - [Polls](#polls)
+- [Locations](#locations)
 - [Attributes](#attributes)
   - [Standard Attributes](#standard-attributes)
     - [Disguise Attributes](#disguise-attributes)
@@ -164,6 +165,22 @@ Allowed Voters: <Voters>
 - Show Voters: Specifies whether the result shows who voted what (yes) or just the final vote count per option (no). Defaults to `yes`.
 - Poll Opening Trigger: The poll may open on a specified trigger type. Additional abilities may be executed as part of this trigger.
 - Poll Closed Ability: An ability to execute on poll closing
+
+  
+## Locations
+```
+**<Location Name>**
+Sort Index: <Number>
+Members: <Player Type List>
+Viewers: <Player Type List>
+```
+
+- Sort Index: A number indicating at what position to sort the location
+- Members: A command separated list of player types - players that can both view and write in the channel
+- Viewers: A comma separated list of player types - players that can view but not write in the channel
+
+Valid player types are: Alive, Dead, Ghost, Substitute
+Instead of a player type list, `*None*` or `*All*` may be used.
 
 
 ## Attributes
