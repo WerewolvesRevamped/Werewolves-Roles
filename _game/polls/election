@@ -2,10 +2,10 @@
 Available Options: @All
 Allowed Voters: @All
 Passive Start Day:
-  • (@(Role:Mayor) exists) and (@(Role:Reporter) exists) and not (@(Role:Guardian) exists):
+  • (@(Role:Mayor) exists) and ((@(Role:Reporter) exists) and (not (@(Role:Guardian) exists))):
     ‣ Target `Guardian` (Role)
     ‣ Create Poll in #voting_booth
-  • (@(Role:Mayor) exists) and not (@(Role:Reporter) exists):
+  • (@(Role:Mayor) exists) and (not (@(Role:Reporter) exists)):
     ‣ Target `Reporter` (Role)
     ‣ Create Poll in #voting_booth
   • not (@(Role:Mayor) exists):
