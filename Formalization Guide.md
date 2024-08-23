@@ -156,7 +156,7 @@ The following public channels exist and can be referenced like groups:
 Available Options: <Options>
 Allowed Voters: <Voters>
 [Show Voters: [Yes|No]]
-[<Poll Opening Trigger>: Create Poll in <Location>]
+[<Poll Opening Trigger>: Create Poll in <Location> [as <Name>]]
 [On Poll Closed: <Poll Close Ability>]
 ```
 
