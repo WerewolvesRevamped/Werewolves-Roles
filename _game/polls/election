@@ -1,5 +1,5 @@
 **Election** | Poll
-Available Options: @All
+Available Options: @All, Abstain
 Allowed Voters: @All
 Passive Start Day:
   • (@(Role:Mayor) exists) and ((@(Role:Reporter) exists) and (not (@(Role:Guardian) exists))):
