@@ -1,9 +1,3 @@
 **Wolfpack** | Poll
 Available Options: @All, Random
 Allowed Voters: @All
-On Poll Closed:
-  • Remove `CoyoteTrigger` from &Werewolf
-  • Process: Attack @Winner
-  • Evaluate:
-    ‣ Reveal `@Result` to #Wolfpack
-    ‣ (@Result is `Failure`) or (@Winner->Alignment is not `Townsfolk): Apply `CoyoteTrigger` to &Werewolf
