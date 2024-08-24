@@ -1,7 +1,7 @@
 **Election** | Poll
 Available Options: @All, Abstain
 Allowed Voters: @All
-Passive Start Day:
+Passive Start Day: [Temporal: Day 1+]
   • (@(AttrRole:Mayor) exists) and ((@(AttrRole:Reporter) exists) and (not (@(AttrRole:Guardian) exists))):
     ‣ Target `Guardian` (Role)
     ‣ Create Poll in #voting_booth as `Guardian Election`
