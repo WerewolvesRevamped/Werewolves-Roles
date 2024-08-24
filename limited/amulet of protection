@@ -19,7 +19,7 @@ Starting:
   • Apply `HeldAmulet` to @Self
 Passive Start Day: Untarget
 Immediate Day: ⟨*3⟩
-  • not (@Target exists) not (@Selection has `HeldAmulet`): Target @Selection
+  • not (@Selection has `HeldAmulet`): Target @Selection
   • Otherwise: `Failure`
 Passive End Day:
   • Conversation Reset
