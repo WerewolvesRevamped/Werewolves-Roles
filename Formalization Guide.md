@@ -240,6 +240,21 @@ Obstruction attributes have two additional values:
 - Affected Abilities: A list of ability types or subtypes that are affected by the obstruction
 - Obstruction Feedback: The fake feedback which is returned (if applicable) (defaults to none)
 
+---
+#### Poll Attributes
+
+Poll attributes have two or three additional values:
+- Poll Manipulation Subtype: The poll manipulation subtype
+- Poll Count: For count subtype, a value modifying the amount of polls
+- Target: For result subtype, a player that is having their result manipulated on the poll
+- Poll Result Manipulation Type: For result subtype, the type of manipulation done to the target
+
+---
+#### Role Attributes
+
+Role attributes have one additional value:
+- Role: The role that is being added through the role attribute
+
 ----
 ----
 ### Custom Attributes
