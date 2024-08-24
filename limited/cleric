@@ -12,7 +12,7 @@ If a blessed player evades an attack, the attacker is told it was due to their t
 
 __Formalized__
 Immediate Night: [Quantity: 1, Condition: not ((@(Role:Mayor) exists) or (@(Role:Reporter) exists) or (@(Role:Guardian) exists))]
-    • Protect @Selection from `Attacks` (~Phase)
-    • Protect @Self from `Attacks` (~Phase)
+    • Protect @Selection from `Attacks` through Active Defense (~Phase)
+    • Protect @Self from `Attacks` through Active Defense (~Phase)
     • Target @Selection (~Phase)
 On @Target Visited [Killing]: Reveal `@Target survived because they were blessed` to @Attacker
