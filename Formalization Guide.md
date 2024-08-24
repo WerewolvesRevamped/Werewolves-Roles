@@ -624,6 +624,7 @@ Format:
 `<Subtype> Investigate <Target> (<Disguise Level>)` (Investigate role/alignment/category/class) - Returns the Role/Alignment/Category  
 `Attribute Investigate <Target> for '<Attribute>' (<Disguise Level>)` (Look if a certain attribute is present) - Returns Success/Failure  
 `Investigate <Target> Count (<Disguise Level>)` (Investigates the amount of times a certain role exists)  
+`Investigate <Target> Player Count (<Disguise Level>)` (Returns the amount of players inside a target type)  
 
 - Subtypes: `Role`, `Alignment`, `Category` or `Class`
 - Target: A target type, specifying who is getting investigated [Must be a player]
