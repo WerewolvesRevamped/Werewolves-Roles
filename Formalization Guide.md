@@ -520,7 +520,8 @@ __General Target Types__
 
 __Advanced Target Types__  
 Select living players by a certain attribute of them or their role.
-- `@(Attr-<AttrType>:<Attribute>)`: Uses all players that have the `<Attribute>` attribute (e.g. `@(Attr-Custom:Wolfish)`)
+- `@(Attr:<Attribute>)`: Uses all players that have the `<Attribute>` custom attribute (e.g. `@(Attr:Wolfish)`)
+- `@(AttrRole:<Attribute>)`: Uses all players that have the `<Attribute>` role attribute (e.g. `@(AttrRole:Mayor)`)
 - `@(Group:<Group>)`: Uses all players that are part of the `<Group>` group
 - `@(Align:<Alignment>)`: Uses all players that are of the `<Alignment>` alignment
 - `@(Role:<Role>)`: Uses all players that have the `<Role>` role
