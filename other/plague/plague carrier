@@ -13,7 +13,7 @@ The Plague Carrier wins with the plague bearers and joins a channel with them. T
 At the start of every phase, the Plague Carrier is told the amount of living contaminated players.
 
 __Formalized__
-Passive Start Phase: Investigate @(Attr:Contaminated) Count
+Passive Start Phase: Investigate @(Attr:Contaminated) Player Count
 Passive: (not (@(Role:Plague-Bearer) exists)) and (#Plague-Pit->Counter > 0): Role Change @Self to `Plague Bearer`
 
 __Card__
