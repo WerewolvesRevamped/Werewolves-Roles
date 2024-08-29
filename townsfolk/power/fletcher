@@ -13,7 +13,7 @@ During Day 0, the Fletcher must select a target. As long as the Fletcher is aliv
 __Formalized__
 Immediate Day: [Quantity: 1, Temporal: Day 0] {Forced}
   • Target @Selection (Player)
-  • Grant `Fletcher's Customer` to @Selection
+  • Grant `Fletcher's Customer` to @Target
 Immediate: Revoke `Fletcher's Customer` from @Target [Quantity: 1]
 
 __Card__
