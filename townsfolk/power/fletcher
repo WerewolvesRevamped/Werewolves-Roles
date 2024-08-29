@@ -11,10 +11,9 @@ __Simplified__
 During Day 0, the Fletcher must select a target. As long as the Fletcher is alive, the target will have the abilities of a huntress.
 
 __Formalized__
-Immediate Day: [Quantity: 1, Temporal: Day 0] {Forced}
-  • Target @Selection (Player)
-  • Grant `Fletcher's Customer` to @Target
-Immediate: Revoke `Fletcher's Customer` from @Target [Quantity: 1, Temporal: Night 1+]
+Immediate Day: Grant `Fletcher's Customer` to @Selection [Quantity: 1, Temporal: Day 0] {Forced}
+On Action [Add Granting]: Target @Target (Player)
+Immediate: Revoke `Fletcher's Customer` from @Target [Quantity: 1, Temporal: Night 1+, Condition: @Target exists]
 
 __Card__
 The Fletcher likes to gift their handmade bows and arrows to those they trust.
