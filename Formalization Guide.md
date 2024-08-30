@@ -297,7 +297,7 @@ If a single trigger does several abilities at once, they can be listed as part o
 - Action Restrictions: Specifies if there are restrictions on the action. See [here](#action-restrictions)
 - Action Scaling: Specifies if the amount of actions scales with player count. See [here](#action-scaling)
 - Action Compulsion: Specifies if the ability is forced. See [here](#action-compulsion)
-- Prompt Overwrite: Specifies the value of a prompt that should be used to overwrite the default ability prompt
+- Prompt Overwrite: Specifies the value of a prompt that should be used to overwrite the default ability prompt. You may also specify `silent:<prompt overwrite>` to use a specific prompt and to remove the default prompt pinging.
 - Ability Type: Specifies which ability type and how to execute it. See [here](#ability-types). If no ability is used, use `*Nothing*`
 
 ----
