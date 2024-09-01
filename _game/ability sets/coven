@@ -3,18 +3,18 @@ Starting: Strongly Disguise @Self as `Hag`
 On Visited [Role Changing]:
   • @Self has `Unwrongable`: Cancel with Failure
 On Killed:
-  • (@Attacker->Class is not `Unaligned`) and not (@Attacker->Alignment) has `Wronger`:
+  • (@Attacker->Class is not `Unaligned`) and (not (@Attacker->Alignment has `Wronger`)):
     ‣ Reveal `Hags were wronged by @Attacker->Alignment` to #story_time
     ‣ Apply `Wronger` to @Attacker->Alignment
     ‣ Increment Counter
 On Lynch:
   • For Each @Voters:
-    ‣ (@Ind->Class is not `Unaligned`) and not (@Ind->Alignment has `Wronger`):
+    ‣ (@Ind->Class is not `Unaligned`) and (not (@Ind->Alignment has `Wronger`)):
       ◦ Reveal `Hags were wronged by @Ind->Alignment` to #story_time
       ◦ Apply `Wronger` to @Ind->Alignment 
       ◦ Increment Counter
 On Role Change:
-  • (@RoleChanger->Class is not `Unaligned`) and not (@RoleChanger->Alignment has `Wronger`):
+  • (@RoleChanger->Class is not `Unaligned`) and (not (@RoleChanger->Alignment has `Wronger`)):
     ‣ Reveal `Hags were wronged by @Attacker->Alignment` to #story_time
     ‣ Apply `Wronger` to @RoleChanger->Alignment
     ‣ Increment Counter
