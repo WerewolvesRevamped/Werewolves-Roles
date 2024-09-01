@@ -33,5 +33,5 @@ On Poll Closed:
   • Remove `CoyoteTrigger` from &Werewolf
   • Process: Attack @Winner
   • Evaluate:
-    ‣ Always: Reveal `@Result` to #Wolfpack
+    ‣ Reveal `@Result` to #Wolfpack
     ‣ (@Result is `Failure`) or (@Winner->Alignment is not `Townsfolk`): Apply `CoyoteTrigger` to &Werewolf
