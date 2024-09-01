@@ -563,6 +563,7 @@ These target types are only available in some contexts:
 - `@Ind`: Set to one player of a selector inside a for each complex action
 - `@ActionTarget`: Set to the player an action is used on in `On Action` trigger
 - `@ActionResult`: Set to the result of an action in `On Action` trigger
+- `@Executor`: Set to a player who voted on a poll in a group which triggers the `On Poll Closed` trigger. Is also set to the executor of the ability instead of the group.
 
 __Team Specific Selectors:__
 - `&<TeamName>`: Select a specific team
