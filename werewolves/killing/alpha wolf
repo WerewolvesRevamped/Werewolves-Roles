@@ -20,7 +20,7 @@ End Night: [Quantity: 1]
 • Attack @Selection
 • Target @Selection (List: Reveal, NoReveal) {Forced: NoReveal}
 • Evaluate:
-  ‣ (@Target is NoReveal): Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
+  ‣ @Target is `NoReveal`: Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
   ‣ Otherwise: Reveal `@Self is Alpha Wolf` to #wolfpack
 
 __Card__
