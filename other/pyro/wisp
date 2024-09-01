@@ -20,7 +20,7 @@ Immediate Day: [Condition: @Selection is not @Self]
   • not (@Selection has `Powdered`): Apply `Powdered` to @Selection (~Persistent)
   • Otherwise: Target @Selection (Player)
 End Day:
-  • (@Target exists) and not (@Target->Alignment is `Pyro`): Attack @Target
+  • (@Target exists) and (not (@Target->Alignment is `Pyro`)): Attack @Target
   • (@Target exists) and (@Target->Alignment is `Pyro`): Learn `Ignition failed on @Target`
   • Otherwise: Learn `You powdered`
 Passive: not (@(Group:Pyros) exists): Role Change @Self to `Pyromancer`
