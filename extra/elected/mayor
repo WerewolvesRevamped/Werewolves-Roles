@@ -18,7 +18,7 @@ When there are less than 15 players, they instead get 2 votes on the public poll
 
 __Formalized__
 Immediate Night: Add `Lynch` Poll ⟨$living>15 ⇒ x1⟩
-Passive: Manipulate @Self's `special public voting power` to `1` ⟨$living≤15 ⇒ x1⟩
+Passive Start Day: Manipulate @Self's `special public voting power` to `1` (~Phase) ⟨$living≤15 ⇒ x1⟩
 End Phase: Revoke @ThisAttr from @Self |silent:granting.resign|
 
 __Card__
