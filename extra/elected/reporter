@@ -13,6 +13,7 @@ __Simplified__
 When there is a Mayor, a Reporter is elected. They will be able to see the starting roles of all players that have died.
 
 __Formalized__
+Starting: Learn `@Dead Roles - @Dead->OriginalRole`
 On @All Death: Learn `@This->OriginalRole`
 End Phase: Revoke @ThisAttr from @Self |silent:granting.resign|
 
