@@ -5,4 +5,4 @@ When a player is both charmed and enchanted, the charmed attribute and its corre
 When no members of the flute team remain, the attribute is automatically removed.
 
 __Formalized__
-Starting: Weakly Disguise @ThisAttr->OwnerPlayer as `Flute Player` (~Attribute)
+Starting: Weakly Disguise @Self as `Flute Player` (~Attribute)
