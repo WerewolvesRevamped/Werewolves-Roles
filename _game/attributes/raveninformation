@@ -5,4 +5,4 @@ A technical attribute utilized by the ravenkeeper.
 __Formalized__
 Passive End Phase:
   • Reveal `shuffle(@ThisAttr->OwnerPlayer, @ThisAttr->Value1) visited each other` to @Self
-  • Remove @ThisAttr
+  • Remove @ThisAttr from @Self
