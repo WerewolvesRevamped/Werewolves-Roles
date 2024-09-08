@@ -1,9 +1,0 @@
-**Flute Team**
-Members of this team win when all players are dead, unaligned, enchanted, or part of the flute team. All members of the team know each other.
-
-__Roles__
-@Query;Team=flute,Type=default;$.Emoji $.Name@
-
-@Query;Team=flute,Type=limited;$.Emoji *$.Name*@
-
-@Query;Team=flute,Type=transformation;$.Emoji $.Name (T)@

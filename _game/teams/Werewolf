@@ -1,4 +1,14 @@
 **Werewolves**
+__Basics__
+The Werewolves Team wins when only members of the Werewolves Team and unaligned players remain.
+
+*Role Categories:*
+<?CategoryMiscellaneous:> Werewolf Miscellaneous (WM)
+<?CategoryGroup:> Werewolf Group (WG)
+<?CategoryPower:> Werewolf Power (WP)
+<?CategoryInvestigative:> Werewolf Investigative (WI)
+<?CategoryKilling:> Werewolf Killing (WK)
+
 __Formalized__
 Win Condition: @(Alignment:Werewolf), @(Class:Unaligned)
 Starting: Apply `Wolfish` to @Self
