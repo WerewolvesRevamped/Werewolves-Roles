@@ -307,7 +307,7 @@ Trigger types can be one of the following:
 - An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Start Phase`, `Immediate`) if the ability occurs in connection to a non-compound action. These are *always connected to an action*.
 - `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
 - `Starting` for starting abilities
-- `Passive` for constantly active abilities
+- `Passive` triggers whenever a significant change occurs (game start, phase change, somebody dies/changes roles) and can be used with conditions that should theoretically be checked constantly 
 - `Passive [End Day|End Night|Start Day|Start Night|Start Phase|End Phase]` for abilities that passively/automatically trigger at the start or end of a phase. These occur at the same time as action timings from above, but *automatically*.
 - `On Death` for an ability that triggers on death (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@AttackSource` to get the source of the attack)
 - `On <Target> Death` for an ability that triggers on the death of a certain target type (when several players are contained in the target, it triggers when *any* player from that target type dies) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@This` to reference the player that died, use `@AttackSource` to get the source of the attack)
