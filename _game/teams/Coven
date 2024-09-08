@@ -1,3 +1,6 @@
 **Coven Team**
+__Basics__
+The Coven Team is created from the Unaligned Hag roles. The Hags' win condition changes throughout the game. Should they become Bitter Hags, they win if everyone is either dead, unaligned or part of the coven team.
+
 __Formalized__
 Win Condition: @(Align:Coven), &(Attr:!Wronger)->Members
