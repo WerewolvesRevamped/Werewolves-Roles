@@ -16,9 +16,9 @@ An enchanted player will lose the disguise given to them by Flute Charmer.
 
 __Formalized__
 Starting: Join #Flutes
-Immediate Day:
-  • Apply `Charmed` to @Selection [Attribute: @Selection lacks `Enchanted`]
+Immediate Day: [Attribute: @Selection lacks `Enchanted`] |flute_charmer.1|
   • Role Investigate @Selection (SD, WD)
+  • Apply `Charmed` to @Selection
 Passive: not (@(Role:Flute-Player) exists): Role Change @Self to `Flute Player`
 
 __Card__
