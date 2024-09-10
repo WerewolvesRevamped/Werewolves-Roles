@@ -12,7 +12,7 @@ If the Idiot dies for the first time, they instead live, but lose their voting p
 __Formalized__
 Starting: Protect @Self from `All` through Partial Defense (~UntilUse)
 On Partial Defense:
-  • Learn `Defense was used`
+  • Learn `Defense was used!`
   • Manipulate @Self's `public voting power` to `0`
 
 __Card__
