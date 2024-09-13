@@ -10,9 +10,10 @@ __Simplified__
 If the Despot is elected, they win and stop playing, but the game still continues. The next day, the election will be cancelled.
 
 __Formalized__
-On Election: 
-  • Ascend
-  • Delete `Election` Poll
+On Poll Win:
+  • @Self is part of @(AttrRole:Mayor):
+    ‣ Ascend
+    ‣ Delete `Election` Poll
 
 __Card__
 The Despot wants all the attention for themself.
