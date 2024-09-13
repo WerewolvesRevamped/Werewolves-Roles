@@ -321,6 +321,7 @@ Trigger types can be one of the following:
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `Afterwards` triggers automatically after the previous action in a compound action has been used
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
+- `On Poll Win` triggers when the current player wins any poll
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
 - `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
 - `On End` triggers when the game ends
