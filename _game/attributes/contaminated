@@ -10,6 +10,6 @@ Passive Start Night:
   • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
   • @ThisAttr->Value1 is `EarlyStage`: Change @ThisAttr value `1` to `MiddleStage` for @Self
 Passive: [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
-  • Compound: 
+  • Compound: §WIP§
     ‣ Start Night: Learn `You have the plague`
     ‣ End Night: Kill @Self
