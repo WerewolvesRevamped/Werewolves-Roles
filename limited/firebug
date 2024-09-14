@@ -13,17 +13,17 @@ The Firebug is a member of the pyro team and channel.
 
 __Formalized__
 Starting: Join #Pyros
-Compound:
-  • Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) 
-  • Afterwards: Apply `Warded` to @Selection (~Phase)
-On @(Attr:Warded:@Self) Visited [Attack Killing]:
+Immediate Night:
+  • Protect @Selection from `Attacks` through Active Defense (~Phase) 
+  • Apply `Warded` to @Selection (~Phase)
+On @(AttrSelf:Warded) Visited [Attack Killing]:
   • not (@Visitor->Alignment is `Pyro`):
     ‣ Apply `Powdered` to @Visitor (~Persistent)
     ‣ Attack @(Attr:Powdered,Align:!Pyro)
     ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
     ‣ Reveal `You were ignited to @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
-    ‣ Remove `Warded` from @(Attr:Warded:@Self)
-End Night: Apply `Powdered` to @(Attr:Warded:@Self) (~Persistent)
+    ‣ Remove `Warded:Self` from @(AttrSelf:Warded)
+End Night: Apply `Powdered` to @(AttrSelf:Warded) (~Persistent)
 Passive: not (@(Role:Pyromancer) exists): Role Change @Self to `Pyromancer`
 
 __Card__
