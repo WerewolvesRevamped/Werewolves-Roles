@@ -23,12 +23,12 @@ Starting:
 Passive:
   • @Self->Counter > `0`:
     ‣ Decrement Counter
-    ‣ Apply `PsychopathList` to randomize(@(Attr:!PsychopathList:@Self))
+    ‣ Apply `PsychopathList` to randomize(@(AttrSelf:!PsychopathList))
   • @Self->Counter is `0`:
     ‣ Remove `PsychopathList` from @Self
-    ‣ Learn `shuffle(@(Attr:PsychopathList:@Self))`
+    ‣ Learn `shuffle(@(AttrSelf:PsychopathList))`
     ‣ Decrement Counter
-  • not (@(Attr:PsychopathList:@Self) exists): 
+  • not (@(AttrSelf:PsychopathList) exists): 
     ‣ Ascend
 Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
