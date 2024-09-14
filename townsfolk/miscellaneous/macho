@@ -14,12 +14,12 @@ If attacked at night, the Macho will be told the name of one of their attackers 
 
 __Formalized__
 Starting: Protect @Self from `Attacks` through Partial Defense during Night
-Compound:
-  • On Partial Defense:
-    ‣ Learn `Attacked by @Attacker`
-    ‣ Protect @Self from `All` through Passive Defense
-    ‣ Announce `Macho @Self was attacked`
-  • Passive End Day: True Kill @Self
+On Partial Defense:
+  • Learn `Attacked by @Attacker`
+  • Protect @Self from `All` through Passive Defense
+  • Announce `Macho @Self was attacked`
+  • Apply `Marker` to @Self
+Passive End Day: True Kill @Self [Attribute: has `Marker`]
 
 __Card__
 The Macho is strong enough to briefly survive after an attack.
