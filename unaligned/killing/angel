@@ -20,7 +20,7 @@ On Lynch:
     ‣ @Attacker exists: Target @Attacker (Player)
     ‣ not (@Target is part of @OtherVoters): Target randomize(@OtherVoters) (Player)
     ‣ Kill @Target
-    ‣ Reveal `Angel @Self killed @Target` to #story_time
+    ‣ Announce `Angel @Self killed @Target`
     ‣ Ascend
 
 __Card__

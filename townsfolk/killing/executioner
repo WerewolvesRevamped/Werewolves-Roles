@@ -18,7 +18,7 @@ On Passive Defense:
   • Process: Lynch @Target
   • Evaluate:
     ‣ not (@Target exists): Lynch @Self
-    ‣ @Result is `Success`: Reveal `Executioner @Self lynched @Target` to #story_time
+    ‣ @Result is `Success`: Announce `Executioner @Self lynched @Target`
 
 __Card__
 The Executioner isn't afraid of being put on the chopping block, they'll likely get out of it.

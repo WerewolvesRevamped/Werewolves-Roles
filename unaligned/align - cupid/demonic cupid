@@ -14,10 +14,10 @@ Members of the Hell team cannot betray the team in any way. Any attempts at conv
 __Formalized__
 On Death:
   • True Kill @Target
-  • Reveal `Cupid @Self died, killing Lover @Target` to #story_time
+  • Announce `Cupid @Self died, killing Lover @Target`
 On @Target Death:
   • True Kill @Self
-  • Reveal `Lover @Target died, killing Cupid @Self` to #story_time
+  • Announce `Lover @Target died, killing Cupid @Self`
 
 __Card__
 When the Cupid falls in love with a member of the hell team, they'll become a Demonic Cupid.
