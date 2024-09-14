@@ -1,0 +1,6 @@
+**Marker** | Attribute
+__Basics__
+A generic technical attribute used by various roles. Roles may only apply this to themself for internal logic and may not check others for it.
+
+__Formalized__
+No Abilities
