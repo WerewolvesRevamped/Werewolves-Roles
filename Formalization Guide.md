@@ -814,6 +814,7 @@ Format:
 
 Format:  
 `Reveal [<Target>|<Information>] to [<Location>|<Target>]` (Self Reveal, Public Information)  
+`Announce <Information>` (Adds information to storytime buffer)
 `Learn '<Information>'` (Private Information)  
 `Know '<Information>'` (Private Knowledge)  
 
