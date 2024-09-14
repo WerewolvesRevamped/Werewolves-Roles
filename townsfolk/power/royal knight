@@ -10,9 +10,12 @@ __Simplified__
 After Day 1, the Royal Knight may cancel the lynch once.
 
 __Formalized__
-Compound:
-  • Immediate: Cancel `Lynch` Poll [Quantity: 1, Temporal: Night 2+]
-  • End Day: Announce `Royal Knight @Self cancelled lynch`
+Immediate:
+  • Cancel `Lynch` Poll [Quantity: 1, Temporal: Night 2+]
+  • Apply `Marker` to @Self
+End Day: [Attribute: has `Marker`]
+  • Announce `Royal Knight @Self cancelled lynch`
+  • Remove `Marker` from @Self
 
 __Card__
 The Royal Knight may grant forgiveness to someone who would be lynched.
