@@ -15,14 +15,17 @@ Once per game, the Clairvoyant Fox may alternatively give up their power and joi
 
 __Formalized__
 Passive Start Day: `Fox` Choice Creation:
-  • `Join Pack`:
+  • `Join Pack`: 
     ‣  Immediate Day: Role Change @Self to `Wolf`
   • `Investigate`
-    ‣ Compound:
-      ◦ Immediate Day:
-        · Process: Role Investigate @Selection (SD, WD)
-        · Evaluate: Target @Result (Role)
-      ◦ Passive Start Night: Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
+    ‣ Immediate Day:
+      ◦ Process: Role Investigate @Selection (SD, WD)
+      ◦ Evaluate:
+        · Target @Result (Role)
+        · Apply `Marker` to @Self
+Passive Start Night: [Attribute: has `Marker`]
+  • Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
+  • Remove `Marker`from @Self
 Immediate Day: `Fox` Choice Choose @Chosen
 
 __Card__
