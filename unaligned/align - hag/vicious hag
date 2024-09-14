@@ -15,9 +15,13 @@ The Vicious Hag may once attack a player.
 
 __Formalized__
 Inherit: `Coven`
-Compound: [Condition: @Self->Counter > 0] {Repeating} 
-  • Immediate Night: Decrement Counter
-  • End Night: Attack @Selection
+Immediate Night: [Condition: @Self->Counter > 0] {Repeating} 
+  • Decrement Counter
+  • Apply `Marker` to @Self
+  • Target @Selection (Player)
+Passive End Night: [Attribute: has `Marker`]
+  • Attack @Target
+  • Remove `Marker` from @Self
 Passive:
   • not (&(Attr:!Wronger,Align:!Coven)->Members exists): Role Change @Self to `Bitter Hag`
 
