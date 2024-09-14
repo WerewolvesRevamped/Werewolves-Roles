@@ -23,12 +23,12 @@ Passive Start Day: `Fox` Choice Creation:
     ‣ Compound: {Visitless} §WIP§
       ◦ Immediate Day: [Condition: @Selection is not @SecondarySelection]
         · Untarget
-        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@Selection):
+        · For Each @(AliveOnly:False,AttrSelf:!ArchivistSeen,OrigFullCat:@Selection):
           ⁃ Apply `ArchivistCandidate` to @Ind (1)
-        · For Each @(AliveOnly:False,Attr:!ArchivistSeen:@Self,OrigFullCat:@SecondarySelection):
+        · For Each @(AliveOnly:False,AttrSelf:!ArchivistSeen,OrigFullCat:@SecondarySelection):
           ⁃ Apply `ArchivistCandidate` to @Ind (2)
         · Process:
-          ⁃ randomize(@(Attr:ArchivistCandidate:1))
+          ⁃ randomize(@(Attr:ArchivistCandidate::1))
         · Evaluate:
           ⁃ @Result exists:
             ⹀ Learn `@Result->OriginalRole exists`
@@ -36,7 +36,7 @@ Passive Start Day: `Fox` Choice Creation:
             ⹀ Apply `ArchivistSeen` to @Result
           ⁃ Otherwise: Learn `No more @Selection exist`
         · Process:
-          ⁃ randomize(@(Attr:ArchivistCandidate:2))
+          ⁃ randomize(@(Attr:ArchivistCandidate::2))
         · Evaluate:
           ⁃ @Result exists:
             ⹀ Learn `@Result->OriginalRole exists`
@@ -49,7 +49,7 @@ Passive Start Day: `Fox` Choice Creation:
         · Otherwise: Target @Selection (List: `No Remaining Roles`)
       ◦ Passive Start Night:
         · Reveal `ArchivistFox archived a @Target` to #wolfpack
-        · Remove `ArchivistOption:@Self` from @All
+        · Remove `ArchivistOption:Self` from @All
 Immediate Day: `Fox` Choice Choose @Chosen
 
 __Card__
