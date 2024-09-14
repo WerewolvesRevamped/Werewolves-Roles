@@ -12,10 +12,10 @@ The Herald selects a role and is informed when the last player with that role di
 
 __Formalized__
 Immediate: {Visitless}
-  • Remove `HeraldSelected:@Self` from @All
+  • Remove `HeraldSelected:Self` from @All
   • Apply `HeraldSelected` to @(Role:@Selection) (~Persistent)
-On @(Attr:HeraldSelected:@Self) Death:
-  • not (@(Attr:HeraldSelected:@Self) exists): Learn `Last marked player died`
+On @(AttrSelf:HeraldSelected) Death:
+  • not (@(AttrSelf:HeraldSelected) exists): Learn `Last marked player died`
 
 __Card__
 The Herald scouts the village and knows when someone's stopped doing a certain occupation.
