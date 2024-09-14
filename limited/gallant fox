@@ -17,9 +17,13 @@ Passive Start Day: `Fox` Choice Creation:
   • `Join Pack`:
     ‣  Immediate Day: Role Change @Self to `Wolf`
   • `Protect Player`
-    ‣ Compound:
-      ◦ End Day: Protect @Selection from `Attacks & Lynches` through Active Defense (~NextDay) [Succession: No Target Succession]
-      ◦ Passive Start Night: Reveal `Gallant Fox protected @Selection` to #wolfpack
+    ‣ End Day: [Succession: No Target Succession]
+      ◦ Protect @Selection from `Attacks & Lynches` through Active Defense (~NextDay)
+      ◦ Target @Selection (Player)
+      ◦ Apply `Marker` to @Self
+Passive Start Night: [Attribute: has `Marker`]
+  • Reveal `Gallant Fox protected @Target` to #wolfpack
+  • Remove `Marker`from @Self
 Immediate Day: `Fox` Choice Choose @Chosen
 
 __Card__
