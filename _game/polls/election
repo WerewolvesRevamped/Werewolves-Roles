@@ -11,4 +11,7 @@ Passive Start Day: [Temporal: Day 1+]
   • not (@(AttrRole:Mayor) exists):
     ‣ Target `Mayor` (Role)
     ‣ Create Poll in #voting_booth as `Mayor Election`
-On Poll Closed: Grant @Target to @Winner 
+On Poll Closed:
+  • Grant @Target to @Winner 
+  • Announce `@Winner was elected as @Target`
+
