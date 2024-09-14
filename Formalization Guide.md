@@ -189,7 +189,9 @@ All attributes have source role and source player value. Attribute abilities are
 All attributes can be refered to by `<AttributeType>:<SourceRole>` or `<AttributeType>:<SourcePlayer>`.
 Examples:
 - `Disguise:Tanner`, a disguise applied by a tanner
-- `Defense:@Target`, a defense applied by the player's current target
+- `Defense:Target`, a defense applied by the player's current target. The @ symbol is skipped.
+
+Additionally attributes can be refered to by `<AttributeType>::<Value1>`
 
 ---
 ---
