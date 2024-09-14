@@ -14,7 +14,7 @@ This is not affected by disguises, but is affected by redirections.
 
 __Formalized__
 Immediate Night:
-  • Action: [Attribute: @Selection lacks `OracleSelected:@Self`, Attribute: @SecondarySelection lacks `OracleSelected:@Self`]
+  • Action: [Attribute: @Selection lacks `OracleSelected:Self`, Attribute: @SecondarySelection lacks `OracleSelected:Self`]
   • Process:
     ‣ Alignment Investigate @Selection
     ‣ Alignment Investigate @SecondarySelection
