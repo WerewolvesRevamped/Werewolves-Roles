@@ -32,12 +32,10 @@ Passive:
     ‣ Ascend
 Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
-Passive Start Day: `Psychopath` Choice Creation:
-  • `Investigate`:
-    ‣ Role Investigate @Selection (WD, SD)
-  • `Disguise`:
-    ‣ Weakly Disguise @Selection as @SecondarySelection (~NextNight)
+Passive Start Day: `Psychopath` Choice Creation (Investigate, Disguise)
 Immediate Day: `Psychopath` Choice Choosing @Chosen
+Choice `Investigate` Chosen: Role Investigate @Selection (WD, SD)
+Choice `Disguise` Chosen: Weakly Disguise @Selection as @SecondarySelection (~NextNight)
 
 __Card__
 The Psychopath tries to get rid of everyone on their list, through whichever means neccesary.
