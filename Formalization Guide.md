@@ -829,16 +829,17 @@ Format:
 
 Choice Creation Format:
 ```
-'<Name>' Choice Creation [for <Target|Location>]:
-  • <Option Name>:
-    ‣ <Trigger Type>: <Resulting Ability>
-    ‣ <Trigger Type>: <Resulting Ability>
-  • <Option Name>:
-    ‣ <Trigger Type>: <Resulting Ability>
+'<Name>' Choice Creation [for <Target|Location>] (Option List)
+Choice <Option Name> Chosen:
+  • <Resulting Ability>
+  • <Resulting Ability>
+Choice <Option Name> Chosen:
+  • <Resulting Ability>
 ```
 
 - Name: Gives the choice a name to reference later
 - Target|Location: Optional, specifies to which player, target type or location the choice should be sent. If not specified the current player chooses.
+- Option List: A comma separated list of options
 - Option Name: The names for each option which are what can be selected by choice choosing
 - Resulting Ability: Abilities that result after a choice choosing, executed by the role who created the choice. Use `@Chooser` to reference the person who choice chose here
 
