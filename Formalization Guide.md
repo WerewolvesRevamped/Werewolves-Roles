@@ -56,6 +56,7 @@
     - [Conversation Reset](#conversation-reset)
     - [Cancel](#cancel)
     - [Switching](#switching)
+    - [Randomizing](#randomizing)
 - [Host Information](#host-information)
 - [Utility Functions](#utility-functions)
 
@@ -918,6 +919,15 @@ Format:
 Does a thief switch with another player.
 - Target: A target specifying who to switch with
 
+---
+### Randomizing
+
+Format:
+`Randomize <Target>`
+`Randomize (List)`
+
+Randomizes a selector or list, returing a specific element
+
 ## Host Information
 
 Host Information is specific information provided by the host and is part of the game setup, same as the role list.
@@ -939,7 +949,6 @@ Utility functions apply an operation on an input.
 
 The following utility functions exist:
 
-- `randomize(<InputList>)`, randomize an input list and returns a single random element.
 - `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
 - `calc(<math>)`, allows math operations:
   - `floor(x)`, `ceil(x)`, `round(x)` - rounding
