@@ -13,14 +13,13 @@ Each night the Pyromancer may either powder or ignite all currently powdered peo
 
 __Formalized__
 Starting: Join #Pyros
-Passive Start Night: `Pyromancer` Choice Creation: 
-  • `Powder`:
-    ‣  Immediate Night: Apply `Powdered` to @Selection (~Persistent)
-  • `Ignite`: 
-    ‣ Passive End Night:
-      ◦ Attack @(Attr:Powdered,Align:!Pyro)
-      ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
-      ◦ Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
+Passive Start Night: `Pyromancer` Choice Creation (Powder, Ignite)
+Choice `Powder` Chosen: Apply `Powdered` to @Selection (~Persistent)
+Choice `Ignite` Chosen: 
+  • End Effect:
+    ‣ Attack @(Attr:Powdered,Align:!Pyro)
+    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
 Immediate Night: `Pyromancer` Choice Choose @Chosen
 
 __Card__
