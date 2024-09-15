@@ -21,7 +21,7 @@ Choice `Protect Player` Chosen: [Succession: No Target Succession]
 Passive Start Night: [Attribute: has `Marker`]
   • Protect @Target from `Attacks & Lynches` through Active Defense (~NextDay)
   • Reveal `Gallant Fox protected @Target` to #wolfpack
-  • Remove `Marker`from @Self
+  • Remove `Marker` from @Self
 Immediate Day: `Fox` Choice Choose @Chosen
 
 __Card__
