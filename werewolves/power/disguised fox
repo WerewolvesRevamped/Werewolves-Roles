@@ -15,14 +15,12 @@ Each day, the Disguised Fox may strongly disguise themselves for the following n
 Once per game, the Disguised Fox may alternatively give up their power and join the wolfpack as a regular wolf.
 
 __Formalized__
-Passive Start Day: `Fox` Choice Creation:
-  • `Join Pack`:
-    ‣ Immediate Day: Role Change @Self to `Wolf`
-  • `Disguise Self`
-    ‣ Immediate Day:
-      ◦ Strongly Disguise @Self as @Selection (~NextNight)
-      ◦ Target @Selection (Role)
-      ◦ Apply `Marker` to @Self
+Passive Start Day: `Fox` Choice Creation (Join Pack, Disguise Self)
+Choice `Join Pack` Chosen: Role Change @Self to `Wolf`
+Choice `Disguise Self` Chosen:
+  • Strongly Disguise @Self as @Selection (~NextNight)
+  • Target @Selection (Role)
+  • Apply `Marker` to @Self
 Passive Start Night: [Attribute: has `Marker`]
   • Reveal `Disguised Fox disguised as @Target` to #wolfpack
   • Remove `Marker`from @Self
