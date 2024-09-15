@@ -18,6 +18,7 @@ Immediate Night: `Pyromancer` Choice Choose @Chosen
 Choice `Powder` Chosen: Apply `Powdered` to @Selection (~Persistent)
 Choice `Ignite` Chosen: Apply `Marker` to @Self
 Passive End Night: [Attribute: has `Marker`]
+  • Remove `Marker` from @Self
   • Attack @(Attr:Powdered,Align:!Pyro)
   • Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
   • Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
