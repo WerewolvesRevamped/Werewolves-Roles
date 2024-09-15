@@ -20,7 +20,7 @@ Choice `FinalRole` Chosen:
   • Learn `@Selection[Dead]->Role`
 Immediate Night: Apply `DetectiveGuess` to @Selection (~Phase) (@SecondarySelection[Role]) {Repeating}
 Immediate Night:
-  • Set Counter to `0`
+  • Set Counter to 0
   • For Each @(Attr:DetectiveGuess):
     ‣ @Ind has `DetectiveGuess::@Ind->Role`: Increment Counter
   • @Self->Counter is count(@All): Ascend
