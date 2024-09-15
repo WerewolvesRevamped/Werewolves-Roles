@@ -16,9 +16,12 @@ __Formalized__
 Immediate: Target @Selection (Player)
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 On Lynch:
-  • (@OtherVoters exists) or (@Attacker exists): 
-    ‣ @Attacker exists: Target @Attacker (Player)
-    ‣ not (@Target is part of @OtherVoters): Target randomize(@OtherVoters) (Player)
+  • @Attacker exists: 
+    ‣ Kill @Attacker
+    ‣ Announce `Angel @Self killed @Attacker`
+    ‣ Ascend
+  • @OtherVoters exists: 
+    ‣ Target randomize(@OtherVoters) (Player)
     ‣ Kill @Target
     ‣ Announce `Angel @Self killed @Target`
     ‣ Ascend
