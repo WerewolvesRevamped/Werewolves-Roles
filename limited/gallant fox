@@ -13,13 +13,15 @@ The Gallant Fox and the wolfpack do not know each other.
 Each day, the Gallant Fox may select a player to protect from attacks and the lynch during the following night and day phases. At the end of the day, the chosen player will be announced to the wolfpack. Once per game, the Gallant Fox may alternatively give up their power and join the wolfpack as a regular wolf.
 
 __Formalized__
-Passive Start Day: `Fox` Choice Creation:
-  • `Join Pack`:
-    ‣  Immediate Day: Role Change @Self to `Wolf`
-  • `Protect Player`
-    ‣ Compound:
-      ◦ End Day: Protect @Selection from `Attacks & Lynches` through Active Defense (~NextDay) [Succession: No Target Succession]
-      ◦ Passive Start Night: Reveal `Gallant Fox protected @Selection` to #wolfpack
+Passive Start Day: `Fox` Choice Creation (Join Pack, Protect Player)
+Choice `Join Pack` Chosen: Role Change @Self to `Wolf`
+Choice `Protect Player` Chosen: [Succession: No Target Succession]
+  • Target @Selection (Player)
+  • Apply `Marker` to @Self
+Passive Start Night: [Attribute: has `Marker`]
+  • Protect @Target from `Attacks & Lynches` through Active Defense (~NextDay)
+  • Reveal `Gallant Fox protected @Target` to #wolfpack
+  • Remove `Marker` from @Self
 Immediate Day: `Fox` Choice Choose @Chosen
 
 __Card__

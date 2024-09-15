@@ -13,9 +13,10 @@ Starting:
   • @ThisAttr->Value1 is `War`:
     ‣ Manipulate @Self's `public voting power` to `0` (~NextDay)
     ‣ Manipulate Election Poll (@Self is `Disqualified`)
-Compound:
-  • Passive Start Day: @ThisAttr->Value1 is `Pestilence`: Obstruct @Self (~NextNight)
-  • Passive End Night: @ThisAttr->Value1 is `Death`: Kill @Self
+Passive Start Day: @ThisAttr->Value1 is `Pestilence`: Obstruct @Self (~NextNight)
+Passive End Night:
+  • (@ThisAttr has `Marker`) and (@ThisAttr->Value1 is `Death`): Kill @Self
+  • Otherwise: Apply `Marker` to @ThisAttr
 On Removal: 
   • Remove `Manipulation:Doomed`
   • Remove `Disguise:Doomed`

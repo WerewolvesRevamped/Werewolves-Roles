@@ -19,7 +19,7 @@ Each day, the Exorcist may exorcise one player, removing effects caused by solo 
 The Exorcist learns which effects were removed, and the solo team whose effect is cured is also informed.
 
 __Formalized__
-Immediate Day: [Attribute: @Selection lacks `Exorcised:@Self`]
+Immediate Day: [Attribute: @Selection lacks `Exorcised:Self`]
   • Apply `Exorcised` to @Selection (~Persistent)
   • Process:
     ‣ Remove `Enchanted` from @Selection

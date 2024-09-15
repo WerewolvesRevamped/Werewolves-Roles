@@ -17,22 +17,24 @@ I currently do not have enough time to update this formalization so let this com
 Starting:
   • Apply `Raven` to @Self
   • Set Counter to calc(floor($total/3))
-Passive Start Night: `RavenAction` Choice Creation: ⟨x2⟩
-  • `Assign`:
-    ‣ (@Self->Counter > `0`) and not (@Selection has `Raven:@Self`):
-      ◦ Apply `Raven` to @Selection (~Persistent)
-      ◦ Decrement Counter
-  • `Reassign`:
-    ‣ (@SecondarySelection has `Raven:@Self`) and not (@Selection has `Raven:@Self`):
-      ◦ Revoke `Raven:@Self` from @SecondarySelection
-      ◦ Apply `Raven` to @Selection (~Persistent)
-Immediate Night: ⟨x2⟩
+Passive Start Night:
+  @Self->Counter > `0`: `RavenAction` Choice Creation (Assign, Reassign)
+  Otherwise: `RavenAction` Choice Creation (Reassign)
+Choice `Assign` Chosen:
+  • (@Selection has `Raven:@Self`):
+    ‣ Apply `Raven` to @Selection (~Persistent)
+    ‣ Decrement Counter
+Choice `Reassign` Chosen:
+  • (@SecondarySelection has `Raven:Self`) and not (@Selection has `Raven:Self`):
+    ‣ Revoke `Raven:Self` from @SecondarySelection
+    ‣ Apply `Raven` to @Selection (~Persistent)
+Immediate Night:
   • `RavenAction` Choice Choose @Chosen
-  • (@Self->Counter > `0`) and not (@Self has `Raven:@Self`): Apply `Raven` to @Self
-  • (@Self->Counter is `0`) and (@Self has `Raven:@Self`): Revoke `Raven:@Self` from @Self
-On @(Attr:Raven:@Self) Death:
+  • (@Self->Counter > `0`) and not (@Self has `Raven:Self`): Apply `Raven` to @Self
+  • (@Self->Counter is `0`) and (@Self has `Raven:Self`): Revoke `Raven:Self` from @Self
+On @(AttrSelf:Raven) Death:
   • Increment Counter
-  • not (@Self has `Raven:@Self`): Apply `Raven` to @Self
+  • not (@Self has `Raven:Self`): Apply `Raven` to @Self
 
 __Card__
 Ravens are loyal pets. Should two of them encounter each other, the Ravenkeeper will surely know.

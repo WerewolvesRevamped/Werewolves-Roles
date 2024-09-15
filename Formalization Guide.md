@@ -25,7 +25,6 @@
     - [Action Restrictions](#action-restrictions)
     - [Action Scaling](#action-scaling)
     - [Action Compulsion](#action-compulsion)
-    - [Compound Actions](#compound-actions)
     - [Complex Actions](#complex-actions)
   - [Ability Set](#ability-set) 
   - [Requirements](#requirements) 
@@ -190,7 +189,9 @@ All attributes have source role and source player value. Attribute abilities are
 All attributes can be refered to by `<AttributeType>:<SourceRole>` or `<AttributeType>:<SourcePlayer>`.
 Examples:
 - `Disguise:Tanner`, a disguise applied by a tanner
-- `Defense:@Target`, a defense applied by the player's current target
+- `Defense:Target`, a defense applied by the player's current target. The @ symbol is skipped.
+
+Additionally attributes can be refered to by `<AttributeType>::<Value1>`
 
 ---
 ---
@@ -304,8 +305,7 @@ If a single trigger does several abilities at once, they can be listed as part o
 #### Trigger Types
 
 Trigger types can be one of the following:
-- An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Start Phase`, `Immediate`) if the ability occurs in connection to a non-compound action. These are *always connected to an action*.
-- `Compound`: Compound actions are defined in a different format see [here](#compound-actions)
+- An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Start Phase`, `Immediate`) if the ability occurs in connection to an action. These are *always connected to an action*.
 - `Starting` for starting abilities
 - `Passive` triggers whenever a significant change occurs (game start, phase change, somebody dies/changes roles) and can be used with conditions that should theoretically be checked constantly 
 - `Passive [End Day|End Night|Start Day|Start Night|Start Phase|End Phase]` for abilities that passively/automatically trigger at the start or end of a phase. These occur at the same time as action timings from above, but *automatically*.
@@ -319,7 +319,6 @@ Trigger types can be one of the following:
 - `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
 - `On [Active|Passive|Partial|Recruitment|Absence] Defense` for an ability that triggers when an active, passive, partial, recruitment or absence defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack, use `@KillingType` to get the type of killing that the defense blocked)
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
-- `Afterwards` triggers automatically after the previous action in a compound action has been used
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 - `On Poll Win` triggers when the current player wins any poll
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
@@ -376,29 +375,6 @@ An action may also be marked as `{Direct}` to make it unaffected by redirections
 An action may also be marked as `{Repeating}` in which case it can be repeated, assuming the restrictions allow it.
 
 An action may also be marked as `{Visitless}` in which case it does not count as a visit and can additionally not be redirected.
-
-----
-#### Compound Actions
-
-Compound actions uses an extended format. The trigger type is set as Compound, but a newline separated list of abilities is provided instead of a single ability type. All trigger types are executed in order, though triggers that require the player to submit an action may be skipped if not marked as `Forced`.
-
-Example 1:
-```
-Compound:
-  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-```
-Example 2:
-```
-<Compound>:
-  • <Trigger Type>: [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-    ‣ <Ability Type>
-    ‣ <Ability Type>
-  • <Trigger Type>: <Ability Type> [<Action Restriction>] {<Action Compulsion>} ⟨<Action Scaling>⟩
-```
-
-In compound actions the special trigger type `Wait` can be used, with the following format:  
-`Wait: <Value> Phases`, starts waiting for `<Value>` phases at the start of the next phase. Waits until the end of the `<Value>`-th phase, including the end of that phase itself.
 
 ---
 #### Complex Actions
@@ -521,6 +497,7 @@ __General Target Types__
 __Advanced Target Types__  
 Select living players by a certain attribute of them or their role.
 - `@(Attr:<Attribute>)`: Uses all players that have the `<Attribute>` custom attribute (e.g. `@(Attr:Wolfish)`)
+- `@(AttrSelf:<Attribute>)`: Uses all players that have the `<Attribute>` custom attribute applied by the current element (e.g. `@(AttrSelf:Warded)`)
 - `@(AttrRole:<Role>)`: Uses all players that have the role attribute with a certain role `<Role>` (e.g. `@(AttrRole:Mayor)`)
 - `@(AttrDisguise:<Target>)`: Uses all players that have the `<Target>` role applied by a certain player. Specify a target without @. (e.g. `@(AttrDisguise:Self)`)
 - `@(Group:<Group>)`: Uses all players that are part of the `<Group>` group
@@ -852,16 +829,17 @@ Format:
 
 Choice Creation Format:
 ```
-'<Name>' Choice Creation [for <Target|Location>]:
-  • <Option Name>:
-    ‣ <Trigger Type>: <Resulting Ability>
-    ‣ <Trigger Type>: <Resulting Ability>
-  • <Option Name>:
-    ‣ <Trigger Type>: <Resulting Ability>
+'<Name>' Choice Creation [for <Target|Location>] (Option List)
+Choice <Option Name> Chosen:
+  • <Resulting Ability>
+  • <Resulting Ability>
+Choice <Option Name> Chosen:
+  • <Resulting Ability>
 ```
 
 - Name: Gives the choice a name to reference later
 - Target|Location: Optional, specifies to which player, target type or location the choice should be sent. If not specified the current player chooses.
+- Option List: A comma separated list of options
 - Option Name: The names for each option which are what can be selected by choice choosing
 - Resulting Ability: Abilities that result after a choice choosing, executed by the role who created the choice. Use `@Chooser` to reference the person who choice chose here
 

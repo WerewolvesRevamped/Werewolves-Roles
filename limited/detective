@@ -11,19 +11,18 @@ The Detective wins by figuring out the original roles of all players.
 Each day, the Detective may either guess one player's current role or learn the final role of a dead player.
 
 __Formalized__
-Passive Start Day: `Detective` Choice Creation:
-  • `CurrentRole`:
-    ‣ Immediate Day:
-      ◦ Process: @Selection->Role
-      ◦ Evaluate: @Result is @SecondarySelection: `Success`
-  • `FinalRole`:
-    ‣ Immediate Day: Learn `@Selection[Dead]->Role`
+Passive Start Day: `Detective` Choice Creation (CurrentRole, FinalRole)
 Immediate Day: `Detective` Choice Choose @Chosen
+Choice `CurrentRole` Chosen:
+  • Process: @Selection->Role
+  • Evaluate: @Result is @SecondarySelection: `Success`
+Choice `FinalRole` Chosen:
+  • Learn `@Selection[Dead]->Role`
 Immediate Night: Apply `DetectiveGuess` to @Selection (~Phase) (@SecondarySelection[Role]) {Repeating}
 Immediate Night:
   • Set Counter to `0`
   • For Each @(Attr:DetectiveGuess):
-    ‣ @Ind has `DetectiveGuess:@Ind->Role`: Increment Counter
+    ‣ @Ind has `DetectiveGuess::@Ind->Role`: Increment Counter
   • @Self->Counter is count(@All): Ascend
   • Otherwise: Learn `@Self->Counter correct guesses`
 
