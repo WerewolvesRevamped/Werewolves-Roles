@@ -16,7 +16,7 @@ Immediate Day: `Detective` Choice Choose @Chosen
 Choice `CurrentRole` Chosen:
   • Process: @Selection->Role
   • Evaluate: @Result is @SecondarySelection: `Success`
-Choise `FinalRole` Chosen:
+Choice `FinalRole` Chosen:
   • Learn `@Selection[Dead]->Role`
 Immediate Night: Apply `DetectiveGuess` to @Selection (~Phase) (@SecondarySelection[Role]) {Repeating}
 Immediate Night:
