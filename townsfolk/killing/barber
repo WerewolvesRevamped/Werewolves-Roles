@@ -14,7 +14,7 @@ Immediate Day: [Temporal: Day 2+, Quantity: 1]
   • Process:
     ‣ Attack @Selection 
     ‣ Target @SecondarySelection (List: Reveal, NoReveal)
-  • Evaluate: (@Result is `Success`) and (@Target is Reveal): Announce `Barber @Self killed @Selection`
+  • Evaluate: (@Result is `Success`) and (@Target is `Reveal`): Announce `Barber @Self killed @Selection`
 
 __Card__
 The Barber dreams of one day making a big scene and killing that annoying client.

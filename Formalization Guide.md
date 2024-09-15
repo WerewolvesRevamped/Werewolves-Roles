@@ -879,12 +879,12 @@ Format:
 `Decrement Counter` (decrements own counter)  
 `Increment Counter by <Value>` (increments own counter)  
 `Decrement Counter by <Value>` (decrements own counter)    
-`Set Counter to '<Value>'` (set own counter)   
+`Set Counter to <Value>` (set own counter)   
 `Increment Counter for <Target>` (increments a counter)  
 `Decrement Counter for <Target>`(decrement a counter)  
 `Increment Counter for <Target> by <Value>` (increments a counter)  
 `Decrement Counter for <Target> by <Value>`(decrement a counter)  
-`Set Counter to '<Value>' for <Target>` (set a counter)  
+`Set Counter to <Value> for <Target>` (set a counter)  
 
 - Target: A target type, specifying who's counter to manipulate
 - Value: A numeric value specifying a new counter value

@@ -11,7 +11,7 @@ __Simplified__
 The Journalist can write a journal which a player with a role of their choice will receive when the Journalist dies.
 
 __Formalized__
-Starting: Starting: Grant `Journal Holder` to @Self
+Starting: Grant `Journal Holder` to @Self
 Immediate: Target @Selection (Role)
 On Action [Targeting]: Target @Selection (Role) [Quantity: 1]
 On Death: [Condition: @Target exists]

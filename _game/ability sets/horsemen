@@ -1,4 +1,4 @@
 **Horsemen** | Ability Set
-Passive: not (@(Align:!Horsemen,Class:!Unaligned,Attr:!Doomed) exists) and (not (@(Align:Horsemen,Group:!Horsemen) exists)): Role Change @Self to `Apocalyptic Horseman`
+Passive: (not (@(Align:!Horsemen,Class:!Unaligned,Attr:!Doomed) exists)) and (not (@(Align:Horsemen,Group:!Horsemen) exists)): Role Change @Self to `Apocalyptic Horseman`
 On Action [Applying]: Apply `HasDoomed` to @Self
 Passive Night Start: Remove `HasDoomed` from @Self

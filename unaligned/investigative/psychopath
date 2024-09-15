@@ -33,7 +33,7 @@ Passive:
 Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
 Passive Start Day: `Psychopath` Choice Creation (Investigate, Disguise)
-Immediate Day: `Psychopath` Choice Choosing @Chosen
+Immediate Day: `Psychopath` Choice Choose @Chosen
 Choice `Investigate` Chosen: Role Investigate @Selection (WD, SD)
 Choice `Disguise` Chosen: Weakly Disguise @Selection as @SecondarySelection (~NextNight)
 
