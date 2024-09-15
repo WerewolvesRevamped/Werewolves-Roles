@@ -1,0 +1,17 @@
+**Grave Robber** | Unaligned Align | Limited
+__Basics__
+The night after a player dies from a lynch, the Grave Robber may take their role and play as it for the rest of the game.
+__Details__
+The Grave Robber may take the role of a dead player who was lynched in any way the night immediately after. When the Grave Robber takes a role, they receive a new copy of the role and may/must execute any starting abilities necessary for the role. Copying a role is an immediate ability.
+If several players died from lynches during the day, the Grave Robber may pick one of them.
+Additionally, they are strongly disguised as a Grave Robber for the duration of the game, even if they change role.
+The Grave Robber cannot win without copying a role.
+
+__Simplified__
+The night after a player dies from a lynch, the Grave Robber may copy their role and play as it for the rest of the game. They are strongly disguised as Grave Robber even after they change role.
+
+__Formalized__
+On @All Death: @DeathType is `Lynch`: Apply `GraveRobberOption` to @This 
+Start Night:
+  • For Each @(AttrSelf:GraveRobberOption): Role Change @Self to @Ind->Role
+  • Remove `GraveRobberOption:Self` from @(AttrSelf:GraveRobberOption)
