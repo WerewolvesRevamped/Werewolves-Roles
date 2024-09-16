@@ -3,9 +3,10 @@ __Basics__
 Each night, the Apothecary may poison a player, killing them at the end of the next night. Alternatively, they may cure the player they last poisoned.
 __Details__
 The Apothecary starts the game with three flasks of poison and a single antidote.
-When the Apothecary poisons a player, that player will be killed at the end of the next night (this is not an attack). The Apothecary will only poison a player if they survive the night. 
+When the Apothecary poisons a player, that player will be killed at the end of the next night (this is not an attack). The Apothecary will only poison a player if the Apothecary survives the night. 
 Instead of poisoning a player, the Apothecary may also use their antidote to cure the player they have previously poisoned, saving them from death.
 Players are not notified of being poisoned or cured.
+If a targeted player dies the same night as being poisoned or cured, the flasks are not consumed.
 Both actions are immediate abilities.
 
 __Simplified__
