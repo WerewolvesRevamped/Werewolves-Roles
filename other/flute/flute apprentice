@@ -1,20 +1,21 @@
 **Flute Apprentice** | Solo Miscellaneous - Flute Team
 __Basics__
-The Flute Apprentice is a Flute Player that can’t enchant other players; instead, they can become the Flute Player if no Flute Players remain. Additionally, the Flute Apprentice can redirect the abilities of enchanted players.
+The Flute Apprentice is a Flute Player that can’t enchant other players; instead, they can become the Flute Player if no Flute Players remain. Additionally, the Flute Apprentice can redirect the abilities of enchanted and charmed players.
 __Details__
 The Flute Apprentice may target a player. They can update this target once per phase, with 1 emergency change to be used whenever the Flute Apprentice wants. The Flute Apprentice may choose to target nobody, which will stop their power from being used.
-If any player that is enchanted uses an ability on the Flute Apprentice, the ability is instead redirected onto the Flute Apprentice's target. The original player is not informed about this, but the Flute Apprentice is informed that an ability was redirected. 
+If any player that is enchanted or charmed uses an ability on the Flute Apprentice, the ability is instead redirected onto the Flute Apprentice's target. The original player is not informed about this, but the Flute Apprentice is informed that an ability was redirected. 
 If no Flute Players remain, the Flute Apprentice turns into a Flute Player and loses their redirection power.
 
 __Simplified__
 The Flute Apprentice becomes a Flute Player if none remain.
-Additionally, the Flute Apprentice can redirect the abilities of enchanted players to a target of their choosing.
+Additionally, the Flute Apprentice can redirect the abilities of enchanted and charmed players to a target of their choosing.
 
 __Formalized__
 Starting: Join #Flutes
 Immediate: Target @Selection (Player) 
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 Passive: Redirect `all` from @(Attr:Enchanted) to @Target [Condition: @Target exists]
+Passive: Redirect `all` from @(Attr:Charmed) to @Target [Condition: @Target exists]
 On Action [Redirecting]: Learn `An ability was redirected`
 Passive: not (@(Role:Flute-Player) exists): Role Change @Self to `Flute Player`
 
