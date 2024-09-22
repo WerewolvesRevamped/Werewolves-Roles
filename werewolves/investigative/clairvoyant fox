@@ -24,7 +24,7 @@ Choice `Investigate` Chosen:
     ‣ Apply `Marker` to @Self
     ‣ Feedback: @Result
 Passive Start Night: [Attribute: has `Marker`]
-  • Reveal `Clairvoyant Fox investigated a @Target` to #wolfpack
+  • Reveal `Clairvoyant Fox investigated a @Target[role]` to #wolfpack
   • Remove `Marker` from @Self
 
 __Card__
