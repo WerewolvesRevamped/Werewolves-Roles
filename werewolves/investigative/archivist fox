@@ -49,7 +49,7 @@ Choice `Investigate` Chosen:
       · @(AliveOnly:False,Attr:ArchivistOption) exists: Target @Selection (List: @(AliveOnly:False,Attr:ArchivistOption)->OriginalRole)
       · Otherwise: Target @Selection (List: `No Remaining Roles`)
     ◦ Passive Start Night:
-      · Reveal `ArchivistFox archived a @Target` to #wolfpack
+      · Reveal `An Archivist Fox has archived @Target[role]` to #wolfpack
       · Remove `ArchivistOption:Self` from @All
 
 __Card__
