@@ -634,6 +634,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 - `~UntilSecondUse`: Lasts until the attribute is used twice
 - `~Attribute`: Lasts as long as the originating attribute is applied, can only be used inside an attribute.
 - `~UntilUseAttribute`: Lasts until used (see `~UntilUse`) or until the originating attribute disappears (see `~Attribute`)
+- `~DelayedPhase`: Starts at the start of the phase and lasts until the end of that phase
 
 ----
 ----
