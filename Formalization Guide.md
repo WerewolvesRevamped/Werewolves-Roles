@@ -392,13 +392,10 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Quantity: <Value>`, may only used a maximum of `<Value>` times.
 - Condition Restrictions:
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
-<<<<<<< HEAD
-=======
 - (Living) Status Restriction:
   - `Status: Ghostly`, may only be used while ghostly
   - `Status: Any`, may be used while alive or ghostly
   - `Status: Alive`, may be used while alive only (default!)
->>>>>>> 24990808... Update Formalization Guide.md
  
 
 ----
