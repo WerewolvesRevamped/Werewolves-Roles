@@ -103,13 +103,15 @@ Some game values can be accessed from variables:
 ```
 **<Role Name>** | <Role Group> <Role Category> <Role Team>
 [Unique Role]
+[Haunted Role]
 [<Role Ability List> | No Abilities]
 ```
 - Role Name: May be anything  
 - Role Group: May be `Townsfolk`, `Werewolf`, `Solo`, `Unaligned` or `Extra`  
 - Role Category: May be `Elected`, `Align`, `Recruitment`, `Killing`, `Group`, `Investigative`, `Power` or `Miscellaneous`  
 - Role Team: Should be kept blank for any role group besides `Solo`, should be set to `- <Team Name>`, where `<Team Name>` is the name of a defined team
-- Unique Role: Set to `Unique Role` for unique roles, otherwise remove the line entirely 
+- Unique Role: Set to `Unique Role` for unique roles, otherwise remove the line entirely
+- Haunted Role: Set `Haunted Role` for roles that use ALL their ability while ghostly, otherwise remove the line entirely
 
 - Role Ability List: A newline separated list of `Abilities`
 
