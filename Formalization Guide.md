@@ -318,6 +318,8 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Quantity: <Value>`, may only used a maximum of `<Value>` times. You can use `calc()` in here.
 - Condition Restrictions:
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
+- Haunted Restriction:
+  - `Haunted`, may only be used while ghostly   
  
 
 ----
