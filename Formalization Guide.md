@@ -353,6 +353,9 @@ Trigger types can be one of the following:
 - `On Death` for an ability that triggers on death (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@AttackSource` to get the source of the attack)
 - `On <Target> Death` for an ability that triggers on the death of a certain target type (when several players are contained in the target, it triggers when *any* player from that target type dies) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@This` to reference the player that died, use `@AttackSource` to get the source of the attack)
 - `On Killed` for an ability that triggers when a player dies through a (true) kill or attack (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@AttackSource` to get the source of the attack). Differs from `On Death` in that it does not trigger on a lynch.
+- `On Banishment` equivalent to `On Killed` but for (true) banishments
+- `On Banished` equivalent to `On Death` for for banishments
+- `On <Target> Banished`, see `On <Target> Death` and `On Banished`
 - `On Visited [[<Ability Type>]]` for triggering when any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit). Triggers before any of the visits resulting abilities.
 - `On <Target> Visited [[<Ability Type>]]` for triggering when a certain target type is visited with any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) (use `@Visitor` within this trigger to reference the visitor, `@This` to reference the visited player, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit).  Triggers before any of the visits resulting abilities.
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`) (Use `@ActionTarget` to select the player the action is being used on, `@ActionResult` for the action's result)
@@ -645,7 +648,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 
 Format: `<Subtype> <Target>`
 
-- Subtypes: `Kill`, `Attack`, `Lynch` and `True Kill`
+- Subtypes: `Kill`, `Attack`, `Lynch`, `True Kill`, `Banish` and `True Banish`
 - Target: A target type, specifying who is getting killed
 
 ---
@@ -694,7 +697,7 @@ Format:
 `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`   
 
 - Target: A target type, specifying who is protected.
-- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches`, `Attacks & Lynches` or `All`
+- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches`, `Attacks & Lynches` or `All` (attacks/kills/lynches); `Banishments` in haunted mode
 - Selector: A target type, limits the protection to only work against certain players.
 - Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense`, `Partial Defense` or `Recruitment Defense`
   - Location: Either a channel (`#channelName`) or a target type
