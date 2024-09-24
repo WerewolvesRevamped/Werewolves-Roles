@@ -12,7 +12,9 @@ The Banshee is elected after the revenant and the poltergeist.
 They may decide to haunt a player, ability blocking them.
 
 __Formalized__
-TBD
+Haunted Role
+Immediate Day: Obstruct @Selection (~DelayedPhase)
+End Phase: Revoke `Banshee` from @Self
 
 __Card__
 The Banshee is elected to disrupt the living.
