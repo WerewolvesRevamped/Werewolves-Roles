@@ -10,6 +10,9 @@ The Grave Robber cannot win without copying a role.
 __Simplified__
 The night after a player dies from a lynch, the Grave Robber may copy their role and play as it for the rest of the game. They are strongly disguised as Grave Robber even after they change role.
 
+__Card__
+The Grave Robber robs not just graves, but also identities. 
+
 __Formalized__
 On @All Death: @DeathType is `Lynch`: Apply `GraveRobberOption` to @This 
 Start Night:
