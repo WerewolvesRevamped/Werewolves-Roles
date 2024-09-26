@@ -6,7 +6,7 @@ __Formalized__
 Starting:
   • Learn `You have been doomed.`
   • @ThisAttr->Value1 is `Famine`:
-    ‣ Process: randomize(@(OrigAlign:Horsemen,AliveOnly:False))
+    ‣ Process: @(OrigAlign:Horsemen,AliveOnly:False,SelectAll:False)
     ‣ Evaluate:
       ◦ @Result is `Horseman`: Strongly Disguise @Self as @Result->Target (~Persistent)
       ◦ Otherwise: Strongly Disguise @Self as @Result (~Persistent)

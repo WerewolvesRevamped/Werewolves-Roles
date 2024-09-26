@@ -29,7 +29,7 @@ Choice `Investigate` Chosen:
       · For Each @(AliveOnly:False,AttrSelf:!ArchivistSeen,OrigFullCat:@SecondarySelection):
         ⁃ Apply `ArchivistCandidate` to @Ind (2)
       · Process:
-        ⁃ randomize(@(Attr:ArchivistCandidate::1))
+        ⁃ @(Attr:ArchivistCandidate::1,SelectAll:False)
       · Evaluate:
         ⁃ @Result exists:
           ⹀ Learn `@Result->OriginalRole exists`
@@ -37,7 +37,7 @@ Choice `Investigate` Chosen:
           ⹀ Apply `ArchivistSeen` to @Result
         ⁃ Otherwise: Learn `No more @Selection exist`
       · Process:
-        ⁃ randomize(@(Attr:ArchivistCandidate::2))
+        ⁃ @(Attr:ArchivistCandidate::2,SelectAll:False)
       · Evaluate:
         ⁃ @Result exists:
           ⹀ Learn `@Result->OriginalRole exists`

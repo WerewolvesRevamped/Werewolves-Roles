@@ -15,7 +15,7 @@ Starting: Grant `Journal Holder` to @Self
 Immediate: Target @Selection (Role)
 On Action [Targeting]: Target @Selection (Role) [Quantity: 1]
 On Death: [Condition: @Target exists]
-  • Target randomize(@(Role:@Target))
+  • Target @(Role:@Target,SelectAll:False)
   • Transfer `Journal Holder` from @Self to @Target
 
 __Card__

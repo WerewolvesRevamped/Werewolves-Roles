@@ -21,7 +21,7 @@ On Lynch:
     ‣ Announce `Angel @Self killed @Attacker`
     ‣ Ascend
   • @OtherVoters exists: 
-    ‣ Target randomize(@OtherVoters) (Player)
+    ‣ Target @OtherVoters->RandomPlayer (Player)
     ‣ Kill @Target
     ‣ Announce `Angel @Self killed @Target`
     ‣ Ascend
