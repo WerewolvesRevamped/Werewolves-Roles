@@ -19,7 +19,7 @@ Starting:
   • For Each &All:
     ‣ @Ind->Members > `1`:
       ◦ Decrement Counter
-      ◦ Apply `PsychopathList` to randomize(@Ind->Members)
+      ◦ Apply `PsychopathList` to @Ind->Members->RandomPlayer
 Passive:
   • @Self->Counter > `0`:
     ‣ Decrement Counter
