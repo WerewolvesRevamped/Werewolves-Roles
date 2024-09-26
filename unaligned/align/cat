@@ -12,7 +12,7 @@ __Simplified__
 For each Cat, there is a corresponding dog. The Cat will become the opposite of the role the dog chose.
 
 __Formalized__
-Starting: Target randomize(@(Role:Dog))
+Starting: Target @(Role:Dog,SelectAll:False) (Player)
 Starting: Strongly Disguise @Self as `Cat` (~Persistent)
 Passive:
   • @Target->Role is `Fortune Teller`: Role Change @Self to `Warlock`
