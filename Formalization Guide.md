@@ -568,6 +568,7 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Value2`, to get the second custom value of an attribute
 - `<TargetType>->Members`, to get the members of a team
 - `<TargetType>->Attr(<Attribute>)`, to get a certain attribute of a player/team/group
+- `<TargetType>->RandomPlayer`, to get a random player out of a selector that may have several players
 
 Property access can be chained such as `@Target->Role->Category`
 
@@ -941,7 +942,6 @@ Utility functions apply an operation on an input.
 
 The following utility functions exist:
 
-- `randomize(<InputList>)`, randomize an input list and returns a single random element.
 - `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
 - `calc(<math>)`, allows math operations:
   - `floor(x)`, `ceil(x)`, `round(x)` - rounding
