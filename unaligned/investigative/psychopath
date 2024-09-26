@@ -23,7 +23,7 @@ Starting:
 Passive:
   • @Self->Counter > `0`:
     ‣ Decrement Counter
-    ‣ Apply `PsychopathList` to randomize(@(AttrSelf:!PsychopathList))
+    ‣ Apply `PsychopathList` to @(AttrSelf:!PsychopathList,SelectAll:False)
   • @Self->Counter is `0`:
     ‣ Remove `PsychopathList` from @Self
     ‣ Learn `shuffle(@(AttrSelf:PsychopathList))`
