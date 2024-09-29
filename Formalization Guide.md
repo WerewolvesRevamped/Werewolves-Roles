@@ -17,6 +17,9 @@
     - [Manipulation Attributes](#manipulation-attributes)
     - [Group Membership Attributes](#group-membership-attributes)
     - [Obstruction Attributes](#obstruction-attributes)
+    - [Poll Attributes](#poll-attributes)
+    - [Role Attributes](#role-attributes)
+    - [Whispering Attributes](#whispering-attributes)
   - [Custom Attributes](#custom-attributes)
 - [Counter](#counter)
 - [Abilities](#abilities)
@@ -255,6 +258,14 @@ Poll attributes have two or three additional values:
 
 Role attributes have one additional value:
 - Role: The role that is being added through the role attribute
+- 
+---
+#### Whispering Attributes
+
+Whispering attributes have three additional value. These are highly technical and are not useful for manipulation or access:
+- Connection Name: The name of the connection they belong to
+- Source Channel: Originating channel
+- Target Channel: Target channel
 
 ----
 ----
