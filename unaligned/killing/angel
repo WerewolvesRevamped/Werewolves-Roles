@@ -20,6 +20,11 @@ On Lynch:
     ‣ Kill @Attacker
     ‣ Announce `Angel @Self killed @Attacker`
     ‣ Ascend
+On Poll `Lynch` Win:
+  • (@OtherVoters exists) and (@Target exists) and (@Target is part of @OtherVotes): 
+    ‣ Kill @Target
+    ‣ Announce `Angel @Self killed @Target`
+    ‣ Ascend
   • @OtherVoters exists: 
     ‣ Target @OtherVoters->RandomPlayer (Player)
     ‣ Kill @Target
