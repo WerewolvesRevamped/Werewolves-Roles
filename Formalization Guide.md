@@ -20,6 +20,7 @@
     - [Poll Attributes](#poll-attributes)
     - [Role Attributes](#role-attributes)
     - [Whispering Attributes](#whispering-attributes)
+    - [Loyalty Attributes](#loyalty-attributes)
   - [Custom Attributes](#custom-attributes)
 - [Counter](#counter)
 - [Abilities](#abilities)
@@ -258,7 +259,7 @@ Poll attributes have two or three additional values:
 
 Role attributes have one additional value:
 - Role: The role that is being added through the role attribute
-- 
+
 ---
 #### Whispering Attributes
 
@@ -266,6 +267,13 @@ Whispering attributes have three additional value. These are highly technical an
 - Connection Name: The name of the connection they belong to
 - Source Channel: Originating channel
 - Target Channel: Target channel
+  
+---
+#### Loyalty Attributes
+
+Loyalty attributes have two additional value. 
+- Loyalty Subtype: Either "group" or "alignment" loyalty
+- Loyalty Target: The group or alignment the loyalty is towards
 
 ----
 ----
