@@ -13,4 +13,4 @@ On Poll Closed:
     ‣ Reveal `@Winner is @Result` to #Jury
     ‣ @Result->Alignment is not `Townsfolk`: Announce `Jury saw @Result`
 On @Members Death:
-  • count(@Members) < 2: Disband
+  • @Members->Count < 2: Disband
