@@ -588,6 +588,8 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Members`, to get the members of a team
 - `<TargetType>->Attr(<Attribute>)`, to get a certain attribute of a player/team/group
 - `<TargetType>->RandomPlayer`, to get a random player out of a selector that may have several players
+- `<TargetType>->MostFreqRole`, selects the most frequent role in a list of players or roles
+- `<TargetType>->Count`, returns the amount of values inside the target
 
 Property access can be chained such as `@Target->Role->Category`
 
@@ -965,7 +967,5 @@ The following utility functions exist:
 - `calc(<math>)`, allows math operations:
   - `floor(x)`, `ceil(x)`, `round(x)` - rounding
   - `a/b`, `a*b`, `a+b`, `a-b` - basic math
-- `most_freq_role(<Input List>)` - selects the most frequent role in a list of players or roles
-- `count(<List>)` - return the amount of values inside the list
 
 `<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@All`)
