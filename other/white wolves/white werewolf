@@ -20,7 +20,7 @@ Unique Role
 Inherit: `Pack Lycan`
 Starting: Apply `Wolfish` to @Self
 Starting:
-  • Target most_freq_role(@(Group:Wolfpack,Cat:!Group)) (Role)
+  • Target @(Group:Wolfpack,Cat:!Group)->MostFreqRole (Role)
   • Copy @Target
   • Strongly Disguise @Self as @Target->Role
 End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
