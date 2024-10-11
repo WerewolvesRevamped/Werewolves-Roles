@@ -16,12 +16,12 @@ __Formalized__
 Immediate: Target @Selection (Player)
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
 On Lynch:
-  • @Attacker exists: 
+  • (@Attacker exists) and (@Attacker is part of @All): 
     ‣ Kill @Attacker
     ‣ Announce `Angel @Self killed @Attacker`
     ‣ Ascend
 On Poll `Lynch` Win:
-  • (@OtherVoters exists) and (@Target exists) and (@Target is part of @OtherVotes): 
+  • (@OtherVoters exists) and (@Target exists) and (@Target is part of @OtherVoters): 
     ‣ Kill @Target
     ‣ Announce `Angel @Self killed @Target`
     ‣ Ascend
