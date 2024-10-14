@@ -16,7 +16,7 @@ __Formalized__
 I currently do not have enough time to update this formalization so let this comment be a syntax error and problem for future me.
 Starting:
   • Apply `Raven` to @Self
-  • Set Counter to calc(floor($total/3))
+  • Set Counter to floor $total/3
 Passive Start Night:
   @Self->Counter > `0`: `RavenAction` Choice Creation (Assign, Reassign)
   Otherwise: `RavenAction` Choice Creation (Reassign)

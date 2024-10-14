@@ -19,7 +19,7 @@ At the start of the second night after being contaminated, the player is informe
 The Plague Bearer wins when all other players are dead, unaligned or Plague Team.
 
 __Formalized__
-Starting: Increment Counter by calc(round($total/5)) for #Plague-Pit
+Starting: Increment Counter by round $total/5 for #Plague-Pit
 Immediate Night:
   • #Plague-Pit->Counter > 0:
     ‣ @Selection->Role is `Plague Doctor`: Kill @Selection
