@@ -912,7 +912,7 @@ Format:
 `Set Counter to <Value> for <Target>` (set a counter)  
 
 - Target: A target type, specifying who's counter to manipulate
-- Value: A numeric value specifying a new counter value
+- Value: A numeric value specifying a new counter value. Value may additionally also instead be of the following format: `[ceil|floor|round] <variable>/<number>`.
 
 ---
 #### Conversation Reset
@@ -965,8 +965,5 @@ Utility functions apply an operation on an input.
 The following utility functions exist:
 
 - `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
-- `calc(<math>)`, allows math operations:
-  - `floor(x)`, `ceil(x)`, `round(x)` - rounding
-  - `a/b`, `a*b`, `a+b`, `a-b` - basic math
 
 `<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@All`)
