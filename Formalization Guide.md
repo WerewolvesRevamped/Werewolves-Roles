@@ -362,7 +362,7 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Succession: No Succession`, may not be used in in succession
   - `Succession: No Target Succession`, may not be used successively on the same target 
 - Quantity Restrictions:
-  - `Quantity: <Value>`, may only used a maximum of `<Value>` times. You can use `calc()` in here.
+  - `Quantity: <Value>`, may only used a maximum of `<Value>` times.
 - Condition Restrictions:
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
  
