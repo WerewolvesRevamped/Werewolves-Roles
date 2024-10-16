@@ -380,8 +380,6 @@ May be one of the following:
   - `[$total|$living]<Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value.
 - Phase Specific Scaling: The amount of action usages depends on the phase:
   - `Odd: <Value>, Even: <Value>` to specify different multiplicities of ability use in even and odd phases. Set `<Value>` to one of the other scaling types, e.g. `Odd: x1, Even: x2`
-- Split Scaling: The action can be used several times as separate actions
-  - `*<Value>`, specify a number (`Value`) that determines how many times the action can be used
 
 ----
 #### Action Compulsion
