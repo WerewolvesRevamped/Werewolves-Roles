@@ -21,6 +21,7 @@
     - [Role Attributes](#role-attributes)
     - [Whispering Attributes](#whispering-attributes)
     - [Loyalty Attributes](#loyalty-attributes)
+    - [Redirection Attributes](#redirection-attributes)
   - [Custom Attributes](#custom-attributes)
 - [Counter](#counter)
 - [Abilities](#abilities)
@@ -274,6 +275,14 @@ Whispering attributes have three additional value. These are highly technical an
 Loyalty attributes have two additional value. 
 - Loyalty Subtype: Either "group" or "alignment" loyalty
 - Loyalty Target: The group or alignment the loyalty is towards
+  
+---
+#### Redirection Attributes
+
+Redirection attributes have three additional value. 
+- Redirection Target: The player that will be redirected to
+- Source Filter: A selector that is evaluated at *redirect* time and must contain the player who used the ability
+- Ability Type Filter: An ability type/subtype/category which must match/contain the ability that is to be redirected 
 
 ----
 ----
@@ -337,6 +346,7 @@ Trigger types can be one of the following:
 - `On Disbandment` for an ability that triggers when a group disbands
 - `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
 - `On [Active|Passive|Partial|Recruitment|Absence] Defense` for an ability that triggers when an active, passive, partial, recruitment or absence defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack, use `@KillingType` to get the type of killing that the defense blocked)
+- `On Redirect` for an ability that triggers when a redirect is used
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 - `On Poll Win` triggers when the current player wins any poll
@@ -692,14 +702,15 @@ As a result of an Applying the <Target> receives a custom attribute.
 #### Redirecting
 
 Format:  
-`Redirect '<Subtype>' to <Target>` (Redirect all player's abilities)  
-`Redirect '<Subtype>' from <Source> to <Target>` (Redirect only specific player's abilities)  
+`Redirect '<Subtype>' to <Target> (<Duration>)` (Redirect all player's abilities)  
+`Redirect '<Subtype>' from <Source> to <Target> (<Duration>)` (Redirect only specific player's abilities)  
 
-- Subtype: An ability type name, or `all` or `non-killing abilities`
+- Subtype: An ability (sub-)type name, or `all` or `non-killing abilities`
 - Target: A target type, specifying who to redirect to
 - Source: A target type, specifying abilities from which players should be redirected
+- Duration: A duration type, specifying for how long the redirect lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
-May be used in combination with a `Passive` trigger.
+As a result of a Redirection the current players receives a `Redirection` attribute.
 
 ---
 #### Vote Manipulating
