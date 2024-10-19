@@ -13,8 +13,8 @@ They will be informed when their ability is used.
 __Formalized__
 Immediate: Target @Selection (Player) 
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
-Passive: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target [Quantity: 1, Condition: @Target exists]
-On Action [Redirecting]: Learn `Redirect was used`
+Starting: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target (~UntilUse)
+On Redirect: Learn `Redirect was used`
 
 __Card__
 All the mirrors in the Assistant's house may one day help them confuse an unwanted intruder.
