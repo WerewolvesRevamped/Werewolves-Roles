@@ -21,6 +21,7 @@
     - [Role Attributes](#role-attributes)
     - [Whispering Attributes](#whispering-attributes)
     - [Loyalty Attributes](#loyalty-attributes)
+    - [Redirection Attributes](#redirection-attributes)
   - [Custom Attributes](#custom-attributes)
 - [Counter](#counter)
 - [Abilities](#abilities)
@@ -274,6 +275,14 @@ Whispering attributes have three additional value. These are highly technical an
 Loyalty attributes have two additional value. 
 - Loyalty Subtype: Either "group" or "alignment" loyalty
 - Loyalty Target: The group or alignment the loyalty is towards
+  
+---
+#### Redirection Attributes
+
+Redirection attributes have three additional value. 
+- Redirection Target: The player that will be redirected to
+- Source Filter: A selector that is evaluated at *redirect* time and must contain the player who used the ability
+- Ability Type Filter: An ability type/subtype/category which must match/contain the ability that is to be redirected 
 
 ----
 ----
@@ -692,14 +701,15 @@ As a result of an Applying the <Target> receives a custom attribute.
 #### Redirecting
 
 Format:  
-`Redirect '<Subtype>' to <Target>` (Redirect all player's abilities)  
-`Redirect '<Subtype>' from <Source> to <Target>` (Redirect only specific player's abilities)  
+`Redirect '<Subtype>' to <Target> (<Duration>)` (Redirect all player's abilities)  
+`Redirect '<Subtype>' from <Source> to <Target> (<Duration>)` (Redirect only specific player's abilities)  
 
-- Subtype: An ability type name, or `all` or `non-killing abilities`
+- Subtype: An ability (sub-)type name, or `all` or `non-killing abilities`
 - Target: A target type, specifying who to redirect to
 - Source: A target type, specifying abilities from which players should be redirected
+- Duration: A duration type, specifying for how long the redirect lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
-May be used in combination with a `Passive` trigger.
+As a result of a Redirection the current players receives a `Redirection` attribute.
 
 ---
 #### Vote Manipulating
