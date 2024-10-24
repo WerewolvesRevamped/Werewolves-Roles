@@ -346,7 +346,7 @@ Trigger types can be one of the following:
 - `On Disbandment` for an ability that triggers when a group disbands
 - `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
 - `On [Active|Passive|Partial|Recruitment|Absence] Defense` for an ability that triggers when an active, passive, partial, recruitment or absence defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack, use `@KillingType` to get the type of killing that the defense blocked)
-- `On Redirect` for an ability that triggers when a redirect is used
+- `On Redirect` for an ability that triggers when a redirect is used. (use `@Visitor` within this trigger to reference the visitor that was redirected)
 - `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
 - `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
 - `On Poll Win` triggers when the current player wins any poll
