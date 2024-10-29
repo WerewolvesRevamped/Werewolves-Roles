@@ -590,10 +590,10 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Counter`, to get the counter of a game element
 - `<TargetType>->Target`, to get the target of a game element
 - `<TargetType>->OriginalRole`, to get the original role(s) of a player
-- `<TargetType>->OwnerPlayer`, to get the owner player of an attribute
-- `<TargetType>->OwnerRole`, to get the owner role of an attribute
+- `<TargetType>->Source`, to get the source player of an attribute
 - `<TargetType>->Value1`, to get the first custom value of an attribute
 - `<TargetType>->Value2`, to get the second custom value of an attribute
+- `<TargetType>->Value3`, to get the second custom value of an attribute
 - `<TargetType>->Members`, to get the members of a team
 - `<TargetType>->Attr(<Attribute>)`, to get a certain attribute of a player/team/group
 - `<TargetType>->RandomPlayer`, to get a random player out of a selector that may have several players
