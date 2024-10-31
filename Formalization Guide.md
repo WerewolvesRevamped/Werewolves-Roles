@@ -344,13 +344,13 @@ Trigger types can be one of the following:
 - `On <Target> Visited [[<Ability Type>]]` for triggering when a certain target type is visited with any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) (use `@Visitor` within this trigger to reference the visitor, `@This` to reference the visited player, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit).  Triggers before any of the visits resulting abilities.
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`) (Use `@ActionTarget` to select the player the action is being used on, `@ActionResult` for the action's result)
 - `On Disbandment` for an ability that triggers when a group disbands
-- `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
+- `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack.
 - `On [Active|Passive|Partial|Recruitment|Absence] Defense` for an ability that triggers when an active, passive, partial, recruitment or absence defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack, use `@KillingType` to get the type of killing that the defense blocked)
 - `On Redirect` for an ability that triggers when a redirect is used. (use `@Visitor` within this trigger to reference the visitor that was redirected)
 - `On Betrayal` this trigger type can be used in groups to trigger when a player loyal to the group betrays it
-- `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
-- `On Poll Win` triggers when the current player wins any poll
-- `On Poll '<Name>' Win` triggers when the current player wins a poll with name `<Name>`
+- `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
+- `On Poll Win` triggers when the current player wins any poll. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
+- `On Poll '<Name>' Win` triggers when the current player wins a poll with name `<Name>`. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
 - `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
 - `On End` triggers when the game ends
@@ -562,7 +562,7 @@ These target types are only available in some contexts:
 - `@VisitParameter`: Set to an additional parameter from the visit in `On Visited` and `On <Target> Visited` triggers
 - `@Winner`: Set to the winner of the poll in `On Poll Closed` trigger
 - `@Chosen`: Set to the choice chosen in a choice chosing
-- `@Voters`: Set to all voters for the winning player in `On Lynch`
+- `@Voters`: Set to all voters for the winning player in `On Poll Win/Closed`
 - `@OtherVoters`: Same as `@Voters`, but excluding `@Self`
 - `@ThisAttr`: Set to the current attribute instance when inside an attribute
 - `@Chooser`: Set to the player who chose a choice through choice choosing in a choice inside of choice creations
