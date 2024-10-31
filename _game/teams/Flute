@@ -4,4 +4,4 @@ Members of this team win when all players are dead, unaligned, enchanted, or par
 
 __Formalized__
 Win Condition: @(Alignment:Flute-Team), @(Attribute:Enchanted), @(Class:Unaligned)
-Starting: Join #Flutes
+Starting: Add @Members to #Flutes
