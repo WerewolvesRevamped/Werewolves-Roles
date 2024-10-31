@@ -5,7 +5,6 @@ __Basics__
 __Formalized__
 Win Condition: @(Attr:Soulless), @(Class:Unaligned)
 Starting:
-  • Join #Hell
-  • Apply `Soulless` to @Self
-  • Increment Counter for `Hell`
-Passive: Loyalty to `Hell` (Alignment) 
+  • Add @Members to #Hell
+  • Apply `Soulless` to @Members
+  • Set Counter to @Members->Count for `Hell`
