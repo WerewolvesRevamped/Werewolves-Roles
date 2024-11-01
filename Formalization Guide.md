@@ -720,7 +720,7 @@ Format:
 `Manipulate <Target>'s '<Subtype>' by '<Value>' (<Duration>)` (relative manipulation)  
 
 - Target: A target type, specifying who is being manipulated
-- Subtype: `public voting power`, `special public voting power`, `private voting power` or `public starting votes` (also `lynch starting votes` and `election starting votes`)
+- Subtype: `public voting power`, `special public voting power` or `private voting power`
 - Value: A target type, specifying the amount of votes
 - Duration: A duration type, specifying for how long the vote manipulation lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
@@ -813,6 +813,7 @@ Format:
 `Cancel '<PollType>' Poll` (Cancel the poll's resulting ability)  
 `Delete '<PollType>' Poll` (Remove a poll that would otherwise exist)  
 `Manipulate '<PollType>' Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
+`Manipulate '<PollType>' Poll (<Target> has '<Number>' votes)` (Manipulate a poll's candidates)  
 
 - Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
 - Target: A target type, specifying which player should be manipulated on the poll
