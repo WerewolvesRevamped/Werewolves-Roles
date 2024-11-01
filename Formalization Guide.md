@@ -814,6 +814,7 @@ Format:
 `Delete '<PollType>' Poll` (Remove a poll that would otherwise exist)  
 `Manipulate '<PollType>' Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
 `Manipulate '<PollType>' Poll (<Target> has '<Number>' votes)` (Manipulate a poll's candidates)  
+`Manipulate '<PollType>' Poll (<Target> has '<Number>' hidden votes)` (Manipulate a poll's candidates)  
 
 - Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
 - Target: A target type, specifying which player should be manipulated on the poll
