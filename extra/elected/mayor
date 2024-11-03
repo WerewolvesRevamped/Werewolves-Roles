@@ -20,7 +20,6 @@ __Formalized__
 Immediate Night: Add `Lynch` Poll ⟨$living>15 ⇒ x1⟩
 Passive Start Day: Manipulate @Self's `special public voting power` to `1` (~Phase) ⟨$living≤15 ⇒ x1⟩
 End Phase: Revoke @ThisAttr from @Self |silent:granting.resign|
-Starting: Whisper to #story-time
 
 __Card__
 The Mayor is elected to lead the town.
