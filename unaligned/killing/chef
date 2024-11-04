@@ -21,7 +21,7 @@ __Formalized__
 Unique Role
 Starting:
   • For Each &All:
-    ‣ Apply `Waiter` to randomize(@Ind->Members)
+    ‣ Apply `Waiter` to @Ind->Members->RandomPlayer
 Start Day:
   • Grant `Restaurant Customer` to @Selection [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
   • Apply `FoodType` to @Selection (~NextNight) (@SecondarySelection[Poisoned,Charmed])

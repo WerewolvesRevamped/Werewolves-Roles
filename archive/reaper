@@ -31,10 +31,10 @@ On @All Death: Apply `ReaperPower` to @This (Inactive)
 Passive Start Night:
   • Remove `ReaperPower` from @(AliveOnly:False,Attr:ReaperPower:Active)
   • Change `ReaperPower` value `1` to `Active` for @(AliveOnly:False,Attr:ReaperPower)
-  • Learn `You may attack count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing)) players`
-  • Learn `You may investigate count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative)) players`
-  • Learn `You may recruit count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align)) players`
-  • Learn `You may turn count(@(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)) players sleepless`
+  • Learn `You may attack @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing)->Count players`
+  • Learn `You may investigate @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Investigative)->Count players`
+  • Learn `You may recruit @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Align)->Count players`
+  • Learn `You may turn @(AliveOnly:False,Attr:ReaperPower:Active,Cat:!Killing,Cat:!Investigative,Cat:!Align)->Count players sleepless`
 Immediate Night: [Condition: @(AliveOnly:False,Attr:ReaperPower:Active,Cat:Killing) exists] {Repeating}
   ‣ Apply `Sleepless` to @Selection (~Persistent)
   ‣ Attack @Selection

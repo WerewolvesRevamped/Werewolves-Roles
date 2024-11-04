@@ -23,7 +23,7 @@ Immediate Night:
   • Set Counter to 0
   • For Each @(Attr:DetectiveGuess):
     ‣ @Ind has `DetectiveGuess::@Ind->Role`: Increment Counter
-  • @Self->Counter is count(@All): Ascend
+  • @Self->Counter is @All->Count: Ascend
   • Otherwise: Learn `@Self->Counter correct guesses`
 
 __Card__

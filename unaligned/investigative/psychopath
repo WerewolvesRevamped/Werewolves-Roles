@@ -14,16 +14,16 @@ The Psychopath is strongly disguised as a role of their choosing. Additionally, 
 
 __Formalized__
 Starting:
-  • Set Counter to calc(ceil($total/3))
+  • Set Counter to ceil $total/3
   • Apply `PsychopathList` to @Self
   • For Each &All:
     ‣ @Ind->Members > `1`:
       ◦ Decrement Counter
-      ◦ Apply `PsychopathList` to randomize(@Ind->Members)
+      ◦ Apply `PsychopathList` to @Ind->Members->RandomPlayer
 Passive:
   • @Self->Counter > `0`:
     ‣ Decrement Counter
-    ‣ Apply `PsychopathList` to randomize(@(AttrSelf:!PsychopathList))
+    ‣ Apply `PsychopathList` to @(AttrSelf:!PsychopathList,SelectAll:False)
   • @Self->Counter is `0`:
     ‣ Remove `PsychopathList` from @Self
     ‣ Learn `shuffle(@(AttrSelf:PsychopathList))`

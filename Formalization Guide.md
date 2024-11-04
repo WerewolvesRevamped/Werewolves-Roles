@@ -17,6 +17,11 @@
     - [Manipulation Attributes](#manipulation-attributes)
     - [Group Membership Attributes](#group-membership-attributes)
     - [Obstruction Attributes](#obstruction-attributes)
+    - [Poll Attributes](#poll-attributes)
+    - [Role Attributes](#role-attributes)
+    - [Whispering Attributes](#whispering-attributes)
+    - [Loyalty Attributes](#loyalty-attributes)
+    - [Redirection Attributes](#redirection-attributes)
   - [Custom Attributes](#custom-attributes)
 - [Counter](#counter)
 - [Abilities](#abilities)
@@ -256,6 +261,29 @@ Poll attributes have two or three additional values:
 Role attributes have one additional value:
 - Role: The role that is being added through the role attribute
 
+---
+#### Whispering Attributes
+
+Whispering attributes have three additional value. These are highly technical and are not useful for manipulation or access:
+- Connection Name: The name of the connection they belong to
+- Source Channel: Originating channel
+- Target Channel: Target channel
+  
+---
+#### Loyalty Attributes
+
+Loyalty attributes have two additional value. 
+- Loyalty Subtype: Either "group" or "alignment" loyalty
+- Loyalty Target: The group or alignment the loyalty is towards
+  
+---
+#### Redirection Attributes
+
+Redirection attributes have three additional value. 
+- Redirection Target: The player that will be redirected to
+- Source Filter: A selector that is evaluated at *redirect* time and must contain the player who used the ability
+- Ability Type Filter: An ability type/subtype/category which must match/contain the ability that is to be redirected 
+
 ----
 ----
 ### Custom Attributes
@@ -316,11 +344,13 @@ Trigger types can be one of the following:
 - `On <Target> Visited [[<Ability Type>]]` for triggering when a certain target type is visited with any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) (use `@Visitor` within this trigger to reference the visitor, `@This` to reference the visited player, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit).  Triggers before any of the visits resulting abilities.
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`) (Use `@ActionTarget` to select the player the action is being used on, `@ActionResult` for the action's result)
 - `On Disbandment` for an ability that triggers when a group disbands
-- `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
+- `On Lynch` for an ability that triggers when a player is lynched (applies even if the lynch is avoided) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the lynch, use `@AttackSource` to get the source of the attack.
 - `On [Active|Passive|Partial|Recruitment|Absence] Defense` for an ability that triggers when an active, passive, partial, recruitment or absence defense is used (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the defense being used, use `@AttackSource` to get the source of the attack, use `@KillingType` to get the type of killing that the defense blocked)
-- `On Betrayal` this trigger type can be used in roles to trigger when a player betrays a group they are loyal to, it can be used in groups to trigger when a player loyal to the group betrays it
-- `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll.
-- `On Poll Win` triggers when the current player wins any poll
+- `On Redirect` for an ability that triggers when a redirect is used. (use `@Visitor` within this trigger to reference the visitor that was redirected)
+- `On Betrayal` this trigger type can be used in groups to trigger when a player loyal to the group betrays it
+- `On Poll Closed` triggers when a poll created by the current player/group/poll through poll creation is closed. `@Winner` can be used to reference the winner of the poll. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
+- `On Poll Win` triggers when the current player wins any poll. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
+- `On Poll '<Name>' Win` triggers when the current player wins a poll with name `<Name>`. Use `@Voters` to select all people that voted for the lynched player, `@OtherVoters` same as `@Voters` but excluding `@Self`)
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
 - `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
 - `On End` triggers when the game ends
@@ -342,7 +372,7 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Succession: No Succession`, may not be used in in succession
   - `Succession: No Target Succession`, may not be used successively on the same target 
 - Quantity Restrictions:
-  - `Quantity: <Value>`, may only used a maximum of `<Value>` times. You can use `calc()` in here.
+  - `Quantity: <Value>`, may only used a maximum of `<Value>` times.
 - Condition Restrictions:
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
  
@@ -360,8 +390,6 @@ May be one of the following:
   - `[$total|$living]<Comparison><Value> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Value` is a constant number specifying a player amount and `Count` is the amount of available uses. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value.
 - Phase Specific Scaling: The amount of action usages depends on the phase:
   - `Odd: <Value>, Even: <Value>` to specify different multiplicities of ability use in even and odd phases. Set `<Value>` to one of the other scaling types, e.g. `Odd: x1, Even: x2`
-- Split Scaling: The action can be used several times as separate actions
-  - `*<Value>`, specify a number (`Value`) that determines how many times the action can be used
 
 ----
 #### Action Compulsion
@@ -412,7 +440,9 @@ In some cases Process can be left out. Then evaluate doesn't have to be specifie
 As a first step all the abilities from the process step are evaluated, and their feedback is stored into `@Result<n>` values. (e.g. `@Result1` for the first ability). This feedback is not given to the player. In case of a single process step only, the result can be accessed through `@Result`.
 
 Afterwards, each evaluate line is evaluated.
-Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Several conditions may trigger together.
+Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Only a single conditions may trigger, further conditions are not evaluated.
+
+In some cases it is useful to use evaluate without any conditions. In this case all evaluate lines without a condition should be put before any conditions, and they will always be executed. If no condition is specified at all, the default behaivor is to return no feedback at all as usually the feedback of the succeeding condition is returned. This can be worked around by specifying a `Feedback: <Ability>` line (this is equal in effect to specifying a single `Otherwise` line, but sounds more appropriate).
 
 If only a single condition line with feedback "Success" is provided, an `Otherwise: Failure` line is implied.
 
@@ -510,7 +540,7 @@ Select living players by a certain attribute of them or their role.
 - `@(OrigRole:<Role>)`: Uses all players with a certain original role
 - `@(OrigAlign:<Alignment>)`: Uses all players with a certain original alignment
 - `@(AliveOnly:True)` / `@(AliveOnly:False)`: set to true by default, add this parameter as set to false to be able to access dead players too.
-- `@(SelectAll:True)` / `@(SelectAll:False)`: set to true by default, add this parameter as set to false to only retrieve a single player
+- `@(SelectAll:True)` / `@(SelectAll:False)`: set to true by default, add this parameter as set to false to only retrieve a single (random) player
 
 These advanced target types may also be combined by comma separating them, e.g. `@(Cat:<Category>,Align:<Alignment>)`  
 
@@ -532,7 +562,7 @@ These target types are only available in some contexts:
 - `@VisitParameter`: Set to an additional parameter from the visit in `On Visited` and `On <Target> Visited` triggers
 - `@Winner`: Set to the winner of the poll in `On Poll Closed` trigger
 - `@Chosen`: Set to the choice chosen in a choice chosing
-- `@Voters`: Set to all voters for the winning player in `On Lynch`
+- `@Voters`: Set to all voters for the winning player in `On Poll Win/Closed`
 - `@OtherVoters`: Same as `@Voters`, but excluding `@Self`
 - `@ThisAttr`: Set to the current attribute instance when inside an attribute
 - `@Chooser`: Set to the player who chose a choice through choice choosing in a choice inside of choice creations
@@ -560,12 +590,15 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Counter`, to get the counter of a game element
 - `<TargetType>->Target`, to get the target of a game element
 - `<TargetType>->OriginalRole`, to get the original role(s) of a player
-- `<TargetType>->OwnerPlayer`, to get the owner player of an attribute
-- `<TargetType>->OwnerRole`, to get the owner role of an attribute
+- `<TargetType>->Source`, to get the source player of an attribute
 - `<TargetType>->Value1`, to get the first custom value of an attribute
 - `<TargetType>->Value2`, to get the second custom value of an attribute
+- `<TargetType>->Value3`, to get the second custom value of an attribute
 - `<TargetType>->Members`, to get the members of a team
 - `<TargetType>->Attr(<Attribute>)`, to get a certain attribute of a player/team/group
+- `<TargetType>->RandomPlayer`, to get a random player out of a selector that may have several players
+- `<TargetType>->MostFreqRole`, selects the most frequent role in a list of players or roles
+- `<TargetType>->Count`, returns the amount of values inside the target
 
 Property access can be chained such as `@Target->Role->Category`
 
@@ -669,14 +702,15 @@ As a result of an Applying the <Target> receives a custom attribute.
 #### Redirecting
 
 Format:  
-`Redirect '<Subtype>' to <Target>` (Redirect all player's abilities)  
-`Redirect '<Subtype>' from <Source> to <Target>` (Redirect only specific player's abilities)  
+`Redirect '<Subtype>' to <Target> (<Duration>)` (Redirect all player's abilities)  
+`Redirect '<Subtype>' from <Source> to <Target> (<Duration>)` (Redirect only specific player's abilities)  
 
-- Subtype: An ability type name, or `all` or `non-killing abilities`
+- Subtype: An ability (sub-)type name, or `all` or `non-killing abilities`
 - Target: A target type, specifying who to redirect to
 - Source: A target type, specifying abilities from which players should be redirected
+- Duration: A duration type, specifying for how long the redirect lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
-May be used in combination with a `Passive` trigger.
+As a result of a Redirection the current players receives a `Redirection` attribute.
 
 ---
 #### Vote Manipulating
@@ -686,7 +720,7 @@ Format:
 `Manipulate <Target>'s '<Subtype>' by '<Value>' (<Duration>)` (relative manipulation)  
 
 - Target: A target type, specifying who is being manipulated
-- Subtype: `public voting power`, `special public voting power`, `private voting power` or `public starting votes` (also `lynch starting votes` and `election starting votes`)
+- Subtype: `public voting power`, `special public voting power` or `private voting power`
 - Value: A target type, specifying the amount of votes
 - Duration: A duration type, specifying for how long the vote manipulation lasts. Defaults to `~Permanent`, leave out if unnecessary.
 
@@ -779,6 +813,8 @@ Format:
 `Cancel '<PollType>' Poll` (Cancel the poll's resulting ability)  
 `Delete '<PollType>' Poll` (Remove a poll that would otherwise exist)  
 `Manipulate '<PollType>' Poll (<Target> is '<ManipulationType>')` (Manipulate a poll's candidates)  
+`Manipulate '<PollType>' Poll (<Target> has '<Number>' votes)` (Manipulate a poll's candidates)  
+`Manipulate '<PollType>' Poll (<Target> has '<Number>' hidden votes)` (Manipulate a poll's candidates)  
 
 - Poll Type: A type of poll. For example `Lynch`, `Election` or otherwise defined polls.
 - Target: A target type, specifying which player should be manipulated on the poll
@@ -887,7 +923,7 @@ Format:
 `Set Counter to <Value> for <Target>` (set a counter)  
 
 - Target: A target type, specifying who's counter to manipulate
-- Value: A numeric value specifying a new counter value
+- Value: A numeric value specifying a new counter value. Value may additionally also instead be of the following format: `[ceil|floor|round] <variable>/<number>`.
 
 ---
 #### Conversation Reset
@@ -939,12 +975,6 @@ Utility functions apply an operation on an input.
 
 The following utility functions exist:
 
-- `randomize(<InputList>)`, randomize an input list and returns a single random element.
 - `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
-- `calc(<math>)`, allows math operations:
-  - `floor(x)`, `ceil(x)`, `round(x)` - rounding
-  - `a/b`, `a*b`, `a+b`, `a-b` - basic math
-- `most_freq_role(<Input List>)` - selects the most frequent role in a list of players or roles
-- `count(<List>)` - return the amount of values inside the list
 
 `<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@All`)

@@ -15,11 +15,11 @@ If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt 
 __Simplified__
 Each night, the Plague Bearer may send a rodent to a player to give them the plague.
 Contaminated players can spread the plague through using actions and through actions being used on them.
-At the start of the second night after being contaminated, the player is informed that they are contaminated. At the end of that night they will die.
+At the start of the second night after being contaminated, the player is informed that they are contaminated. At the end of that night, they will die.
 The Plague Bearer wins when all other players are dead, unaligned or Plague Team.
 
 __Formalized__
-Starting: Increment Counter by calc(round($total/5)) for #Plague-Pit
+Starting: Increment Counter by round $total/5 for #Plague-Pit
 Immediate Night:
   • #Plague-Pit->Counter > 0:
     ‣ @Selection->Role is `Plague Doctor`: Kill @Selection

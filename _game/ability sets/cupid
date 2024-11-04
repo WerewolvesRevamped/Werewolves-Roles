@@ -13,7 +13,7 @@ Passive:
   • Otherwise: Alignment Change @Self to @All->Alignment
 On Visited [Role Change]:
   • Cancel with Success
-  • not (@Target exists): Target randomize(@All)
+  • not (@Target exists): Target @All->RandomPlayer
   • @VisitParameter is `Undead`: Role Change @Self to `Undead Cupid`
   • @VisitParameter is `Spirit`: Role Change @Self to `Spectral Cupid`
   • @VisitParameter is `Wolf`: Role Change @Self to `Cupid Wolf`

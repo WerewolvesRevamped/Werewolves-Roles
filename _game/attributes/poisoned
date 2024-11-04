@@ -3,4 +3,5 @@ __Basics__
 An attribute marking players that were poisoned by the apothecary in the previous night.
 
 __Formalized__
+Passive Start Day: Change `Poisoned` value `1` to `Active` for @ThisAttr
 Passive End Night: @ThisAttr->Value1 is `Active`: Kill @Self

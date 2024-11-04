@@ -17,7 +17,7 @@ Each night, the Plague Doctor may check one player for whether they have the pla
 The Plague Doctor cannot win whilst dead.
 
 __Formalized__
-Starting: Set Counter to calc(round($total/5))
+Starting: Set Counter to round $total/5
 Immediate Night:
   • (@Selection has `Contaminated`) and (@Selection->Alignment is not `Plague`):
     ‣ Learn `@Selection has had the plague since @Selection->Attr(Contaminated)->Value2`

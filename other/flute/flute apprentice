@@ -11,12 +11,13 @@ The Flute Apprentice becomes a Flute Player if none remain.
 Additionally, the Flute Apprentice can redirect the abilities of enchanted and charmed players to a target of their choosing.
 
 __Formalized__
-Starting: Join #Flutes
+Starting:
+  • Join #Flutes
+  • Redirect `all` from @(Attr:Enchanted) to @Target
+  • Redirect `all` from @(Attr:Charmed) to @Target
 Immediate: Target @Selection (Player) 
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
-Passive: Redirect `all` from @(Attr:Enchanted) to @Target [Condition: @Target exists]
-Passive: Redirect `all` from @(Attr:Charmed) to @Target [Condition: @Target exists]
-On Action [Redirecting]: Learn `An ability was redirected`
+On Redirect: Learn `An ability was redirected`
 Passive: not (@(Role:Flute-Player) exists): Role Change @Self to `Flute Player`
 
 __Card__

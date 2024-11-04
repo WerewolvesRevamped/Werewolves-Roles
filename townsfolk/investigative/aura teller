@@ -12,13 +12,13 @@ Each night, the Aura Teller may check a player. Lycans, and roles classified as 
 They are affected by strong disguises and redirections.
 
 __Formalized__
-Immediate Night: 
+Immediate Night: |investigating.role.1|
   • Process:
     ‣ Attribute Investigate @Selection for `Lycan` (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
     ‣ @Result1 is `Success`: `Threat`
-    ‣ @Result2 is `Killing`: `Threat`
+    ‣ @Result2 is `Killing`[category]: `Threat`
     ‣ Otherwise: `Not a Threat`
 
 __Card__

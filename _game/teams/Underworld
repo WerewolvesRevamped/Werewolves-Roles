@@ -4,4 +4,4 @@ Underworld Team wins when all players are dead, unaligned or part of the Underwo
 
 __Formalized__
 Win Condition: @(Alignment:Underworld), @(Class:Unaligned)
-Starting: Join #Underworld
+Starting: Add @Members to #Underworld

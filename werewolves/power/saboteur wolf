@@ -12,7 +12,7 @@ Each night, the Saboteur Wolf may select one player to disqualify from the next 
 
 __Formalized__
 Inherit: `Pack Lycan`
-Immediate Night: Manipulate `Lynch` Poll (@Selection is `Disqualified`) [Succession: No Target Succession]
+Immediate Night: Manipulate `Election` Poll (@Selection is `Disqualified`) [Succession: No Target Succession]
 
 __Card__
 The Saboteur Wolf has learnt to forge handwriting, faking resignation letters from election candidates.

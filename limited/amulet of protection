@@ -17,10 +17,23 @@ __Formalized__
 Starting:
   • Protect @Self from `Attacks` through Passive Defense during Night (~NextNight)
   • Apply `HeldAmulet` to @Self
-Passive Start Day: Untarget
-Immediate Day: ⟨*3⟩
-  • not (@Selection has `HeldAmulet`): Target @Selection
-  • Otherwise: `Failure`
+Passive Start Day:
+  • Untarget
+  • Set Counter to 3
+Immediate Day:
+  • not (@Selection has `HeldAmulet`):
+    ‣ Decrement Counter
+    ‣ Target @Selection
+  • Otherwise:
+    ‣ Decrement Counter
+    ‣ `Failure`
+On Action [Decrement Counting]: [Condition: @Self->Counter > 0]
+  • not (@Selection has `HeldAmulet`):
+    ‣ Decrement Counter
+    ‣ Target @Selection
+  • Otherwise:
+    ‣ Decrement Counter
+    ‣ `Failure`
 Passive End Day:
   • Conversation Reset
   • @Target exists: Transfer `Amulet of Protection` from @Self to @Target
