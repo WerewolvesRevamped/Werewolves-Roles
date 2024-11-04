@@ -1,17 +1,17 @@
 **Cleric** | Townsfolk Power | Limited
 __Basics__
-When all hope seems lost, with no elected roles remaining, the Cleric can once bless another player and themself, protecting them for the night.
+When all hope seems lost, with no mayor alive, the Cleric can once bless another player and themself, protecting them for the night.
 __Details__
-After Night 1, the Cleric may once per game bless a player at night. When they do so, they also bless themself. However, the Cleric may only use their powers if no elected roles exist. Blessing a player is an immediate ability.
+After Night 1, the Cleric may once per game bless a player at night. When they do so, they also bless themself. However, the Cleric may only use their powers if no mayor exists. Blessing a player is an immediate ability.
 When the Cleric blesses a player, they cannot be killed by any attacks throughout the rest of the night.
-If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
+If a blessed player evades an attack, the attacker is told "Your target survived because they were blessed".
 
 __Simplified__
-Once per game, at night, if there are no elected roles, the Cleric may bless another player and themself to protect them from any attacks for the remainder of the night.
+Once per game, at night, if there is no living mayor, the Cleric may bless another player and themself to protect them from any attacks for the remainder of the night.
 If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
 
 __Formalized__
-Immediate Night: [Quantity: 1, Condition: not ((@(Role:Mayor) exists) or (@(Role:Reporter) exists) or (@(Role:Guardian) exists))]
+Immediate Night: [Quantity: 1, Condition: not (@(Role:Mayor) exists)]
     • Protect @Selection from `Attacks` through Active Defense (~Phase)
     • Protect @Self from `Attacks` through Active Defense (~Phase)
     • Target @Selection
