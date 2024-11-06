@@ -14,6 +14,7 @@
   - [Standard Attributes](#standard-attributes)
     - [Disguise Attributes](#disguise-attributes)
     - [Defense Attributes](#defense-attributes)
+    - [Absence Attributes](#absence-attributes)
     - [Manipulation Attributes](#manipulation-attributes)
     - [Group Membership Attributes](#group-membership-attributes)
     - [Obstruction Attributes](#obstruction-attributes)
@@ -221,7 +222,16 @@ Defense attributes have four additional values:
 - Affected Players: A group of players for which the defense works (defaults to all players)
 - Affected Phase: Specifies if the defense is only active during day or night (defaults to both)
 
-A defense membership attribute can additionally be refered to by `Defense:<DefenseSubtype>`, e.g. `Defense:Absence`
+A defense membership attribute can additionally be refered to by `Defense:<DefenseSubtype>`, e.g. `Defense:Active`
+
+---
+#### Absence Attributes
+
+Absence attributes have four additional values:
+- Killing Subtype: Which type of killing is defended against
+- Affected Players: A group of players for which the defense works (defaults to all players)
+- Affected Phase: Specifies if the defense is only active during day or night (defaults to both)
+- Absence Location: Where the player is absent at
 
 ---
 #### Manipulation Attributes
