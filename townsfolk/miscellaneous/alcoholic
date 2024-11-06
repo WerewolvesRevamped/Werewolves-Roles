@@ -12,7 +12,7 @@ __Formalized__
 Require: `Bartender`
 Starting: Protect @Self from `Attacks` through Absence at #tavern during Night
 On @(Role:Bartender) Death:
-  • @(Role:Bartender)->Count is 1: Remove `Defense:Alcoholic` from @Self
+  • @(Role:Bartender)->Count is 1: Remove `Absence:Alcoholic` from @Self
 Passive End Night:
   • not (@(Role:Bartender) exists): Kill @Self
 
