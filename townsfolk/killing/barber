@@ -11,10 +11,8 @@ After Day 1, the Barber may once per game choose to immediately attack one playe
 
 __Formalized__
 Immediate Day: [Temporal: Day 2+, Quantity: 1]
-  • Process:
-    ‣ Attack @Selection 
-    ‣ Target @SecondarySelection (List: Reveal, NoReveal)
-  • Evaluate: (@Result is `Success`) and (@Target is `Reveal`): Announce `Barber @Self killed @Selection`
+  • Process: Attack @Selection 
+  • Evaluate: (@Result is `Success`) and (@SecondarySelection[boolean] is True): Announce `Barber @Self killed @Selection`
 
 __Card__
 The Barber dreams of one day making a big scene and killing that annoying client.
