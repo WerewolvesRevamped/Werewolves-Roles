@@ -13,15 +13,15 @@ The Alpha Wolf has two votes on the wolfpack poll. Additionally, the Alpha Wolf 
 
 __Formalized__
 Inherit: `Pack Lycan`
-Passive: Loyalty to `Werewolf` (Alignment)
-Starting: Manipulate @Self's `private voting power` to `2`
+Starting:
+  • Manipulate @Self's `private voting power` to `2`
+  • Loyalty to `Werewolf` (Alignment)
 End Night: [Quantity: 1]
   • Cancel `Wolfpack` Poll
   • Attack @Selection
-  • Target @Selection (List: Reveal, NoReveal) {Forced: NoReveal}
   • Evaluate:
-    ‣ @Target is `NoReveal`: Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
-    ‣ Otherwise: Reveal `@Self is Alpha Wolf` to #wolfpack
+    ‣ Reveal `Alpha Wolf attacked @Selection instead` to #wolfpack
+    ‣ @SecondarySelection[boolean] is True: Reveal `@Self is Alpha Wolf` to #wolfpack
 
 __Card__
 The Alpha Wolf is the leader of the wolfpack, overruling the other wolves when necessary.
