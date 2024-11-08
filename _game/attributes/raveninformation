@@ -4,5 +4,7 @@ A technical attribute utilized by the ravenkeeper.
 
 __Formalized__
 Passive End Phase:
-  • Reveal `shuffle(@ThisAttr->Source, @ThisAttr->Value1) visited each other` to @Self
-  • Remove @ThisAttr from @Self
+  • Process: Shuffle @ThisAttr->Source @ThisAttr->Value1
+  • Evaluate:
+    ‣ Reveal `@Result visited each other` to @Self
+    ‣ Remove @ThisAttr from @Self
