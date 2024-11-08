@@ -22,8 +22,8 @@ The Flute Player causes an obstruction that messes up investigate roles affected
 
 __Formalized__
 Starting: Whisper to #Enchanted as `Flute Player`
-Immediate Night: Apply `Enchanted` to @Selection ⟨$total/10⟩ [Condition: @(OrigRole:Flute-Player)->Count is `1`]
-Immediate Night: Apply `Enchanted` to @Selection ⟨$total/20⟩ [Condition: @(OrigRole:Flute-Player)->Count is `>1`]
+Immediate Night: Apply `Enchanted` to @Selection ⟨$total/10⟩ [Condition: @(OrigRole:Flute-Player)->Count is 1]
+Immediate Night: Apply `Enchanted` to @Selection ⟨$total/20⟩ [Condition: @(OrigRole:Flute-Player)->Count > 1]
 
 __Card__
 The Flute Player seeks an end to all the violence by enchanting everyone.
