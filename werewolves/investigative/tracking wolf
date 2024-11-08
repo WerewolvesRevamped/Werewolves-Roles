@@ -18,17 +18,17 @@ Immediate Night:
     ‣ Class Investigate @Selection (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
-    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Investigative`): `Major Threat`
-    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Killing`): `Major Threat`
-    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Power`): `Significant Threat`
-    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Group`): `Significant Threat`
-    ‣ (@Result1 is `Townsfolk`) and (@Result2 is `Miscellaneous`): `Slight Threat`
-    ‣ (@Result1 is `Solo`) and (@Result2 is `Investigative`): `Major Threat`
-    ‣ (@Result1 is `Solo`) and (@Result2 is `Killing`): `Major Threat`
-    ‣ (@Result1 is `Solo`) and (@Result2 is `Power`): `Significant Threat`
-    ‣ (@Result1 is `Solo`) and (@Result2 is `Group`): `Significant Threat`
-    ‣ (@Result1 is `Solo`) and (@Result2 is `Miscellaneous`): `Slight Threat`
-    ‣ (@Result1 is `Werewolf`) and (@Result2 is `Kiling`): `Slight Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Investigative[category]`): `Major Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Killing[category]`): `Major Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Power[category]`): `Significant Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Group[category]`): `Significant Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Miscellaneous[category]`): `Slight Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Investigative[category]`): `Major Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Killing[category]`): `Major Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Power[category]`): `Significant Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Group[category]`): `Significant Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Miscellaneous[category]`): `Slight Threat`
+    ‣ (@Result1 is `Werewolf[class]`) and (@Result2 is `Kiling[category]`): `Slight Threat`
     ‣ Otherwise: `No Threat`
 
 __Card__
