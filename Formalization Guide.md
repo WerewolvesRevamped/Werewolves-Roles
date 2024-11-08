@@ -343,7 +343,7 @@ If a single trigger does several abilities at once, they can be listed as part o
 #### Trigger Types
 
 Trigger types can be one of the following:
-- An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Start Phase`, `Immediate`) if the ability occurs in connection to an action. These are *always connected to an action*.
+- An Action Timing (`Start Night`, `End Night`, `Start Day`, `End Day`, `Immediate Night`, `Immediate Day`, `End Phase`, `Start Phase`, `Immediate`, `Pre-End Night`, `Pre-End Day`) if the ability occurs in connection to an action. These are *always connected to an action*. 
 - `Starting` for starting abilities
 - `Passive` triggers whenever a significant change occurs (game start, phase change, somebody dies/changes roles) and can be used with conditions that should theoretically be checked constantly 
 - `Passive [End Day|End Night|Start Day|Start Night|Start Phase|End Phase]` for abilities that passively/automatically trigger at the start or end of a phase. These occur at the same time as action timings from above, but *automatically*.
