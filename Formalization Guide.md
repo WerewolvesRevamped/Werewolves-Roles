@@ -62,8 +62,8 @@
     - [Conversation Reset](#conversation-reset)
     - [Cancel](#cancel)
     - [Switching](#switching)
+    - [Shuffle](#shuffle)
 - [Host Information](#host-information)
-- [Utility Functions](#utility-functions)
 
 ## Basics
 - `<Argument>`: Should be replaced by something. E.g. `<Argument>` ⇒ `Example`  
@@ -964,6 +964,15 @@ Format:
 Does a thief switch with another player.
 - Target: A target specifying who to switch with
 
+---
+#### Shuffle
+
+Format:  
+`Shuffle <Target> <Target>`  
+
+Shuffle 2-5 targets
+- Target: A target
+
 ## Host Information
 
 Host Information is specific information provided by the host and is part of the game setup, same as the role list.
@@ -978,13 +987,3 @@ Host Information comes in the following forms:
 - `%PartialRoleList%`, contains an arbitrary amount of information about the role list
 
 Use `%Role1%`, `%Role2%` / `%Player1%`, `%Player2`, etc when refering to several different host informations of the same type.
-
-## Utility Functions
-
-Utility functions apply an operation on an input.
-
-The following utility functions exist:
-
-- `shuffle(<InputList>`, shuffles an input list and returned the entire shuffled list
-
-`<InputList>` can be a comma separated list of inputs (`A,B,C`) or a target type (e.g. `@All`)
