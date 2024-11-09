@@ -12,7 +12,7 @@ Inherit: `Pack Lycan`
 Immediate Night:
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate: 
-    ‣ @Result is @SecondarySelection: `Correct`
+    ‣ @Result is @SecondarySelection[role]: `Correct`
     ‣ Otherwise: `Incorrect`
 
 __Card__
