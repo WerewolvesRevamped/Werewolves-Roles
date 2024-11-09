@@ -20,12 +20,11 @@ The Plague Bearer wins when all other players are dead, unaligned or Plague Team
 
 __Formalized__
 Starting: Increment Counter by round $total/5 for #Plague-Pit
-Immediate Night:
-  • #Plague-Pit->Counter > 0:
-    ‣ @Selection->Role is `Plague Doctor`: Kill @Selection
-    ‣ Otherwise:
-      ◦ Apply `Contaminated` to @Selection (~Persistent) (EarlyStage, $phase)
-      ◦ Decrement Counter for `Plague Team`
+Immediate Night: [Condition: #Plague-Pit->Counter > 0]
+  • @Selection->Role is `Plague Doctor`: Kill @Selection
+  • Otherwise:
+    ‣ Apply `Contaminated` to @Selection (~Persistent) (EarlyStage, $phase)
+    ‣ Decrement Counter for `Plague Team`
 
 __Card__
 A contagious disease spreads through the rodents that the Plague Bearer releases.
