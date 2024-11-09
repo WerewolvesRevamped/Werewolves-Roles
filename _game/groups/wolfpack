@@ -30,8 +30,11 @@ __Formalized__
 Unique Group
 Passive Start Night: Create `Wolfpack` Poll in #wolfpack
 On Poll Closed:
-  • Remove `CoyoteTrigger` from &Werewolf
-  • Process: Attack @Winner
+  • Process:
+    ‣ Attack @Winner
+    ‣ Remove `CoyoteTrigger` from &Werewolf
   • Evaluate:
-    ‣ Reveal `@Executor is attacking - @Result` to #Wolfpack
-    ‣ (@Result is `Failure`) or (@Winner->Alignment is not `Townsfolk`[alignment]): Apply `CoyoteTrigger` to &Werewolf
+    ‣ (@Result is `Failure`) or (@Winner->Alignment is not `Townsfolk`[alignment]):
+      ◦ Apply `CoyoteTrigger` to &Werewolf
+      ◦ Reveal `@Executor is attacking - @Result` to #Wolfpack
+    ‣ Otherwise: Reveal `@Executor is attacking - @Result` to #Wolfpack
