@@ -11,9 +11,7 @@ Once per game, if attacked by the werewolves, the Runner will escape.
 
 __Formalized__
 Starting: Protect @Self from `Attacks` by @(Attr:Wolfish) through Passive Defense during Night (~UntilUse)
-On Passive Defense:
-  • @AttackSource is `Group:Wolfpack`[source]: Reveal `@Self is Runner and ran away` to #wolfpack
-  • Otherwise: Reveal `@Self is Runner and ran away` to @Attacker
+On Passive Defense: Reveal `@Self is Runner and ran away` to @AttackLocation
 
 __Card__
 The Runner is fast enough to outrun a wolf, but the wolf wins when it comes to stamina.

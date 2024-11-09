@@ -563,6 +563,7 @@ These target types are only available in some contexts:
 - `@ActionAbilityType`, `@ActionFeedback`: Provides an action's ability type and its feeback in the `On Action` trigger
 - `@Members`: Uses all players that are part of the current group or team
 - `@Attacker`: Uses the attacker/killers in `On Death`, `On <Target> Death`, `On Killed`, `On Defense` and `On Lynch` triggers
+- `@AttackLocation`: Either `@Attacker` or `@AttackSource` depending on which has a corresponding location
 - `@AttackSource`: Specifies where the attack came from. Uses the format `<SourceType>:<Source>`, so e.g. `Group:Wolfpack` for a wolfpack attack or `Role:Assassin` for the assassin attack. Available in `On Death`, `On <Target> Death`, `On Killed`, `On Defense` and `On Lynch` triggers. In cases of an attack originating from a poll or choice it specifies the creator of the poll/choice.
 - `@DeathType`: Set to the type of death in `On Death` and `On <Target> Death` triggers
 - `@KillingType`: Set to the type of killing in `On Defense` and `On <Type> Defense` triggers
