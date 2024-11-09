@@ -12,10 +12,10 @@ The Ranger may select a player to reveal with their dying breath. Both their tar
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
 On Killed: [Condition: @Target exists]
   • Process: Role Investigate @Target (SD)
-  • Evaluate: Reveal `Ranger @Self reveals @Target as @Result` to #story_time
+  • Evaluate: Announce `Ranger @Self reveals @Target as @Result->Role`
 
 __Card__
 The Ranger keeps information that is revealed when they die.
