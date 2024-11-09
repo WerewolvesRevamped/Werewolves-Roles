@@ -12,7 +12,7 @@ Once per game, if attacked by the werewolves, the Runner will escape.
 __Formalized__
 Starting: Protect @Self from `Attacks` by @(Attr:Wolfish) through Passive Defense during Night (~UntilUse)
 On Passive Defense:
-  • @AttackSource is `Group:Wolfpack`: Reveal `@Self ran away` to #wolfpack
+  • @AttackSource is `Group:Wolfpack`[source]: Reveal `@Self ran away` to #wolfpack
   • Otherwise: Reveal `@Self ran away` to @Attacker
 
 __Card__
