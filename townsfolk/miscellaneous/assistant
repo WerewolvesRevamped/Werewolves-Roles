@@ -12,7 +12,7 @@ They will be informed when their ability is used.
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
 Starting: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target (~UntilUse)
 On Redirect: Learn `Redirect was used`
 
