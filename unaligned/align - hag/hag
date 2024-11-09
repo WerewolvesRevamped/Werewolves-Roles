@@ -13,15 +13,18 @@ The Hag can win with any team, unless that team has wronged the coven, but canno
 The Hag will turn into a specific type of hag at the end of the day.
 
 __Formalized__
-Starting: Set Counter to %0|1|2|3|4|5%
-Immediate Day: Target @Role (List: Vicious Hag, Cautious Hag, Prophetic Hag)
+Starting:
+  • Set Counter to %Number%
+  • `Hag` Choice Creation (Vicious, Cautious, Prophetic)
+Immediate Day: `Hag` Choice Choose @Chosen
+Choice Chosen: Target @Chosen (Option)
 Passive End Day: [Temporal: Day 0]
-  • (@Target is `Vicious Hag`) and (@Self->Counter < 3): Role Change @Self to `Cautious Hag`
-  • (@Target is `Vicious Hag`) and (@Self->Counter > 2): Role Change @Self to `Prophetic Hag`
-  • (@Target is `Cautious Hag`) and (@Self->Counter < 3): Role Change @Self to `Vicious Hag`
-  • (@Target is `Cautious Hag`) and (@Self->Counter > 2): Role Change @Self to `Prophetic Hag`
-  • (@Target is `Prophetic Hag`) and (@Self->Counter < 3): Role Change @Self to `Vicious Hag`
-  • (@Target is `Prophetic Hag`) and (@Self->Counter > 2): Role Change @Self to `Cautious Hag`
+  • (@Target[role] is `Vicious Hag`) and (@Self->Counter < 3): Role Change @Self to `Cautious Hag`
+  • (@Target[role] is `Vicious Hag`) and (@Self->Counter > 2): Role Change @Self to `Prophetic Hag`
+  • (@Target[role] is `Cautious Hag`) and (@Self->Counter < 3): Role Change @Self to `Vicious Hag`
+  • (@Target[role] is `Cautious Hag`) and (@Self->Counter > 2): Role Change @Self to `Prophetic Hag`
+  • (@Target[role] is `Prophetic Hag`) and (@Self->Counter < 3): Role Change @Self to `Vicious Hag`
+  • (@Target[role] is `Prophetic Hag`) and (@Self->Counter > 2): Role Change @Self to `Cautious Hag`
   • @Self->Counter < 2: Role Change @Self to `Vicious Hag`
   • @Self->Counter < 4: Role Change @Self to `Cautious Hag`
   • Otherwise: Role Change @Self to `Prophetic Hag`
