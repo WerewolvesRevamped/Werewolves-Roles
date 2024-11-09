@@ -9,7 +9,7 @@ __Simplified__
 The Town Crier learns the role of another townsfolk at the start of Night 1.
 
 __Formalized__
-Starting: Target `%Player:@(Align:Townsfolk)%` (Player)
+Starting: Target %Player% (Player)
 Passive Start Night: Learn `@Target is @Target->Role` [Temporal: Night 1]
 
 __Card__
