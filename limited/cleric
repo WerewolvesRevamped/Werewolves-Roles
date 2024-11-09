@@ -11,9 +11,9 @@ Once per game, at night, if there is no living mayor, the Cleric may bless anoth
 If a blessed player evades an attack, the attacker is told it was due to their target being blessed.
 
 __Formalized__
-Immediate Night: [Quantity: 1, Condition: not (@(Role:Mayor) exists)]
+Immediate Night: [Quantity: 1, Condition: not (@(AttrRole:Mayor) exists)]
     • Protect @Selection from `Attacks` through Active Defense (~Phase)
     • Protect @Self from `Attacks` through Active Defense (~Phase)
     • Target @Selection
-Passive Start Day: Untarget
-On @Target Visited [Killing]: Reveal `@Target survived because they were blessed` to @Attacker
+Passive Start Day: Process: Untarget
+On Active Defense: Reveal `@Target survived because they were blessed` to @AttackLocation
