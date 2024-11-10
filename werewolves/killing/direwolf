@@ -10,7 +10,7 @@ The Direwolf may attack two people every night if they are the last player left 
 
 __Formalized__
 Inherit: `Pack Lycan`
-End Night: Attack @Selection [Condition: #Wolfpack->Members->Count is `1`]
+End Night: Attack @Selection [Condition: #Wolfpack->Members->Count is 1]
 
 __Card__
 Should all wolves but the Direwolf fall, their rage is unleashed.
