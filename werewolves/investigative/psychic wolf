@@ -9,7 +9,7 @@ Each night, the Psychic Wolf may guess one player's role, and if their guess is 
 
 __Formalized__
 Inherit: `Pack Lycan`
-Immediate Night:
+Immediate Night: |psychic_wolf.1|
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate: 
     ‣ @Result is @SecondarySelection[role]: `Correct`
