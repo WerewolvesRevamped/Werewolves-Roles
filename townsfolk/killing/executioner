@@ -12,7 +12,7 @@ After Day 1, whenever the Executioner is chosen to be lynched, it will be preven
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
 Starting: Protect @Self from `Lynches` through Passive Defense (~UntilUse)
 On Passive Defense:
   • Process: Lynch @Target
