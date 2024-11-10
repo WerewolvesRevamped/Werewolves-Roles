@@ -13,7 +13,7 @@ The Fletcher's Customer is an extra role that doesn't replace the player's curre
 
 __Formalized__
 Immediate: Target @Selection (Player) 
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
 On Killed: [Condition: @Target exists]
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Announce `Fletcher's Customer @Self killed @Target`
