@@ -14,7 +14,7 @@ The Angel may select a player that dies when the Angel is lynched, but only if t
 
 __Formalized__
 Immediate: Target @Selection (Player)
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
 On Lynch:
   • (@Attacker exists) and (@Attacker is part of @All): 
     ‣ Kill @Attacker
