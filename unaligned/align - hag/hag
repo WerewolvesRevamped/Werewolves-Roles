@@ -17,7 +17,7 @@ Starting:
   • Set Counter to %Number%
   • `Hag` Choice Creation (Vicious, Cautious, Prophetic)
 Immediate Day: `Hag` Choice Choose @Chosen
-Choice Chosen: Target @Chosen (Option)
+Choice Chosen: Target @Option (Role)
 Passive End Day: [Temporal: Day 0]
   • (@Target[role] is `Vicious Hag`) and (@Self->Counter < 3): Role Change @Self to `Cautious Hag`
   • (@Target[role] is `Vicious Hag`) and (@Self->Counter > 2): Role Change @Self to `Prophetic Hag`
