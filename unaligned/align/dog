@@ -18,7 +18,7 @@ Starting:
 Immediate Night: `Dog` Choice Choose @Chosen {Forced: Fortune Teller}
 Choice Chosen:
   • Obstruct Investigating for @Self (~Phase)
-  • Role Change @Self to @Chosen
+  • Role Change @Self to @ChosenOption
 
 __Card__
 Dogs and cats have always been enemies. They'll always want to beat eachother.
