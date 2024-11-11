@@ -11,8 +11,9 @@ __Simplified__
 During Day 0, the Fletcher must select a target. As long as the Fletcher is alive, the target will have the abilities of a huntress.
 
 __Formalized__
-Immediate Day: Grant `Fletcher's Customer` to @Selection [Quantity: 1, Temporal: Day 0, Condition: @Selection is not @Self] {Forced}
-On Action [Add Granting]: Target @Target (Player)
+Immediate Day: [Quantity: 1, Temporal: Day 0, Condition: @Selection is not @Self] {Forced}
+  • Grant `Fletcher's Customer` to @Selection
+  • Target @Selection (Player)
 Immediate: Revoke `Fletcher's Customer` from @Target [Quantity: 1, Temporal: Night 1+, Condition: @Target exists]
 
 __Card__
