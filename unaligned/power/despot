@@ -1,4 +1,4 @@
-**Despot** | Unaligned Miscellaneous
+**Despot** | Unaligned Power
 __Basics__
 If the Despot is elected, they win. The next day, the election will be cancelled.
 __Details__
@@ -14,6 +14,8 @@ On Poll Win:
   • @Self is part of @(AttrRole:Mayor):
     ‣ Ascend
     ‣ Delete `Election` Poll
+Immediate: Strongly Disguise @Self as @Selection
+On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
 
 __Card__
 The Despot wants all the attention for themself.
