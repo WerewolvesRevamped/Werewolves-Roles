@@ -21,7 +21,7 @@ Immediate Night:
     ‣ Apply `OracleSelected` to @Selection
     ‣ Apply `OracleSelected` to @SecondarySelection
   • Evaluate:
-    ‣ @Result1 is @Result2: `Same Alignment`
+    ‣ @Result1[alignment] is @Result2[alignment]: `Same Alignment`
     ‣ Otherwise: `Different Alignment`
 
 __Card__
