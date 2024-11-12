@@ -22,10 +22,10 @@ Immediate Night:
   • Add @Selection to #Grandma's-House (~NextDay)
   • Add @SecondarySelection to #Grandma's-House (~NextDay)
   • Evaluate:
-    ‣ @Selection->PublicVotingPower > `0`: Manipulate @Selection's `public voting power` by `-1` (~NextDay)
+    ‣ @Selection->PublicVotingPower > 0: Manipulate @Selection's `public voting power` by `-1` (~NextDay)
     ‣ Otherwise: Learn `@Selection could not be manipulated`
   • Evaluate:
-    ‣ @SecondarySelection->PublicVotingPower > `0`: Manipulate @SecondarySelection's `public voting power` by `-1` (~NextDay)
+    ‣ @SecondarySelection->PublicVotingPower > 0: Manipulate @SecondarySelection's `public voting power` by `-1` (~NextDay)
     ‣ Otherwise:  Learn `@SecondarySelection could not be manipulated`
 
 __Card__
