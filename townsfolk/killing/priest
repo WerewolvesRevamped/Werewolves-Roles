@@ -15,7 +15,7 @@ End Night:
     ‣ @Selection->Alignment
   • Evaluate:
     ‣ @Result1 exists: Attack @Selection
-    ‣ @Result2 is `Townsfolk`: True Kill @Self
+    ‣ @Result2 is `Townsfolk`[alignment]: True Kill @Self
     ‣ Otherwise: `Failure`
 
 __Card__
