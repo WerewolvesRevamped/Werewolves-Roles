@@ -12,10 +12,11 @@ Each night, the Medium may ask the dead players a yes or no question.
 The dead players will be able to vote during the day, and when it ends the Medium learns the result, but not who voted what.
 
 __Formalized__
-Passive Start Night: Join #Medium-Question:@Self
+Unique Role
+Passive Start Night: Join #Medium-Question
 Passive Start Day:
-  • Leave #Medium-Question:@Self
-  • Create `Medium` Poll in #Medium-Question:@Self
+  • Leave #Medium-Question
+  • Create `Medium` Poll in #Medium-Question
 
 __Card__
 The Medium attempts to communicate with the dead - with limited success.

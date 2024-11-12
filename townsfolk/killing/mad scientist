@@ -17,7 +17,9 @@ Starting:
   • Grant `Test Subject` to %Player1% 
   • Grant `Test Subject` to %Player2% 
   • Join #Laboratory
-Immediate: Target @Selection (Player) [Attribute: @Selection has `Test Subject`] {Forced}
+  • Process: Shuffle %Player1% %Player2% 
+  • Evaluate: Target @Result (Player)
+Immediate: Target @Selection (Player) [Attribute: @Selection has `Test Subject`]
 On Death: 
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed @Target`

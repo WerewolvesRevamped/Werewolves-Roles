@@ -10,8 +10,8 @@ __Simplified__
 After Day 1, the Royal Knight may cancel the lynch once.
 
 __Formalized__
-Immediate:
-  • Cancel `Lynch` Poll [Quantity: 1, Temporal: Night 2+]
+Immediate: [Quantity: 1, Temporal: Night 2+]
+  • Cancel `Lynch` Poll
   • Apply `Marker` to @Self
 End Day: [Attribute: has `Marker`]
   • Announce `Royal Knight @Self cancelled lynch`
