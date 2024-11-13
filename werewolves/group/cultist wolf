@@ -10,7 +10,9 @@ __Simplified__
 The Cultist Wolf is a wolfpack member who is a part of the cult.
 
 __Formalized__
-TBD
+Starting:
+  • Join #Cult
+  • Strongly Disguise @Self as @Self->OrigRole
 
 __Card__
 The Cultist Wolf leads a double life and gets the benefit of listening along with the enemy.
