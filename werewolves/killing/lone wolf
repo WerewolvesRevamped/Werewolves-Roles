@@ -15,11 +15,11 @@ __Formalized__
 Inherit: `Lycan`
 End Night:
   • Process: 
-    ‣ Alignment Investigate @Selection
-    ‣ Attribute Investigate @Selection for `Wolfish`
+    ‣ @Selection->Alignment
+    ‣ @Selection->Attr(Wolfish)
   • Evaluate:
     ‣ @Result1 is `Townsfolk`: Attack @Selection
-    ‣ @Result2 is `Success`: Kill @Self
+    ‣ @Result2 exists: Kill @Self
     ‣ Otherwise: `Failure`
 On @(Group:Wolfpack) Death: Role Change @Self to `Wolf`
 
