@@ -10,7 +10,7 @@ When a corrupt wolf corrupts a player, that player becomes Corrupted until the e
 __Formalized__
 Passive End Day:
   • Conversation Reset
-  • Revoke `Corrupted` from @Self
+  • Revoke @ThisAttr from @Self
 On Death: Conversation Reset
 
 __Card__
