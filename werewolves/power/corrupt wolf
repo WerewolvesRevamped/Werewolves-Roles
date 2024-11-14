@@ -15,9 +15,10 @@ Additionally, the Corrupt Wolf can anonymously talk to their target.
 __Formalized__
 Inherit: `Pack Lycan`
 Immediate Night: [Condition: (@SecondarySelection > -2) and (@SecondarySelection < 3)] {Direct}
+  • Conversation Reset `Corrupted`
   • Grant `Corrupted` to @Selection
   • Manipulate @Selection's `public voting power` to @SecondarySelection (~NextDay)
-  • Whisper to #Corrupted as `Corrupt Wolf` (~Phase)
+  • Whisper to `Corrupted` as `Corrupt Wolf` (~Phase)
 
 __Card__
 Quietly stealing vote ballots is the Corrupt Wolf's favorite pastime.
