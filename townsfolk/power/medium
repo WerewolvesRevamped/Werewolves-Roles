@@ -13,8 +13,8 @@ The dead players will be able to vote during the day, and when it ends the Mediu
 
 __Formalized__
 Unique Role
-Passive Start Night: Join #Medium-Question
-Passive Start Day:
+Passive Start Night: Join #Medium-Question [Temporal: Night 2+]
+Passive Start Day: [Temporal: Day 1+]
   • Leave #Medium-Question
   • Create `Medium` Poll in #Medium-Question
 
