@@ -16,15 +16,15 @@ Once per game, the Disguised Fox may alternatively give up their power and join 
 
 __Formalized__
 Passive Start Day: `Fox` Choice Creation (Join Pack, Disguise Self)
+Immediate Day: `Fox` Choice Choose @Chosen |disguised_fox.1|
 Choice `Join Pack` Chosen: Role Change @Self to `Wolf`
 Choice `Disguise Self` Chosen:
   • Strongly Disguise @Self as @Selection (~NextNight)
   • Target @Selection (Role)
   • Apply `Marker` to @Self
 Passive Start Night: [Attribute: has `Marker`]
-  • Reveal `A Disguised Fox has disguised themselves as @Target[role]` to #wolfpack
   • Remove `Marker` from @Self
-Immediate Day: `Fox` Choice Choose @Chosen
+  • Reveal `A Disguised Fox has disguised themselves as @Target[role]` to #wolfpack
 
 __Card__
 The Disguise Fox alters its appearance, hoping the wolfpack will one day find them.
