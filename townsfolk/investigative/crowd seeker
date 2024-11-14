@@ -12,9 +12,11 @@ This is affected by weak disguises and redirections.
 
 __Formalized__
 Immediate Night: 
-  • Action: ⟨x3⟩
+  • Action: ⟨x3⟩ |crowd_seeker.1|
   • Process: Role Investigate @Selection (SD, WD)
-  • Evaluate: @Result is @SecondarySelection[role]: `Success`
+  • Evaluate:
+    ‣ @Result is @SecondarySelection[role]: `@Selection as @SecondarySelection[role] - Correct`
+    ‣ Otherwise: `@Selection as @SecondarySelection[role] - Incorrect`
 
 __Card__
 The Crowd Seeker attempts to find out if their neighbors truly are who they claim to be.
