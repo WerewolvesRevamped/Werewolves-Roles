@@ -15,17 +15,17 @@ Once per game, the Clairvoyant Fox may alternatively give up their power and joi
 
 __Formalized__
 Passive Start Day: `Fox` Choice Creation (Join Pack, Investigate)
-Immediate Day: `Fox` Choice Choose @Chosen
+Immediate Day: `Fox` Choice Choose @Chosen |clairvoyant_fox.1|
 Choice `Join Pack` Chosen: Role Change @Self to `Wolf`
-Choice `Investigate` Chosen:
+Choice `Investigate` Chosen: |investigating.role.1|
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate:
     ‣ Target @Result (Role)
     ‣ Apply `Marker` to @Self
     ‣ Feedback: @Result
 Passive Start Night: [Attribute: has `Marker`]
-  • Reveal `Clairvoyant Fox investigated a @Target[role]` to #wolfpack
   • Remove `Marker` from @Self
+  • Reveal `Clairvoyant Fox investigated a @Target[role]` to #wolfpack
 
 __Card__
 The Clairvoyant Fox uses their clairvoyance to send info to the wolfpack. One day they may become a wolf.
