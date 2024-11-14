@@ -13,7 +13,7 @@ __Formalized__
 Immediate Night: `Wager` Choice Choose @Chosen
 Passive Start Day:
   • Conversation Reset
-  • Revoke `Wager Recipient` from @Self
+  • Revoke @ThisAttr from @Self
 On Death: Conversation Reset
 
 __Card__
