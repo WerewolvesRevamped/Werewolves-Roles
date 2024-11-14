@@ -34,6 +34,7 @@ Inherit: `Souls`
 Passive: Loyalty to `Hell` (Alignment) 
 Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: Citizen}
 Start Night:
+  • Conversation Reset `Wager Recipient`
   • Grant `Wager Recipient` to @Selection [Attribute: @Selection lacks `Soulless`] {Direct}
   • Whisper to #Wager-Recipient as `Devil` (~Phase)
   • `Wager` Choice Creation for #Wager-Recipient (Attack, Protect, Investigate, Ignore)
