@@ -12,13 +12,11 @@ __Simplified__
 During Night 1, the Dog may choose between fortune teller, warlock, and either rival or psychopath. It will immediately become this role for the rest of the game.
 
 __Formalized__
-Starting:
+Passive Start Night: {Forced: Fortune Teller}
   • @(Role:Cat) exists: `Dog` Choice Creation (Fortune Teller, Warlock, Rival)
   • Otherwise: `Dog` Choice Creation (Fortune Teller, Warlock, Psychopath)
-Immediate Night: `Dog` Choice Choose @Chosen {Forced: Fortune Teller}
-Choice Chosen:
-  • Obstruct Investigating for @Self (~Phase)
-  • Role Change @Self to @Option
+Immediate Night: `Dog` Choice Choose @Chosen |dog.1|
+Choice Chosen: Role Change @Self to @Option
 
 __Card__
 Dogs and cats have always been enemies. They'll always want to beat eachother.
