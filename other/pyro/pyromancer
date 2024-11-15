@@ -14,14 +14,15 @@ Each night the Pyromancer may either powder or ignite all currently powdered peo
 __Formalized__
 Starting: Join #Pyros
 Passive Start Night: `Pyromancer` Choice Creation (Powder, Ignite)
-Immediate Night: `Pyromancer` Choice Choose @Chosen
-Choice `Powder` Chosen: Apply `Powdered` to @Selection (~Persistent)
+Immediate Night: `Pyromancer` Choice Choose @Chosen |pyromancer.1|
+Choice `Powder` Chosen: Apply `Powdered` to @Selection (~Persistent) |pyromancer.2|
 Choice `Ignite` Chosen: Apply `Marker` to @Self
 Passive End Night: [Attribute: has `Marker`]
   • Remove `Marker` from @Self
   • Attack @(Attr:Powdered,Align:!Pyro)
-  • Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
-  • Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
+  • @(Attr:Powdered,Align:Pyro) exists:
+    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
 
 __Card__
 The Pyromancer must make a difficult choice: spread more gunpowder or set it all ablaze.
