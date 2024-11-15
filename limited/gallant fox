@@ -14,6 +14,7 @@ Each day, the Gallant Fox may select a player to protect from attacks and the ly
 
 __Formalized__
 Passive Start Day: `Fox` Choice Creation (Join Pack, Protect Player)
+Immediate Day: `Fox` Choice Choose @Chosen |gallant_fox.1|
 Choice `Join Pack` Chosen: Role Change @Self to `Wolf`
 Choice `Protect Player` Chosen: [Succession: No Target Succession]
   • Target @Selection (Player)
@@ -22,7 +23,6 @@ Passive Start Night: [Attribute: has `Marker`]
   • Protect @Target from `Attacks & Lynches` through Active Defense (~NextDay)
   • Reveal `A Gallant Fox has protected @Target[player]` to #wolfpack
   • Remove `Marker` from @Self
-Immediate Day: `Fox` Choice Choose @Chosen
 
 __Card__
 The Gallant Fox may shield another vilager from harm, its choice anonymously revealed to the pack.
