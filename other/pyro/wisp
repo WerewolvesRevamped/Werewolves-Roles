@@ -17,9 +17,13 @@ The Wisp is a member of the pyro team, but not a member of the pyro channel. The
 
 __Formalized__
 Immediate Day: [Condition: @Selection is not @Self]
-  • not (@Selection has `Powdered`): Apply `Powdered` to @Selection (~Persistent)
-  • Otherwise: Target @Selection (Player)
-End Day:
+  • not (@Selection has `Powdered`):
+    ‣ Apply `Powdered` to @Selection (~Persistent)
+    ‣ Success
+  • Otherwise:
+    ‣ Target @Selection (Player)
+    ‣ Success
+Passive End Day:
   • (@Target exists) and (not (@Target->Alignment is `Pyro`)): Attack @Target
   • (@Target exists) and (@Target->Alignment is `Pyro`): Learn `Ignition failed on @Target`
   • Otherwise: Learn `You powdered`
