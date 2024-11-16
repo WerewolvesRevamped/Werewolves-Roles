@@ -605,7 +605,8 @@ When a target type refers to a single role or player, we can use `->` to access 
 - `<TargetType>->Value1`, to get the first custom value of an attribute
 - `<TargetType>->Value2`, to get the second custom value of an attribute
 - `<TargetType>->Value3`, to get the second custom value of an attribute
-- `<TargetType>->Members`, to get the members of a team
+- `<TargetType>->Members`, to get the members of a team or group
+- `<TargetType>->Players`, to get the players that have a specific role
 - `<TargetType>->Attr(<Attribute>)`, to get a certain attribute of a player/team/group
 - `<TargetType>->RandomPlayer`, to get a random player out of a selector that may have several players
 - `<TargetType>->MostFreqRole`, selects the most frequent role in a list of players or roles

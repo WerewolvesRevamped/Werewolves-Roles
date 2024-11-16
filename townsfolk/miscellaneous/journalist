@@ -13,9 +13,9 @@ The Journalist can write a journal which a player with a role of their choice wi
 __Formalized__
 Starting: Grant `Journal Holder` to @Self
 Immediate: Target @Selection (Role)
-On Action [Targeting]: Target @Selection (Role) [Quantity: 1]
+On Action [Targeting]: Target @Selection (Role) [Quantity: 1] |targeting.emergency.player|
 On Death: [Condition: @Target exists]
-  • Target @(Role:@Target,SelectAll:False)
+  • Target @Target->Players->RandomPlayer
   • Transfer `Journal Holder` from @Self to @Target
 
 __Card__

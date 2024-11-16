@@ -12,8 +12,12 @@ The Herald selects a role and is informed when the last player with that role di
 
 __Formalized__
 Immediate: {Visitless}
-  • Remove `HeraldSelected:Self` from @All
-  • Apply `HeraldSelected` to @(Role:@Selection) (~Persistent)
+  • Process:
+    ‣ Target @Selection (Role)
+    ‣ Remove `HeraldSelected:Self` from @All
+    ‣ Apply `HeraldSelected` to @Target->Players (~Persistent)
+  • Evaluate:
+    ‣ Feedback: `Target updated!`
 On @(AttrSelf:HeraldSelected) Death:
   • not (@(AttrSelf:HeraldSelected) exists): Learn `Last marked player died`
 
