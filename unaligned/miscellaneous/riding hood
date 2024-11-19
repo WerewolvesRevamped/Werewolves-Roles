@@ -21,7 +21,7 @@ On Killed:
   • @Attacker has `Wolfish`:
     ‣ Obstruct @Attacker (~NextNight)
     ‣ Ascend
-On @(Attribute:Wolfish) Death:
+On @(Attr:Wolfish) Death:
   • not (@(Attr:Wolfish) exists): Descend
 
 __Card__
