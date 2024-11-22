@@ -57,7 +57,7 @@ Choice `Investigate` Chosen: {Direct}
   • Evaluate: Reveal `@Chooser is @Result->Role` to @Self
 Passive End Night: [Attribute: has `Marker`]
   • Remove `Marker` from @Self
-  • @Target->Alignment is not `Hell`[alignment]: Attack @Selection
+  • @Target->Alignment is not `Hell`[alignment]: Attack @Target
 
 __Card__
 The Devil deals in souls, each soul making it more and more powerful.
