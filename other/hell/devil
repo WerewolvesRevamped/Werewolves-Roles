@@ -33,9 +33,9 @@ Unique Role
 Inherit: `Souls`
 Passive: Loyalty to `Hell` (Alignment) 
 Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: Citizen}
-Start Night:
+Start Night: [Attribute: @Selection lacks `Soulless`] {Direct}
   • Conversation Reset `Wager Recipient`
-  • Grant `Wager Recipient` to @Selection [Attribute: @Selection lacks `Soulless`] {Direct}
+  • Grant `Wager Recipient` to @Selection
   • Whisper to #Wager-Recipient as `Devil` (~Phase)
   • `Wager` Choice Creation for #Wager-Recipient (Attack, Protect, Investigate, Ignore)
 Choice `Attack` Chosen:
@@ -50,12 +50,14 @@ Choice `Protect` Chosen:
 Choice `Investigate` Chosen:
   • Process: Role Investigate @Selection (WD, SD)
   • Evaluate:
-    ‣ Reveal `@Selection is @Result` to #Wager-Recipient
-    ‣ Reveal `@Selection is @Result` to @Self
-  • Role Investigate @Chooser (WD, SD) {Direct}
+    ‣ Reveal `@Selection is @Result->Role` to #Wager-Recipient
+    ‣ Reveal `@Selection is @Result->Role` to @Self
+Choice `Investigate` Chosen: {Direct}
+  • Process: Role Investigate @Chooser (WD, SD)
+  • Evaluate: Reveal `@Chooser is @Result->Role` to @Self
 Passive End Night: [Attribute: has `Marker`]
   • Remove `Marker` from @Self
-  • @Selection->Alignment is not `Hell`: Attack @Selection
+  • @Target->Alignment is not `Hell`: Attack @Selection
 
 __Card__
 The Devil deals in souls, each soul making it more and more powerful.
