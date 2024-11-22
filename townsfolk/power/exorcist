@@ -27,30 +27,32 @@ Immediate Day: [Attribute: @Selection lacks `Exorcised:Self`]
     ‣ Remove `Powdered` from @Selection
     ‣ Remove `Demonized` from @Selection
     ‣ Remove `Contaminated` from @Selection
-    ‣ Remove `Sleepless` from @Selection
     ‣ Remove `Doomed` from @Selection
   • Evaluate:
     ‣ @Result1 is `Success`:
       ◦ Reveal `@Selection was cured of Enchanted` to @(Align:Flute)
       ◦ Learn `@Selection was cured of Enchanted`
+      ◦ Continue
     ‣ @Result2 is `Success`:
       ◦ Reveal `@Selection was cured of Charmed` to @(Align:Flute)
       ◦ Learn `@Selection was cured of Charmed`
+      ◦ Continue
     ‣ @Result3 is `Success`:
       ◦ Reveal `@Selection was cured of Powdered` to @(Align:Pyro)
       ◦ Learn `@Selection was cured of Powdered`
+      ◦ Continue
     ‣ @Result4 is `Success`:
       ◦ Reveal `@Selection was cured of Demonized` to @(Align:Underworld)
       ◦ Learn `@Selection was cured of Demonized`
+      ◦ Continue
     ‣ @Result5 is `Success`:
       ◦ Reveal `@Selection was cured of Contaminated` to @(Align:Plague)
       ◦ Learn `@Selection was cured of Contaminated`
+      ◦ Continue
     ‣ @Result6 is `Success`:
-      ◦ Reveal `@Selection was cured of Sleepless` to @(Align:Nightmare)
-      ◦ Learn `@Selection was cured of Sleepless`
-    ‣ @Result7 is `Success`:
       ◦ Reveal `@Selection was cured of Doomed` to @(Align:Horsemen)
       ◦ Learn `@Selection was cured of Doomed`
+      ◦ Continue
 
 __Card__
 The Exorcist performs exorcisms on the villagers who think they've been possesed.
