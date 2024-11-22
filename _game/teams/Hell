@@ -7,4 +7,4 @@ Win Condition: @(Attr:Soulless), @(Class:Unaligned)
 Starting:
   • Add @Members to #Hell
   • Apply `Soulless` to @Members
-  • Set Counter to @Members->Count for `Hell`
+  • Set Counter to @Members->Count for #hell
