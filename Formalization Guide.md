@@ -452,6 +452,8 @@ As a first step all the abilities from the process step are evaluated, and their
 Afterwards, each evaluate line is evaluated.
 Each line consists of a `<Condition>`, or `Otherwise`. `Otherwise` triggers only if none of the other conditions trigger. Only a single conditions may trigger, further conditions are not evaluated.
 
+When using `Continue` as the last ability of a condition with several abilities attached, the evaluation of conditions will __continue__ instead of being halted as usual.
+
 In some cases it is useful to use evaluate without any conditions. In this case all evaluate lines without a condition should be put before any conditions, and they will always be executed. If no condition is specified at all, the default behaivor is to return no feedback at all as usually the feedback of the succeeding condition is returned. This can be worked around by specifying a `Feedback: <Ability>` line (this is equal in effect to specifying a single `Otherwise` line, but sounds more appropriate).
 
 If only a single condition line with feedback "Success" is provided, an `Otherwise: Failure` line is implied.
