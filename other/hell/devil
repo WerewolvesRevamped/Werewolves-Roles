@@ -31,8 +31,8 @@ When everyone is dead, unaligned, or soulless, the Devil wins.
 __Formalized__
 Unique Role
 Inherit: `Souls`
-Passive: Loyalty to `Hell` (Alignment) 
-Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: Citizen}
+Starting: Loyalty to `Hell` (Alignment) 
+Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: `Citizen`}
 Start Night: [Attribute: @Selection lacks `Soulless`] {Direct}
   • Conversation Reset `Wager Recipient`
   • Grant `Wager Recipient` to @Selection
@@ -57,7 +57,7 @@ Choice `Investigate` Chosen: {Direct}
   • Evaluate: Reveal `@Chooser is @Result->Role` to @Self
 Passive End Night: [Attribute: has `Marker`]
   • Remove `Marker` from @Self
-  • @Target->Alignment is not `Hell`: Attack @Selection
+  • @Target->Alignment is not `Hell`[alignment]: Attack @Selection
 
 __Card__
 The Devil deals in souls, each soul making it more and more powerful.
