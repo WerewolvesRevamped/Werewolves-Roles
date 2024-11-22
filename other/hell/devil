@@ -50,7 +50,7 @@ Choice `Protect` Chosen:
 Choice `Investigate` Chosen:
   • Process: Role Investigate @Selection (WD, SD)
   • Evaluate:
-    ‣ Reveal `@Selection is @Result->Role` to `Wager Recipient`
+    ‣ Reveal `@Selection is @Result->Role` to @(AttrRole:Wager-Recipient)
     ‣ Reveal `@Selection is @Result->Role` to @Self
 Choice `Investigate` Chosen: {Direct}
   • Process: Role Investigate @Chooser (WD, SD)
