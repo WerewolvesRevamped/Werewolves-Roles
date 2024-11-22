@@ -2,7 +2,7 @@
 __Basics__
 Each night, the Horseman of War may doom two players. There is no time for elections whilst war is raging: during the next day they will lose their vote and cannot be elected.
 __Details__
-Dooming a player is an immediate effect. The public vote of players doomed by the Horseman of War will not count during the day after their dooming, and should they win the election poll, the election fails and nobody is elected.
+Dooming a player is an immediate effect. The public vote of players doomed by the Horseman of War will have a voting power of 0 during the day after their dooming, and should they win the election poll, the election fails and nobody is elected.
 For more information check `$i doom`.
 The Horsemen win when everyone else is dead.
 
