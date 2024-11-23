@@ -37,7 +37,7 @@ Start Night: [Attribute: @Selection lacks `Soulless`] {Direct}
   • Conversation Reset `Wager Recipient`
   • Grant `Wager Recipient` to @Selection
   • Whisper to `Wager Recipient` as `Devil` (~Phase)
-  • `Wager` Choice Creation for @(AttrRole:Wager-Recipient) (Attack, Protect, Investigate, Ignore)
+  • `Wager` Choice Creation for `Wager Recipient` (Attack, Protect, Investigate, Ignore)
 Choice `Attack` Chosen:
   • Apply `Soulless` to @Chooser (~Persistent)
   • Increment Counter for #hell  
