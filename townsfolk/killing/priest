@@ -10,13 +10,9 @@ Each night, the Priest may use their holy water on a player. If that player is a
 
 __Formalized__
 End Night:
-  • Process:
-    ‣ @Selection->Attr(Lycan)
-    ‣ @Selection->Alignment
-  • Evaluate:
-    ‣ @Result1 exists: Attack @Selection
-    ‣ @Result2 is `Townsfolk`[alignment]: True Kill @Self
-    ‣ Otherwise: `Failure`
+  • @Selection->Attr(Lycan) exists: Attack @Selection
+  • @Selection->Alignment is `Townsfolk`[alignment]: True Kill @Self
+  • Otherwise: `Failure`
 
 __Card__
 A Priest serves a god, but the wolves in the forest do not.
