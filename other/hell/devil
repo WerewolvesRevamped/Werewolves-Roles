@@ -50,11 +50,11 @@ Choice `Protect` Chosen:
 Choice `Investigate` Chosen:
   • Process: Role Investigate @Selection (WD, SD)
   • Evaluate:
-    ‣ Reveal `@Selection is @Result->Role` to @(AttrRole:Wager-Recipient)
+    ‣ Reveal `@Selection is @Result->Role` to `Wager Recipient`
     ‣ Reveal `@Selection is @Result->Role` to @Self
 Choice `Investigate` Chosen: {Direct}
-  • Process: Role Investigate @Chooser (WD, SD)
-  • Evaluate: Reveal `@Chooser is @Result->Role` to @Self
+  • Process: Role Investigate @(AttrRole:Wager-Recipient) (WD, SD)
+  • Evaluate: Reveal `@(AttrRole:Wager-Recipient) is @Result->Role` to @Self
 Passive End Night: [Attribute: has `Marker`]
   • Remove `Marker` from @Self
   • @Target->Alignment is not `Hell`[alignment]: Attack @Target
