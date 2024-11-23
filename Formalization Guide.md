@@ -63,6 +63,7 @@
     - [Cancel](#cancel)
     - [Switching](#switching)
     - [Shuffle](#shuffle)
+    - [Emitting](#emitting)
 - [Host Information](#host-information)
 
 ## Basics
@@ -364,6 +365,7 @@ Trigger types can be one of the following:
 - `On Role Change` triggers on a role change (use `@RoleChanger` to get the responsible player)
 - `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
 - `On End` triggers when the game ends
+- `On '<Value>' Emitted` triggers when an emitting action is used to emit a specific value.
 
 ----
 #### Action Restrictions
@@ -976,6 +978,15 @@ Format:
 
 Shuffle 2-5 targets
 - Target: A target
+
+---
+#### Emitting
+
+Format:  
+`Emit 'Value'`  
+`Emit 'Value' for <Target>`  
+
+Emits a value for a `On Emitted` trigger.
 
 ## Host Information
 
