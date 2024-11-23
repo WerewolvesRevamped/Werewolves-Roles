@@ -1,15 +1,15 @@
 **Souls** | Ability Set
 Passive Start Phase: Emit `Soul Action` [Condition: #Hell->Counter > 0]
-Choice `Soul Attack` Chosen: Emit `Soul Action` [Condition: #Hell->Counter > 0]
-Choice `Soul Protect` Chosene: Emit `Soul Action` [Condition: #Hell->Counter > 0]
 On `Soul Action` Emitted: `Soul Action` Choice Creation for @Self (Soul Attack, Soul Protect) |silent:souls.1|
 On `Soul Action` Emitted: `Soul Action` Choice Choose @Chosen |silent:souls.1|
 Choice `Soul Attack` Chosen:
   • Attack @Selection
   • Decrement Counter for #Hell 
+  • #Hell->Counter > 0: Emit `Soul Action`
 Choice `Soul Protect` Chosen:
   • Protect @Selection from `Attacks` through Active Defense during Night (~NextNight)
   • Decrement Counter for #Hell 
+  • #Hell->Counter > 0: Emit `Soul Action`
 On Visited [Attack Killing]: [Condition: #Hell->Counter > 0]
   • Cancel with Failure
   • Decrement Counter for #Hell 
