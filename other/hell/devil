@@ -33,7 +33,7 @@ Unique Role
 Inherit: `Souls`
 Starting: Loyalty to `Hell` (Alignment) 
 Immediate Day: Weakly Disguise @Self as @Selection [Temporal: Day 0] {Forced: `Citizen`}
-Start Night: [Attribute: @Selection lacks `Soulless`] {Direct}
+Start Night: [Attribute: @Selection lacks `Soulless`] {Direct} |devil.1|
   • Conversation Reset `Wager Recipient`
   • Grant `Wager Recipient` to @Selection
   • Whisper to `Wager Recipient` as `Devil` (~Phase)
