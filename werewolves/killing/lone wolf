@@ -14,7 +14,7 @@ The Lone Wolf and wolfpack do not know each other, however once a member of the 
 __Formalized__
 Inherit: `Lycan`
 End Night:
-  • @Selection->Alignment is `Townsfolk`: Attack @Selection
+  • @Selection->Alignment is `Townsfolk`[alignment]: Attack @Selection
   • @Selection->Attr(Wolfish) exists: True Kill @Self
   • Otherwise: `Failure`
 On @(Group:Wolfpack) Death: Role Change @Self to `Wolf`
