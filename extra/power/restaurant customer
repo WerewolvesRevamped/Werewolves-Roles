@@ -17,7 +17,7 @@ __Formalized__
 End Day: `FoodChoice` Choice Choose @Chosen
 Passive Start Night:
   • Conversation Reset
-  • Revoke `Restaurant Customer` from @Self
+  • Revoke @ThisAttr from @Self
 On Death: Conversation Reset
 
 __Card__
