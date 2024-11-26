@@ -590,6 +590,8 @@ These target types are only available in some contexts:
 __Team Specific Selectors:__
 - `&<TeamName>`: Select a specific team
 - `&All`: Selects all teams
+- `&Self`: Selects the current team
+- `&Ind`: Set to one team of a selector inside a for each complex action 
 - `&(Attr:<Attribute>)`: Select all teams with a specific attribute
 - `&(Attr:!<Attribute>)`: Select all teams without a specific attribute
 - `&(Align:!<Alignment>)`: Select all teams except for a certain alignment
