@@ -19,7 +19,7 @@ They may send charmed or poisoned food to one person each night. A player who ea
 
 __Formalized__
 Unique Role
-Starting:
+Starting: {Visitless}
   • For Each &All:
     ‣ Apply `Waiter` to &Ind->Members->RandomPlayer
 Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
