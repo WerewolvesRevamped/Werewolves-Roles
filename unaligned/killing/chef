@@ -21,18 +21,18 @@ __Formalized__
 Unique Role
 Starting:
   • For Each &All:
-    ‣ Apply `Waiter` to @Ind->Members->RandomPlayer
+    ‣ Apply `Waiter` to &Ind->Members->RandomPlayer
 Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
   • Grant `Restaurant Customer` to @Selection
   • Whisper to `Restaurant Customer` as `Chef` (~Phase)
-  • `FoodChoice` Choice Creation for #Restaurant-Customer (Eat, Ignore)
+  • `FoodChoice` Choice Creation for `Restaurant Customer` (Eat, Ignore)
   • @SecondarySelection[boolean] is True: Apply `FoodType` to @Selection (~NextNight) (Poisoned)
   • Otherwise: Apply `FoodType` to @Selection (~NextNight) (Charmed)
 Choice `Eat` Chosen: Apply `Eaten` to @Self
 Passive End Night:
-  • @(AttrSelf:FoodType)->Attr(FoodType)->Val1 is Poisoned: Kill @(AttrSelf:FoodType)
+  • @(AttrSelf:FoodType,AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Poisoned`: Kill @(AttrSelf:FoodType)
 Passive Start Night:
-  • @(AttrSelf:FoodType)->Attr(FoodType)->Val1 is Charmed: Protect @(AttrSelf:FoodType) from `Attacks` through Active Defense (~Phase)
+  • @(AttrSelf:FoodType,AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Charmed`: Protect @(AttrSelf:FoodType) from `Attacks` through Active Defense (~Phase)
 On Death:
   • Revoke `Restaurant Customer` from @All
 Passive:
