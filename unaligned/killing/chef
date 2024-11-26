@@ -23,6 +23,7 @@ Starting: {Visitless}
   • For Each &All:
     ‣ Apply `Waiter` to &Ind->Members->RandomPlayer
 Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
+  • Conversation Reset `Restaurant Customer`
   • Grant `Restaurant Customer` to @Selection
   • Whisper to `Restaurant Customer` as `Chef` (~Phase)
   • `FoodChoice` Choice Creation for `Restaurant Customer` (Eat, Ignore)
