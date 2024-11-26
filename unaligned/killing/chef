@@ -29,17 +29,12 @@ Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @S
   • `FoodChoice` Choice Creation for `Restaurant Customer` (Eat, Ignore)
   • @SecondarySelection[boolean] is True: Apply `FoodType` to @Selection (~NextNight) (Poisoned)
   • Otherwise: Apply `FoodType` to @Selection (~NextNight) (Charmed)
-Choice `Eat` Chosen: Apply `Eaten` to @Self
-Passive End Night:
-  • @(AttrSelf:FoodType,AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Poisoned`: Kill @(AttrSelf:FoodType)
-Passive Start Night:
-  • @(AttrSelf:FoodType,AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Charmed`: Protect @(AttrSelf:FoodType) from `Attacks` through Active Defense (~Phase)
-On Death:
-  • Revoke `Restaurant Customer` from @All
-Passive:
-  • not (@(Attr:Waiter) exists): Descend
-On End:
-  • @(Attr:Waiter) exists: Ascend
+Choice `Eat` Chosen: Apply `Eaten` to @Chooser (~NextNight)
+Passive End Night: Kill @(AttrSelf:Eaten) [Condition: @(AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Poisoned`]
+Passive Start Night: Protect @(AttrSelf:Eaten) from `Attacks` through Active Defense (~Phase) [Condition: @(AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Charmed`]
+On Death: Revoke `Restaurant Customer` from @All
+Passive: Descend [Condition: not (@(Attr:Waiter) exists)]
+On End: Ascend [Condition: @(Attr:Waiter) exists]
 
 __Card__
 An excellent Chef serves their customers good food, most of the time...
