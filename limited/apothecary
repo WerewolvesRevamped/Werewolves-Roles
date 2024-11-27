@@ -20,16 +20,16 @@ Passive Start Night:
   • (@Self->Counter > 0) and (@Self has `CureAvailable`): `Apothecary` Choice Creation (Poison, Cure)
   • @Self->Counter > 0: `Apothecary` Choice Creation (Poison)
   • @Self has `CureAvailable`: `Apothecary` Choice Creation (Cure)
-Immediate Night: `Apothecary` Choice Choose @Chosen
+Immediate Night: `Apothecary` Choice Choose @Chosen [Condition: (@Self->Counter > 0) or (@Self has `CureAvailable`)]
 Choice `Poison` Chosen:
   • Target @Selection (Player)
   • Apply `Marker` to @Self
   • Decrement Counter
-Choice `Cure` Chosen:
+Choice `Cure` Chosen: [Condition: @Selection has `Poisoned`]
   • Remove `Poisoned` from @Selection 
   • Remove `CureAvailable` from @Self
 Passive Start Day: [Attribute: has `Marker`]
-  • Apply `Poisoned` to @Target (~Persistent) (Inactive)
+  • Apply `Poisoned` to @Target (~Persistent)
   • Remove `Marker` from @Self
 
 __Card__
