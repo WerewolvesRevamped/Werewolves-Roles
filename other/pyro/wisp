@@ -19,15 +19,17 @@ __Formalized__
 Immediate Day: [Condition: @Selection is not @Self]
   • not (@Selection has `Powdered`):
     ‣ Apply `Powdered` to @Selection (~Persistent)
+    ‣ Apply `Marker` to @Self (~Phase)
     ‣ Success
   • Otherwise:
     ‣ Target @Selection (Player)
     ‣ Success
-Passive End Day:
-  • (@Target exists) and (not (@Target->Alignment is `Pyro`)): Attack @Target
-  • (@Target exists) and (@Target->Alignment is `Pyro`): Learn `Ignition failed on @Target`
-  • Otherwise: Learn `You powdered`
-Passive: not (@(Group:Pyros) exists): Role Change @Self to `Pyromancer`
+Passive End Day: [Condition: @Target exists]
+  • @Target->Alignment is `Pyro`: Learn `Ignition failed on @Target`
+  • Otherwise: Attack @Target
+Passive End Day: Learn `You powdered` [Attribute: has `Marker`]
+Passive Start Day: Process: Untarget [Condition: @Target exists]
+Passive: Role Change @Self to `Pyromancer` [Condition: not (@(Group:Pyros) exists)]
 
 __Card__
 If you're not careful, a Wisp might spark a flame and burn a neighbor.
