@@ -12,7 +12,7 @@ However the results are sent to a random miscellaneous role.
 They are affected by strong disguises and redirections.
 
 __Formalized__
-Start Night: Target @(Cat:Miscellaneous)->RandomPlayer
+Passive Start Night: Target @(Cat:Miscellaneous)->RandomPlayer
 Immediate Night: 
   • Process:
     ‣ Attribute Investigate @Selection for `Lycan` (SD)
