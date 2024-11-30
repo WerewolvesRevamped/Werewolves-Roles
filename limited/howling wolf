@@ -14,7 +14,19 @@ Once per game the Howling Wolf may disguise every player as an arbitrary in play
 Once per game during the day the Howling Wolf may provide an extra poll for the wolfpack the next night, at the cost of wolfpack actions.
 
 __Formalized__
-TBD
+End Day: [Quantity: 1] {Visitless}
+  • Apply `Marker` to @Self (~Phase)
+  • For Each @All:
+    ‣ Strongly Disguise @Ind as @(AliveOnly:False,OrigAlign:Werewolf)->RandomPlayer->OriginalRole (~NextNight)
+End Day: [Quantity: 1]
+  • Apply `Marker` to @Self (~Phase)
+  • Set Counter to 1
+Passive End Day: [Attribute: has `Marker`]
+  • Announce `A Howling Wolf has cried`
+Passive Start Night: [Condition: @Self->Counter is 1] {Visitless}
+  • Set Counter to 0
+  • Obstruct @(Group:Wolfpack,Attr:Lycan) (~Phase)
+  • Create `Wolfpack` Poll in #wolfpack
 
 __Card__
 When Howling Wolf how- ls at the moon, they may get answered by a maskmaker's passion or a pack's fury.
