@@ -4,11 +4,13 @@ The Bloody Butcher is the werewolf spy in the butcher group. They are part of bo
 __Details__
 The Bloody Butcher is a werewolf who is also part of the butcher group. They are the traitor among the group, who tries to gain information.
 They are strongly disguised as a Butcher.
+There can only be one Bloody Butcher.
 
 __Simplified__
 The Bloody Butcher is the disguised werewolf spy in the butcher group. They are part of both channels.
 
 __Formalized__
+Unique Role
 Inherit: `Pack Lycan`
 Starting: Strongly Disguise @Self as `Butcher`
 Starting: Join #Butchers
