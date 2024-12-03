@@ -2,5 +2,6 @@
 __Basics__
 Each night, the Hooker sleeps with another player. They will not be killed by attacks on them, but will be affected by those taking place at their target’s house.
 __Details__
-Since the Hooker is at the other player’s house and not at home, any attacks targeting the Hooker in the night will fail; however, if the person they’re sleeping over at is being attacked, then they both are attacked.
+Since the Hooker is at the other player’s house and not at home, any attacks targeting the Hooker in the night will fail; however, if the person they’re sleeping with is being attacked, then they both are attacked.
+If the person they are sleeping with is protected, the Hooker does not share the protection.
 Choosing a player to sleep with is an immediate ability. From that point on, they will stay with that player for the rest of the night. The Hooker may also choose not to sleep with anybody.
