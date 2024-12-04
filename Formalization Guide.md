@@ -162,6 +162,7 @@ The following public channels exist and can be referenced like groups:
 Available Options: <Options>
 Allowed Voters: <Voters>
 [Show Voters: [Yes|No]]
+[Random: <Random Selector>]
 [<Poll Opening Trigger>: Create Poll in <Location> [as <Name>]]
 [On Poll Closed: <Poll Close Ability>]
 ```
@@ -169,6 +170,7 @@ Allowed Voters: <Voters>
 - Options: A comma separated list of votable options. May contain one or more selectors.
 - Voters: A comma separated list of allowed voters. May contain one or more selectors.
 - Show Voters: Specifies whether the result shows who voted what (yes) or just the final vote count per option (no). Defaults to `yes`.
+- Random: A selector that is used to select a random player from when "Random" is specified as an available option. Defaults to `@All`.
 - Poll Opening Trigger: The poll may open on a specified trigger type. Additional abilities may be executed as part of this trigger.
 - Poll Closed Ability: An ability to execute on poll closing
 
