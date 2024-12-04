@@ -21,7 +21,7 @@ Inherit: `Pack Lycan`
 Starting: Apply `Wolfish` to @Self
 Starting:
   • Target @(Group:Wolfpack,Cat:!Group)->MostFreqRole (Role)
-  • Copy @Target
+  • Grant @Target to @Self
   • Strongly Disguise @Self as @Target->Role
 End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
 
