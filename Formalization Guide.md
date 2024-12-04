@@ -869,16 +869,11 @@ Format:
 ---
 #### Copying
 
-Format:  
-`Copy <Target> (<DurationType>)` (Copies all abilities of target role or player to yourself)  
-`Full Copy <Target>` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc)  
-`Full Copy <Target> (Suppressed)` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc, but stops starting abilities from triggering)  
-`Duplicate <Target>'s abilities (<DurationType>)` (Copies all abilities of target role or player to themself)  
-`Copy <Target> to <Target2> (<DurationType>)` (Copies all abilities of a target role or player to another player)  
+Format:   
+`Copy <Target>` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc)  
+`Copy <Target> (Suppressed)` (Copies all values of one player to yourself, including role, attributes, targets, counters, etc, but stops starting abilities from triggering)  
 
 - Target: A target type, specifying a role or player to copy from
-- Target2: Another target type, specifying who should get the copied ability
-- DurationType: Specifies for how long the copied abilities should persist. Defaults to `~Permanent`
 
 ---
 #### Choices
