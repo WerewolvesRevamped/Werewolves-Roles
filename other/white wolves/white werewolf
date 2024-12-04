@@ -19,10 +19,10 @@ __Formalized__
 Unique Role
 Inherit: `Pack Lycan`
 Starting: Apply `Wolfish` to @Self
-Starting:
-  • Target @(Group:Wolfpack,Cat:!Group)->MostFreqRole (Role)
-  • Copy @Target
-  • Strongly Disguise @Self as @Target->Role
+Passive Start Day: [Quantity: 1]
+  • Target @(Group:Wolfpack,Align:Werewolf,Cat:!Group)->MostFreqRole (Role)
+  • Grant @Target to @Self
+  • Strongly Disguise @Self as @Target
 End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
 
 __Card__
