@@ -3,12 +3,12 @@ __Basics__
 The attribute of the plague team. Contaminated players can apply the attribute to other players through visits. The second night after being contaminated the player will be informed they're contaminated and die.
 
 __Formalized__
-On Visited: @Visitor->Role is not `Plague Doctor`: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage, $phase)
-On Action: @ActionTarget->Role is not `Plague Doctor`: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage, $phase)
+On Visited: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage, $phase) [Attribute: @Visitor lacks `Contaminated`, Condition: (@Visitor->Role is not `Plague Doctor`) and (@Visitor->Alignment is not `Plague`)]
+On Any Action: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage, $phase) [Attribute: @ActionTarget lacks `Contaminated`, Condition: (@ActionTarget exists) and (@ActionTarget is not @Self) and (@ActionTarget->Role is not `Plague Doctor`) and (@ActionTarget->Alignment is not `Plague`)]
 Passive Start Night:
   • @ThisAttr->Value1 is `LateStage`: Change @ThisAttr value `1` to `Inactive` for @Self
   • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
   • @ThisAttr->Value1 is `EarlyStage`: Change @ThisAttr value `1` to `MiddleStage` for @Self
-Passive Start Night: Learn `You have the plague` [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
+Passive Start Night: Reveal `You have the plague` to @Self [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
 Passive End Night: Kill @Self [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
 
