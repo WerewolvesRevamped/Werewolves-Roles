@@ -24,8 +24,7 @@ Immediate Night:
 Immediate Day: [Condition: @Self->Counter > 0]
   • Remove `Contaminated` from @Selection 
   • Decrement Counter
-Passive:
-  • (not (@(Attr:Contaminated) exists)) and (not (@(Role:Plague-Bearer) exists)) or (#Plague-Pit->Counter is 0): Ascend
+Passive: Ascend [Condition: (not (@(Attr:Contaminated) exists)) and (not (@(Role:Plague-Bearer) exists)) or (#Plague-Pit->Counter is 0)]
 
 __Card__
 The Plague Doctor seeks a cure for the disease the Plague Bearer brings.
