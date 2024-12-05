@@ -20,7 +20,7 @@ __Formalized__
 Starting: Set Counter to round $total/5
 Immediate Night:
   • (@Selection has `Contaminated`) and (@Selection->Alignment is not `Plague`):
-    ‣ Learn `@Selection[player] has had the plague since @Selection->Attr(Contaminated)->Value2`
+    ‣ Learn `@Selection[player] has had the plague since phase @Selection->Attr(Contaminated)->Value2`
 Immediate Day: [Condition: @Self->Counter > 0]
   • Remove `Contaminated` from @Selection 
   • Decrement Counter
