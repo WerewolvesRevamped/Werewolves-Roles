@@ -3,8 +3,8 @@ __Basics__
 The attribute of the plague team. Contaminated players can apply the attribute to other players through visits. The second night after being contaminated the player will be informed they're contaminated and die.
 
 __Formalized__
-On Visited: @Visitor->Role is not `Plague Doctor`: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage, $phase)
-On Action: @ActionTarget->Role is not `Plague Doctor`: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage, $phase)
+On Visited: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage, $phase) [Condition: @Visitor->Role is not `Plague Doctor`]
+On Action: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage, $phase) [Condition: (@ActionTarget is not @Self) and (@ActionTarget->Role is not `Plague Doctor`)]
 Passive Start Night:
   • @ThisAttr->Value1 is `LateStage`: Change @ThisAttr value `1` to `Inactive` for @Self
   • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
