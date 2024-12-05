@@ -9,6 +9,6 @@ Passive Start Night:
   • @ThisAttr->Value1 is `LateStage`: Change @ThisAttr value `1` to `Inactive` for @Self
   • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
   • @ThisAttr->Value1 is `EarlyStage`: Change @ThisAttr value `1` to `MiddleStage` for @Self
-Passive Start Night: Learn `You have the plague` [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
+Passive Start Night: Reveal `You have the plague` to @Self [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
 Passive End Night: Kill @Self [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
 
