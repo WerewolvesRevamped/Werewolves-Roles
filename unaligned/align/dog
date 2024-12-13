@@ -1,9 +1,9 @@
 **Dog** | Unaligned Align
 __Basics__
-During Night 1, the Dog must choose to align with either town or wolves. During later nights, they may check one player's role.
+During Night 1, the Dog must choose to align with either the townsfolk or the werewolves. During later nights, they may check one player's role.
 __Details__
-If the Dog hasn’t chosen before the night ends, they will align with town.
-After Night 1, the Dog can inspect a player, each night. The Dog will be told what their role is.
+If the Dog hasn’t chosen before the night ends, they will align with the townsfolk.
+After Night 1, the Dog can inspect a player each night. The Dog will be told what their role is.
 Choosing a team to align with and inspecting a player are immediate abilities. The Dog is affected by weak disguises and redirections.
 The Dog is nonaligned until it aligns with a team.
 
@@ -17,4 +17,4 @@ Choice Chosen: Alignment Change @Self to @Option
 Immediate Night: Role Investigate @Selection (SD, WD) [Temporal: Night 2+]
 
 __Card__
-Dogs and cats have always been enemies. They'll always want to beat eachother.
+Dogs and cats have always been enemies. They'll always want to beat each other.
