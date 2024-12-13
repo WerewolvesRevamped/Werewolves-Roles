@@ -1,16 +1,16 @@
 **Cat** | Unaligned Align
 __Basics__
-During Night 1, the Cat will align with the opposite team of what the dog has chosen. During later nights, they may check one player's role.
+During Night 1, the Cat will align with the opposite team to that which the dog has chosen. During later nights, they may check one player's role.
 __Details__
-If the dog chooses to align with the townfolk, the Cat will align with the werewolves, and vice versa. If the dog changed role before choosing an alignment, the Cat will align with the townsfolk at the end of night 1.
+If the dog chooses to align with the townsfolk, the Cat will align with the werewolves, and vice versa. If the dog changed role before choosing an alignment, the Cat will align with the townsfolk at the end of night 1.
 Changing alignment is an immediate consequence of the dog choosing. 
 For each Cat in the game, there must be a corresponding dog. Neither player will know their counterpart.
-After Night 1, the Cat can inspect a player, each night. The Cat will be told what their role is.
+After Night 1, the Cat can inspect a player each night. The Cat will be told what their role is.
 Inspecting a player is an immediate ability. The Cat is affected by weak disguises and redirections.
 The Cat is nonaligned until it aligns with a team.
 
 __Simplified__
-For each Cat, there is a corresponding dog. The Cat will align with the opposite team of what the dog chose.
+For each Cat, there is a corresponding dog. The Cat will align with the opposite team to that which the dog chose.
 
 __Formalized__
 Unique Role
@@ -22,4 +22,4 @@ Passive End Night: @Target->Role is not `Dog`: Alignment Change @Self to `Townsf
 Immediate Night: Role Investigate @Selection (SD, WD) [Temporal: Night 2+]
 
 __Card__
-Cats and dogs have always been enemies. They'll always want to beat eachother.
+Cats and dogs have always been enemies. They'll always want to beat each other.
