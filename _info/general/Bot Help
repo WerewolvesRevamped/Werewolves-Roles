@@ -1,0 +1,18 @@
+**Bot Help**
+
+__CCs__
+`$cc create <CC Name> <Player List>` Create a CC
+`$cc add <Player List>` Adds players to a CC
+`$cc remove <Player List>` Removes players from a CC (also demotes)
+`$cc promote <Player List>` Gives players permissions to the CC
+`$cc leave` Makes you leave a CC (also demotes)
+
+__Other__
+`$i <role name>` or `.<role name>` Shot info about role
+`$d <role name>` or `;<role name>` Long info about role
+`$list` List of all players
+`$alive` List of all living players
+`$roll` Returns a random player
+`$roll wl <Player List>` Returns a random player from the list
+`$roll bl <Player List>` Returns a random player that is not in the list
+`$help` Bot help
