@@ -64,6 +64,7 @@
     - [Switching](#switching)
     - [Shuffle](#shuffle)
     - [Emitting](#emitting)
+    - [Displaying](#displaying)
 - [Host Information](#host-information)
 
 ## Basics
@@ -988,6 +989,19 @@ Format:
 `Emit 'Value' for <Target>`  
 
 Emits a value for a `On Emitted` trigger.
+
+---
+#### Displaying
+
+Format:  
+`Display 'DisplayName'`  
+`Display 'DisplayName' (Value1)`  
+`Display 'DisplayName' (Value1, Value2)`  
+`Display 'DisplayName' (Value1, Value2, Value3)`  
+`Display 'DisplayName' (Value1, Value2, Value3, Value4)`  
+`Update 'DisplayName' value 'Index' to 'NewValue'`  
+
+Creates or updates a display message. Value may be any string, but "yes"/"no" are interpreted as the respective emoji, "counter" is interpreted as counter value of the current element and "target" is interpreted as the target of the current element.
 
 ## Host Information
 
