@@ -15,6 +15,7 @@ The Vicious Hag may once attack a player.
 
 __Formalized__
 Inherit: `Coven`
+Starting: Display `Spells` (Counter)
 Immediate Night: [Condition: @Self->Counter > 0] {Repeating} 
   • Decrement Counter
   • Apply `Marker` to @Self
