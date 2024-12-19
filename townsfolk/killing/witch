@@ -12,8 +12,12 @@ Once per game, at night, the Witch may choose three players (as well as themselv
 Once per game, at night, the Witch may attack one player.
 
 __Formalized__
-End Night: Attack @Selection [Quantity: 1]
+Starting: Display `Potions` (yes, yes)
+End Night:
+  • Update `Potions` value `2` to `no`
+  • Attack @Selection [Quantity: 1]
 Immediate Night: [Quantity: 3] ⟨x3⟩ 
+  • Update `Potions` value `1` to `no`
   • Protect @Selection from `Attacks` through Active Defense (~Phase)
   • not (@Self has `Marker`):
     ‣ Protect @Self from `Attacks` through Active Defense (~Phase)
