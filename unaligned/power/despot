@@ -1,13 +1,13 @@
 **Despot** | Unaligned Power
 __Basics__
-If the Despot is elected, they win. The next day, the election will be cancelled.
+If the Despot is elected as Mayor, they win. The next day, the election will be cancelled.
 __Details__
 When the Despot wins, the Despot ascends and stops playing. The game continues.
 The Despot may strongly disguise themself as any role. The disguise is applied immediately. They can update this disguise once per phase, with 1 emergency change to be used whenever the Despot wants to. If the Despot changes role, the disguise is lost.
 The Despot is nonaligned.
 
 __Simplified__
-If the Despot is elected, they win and stop playing, but the game still continues. The next day, the election will be cancelled.
+If the Despot is elected as Mayor, they win and stop playing, but the game still continues. The next day, the election will be cancelled.
 
 __Formalized__
 On Poll Win:
