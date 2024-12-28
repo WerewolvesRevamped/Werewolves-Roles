@@ -6,9 +6,10 @@ __Formalized__
 On Visited: @Visitor->Role is not `Plague Doctor`: Apply `Contaminated` to @Visitor (~Persistent) (EarlyStage, $phase)
 On Action: @ActionTarget->Role is not `Plague Doctor`: Apply `Contaminated` to @ActionTarget (~Persistent) (EarlyStage, $phase)
 Passive Start Night:
-  • @ThisAttr->Value1 is `LateStage`: Change @ThisAttr value `1` to `Inactive` for @Self
+  • @ThisAttr->Value1 is `LateStage`: Change @ThisAttr value `1` to `EndStage` for @Self
   • @ThisAttr->Value1 is `MiddleStage`: Change @ThisAttr value `1` to `LateStage` for @Self
   • @ThisAttr->Value1 is `EarlyStage`: Change @ThisAttr value `1` to `MiddleStage` for @Self
 Passive Start Night: Learn `You have the plague` [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
 Passive End Night: Kill @Self [Condition: @ThisAttr->Value1 is `LateStage`, Condition: @Self->Role is not `Plague Carrier`]
+Passive End Night: Kill @Self [Condition: @ThisAttr->Value1 is `EndStage`, Condition: @Self->Role is not `Plague Carrier`]
 
