@@ -2,7 +2,8 @@
 __Basics__
 Each night, the Firebug may ward one player.
 __Details__
-When the Firebug wards a player, that player is protected from attacks for the night. Should anyone other than a member of the pyro team try to attack the warded player, the attack backfires, igniting the attacker as well as all powdered players. This is considered an attack executed by the Firebug. If the warded player is not attacked for the entire night, they are powdered at the end of the night.
+When the Firebug wards a player, that player is protected from attacks for the night. Should anyone other than a member of the pyro team try to attack the warded player, the attack backfires, powdering the attacker and igniting all powdered players. This is considered an attack executed by the Firebug. If the warded player is not attacked for the entire night, they are powdered at the end of the night.
+If a Firebug is powdered and ignited, and thus attacked, the ignition fails and the attacker is informed.
 Warding is an immediate ability.
 The Firebug is a member of the pyro team and channel. The pyro team wins when all other players are dead or unaligned.
 When the last original Pyromancer dies, the Firebug turns into a Pyromancer.
