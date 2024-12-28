@@ -16,7 +16,7 @@ Starting: Join #Pyros
 Passive Start Night: `Pyromancer` Choice Creation (Powder, Ignite)
 Immediate Night: `Pyromancer` Choice Choose @Chosen |pyromancer.1|
 Choice `Powder` Chosen: |pyromancer.2|
-  • @Selection has `Powdered`: Learn `Powdering failed`
+  • @Selection has `Powdered`: Failure
   • Otherwise: `Apply `Powdered` to @Selection (~Persistent) 
 Choice `Ignite` Chosen: Apply `Marker` to @Self
 Passive End Night: [Attribute: has `Marker`]
