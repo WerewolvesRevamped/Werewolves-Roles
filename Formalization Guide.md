@@ -111,13 +111,15 @@ Some game values can be accessed from variables:
 ```
 **<Role Name>** | <Role Group> <Role Category> <Role Team>
 [Unique Role]
+[Haunted Role]
 [<Role Ability List> | No Abilities]
 ```
 - Role Name: May be anything  
 - Role Group: May be `Townsfolk`, `Werewolf`, `Solo`, `Unaligned` or `Extra`  
 - Role Category: May be `Elected`, `Align`, `Recruitment`, `Killing`, `Group`, `Investigative`, `Power` or `Miscellaneous`  
 - Role Team: Should be kept blank for any role group besides `Solo`, should be set to `- <Team Name>`, where `<Team Name>` is the name of a defined team
-- Unique Role: Set to `Unique Role` for unique roles, otherwise remove the line entirely 
+- Unique Role: Set to `Unique Role` for unique roles, otherwise remove the line entirely
+- Haunted Role: Set `Haunted Role` for roles that use ALL their ability while ghostly, otherwise remove the line entirely
 
 - Role Ability List: A newline separated list of `Abilities`
 
@@ -354,6 +356,9 @@ Trigger types can be one of the following:
 - `On Death` for an ability that triggers on death (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@AttackSource` to get the source of the attack)
 - `On <Target> Death` for an ability that triggers on the death of a certain target type (when several players are contained in the target, it triggers when *any* player from that target type dies) (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@DeathType` to reference the type of killing that killed the player, use `@This` to reference the player that died, use `@AttackSource` to get the source of the attack)
 - `On Killed` for an ability that triggers when a player dies through a (true) kill or attack (Use `@Attacker` within this trigger to reference the player (if existing) responsible for the killing, use `@AttackSource` to get the source of the attack). Differs from `On Death` in that it does not trigger on a lynch.
+- `On Banishment` equivalent to `On Killed` but for (true) banishments
+- `On Banished` equivalent to `On Death` for for banishments
+- `On <Target> Banished`, see `On <Target> Death` and `On Banished`
 - `On Visited [[<Ability Type>]]` for triggering when any (`On Visited`) or a specific ability (e.g. `On Visited [Investigation]`) is used on the player (use `@Visitor` within this trigger to reference the visitor, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit). Triggers before any of the visits resulting abilities.
 - `On <Target> Visited [[<Ability Type>]]` for triggering when a certain target type is visited with a specific ability (e.g. `On <> Visited [Investigation]`) (use `@Visitor` within this trigger to reference the visitor, `@This` to reference the visited player, use `@VisitParameter` to access the secondary selection of the visit, use `@VisitType` to get the ability type causing the visit).  Triggers before any of the visits resulting abilities.
 - `On Action [[<Ability Type>]]` for triggering when the player uses any (`On Action`) or a specific ability (e.g. `On Action [Investigation]`) (Use `@ActionTarget` to select the player the action is being used on, `@ActionResult` for the action's result)
@@ -392,6 +397,10 @@ Action Restrictions can be one or more of the following in a comma separated lis
   - `Quantity: <Value>`, may only used a maximum of `<Value>` times.
 - Condition Restrictions:
   - `Condition: <Condition>`, provide a condition in the same format as in [complex actions](#complex-actions).
+- (Living) Status Restriction:
+  - `Status: Ghostly`, may only be used while ghostly
+  - `Status: Any`, may be used while alive or ghostly
+  - `Status: Alive`, may be used while alive only (default!)
  
 
 ----
@@ -639,6 +648,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 - `~UntilSecondUse`: Lasts until the attribute is used twice
 - `~Attribute`: Lasts as long as the originating attribute is applied, can only be used inside an attribute.
 - `~UntilUseAttribute`: Lasts until used (see `~UntilUse`) or until the originating attribute disappears (see `~Attribute`)
+- `~DelayedPhase`: Starts at the start of the phase and lasts until the end of that phase
 
 ----
 ----
@@ -649,7 +659,7 @@ Many abilities apply attributes and need to specify an attribute duration. The f
 
 Format: `<Subtype> <Target>`
 
-- Subtypes: `Kill`, `Attack`, `Lynch` and `True Kill`
+- Subtypes: `Kill`, `Attack`, `Lynch`, `True Kill`, `Banish` and `True Banish`
 - Target: A target type, specifying who is getting killed
 
 ---
@@ -698,7 +708,7 @@ Format:
 `Protect <Target> from '<KillingSubtype>' through <Subtype> (<Duration>)`   
 
 - Target: A target type, specifying who is protected.
-- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches`, `Attacks & Lynches` or `All`
+- KillingSubtype: `Attacks`, `Kills` (automatically contains attacks), `Lynches`, `Attacks & Lynches` or `All` (attacks/kills/lynches); `Banishments` in haunted mode
 - Selector: A target type, limits the protection to only work against certain players.
 - Subtype: `Absence at <Location>`, `Active Defense`, `Passive Defense`, `Partial Defense` or `Recruitment Defense`
   - Location: Either a channel (`#channelName`) or a target type
