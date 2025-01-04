@@ -4,12 +4,12 @@ _rules/polls
 _rules/results
 _rules/roles
 _rules/the day and nighttime cycle
-_rules/tokens
 
 _info/channels
 _info/categories
 _info/categories_manual
 _info/general
+_info/misc
 
 haunting/rules
 haunting/categories
