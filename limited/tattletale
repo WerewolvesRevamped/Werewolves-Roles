@@ -3,8 +3,8 @@ __Basics__
 Each night, the Tattletale may check a target to determine if they are a "threat" or "not a threat". The result will be sent to another player.
 __Details__
 The Tattletale checks whether a player is a threat or not. Lycans and players with killing roles are classified as threats.
-Inspecting a player in this way is an immediate ability affected by strong disguises and redirections. 
-The results of the Tattletale's investigation will be sent to a random player with a miscellaneous role at the start of the day. This will happen even if the Tattletale dies during the night. The player will receive the name of the investigated player and whether or not they appeared as a threat, but not the name of the Tattletale.
+Inspecting a player in this way is an end night ability affected by strong disguises and redirections. 
+The results of the Tattletale's investigation will be sent to a random player with a miscellaneous role. The player will receive the name of the investigated player and whether or not they appeared as a threat, but not the name of the Tattletale.
 
 __Simplified__
 Each night, the Tattletale may check a player. Lycans and roles classified as killing roles show up as a threat, while all other roles are not a threat.
@@ -12,14 +12,15 @@ The results are sent to a random miscellaneous role.
 The Tattletale is affected by strong disguises and redirections.
 
 __Formalized__
-Passive Start Night: Target @(Cat:Miscellaneous)->RandomPlayer
-Immediate Night: 
+End Night:
   • Process:
+    ‣ Target @(Cat:Miscellaneous)->RandomPlayer
     ‣ Attribute Investigate @Selection for `Lycan` (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
-    ‣ @Result1 is `Success`: Reveal `@Selection is a Threat` to @Target
-    ‣ @Result2 is `Killing`: Reveal `@Selection is a Threat` to @Target
+    ‣ @Result1 is `Failure`: `There was nobody to receive the info` 
+    ‣ @Result2 is `Success`: Reveal `@Selection is a Threat` to @Target
+    ‣ @Result3 is `Killing`: Reveal `@Selection is a Threat` to @Target
     ‣ Otherwise: Reveal `@Selection is Not a Threat` to @Target
 
 __Card__
