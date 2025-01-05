@@ -14,8 +14,8 @@ On Poll Win:
   • @Self is part of @(AttrRole:Mayor):
     ‣ Ascend
     ‣ Delete `Election` Poll
-Immediate: Strongly Disguise @Self as @Selection
-On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
+Immediate: Strongly Disguise @Self as @Selection |silent:disguising.strongly.1|
+On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1] |silent:disguising.emergency|
 
 __Card__
 The Despot wants all the attention for themself.
