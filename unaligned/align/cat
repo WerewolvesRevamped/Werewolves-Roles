@@ -15,7 +15,7 @@ For each Cat, there is a corresponding dog. The Cat will align with the opposite
 __Formalized__
 Unique Role
 Starting: Target @(Role:Dog,SelectAll:False) (Player)
-Passive: [Temporal: Night 1]
+Passive: [Temporal: Night 1, Quantity: 1]
   • @Target->Alignment is `Townsfolk`: Alignment Change @Self to `Werewolf`
   • @Target->Alignment is `Werewolf`: Alignment Change @Self to `Townsfolk`
 Passive End Night: @Target->Role is not `Dog`: Alignment Change @Self to `Townsfolk` [Temporal: Night 1]
