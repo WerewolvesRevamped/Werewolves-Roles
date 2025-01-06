@@ -11,9 +11,9 @@ __Formalized__
 Starting:
   • Set Counter to 3
   • Display `Knives` (Counter)
-End Night: [Temporal: Night 2+]
+End Night: [Temporal: Night 2+, Quantity: 3]
   • Process: Decrement Counter
-  • Evaluate: Attack @Selection [Temporal: Night 2+, Quantity: 3]
+  • Evaluate: Attack @Selection 
 
 __Card__
 The Assassin has three knives and isn't afraid to leave them in people's backs.
