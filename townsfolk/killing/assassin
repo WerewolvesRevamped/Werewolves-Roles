@@ -11,7 +11,7 @@ __Formalized__
 Starting:
   • Set Counter to 3
   • Display `Knives` (Counter)
-End Night:
+End Night: [Temporal: Night 2+]
   • Process: Decrement Counter
   • Evaluate: Attack @Selection [Temporal: Night 2+, Quantity: 3]
 
