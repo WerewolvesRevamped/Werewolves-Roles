@@ -16,7 +16,7 @@ Inherit: `Pack Lycan`
 Starting:
   • Manipulate @Self's `private voting power` to `2`
   • Loyalty to `Werewolf` (Alignment)
-Pre-End Night: [Quantity: 1]
+Pre-End Night: [Quantity: 1] |alpha_wolf.1|
   • Cancel `Wolfpack` Poll
   • Attack @Selection
   • Evaluate:
