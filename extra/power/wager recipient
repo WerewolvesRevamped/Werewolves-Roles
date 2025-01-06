@@ -10,7 +10,7 @@ __Simplified__
 When a devil chooses to send the wager to a player, they become the Wager Recipient for the that night. The Wager Recipient may choose to use one of a variety of powers: each has a cost.
 
 __Formalized__
-Immediate Night: `Wager` Choice Choose @Chosen
+Immediate Night: `Wager` Choice Choose @Chosen |wager.1|
 Passive Start Day:
   • Conversation Reset
   • Revoke @ThisAttr from @Self
