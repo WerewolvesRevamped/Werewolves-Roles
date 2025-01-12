@@ -38,7 +38,7 @@ Start Night: [Attribute: @Selection lacks `Soulless`] {Direct} |devil.1|
   • Grant `Wager Recipient` to @Selection
   • Whisper to `Wager Recipient` as `Devil` (~Phase)
   • `Wager` Choice Creation for `Wager Recipient` (Attack, Protect, Investigate, Ignore)
-Choice `Attack` Chosen:
+Choice `Attack` Chosen: [Attribute: @Selection lacks `Soulless`]
   • Apply `Soulless` to @Chooser (~Persistent)
   • Increment Counter for #hell  
   • Target @Selection (Player)
