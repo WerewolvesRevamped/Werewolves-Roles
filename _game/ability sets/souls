@@ -2,7 +2,7 @@
 Passive Start Phase: Emit `Soul Action` [Condition: #Hell->Counter > 0]
 On `Soul Action` Emitted: `Soul Action` Choice Creation for @Self (Soul Attack, Soul Protect) |silent:souls.1|
 On `Soul Action` Emitted: `Soul Action` Choice Choose @Chosen |silent:souls.1|
-Choice `Soul Attack` Chosen:
+Choice `Soul Attack` Chosen: [Attribute: @Selection lacks `Soulless`]
   • Attack @Selection
   • Decrement Counter for #Hell 
   • #Hell->Counter > 0: Emit `Soul Action`
