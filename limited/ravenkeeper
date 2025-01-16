@@ -15,12 +15,12 @@ Each night, the Ravenkeeper may assign a raven to a player. When an ability is u
 __Formalized__
 Starting: Set Counter to floor $total/5
 Immediate Night:
-  • @Self->Counter > `0`:
-    ‣ Apply `Raven` to @Selection (~Persistent)
-    ‣ Decrement Counter
+• @Self->Counter > `0`:
+  ‣ Apply `Raven` to @Selection (~Persistent)
+  ‣ Decrement Counter
 Immediate Day:
-  • Revoke `Raven` from @Selection
-  • Increment Counter
+• Revoke `Raven` from @Selection
+• Increment Counter
 On @(AttrSelf:Raven) Death: Increment Counter
 
 __Card__
