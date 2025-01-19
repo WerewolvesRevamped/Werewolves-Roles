@@ -20,7 +20,7 @@ The Cupid chooses one player to become their lover. They can never betray each o
 __Formalized__
 Inherit: `Cupid`
 Starting: Join #Couple
-Immediate Night: [Condition: @Selection is not @Self] {Forced}
+Immediate Night: [Condition: @Selection is not @Self, Temporal: Night 1] {Forced}
   • Target @Selection (Player) 
   • Grant `Lover` to @Target
   • Add @Target to #Couple
