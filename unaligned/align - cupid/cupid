@@ -19,11 +19,11 @@ The Cupid chooses one player to become their lover. They can never betray each o
 
 __Formalized__
 Inherit: `Cupid`
-Starting: Join #Couple:@Self
-Immediate Night: {Forced}
-  • Target @Selection (Player) [Condition: @Selection is not @Self]
+Starting: Join #Couple
+Immediate Night: [Condition: @Selection is not @Self] {Forced}
+  • Target @Selection (Player) 
   • Grant `Lover` to @Target
-  • Add @Target to #Couple:@Self 
+  • Add @Target to #Couple
   • Learn `@Target is @Target->Role`
 
 __Card__
