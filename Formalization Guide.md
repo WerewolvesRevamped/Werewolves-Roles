@@ -547,6 +547,7 @@ __General Target Types__
 - `@SecondarySelection`: Uses a secondary selection from the action (e.g. "Disguise <Selection> as <SecondarySelection>")
 - `@SecondarySelection[<Type>]`: See `@Selection:<Type>`
 - `@Target`: Uses the current target set by the player
+- `@TargetDead`: Uses the current target set by the player, even if it is dead.
 - `@All`: Uses all living players
 - `@Others`: Uses all living players except for `@Self`
 - `@Dead`: Uses all dead players
