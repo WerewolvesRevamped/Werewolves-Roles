@@ -18,6 +18,7 @@ __Simplified__
 The Cupid chooses one player to become their lover. They can never betray each other and if one dies, the other does too. The Cupid's alignment is the same as their lover's alignment.
 
 __Formalized__
+Unique Role
 Inherit: `Cupid`
 Starting: Join #Couple
 Immediate Night: [Condition: @Selection is not @Self, Temporal: Night 1] {Forced}
