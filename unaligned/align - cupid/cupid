@@ -25,6 +25,7 @@ Immediate Night: [Condition: @Selection is not @Self] {Forced}
   • Grant `Lover` to @Target
   • Add @Target to #Couple
   • Learn `@Target is @Target->Role`
+  • Alignment Change @Self to @Target->Alignment
 
 __Card__
 The Cupid falls in love, and forms an inseparable team with their new-found lover.
