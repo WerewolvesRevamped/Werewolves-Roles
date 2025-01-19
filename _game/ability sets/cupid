@@ -5,15 +5,14 @@ On Death:
 On @Target Death:
   • True Kill @Self
   • Announce `Lover @Target died, killing Cupid @Self`
-Passive:
-  • (@Target->Alignment is `Coven`) or (@Target->Role is `Hag`): Role Change @Self to `Cupid Hag`
-  • @Target->Alignment is `Hell`: Role Change @Self to `Demonic Cupid`
-Passive:
-  • @Target exists: Alignment Change @Self to @Target->Alignment
-  • Otherwise: Alignment Change @Self to @All->Alignment
-On Visited [Role Change]:
+Passive: Role Change @Self to `Cupid Hag` [Condition: (@Target->Alignment is `Coven`) or (@Target->Role is `Hag`)]
+Passive: Role Change @Self to `Demonic Cupid` [Condition: @Target->Alignment is `Hell`]
+Passive: Alignment Change @Self to @Target->Alignment [Condition: (@Target exists) and (not (@Target->Alignment is @Self->Alignment))]
+On Visited [Role Changing]:
   • Cancel with Success
-  • not (@Target exists): Target @All->RandomPlayer
+  • not (@Target exists):
+    ‣ Target @All->RandomPlayer
+    ‣ Continue
   • @VisitParameter is `Undead`: Role Change @Self to `Undead Cupid`
   • @VisitParameter is `Spirit`: Role Change @Self to `Spectral Cupid`
   • @VisitParameter is `Wolf`: Role Change @Self to `Cupid Wolf`
