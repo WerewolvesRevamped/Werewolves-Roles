@@ -192,8 +192,6 @@ Viewers: <Player Type List>
 
 Valid player types are: Alive, Dead, Ghost, Substitute, Spectator
 Instead of a player type list, `*None*` or `*All*` may be used.
-Spectator defaults to view permissions on all channels and must only be added as Member for read permissions.
-
 
 ## Attributes
 
