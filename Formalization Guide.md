@@ -190,8 +190,9 @@ Viewers: <Player Type List>
 - Members: A command separated list of player types - players that can both view and write in the channel
 - Viewers: A comma separated list of player types - players that can view but not write in the channel
 
-Valid player types are: Alive, Dead, Ghost, Substitute
+Valid player types are: Alive, Dead, Ghost, Substitute, Spectator
 Instead of a player type list, `*None*` or `*All*` may be used.
+Spectator defaults to view permissions on all channels and must only be added as Member for read permissions.
 
 
 ## Attributes
