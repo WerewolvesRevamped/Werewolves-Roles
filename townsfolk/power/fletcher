@@ -14,7 +14,7 @@ __Formalized__
 Immediate Day: [Quantity: 1, Temporal: Day 0, Condition: @Selection is not @Self] {Forced}
   • Grant `Fletcher's Customer` to @Selection
   • Target @Selection (Player)
-Immediate: Revoke `Fletcher's Customer` from @Target [Quantity: 1, Temporal: Night 1+, Condition: @Target exists]
+On Death: Revoke `Fletcher's Customer` from @Target [Temporal: Night 1+, Condition: @Target exists]
 
 __Card__
 The Fletcher likes to gift their handmade bows and arrows to those they trust.
