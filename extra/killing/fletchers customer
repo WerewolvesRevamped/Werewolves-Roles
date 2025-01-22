@@ -12,6 +12,7 @@ The Fletcher's Customer is chosen by the Fletcher. The Fletcher's Customer may s
 The Fletcher's Customer is an extra role that doesn't replace the player's current role.
 
 __Formalized__
+Starting: Target @Selection (Player) 
 Immediate: Target @Selection (Player) 
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
 On Killed: [Condition: @Target exists]
