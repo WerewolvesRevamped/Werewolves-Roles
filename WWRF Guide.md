@@ -2,6 +2,10 @@
 
 - [Introduction](#introduction)
 - [Game Elements](#game-elements)
+  - [Roles Format](#roles-format)
+  - [Teams Format](#teams-format)
+  - [Groups Format](#groups-format)
+  - [Abilities Format](#abilities-format)
 
 ## Introduction
 Werewolves Revamped is automated using "formalization" - i.e. all roles and similiar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
@@ -42,3 +46,69 @@ Choices | ⛔ | ✅ | ⛔ |
 
 ∗ Roles can be instantiated in two ways: when they are assigned to a player, the player sort of becomes the instantiated version of the role, though of course there is more data on the player. Alternatively if a role is assigned as an extra role mid-game it is instantiated as a role type attribute.
 ∗∗ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.
+
+The various game elements are described in more detail below.
+
+### Roles Format
+
+Roles are the main holder of WWRF information. Their formalization is formatted as follows:
+
+```
+**<Role Name>** | <Role Group> <Role Category> <Role Team>
+__Basics__
+<Basic Description>
+__Details__
+<Detailed Description>
+
+__Simplified__
+<Simplified Description>
+
+__Formalized__
+[Unique Role]
+[Haunted Role]
+<Ability List>
+
+__Card__
+<Card Description>
+```
+- Role Name: May be anything  
+- Role Class: May be `Townsfolk`, `Werewolf`, `Solo`, `Unaligned` or `Extra`  
+- Role Category: May be `Elected`, `Align`, `Killing`, `Group`, `Investigative`, `Power` or `Miscellaneous`  
+- Role Team: Should be kept blank for any role group besides `Solo`. For `Solo` should be set to `- <Team Name>`, where `<Team Name>` is the name of a defined team, e.g. `Pyro Team`.
+- Unique Role: Set to `Unique Role` for unique roles, otherwise remove the line entirely
+- Haunted Role: Set `Haunted Role` for roles that use ALL their ability while ghostly, otherwise remove the line entirely
+- Ability List: A newline separated list of `Abilities`
+
+### Teams Format
+```
+**<Team Name>**
+__Basics__
+<Basic Description>
+
+__Formalized__
+Win Condition: <Target List>
+<Ability List>
+```
+
+- Win Condition: A comma separated list of [Player Selectors](#player-selectors). The team wins when all remaining players match one or more of the selectors.
+- Ability List: A newline separated list of `Abilities`
+
+### Groups Format
+```
+**<Group Name>** | <Related Team Name> Group
+__Basics__
+<Basic Description>
+__Members__
+<Members Description>
+
+__Formalized__
+[Unique Group]
+<Ability List>
+```
+
+- Unique Group: Set to `Unique Group` for unique group, otherwise remove the line entirely 
+- Ability List: A newline separated list of `Abilities`
+
+### Abilities Format
+(WIP)
+when specifying an ability list, you may use `No Abilities` for an empty ability list
