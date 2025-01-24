@@ -13,7 +13,8 @@ The Recluse is immediately notified of all powers used on them. When a werewolf 
 __Formalized__
 On Visited:
   • @Visitor->Alignment is `Werewolf`: Learn `@Visitor->Role @Visitor used @VisitType on you`
-  • Otherwise:  Learn `@Visitor->Role used @VisitType on you`
+  • @Visitor is part of @All: Learn `@Visitor->Role used @VisitType on you`
+  • Otherwise: Learn `@VisitType was used on you`
 On Visited [Attack Killing]:
   • @Visitor has `Wolfish`: Cancel with Failure
 
