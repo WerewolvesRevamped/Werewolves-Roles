@@ -6,4 +6,4 @@ __Members__
 
 __Formalized__
 Unique Group
-On Disbandment: not (@(Align:Horsemen) exists): Remove `Doomed` from @All
+On Disbandment: Remove `Doomed` from @All [Condition: not (@(Align:Horsemen) exists)]
