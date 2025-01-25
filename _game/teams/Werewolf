@@ -11,4 +11,4 @@ The Werewolves Team wins when only members of the Werewolves Team and unaligned 
 
 __Formalized__
 Win Condition: @(Alignment:Werewolf), @(Class:Unaligned)
-Starting: Apply `Wolfish` to @Members
+On Join: Apply `Wolfish` to @Joiner

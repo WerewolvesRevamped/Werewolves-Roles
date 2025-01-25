@@ -4,4 +4,4 @@ Plague Team wins when all players are either dead, unaligned or part of the Plag
 
 __Formalized__
 Win Condition: @(Alignment:Plague), @(Class:Unaligned)
-Starting: Add @Members to #Plague-Pit
+On Join: Add @Joiner to #Plague-Pit

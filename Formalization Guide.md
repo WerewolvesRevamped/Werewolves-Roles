@@ -375,6 +375,7 @@ Trigger types can be one of the following:
 - `On Removal` triggers when the current attribute is removed. Can only be used inside attributes.
 - `On End` triggers when the game ends
 - `On '<Value>' Emitted` triggers when an emitting action is used to emit a specific value.
+- `On Join` triggers for a team when it a new player joins it. (Use `@Joiner` to get the joining player)
 
 ----
 #### Action Restrictions
