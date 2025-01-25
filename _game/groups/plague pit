@@ -8,4 +8,4 @@ __Members__
 __Formalized__
 Unique Group
 Starting: Display `Rodents` (Counter)
-On Disbandment: Remove `Contaminated` from @All
+On Disbandment: Remove `Contaminated` from @All [Condition: not (@(Align:Plague) exists)]
