@@ -8,4 +8,4 @@ __Members__
 
 __Formalized__
 Unique Group
-On Disbandment: Remove `Demonized` from @All
+On Disbandment: Remove `Demonized` from @All [Condition: not (@(Align:Underworld) exists)]
