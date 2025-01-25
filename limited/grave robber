@@ -14,8 +14,8 @@ __Card__
 The Grave Robber robs not just graves, but also identities. 
 
 __Formalized__
-On @All Death: @DeathType is `Lynch`: Apply `GraveRobberOption` to @This
-Immediate Night: [Condition: @(AttrSelf:GraveRobberOption,AliveOnly:False) exists, Attribute: @Selection has `GraveRobberOption:Self`]
+On @All Death: @DeathType is `Lynch`: Apply `GraveRobberOption` to @This {Visitless}
+Immediate Night: [Condition: @(AttrSelf:GraveRobberOption,AliveOnly:False) exists, Attribute: @Selection has `GraveRobberOption:Self`] {Visitless}
   • Target @Selection (Dead)
   • Role Change @Self to @TargetDead->Role
-Passive End Night: Process: Remove `GraveRobberOption:Self` from @(AttrSelf:GraveRobberOption,AliveOnly:False)
+Passive End Night: Process: Remove `GraveRobberOption:Self` from @(AttrSelf:GraveRobberOption,AliveOnly:False) {Visitless}
