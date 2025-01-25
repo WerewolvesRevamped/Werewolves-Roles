@@ -9,4 +9,4 @@ __Members__
 
 __Formalized__
 Unique Group
-On Disbandment: Remove `Obstruction:Enchanted` from @All 
+On Disbandment: Remove `Obstruction:Enchanted` from @All [Condition: not (@(Align:Flute) exists)]
