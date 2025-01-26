@@ -13,8 +13,8 @@ The Angel wins when they are lynched: the game continues afterwards. In addition
 The Angel may select a player that dies when the Angel is lynched, but only if the target is voting for the Angel. 
 
 __Formalized__
-Immediate: Target @Selection (Player)
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
+Immediate: Target @Selection (Player) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
 On Lynch:
   • (@Attacker exists) and (@Attacker is part of @All): 
     ‣ Kill @Attacker
@@ -33,3 +33,21 @@ On Poll `Lynch` Win:
 
 __Card__
 The Angel wants to go back to heaven, taking their 'saviour' with them.
+
+
+
+**Assistant** | Townsfolk Miscellaneous
+__Basics__ 
+The Assistant may select a player to redirect one werewolf action to. The action cannot be an attack.
+__Details__
+The Assistant may target a player. They can update this target once per phase, with 1 emergency change to be used whenever the Assistant wants. The Assistant may choose to target nobody, which will stop their power from being used.
+When the Assistant is affected by a wolfish player's power, that is not an attack, it will be redirected to the target without the wolfish player being informed. 
+The Assistant's redirection power can only be used once per game. The Assistant is informed when their power is used, but they are not told what ability they redirected.
+
+__Simplified__
+The Assistant may select a player to redirect one werewolf action to. The action cannot be an attack.
+They will be informed when their ability is used.
+
+__Formalized__
+Immediate: Target @Selection (Player) 
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
