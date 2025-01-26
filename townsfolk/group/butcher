@@ -11,6 +11,7 @@ All the Butchers share a secret channel and know each other.
 Exactly one Butcher is actually a werewolf spy called the bloody butcher.
 
 __Formalized__
+Require: `Bloody Butcher`
 Starting: Join #Butchers
 
 __Card__
