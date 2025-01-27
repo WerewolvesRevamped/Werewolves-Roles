@@ -2,6 +2,8 @@
 
 - [Introduction](#introduction)
 - [Game Elements](#game-elements)
+- [Types](#types)
+- [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
   - [Groups Format](#groups-format)
@@ -33,7 +35,7 @@ Name | Passive  | Active | Acting | Notes
 --- | --- | --- | --- | --- 
 Roles | ✅ | ⛔ | ⛔ | ∗ 
 Players | ⛔ | ✅ | ✅ |  
-Teams | ✅ | ✅ | ✅ | ∗∗ 
+Teams | ✅ | ✅ | ✅ | ⁑ 
 Groups | ✅ | ✅ | ✅ |  
 Polls | ✅ | ✅ | ✅ |  
 Attributes (Default) | ⛔ | ✅ | ⛔ |  
@@ -45,9 +47,59 @@ Locations | ✅ | ⛔ | ⛔ |
 Choices | ⛔ | ✅ | ⛔ |  
 
 ∗ Roles can be instantiated in two ways: when they are assigned to a player, the player sort of becomes the instantiated version of the role, though of course there is more data on the player. Alternatively if a role is assigned as an extra role mid-game it is instantiated as a role type attribute.
-∗∗ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.
+⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.
 
-The various game elements are described in more detail below.
+The format of various game elements are described in more detail below.
+
+## Types
+
+In many cases roles or other game elements need to deal with values, for example player inputs or constants used for comparisons. Each value has a certain type which must be defined or inferred.
+
+For example, a role investigation takes one input value: a player that is to be investigated. A disguise takes two inputs: a player that should be disguised and a role they should be disguised as. These inputs may be player submissions, but may also be builtin to the role (for example for a Tanner both the role and the player are user submitted, but for a Disguised Fox the player is always set to themselves, whereas the role is user submitted).
+
+Each value needs to be annotated with its respective type, however most of the time the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. More on this below.
+
+Values are split into two categories: constant values (e.g. `Citizen`, referring to the citizen role) or selectors (e.g. `@Self`, referring to the current game element). Furthermore, there is a differentiation between basic selectors (e.g. `@Self` or `@Target`) which refer to a specifc value based on context and advanced selectors (e.g. `@(Role:Citizen)`, returing all players with the citizen role) which select values according to a specified query.
+
+This is a list of values and example constant values and selectors:
+
+Value Type | Constant Example  | Basic Selector Example | Advanced Selector Example
+--- | --- | --- | ---
+Player | ⛔ ∗ | @Self | @(Role:Citizen)
+Role | `Citizen` | @Target | ^(Team:Townsfolk)
+Active Extra Role | `Mayor` | @ThisAttr | ⛔
+Group | #Bakers | @Self | ⛔
+Alignment | Townsfolk | &Self | &(Align:!Townsfolk)
+Location | ⁑ | ⁑ | ⁑
+Base Location | #tavern | ⛔ | ⛔
+Poll | `Wolfpack` | @Self | ⛔
+Success | Success | ⛔ | ⛔
+Result ⁂ | ⛔ | @Result | ⛔
+Info | `Attacked @Target` ⁑⁑ | @ActionFeedback | ⛔
+Ability Type | `Killing` | @VisitType | ⛔
+Ability Subype ⁑⁑∗ | `Attack Killing` | @VisitSubtype | ⛔
+Ability Category | `All` | ⛔ | ⛔
+Number | 1 | @Selection | ⛔
+Boolean | True | ⛔ | ⛔
+Attribute | `Wolfish` | @VisitParameter | ⛔
+Active Attribute | `Marker` | @ThisAttr | `Marker:Self`
+Display | `Potions` | ⛔ | ⛔
+Display Value | `Counter` | ⛔ | ⛔
+Category | `Killing` | ⛔ | ⛔
+Killing Type | `Attack` | @DeathType | ⛔
+Class | `Townsfolk` | @Result | ⛔
+Source | `Group:Wolfpack` | @AttackSource | ⛔
+Option | `Join Pack` | @Option | ⛔
+String | `Text` | ⛔ | ⛔
+Null | ⛔ | ⛔ | ⛔
+
+∗ Players can not be referenced using a constant value, as that would require this player to be present in every game.
+⁑ Locations are a special type which unifies several other types into a single type. The following types can be interpreted as a location: group, base location, active extra role, player, attribute.
+⁂ Results are a special type which is returned after executing an ability, depending on context different types can be extracted from it. It always stores at least a success type (for if the ability succeeded) and an info type (for the ability feedback) and depending on the ability potentially other abilities.
+⁑⁑ Info is a special type which is a text containing several selectors. All selectors contained within the info text must either be annotated or support run-time annotation. The info type is used when a text output is generated. As part of the text output process all selectors contained within the info type are evaluated and converted to text.
+⁑⁑∗ An Ability Subtype contains the info of the ability type _and_ the subtype, not just the latter.
+
+## Game Element Formats
 
 ### Roles Format
 
