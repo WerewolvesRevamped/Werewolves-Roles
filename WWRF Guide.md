@@ -328,6 +328,7 @@ Poll type refers to the passive poll. There is no selector for active polls.
 Selector | Meaning
 --- | ---
 ``​`<PollName>`​`` | Constant poll.
+@Self | Retrieves the name of the current poll.
 
 ### Success Type
 
