@@ -6,6 +6,7 @@
   - [Player Type](#player-type)
   - [Role Type](#role-type)
   - [Active Extra Role Type](#active-extra-role-type)
+  - [Group Type](#group-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -116,7 +117,7 @@ Player type is one of the most common types and refers to a player of the game (
 
 Selector | Meaning
 --- | ---
-@Self | The current player.
+@Self | The current player (Alternatively, the player who an attribute is applied on when using from an attribute).
 @All | All living players.
 @Others | @All without @Self.
 @Dead | All dead players.
@@ -228,6 +229,15 @@ Selector | Meaning
 --- | ---
 @ThisAttr | Refers to the current active extra role.
 ``​`<RoleName>`​`` | Refers to an active extra role name with the specified name which was __created by the current game element__. 
+
+### Group Type
+
+Group types refer to the active instance of a group. Currently there is only the active group type, though when a group name is passed and no active group exists for this group yet, some contexts may automatically create an active instance of the group so the group type is able to return an active instance.
+
+Selector | Meaning
+--- | ---
+@Self | The current group.
+`#<GroupName>` | A group with the specified name.
 
 ## Game Element Formats
 
