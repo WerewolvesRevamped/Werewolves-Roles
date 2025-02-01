@@ -7,6 +7,7 @@
   - [Role Type](#role-type)
   - [Active Extra Role Type](#active-extra-role-type)
   - [Group Type](#group-type)
+  - [Alignment Type](#alignment-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -238,6 +239,21 @@ Selector | Meaning
 --- | ---
 @Self | The current group.
 `#<GroupName>` | A group with the specified name.
+
+### Alignment Type
+
+Alignment type refers to a team. Teams are both passive/active at the same time.
+
+Selector | Meaning
+--- | ---
+@Result[1-7] | Refers to the result of a processed ability, which will be cast to a team if possible.
+@ActionResult | Refers to the result of an action in `On Action` and variants.
+@VisitParameter | Refers to a parameter in a visit in `On Visited`.
+@Option | Refers to the chosen option of a choice, though this will be an option type it will be cast to a team if possible.
+&All | All teams.
+&Self | The current team.
+&Ind | Refers to the current element in a `For Each` ability.
+``​`<TeamName>`​`` | Constant alignment. 
 
 ## Game Element Formats
 
