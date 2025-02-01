@@ -12,6 +12,9 @@
   - [Poll Type](#poll-type)
   - [Success Type](#success-type)
   - [Result Type](#result-type)
+  - [Info Type](#info-type)
+  - [Ability Type Type](#ability-type-type)
+  - [Ability Subtype Type](#ability-subtype-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -326,6 +329,38 @@ Success | Whether the ability succeeded (always present).
 Target | The primary target of an ability.
 Message | The ability feedback a player would receive (always present).
 
+### Info Type
+
+Info type is a special type - it is plain text including selectors. The selectors are parsed into text if possible, for example: ``​`Your current target is @Target`​`` would inform a player of their current target. For selectors to be parsed into text correctly they must be surrounded by spaces in both directions so that they can correctly be identified.
+
+Selector | Meaning
+--- | ---
+@ActionFeedback | The feedback of a processed ability.
+%PartialRoleList% | Refers to a role list info text stored as host information.
+``​`<Info>`​`` | Normal info, potentially containing other selectors.
+
+Each type uses a different method to get parsed to text - for discord elements a respective discord reference is generated (ping, channel link) while other types are usually just their name in title case.
+
+### Ability Type Type
+
+Ability Type type is a type that represents an ability type. Ability types have formal names which may vary from their common names (e.g. `Investigating`).
+
+Selector | Meaning
+--- | ---
+@VisitType | The ability type of a visit in `On Visited`.
+@ActionAbilityType | The ability type of an ability in `On Action`.
+``​`<AbilityType>`​`` | The name of an ability type.
+
+### Ability Subtype Type
+
+Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first followed by the type. Subtype that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True Kill Killing`).
+
+Selector | Meaning
+--- | ---
+@VisitType | The ability type of a visit in `On Visited`.
+@ActionAbilityType | The ability type of an ability in `On Action`.
+``​`<AbilityType>`​`` | The name of an ability type.
+ 
 ## Game Element Formats
 
 ### Roles Format
