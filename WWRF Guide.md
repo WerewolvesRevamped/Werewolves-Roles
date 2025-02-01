@@ -137,6 +137,28 @@ Selector | Meaning
 @ID:<ID> | Refers to a specific player based on discord id. Useful for testing.
 %Player[N]% | Refers to a player stored as host information.
 
+The advanced player selector has the format @(Property:Value) and searches for players where a certain property matches a certain value. For example, `@(Role:Citizen)` will return all players who's role is `Citizen`. All properties may be inverted using an `!` at the start of the value, e.g. `@(Role:!Citizen)` will return all players who's role is __not__ `Citizen`.
+
+Advanced Selector Value | Meaning
+--- | ---
+Role | The player's current role.
+Cat/Category | The player's current role's category.
+Class | The player's current role's class (most commonly Townsfolk/Werewolf/Solo/Unaligned/Extra).
+Align/Alignment | The player's current alignment. A player can either align with a team, in which case their alignment is their team or they can be nonaligned in which case their alignment is set to `unaligned`.
+FullCat | Matches both Class and Category (e.g. `@(FullCat:Townsfolk-Power)`), must be `-` separated.
+OrigRole | The player's original role.
+OrigCat | The player's original role's category.
+OrigClass | The player's original role's class.
+OrigAlign | The player's original role's default alignment (it should be noted that this may differ even without a role change necessary as `Align` checks for the players current alignment, not the player's current role's default alignment).
+OrigFullCat | Matches both class and category of the player's original role.
+Group | Checks for membership of a certain group.
+Attr/Attribute | Checks whether the player has a certain attribute.
+AttrSelf | Checks whether the player has a certain attribute which was applied by the current player.
+AttrRole | Checks whether the player has a certain role type attribute.
+AttrDisguise | Checks whether the player has a disguise applied by a certain player. As value specify a player selector which will have `@` prepended, so e.g. just `Self`.
+AliveOnly | Special field. Set it to `False` to also search for dead players.
+SelectAll | Special field. Set it to `False` to return a single random player from the selector instead of all players.
+
 
 
 ## Game Element Formats
