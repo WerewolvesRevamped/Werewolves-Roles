@@ -17,6 +17,8 @@
   - [Ability Subtype Type](#ability-subtype-type)
   - [Ability Category Type](#ability-category-type)
   - [Number Type](#number-type)
+  - [Boolean Type](#boolean-type)
+  - [Attribute Type](#attribute-type)
   - [Variables](#variables)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
@@ -153,7 +155,7 @@ Selector | Meaning
 @OtherVoters | @Voters without the poll winner.
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a player if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
-@ID:<ID> | Refers to a specific player based on discord id. Useful for testing.
+@ID:\<ID\> | Refers to a specific player based on discord id. Useful for testing.
 %Player[N]% | Refers to a player stored as host information.
 
 The advanced player selector has the format @(Property:Value) and searches for players where a certain property matches a certain value. For example, `@(Role:Citizen)` will return all players who's role is `Citizen`. All properties may be inverted using an `!` at the start of the value, e.g. `@(Role:!Citizen)` will return all players who's role is __not__ `Citizen`.
@@ -192,7 +194,7 @@ PublicVotingPower | Evaluates the player'S current public voting power.
 PrivateVotingPower | Evaluates the player'S current private voting power.
 RandomPlayer | Selects a random player from a list of players (e.g. `@All->RandomPlayer` would return an entirely random player).
 MostFreqRole | Returns the most common role amongst a group of players (e.g. `@(Group:Wolfpack)->MostFreqRole` would return the most common role in the wolfpack).
-Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the player. 
+Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the player. 
 Count | Returns the amount of players (e.g. `@All->Count` returns the amount of living players).
 
 ### Role Type
@@ -257,7 +259,7 @@ Selector | Meaning
 Target | The group's target.
 Counter | The group's counter.
 Members | All members of the group.
-Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the group. 
+Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the group. 
 
 ### Alignment Type
 
@@ -281,7 +283,7 @@ Selector | Meaning
 Target | The team's target.
 Counter | The team's counter.
 Members | All members of the team.
-Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the team. 
+Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the team. 
 
 ### Location Type
 
@@ -381,10 +383,23 @@ Selector | Meaning
 --- | ---
 @Selection | Refers to a selection submitted by a player through a prompt.
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
-<Number> | A number.
+\<Number\> | A number.
 %Number[N]% | Refers to a number stored as host information.
-<Variable> | A [variable](#variables) that is evaluated to a number.
-<Number>/<Number> | A division of two numbers (both of which can be one of the above options), rounded to the nearest full number.
+\<Variable\> | A [variable](#variables) that is evaluated to a number.
+\<Number\>/\<Number\> | A division of two numbers (both of which can be one of the above options), rounded to the nearest full number.
+
+### Boolean Type
+
+Boolean type represents whether something is true or not. It can take exactly two values: `​True` and `False`.
+
+### Attribute Type
+
+Attribute type refers to a _passive_ attribute.
+
+Selector | Meaning
+--- | ---
+@VisitParameter | Refers to a parameter in a visit in `On Visited`.
+``​`<AttributeName>`​`` | The name of an attribute.
 
 ### Variables
 
