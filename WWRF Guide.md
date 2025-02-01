@@ -19,6 +19,7 @@
   - [Number Type](#number-type)
   - [Boolean Type](#boolean-type)
   - [Attribute Type](#attribute-type)
+  - [Active Attribute Type](#active-attribute-type)
   - [Variables](#variables)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
@@ -214,7 +215,7 @@ Selector | Meaning
 ``​`<RoleName>`​`` | Constant role 
 %Role[N]% | Refers to a role stored as host information.
 
-The advanced role selector has the format ^(Property:Value) and searches for roles where a certain property matches a certain value. For example, `^(Cat:Killing)` will return all killing roles. All properties may be inverted using an `!` at the start of the value, e.g. `@(Team:!Townsfolk)` will return all roles who's are __not__ part of townsfolk.
+The advanced role selector has the format ^(Property:Value) and searches for roles where a certain property matches a certain value. For example, `^(Cat:Killing)` will return all killing roles. All properties may be inverted using an `!` at the start of the value, e.g. `^(Team:!Townsfolk)` will return all roles who's are __not__ part of townsfolk.
 
 Selector | Meaning
 --- | ---
@@ -233,6 +234,7 @@ Class | The role's class.
 Team | The role's team.
 Type | The role's type.
 Players | All players that have this role.
+Count | Returns the amount of roles.
 
 ### Active Extra Role Type
 
@@ -260,6 +262,7 @@ Target | The group's target.
 Counter | The group's counter.
 Members | All members of the group.
 Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the group. 
+Count | Returns the amount of groups.
 
 ### Alignment Type
 
@@ -276,6 +279,13 @@ Selector | Meaning
 &Ind | Refers to the current element in a `For Each` ability.
 ``​`<TeamName>`​`` | Constant alignment. 
 
+The advanced team selector has the format &(Property:Value) and searches for teams where a certain property matches a certain value. For example, `&(Attr:Marker)` will return all teams with the marker attribute. All properties may be inverted using an `!` at the start of the value, e.g. `&(Align:!Townsfolk)` will return all teams except townsfolk.
+
+Selector | Meaning
+--- | ---
+Align/Alignment | The team - only useful when inverted.
+Attr | Checks whether the team has a certain custom attribute.
+
 Alignments support a few property accesses:
 
 Selector | Meaning
@@ -284,6 +294,7 @@ Target | The team's target.
 Counter | The team's counter.
 Members | All members of the team.
 Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the team. 
+Count | Returns the amount of teams.
 
 ### Location Type
 
@@ -333,6 +344,7 @@ Result | The result's result as a single value which may take several types.
 Success | Whether the ability succeeded (always present).
 Target | The primary target of an ability.
 Message | The ability feedback a player would receive (always present).
+Count | Returns the amount of results.
 
 ### Info Type
 
@@ -400,6 +412,27 @@ Selector | Meaning
 --- | ---
 @VisitParameter | Refers to a parameter in a visit in `On Visited`.
 ``​`<AttributeName>`​`` | The name of an attribute.
+
+### Active Attribute Type
+
+Active Attribute type is the counterpart to the attribute type which refers to active attribute instances. To be able to correctly resolve some types of active attribute selectors as "on element" is required (the element on which the attribute is applied). What is passed here is based on the ability. There are various variants of advanced active attribute selectors, so they are all listed in the same taböle.
+
+Selector | Meaning
+--- | ---
+@ThisAttr | Refers to the current attribute.
+``​`<AttributeName>`​`` | Searches for a custom attribute 
+``​`<AttributeName>:Self`​`` | Searches for a custom attribute, applied by the current player.
+``​`<AttributeName>:<SourceReference>`​`` | Searches for a custom attribute, applied by a certain source specified by its reference. This is not very usable most of the time as most source references are different each game, however team names can be used. See [sources](#sources).
+``​`<AttributeName>:<SourceName>`​`` | Searches for a custom attribute, applied by a certain source specified by its name. See [sources](#sources).
+``​`<AttributeName>::<Val1>`​`` | Searches for a custom  attribute, with a specific value in Value 1.
+``​`<AttributeName>:Self:<Val1>`​`` | Combination of the above.
+``​`<AttributeName>:<SourceReference>:<Value1>`​`` | Combination of the above.
+``​`<AttributeName>:<SourceName>:<Value1>`​`` | Combination of the above.
+``​`<GenericAttributeType>`​`` | Searches for generic attributes of the specified type. Valid generic attribute types are the following: disguise, defense, absence, manipulation, groupmembership, obstruction, pollcount, pollresult, polldisqualification, pollvotes, role, redirection, loyalty, whisper.
+``​`<GenericAttributeType>:Self`​`` | Combination of the above.
+``​`<GenericAttributeType>:<SourceReference>`​`` | Combination of the above.
+``​`<GenericAttributeType>:<SourceName>`​`` | Combination of the above.
+``​`<GenericAttributeType>:<Value1>`​`` | Combination of the above.
 
 ### Variables
 
