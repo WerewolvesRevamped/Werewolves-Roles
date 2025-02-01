@@ -4,6 +4,7 @@
 - [Game Elements](#game-elements)
 - [Types](#types)
   - [Player Type](#player-type)
+  - [Role Type](#role-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -62,7 +63,7 @@ In many cases roles or other game elements need to deal with values, for example
 
 For example, a role investigation takes one input value: a player that is to be investigated. A disguise takes two inputs: a player that should be disguised and a role they should be disguised as. These inputs may be player submissions, but may also be builtin to the role (for example for a Tanner both the role and the player are user submitted, but for a Disguised Fox the player is always set to themselves, whereas the role is user submitted).
 
-Each value needs to be annotated with its respective type, however most of the time the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. More on this below.
+Each value needs to be annotated with its respective type, however most of the time the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. Check for each ability what types it expects and when annotation may be necessary. Annotation is done be appending the type surrounded by square brackets, for example: ``​`Citizen`[role]``.
 
 Values are split into two categories: constant values (e.g. `Citizen`, referring to the citizen role) or selectors (e.g. `@Self`, referring to the current game element). Furthermore, there is a differentiation between basic selectors (e.g. `@Self` or `@Target`) which refer to a specifc value based on context and advanced selectors (e.g. `@(Role:Citizen)`, returing all players with the citizen role) which select values according to a specified query.
 
@@ -110,7 +111,7 @@ Many types default to not just being a single value, but actually a list, though
 
 ### Player Type
 
-Player type is one of the most common types and refers to a player of the game. This type is also known under `player_attr` (referring to a player when acting through an extra role) or `player_group` (referring to a player when acting through a group).
+Player type is one of the most common types and refers to a player of the game (active). This type is also known under `player_attr` (referring to a player when acting through an extra role) or `player_group` (referring to a player when acting through a group).
 
 Selector | Meaning
 --- | ---
@@ -179,6 +180,41 @@ PrivateVotingPower | Evaluates the player'S current private voting power.
 RandomPlayer | Selects a random player from a list of players (e.g. `@All->RandomPlayer` would return an entirely random player).
 MostFreqRole | Returns the most common role amongst a group of players (e.g. `@(Group:Wolfpack)->MostFreqRole` would return the most common role in the wolfpack).
 Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the player. 
+
+### Role Type
+
+Role type is one of the most common types and refers to a role (passive).
+
+Selector | Meaning
+--- | ---
+@Target | The current player's target (must be alive).
+@Result[1-7] | Refers to the result of a processed ability, which will be cast to a role if possible.
+@ActionResult | Refers to the result of an action in `On Action` and variants.
+@VisitParameter | Refers to a parameter in a visit in `On Visited`.
+@Option | Refers to the chosen option of a choice, though this will be an option type it will be cast to a role if possible.
+@Selection | Refers to a selection submitted by a player through a prompt.
+@SecondarySelection | Refers to a selection submitted by a player through a prompt.
+^All | Refers to all roles
+`<RoleName>` | Constant role 
+
+The advanced role selector has the format ^(Property:Value) and searches for roles where a certain property matches a certain value. For example, `^(Cat:Killing)` will return all killing roles. All properties may be inverted using an `!` at the start of the value, e.g. `@(Team:!Townsfolk)` will return all roles who's are __not__ part of townsfolk.
+
+Selector | Meaning
+--- | ---
+Cat/Category | The role's category.
+Type | The role's type (most commonly Default and Limited).
+Class | The role's class.
+Team | The role's team.
+
+Roles support a few property accesses:
+
+Selector | Meaning
+--- | ---
+Category | The role's category.
+Class | The role's class.
+Team | The role's team.
+Type | The role's type.
+Players | All players that have this role.
 
 ## Game Element Formats
 
