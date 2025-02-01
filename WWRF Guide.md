@@ -20,7 +20,13 @@
   - [Boolean Type](#boolean-type)
   - [Attribute Type](#attribute-type)
   - [Active Attribute Type](#active-attribute-type)
+  - [Display Type](#display-type)
+  - [Display Value Type](#display-value-type)
+  - [Category Type](#category-type)
+  - [Killing Type Type](#killing-type-type)
+  - [Class Type](#class-type)
   - [Variables](#variables)
+- [Sources](#sources) 
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -434,6 +440,46 @@ Selector | Meaning
 ``​`<GenericAttributeType>:<SourceName>`​`` | Combination of the above.
 ``​`<GenericAttributeType>:<Value1>`​`` | Combination of the above.
 
+### Display Type
+
+Display types can only be a constant value referring to the display name.
+
+### Display Value Type
+
+Display Value types are used for the values displayed in a display. All text values are supported (and will be displayed as text), but some special values have special meaning.
+
+Value | Meaning
+--- | ---
+Yes | The yes emoji.
+No | The no emoji.
+Counter | The counter of the display's creator.
+Target | The target of the display's creator.
+\<AnyText\> | Just the text.
+
+### Category Type
+
+Category types represent the category of a role. Supported values are any text, but automatic type annotation is only done for known categories (e.g. `Miscellaneous`).
+
+### Killing Type Type
+
+Killing type represents the type of a killing. 
+
+Selector | Meaning
+--- | ---
+@DeathType | Set to the type of killing in `On Death`.
+@KillingType | Set to the type of killing in `On Killed`.
+``​`<KillingType>`​`` | A constant killing type. Supported values are: attack, kill, lynch, true kill, banish, true banish.
+
+### Class Type
+
+Class type refers to a role's class. Supported values are any text, but automatic type annotation is only done for known classes (e.g. `Limited`).
+
+Selector | Meaning
+--- | ---
+@Result[1-7] | Refers to the result of a processed ability, which will be cast to a class if possible.
+@ActionResult | Refers to the result of an action in `On Action` and variants.
+``​`<ClassName>`​`` | A constant class.
+
 ### Variables
 
 Variables aren't directly a type, but are used in some contexts. When a variable is evaluated it returns a value dependent on the current game state.
@@ -443,6 +489,10 @@ Variable | Meaning
 $total | Amount of players in the game.
 $living | Amount of living players.
 $phase | The current phase as a number.
+
+## Sources
+
+WIP: Sources
  
 ## Game Element Formats
 
