@@ -5,6 +5,7 @@
 - [Types](#types)
   - [Player Type](#player-type)
   - [Role Type](#role-type)
+  - [Active Extra Role Type](#active-extra-role-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -180,6 +181,7 @@ PrivateVotingPower | Evaluates the player'S current private voting power.
 RandomPlayer | Selects a random player from a list of players (e.g. `@All->RandomPlayer` would return an entirely random player).
 MostFreqRole | Returns the most common role amongst a group of players (e.g. `@(Group:Wolfpack)->MostFreqRole` would return the most common role in the wolfpack).
 Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the player. 
+Count | Returns the amount of players (e.g. `@All->Count` returns the amount of living players).
 
 ### Role Type
 
@@ -195,7 +197,8 @@ Selector | Meaning
 @Selection | Refers to a selection submitted by a player through a prompt.
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
 ^All | Refers to all roles
-`<RoleName>` | Constant role 
+``​`<RoleName>`​`` | Constant role 
+%Role[N]% | Refers to a role stored as host information.
 
 The advanced role selector has the format ^(Property:Value) and searches for roles where a certain property matches a certain value. For example, `^(Cat:Killing)` will return all killing roles. All properties may be inverted using an `!` at the start of the value, e.g. `@(Team:!Townsfolk)` will return all roles who's are __not__ part of townsfolk.
 
@@ -205,6 +208,7 @@ Cat/Category | The role's category.
 Type | The role's type (most commonly Default and Limited).
 Class | The role's class.
 Team | The role's team.
+Count | Returns the amount of roles.
 
 Roles support a few property accesses:
 
@@ -215,6 +219,15 @@ Class | The role's class.
 Team | The role's team.
 Type | The role's type.
 Players | All players that have this role.
+
+### Active Extra Role Type
+
+Active Extra role type refers to a special subtype of attributes: role type attributes. These are rarely treated as actual attributes however. Active Extra Roles are created through grantings and show up as an additional secret channel for said role. For example, when a player is elected as a Mayor they receive Mayor as an active extra role.
+
+Selector | Meaning
+--- | ---
+@ThisAttr | Refers to the current active extra role.
+``​`<RoleName>`​`` | Refers to an active extra role name with the specified name which was __created by the current game element__. 
 
 ## Game Element Formats
 
