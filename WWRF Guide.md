@@ -8,6 +8,7 @@
   - [Active Extra Role Type](#active-extra-role-type)
   - [Group Type](#group-type)
   - [Alignment Type](#alignment-type)
+  - [Location Type](#location-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -254,6 +255,19 @@ Selector | Meaning
 &Self | The current team.
 &Ind | Refers to the current element in a `For Each` ability.
 ``​`<TeamName>`​`` | Constant alignment. 
+
+### Location Type
+
+Location type is a special type that combines groups, players, base locations, active extra roles and attributes into one. While the other types exists also outside the location type, base locations are only available within this type.
+
+Selector | Type | Meaning
+--- | --- | ---
+`#<LocationName>` | Base Location | Name of a base location, such as town square.
+`#<GroupName>` | Group | Name of a group.
+``​`<RoleName>`​`` | Active Extra Role | Refers to an active extra role name with the specified name which was __created by the current game element__. 
+@Self | Player/Group | Refers to the current player (for players, active extra roles), to the player the current attribute is attached to (for attributes) or to the current group (for groups).
+@AttackLocation | Player/Group | Either `@Attacker` or `@AttackSource` depending on which can be resolved to a location.
+Any Player Selector | Player | If none of the previous selectors matches the specified selector, the value is treated as a player type - all player selectors are valid.
 
 ## Game Element Formats
 
