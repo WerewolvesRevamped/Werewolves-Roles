@@ -9,6 +9,9 @@
   - [Group Type](#group-type)
   - [Alignment Type](#alignment-type)
   - [Location Type](#location-type)
+  - [Poll Type](#poll-type)
+  - [Success Type](#success-type)
+  - [Result Type](#result-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -241,6 +244,15 @@ Selector | Meaning
 @Self | The current group.
 `#<GroupName>` | A group with the specified name.
 
+Groups support a few property accesses:
+
+Selector | Meaning
+--- | ---
+Target | The group's target.
+Counter | The group's counter.
+Members | All members of the group.
+Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the group. 
+
 ### Alignment Type
 
 Alignment type refers to a team. Teams are both passive/active at the same time.
@@ -256,6 +268,15 @@ Selector | Meaning
 &Ind | Refers to the current element in a `For Each` ability.
 ``​`<TeamName>`​`` | Constant alignment. 
 
+Alignments support a few property accesses:
+
+Selector | Meaning
+--- | ---
+Target | The team's target.
+Counter | The team's counter.
+Members | All members of the team.
+Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the team. 
+
 ### Location Type
 
 Location type is a special type that combines groups, players, base locations, active extra roles and attributes into one. While the other types exists also outside the location type, base locations are only available within this type.
@@ -268,6 +289,42 @@ Selector | Type | Meaning
 @Self | Player/Group | Refers to the current player (for players, active extra roles), to the player the current attribute is attached to (for attributes) or to the current group (for groups).
 @AttackLocation | Player/Group | Either `@Attacker` or `@AttackSource` depending on which can be resolved to a location.
 Any Player Selector | Player | If none of the previous selectors matches the specified selector, the value is treated as a player type - all player selectors are valid.
+
+Locations support a property result __only__ when they are a group type location, in which case they support normal group type property accesses.
+
+### Poll Type
+
+Poll type refers to the passive poll. There is no selector for active polls.
+
+Selector | Meaning
+--- | ---
+``​`<PollName>`​`` | Constant poll.
+
+### Success Type
+
+Success type represents whether an ability succeeded or not. It can take exactly two values: ``​`Failure`​`` and ``​`Success`​``.
+
+### Result Type
+
+Result type is a special type that encompasses several other values. In some contexts it will automatically be cast to one of its values, but generally in most contexts it is necessary to use property access to retrieve one of the values making up the result. Results are returned by an ability when storing its result through a Process ability.
+
+Selector | Meaning
+--- | ---
+@Result[1-7] | Refers to the result of a processed ability.
+@ActionResult | Refers to the result of an action in `On Action` and variants.
+
+Results support a couple of property accesses, however not all properties are present in each result:
+
+Selector | Meaning
+--- | ---
+Class | A role's class returned as a result.
+Category | A role's category returned as a result.
+Alignment | A role's team returned as a result.
+Role | A role returned as a result.
+Result | The result's result as a single value which may take several types.
+Success | Whether the ability succeeded (always present).
+Target | The primary target of an ability.
+Message | The ability feedback a player would receive (always present).
 
 ## Game Element Formats
 
