@@ -63,41 +63,81 @@ Values are split into two categories: constant values (e.g. `Citizen`, referring
 
 This is a list of values and example constant values and selectors:
 
-Value Type | Constant Example  | Basic Selector Example | Advanced Selector Example
---- | --- | --- | ---
-Player | ⛔ ∗ | @Self | @(Role:Citizen)
-Role | `Citizen` | @Target | ^(Team:Townsfolk)
-Active Extra Role | `Mayor` | @ThisAttr | ⛔
-Group | #Bakers | @Self | ⛔
-Alignment | Townsfolk | &Self | &(Align:!Townsfolk)
-Location | ⁑ | ⁑ | ⁑
-Base Location | #tavern | ⛔ | ⛔
-Poll | `Wolfpack` | @Self | ⛔
-Success | Success | ⛔ | ⛔
-Result ⁂ | ⛔ | @Result | ⛔
-Info | `Attacked @Target` ⁑⁑ | @ActionFeedback | ⛔
-Ability Type | `Killing` | @VisitType | ⛔
-Ability Subype ⁑⁑∗ | `Attack Killing` | @VisitSubtype | ⛔
-Ability Category | `All` | ⛔ | ⛔
-Number | 1 | @Selection | ⛔
-Boolean | True | ⛔ | ⛔
-Attribute | `Wolfish` | @VisitParameter | ⛔
-Active Attribute | `Marker` | @ThisAttr | `Marker:Self`
-Display | `Potions` | ⛔ | ⛔
-Display Value | `Counter` | ⛔ | ⛔
-Category | `Killing` | ⛔ | ⛔
-Killing Type | `Attack` | @DeathType | ⛔
-Class | `Townsfolk` | @Result | ⛔
-Source | `Group:Wolfpack` | @AttackSource | ⛔
-Option | `Join Pack` | @Option | ⛔
-String | `Text` | ⛔ | ⛔
-Null | ⛔ | ⛔ | ⛔
+Value Type | Constant Example  | Basic Selector Example | Advanced Selector Example | List Type
+--- | --- | --- | --- | ---
+Player | ⛔ ∗ | @Self | @(Role:Citizen) | ✅
+Role | `Citizen` | @Target | ^(Team:Townsfolk) | ✅
+Active Extra Role | `Mayor` | @ThisAttr | ⛔ | ✅
+Group | #Bakers | @Self | ⛔ | ⛔
+Alignment | Townsfolk | &Self | &(Align:!Townsfolk) | ✅
+Location | ⁑ | ⁑ | ⁑ | ⛔
+Base Location | #tavern | ⛔ | ⛔ | ⛔
+Poll | `Wolfpack` | @Self | ⛔ | ⛔
+Success | Success | ⛔ | ⛔ | ⛔
+Result ⁂ | ⛔ | @Result | ⛔ | ⛔
+Info | `Attacked @Target` ⁑⁑ | @ActionFeedback | ⛔ | ⛔
+Ability Type | `Killing` | @VisitType | ⛔ | ⛔
+Ability Subype ⁑⁑∗ | `Attack Killing` | @VisitSubtype | ⛔ | ⛔
+Ability Category | `All` | ⛔ | ⛔ | ⛔
+Number | 1 | @Selection | ⛔ | ⛔
+Boolean | True | ⛔ | ⛔ | ⛔
+Attribute | `Wolfish` | @VisitParameter | ⛔ | ✅
+Active Attribute | `Marker` | @ThisAttr | `Marker:Self` | ✅
+Display | `Potions` | ⛔ | ⛔ | ⛔
+Display Value | `Counter` | ⛔ | ⛔ | ⛔
+Category | `Killing` | ⛔ | ⛔ | ✅
+Killing Type | `Attack` | @DeathType | ⛔ | ⛔
+Class | `Townsfolk` | @Result | ⛔ | ✅
+Source | `Group:Wolfpack` | @AttackSource | ⛔ | ✅
+Option | `Join Pack` | @Option | ⛔ | ✅
+String | `Text` | ⛔ | ⛔ | ✅
+Null | ⛔ | ⛔ | ⛔ | ✅
 
 ∗ Players can not be referenced using a constant value, as that would require this player to be present in every game.  
 ⁑ Locations are a special type which unifies several other types into a single type. The following types can be interpreted as a location: group, base location, active extra role, player, attribute.  
 ⁂ Results are a special type which is returned after executing an ability, depending on context different types can be extracted from it. It always stores at least a success type (for if the ability succeeded) and an info type (for the ability feedback) and depending on the ability potentially other abilities.  
 ⁑⁑ Info is a special type which is a text containing several selectors. All selectors contained within the info text must either be annotated or support run-time annotation. The info type is used when a text output is generated. As part of the text output process all selectors contained within the info type are evaluated and converted to text.  
 ⁑⁑∗ An Ability Subtype contains the info of the ability type _and_ the subtype, not just the latter.  
+
+Some types additionally support property accesses using the `<Selector>-><Property>`, e.g. `@Target->Role` retrieves a targets role.
+
+Many types default to not just being a single value, but actually a list, though this will often be a list of length one, this is shown in the table above. Types that are list types will return several results if a selector matches several results (though some abilities may choose to only use the first element of the list), while types that are not list types can only return a single value.
+
+### Player Type
+
+Player type is one of the most common types and refers to a player of the game. This type is also known under `player_attr` (referring to a player when acting through an extra role) or `player_group` (referring to a player when acting through a group).
+
+Selector | Meaning
+--- | ---
+@Self | The current player.
+@All | All living players.
+@Others | @All without @Self.
+@Dead | All dead players.
+@DeadAlive | All players.
+@Target | The current player's target (must be alive).
+@TargetDead | The current player's target (even if the target is dead).
+@Members | The current group's or team's members.
+@Attacker | A player responsible for a killing in `On Death`, `On Killed`, `On Banishment`, `On Banished` and variants.
+@This | Refers to the player for which a complex trigger featuring a target (e.g. `On <Target> Death`) triggered for.
+@Winner | Refers to the winner of a poll in `On Poll Closed`.
+@ActionTarget | Refers to the target of an action in `On Action` and variants.
+@Executor | Refers to the executor of an action in `On Poll Closed` for polls created by a group.
+@Selection | Refers to a selection submitted by a player through a prompt.
+@SecondarySelection | Refers to a selection submitted by a player through a prompt.
+@RoleChanger | Refers to the responsible player in `On Role Change`.
+@Chooser | Refers to the player that made the choice in `Choice Chosen`.
+@Visitor | Refers to the visiting player in `On Visited`, `On Redirect` and variants.
+@Joiner | Refers to the joining player in `On Join`.
+@VisitParameter | Refers to a parameter in a visit in `On Visited`, though this will usually __NOT__ be a player.
+@Ind | Refers to the current element in a `For Each` ability.
+@Voters | Refers to all players that voted for the winning option in `On Poll Closed` and `On Poll Win`.
+@OtherVoters | @Voters without the poll winner.
+@Result[1-7] | Refers to the result of a processed ability, which will be cast to a player if possible.
+@ActionResult | Refers to the result of an action in `On Action` and variants.
+@ID:<ID> | Refers to a specific player based on discord id. Useful for testing.
+%Player[N]% | Refers to a player stored as host information.
+
+
 
 ## Game Element Formats
 
