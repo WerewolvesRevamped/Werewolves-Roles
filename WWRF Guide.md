@@ -15,6 +15,7 @@
   - [Info Type](#info-type)
   - [Ability Type Type](#ability-type-type)
   - [Ability Subtype Type](#ability-subtype-type)
+  - [Ability Category Type](#ability-category)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -347,13 +348,22 @@ Ability Type type is a type that represents an ability type. Ability types have 
 
 Selector | Meaning
 --- | ---
-@VisitType | The ability type of a visit in `On Visited`.
-@ActionAbilityType | The ability type of an ability in `On Action`.
+@VisitSubtype | The ability type of a visit in `On Visited`.
 ``​`<AbilityType>`​`` | The name of an ability type.
 
 ### Ability Subtype Type
 
 Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first followed by the type. Subtype that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True Kill Killing`).
+
+Selector | Meaning
+--- | ---
+@VisitType | The ability type of a visit in `On Visited`.
+@ActionAbilityType | The ability type of an ability in `On Action`.
+``​`<AbilityType>`​`` | The name of an ability type.
+
+### Ability Category Type
+
+Ability Category type is a type for categories of abilities, but currently only supports two values: ``​`all`​`` (which matches all abilities) and ``​`non-killing abilities`​`` (which matches all abilities besides killing).
 
 Selector | Meaning
 --- | ---
