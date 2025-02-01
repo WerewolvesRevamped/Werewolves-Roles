@@ -25,6 +25,10 @@
   - [Category Type](#category-type)
   - [Killing Type Type](#killing-type-type)
   - [Class Type](#class-type)
+  - [Source Type](#source-type)
+  - [Option Type](#option-type)
+  - [String Type](#string-type)
+  - [Null Type](#null-type)
   - [Variables](#variables)
 - [Sources](#sources) 
 - [Game Element Formats](#game-element-formats)
@@ -440,6 +444,18 @@ Selector | Meaning
 ``​`<GenericAttributeType>:<SourceName>`​`` | Combination of the above.
 ``​`<GenericAttributeType>:<Value1>`​`` | Combination of the above.
 
+Active attributes support a few property accesses:
+
+Selector | Meaning
+--- | ---
+Target | The attribute's target.
+Counter | The attribute's counter.
+Source | The attribute's creator player. Fails if not created by a player.
+Value1 | The attribute's value1 which may hold arbitrary data.
+Value2 | The attribute's value2 which may hold arbitrary data.
+Value3 | The attribute's value3 which may hold arbitrary data.
+Count | Returns the amount of attributes.
+
 ### Display Type
 
 Display types can only be a constant value referring to the display name.
@@ -474,11 +490,34 @@ Selector | Meaning
 
 Class type refers to a role's class. Supported values are any text, but automatic type annotation is only done for known classes (e.g. `Limited`).
 
+### Source Type
+
+Source type is one of the rare instances where the formalization system can directly interact with sources (See [sources](#sources). The source type represents the source name (e.g. `Role:Assassin` or `Group:Wolfpack`).
+
 Selector | Meaning
 --- | ---
-@Result[1-7] | Refers to the result of a processed ability, which will be cast to a class if possible.
-@ActionResult | Refers to the result of an action in `On Action` and variants.
-``​`<ClassName>`​`` | A constant class.
+@AttackSource | Returns the source of an attack in `On Death` and `On Killed`. For groups this will differ from the attacker.
+``​`<SourceNameType>:<SourceNameValue>`​`` | A colon separated two segement value, with the first specifying the source type (e.g. `Role`) and the second the name/value (e.g. `Assassin`).
+
+### Option Type
+
+Option type is the value for/from choices.
+
+Selector | Meaning
+--- | ---
+@Chosen | Special selector which should only be used in the choice choosing ability as it generates a choice prompt with which @Chosen is filled.
+@Option | The chosen option in `Choice Chosen`.
+``​`<OptionName>`​`` | The name of an option.
+
+### String Type
+
+String type represents an arbitrary text. Can take any value, for example ``​`This is a text.`​``.
+
+### Null Type
+
+Null type is a special type that should not be used manually. When inferring the type of a target at runtime, but no target is set, a null type list with zero elements is instead returned. This is to ensure that abilities relying on a target gracefully fail instead of erroring. Null type always takes the form of an empty list.
+
+Technically null types also support property accesses, however each property access will simply return an empty list as well.
 
 ### Variables
 
