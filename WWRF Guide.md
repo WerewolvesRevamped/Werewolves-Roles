@@ -3,6 +3,7 @@
 - [Introduction](#introduction)
 - [Game Elements](#game-elements)
 - [Types](#types)
+  - [Player Type](#player-type)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -50,6 +51,10 @@ Choices | ⛔ | ✅ | ⛔ |
 ⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.
 
 The format of various game elements are described in more detail below.
+
+Active game elements generally always support two values that can be modified and accessed through various methods:
+- Target: A value that can store a variety of types and can be modified through targetting.
+- Counter: A numeric value that can be modified through counting.
 
 ## Types
 
@@ -101,7 +106,7 @@ Null | ⛔ | ⛔ | ⛔ | ✅
 
 Some types additionally support property accesses using the `<Selector>-><Property>`, e.g. `@Target->Role` retrieves a targets role.
 
-Many types default to not just being a single value, but actually a list, though this will often be a list of length one, this is shown in the table above. Types that are list types will return several results if a selector matches several results (though some abilities may choose to only use the first element of the list), while types that are not list types can only return a single value.
+Many types default to not just being a single value, but actually a list, though this will often be a list of length one, this is shown in the table above. Types that are list types will return several results if a selector matches several results (though some abilities may choose to only use the first element of the list), while types that are not list types can only return a single value. When using a property access on a list type, the property access is executed on each element in the list and a new list is returned.
 
 ### Player Type
 
@@ -152,14 +157,28 @@ OrigClass | The player's original role's class.
 OrigAlign | The player's original role's default alignment (it should be noted that this may differ even without a role change necessary as `Align` checks for the players current alignment, not the player's current role's default alignment).
 OrigFullCat | Matches both class and category of the player's original role.
 Group | Checks for membership of a certain group.
-Attr/Attribute | Checks whether the player has a certain attribute.
+Attr/Attribute | Checks whether the player has a certain custom attribute.
 AttrSelf | Checks whether the player has a certain attribute which was applied by the current player.
 AttrRole | Checks whether the player has a certain role type attribute.
 AttrDisguise | Checks whether the player has a disguise applied by a certain player. As value specify a player selector which will have `@` prepended, so e.g. just `Self`.
 AliveOnly | Special field. Set it to `False` to also search for dead players.
 SelectAll | Special field. Set it to `False` to return a single random player from the selector instead of all players.
 
+Players support a variety of property accesses:
 
+Property | Meaning
+--- | ---
+Role | The player's current role.
+Category | The player's current role's category.
+OriginalRole | The player's original role.
+Alignment | The player's current alignment.
+Target | The player's target.
+Counter | The player's counter.
+PublicVotingPower | Evaluates the player'S current public voting power.
+PrivateVotingPower | Evaluates the player'S current private voting power.
+RandomPlayer | Selects a random player from a list of players (e.g. `@All->RandomPlayer` would return an entirely random player).
+MostFreqRole | Returns the most common role amongst a group of players (e.g. `@(Group:Wolfpack)->MostFreqRole` would return the most common role in the wolfpack).
+Attr(<AttributeName>) | Returns a certain custom attribute that is applied to the player. 
 
 ## Game Element Formats
 
