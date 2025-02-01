@@ -15,7 +15,9 @@
   - [Info Type](#info-type)
   - [Ability Type Type](#ability-type-type)
   - [Ability Subtype Type](#ability-subtype-type)
-  - [Ability Category Type](#ability-category)
+  - [Ability Category Type](#ability-category-type)
+  - [Number Type](#number-type)
+  - [Variables](#variables)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -370,6 +372,29 @@ Selector | Meaning
 @VisitType | The ability type of a visit in `On Visited`.
 @ActionAbilityType | The ability type of an ability in `On Action`.
 ``​`<AbilityType>`​`` | The name of an ability type.
+
+### Number Type
+
+Number type is used to represent numbers.
+
+Selector | Meaning
+--- | ---
+@Selection | Refers to a selection submitted by a player through a prompt.
+@SecondarySelection | Refers to a selection submitted by a player through a prompt.
+<Number> | A number.
+%Number[N]% | Refers to a number stored as host information.
+<Variable> | A [variable](#variables) that is evaluated to a number.
+<Number>/<Number> | A division of two numbers (both of which can be one of the above options), rounded to the nearest full number.
+
+### Variables
+
+Variables aren't directly a type, but are used in some contexts. When a variable is evaluated it returns a value dependent on the current game state.
+
+Variable | Meaning
+--- | ---
+$total | Amount of players in the game.
+$living | Amount of living players.
+$phase | The current phase as a number.
  
 ## Game Element Formats
 
