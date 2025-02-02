@@ -170,6 +170,7 @@ Selector | Meaning
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 @ID:\<ID\> | Refers to a specific player based on discord id. Useful for testing.
 %Player[N]% | Refers to a player stored as host information.
+\<ID\> | When submitting a player as Host Information you may use the discord id directly as a format.
 
 The advanced player selector has the format @(Property:Value) and searches for players where a certain property matches a certain value. For example, `@(Role:Citizen)` will return all players who's role is `Citizen`. All properties may be inverted using an `!` at the start of the value, e.g. `@(Role:!Citizen)` will return all players who's role is __not__ `Citizen`.
 
