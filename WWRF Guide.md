@@ -31,6 +31,7 @@
   - [Null Type](#null-type)
   - [Phase Type](#phase-type)
   - [Actor Pseudo-Type](#actor-pseudo-type)
+  - [Any Pseudo-Type](#any-pseudo-type)
   - [Variables](#variables)
 - [Sources](#sources)
 - [Triggers](#triggers)
@@ -147,7 +148,7 @@ Some types additionally support property accesses using the `<Selector>-><Proper
 
 Many types default to not just being a single value, but actually a list, though this will often be a list of length one, this is shown in the table above. Types that are list types will return several results if a selector matches several results (though some abilities may choose to only use the first element of the list), while types that are not list types can only return a single value. When using a property access on a list type, the property access is executed on each element in the list and a new list is returned.
 
-For this document, when the syntax of any component requires a user to put a type, this syntax is used to signify the expected type: `{Type}`, where `Type` is replaced with the name of the expected type. When expecting a user to put a text that is not a specific type this format is used: `<UserInput>`, where `UserInput` describes the expected input.
+For this document, when the syntax of any component requires a user to put a type, this syntax is used to signify the expected type: `{Type}`, where `Type` is replaced with the name of the expected type. When expecting a user to put a text that is not a specific type this format is used: `<UserInput>`, where `UserInput` describes the expected input. When a user must pick one of several possible values the syntax `[Option1|Option2]` is used, though square brackets are used in many other contexts as well.
 
 ### Player Type
 
@@ -587,6 +588,10 @@ Night \<Number\> | A night phase.
 
 Actor pseudo-type is not an actual type, but is sometimes the expected input. In that case the input can take the form of any acting game element. The following types may be specified when an actor type is expected: player, group, team, active attribute, active extra role.
 
+### Any Pseudo-Type
+
+Any pseudo-type is a pseudo-type that is sometimes the expected input. In that case _any_ type may be specified.
+
 ### Variables
 
 Variables aren't directly a type, but are used in some contexts. When a variable is evaluated it returns a value dependent on the current game state.
@@ -722,7 +727,30 @@ To additionally mark a prompt as silent (which skips the ping), you may specify 
 
 ## Conditions
 
-WIP
+Conditions are a part of the formalization that can be used in several places (Restrictions and Process/Evaluate) to limit execution of abilities to certain situations.
+
+The following conditions exist:
+
+Name | Syntax | Explanation
+--- | --- | ---
+Equality | `{Any} is {Any}` | Compares two values with each other, passes if equal.
+Less/Greater Than | `{Number} [>|<] {Number}` | Compares two numbers with each other, passes if the first value is greater/less than the second.
+No Equality | `{Any} is not {Any}` | Compares two values with each other, passes if different.
+Existence | `{Any} exists` | Checks if a specified selector evaluates to at least one element.
+Attribute | `{Actor} has {Attribute}` | Checks if a specifed actor has a specified attribute.
+Membership | `{Player} is in {Group}` | Checks if a specified player is in a specified group.
+Selector | `{Any} is part of {Any}` | Checks if a specified element is part of another selector.
+Inversion | `not (<Condition>)` | Passes if the specified condition is false.
+And | `(<Condition>) and (<Condition>)` | Passes if both specified conditions are true.
+And x2 | `(<Condition>) and (<Condition>) and (<Condition>)` | Passes if all specified conditions are true.
+And x3 | `(<Condition>) and (<Condition>) and (<Condition>) and (<Condition>)` | Passes if all specified conditions are true.
+Or | `(<Condition>) or (<Condition>)` | Passes if one of the two specified conditions is true.
+Or x2 | `(<Condition>) or (<Condition>) or (<Condition>)` | Passes if one of the specified conditions is true.
+Or x3 | `(<Condition>) or (<Condition>) or (<Condition>) or (<Condition>)` | Passes if one of the specified conditions is true.
+And/Or | `(<Condition>) and (<Condition>) or (<Condition>)` | Passes if the first, and at least one of the other conditions are true.
+Or/And | `(<Condition>) or (<Condition>) and (<Condition>)` | Passes if the third, and at least one of the other conditions are true.
+
+Even though this makes little sense, you may not combine and/or operations in any other way than listed above and cannot contain and/or operations inside the conditions specified for an and/or operation.
 
 ## Abilities
  
