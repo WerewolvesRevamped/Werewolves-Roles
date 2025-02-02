@@ -30,7 +30,8 @@
   - [String Type](#string-type)
   - [Null Type](#null-type)
   - [Variables](#variables)
-- [Sources](#sources) 
+- [Sources](#sources)
+- [Triggers](#triggers)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -40,7 +41,7 @@
 ## Introduction
 Werewolves Revamped is automated using "formalization" - i.e. all roles and similiar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
 
-WWRF is designed with a "Trigger > Condition > Action" model: there are certains events that emit a "trigger" (a phase starting, a player being killed, etc) and their game "actions" which change the game state and my emit triggers themselves (e.g. killing a player, creating a group, manipulating voting values). All elements in WWR are designed by combining triggers and actions (and optionally including conditions that limit the execution of the action to certain cases). Actions are differentiated between prompting actions, which prompt the player for an input and are only executed once such an input is provided and automatic actions which are executed without player interaction (and potentially even without the players knowledge)
+WWRF is designed with a "Trigger > Condition > Action" model: there are certains events that emit a "trigger" (a phase starting, a player being killed, etc) and there are game "actions" which change the game state and my emit triggers themselves (e.g. killing a player, creating a group, manipulating voting values). All elements in WWR are designed by combining triggers and actions (and optionally including conditions that limit the execution of the action to certain cases). Actions are differentiated between prompting actions, which prompt the player for an input and are only executed once such an input is provided and automatic actions which are executed without player interaction (and potentially even without the players knowledge)
 
 For example, the Fortune Teller has a prompting investigation actions which is triggered by the night starting. The Wolf Cub has an automatic poll creating action which is triggered by their death.
 
@@ -550,6 +551,33 @@ Reference Type | Reference Value | Name Type | Name Value | Example | Explanatio
 `poll` | Poll Name | `poll` | Poll Name | `poll:election` / `poll:election` | Represents a poll. References the poll's name. 
 `team` | Team Name | `team` | Team Name | `team:townsfolk` / `team:townsfolk` | Represents a team. References the team's name.
 `attribute` | Attribute ID | `attribute` | Attribute Name | `attribute:13` / `attribute:wolfish` | Represents an attribute. References the attribute's unique id.
+
+## Triggers
+
+Triggers are one of the main parts of formalization. Triggers determine when an ability is executed. Triggers are differentiated between prompting triggers, which create a prompt for each ability (even if no input is required - in this case the player simply needs to confirm the ability) and automatic triggers. Some triggers have special selectors available within them that are not available in other contexts.
+
+Some triggers are considered to be complex triggers. Such triggers take one or more parameters to limit their execution to certain conditions. For those triggers the expected type is listed as `{Type}`.
+
+A list of triggers can be found here:
+
+Trigger | Explanation | Additional Selectors
+--- | --- | ---
+Start Night<br>End Night<br>Start Day<br>End Day<br>Immediate Night<br>Immediate Day<br>End Phase<br>Start Phase<br>Immediate<br>Pre-End Night<br>Pre-End Day | Prompting triggers for different timings. | ⛔
+Passive End Day<br>Passive End Night<br>Passive Start Day<br>Passive Start Night<br>Passive Start Phase<br>Passive End Phase | Non-prompting triggers for different timings. | ⛔
+Starting | Triggers at the start of the game, and whenever a new group/role/team/attribute/etc is created. | ⛔
+Passive | Triggers whenever a significant change occurs (game start, phase change, somebody dies/changes roles) and can be used with conditions that should theoretically be checked constantly. | ⛔
+On Death | Triggers when the current player dies. | @Attacker<br>@DeathType<br>@AttackSource
+On {Player} Death | Triggers when a player from a specific selector dies. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
+On Killed | Triggers when the current player is killed (true kill, kill or attack, but __not__ lynch). | @Attacker<br>@DeathType<br>@AttackSource
+On {Player} Killed | Triggers when a player from a specific selector is killed. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
+On Banishment | Triggers when the current player is banished. | @Attacker<br>@DeathType<br>@AttackSource
+On {Player} Banishment | Triggers when a player from a specific selector is banished. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
+On Banished | Triggers when the current player is banished?? Do not use. | @Attacker<br>@DeathType<br>@AttackSource
+On {Player} Banished | Triggers when a player from a specific selector is banished?? Do not use. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
+On Visited<br>On Visited [{AbilityType}]<br>On Visited [{AbilitySubtype}]<br>On Visited [!{AbilityType}]<br>On Visited [!{AbilitySubtype}] | Triggers when the current player is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@VisitType<br>@VisitSubtype 
+On {Player} Visited [{AbilityType}]<br>On {Player} Visited [{AbilitySubtype}]<br>On {Player} Visited [!{AbilityType}]<br>On {Player} Visited [!{AbilitySubtype}] | Triggers when a player from a specific selector is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@VisitType<br>@VisitSubtype 
+
+
  
 ## Game Element Formats
 
