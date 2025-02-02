@@ -676,7 +676,7 @@ Trigger restrictions are marked by square brackets: []. When using several restr
 
 Trigger Restrictions can be one or more of the following:
 
-Name | Syntay | Explanation | Example
+Name | Syntax | Explanation | Example
 --- | --- | --- | ---
 Temporal Restriction | `Temporal: {Phase}` | May only be executed in `{Phase}`. | `Temporal: Day 0` 
 Temporal Restriction | `Temporal: {Phase}+` | May only be executed in `{Phase}` or after. | `Temporal: Night 2+`
@@ -694,13 +694,13 @@ Condition Restriction | `Condition: <Condition>` | May only be executed if a [co
 Trigger scalings are marked by angle brackets: ⟨⟩.
 
 Trigger Scalings can be one of the following:
-- Static Scaling: The action can always be used several times
-  - `x<Number>`, specify a number (`Value`) that determines how many times the action can be used
-- Dynamic Scaling: Amount of action usages depend on total player count
-  - `[$total|$living]/<Number>` the action can be used exactly as many times as the player count divided by the specified `Number`, rounded down
-  - `[$total|$living]<Comparison><Number> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Number` is a constant number specifying a player amount and `Count` is the amount of available uses. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value.
-- Phase Specific Scaling: The amount of action usages depends on the phase:
-  - `Odd: <Number>, Even: <Number>` to specify different multiplicities of ability use in even and odd phases. Set `<Number>` to one of the other scaling types, e.g. `Odd: x1, Even: x2`
+
+Name | Syntax | Explanation | Example
+--- | --- | --- | ---
+Static Scaling | `x<Number>` | Specify a number (`Value`) that determines how many times the trigger will be executed. | `x2`
+Dynamic Scaling | `[$total\|$living]/<Number>` | The trigger will be executed exactly as many times as the player count divided by the specified `Number`, rounded down. | `$total/2`
+Dynamic Scaling | `[$total\|$living]<Comparison><Number> ⇒ <Count>` | A comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Number` is a constant number specifying a player amount and `Count` is the amount of executions. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value. | `$total<10 ⇒ 1, $total≥10 ⇒ 2, 3`
+Phase Specific Scaling | `Odd: x<Number>, Even: x<Number>` | To specify different multiplicities of trigger executions in even and odd phases. | `Odd: x1, Even: x2`
 
 ### Other Parameters
 
