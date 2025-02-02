@@ -734,7 +734,7 @@ The following conditions exist:
 Name | Syntax | Explanation
 --- | --- | ---
 Equality | `{Any} is {Any}` | Compares two values with each other, passes if equal.
-Less/Greater Than | `{Number} [>|<] {Number}` | Compares two numbers with each other, passes if the first value is greater/less than the second.
+Less/Greater Than | `{Number} [>\|<] {Number}` | Compares two numbers with each other, passes if the first value is greater/less than the second.
 No Equality | `{Any} is not {Any}` | Compares two values with each other, passes if different.
 Existence | `{Any} exists` | Checks if a specified selector evaluates to at least one element.
 Attribute | `{Actor} has {Attribute}` | Checks if a specifed actor has a specified attribute.
