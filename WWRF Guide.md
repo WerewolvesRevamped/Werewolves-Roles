@@ -675,24 +675,19 @@ When using several types of trigger paramaters, the order __must always__ be: Re
 Trigger restrictions are marked by square brackets: []. When using several restrictions they are part of the same square bracket block. For example, `[Temporal: Day 1+, Succession: No Succession]`.
 
 Trigger Restrictions can be one or more of the following:
-- Temporal Restriction:
-  - `Temporal: {Phase}`, may only be used in `{Phase}`, e.g. `Temporal: Day 0`
-  - `Temporal: {Phase}+`, may only be in `{Phase}` or after, e.g. `Temporal: Night 2+`
-- Attribute Restriction:
-  - `Attribute: has <AttributeName>`, may only be executed if `<AttributeName>` is present on the current element
-  - `Attribute: lacks <AttributeName>`, may only be executed if `<AttributeName>` is not present on the current element
-  - `Attribute: {Actor} [has | lacks] <AttributeName>`, may only be executed if `{Actor}` (a selector) has/lacks `<Attribute>`
-- Succession Restrictions:
-  - `Succession: No Succession`, may not be executed in in succession
-  - `Succession: No Target Succession`, may not be executed successively on the same target 
-- Quantity Restrictions:
-  - `Quantity: <Number>`, may only be executed a maximum of `<Number>` times.
-- Condition Restrictions:
-  - `Condition: <Condition>`, provide a [condition](#conditions).
-- (Living) Status Restriction:
-  - `Status: Ghostly`, may only be executed while ghostly
-  - `Status: Any`, may be executed while alive or ghostly
-  - `Status: Alive`, may be executed while alive only (default!)
+
+Name | Syntay | Explanation | Example
+--- | --- | --- | ---
+Temporal Restriction | `Temporal: {Phase}` | May only be executed in `{Phase}`. | `Temporal: Day 0` 
+Temporal Restriction | `Temporal: {Phase}+` | May only be executed in `{Phase}` or after. | `Temporal: Night 2+`
+Attribute Restriction | `Attribute: has <AttributeName>` | May only be executed if `<AttributeName>` is present on the current element. | ``Attribute: has `Wolfish`​``
+Attribute Restriction | `Attribute: lacks <AttributeName>` | May only be executed if `<AttributeName>` is __not__ present on the current element. | ``Attribute: lacks `Wolfish`​``
+Attribute Restriction | `Attribute: {Actor} [has\|lacks] <AttributeName>` | May only be executed if `{Actor}` (a selector) has/lacks `<Attribute>`. | ``Attribute: @Target lacks `Wolfish`​``
+Succession Restriction | `Succession: No Succession` | May not be executed in in succession. | ⛔
+Succession Restriction | `Succession: No Target Succession` | May not be executed successively on the same target. | ⛔
+Quantity Restrictions | `Quantity: <Number>` | May only be executed a maximum of `<Number>` times. | `Quantity: 3`
+Condition Restriction | `Condition: <Condition>` | May only be executed if a [condition](#conditions) passes. | `Condition: @Target is in #Wolfpack`
+(Living) Status Restriction | `Status: [Ghostly\|Any\|Alive]` | May only be executed while ghostly/any status/alive (the latter being the default). | `Status: Ghostly`
 
 ### Scaling
 
