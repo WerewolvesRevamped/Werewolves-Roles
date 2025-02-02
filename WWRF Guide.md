@@ -29,14 +29,24 @@
   - [Option Type](#option-type)
   - [String Type](#string-type)
   - [Null Type](#null-type)
+  - [Phase Type](#phase-type)
+  - [Actor Pseudo-Type](#actor-pseudo-type)
   - [Variables](#variables)
 - [Sources](#sources)
 - [Triggers](#triggers)
+- [Trigger Parameters](#trigger-parameters)
+  - [Restrictions](#restrictions)
+  - [Scaling](#scaling)
+  - [Other Parameters](#other-parameters)
+  - [Prompt Overwrites](#prompt-overwrites)
+- [Conditions](#conditions)
+- [Abilities](#abilities) 
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
   - [Groups Format](#groups-format)
   - [Abilities Format](#abilities-format)
+
 
 ## Introduction
 Werewolves Revamped is automated using "formalization" - i.e. all roles and similiar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
@@ -136,6 +146,8 @@ Null | ⛔ | ⛔ | ⛔ | ✅
 Some types additionally support property accesses using the `<Selector>-><Property>`, e.g. `@Target->Role` retrieves a targets role.
 
 Many types default to not just being a single value, but actually a list, though this will often be a list of length one, this is shown in the table above. Types that are list types will return several results if a selector matches several results (though some abilities may choose to only use the first element of the list), while types that are not list types can only return a single value. When using a property access on a list type, the property access is executed on each element in the list and a new list is returned.
+
+For this document, when the syntax of any component requires a user to put a type, this syntax is used to signify the expected type: `{Type}`, where `Type` is replaced with the name of the expected type. When expecting a user to put a text that is not a specific type this format is used: `<UserInput>`, where `UserInput` describes the expected input.
 
 ### Player Type
 
@@ -562,6 +574,19 @@ Null type is a special type that should not be used manually. When inferring the
 
 Technically null types also support property accesses, however each property access will simply return an empty list as well.
 
+### Phase Type
+
+Phase type represents a phase and is made up of the type of phase (Day or Night) and the phase's number. 
+
+Value | Meaning
+--- | ---
+Day \<Number\> | A day phase.
+Night \<Number\> | A night phase.
+
+### Actor Pseudo-Type
+
+Actor pseudo-type is not an actual type, but is sometimes the expected input. In that case the input can take the form of any acting game element. The following types may be specified when an actor type is expected: player, group, team, active attribute, active extra role.
+
 ### Variables
 
 Variables aren't directly a type, but are used in some contexts. When a variable is evaluated it returns a value dependent on the current game state.
@@ -596,7 +621,7 @@ Reference Type | Reference Value | Name Type | Name Value | Example | Explanatio
 
 Triggers are one of the main parts of formalization. Triggers determine when an ability is executed. Triggers are differentiated between prompting triggers, which create a prompt for each ability (even if no input is required - in this case the player simply needs to confirm the ability) and automatic triggers. Some triggers have special selectors available within them that are not available in other contexts.
 
-Some triggers are considered to be complex triggers. Such triggers take one or more parameters to limit their execution to certain conditions. For those triggers the expected type is listed as `{Type}`.
+Some triggers are considered to be complex triggers. Such triggers take one or more parameters to limit their execution to certain conditions. 
 
 A list of triggers can be found here:
 
@@ -622,9 +647,84 @@ On Action<br>On Action [{AbilityType}]<br>On Action [{AbilitySubtype}]<br>On Act
 On Any Action<br>On Any Action [{AbilityType}]<br>On Any Action [{AbilitySubtype}]<br>On Any Action [!{AbilityType}]<br>On Any Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Does __not__ perform a Source Name match - the action may be performed from a different role than the trigger. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType
 On {Player} Action [{AbilityType}]<br>On {Player} Action [{AbilitySubtype}]<br>On {Player} Action [!{AbilityType}]<br>On {Player} Action [!{AbilitySubtype}] | Triggers when a player from a specific selector performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType<br>@This
 On Disbandment | Triggers when the current group is disbanded. | ⛔
+On Redirect | Triggers when the current player has redirected an ability. | @Visitor
+On Betrayal | Triggers when a player changes role while being part of the current group | ⛔
+On Poll Closed | Triggers when a poll created by the current player/group/poll through poll creation is closed. | @Winner, @Voters, @OtherVoters
+On Poll Win | Triggers when the current player wins a poll. | @Voters, @OtherVoters
+On Poll {Poll} Win | Triggers when the current player wins a specific poll. | @Voters, @OtherVoters
+On Role Change | Triggers when the current player changes role. | @RoleChanger
+On Removal | Triggers when the current attribute is removed through remove applying. | ⛔
+On End | Triggers when the game ends. | ⛔
+On Emitted<br>On {String} Emitted | Triggers when an emitting action was used to emit a specific value. | ⛔
 
+## Trigger Parameters
 
+Triggers can be further limited/extended with additional paramaters. There are two primary types of trigger parameters: restrictions and scaling. The former restricts the execution of all abilities attached to the trigger to certain situations, whereas the latter changes the amount of times the abilities attached to the trigger are executed.
 
+These parameters are always attached to the trigger and thus always apply equally to all actions of the trigger.
+
+When using several types of trigger paramaters, the order __must always__ be: Restrictions > Scaling > Other Paramaters > Prompt Overwrites.
+
+### Restrictions
+
+Trigger restrictions are marked by square brackets: []. When using several restrictions they are part of the same square bracket block. For example, `[Temporal: Day 1+, Succession: No Succession]`.
+
+Trigger Restrictions can be one or more of the following:
+- Temporal Restriction:
+  - `Temporal: {Phase}`, may only be used in `{Phase}`, e.g. `Temporal: Day 0`
+  - `Temporal: {Phase}+`, may only be in `{Phase}` or after, e.g. `Temporal: Night 2+`
+- Attribute Restriction:
+  - `Attribute: has <AttributeName>`, may only be executed if `<AttributeName>` is present on the current element
+  - `Attribute: lacks <AttributeName>`, may only be executed if `<AttributeName>` is not present on the current element
+  - `Attribute: {Actor} [has | lacks] <AttributeName>`, may only be executed if `{Actor}` (a selector) has/lacks `<Attribute>`
+- Succession Restrictions:
+  - `Succession: No Succession`, may not be executed in in succession
+  - `Succession: No Target Succession`, may not be executed successively on the same target 
+- Quantity Restrictions:
+  - `Quantity: <Number>`, may only be executed a maximum of `<Number>` times.
+- Condition Restrictions:
+  - `Condition: <Condition>`, provide a [condition](#conditions).
+- (Living) Status Restriction:
+  - `Status: Ghostly`, may only be executed while ghostly
+  - `Status: Any`, may be executed while alive or ghostly
+  - `Status: Alive`, may be executed while alive only (default!)
+
+### Scaling
+
+Trigger scalings are marked by angle brackets: ⟨⟩.
+
+Trigger Scalings can be one of the following:
+- Static Scaling: The action can always be used several times
+  - `x<Number>`, specify a number (`Value`) that determines how many times the action can be used
+- Dynamic Scaling: Amount of action usages depend on total player count
+  - `[$total|$living]/<Number>` the action can be used exactly as many times as the player count divided by the specified `Number`, rounded down
+  - `[$total|$living]<Comparison><Number> ⇒ <Count>` a comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Number` is a constant number specifying a player amount and `Count` is the amount of available uses. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value.
+- Phase Specific Scaling: The amount of action usages depends on the phase:
+  - `Odd: <Number>, Even: <Number>` to specify different multiplicities of ability use in even and odd phases. Set `<Number>` to one of the other scaling types, e.g. `Odd: x1, Even: x2`
+
+### Other Parameters
+
+Other trigger paramaters are marked by curly brackets: {}. Curly brackets in this section do __not__ signfiy type markers like in the rest of the document. When using several other parameters their curly bracket blocks are combined, e.g. `{Forced, Direct}`.
+
+To make a prompting trigger forced, a Trigger Compulsion cane set by specifying `{Forced}`. By default a forced trigger randomly selects a target where necessary. If a forced trigger should select a specific target use `{Forced: <Default Target>}` instead.
+
+To make a trigger unaffected by redirections, specify `{Direct}`.
+
+To make a trigger no perform a vist (which also makes it unaffected by redirections!), specify `{Visitless}`.
+
+### Prompt Overwrites
+
+Prompt overwrites are marked by vertical brackets: ||.
+
+By default a prompting trigger will generate a prompt message code name and look it up in the prompt message file. To overwrite the default behaivor, you can specify the name of a custom prompt. For example, `|custom.prompt.1|` would look up the prompt text for `custom.prompt.1`.
+
+To additionally mark a prompt as silent (which skips the ping), you may specify `silent:` before the prompt name, e.g. `|silent:custom.prompt.1|`.
+
+## Conditions
+
+WIP
+
+## Abilities
  
 ## Game Element Formats
 
