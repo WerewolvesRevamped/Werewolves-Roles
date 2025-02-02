@@ -3,9 +3,12 @@ __Basics__
 The Raven attribute is applied by the ravenkeeper. If one player with a raven visits a player with a raven from the same ravenkeeper, the ravenkeeper is informed at the end of the phase.
 
 __Formalized__
-On Starting:Starting: Set Counter to 1
-On Visited [!Targeting]: 
-• @Self->Counter > `0`:
-  ‣ Decrement Counter
-  ‣ Passive [End Phase]:
-    ◦ Reveal `@Self was @VisitType` to #Ravenkeeper
+Starting: Set Counter to 1 {Visitless}
+Starting: Target @ThisAttr->Source (Player) {Visitless}
+On Visited [!Targeting]: [Condition: @Self->Counter > `0`] {Visitless}
+ • Decrement Counter
+ • Change @ThisAttr value `1` to @VisitType
+Passive End Phase: [Condition: @Self->Counter < `1`] {Visitless}
+ • Reveal `Someone used @ThisAttr->Value1 on @Self` to @Target
+ • Increment Counter for @Target
+ • Remove `Raven` from @Self
