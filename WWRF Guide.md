@@ -65,7 +65,7 @@ Roles | ✅ | ⛔ | ⛔ | ∗
 Players | ⛔ | ✅ | ✅ |  
 Teams | ✅ | ✅ | ✅ | ⁑ 
 Groups | ✅ | ✅ | ✅ |  
-Polls | ✅ | ✅ | ✅ |  
+Polls | ✅ | ✅ | ✅ | ⁂
 Attributes (Default) | ⛔ | ✅ | ⛔ |  
 Attributes (Custom) | ✅ | ✅ | ✅ |  
 Attributes (Role) | ⛔ | ✅ | ✅ | 
@@ -76,6 +76,7 @@ Choices | ⛔ | ✅ | ⛔ |
 
 ∗ Roles can be instantiated in two ways: when they are assigned to a player, the player sort of becomes the instantiated version of the role, though of course there is more data on the player. Alternatively if a role is assigned as an extra role mid-game it is instantiated as a role type attribute.  
 ⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.
+⁂ While Polls are both active and passive, and while they are instantiated, their data is still stored on the passive poll, meaning that if a poll updates its counter or target it will affect all polls of the same type.
 
 The format of various game elements are described in more detail below.
 
@@ -532,7 +533,23 @@ $phase | The current phase as a number.
 
 ## Sources
 
-WIP: Sources
+Sources are used internally to represent an acting active game elements. Only very few elements of formalization directly interact with sources, but it still useful to understand them. Furthermore, they are often shown or used in debug commands.
+
+A source represents a unique named reference to an acting game element and is stored in other game elements it creates (for example polls, displays and attributes store their source).
+
+Source consist out of two parts. A source reference (a unique reference to the acting game element) and a source name (a non-unique name for the acting game element). Each of the two parts is made up of a type and a value. For example a source reference may look like this: `player:350000308900100207` (made up of the `player` type and a unique player id), while a source name may look like this: `role:citizen` (made up of the `role` type and the player's role).
+
+Here is a list of existing source pairs:
+
+Reference Type | Reference Value | Name Type | Name Value | Example | Explanation
+--- | --- | --- | --- | --- | ---
+`player` | Member ID | `role` | Role Name | `player:350000308900100207` / `role:citizen` | Represents a player when acting through their primary role. References the player's discord id.
+`player_attr` | Channel ID | `role` | Role Name | `player_attr:30050368990104207` / `role:mayor` | Represents a player when acting through a secondary/extra role. References the extra role's discord channel id.
+`group` | Channel ID | `group` | Group Name | `group:45050668799134173` / `group:wolfpack` | Represents a group when acting directly. References the group's discord channel id.
+`player_group` | Member ID | `group` | Group Name | `player_group:350000308900100207` / `group:wolfpack` | Represents a player when acting as the executor of a group action. References the executor's discord id.
+`poll` | Poll Name | `poll` | Poll Name | `poll:election` / `poll:election` | Represents a poll. References the poll's name. 
+`team` | Team Name | `team` | Team Name | `team:townsfolk` / `team:townsfolk` | Represents a team. References the team's name.
+`attribute` | Attribute ID | `attribute` | Attribute Name | `attribute:13` / `attribute:wolfish` | Represents an attribute. References the attribute's unique id.
  
 ## Game Element Formats
 
