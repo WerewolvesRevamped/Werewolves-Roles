@@ -381,6 +381,8 @@ Selector | Meaning
 @VisitSubtype | The ability type of a visit in `On Visited`.
 ``​`<AbilityType>`​`` | The name of an ability type.
 
+The following ability types exist: killing, investigating, targeting, disguising, protecting, applying, redirecting, manipulating, whispering, joining, granting, loyalty, obstructing, poll, announcement, changing, choices, ascend, descend, disband, counting, reset, cancel, feedback, success, failure, log, process_evaluate, abilities, emit, storing, displaying.
+
 ### Ability Subtype Type
 
 Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first followed by the type. Subtype that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True Kill Killing`).
@@ -390,6 +392,43 @@ Selector | Meaning
 @VisitType | The ability type of a visit in `On Visited`.
 @ActionAbilityType | The ability type of an ability in `On Action`.
 ``​`<AbilityType>`​`` | The name of an ability type.
+
+The following ability subtypes exist:
+
+Ability Type | Ability Subtypes
+--- | ---
+Killing | Attack<br>Kill<br>Lynch<br>True-Kill<br>Banish<br>True-Banish
+Investigating | Role<br>Alignment<br>Class<br>Category<br>Player_Count<br>Count<br>Attribute
+Targeting | Target<br>Untarget
+Disguising | Weakly<br>Strongly
+Protecting | Active<br>Passive<br>Partial<br>Recruitment<br>Absence
+Applying | Add<br>Remove<br>Change<br>Change_Parsed
+Redirecting | ⛔
+Manipulating | Absolute<br>Relative
+Whispering | ⛔
+Joining | Add<br>Remove
+Granting | Add<br>Remove<br>Transfer
+Loyalty | ⛔
+Obstructing | ⛔
+Poll | Creation<br>Addition<br>Deletion<br>Cancellation<br>Manipulation<br>Votes
+Announcement | Immediate<br>Buffer
+Changing | Role<br>Alignment<br>Group
+Choices | Creation<br>Choosing
+Ascend | ⛔
+Descend | ⛔
+Disband | ⛔
+Counting | Increment<br>Decrement<br>Set<br>Increment_Math<br>Decrement_Math<br>Set_Math
+Reset | ⛔
+Cancel | ⛔
+Feedback | ⛔
+Success | ⛔
+Failure | ⛔
+Log | ⛔
+Process_Evaluate | ⛔
+Abilities | ⛔
+Emit | ⛔
+Storing | ⛔
+Displaying | Create<br>Change
 
 ### Ability Category Type
 
