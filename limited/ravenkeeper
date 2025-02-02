@@ -13,7 +13,9 @@ __Simplified__
 Each night, the Ravenkeeper may assign a raven to a player. When an ability is used on a player with a raven, the raven returns, informing the Ravenkeeper of the ability type.
 
 __Formalized__
-Starting: Set Counter to floor $total/5
+Starting: 
+ • Set Counter to floor $total/5
+ • Display `Ravens` (Counter)
 Immediate Night: [Condition: @Self->Counter > `0`] |ravenkeeper.1|
  • Apply `Raven` to @Selection (~Persistent)
  • Decrement Counter
