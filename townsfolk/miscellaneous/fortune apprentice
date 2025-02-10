@@ -10,7 +10,7 @@ __Simplified__
 The Fortune Apprentice will take the place of the first *town investigative* role to die, turning into their role, but will not learn their identity nor the results of their checks.
 
 __Formalized__
-On @(Cat:Investigative,Align:Townsfolk,Attr:!FortuneApprenticeSelected) Death:
+On @(Cat:Investigative,Align:Townsfolk,Attr:!FortuneApprenticeSelected) Death: [Condition: not (@Target exists)]
   • Process:
     ‣ Apply `FortuneApprenticeSelected` to @This (~Phase)
     ‣ Target @This->Role (Role)
