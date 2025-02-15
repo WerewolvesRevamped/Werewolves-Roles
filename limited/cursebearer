@@ -11,7 +11,8 @@ The Cursebearer is a member of the townsfolk team who imitates and is seen as a 
 If no players with that role remain, the Cursebearer can't use its powers anymore, but retains the disguise.
 
 __Formalized__
-TODO
+Role Attribute: `Lycan`
+Starting: Strongly Disguise @Self as %Role%
 
 __Card__
 Cursebearer can use some of the powers of the wolf that cursed it.
