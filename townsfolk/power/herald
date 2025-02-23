@@ -14,7 +14,7 @@ __Formalized__
 Immediate: {Visitless}
   • Process:
     ‣ Target @Selection (Role)
-    ‣ Remove `HeraldSelected:Self` from @All
+    ‣ Remove `HeraldSelected:Self` from @(AttrSelf:HeraldSelected)
     ‣ Apply `HeraldSelected` to @Target->Players (~Persistent)
   • Evaluate:
     ‣ Feedback: `Target updated!`

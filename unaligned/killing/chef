@@ -22,7 +22,8 @@ Unique Role
 Starting: {Visitless}
   • For Each &All:
     ‣ Apply `Waiter` to &Ind->Members->RandomPlayer
-Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self] {Direct}
+  • Learn `Waiters - @(AttrSelf:Waiter)`
+Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self, Temporal: Day 1+] {Direct}
   • Conversation Reset `Restaurant Customer`
   • Grant `Restaurant Customer` to @Selection
   • Whisper to `Restaurant Customer` as `Chef` (~Phase)
@@ -32,9 +33,9 @@ Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @S
 Choice `Eat` Chosen: Apply `Eaten` to @Chooser (~NextNight)
 Passive End Night: Kill @(AttrSelf:Eaten) [Condition: @(AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Poisoned`]
 Passive Start Night: Protect @(AttrSelf:Eaten) from `Attacks` through Active Defense (~Phase) [Condition: @(AttrSelf:Eaten)->Attr(FoodType)->Value1 is `Charmed`]
-On Death: Revoke `Restaurant Customer` from @All
-Passive: Descend [Condition: not (@(Attr:Waiter) exists)]
-On End: Ascend [Condition: @(Attr:Waiter) exists]
+On Death: Revoke `Restaurant Customer` from @All {Visitless}
+Passive: Descend [Condition: not (@(AttrSelf:Waiter) exists)]
+On End: Ascend [Condition: @(AttrSelf:Waiter) exists]
 
 __Card__
 An excellent Chef serves their customers good food, most of the time...

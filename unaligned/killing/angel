@@ -17,19 +17,21 @@ Immediate: Target @Selection (Player) |silent:targeting.target.player|
 On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
 On Lynch:
   • (@Attacker exists) and (@Attacker is part of @All): 
-    ‣ Kill @Attacker
-    ‣ Announce `Angel @Self killed @Attacker`
-    ‣ Ascend
+    ‣ Target @Attacker
+    ‣ Emit `Win`
 On Poll `Lynch` Win:
   • (@OtherVoters exists) and (@Target exists) and (@Target is part of @OtherVoters): 
-    ‣ Kill @Target
-    ‣ Announce `Angel @Self killed @Target`
-    ‣ Ascend
+    ‣ Emit `Win`
   • @OtherVoters exists: 
     ‣ Target @OtherVoters->RandomPlayer (Player)
-    ‣ Kill @Target
-    ‣ Announce `Angel @Self killed @Target`
-    ‣ Ascend
+    ‣ Emit `Win`
+On `Win` Emitted:
+  • Kill @Target
+  • Announce `Angel @Self killed @Target`
+  • Delete `Lynch` Poll
+  • Ascend
+  
+
 
 __Card__
 The Angel wants to go back to heaven, taking their 'saviour' with them.
