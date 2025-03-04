@@ -41,7 +41,9 @@
   - [Other Parameters](#other-parameters)
   - [Prompt Overwrites](#prompt-overwrites)
 - [Conditions](#conditions)
-- [Abilities](#abilities) 
+- [Attributes](#attributes)
+- [Abilities](#abilities)
+  
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -87,7 +89,7 @@ Locations | ✅ | ⛔ | ⛔ |
 Choices | ⛔ | ✅ | ⛔ |  
 
 ∗ Roles can be instantiated in two ways: when they are assigned to a player, the player sort of becomes the instantiated version of the role, though of course there is more data on the player. Alternatively if a role is assigned as an extra role mid-game it is instantiated as a role type attribute.  
-⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.
+⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.  
 ⁂ While Polls are both active and passive, and while they are instantiated, their data is still stored on the passive poll, meaning that if a poll updates its counter or target it will affect all polls of the same type.
 
 The format of various game elements are described in more detail below.
@@ -104,7 +106,7 @@ For example, a role investigation takes one input value: a player that is to be 
 
 Each value needs to be annotated with its respective type, however most of the time the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. Check for each ability what types it expects and when annotation may be necessary. Annotation is done be appending the type surrounded by square brackets, for example: ``​`Citizen`[role]``.
 
-Values are split into two categories: constant values (e.g. `Citizen`, referring to the citizen role) or selectors (e.g. `@Self`, referring to the current game element). Furthermore, there is a differentiation between basic selectors (e.g. `@Self` or `@Target`) which refer to a specifc value based on context and advanced selectors (e.g. `@(Role:Citizen)`, returing all players with the citizen role) which select values according to a specified query.
+Values are split into two categories: constant values (e.g. `Citizen`, referring to the citizen role) or selectors (e.g. `@Self`, referring to the current game element). Furthermore, there is a differentiation between basic selectors (e.g. `@Self` or `@Target`) which refer to a specifc value based on context and advanced selectors (e.g. `@(Role:Citizen)`, returning all players with the citizen role) which select values according to a specified query.
 
 This is a list of values and example constant values and selectors:
 
@@ -120,7 +122,7 @@ Base Location | #tavern | ⛔ | ⛔ | ⛔
 Poll | `Wolfpack` | @Self | ⛔ | ⛔
 Success | Success | ⛔ | ⛔ | ⛔
 Result ⁂ | ⛔ | @Result | ⛔ | ⛔
-Info | `Attacked @Target` ⁑⁑ | @ActionFeedback | ⛔ | ⛔
+Info ⁑⁑ | `Attacked @Target` | @ActionFeedback | ⛔ | ⛔
 Ability Type | `Killing` | @VisitType | ⛔ | ⛔
 Ability Subype ⁑⁑∗ | `Attack Killing` | @VisitSubtype | ⛔ | ⛔
 Ability Category | `All` | ⛔ | ⛔ | ⛔
@@ -137,6 +139,7 @@ Source | `Group:Wolfpack` | @AttackSource | ⛔ | ✅
 Option | `Join Pack` | @Option | ⛔ | ✅
 String | `Text` | ⛔ | ⛔ | ✅
 Null | ⛔ | ⛔ | ⛔ | ✅
+Phase | `Day 1` | ⛔ | ⛔ | ⛔
 
 ∗ Players can not be referenced using a constant value, as that would require this player to be present in every game.  
 ⁑ Locations are a special type which unifies several other types into a single type. The following types can be interpreted as a location: group, base location, active extra role, player, attribute.  
@@ -746,6 +749,35 @@ And/Or | `(<Condition>) and (<Condition>) or (<Condition>)` | Passes if the firs
 Or/And | `(<Condition>) or (<Condition>) and (<Condition>)` | Passes if the third, and at least one of the other conditions are true.
 
 Even though this makes little sense, you may not combine and/or operations in any other way than listed above and cannot contain and/or operations inside the conditions specified for an and/or operation.
+
+## Attributes
+
+Attributes are one of the most common game elements and attribute applying abilities are one of the most common ability types.  
+
+Attributes are acting active game elements that are applied onto another game element and apply some additional power/ability/limitation onto that element. All attributes have an attribute type that determines what their effect is, a typed owner (who the attribute is applied on), a typed source (who created the attribute - source reference and source name), an attribute duration (determining how long the attribute lasts), a usage tracker (counting the amount of times the attribute has been used), an application phase (a numeric value representing the phase the attribute was applied in), an aliveness (signifying whether the attribute owner is still alive, if they are a player), a counter and target (like all acting game elements) and up to four additional paramaters with varying functionality depending on the attribute type.  
+
+Attributes come in three categories:  
+• Role Type Attribute: Role type attributes are a type of attribute which represent an additional role applied to a player. For most purposes this additional role acts as a normal role would, making it an acting attribute.  
+• Custom Type Attribute: Custom type attributes are attributes which are formalized in a passive attribute. In there, formalization defines certain acting behaivor for the attribute.  
+• Default Attributes: The remaining attribute types are fully "built-in" to the bot and cover things such as disguises and vote manipulations as well as many more. While these attributes support all the fields of the other attribute types, they "choose" to not use any features which would qualify them as an "acting" game element and can thus be considered to be non-acting. All their functionality is built-in to the various abilities (see [abilities](#abilities))  
+
+The different types of attributes are explained in more detail in their respective ability sections.
+
+Attributes can be defined to last forever, or to only be temporary. This is achieved through an attribute duration which can be passed in most abilities that create attributes. Some abilities have preset durations for their attributes, and some have default values that can be overwritten. This is explained in detail for each ability in their respective sections.
+
+The following ability durations exist:
+
+Name | Explanation
+--- | ---
+`~Persistent` | Lasts forever, unless manually removed
+`~Permanent` | Lasts until role loss
+`~Phase` | Lasts until the end of the current phase
+`~NextPhase` | Lasts until the end of the next phase
+`~NextDay`, `~NextNight` | Lasts until the end of the next day/night
+`~UntilUse` | Lasts until the attribute is used. (When an attribute is 'used' depends on the attribute type - more in the respective ability sections)
+`~UntilSecondUse` | Lasts until the attribute is used twice
+`~Attribute` | Lasts as long as the originating attribute is applied, can only be used inside an attribute.
+`~UntilUseAttribute` | Lasts until used (see `~UntilUse`) or until the originating attribute disappears (see `~Attribute`)
 
 ## Abilities
  
