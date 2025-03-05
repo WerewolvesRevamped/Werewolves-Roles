@@ -23,7 +23,7 @@ Starting: {Visitless}
   • For Each &All:
     ‣ Apply `Waiter` to &Ind->Members->RandomPlayer
   • Learn `Waiters - @(AttrSelf:Waiter)`
-Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self, Temporal: Day 1+] {Direct}
+Start Day: [Attribute: @Selection lacks `Eaten`, Condition: @Selection is not @Self, Temporal: Day 1+] {Direct} |chef.1|
   • Conversation Reset `Restaurant Customer`
   • Grant `Restaurant Customer` to @Selection
   • Whisper to `Restaurant Customer` as `Chef` (~Phase)
