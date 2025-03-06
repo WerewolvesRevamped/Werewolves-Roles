@@ -14,18 +14,22 @@ The Firebug is a member of the pyro team and channel.
 
 __Formalized__
 Starting: Join #Pyros
-Immediate Night:
+Immediate Night: |firebug.1|
   • Protect @Selection from `Attacks` through Active Defense (~Phase) 
   • Apply `Warded` to @Selection (~NextDay)
 On @(AttrSelf:Warded) Visited [Attack Killing]:
   • not (@Visitor->Alignment is `Pyro`):
     ‣ Apply `Powdered` to @Visitor (~Persistent)
     ‣ Attack @(Attr:Powdered,Align:!Pyro)
-    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
-    ‣ Reveal `You were ignited to @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
     ‣ Remove `Warded:Self` from @(AttrSelf:Warded)
-Passive Start Day: Apply `Powdered` to @(AttrSelf:Warded) (~Persistent) [Condition: @(AttrSelf:Warded) exists]
-Passive: not (@(Role:Pyromancer) exists): Role Change @Self to `Pyromancer`
+    ‣ Learn `You counterattacked`
+    ‣ @(Attr:Powdered,Align:Pyro) exists: 
+      ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+      ◦ Reveal `You were ignited by @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
+Passive Start Day: [Condition: @(AttrSelf:Warded) exists]
+  • Apply `Powdered` to @(AttrSelf:Warded) (~Persistent)
+  • Learn `You powdered`
+Passive: Role Change @Self to `Pyromancer` [Condition: not (@(Role:Pyromancer) exists)]
 
 __Card__
 The Firebug protects villagers with a fiery shield. Any harm done to them would turn into a hot mess.
