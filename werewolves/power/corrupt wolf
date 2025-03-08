@@ -14,6 +14,7 @@ Additionally, the Corrupt Wolf can anonymously talk to their target.
 
 __Formalized__
 Inherit: `Pack Lycan`
+Passive Start Night: Conversation Reset `Corrupted` [Temporal: Night 2+]
 Immediate Night: [Condition: (@SecondarySelection > -2) and (@SecondarySelection < 3)] {Direct} |corrupt_wolf.1|
   • Conversation Reset `Corrupted`
   • Grant `Corrupted` to @Selection
