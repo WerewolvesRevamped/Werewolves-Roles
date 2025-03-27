@@ -19,6 +19,7 @@ Immediate Night: [Condition: (@SecondarySelection > -2) and (@SecondarySelection
   • Grant `Corrupted` to @Selection
   • Manipulate @Selection's `public voting power` to @SecondarySelection (~NextDay)
   • Whisper to `Corrupted` as `Corrupt Wolf` (~NextDay)
+Passive Start Night: Conversation Reset `Corrupted`
 
 __Card__
 Quietly stealing vote ballots is the Corrupt Wolf's favorite pastime.
