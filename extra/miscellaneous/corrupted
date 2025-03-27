@@ -8,7 +8,7 @@ __Simplified__
 When a corrupt wolf corrupts a player, that player becomes Corrupted until the end of the following day.
   
 __Formalized__
-Passive End Day:
+Passive End Night:
   • Conversation Reset
   • Revoke @ThisAttr from @Self
 On Death: Conversation Reset
