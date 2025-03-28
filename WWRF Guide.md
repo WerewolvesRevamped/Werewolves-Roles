@@ -772,6 +772,7 @@ Name | Explanation
 `~Persistent` | Lasts forever, unless manually removed
 `~Permanent` | Lasts until role loss
 `~Phase` | Lasts until the end of the current phase
+`~PhaseAttribute` | Lasts until the end of the current phase (see `~Phase`) or until the originating attribute disappears (see `~Attribute`)
 `~NextPhase` | Lasts until the end of the next phase
 `~NextDay`, `~NextNight` | Lasts until the end of the next day/night
 `~UntilUse` | Lasts until the attribute is used. (When an attribute is 'used' depends on the attribute type - more in the respective ability sections)
