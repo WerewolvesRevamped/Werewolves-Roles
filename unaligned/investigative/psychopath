@@ -17,19 +17,21 @@ Starting:
   • Set Counter to ceil $total/3
   • Apply `PsychopathList` to @Self
   • For Each &All:
-    ‣ @Ind->Members > `1`:
+    ‣ &Ind->Members->Count > 1:
       ◦ Decrement Counter
-      ◦ Apply `PsychopathList` to @Ind->Members->RandomPlayer
-Passive:
-  • @Self->Counter > `0`:
-    ‣ Decrement Counter
-    ‣ Apply `PsychopathList` to @(AttrSelf:!PsychopathList,SelectAll:False)
-  • @Self->Counter is `0`:
+      ◦ Apply `PsychopathList` to &Ind->Members->RandomPlayer
+  • Emit `Build List`
+On `Build List` Emitted: [Condition: @Self->Counter > 0]
+  • Decrement Counter
+  • Apply `PsychopathList` to @(AttrSelf:!PsychopathList,SelectAll:False)
+  • Emit `Build List`
+On `Build List` Emitted: [Condition: @Self->Counter is 0]
+  • Process:
     ‣ Remove `PsychopathList` from @Self
-    ‣ Learn `shuffle(@(AttrSelf:PsychopathList))`
     ‣ Decrement Counter
-  • not (@(AttrSelf:PsychopathList) exists): 
-    ‣ Ascend
+    ‣ Shuffle @(AttrSelf:PsychopathList)
+  • Evaluate: Learn `Psychopath List - @Result3`
+Passive: Ascend [Condition: not (@(AttrSelf:PsychopathList) exists)]
 Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
 Passive Start Day: `Psychopath` Choice Creation (Investigate, Disguise)
