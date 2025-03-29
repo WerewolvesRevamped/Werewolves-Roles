@@ -8,7 +8,7 @@ __Simplified__
 Each day, starting Day 2, the Stalker may assign two extra invisible votes to a player in the current day’s lynch poll.
 
 __Formalized__
-Immediate Day: Manipulate `Lynch` Poll (@Selection has `2` hidden votes) [Temporal: Day 2+]
+Immediate Day: Manipulate `Lynch` Poll (@Selection has `2` hidden votes) (~Phase) [Temporal: Day 2+]
 
 __Card__
 Whoever the Stalker obsesses over, may find themselves with more votes than possible.
