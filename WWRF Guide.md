@@ -560,6 +560,7 @@ Source type is one of the rare instances where the formalization system can dire
 Selector | Meaning
 --- | ---
 @AttackSource | Returns the source of an attack in `On Death` and `On Killed`. For groups this will differ from the attacker.
+@TriggerSource | Returns the source of the trigger in `On Any Action`.
 ``​`<SourceNameType>:<SourceNameValue>`​`` | A colon separated two segement value, with the first specifying the source type (e.g. `Role`) and the second the name/value (e.g. `Assassin`).
 
 ### Option Type
@@ -656,7 +657,7 @@ On Defense<br>On Active Defense<br>On Passive Defense<br>On Partial Defense<br>O
 On Visited<br>On Visited [{AbilityType}]<br>On Visited [{AbilitySubtype}]<br>On Visited [!{AbilityType}]<br>On Visited [!{AbilitySubtype}] | Triggers when the current player is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@SecondVisitParameter<br>@VisitType<br>@VisitSubtype 
 On {Player} Visited [{AbilityType}]<br>On {Player} Visited [{AbilitySubtype}]<br>On {Player} Visited [!{AbilityType}]<br>On {Player} Visited [!{AbilitySubtype}] | Triggers when a player from a specific selector is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@SecondVisitParameter<br>@VisitType<br>@VisitSubtype<br>@This
 On Action<br>On Action [{AbilityType}]<br>On Action [{AbilitySubtype}]<br>On Action [!{AbilityType}]<br>On Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Performs a Source Name match - this requires the action to be performed from the same role the trigger is in. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType
-On Any Action<br>On Any Action [{AbilityType}]<br>On Any Action [{AbilitySubtype}]<br>On Any Action [!{AbilityType}]<br>On Any Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Does __not__ perform a Source Name match - the action may be performed from a different role than the trigger. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType
+On Any Action<br>On Any Action [{AbilityType}]<br>On Any Action [{AbilitySubtype}]<br>On Any Action [!{AbilityType}]<br>On Any Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Does __not__ perform a Source Name match - the action may be performed from a different role than the trigger. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType<br>@TriggerSource
 On {Player} Action [{AbilityType}]<br>On {Player} Action [{AbilitySubtype}]<br>On {Player} Action [!{AbilityType}]<br>On {Player} Action [!{AbilitySubtype}] | Triggers when a player from a specific selector performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType<br>@This
 On Disbandment | Triggers when the current group is disbanded. | ⛔
 On Redirect | Triggers when the current player has redirected an ability. | @Visitor
