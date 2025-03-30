@@ -179,6 +179,7 @@ Selector | Meaning
 @Visitor | Refers to the visiting player in `On Visited`, `On Redirect` and variants.
 @Joiner | Refers to the joining player in `On Join`.
 @VisitParameter | Refers to a parameter in a visit in `On Visited`, though this will usually __NOT__ be a player.
+@SecondVisitParameter | Refers to a second parameter in a visit in `On Visited`, though this will usually __NOT__ be a player.
 @Ind | Refers to the current element in a `For Each` ability.
 @Voters | Refers to all players that voted for the winning option in `On Poll Closed` and `On Poll Win`.
 @OtherVoters | @Voters without the poll winner.
@@ -237,6 +238,7 @@ Selector | Meaning
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a role if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 @VisitParameter | Refers to a parameter in a visit in `On Visited`.
+@SecondVisitParameter | Refers to a second parameter in a visit in `On Visited`.
 @Option | Refers to the chosen option of a choice, though this will be an option type it will be cast to a role if possible.
 @Selection | Refers to a selection submitted by a player through a prompt.
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
@@ -302,6 +304,7 @@ Selector | Meaning
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a team if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 @VisitParameter | Refers to a parameter in a visit in `On Visited`.
+@SecondVisitParameter | Refers to a second parameter in a visit in `On Visited`.
 @Option | Refers to the chosen option of a choice, though this will be an option type it will be cast to a team if possible.
 &All | All teams.
 &Self | The current team.
@@ -480,6 +483,7 @@ Attribute type refers to a _passive_ attribute.
 Selector | Meaning
 --- | ---
 @VisitParameter | Refers to a parameter in a visit in `On Visited`.
+@SecondVisitParameter | Refers to a second parameter in a visit in `On Visited`.
 ``​`<AttributeName>`​`` | The name of an attribute.
 
 ### Active Attribute Type
@@ -649,8 +653,8 @@ On Banished | Triggers when the current player is banished?? Do not use. | @Atta
 On {Player} Banished | Triggers when a player from a specific selector is banished?? Do not use. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
 On Lynch | Triggers when the current played is lynched. | @Attacker<br>@DeathType<br>@AttackSource
 On Defense<br>On Active Defense<br>On Passive Defense<br>On Partial Defense<br>On Recruitment Defense<br>On Absence Defense | Triggers when one of the current player's defenses of the specified (or any) type is used. Performs a Source Name match - this requires the defense to have been created by the same role the trigger is in. | @Attacker<br>@DeathType<br>@AttackSource
-On Visited<br>On Visited [{AbilityType}]<br>On Visited [{AbilitySubtype}]<br>On Visited [!{AbilityType}]<br>On Visited [!{AbilitySubtype}] | Triggers when the current player is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@VisitType<br>@VisitSubtype 
-On {Player} Visited [{AbilityType}]<br>On {Player} Visited [{AbilitySubtype}]<br>On {Player} Visited [!{AbilityType}]<br>On {Player} Visited [!{AbilitySubtype}] | Triggers when a player from a specific selector is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@VisitType<br>@VisitSubtype
+On Visited<br>On Visited [{AbilityType}]<br>On Visited [{AbilitySubtype}]<br>On Visited [!{AbilityType}]<br>On Visited [!{AbilitySubtype}] | Triggers when the current player is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@SecondVisitParameter<br>@VisitType<br>@VisitSubtype 
+On {Player} Visited [{AbilityType}]<br>On {Player} Visited [{AbilitySubtype}]<br>On {Player} Visited [!{AbilityType}]<br>On {Player} Visited [!{AbilitySubtype}] | Triggers when a player from a specific selector is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@SecondVisitParameter<br>@VisitType<br>@VisitSubtype
 On Action<br>On Action [{AbilityType}]<br>On Action [{AbilitySubtype}]<br>On Action [!{AbilityType}]<br>On Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Performs a Source Name match - this requires the action to be performed from the same role the trigger is in. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType
 On Any Action<br>On Any Action [{AbilityType}]<br>On Any Action [{AbilitySubtype}]<br>On Any Action [!{AbilityType}]<br>On Any Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Does __not__ perform a Source Name match - the action may be performed from a different role than the trigger. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType
 On {Player} Action [{AbilityType}]<br>On {Player} Action [{AbilitySubtype}]<br>On {Player} Action [!{AbilityType}]<br>On {Player} Action [!{AbilitySubtype}] | Triggers when a player from a specific selector performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType<br>@This
