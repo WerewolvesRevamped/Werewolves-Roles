@@ -12,8 +12,8 @@ Inherit: `Pack Lycan`
 Immediate Night: |psychic_wolf.1|
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate: 
-    ‣ @Result is @SecondarySelection[role]: `Correct`
-    ‣ Otherwise: `Incorrect`
+    ‣ @Result is @SecondarySelection[role]: `@Selection as @SecondarySelection - Correct`
+    ‣ Otherwise: `@Selection as @SecondarySelection - Incorrect`
 
 __Card__
 The Psychic Wolf attempts to find out the truth about their enemies.
