@@ -5,6 +5,6 @@ An attribute marking all players that a baroness is currently spying on.
 __Formalized__
 Starting: Target @ThisAttr->Source (Player) {Visitless}
 
-On Any Action [Investigating]: Reveal `@Self->Role information: @ActionFeedback` to @Target [Condition: (@TriggerSource is `Role:Fortune Teller`) or (@TriggerSource is `Role:Huntsman`) or (@TriggerSource is `Role:Innkeeper`) or (@TriggerSource is `Role:Clairvoyant Fox`) or (@TriggerSource is `Role:Lone Warlock`) or (@TriggerSource is `Role:Warlock`) or (@TriggerSource is `Role:Flute Charmer`)]
+On Any Action [Investigating]: Reveal `@Self->Role information: @ActionFeedback` to @Target [Condition: @TriggerSource is `Role:Fortune Teller`+`Role:Huntsman`+`Role:Innkeeper`+`Role:Clairvoyant Fox`+`Role:Lone Warlock`+`Role:Warlock`+`Role:Flute Charmer`]
 
-On Any Action [Feedback]: Reveal `@Self->Role information: @ActionFeedback` to @Target [Condition: (@TriggerSource is `Role:Crowd Seeker`) or (@TriggerSource is `Role:Aura Teller`) or (@TriggerSource is `Role:Tracking Wolf`) or (@TriggerSource is `Role:Psychic Wolf`) or (@TriggerSource is `Role:Oracle`]
+On Any Action [Feedback]: Reveal `@Self->Role information: @ActionFeedback` to @Target [Condition: @TriggerSource is `Role:Crowd Seeker`+`Role:Aura Teller`+`Role:Tracking Wolf`+`Role:Psychic Wolf`+`Role:Oracle`]
