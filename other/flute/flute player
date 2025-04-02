@@ -22,7 +22,7 @@ The Flute Player causes an obstruction that messes up investigate roles affected
 
 __Formalized__
 Starting: Whisper to #Enchanted as `Flute Player`
-Starting: Apply `Flutist` to @Self (~Permenant)
+Starting: Apply `Flutist` to @Self (~Persistant)
 Immediate Night: Apply `Enchanted` to @Selection ⟨$total/10⟩ [Condition: @(Attribute:Flutist)->Count is 1] |flute_player.1|
 Immediate Night: Apply `Enchanted` to @Selection ⟨$total/20⟩ [Condition: @(Attribute:Flutist)->Count > 1] |flute_player.1|
 
