@@ -11,7 +11,11 @@ __Simplified__
 If visited the Bear will attack the visitors. It wins by attacking two people, afterwards it stops playing and the game continues. The Bear has protection against attacks during the night, and does not count targetting actions as visits.
 
 __Formalized__
-N/A
+On Visited [!Targeting]:
+  • Attack @Visitor
+  • Increment Counter
+  • @Self->Counter > 1: Ascend
+On Visited [Attacking]: Cancel with Failure [Temporal: Night]
 
 __Card__
 The Bear does not wish to be disturbed, and viciously attacks those that do.
