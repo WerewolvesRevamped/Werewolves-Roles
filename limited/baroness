@@ -14,8 +14,8 @@ The Baroness is not a lycan, nor are they a member of the wolfpack.
 
 __Formalized__
 Passive Start Day: Untarget
-Immediate Day: Target @Selection (Role)
-Passive: Apply `BaronessSpying` to @(Role:@Target,AttrSelf:!BaronessSpying) (~NextDay) {Visitless}
+End Day: Target @Selection (Role) [Condition: @Selection is part of ^(Cat:Investigative,Class:!Unaligned,Class:!Extra), Succession: No Target Succession] {Visitless}
+Passive Start Night: Apply `BaronessSpying` to @Target->Players (~NextDay) {Visitless}
 
 __Card__
 With its ability to see through others, the Baroness receives information by spy- ing on gifted villagers.

@@ -21,8 +21,8 @@ Immediate Night:
     ‣ Apply `OracleSelected` to @Selection
     ‣ Apply `OracleSelected` to @SecondarySelection
   • Evaluate:
-    ‣ @Result1[alignment] is @Result2[alignment]: `Same Alignment`
-    ‣ Otherwise: `Different Alignment`
+    ‣ @Result1[alignment] is @Result2[alignment]: `@Selection and @SecondarySelection are the Same Alignment`
+    ‣ Otherwise: `@Selection and @SecondarySelection are a Different Alignment`
 
 __Card__
 The Oracle's power is to check if two people are friends or enemies.

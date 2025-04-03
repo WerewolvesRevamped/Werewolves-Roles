@@ -17,9 +17,9 @@ Immediate Night: |investigating.role.1|
     ‣ Attribute Investigate @Selection for `Lycan` (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
-    ‣ @Result1 is `Success`: `Threat`
-    ‣ @Result2 is `Killing`[category]: `Threat`
-    ‣ Otherwise: `Not a Threat`
+    ‣ @Result1 is `Success`: `@Selection is a Threat`
+    ‣ @Result2 is `Killing`[category]: `@Selection is a Threat`
+    ‣ Otherwise: `@Selection is Not a Threat`
 
 __Card__
 The Aura Teller can sense a threatening aura from far away.

@@ -18,18 +18,18 @@ Immediate Night:
     ‣ Class Investigate @Selection (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
-    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Investigative[category]`): `Major Threat`
-    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Killing[category]`): `Major Threat`
-    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Power[category]`): `Significant Threat`
-    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Group[category]`): `Significant Threat`
-    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Miscellaneous[category]`): `Slight Threat`
-    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Investigative[category]`): `Major Threat`
-    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Killing[category]`): `Major Threat`
-    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Power[category]`): `Significant Threat`
-    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Group[category]`): `Significant Threat`
-    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Miscellaneous[category]`): `Slight Threat`
-    ‣ (@Result1 is `Werewolf[class]`) and (@Result2 is `Kiling[category]`): `Slight Threat`
-    ‣ Otherwise: `No Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Investigative[category]`): `@Selection is a Major Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Killing[category]`): `@Selection is a Major Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Power[category]`): `@Selection is a Significant Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Group[category]`): `@Selection is a Significant Threat`
+    ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Miscellaneous[category]`): `@Selection is a Slight Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Investigative[category]`): `@Selection is a Major Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Killing[category]`): `@Selection is a Major Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Power[category]`): `@Selection is a Significant Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Group[category]`): `@Selection is a Significant Threat`
+    ‣ (@Result1 is `Solo[class]`) and (@Result2 is `Miscellaneous[category]`): `@Selection is a Slight Threat`
+    ‣ (@Result1 is `Werewolf[class]`) and (@Result2 is `Kiling[category]`): `@Selection is a Slight Threat`
+    ‣ Otherwise: `@Selection is Not a Threat`
 
 __Card__
 The Tracking Wolf can sense a threatening aura from miles away.
