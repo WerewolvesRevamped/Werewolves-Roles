@@ -9,7 +9,7 @@ If an enchanted player uses a role investigation, they will have a 60% chance th
 This effect will disappear once no members of the Flute Player channel or team remain. The players remain enchanted, but their investigations are no longer obstructed.
 
 The Flute Player is able to enchant 1 player for every ten players in the game (rounded). They may not enchant a member of the Flute team or channel.
-If there is more than one player in the Flute Player channel (not counting Flute Apprentices), each Flute Player will only be able to enchant 1 player for every twenty players in the game (rounded).
+If there is more than one flutist player, each Flute Player will only be able to enchant 1 player for every twenty players in the game (rounded).
 The amount of players used is the amount of players that are part of the game, not the alive players.
 
 If there are multiple Flute Players, then they are one team, and they will work together. 
@@ -22,8 +22,9 @@ The Flute Player causes an obstruction that messes up investigate roles affected
 
 __Formalized__
 Starting: Whisper to #Enchanted as `Flute Player`
-Immediate Night: Apply `Enchanted` to @Selection ⟨$total/10⟩ [Condition: @(OrigRole:Flute-Player)->Count is 1] |flute_player.1|
-Immediate Night: Apply `Enchanted` to @Selection ⟨$total/20⟩ [Condition: @(OrigRole:Flute-Player)->Count > 1] |flute_player.1|
+Starting: Apply `Flutist` to @Self (~Persistent)
+Immediate Night: Apply `Enchanted` to @Selection ⟨$total/10⟩ [Condition: @(Attribute:Flutist)->Count is 1] |flute_player.1|
+Immediate Night: Apply `Enchanted` to @Selection ⟨$total/20⟩ [Condition: @(Attribute:Flutist)->Count > 1] |flute_player.1|
 
 __Card__
 The Flute Player seeks an end to all the violence by enchanting everyone.
