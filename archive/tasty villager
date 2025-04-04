@@ -4,3 +4,6 @@ The night after the Tasty Villager dies, the wolfpack will receive an additional
 __Details__
 Whenever the Tasty Villager dies, the wolfpack will receive an additional kill the next night. If more than one Tasty Villager dies, the additional kills are cumulative.
 The same target can be attacked more than once. This is useful to take out a Runner in one night.
+
+__Formalized__
+On Death: Add `Wolfpack` Poll
