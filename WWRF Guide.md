@@ -688,6 +688,7 @@ Name | Syntax | Explanation | Example
 --- | --- | --- | ---
 Temporal Restriction | `Temporal: {Phase}` | May only be executed in `{Phase}`. | `Temporal: Day 0` 
 Temporal Restriction | `Temporal: {Phase}+` | May only be executed in `{Phase}` or after. | `Temporal: Night 2+`
+Temporal Restriction | `Temporal: [Day\|Night]` | May only be executed during day/night. | `Temporal: Night`
 Attribute Restriction | `Attribute: has <AttributeName>` | May only be executed if `<AttributeName>` is present on the current element. | ``Attribute: has `Wolfish`​``
 Attribute Restriction | `Attribute: lacks <AttributeName>` | May only be executed if `<AttributeName>` is __not__ present on the current element. | ``Attribute: lacks `Wolfish`​``
 Attribute Restriction | `Attribute: {Actor} [has\|lacks] <AttributeName>` | May only be executed if `{Actor}` (a selector) has/lacks `<Attribute>`. | ``Attribute: @Target lacks `Wolfish`​``
