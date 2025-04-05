@@ -5,3 +5,4 @@ Plague Team wins when all players are either dead, unaligned or part of the Plag
 __Formalized__
 Win Condition: @(Alignment:Plague), @(Class:Unaligned)
 On Join: Add @Joiner to #Plague-Pit
+Passive Start Phase: Investigate @(Attr:Contaminated) Player Count
