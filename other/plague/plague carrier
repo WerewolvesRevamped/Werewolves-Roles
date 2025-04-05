@@ -17,6 +17,9 @@ At the start of every night, the Plague Carrier is told the roles of players who
 __Formalized__
 Starting: Apply `Contaminated` to @Self (~Persistent) (EarlyStage, $phase)
 Passive: Role Change @Self to `Plague Bearer` [Condition: (not (@(Role:Plague-Bearer) exists)) and (#Plague-Pit->Counter > 0)]
+Passive End Day: For Each @(Attr:Contaminated): @Ind->Attr(Contaminated)->Value1 is `MiddleStage`: Learn `A @Ind->Role is going to die of the plague`
+
+Investigate @(Attr:Contaminated) Player Count
 
 __Card__
 The Plague Carrier is the sickly sidekick of the plague bearer.
