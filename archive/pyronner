@@ -4,3 +4,23 @@ Each night, the Pyronner may either powder a player or ignite all currently powd
 __Details__
 Each night the Pyronner may either powder a player or ignite all currently powdered people. Powdering is an immediate ability, and igniting is an end night ability. Instead of powdering the Pyronner may also unpowder.
 When they are attacked, the Pyronner will not die, but will be vulnerable to future attacks. Pyronners are informed that they were attacked.
+
+
+__Formalized__
+Starting:
+  • Join #Pyros
+  • Protect @Self from `Attacks` through Passive (~UntilUse)
+Passive Start Night: `Pyronner` Choice Creation (Powder, Unpowder, Ignite)
+Immediate Night: `Pyronner` Choice Choose @Chosen |pyromancer.1|
+Choice `Powder` Chosen: |pyromancer.2|
+  • @Selection has `Powdered`: Failure
+  • Otherwise: Apply `Powdered` to @Selection (~Persistent) 
+Choice `Ignite` Chosen: Apply `Marker` to @Self
+Choice `Unpowder` Chosen: Remove `Powdered` from @Selection [Attribute: @Selection has `Powdered`]
+Passive End Night: [Attribute: has `Marker`]
+  • Remove `Marker` from @Self
+  • Attack @(Attr:Powdered,Align:!Pyro)
+  • @(Attr:Powdered,Align:Pyro) exists:
+    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited` to @(Attr:Powdered,Role:Wisp)
+On Passive Defense: Reveal `You got attacked and ran away` to @Self
