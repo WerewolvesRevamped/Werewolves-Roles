@@ -873,7 +873,7 @@ Attribute | `Attribute Investigate {Player} for {Attribute} <Disguise Levels>` |
 Count | `Investigate {Role} Count <Disguise Levels>` | The amount of times a certain role exists. | Number
 Player Count | `Investigate {Player} Count` | The amount of players in a selector. | Number
 
-**Triggers:** 
+**Triggers:** There are no triggers associated with Investigating.
 
 ### Ability Template
 
