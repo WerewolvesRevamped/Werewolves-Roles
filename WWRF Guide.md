@@ -830,6 +830,68 @@ Target | Player | First target of the ability
 </tbody></table>
 
 **Triggers:** The killing ability will emit the "On Defense" trigger if an defense is used to evade a killing ability, as well as the matching specific variant (On Absence Defense, On Active Defense, On Passive Defense, On Partial Defense, On Recruitment Defense). Additionally upon a successful killing (i.e. not just the queuing, but also the successful execution), the triggers listed in the table above are executed.
+
+### Investigating
+
+**Summary:** Investigating is a special ability that technically doesn't have any effect - it merely returns feedback - however, its feedback is much more useful than that of other abilities as it provides additional info about other players and/or their roles.
+
+**Attributes:** Investigating is affected by disguise attributes. Most ability subtypes check for weak and/or strong disguises as specified in the ability. In case both disguises are checked for, strong disguises take priority over weak disguises.
+
+**Visits:** All investigating subtypes cause a visit to the player the ability is targeting (except for ones not targeting a player).
+
+**Redirections:** The target of all investigating subtypes can be affected by redirections, though the feedback (if it mentions the target) will not be affected by that.
+
+**Success:** Most subtypes are always succesful (unless obstructed), exceptions are listed under subtypes.
+
+**Feedback:** 
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+Result | Any | The result of the investigating. The same value is also passed on a subtype specific value. See subtypes
+
+**Subtypes:** 
+
+For `<Disguise Levels>`, one of the following needs to be specified:
+
+Value | Meaning
+--- | ---
+*blank* | Affected by no disguises.
+(SD) | Affected by strong disguises only.
+(WD) | Affected by weak disguises only.
+(WD, SD)<br>(SD, WD) | Affected by both weak and strong disguises.
+
+Subtype | Syntax | Feedback | Feedback Name
+--- | --- | --- | --- 
+Role | `Role Investigate {Player} <Disguise Levels>` | The player's role. | Role
+Class | `Class Investigate {Player} <Disguise Levels>` | The player's role's class. | Class
+Category | `Category Investigate {Player} <Disguise Levels>` | The player's role's category. | Category
+Alignment | `Alignment Investigate {Player} <Disguise Levels>` | The player's role's alignment. | Alignment
+Attribute | `Attribute Investigate {Player} for {Attribute} <Disguise Levels>` | Whether the attribute is present or not. | Success
+Count | `Investigate {Role} Count <Disguise Levels>` | The amount of times a certain role exists. | Number
+Player Count | `Investigate {Player} Count` | The amount of players in a selector. | Number
+
+**Triggers:** 
+
+### Ability Template
+
+**Summary:** 
+
+**Attributes:** 
+
+**Visits:** 
+
+**Redirections:** 
+
+**Success:** 
+
+**Feedback:**
+
+**Subtypes:** 
+
+**Triggers:** 
  
 ## Game Element Formats
 
