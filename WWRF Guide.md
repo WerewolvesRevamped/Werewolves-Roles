@@ -43,7 +43,8 @@
 - [Conditions](#conditions)
 - [Attributes](#attributes)
 - [Abilities](#abilities)
-  
+  - [Killing](#killing)
+  - [Investigating](#investigating)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -787,6 +788,48 @@ Name | Explanation
 `~UntilUseAttribute` | Lasts until used (see `~UntilUse`) or until the originating attribute disappears (see `~Attribute`)
 
 ## Abilities
+
+Abilities are used by all active game elements to take action in a game. While some abilities are unique, there are three major categories of abilities:
+- Attribute Appliers: Many abilities apply an attribute - the attribute then takes care of the main impact of the ability.
+- Game Action: Abilities of this type update some part of the game (besides attributes) directly.
+- Game Logic: Abilities of this type don't directly affect the game, instead they are used in combination with other abilities to determine how those abilities are executed.
+
+### Killing
+
+**Summary:** Killing is a Game Logic type action - it can modify the aliveness status of a player. By default, killing abilities are queued up and executing at the very end of a trigger. For example, a player that is killed during an "End Night" trigger may still execute their own "End Night" ability, even if their kill is queued up in the same trigger before their ability was triggered. 
+
+When a player is killed to death, they are eliminated from the game. If they are killed to banishment, they may still participate as a ghost. Should the dying player be the last owner of a group, the group is disbanded. 
+
+**Attributes:** Killing abilities are affected by defense and absences attributes that match the subtype of the killing ability. The killing ability checks for defense and absences attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion. 
+
+**Visits:** When killing another player, a visit to that player occurs.
+
+**Redirections:** The target of a killing may be redirected.
+
+**Success:** A killing ability succeeds if at least a single killing ability can be queued up. Killing abilities that are evaded through defense attributes are not considered to be queued up.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
+**Subtypes:** The subtypes differ in what defenses they are affected by, in what their result is, and in what triggers they run.
+
+<table>
+<thead><tr><th>Subtype</th><th>Syntax</th><th>Result</th><th>Executed Triggers</th></tr></thead>
+<tbody>
+<tr><td>Kill</td><td><code>Kill {Player}</code></td><td rowspan=4>Death</td><td rowspan=3>On Death<br>On Killed<br>On Death Complex<br>On Killed Complex<br>Passive</td></tr>
+<tr><td>Attack</td><td><code>Attack {Player}</code></td></tr>
+<tr><td>True Kill</td><td><code>True Kill {Player}</code></td></tr>
+<tr><td>Lynch</td><td><code>Lynch {Player}</code></td><td>On Death<br>On Lynch<br>On Death Complex<br>Passive</td></tr>
+<tr><td>Banish</td><td><code>Banish {Player}</code></td><td rowspan=2>Banishment</td><td rowspan=2>On Banished<br>On Banishment<br>On Banished Complex<br>On Banishment Complex<br>Passive</td></tr>
+<tr><td>True Banish</td><td><code>True Banish {Player}</code></td></tr>
+</tbody></table>
+
+**Triggers:** The killing ability will emit the "On Defense" trigger if an defense is used to evade a killing ability, as well as the matching specific variant (On Absence Defense, On Active Defense, On Passive Defense, On Partial Defense, On Recruitment Defense). Additionally upon a successful killing (i.e. not just the queuing, but also the successful execution), the triggers listed in the table above are executed.
  
 ## Game Element Formats
 
