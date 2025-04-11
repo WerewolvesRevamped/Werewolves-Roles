@@ -15,8 +15,8 @@ Immediate Night:
   • Action: ⟨x3⟩ |crowd_seeker.1|
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate:
-    ‣ @Result is @SecondarySelection[role]: `@Selection as @SecondarySelection[role] - Correct`
-    ‣ Otherwise: `@Selection as @SecondarySelection[role] - Incorrect`
+    ‣ @Result is @SecondarySelection[role]: `@Selection as @SecondarySelection[role]: Correct`
+    ‣ Otherwise: `@Selection as @SecondarySelection[role]: Incorrect`
 
 __Card__
 The Crowd Seeker attempts to find out if their neighbors truly are who they claim to be.
