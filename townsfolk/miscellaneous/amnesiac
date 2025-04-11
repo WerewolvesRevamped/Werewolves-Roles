@@ -14,7 +14,7 @@ __Formalized__
 Starting: Target %Role1% (Role)
 Starting:
   • Process: Shuffle %Role1% %Role2% %Role3%
-  • Evaluate: Learn `You will turn into one of these roles - @Result`
+  • Evaluate: Learn `You will turn into one of these roles: @Result`
 Passive Start Night: Role Change @Self to @Target [Temporal: Night 2]
 
 __Card__

@@ -38,7 +38,7 @@ Passive Start Night: [Condition: @Self->Counter is 1] {Visitless}
   • Create `Strike` Poll in #wolfpack
 On Poll Closed:
   • Process: Attack @Winner
-  • Evaluate: Reveal `@Self is attacking - @Result` to #Wolfpack
+  • Evaluate: Reveal `@Self is attacking: @Result` to #Wolfpack
 
 __Card__
 When Howling Wolf how- ls at the moon, they may get answered by a maskmaker's passion or a pack's fury.

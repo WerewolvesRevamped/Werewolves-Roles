@@ -36,5 +36,5 @@ On Poll Closed:
   • Evaluate:
     ‣ (@Result is `Failure`) or (@Winner->Alignment is not `Townsfolk`[alignment]):
       ◦ Apply `CoyoteTrigger` to &Werewolf
-      ◦ Reveal `@Executor is attacking - @Result` to #Wolfpack
-    ‣ Otherwise: Reveal `@Executor is attacking - @Result` to #Wolfpack
+      ◦ Reveal `@Executor is attacking: @Result` to #Wolfpack
+    ‣ Otherwise: Reveal `@Executor is attacking: @Result` to #Wolfpack
