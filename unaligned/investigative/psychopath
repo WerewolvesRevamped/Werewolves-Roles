@@ -30,7 +30,7 @@ On `Build List` Emitted: [Condition: @Self->Counter is 0]
     ‣ Remove `PsychopathList` from @Self
     ‣ Decrement Counter
     ‣ Shuffle @(AttrSelf:PsychopathList)
-  • Evaluate: Learn `Psychopath List - @Result3`
+  • Evaluate: Learn `Psychopath List: @Result3`
 Passive: Ascend [Condition: not (@(AttrSelf:PsychopathList) exists)]
 Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
