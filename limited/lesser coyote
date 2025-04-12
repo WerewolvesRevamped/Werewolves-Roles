@@ -10,7 +10,7 @@ __Simplified__
 The Lesser Coyote is part of a group of other coyotes. Should the greater coyote die, the Lesser Coyote joins the wolfpack.
 
 __Formalized__
-Starting: Join #Coyotes
+Inherit: `Coyotes`
 
 __Card__
 When the greater coy- ote lives, the Lesser Coyote is in their pack. Otherwise they join up with the wolves.
