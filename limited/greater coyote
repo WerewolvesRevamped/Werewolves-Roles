@@ -14,7 +14,7 @@ When the Greater Coyote dies, the coyotes lose their abilities and are disbanded
 
 __Formalized__
 Unique Role
-Starting: Join #Coyotes as `Owner`
+Inherit: `Coyotes`
 Passive Start Night: &Werewolf has `CoyoteTrigger`: Create `Coyotes` Poll in #Coyotes [Temporal: Night 2+]
 On Poll Closed: Attack @Winner 
 
