@@ -172,7 +172,7 @@ Selector | Meaning
 @This | Refers to the player for which a complex trigger featuring a target (e.g. `On <Target> Death`) triggered for.
 @Winner | Refers to the winner of a poll in `On Poll Closed`.
 @ActionTarget | Refers to the target of an action in `On Action` and variants.
-@Executor | Refers to the executor of an action in `On Poll Closed` for polls created by a group.
+@Executor | Refers to the executor of an action in `On Poll Closed` and `On Poll Skipped` for polls created by a group.
 @Selection | Refers to a selection submitted by a player through a prompt.
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
 @RoleChanger | Refers to the responsible player in `On Role Change`.
@@ -182,7 +182,7 @@ Selector | Meaning
 @VisitParameter | Refers to a parameter in a visit in `On Visited`, though this will usually __NOT__ be a player.
 @SecondVisitParameter | Refers to a second parameter in a visit in `On Visited`, though this will usually __NOT__ be a player.
 @Ind | Refers to the current element in a `For Each` ability.
-@Voters | Refers to all players that voted for the winning option in `On Poll Closed` and `On Poll Win`.
+@Voters | Refers to all players that voted for the winning option in `On Poll Closed`, `On Poll Skipped` and `On Poll Win`.
 @OtherVoters | @Voters without the poll winner.
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a player if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
@@ -663,7 +663,8 @@ On {Player} Action [{AbilityType}]<br>On {Player} Action [{AbilitySubtype}]<br>O
 On Disbandment | Triggers when the current group is disbanded. | ⛔
 On Redirect | Triggers when the current player has redirected an ability. | @Visitor
 On Betrayal | Triggers when a player changes role while being part of the current group | ⛔
-On Poll Closed | Triggers when a poll created by the current player/group/poll through poll creation is closed. | @Winner, @Voters, @OtherVoters
+On Poll Closed | Triggers when a poll created by the current player/group/poll through poll creation is closed and a winner exists. | @Winner, @Voters, @OtherVoters, @Executor
+On Poll Skipped | Triggers when a poll created by the current player/group/poll through poll creation is closed and no winner exists. | @Voters, @OtherVoters, @Executor
 On Poll Win | Triggers when the current player wins a poll. | @Voters, @OtherVoters
 On Poll {Poll} Win | Triggers when the current player wins a specific poll. | @Voters, @OtherVoters
 On Role Change | Triggers when the current player changes role. | @RoleChanger
