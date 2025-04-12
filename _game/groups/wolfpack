@@ -39,4 +39,5 @@ On Poll Closed:
       ◦ Reveal `@Executor is attacking: @Result` to #Wolfpack
     ‣ Otherwise: Reveal `@Executor is attacking: @Result` to #Wolfpack
 On Poll Skipped: Apply `CoyoteTrigger` to &Werewolf
+On Disbandment: Apply `CoyoteTrigger` to &Werewolf
 
