@@ -7,9 +7,10 @@ __Members__
 __Formalized__
 Unique Group
 Starting: Set Counter to 1
-On @(Group:Bakers,Role:Baker) Death: [Condition: @Self->Counter > 0]
-  • Add `Wolfpack` Poll
-  • Decrement Counter
+On @(Group:Bakers,Role:Baker) Death: [Condition: @Self->Counter > 0, Condition: @Attacker is in #Wolfpack]
+  • Process:
+    ‣ Add `Wolfpack` Poll
+    ‣ Decrement Counter
 On Betrayal:
   • @(Group:Bakers,Role:Bloody-Butcher) exists: 
     ‣ Group Change @Self to `Butchers`
