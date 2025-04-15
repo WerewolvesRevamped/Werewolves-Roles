@@ -783,6 +783,7 @@ Name | Explanation
 `~PhaseAttribute` | Lasts until the end of the current phase (see `~Phase`) or until the originating attribute disappears (see `~Attribute`)
 `~NextPhase` | Lasts until the end of the next phase
 `~NextDay`, `~NextNight` | Lasts until the end of the next day/night
+`~NextPhaseAttribute`, `~NextDayAttribute`, `~NextNightAttribute` | Combination of the above and `~Attribute`.
 `~UntilUse` | Lasts until the attribute is used. (When an attribute is 'used' depends on the attribute type - more in the respective ability sections)
 `~UntilSecondUse` | Lasts until the attribute is used twice
 `~Attribute` | Lasts as long as the originating attribute is applied, can only be used inside an attribute.
