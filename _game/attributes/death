@@ -1,0 +1,8 @@
+**Death** | Attribute
+__Basics__
+An attribute marking players that were doomed to die by the horseman of death in the previous night.
+
+__Formalized__
+Passive End Night: 
+  • Kill @Self
+  • Remove `Death` from @Self
