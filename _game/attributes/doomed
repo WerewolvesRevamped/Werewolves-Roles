@@ -17,4 +17,4 @@ Starting: [Condition: @Self->Alignment is not `Horsemen`]
     ‣ Manipulate @Self's `public voting power` to `0` (~NextDayAttribute)
     ‣ Manipulate `Election` Poll (@Self is `Disqualified`)
 Passive Start Day: Obstruct @Self (~NextNightAttribute) [Condition: (@ThisAttr->Value1 is `Pestilence`) and (@Self->Alignment is not `Horsemen`), Quantity: 1]
-Passive End Night: Apply `Death` to @Self [Condition: (@Self->Alignment is not `Horsemen`) and (@ThisAttr->Value1 is `Death`)]
+Passive End Night: Apply `Death` to @Self (~Attribute) [Condition: (@Self->Alignment is not `Horsemen`) and (@ThisAttr->Value1 is `Death`)]
