@@ -8,7 +8,7 @@ Starting: Target @ThisAttr->Source (Player) {Visitless}
 On Visited [!Targeting]: [Condition: @Self->Counter > `0`] {Visitless}
  • Decrement Counter
  • Change @ThisAttr value `1` to @VisitType
-Passive End Phase: [Condition: @Self->Counter < `1`] {Visitless}
+Passive End Phase: [Condition: @ThisAttr->Counter < `1`] {Visitless}
  • Reveal `Someone used @ThisAttr->Value1 on @Self` to @Target
  • Increment Counter for @Target
  • Remove `Raven` from @Self
