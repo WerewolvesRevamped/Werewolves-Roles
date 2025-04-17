@@ -12,12 +12,8 @@ Each night, the Horseman of Death may doom a player, killing that player at the 
 __Formalized__
 Inherit: `Horsemen`
 Immediate Night:
-  • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (Death)
-  • @Selection->Alignment is `Horsemen`:
-    ‣ Apply `Doomed` to @Selection (~Persistent)
-    ‣ Apply `Doomed` to @Self (~Persistent)
-    ‣ Join #Horsemen
-    ‣ Add @Selection to #Horsemen
+• Apply `Doomed` to @Selection (~Persistent) (Death)
+• Emit `ApocalypseCheck` for @(Align:Horseman)
 
 __Card__
 A slow, merciless death awaits all who face the Horseman of Death.
