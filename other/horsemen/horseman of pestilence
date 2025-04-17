@@ -12,12 +12,8 @@ Each night, the Horseman of Pestilence may doom a player, blocking their ability
 __Formalized__
 Inherit: `Horsemen`
 Immediate Night:
-  • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (Pestilence)
-  • @Selection->Alignment is `Horsemen`:
-    ‣ Apply `Doomed` to @Selection (~Persistent)
-    ‣ Apply `Doomed` to @Self (~Persistent)
-    ‣ Join #Horsemen
-    ‣ Add @Selection to #Horsemen
+• Apply `Doomed` to @Selection (~Persistent) (Pestilence)
+• Emit `ApocalypseCheck` for @(Align:Horseman)
 
 __Card__
 Sickness spreads through your body once you see the Horseman of Pestilence
