@@ -13,7 +13,7 @@ __Formalized__
 Inherit: `Horsemen`
 Immediate Night:
 • Apply `Doomed` to @Selection (~Persistent) (Pestilence) |horseman_of_pestilence.1|
-• Emit `ApocalypseCheck`
+• Emit `ApocalypseCheck` for @(Align:Horsemen)
 
 __Card__
 Sickness spreads through your body once you see the Horseman of Pestilence
