@@ -12,7 +12,7 @@ The Horsemen turn into Apocalyptic Horsemen when they have doomed all players.
 
 __Formalized__
 Starting: Protect @Self from `All` through Passive Defense during Night
-Starting: Target @Selection [Attribute: @Self lacks `Marker`, Temporal: Night] |apocolyptic_horseman.1|
+Starting: Target @Selection [Attribute: @Self lacks `Marker`, Temporal: Night] |apocolyptic_horseman.1| {visitless}
 End Night: Attack @Selection [Attribute: @Self lacks `Marker`] |apocolyptic_horseman.1|
 Passive End Night: Attack @Target [Quantity: 1]
 
