@@ -13,7 +13,7 @@ __Formalized__
 Inherit: `Horsemen`
 Immediate Night: ⟨x2⟩
 • Apply `Doomed` to @Selection (~Persistent) (War)
-• Emit `ApocalypseCheck` for @(Align:Horseman)
+• Emit `ApocalypseCheck`
 
 __Card__
 There is no time for votes and elections when the Horseman of War is near.
