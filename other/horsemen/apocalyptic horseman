@@ -12,8 +12,9 @@ The Horsemen turn into Apocalyptic Horsemen when they have doomed all players.
 
 __Formalized__
 Starting: Protect @Self from `All` through Passive Defense during Night
-End Night: Attack @Selection [Attribute: lacks `HasDoomed`]
-Passive End Night: Remove `HasDoomed` from @Self
+Starting: End Emit `Apocalypse Attack` [Attribute: @Self lacks `Marker`, Temporal: Night]
+On `Apocalypse Attack` End Emitted: Attack @Selection |apocolyptic_horseman.1|
+End Night: Attack @Selection [Attribute: @Self lacks `Marker`] |apocolyptic_horseman.1|
 
 __Card__
 The Apocalyptic Horseman unleashes its fury upon its enemies.

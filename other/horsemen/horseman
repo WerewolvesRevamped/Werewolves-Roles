@@ -11,7 +11,7 @@ __Simplified__
 At the end of Day 0, the Horseman becomes one of the other Horseman roles.
 
 __Formalized__
-Starting: Target `%Horseman of Death|Horseman of War|Horseman of Pestilence|Horseman of Famine%`
+Starting: Target %Role%
 Passive End Day: Role Change @Self to @Target [Temporal: Day 0]
 
 __Card__

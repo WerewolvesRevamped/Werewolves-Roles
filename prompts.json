@@ -48,4 +48,9 @@
     "pyromancer.2": "Which player would you like to powder?",
     "devil.1": "Who do you want to send the devil's wager to?",
     "dog.1": "You may choose one of these roles. You will immediately change into the role you choose."
+    "apocolyptic_horseman.1": "You may choose a player to attack tonight"
+    "horseman_of_death.1": "You may doom a player, they will die tomorrow night"
+    "horseman_of_war.1": "You may doom two players, they will both lose their vote and be disqualified from election tomorrow. \n\n2. Please specify two names seperated by a newline"
+    "horseman_of_famine.1": "You may doom two players, they will both be strongly disguised as a random in play horseman role. \n\n2. Please specify two names seperated by a newline"
+    "horseman_of_pestilence.1": "You may doom a player, they will be obstruced the following day and night"
 }

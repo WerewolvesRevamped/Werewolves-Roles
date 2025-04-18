@@ -11,13 +11,9 @@ Each night, the Horseman of War may doom two players, removing their public vote
 
 __Formalized__
 Inherit: `Horsemen`
-Immediate Night:
-  • @Selection->Alignment is not `Horsemen`: Apply `Doomed` to @Selection (~Persistent) (War) ⟨x2⟩
-  • @Selection->Alignment is `Horsemen`:
-    ‣ Apply `Doomed` to @Selection (~Persistent)
-    ‣ Apply `Doomed` to @Self (~Persistent)
-    ‣ Join #Horsemen
-    ‣ Add @Selection to #Horsemen
+Immediate Night: ⟨x2⟩
+• Apply `Doomed` to @Selection (~Persistent) (War) |horseman_of_war.1|
+• Emit `ApocalypseCheck` for @(Align:Horsemen)
 
 __Card__
 There is no time for votes and elections when the Horseman of War is near.

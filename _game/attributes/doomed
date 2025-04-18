@@ -3,21 +3,18 @@ __Basics__
 The attribute of the horsemen team. When all non-unaligned/horsemen players have been doomed and all horsemen united, all horsemen become apocalyptic horseman.
   
 __Formalized__
-Starting:
+Starting: Set Counter to 0 {Visitless} [Condition: @ThisAttr->Value1 is `Death`]
+Starting: Apply `Marker` to @ThisAttr->Source (~Phase)
+Starting: [Condition: @Self->Alignment is `Horsemen`]
+  • Join #Horsemen
+  • Add @ThisAttr->Source to #Horsemen
+Starting: [Condition: @Self->Alignment is not `Horsemen`]
   • Learn `You have been doomed.`
   • @ThisAttr->Value1 is `Famine`:
-    ‣ Process: @(OrigAlign:Horsemen,AliveOnly:False,SelectAll:False)
-    ‣ Evaluate:
-      ◦ @Result is `Horseman`: Strongly Disguise @Self as @Result->Target (~Persistent)
-      ◦ Otherwise: Strongly Disguise @Self as @Result (~Persistent)
+    ‣ Target @(OrigAlign:Horsemen)->RandomPlayer->Role
+    ‣ Strongly Disguise @Self as @Target (~Attribute)
   • @ThisAttr->Value1 is `War`:
-    ‣ Manipulate @Self's `public voting power` to `0` (~NextDay)
-    ‣ Manipulate Election Poll (@Self is `Disqualified`)
-Passive Start Day: @ThisAttr->Value1 is `Pestilence`: Obstruct @Self (~NextNight)
-Passive End Night:
-  • (@ThisAttr has `Marker`) and (@ThisAttr->Value1 is `Death`): Kill @Self
-  • Otherwise: Apply `Marker` to @ThisAttr
-On Removal: 
-  • Remove `Manipulation:Doomed`
-  • Remove `Disguise:Doomed`
-  • Remove `Obstructed:Doomed`
+    ‣ Manipulate @Self's `public voting power` to `0` (~NextDayAttribute)
+    ‣ Manipulate `Election` Poll (@Self is `Disqualified`)
+Passive Start Day: Obstruct @Self (~NextNightAttribute) [Condition: (@ThisAttr->Value1 is `Pestilence`) and (@Self->Alignment is not `Horsemen`), Quantity: 1]
+Passive End Night: Apply `Death` to @Self (~Attribute) [Condition: (@Self->Alignment is not `Horsemen`) and (@ThisAttr->Value1 is `Death`)]
