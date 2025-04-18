@@ -12,7 +12,7 @@ Each night, the Horseman of Death may doom a player, killing that player at the 
 __Formalized__
 Inherit: `Horsemen`
 Immediate Night:
-• Apply `Doomed` to @Selection (~Persistent) (Death)
+• Apply `Doomed` to @Selection (~Persistent) (Death) |horseman_of_death.1|
 • Emit `ApocalypseCheck`
 
 __Card__
