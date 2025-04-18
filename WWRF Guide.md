@@ -671,6 +671,7 @@ On Role Change | Triggers when the current player changes role. | @RoleChanger
 On Removal | Triggers when the current attribute is removed through remove applying. | ⛔
 On End | Triggers when the game ends. | ⛔
 On Emitted<br>On {String} Emitted | Triggers when an emitting action was used to emit a specific value. | ⛔
+On End Emitted<br>On {String} End Emitted | Triggers when an end phase emitting action was used to emit a specific value. | ⛔
 
 ## Trigger Parameters
 
