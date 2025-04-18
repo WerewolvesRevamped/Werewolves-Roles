@@ -13,7 +13,7 @@ __Formalized__
 Inherit: `Horsemen`
 Immediate Night:
 • Apply `Doomed` to @Selection (~Persistent) (Death) |horseman_of_death.1|
-• Emit `ApocalypseCheck`
+• Emit `ApocalypseCheck` for @(Align:Horsemen)
 
 __Card__
 A slow, merciless death awaits all who face the Horseman of Death.
