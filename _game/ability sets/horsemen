@@ -1,3 +1,3 @@
 **Horsemen** | Ability Set
 Passive: Emit `ApocalypseCheck`
-On `ApocalypseCheck` Emitted: Role Change @Self to `Apocalyptic Horseman` [Condition: not (@(Align:!Horsemen,Class:!Unaligned,Attr:!Doomed) exists), Condition: not (@(Align:Horsemen,Group:!Horsemen) exists), Condition: @Self->Role is not `Apocalyptic Horseman`]
+On `ApocalypseCheck` Emitted: Role Change @Self to `Apocalyptic Horseman` [Condition: (not (@(Align:!Horsemen,Class:!Unaligned,Attr:!Doomed) exists)) and (not (@(Align:Horsemen,Group:!Horsemen) exists)) and (@Self->Role is not `Apocalyptic Horseman`)]
