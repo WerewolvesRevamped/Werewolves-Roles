@@ -13,7 +13,7 @@ __Formalized__
 Inherit: `Horsemen`
 Immediate Night: ⟨x2⟩
 • Apply `Doomed` to @Selection (~Persistent) (Famine) |horseman_of_famine.1|
-• Emit `ApocalypseCheck`
+• Emit `ApocalypseCheck` for @(Align:Horsemen)
 
 __Card__
 Starvation to all who dare to look upon the Horseman of Famine.
