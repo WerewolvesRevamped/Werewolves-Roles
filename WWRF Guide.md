@@ -642,7 +642,7 @@ A list of triggers can be found here:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trigger&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Explanation | Additional Selectors
 --- | --- | ---
 Start Night<br>End Night<br>Start Day<br>End Day<br>Immediate Night<br>Immediate Day<br>End Phase<br>Start Phase<br>Immediate<br>Pre-End Night<br>Pre-End Day | Prompting triggers for different timings. | ⛔
-Second Pre-End Night<br>Third Pre-End Night<be>Fourth Pre-End Night<br>Second Pre-End Day<br>Third Pre-End Day<be>Fourth Pre-End Day | Prompting triggers for different timings. Higher numbers are evaluated first (Fourth > Third > Second > Pre > End) | ⛔
+Second Pre-End Night<br>Third Pre-End Night<br>Fourth Pre-End Night<br>Second Pre-End Day<br>Third Pre-End Day<br>Fourth Pre-End Day | Prompting triggers for different timings. Higher numbers are evaluated first (Fourth > Third > Second > Pre > End) | ⛔
 Passive End Day<br>Passive End Night<br>Passive Start Day<br>Passive Start Night<br>Passive Start Phase<br>Passive End Phase | Non-prompting triggers for different timings. | ⛔
 Starting | Triggers at the start of the game, and whenever a new group/role/team/attribute/etc is created. | ⛔
 Passive | Triggers whenever a significant change occurs (game start, phase change, somebody dies/changes roles) and can be used with conditions that should theoretically be checked constantly. | ⛔
