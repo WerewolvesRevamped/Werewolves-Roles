@@ -374,6 +374,7 @@ Class | A role's class returned as a result.
 Category | A role's category returned as a result.
 Alignment | A role's team returned as a result.
 Role | A role returned as a result.
+Number | A number returned as a result.
 Result | The result's result as a single value which may take several types.
 Success | Whether the ability succeeded (always present).
 Target | The primary target of an ability.
