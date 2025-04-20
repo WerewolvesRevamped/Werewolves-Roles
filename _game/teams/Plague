@@ -7,4 +7,7 @@ Win Condition: @(Alignment:Plague), @(Class:Unaligned)
 On Join: Add @Joiner to #Plague-Pit
 Passive Start Phase:
   • Process: Investigate @(Attr:Contaminated) Player Count
-  • Evaluate: Reveal `@Result Players have the Plague` to #plague-pit
+  • Evaluate: 
+    ‣ @Result->Number is `0`: Reveal `No one has the Plague` to #plague-pit
+    ‣ @Result->Number is `1`: Reveal `@Result->Number Player has the Plague` to #plague-pit
+    ‣ Otherwise: Reveal `@Result->Number Players have the Plague` to #plague-pit
