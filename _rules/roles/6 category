@@ -5,7 +5,7 @@ __Details:__
 The following categories exist and roles are assigned to them with a priority of top to bottom:
 <?VotingBooth:> (E) Elected: Roles that are obtained through election
 <?CategoryAlign:> (A) Align: Roles that change alignment without role change or that start out nonaligned and join an alignment
-<?CategoryKilling:> (K) Killing: Roles that can kill other players, indirectly lynch or attack
+<?CategoryKilling:> (K) Killing: Roles that can kill, lynch or attack other players
 <?CategoryGroup:> (G) Group: Roles that start out as part of a group (excluding default groups of teams)
 <?CategoryInvestigative:> (I) Investigative: Roles with an active investigative ability
 <?CategoryPower:> (P) Power: Roles with an active ability besides targeting
