@@ -13,7 +13,7 @@ If no players with that role remain, the Cursebearer can't use its powers anymor
 __Formalized__
 Role Attribute: `Lycan`
 Starting: 
-  • Target %Role%
+  • Target %Role% (Role)
   • Apply `CursebearerLink` to @Target->RandomPlayer
   • Strongly Disguise @Self as @Target
 
