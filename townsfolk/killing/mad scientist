@@ -24,5 +24,7 @@ On Death:
   • Process: Attack @Target
   • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed @Target`
 
+Changes
+
 __Card__
 The Mad Scientist loves to experiment on their test subjects, no matter the concequences.
