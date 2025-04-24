@@ -1,1 +1,22 @@
-**Guardsman**
+**Guardsman** | Townsfolk Killing | Limited
+__Basics__
+Once per game, at night, the Guardsman may choose to be on guard for the rest of the night.
+While on guard any attacks fail and the attacker is counterattacked instead.
+__Details__
+Once per game, at night, the Guardsman may choose to be on guard for the rest of the night. This is an immediate ability.
+If the guardsman is attacked while on guard, they counterattack whoever used the ability on them and survive that attack/kill.
+If the counterattack successfully kills a townsfolk aligned player, the Guardsman dies at the end of the next night.
+
+__Simplified__
+The guardsman may go on guard once at night. If attacked they survive and counterattack the attacker.
+If they kill a townsfolk aligned player, the Guardsman dies at the end of the next night.
+
+__Formalized__
+Immediate Night: Protect @Self from `Attacks` through Passive Defense (~Phase) [Quantity: 1]
+On Passive Defense: 
+  • Attack @Attacker
+  • @Attacker->Alignment is `Townsfolk`: Apply `Marker` to @Self
+Passive End Night: True Kill @Self [Attribute: Marker]
+
+__Card__
+An on guard Guardsman is a living Guardsman.
