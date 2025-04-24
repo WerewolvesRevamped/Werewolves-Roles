@@ -45,8 +45,6 @@ OracleSelected
 *HeldAmulet*
 *RavenInformation* [Visitor]
 *ShatterAmulet*
-*Unwrongable*
-*Wronger*
 ~~Thieved~~
 
 \* refers to custom attributes exclusive to limited roles
