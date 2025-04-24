@@ -4,8 +4,8 @@ Once per game, at night, the Guardsman may choose to be on guard for the rest of
 While on guard any attacks fail and the attacker is counterattacked instead.
 __Details__
 Once per game, at night, the Guardsman may choose to be on guard for the rest of the night. This is an immediate ability.
-If the guardsman is attacked while on guard, they counterattack whoever used the ability on them and survive that attack/kill.
-If the counterattack successfully kills a townsfolk aligned player, the Guardsman dies at the end of the next night.
+If the guardsman is attacked while on guard, they survive and attack whoever attacked them.
+If they attack a townsfolk aligned player, the Guardsman dies at the end of the next night.
 
 __Simplified__
 The guardsman may go on guard once at night. If attacked they survive and counterattack the attacker.
