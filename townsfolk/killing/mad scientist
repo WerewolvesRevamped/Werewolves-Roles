@@ -15,13 +15,17 @@ Unique Role
 Starting:
   • Grant `Test Subject` to %Player1% 
   • Grant `Test Subject` to %Player2% 
-  • Join #Laboratory
-  • Process: Shuffle %Player1% %Player2% 
-  • Evaluate: Target @Result (Player)
-Immediate: Target @Selection (Player) [Attribute: @Selection has `Test Subject`]
-On Death: 
-  • Process: Attack @Target
-  • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed @Target`
+  • Process: Shuffle %Player1% %Player2% @Self
+  • Evaluate:
+    ‣ Add @Result1 to #Laboratory
+    ‣ Add @Result2 to #Laboratory
+    ‣ Add @Result3 to #Laboratory
+On Death: [Condition: %Player1% exists]
+  • Process: Attack %Player1%
+  • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed %Player1%`
+On Death: [Condition: %Player2% exists]
+  • Process: Attack %Player2%
+  • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed %Player2%`
 
 __Card__
 The Mad Scientist loves to experiment on their test subjects, no matter the consequences.
