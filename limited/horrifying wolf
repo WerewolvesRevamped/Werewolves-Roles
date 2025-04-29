@@ -1,0 +1,15 @@
+**Horrifying Wolf** | Werewolf Miscellaneous  
+__Basics__
+Whoever perceives the Horrifying Wolf, may not investigate again in the following night. 
+__Details__
+Whenever another player investigates the Horrifying Wolf at night, the are obstructed and may not investigate again in the following night.
+This applies even if the investigation does not directly see the Horrifying Wolfs role - either due to a non-role type investigation or a disguise applied on the Horrifying Wolf. 
+
+__Simplified__
+Whoever perceives the Horrifying Wolf, may not investigate again in the following night. 
+
+__Formalized__
+Inherit: `Pack Lycan`
+
+__Card__
+The Horrifying Wolf is veri spooki.
