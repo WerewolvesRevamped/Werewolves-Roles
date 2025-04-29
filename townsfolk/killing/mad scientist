@@ -13,13 +13,11 @@ The Mad Scientist has two subjects (townsfolk and werewolf). When the Mad Scient
 __Formalized__
 Unique Role
 Starting:
-  • Grant `Test Subject` to %Player1% 
-  • Grant `Test Subject` to %Player2% 
+  • Process: Shuffle %Player1% %Player2%
+  • Evaluate: Grant `Test Subject` to @Result
+Starting:
   • Process: Shuffle %Player1% %Player2% @Self
-  • Evaluate:
-    ‣ Add @Result1 to #Laboratory
-    ‣ Add @Result2 to #Laboratory
-    ‣ Add @Result3 to #Laboratory
+  • Evaluate: Add @Result to #Laboratory
 On Death: [Condition: %Player1% exists]
   • Process: Attack %Player1%
   • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed %Player1%`
