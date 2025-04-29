@@ -20,7 +20,6 @@ Starting: Apply `Heir` to @Selection (~Persistent) [Condition: @Selection is not
 Immediate: [Temporal: Night 1+, Condition: @Selection is not @Self] |silent:monarch.2|
   • Remove `Heir` from @(AttrSelf:Heir)
   • Apply `Heir` to @Selection (~Persistent)
-  • Manipulate @Selection's `special public voting power` to `1` (~PhaseAttribute)
 On Death:
   • Remove `Heir` from @(AttrSelf:Heir)
   • Transfer @ThisAttr from @Self to @(AttrSelf:Heir)
