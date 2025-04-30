@@ -1,6 +1,7 @@
 **Coyotes** | Werewolf Team Group
 __Basics__
-The Coyotes are a secondary wolf group, containing (usually) one Greater Coyote. The coyotes and the wolfpack do not know each other, but have the same alignment. If the wolfpack fails to kill a townsfolk, the coyotes can attack a player in the next night, but if the Greater Coyotes dies, they coyotes are disbanded and they join the wolfpack instead.
+The Coyotes are a secondary wolf group, containing at least one greater coyote. The Coyotes and the wolfpack do not know each other, but they have the same alignment. If the wolfpack fails to kill a townsfolk aligned player, the Coyotes can attack a player in the next night. 
+If there are no living greater coyotes, the Coyotes are disbanded, and they join the wolfpack instead.
 __Members__
 <?GreaterCoyote:> *Greater Coyote*
 <?LesserCoyote:> *Lesser Coyote*
