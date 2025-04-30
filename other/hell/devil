@@ -12,9 +12,11 @@ See `$info souls` for a detailed explanation.
 
 The wager is sent at the start of the night. The wager cannot be sent to a soulless player or redirected.
 During the night, the Devil can anonymously communicate with the wager recipient.
-The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the Wager Recipient's own role; or they may do nothing. The result of a wager investigation is visible to both the wager recipient and the Devil. 
+The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the wager recipient's own role; or they may do nothing. The result of a wager investigation is visible to both the wager recipient and the Devil. 
 If a player sells their soul, a soul is added to the hell team's soul pool. The player then becomes soulless.
 See `$info wager` for a detailed explanation.
+
+Soulless players cannot be attacked by the Devil, including via the wager. Attempting to attack a soulless player using the wager fails silently.
 
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion or recruitment of a member will fail in some manner.
 
