@@ -2,9 +2,9 @@
 __Basics__
 The Test Subject is a member of the laboratory with the mad scientist.
 __Details__
-Two Test Subjects and the mad scientist share the laboratory secret channel. When the mad scientist is killed, the Test Subjects are attacked by them. 
+Two Test Subjects and the mad scientist share the laboratory secret channel. The Test Subjects are attacked by the mad scientist if the latter is killed. 
 The Test Subjects do not know the identity of the mad scientist.
-Each test Subject is additionally strongly disguised as the mad scientist.
+Each Test Subject is strongly disguised as the mad scientist.
 
 *Tip:* Since one of the subjects is guaranteed to be a wolf, they cannot be allowed to figure out who the real mad scientist is. This means it might be wise to claim to be the mad scientist, even if you are not.
 
