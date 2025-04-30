@@ -1,11 +1,11 @@
 **Mad Scientist** | Townsfolk Killing
 __Basics__
-The Mad Scientist has two test subjects, one player from the townsfolk and a werewolf. If killed, their subjects will also die.
+The Mad Scientist has two test subjects, one player from the townsfolk and one werewolf. If killed, their subjects will also die.
 __Details__
-At the start of the game, the Mad Scientist is assigned two players, called test subjects, with whom they share an additional secret channel. The test subjects do not know the identity of the Mad Scientist.
-When the Mad Scientist dies, both of their subjects are attacked by the Mad Scientist. Attacking the other player is an immediate ability.
+At the start of the game, the Mad Scientist is assigned two players, called test subjects. The test subjects share an additional channel with the Mad Scientist but do not know their identity.
+When the Mad Scientist dies, they attack both of their test subjects. Attacking the test subjects is an immediate ability.
 When the Mad Scientist kills, they are revealed as the Mad Scientist.
-Both test subjects are additionally strongly disguised as the Mad Scientist.
+Both test subjects are strongly disguised as the Mad Scientist.
 
 __Simplified__
 The Mad Scientist has two subjects (townsfolk and werewolf). When the Mad Scientist dies, both subjects are attacked.
