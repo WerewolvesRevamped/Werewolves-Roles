@@ -1,14 +1,13 @@
 **Guardsman** | Townsfolk Killing | Limited
 __Basics__
-Once per game, at night, the Guardsman may choose to be on guard for the rest of the night.
-While on guard any attacks fail and the attacker is counterattacked instead.
+Once, the Guardsman may choose to be on guard for the rest of the night. Whilst on guard, they will attack anyone who tries to attack them.
 __Details__
-Once per game, at night, the Guardsman may choose to be on guard for the rest of the night. This is an immediate ability.
-If the guardsman is attacked while on guard, they survive and attack whoever attacked them.
+The Guardsman may choose to be on guard for the rest of the night. This is an immediate ability, and it can only be done once.
+If the Guardsman is attacked while on guard, they survive and attack the attacker. They will be informed that they counterattacked a player, but not whom. The Guardsman can attack multiple times whilst on guard.
 If they attack a townsfolk aligned player, the Guardsman dies at the end of the next night.
 
 __Simplified__
-The guardsman may go on guard once at night. If attacked they survive and counterattack the attacker.
+The guardsman may go on guard once at night. If attacked, they survive and counterattack the attacker.
 If they kill a townsfolk aligned player, the Guardsman dies at the end of the next night.
 
 __Formalized__
