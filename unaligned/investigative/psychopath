@@ -14,7 +14,7 @@ The Psychopath is strongly disguised as a role of their choosing. Additionally, 
 
 __Formalized__
 Starting:
-  • Set Counter to ceil $total/3
+  • Set Counter to ceil $total/4
   • Apply `PsychopathList` to @Self
   • For Each &All:
     ‣ &Ind->Members->Count > 1:
@@ -40,4 +40,4 @@ Choice `Investigate` Chosen: Role Investigate @Selection (WD, SD)
 Choice `Disguise` Chosen: Weakly Disguise @Selection as @SecondarySelection (~NextNight)
 
 __Card__
-The Psychopath tries to get rid of everyone on their list, through whichever means neccesary.
+The Psychopath tries to get rid of everyone on their list, through whichever means necessary.
