@@ -9,5 +9,5 @@ Passive Start Phase:
   • Process: Investigate @(Attr:Contaminated) Player Count
   • Evaluate: 
     ‣ @Result is 0: Reveal `No one has the Plague` to #plague-pit
-    ‣ @Result is 1: Reveal `@Result->Number Player has the Plague` to #plague-pit
-    ‣ Otherwise: Reveal `@Result->Number Players have the Plague` to #plague-pit
+    ‣ @Result is 1: Reveal `@Result->Number player has the Plague` to #plague-pit
+    ‣ Otherwise: Reveal `@Result->Number players have the Plague` to #plague-pit
