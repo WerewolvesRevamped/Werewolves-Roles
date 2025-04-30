@@ -1,10 +1,9 @@
 **Plague Carrier** | Solo Miscellaneous - Plague Team
 __Basics__ 
-The Plague Carrier learns which roles will die to the plague.
+The Plague Carrier learns the roles of players who will die to the plague.
 __Details__
-At the start of each night, the Plague Carrier will learn the roles of the players destined to die to the plague at the end of that night. The Plague Carrier does not learn which player has which role. 
+At the start of each night, the Plague Carrier will learn the roles of the players who will die to the plague at the end of that night. The Plague Carrier does not learn which player has which role. 
 If more than one player with the same role would die, the Plague Carrier learns that role multiple times.
-If somebody tries to copy a plague bearer, a Plague Carrier is created instead. 
 The Plague Carrier starts out contaminated, but will never die due to the plague.
 A plague bearer may not attempt to directly contaminate the Plague Carrier using one of their rodents.
 If the last plague bearer dies, and there are rodents remaining, the Plague Carrier stops being contaminated and becomes a plague bearer.
