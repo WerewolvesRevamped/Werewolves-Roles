@@ -2,7 +2,7 @@
 __Basics__
 The Cursebearer is a member of the townsfolk team who is linked to an arbitrary werewolf.
 __Details__
-The Cursebearer is linked to an arbitrary member of the wolfpack. They are strongly disguised as that player's role, and they are a lycan if that role is. The Cursebearer knows what role they are disguised as, but they do not know who the player they are linked to is.
+The Cursebearer is linked to an arbitrary werewolf-aligned member of the wolfpack. They are strongly disguised as that player's role, and they are a lycan if that role is. The Cursebearer knows what role they are disguised as, but they do not know who the player they are linked to is.
 When the werewolf they are linked to dies, the Cursebearer is informed. 
 
 __Simplified__
