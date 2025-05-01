@@ -5,10 +5,10 @@ The Raven attribute is applied by the ravenkeeper. If a player with a Raven is v
 __Formalized__
 Starting: Set Counter to 1 for @ThisAttr {Visitless}
 Starting: Target @ThisAttr->Source (Player) {Visitless}
-On Visited [!Targeting]: [Condition: @ThisAttr->Counter > `0`] {Visitless}
+On Visited [!Targeting]: [Condition: @ThisAttr->Counter is 1] {Visitless}
  • Decrement Counter for @ThisAttr
  • Change @ThisAttr value `1` to @VisitType
-Passive End Phase: [Condition: @ThisAttr->Counter < `1`] {Visitless}
+Passive End Phase: [Condition: @ThisAttr->Counter is 0] {Visitless}
  • Reveal `Someone used @ThisAttr->Value1 on @Self` to @Target
  • Increment Counter for @Target
  • Remove `Raven` from @Self
