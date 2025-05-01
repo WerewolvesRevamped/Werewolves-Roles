@@ -36,7 +36,14 @@ Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
 Passive Start Day: `Psychopath` Choice Creation (Investigate, Disguise)
 Immediate Day: `Psychopath` Choice Choose @Chosen
-Choice `Investigate` Chosen: Role Investigate @Selection (WD, SD)
+Choice `Investigate` Chosen: |investigating.role.1|
+  • Process:
+    ‣ Attribute Investigate @Selection for `Lycan` (SD)
+    ‣ Category Investigate @Selection (SD)
+  • Evaluate:
+    ‣ @Result1 is Success: `@Selection is a Threat`
+    ‣ @Result2 is Killing[category]: `@Selection is a Threat`
+    ‣ Otherwise: `@Selection is Not a Threat`
 Choice `Disguise` Chosen: Weakly Disguise @Selection as @SecondarySelection (~NextNight)
 
 __Card__
