@@ -19,7 +19,7 @@ Starting:
 Immediate Night: [Condition: (@Self->Counter > `0`) and (not (@Selection is @Self))] |ravenkeeper.1|
  • Apply `Raven` to @Selection (~Persistent)
  • Decrement Counter
-Immediate Day: [Condition: @Selection has `Raven`, Temporal: Day 2+] |ravenkeeper.2|
+Immediate Day: [Condition: @Selection has `Raven`, Temporal: Day 1+] |ravenkeeper.2|
  • Remove `Raven` from @Selection
  • Increment Counter
 On @(AttrSelf:Raven) Death: Increment Counter
