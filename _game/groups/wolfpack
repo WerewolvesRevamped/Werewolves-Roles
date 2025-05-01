@@ -3,24 +3,25 @@ __Basics__
 The wolfpack is a group consisting out of most (but not all) werewolf roles. Each night, the wolfpack votes to attack one player. Most members of the wolfpack are lycans. The wolfpack may also contain traitors. Some other roles may be in the wolfpack as well if they started out as a member of the wolfpack and then transformed into another role.
 __Members__
 *Werewolves*
-Alpha Wolf
-Bloody Butcher
-Corrupt Wolf
-Cultist Wolf (T)
-Direwolf
-Infecting Wolf
-Knowledgeable Wolf
-Psychic Wolf
-Pack Tanner
-Saboteur Wolf
-Scared Wolf
-Sneaking Wolf
-Tracking Wolf
-Trickster Wolf (T)
-Wolf
-Wolf Cub
-
-*Howling Wolf*
+<?AlphaWolf:> Alpha Wolf
+<?BloodyButcher:> Bloody Butcher
+<?CorruptWolf:> Corrupt Wolf
+<?CultistWolf:> Cultist Wolf (T)
+<?Direwolf:> Direwolf
+<?HowlingWolf:> Howling Wolf
+<?InfectingWolf:> Infecting Wolf
+<?KnowledgeableWolf:> Knowledgeable Wolf
+<?PsychicWolf:> Psychic Wolf
+<?PackTanner:> Pack Tanner
+<?SaboteurWolf:> Saboteur Wolf
+<?ScaredWolf:> Scared Wolf
+<?SneakingWolf:> Sneaking Wolf
+<?TrackingWolf:> Tracking Wolf
+<?Wolf:> Wolf
+<?WolfCub:> Wolf Cub
+*Traitors*
+<?CupidWolf:> Cupid Wolf (T)
+<?WhiteWerewolf:> White Werewolf
 
 *Traitors*
 Cupid Wolf (T)
