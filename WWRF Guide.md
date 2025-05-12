@@ -451,6 +451,8 @@ Abilities | ⛔
 Emit | ⛔
 Storing | ⛔
 Displaying | Create<br>Change
+Win | ⛔
+Locking | Lock<be>Unlock
 
 ### Ability Category Type
 
@@ -909,7 +911,7 @@ Target | Player | The selected target (`target` subtype)
 **Subtypes:** 
 
 Subtype | Syntax | Feedback
---- | --- | --- | --- 
+--- | --- | ---
 Target | `Target {*} ({**})` | Sets a palyers target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option. The former must be a selector of matching type.
 Untarget | `Untarget` | Removes the player's target.
 
