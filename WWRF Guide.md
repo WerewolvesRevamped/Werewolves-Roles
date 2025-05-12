@@ -452,7 +452,7 @@ Emit | ⛔
 Storing | ⛔
 Displaying | Create<br>Change
 Win | ⛔
-Locking | Lock<be>Unlock
+Locking | Lock<br>Unlock
 
 ### Ability Category Type
 
