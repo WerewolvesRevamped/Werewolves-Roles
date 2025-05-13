@@ -1,14 +1,14 @@
 **Raccoon | Unaligned Power | Limited**
 __Basics__
 Each day the Tanuki may strongly disguise two players into a role of their choice until the next day phase.
-The Tanuki ascends when it's disguised players have been investigated twice. When it ascends, all players are strongly disguised as Tanuki until the end of the next night.
+The Tanuki ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Tanuki until the end of the next night.
 __Details__
 Each day the Tanuki may strongly disguise two players into a role of their choice until the next day phase. The Tanuki is informed each time one of its disguised players is investigated.
-The Tanuki ascends when it's disguised players have been investigated twice. When it ascends, all players are strongly disguised as Tanuki until the end of the next night. The Tanuki descends if there are no investigation roles alive.
+The Tanuki ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Tanuki until the end of the next night. The Tanuki descends if there are no investigation roles alive.
 
 __Simplified__
 Each day the Tanuki may strongly disguise two players into a role of their choice until the next day phase. The Tanuki is informed each time one of its disguised players is investigated.
-The Tanuki ascends when it's disguised players have been investigated twice. When it ascends, all players are strongly disguised as Tanuki until the end of the next night. The Tanuki descends if there are no investigation roles alive.
+The Tanuki ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Tanuki until the end of the next night. The Tanuki descends if there are no investigation roles alive.
 
 __Formalized__
 Immediate Day: Strongly Disguise @Selection as @SecondarySelection (~NextNight) ⟨x2⟩
