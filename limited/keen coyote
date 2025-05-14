@@ -1,0 +1,28 @@
+**Keen Coyote** | Werewolf Group | Limited
+__Basics__
+The Keen Coyote shares a secret channel with the other coyotes and can perceive players each night to determine whether they have a threatening presence or not.
+__Details__
+The Keen Coyote cannot see a player’s role, but they can check whether or not they are a threat. Lycans, and roles classified as killing roles have a threatening presence.
+The Keen Coyote’s inspection is an immediate ability.
+The Keen Coyote is affected by strong disguises and redirections.
+The Keen Coyote knows the identity of the other coyotes and shares a channel with them.
+The Keen Coyote is not a lycan, nor are they a member of the wolfpack.
+When the last original greater coyote dies, the coyotes' channel is disbanded and the Keen Coyote joins the wolfpack.
+
+__Simplified__
+The Keen Coyote is part of a group of other coyotes. Should the greater coyote die, the Lesser Coyote joins the wolfpack.
+The Keen Coyote can perceive players each night to determine whether they have a threatening presence or not.
+
+__Formalized__
+Inherit: `Coyotes`
+Immediate Night: |investigating.role.1|
+  • Process:
+    ‣ Attribute Investigate @Selection for `Lycan` (SD)
+    ‣ Category Investigate @Selection (SD)
+  • Evaluate:
+    ‣ @Result1 is `Success`: `@Selection is a Threat`
+    ‣ @Result2 is `Killing`[category]: `@Selection has a Threatening Presence`
+    ‣ Otherwise: `@Selection does not have a Threatening Presence`
+
+__Card__
+The Keen Coyote has a very highly developed eye for detail, being able to make accurate character judgements.
