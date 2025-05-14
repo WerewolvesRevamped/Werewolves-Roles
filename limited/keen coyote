@@ -11,7 +11,7 @@ When the last original greater coyote dies, the coyotes' channel is disbanded an
 
 __Simplified__
 The Keen Coyote is part of a group of other coyotes. Should the greater coyote die, the Lesser Coyote joins the wolfpack.
-The Keen Coyote can perceive players each night to determine whether they have a threatening presence or not.
+The Keen Coyote can perceive players each night to determine whether they have a threatening presence.
 
 __Formalized__
 Inherit: `Coyotes`
