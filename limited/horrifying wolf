@@ -10,6 +10,7 @@ Whoever perceives the Horrifying Wolf may not investigate the following night.
 
 __Formalized__
 Inherit: `Pack Lycan`
+On Visited [Investigating]: Process: Apply `Horrified` to @Visitor (~NextNight)
 
 __Card__
-The Horrifying Wolf will etch terror in the memory of anyone that meets its gaze.
+The Horrifying Wolf will etch terror in the memory of anyone who meets its gaze.
