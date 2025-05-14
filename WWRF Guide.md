@@ -45,6 +45,7 @@
 - [Abilities](#abilities)
   - [Killing](#killing)
   - [Investigating](#investigating)
+  - [Targeting](#targeting)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -53,22 +54,22 @@
 
 
 ## Introduction
-Werewolves Revamped is automated using "formalization" - i.e. all roles and similiar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
+Werewolves Revamped is automated using "formalization" - i.e., all roles and similar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
 
-WWRF is designed with a "Trigger > Condition > Action" model: there are certains events that emit a "trigger" (a phase starting, a player being killed, etc) and there are game "actions" which change the game state and my emit triggers themselves (e.g. killing a player, creating a group, manipulating voting values). All elements in WWR are designed by combining triggers and actions (and optionally including conditions that limit the execution of the action to certain cases). Actions are differentiated between prompting actions, which prompt the player for an input and are only executed once such an input is provided and automatic actions which are executed without player interaction (and potentially even without the players knowledge)
+WWRF is designed with a "Trigger > Condition > Action" model: there are certains events that emit a "trigger" (a phase starting, a player being killed, etc) and there are game "actions" which change the game state and my emit triggers themselves (e.g. killing a player, creating a group, manipulating voting values). All elements in WWR are designed by combining triggers and actions (and optionally including conditions that limit the execution of the action to certain cases). Actions are differentiated between prompting actions, which prompt the player for an input and are only executed once such an input is provided, and automatic actions ,which are executed without player interaction (and potentially even without the players knowledge)
 
-For example, the Fortune Teller has a prompting investigation actions which is triggered by the night starting. The Wolf Cub has an automatic poll creating action which is triggered by their death.
+For example, the Fortune Teller has a prompting investigation action which is triggered by the night starting. The Wolf Cub has an automatic poll creating action which is triggered by their death.
 
 ## Game Elements
 
 Game Elements are all the components that make up the game. This includes players, roles, groups, polls, teams and more.
 
-We differentiate between active and passive game elements. Active elements can be modified, while passive elements remain static. Passive elements are what is defined in this repository, and active elements are instances of a passive element created during the game. Outside a game only passive elements exist. Some game elements exist in both passive and active form.
+We differentiate between active and passive game elements. Active elements can be modified, while passive elements remain static. Passive elements are what is defined in this repository, and active elements are instances of a passive element created during the game. Outside a game, only passive elements exist. Some game elements exist in both passive and active form.
 
-For example, the concept of a lynch poll, as defined in this repository is a passive game element, whereas one specific lynch poll within a game is an active game element.
-Passive game elements store general information about the element (e.g. a role's description), whereas active elements store game data (e.g. a player's date).
+For example, the concept of a lynch poll, as defined in this repository,y is a passive game element, whereas one specific lynch poll within a game is an active game element.
+Passive game elements store general information about the element (e.g. a role's description), whereas active elements store game data (e.g., a player's date).
 
-Furthermore we differentiate between acting active elements and non-acting active elements. Acting elements are those that are able to execute (i.e. create) abilities.
+Furthermore, we differentiate between acting active elements and non-acting active elements. Acting elements are those that are able to execute (i.e., create) abilities.
 
 For example, a player can create an ability by using their role's abilities. A display, on the other hand, cannot create or execute abilities.
 
@@ -93,19 +94,19 @@ Choices | ⛔ | ✅ | ⛔ |
 ⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.  
 ⁂ While Polls are both active and passive, and while they are instantiated, their data is still stored on the passive poll, meaning that if a poll updates its counter or target it will affect all polls of the same type.
 
-The format of various game elements are described in more detail below.
+The format of various game elements is described in more detail below.
 
 Active game elements generally always support two values that can be modified and accessed through various methods:
-- Target: A value that can store a variety of types and can be modified through targetting.
+- Target: A value that can store a variety of types and can be modified through targeting.
 - Counter: A numeric value that can be modified through counting.
 
 ## Types
 
 In many cases roles or other game elements need to deal with values, for example player inputs or constants used for comparisons. Each value has a certain type which must be defined or inferred.
 
-For example, a role investigation takes one input value: a player that is to be investigated. A disguise takes two inputs: a player that should be disguised and a role they should be disguised as. These inputs may be player submissions, but may also be builtin to the role (for example for a Tanner both the role and the player are user submitted, but for a Disguised Fox the player is always set to themselves, whereas the role is user submitted).
+For example, a role investigation takes one input value: a player that is to be investigated. A disguise takes two inputs: a player that should be disguised and a role they should be disguised as. These inputs may be player submissions, but may also be built into the role (for example, for a Tanner both the role and the player are user submitted, but for a Disguised Fox the player is always set to themselves, whereas the role is user submitted).
 
-Each value needs to be annotated with its respective type, however most of the time the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. Check for each ability what types it expects and when annotation may be necessary. Annotation is done be appending the type surrounded by square brackets, for example: ``​`Citizen`[role]``.
+Each value needs to be annotated with its respective type; however, most of the time, the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases, the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. Check for each ability what types it expects and when annotation may be necessary. Annotation is done be appending the type surrounded by square brackets, for example: ``​`Citizen`[role]``.
 
 Values are split into two categories: constant values (e.g. `Citizen`, referring to the citizen role) or selectors (e.g. `@Self`, referring to the current game element). Furthermore, there is a differentiation between basic selectors (e.g. `@Self` or `@Target`) which refer to a specifc value based on context and advanced selectors (e.g. `@(Role:Citizen)`, returning all players with the citizen role) which select values according to a specified query.
 
@@ -187,7 +188,7 @@ Selector | Meaning
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a player if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 @ID:\<ID\> | Refers to a specific player based on discord id. Useful for testing.
-%Player[N]% | Refers to a player stored as host information.
+%Player[any]% | Refers to a player stored as host information. Replace [any] with any text or nothing.
 \<ID\> | When submitting a player as Host Information you may use the discord id directly as a format.
 
 The advanced player selector has the format @(Property:Value) and searches for players where a certain property matches a certain value. For example, `@(Role:Citizen)` will return all players who's role is `Citizen`. All properties may be inverted using an `!` at the start of the value, e.g. `@(Role:!Citizen)` will return all players who's role is __not__ `Citizen`.
@@ -245,7 +246,7 @@ Selector | Meaning
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
 ^All | Refers to all roles
 ``​`<RoleName>`​`` | Constant role 
-%Role[N]% | Refers to a role stored as host information.
+%Role[any]% | Refers to a role stored as host information. Replace [any] with any text or nothing.
 
 The advanced role selector has the format ^(Property:Value) and searches for roles where a certain property matches a certain value. For example, `^(Cat:Killing)` will return all killing roles. All properties may be inverted using an `!` at the start of the value, e.g. `^(Team:!Townsfolk)` will return all roles who's are __not__ part of townsfolk.
 
@@ -450,6 +451,8 @@ Abilities | ⛔
 Emit | ⛔
 Storing | ⛔
 Displaying | Create<br>Change
+Win | ⛔
+Locking | Lock<br>Unlock
 
 ### Ability Category Type
 
@@ -470,7 +473,7 @@ Selector | Meaning
 @Selection | Refers to a selection submitted by a player through a prompt.
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
 \<Number\> | A number.
-%Number[N]% | Refers to a number stored as host information.
+%Number[any]% | Refers to a number stored as host information. Replace [any] with any text or nothing.
 \<Variable\> | A [variable](#variables) that is evaluated to a number.
 \<Number\>/\<Number\> | A division of two numbers (both of which can be one of the above options), rounded to the nearest full number.
 
@@ -578,6 +581,11 @@ Selector | Meaning
 ### String Type
 
 String type represents an arbitrary text. Can take any value, for example ``​`This is a text.`​``.
+
+Selector | Meaning
+--- | ---
+``​`<String>`​`` | The text.
+%String[any]% | Refers to a string stored as host information. Replace [any] with any text or nothing.
 
 ### Null Type
 
@@ -769,12 +777,12 @@ Attributes are acting active game elements that are applied onto another game el
 
 Attributes come in three categories:  
 • Role Type Attribute: Role type attributes are a type of attribute which represent an additional role applied to a player. For most purposes this additional role acts as a normal role would, making it an acting attribute.  
-• Custom Type Attribute: Custom type attributes are attributes which are formalized in a passive attribute. In there, formalization defines certain acting behaivor for the attribute.  
-• Default Attributes: The remaining attribute types are fully "built-in" to the bot and cover things such as disguises and vote manipulations as well as many more. While these attributes support all the fields of the other attribute types, they "choose" to not use any features which would qualify them as an "acting" game element and can thus be considered to be non-acting. All their functionality is built-in to the various abilities (see [abilities](#abilities))  
+• Custom Type Attribute: Custom type attributes are attributes which are formalized in a passive attribute. In there, formalization defines certain acting behavior for the attribute.  
+• Default Attributes: The remaining attribute types are fully "built-in" to the bot and cover things such as disguises and vote manipulations as well as many more. While these attributes support all the fields of the other attribute types, they "choose" not to use any features which would qualify them as an "acting" game element and can thus be considered to be non-acting. All their functionality is built into the various abilities (see [abilities](#abilities))  
 
 The different types of attributes are explained in more detail in their respective ability sections.
 
-Attributes can be defined to last forever, or to only be temporary. This is achieved through an attribute duration which can be passed in most abilities that create attributes. Some abilities have preset durations for their attributes, and some have default values that can be overwritten. This is explained in detail for each ability in their respective sections.
+Attributes can be defined to last forever or to only be temporary. This is achieved through an attribute duration, which can be passed in most abilities that create attributes. Some abilities have preset durations for their attributes, and some have default values that can be overwritten. This is explained in detail for each ability in their respective sections.
 
 The following ability durations exist:
 
@@ -797,15 +805,15 @@ Name | Explanation
 Abilities are used by all active game elements to take action in a game. While some abilities are unique, there are three major categories of abilities:
 - Attribute Appliers: Many abilities apply an attribute - the attribute then takes care of the main impact of the ability.
 - Game Action: Abilities of this type update some part of the game (besides attributes) directly.
-- Game Logic: Abilities of this type don't directly affect the game, instead they are used in combination with other abilities to determine how those abilities are executed.
+- Game Logic: Abilities of this type don't directly affect the game, instead, they are used in combination with other abilities to determine how those abilities are executed.
 
 ### Killing
 
-**Summary:** Killing is a Game Logic type action - it can modify the aliveness status of a player. By default, killing abilities are queued up and executing at the very end of a trigger. For example, a player that is killed during an "End Night" trigger may still execute their own "End Night" ability, even if their kill is queued up in the same trigger before their ability was triggered. 
+**Summary:** Killing is a Game Logic type action - it can modify the aliveness status of a player. By default, killing abilities are queued up and executed at the very end of a trigger. For example, a player that is killed during an "End Night" trigger may still execute their own "End Night" ability, even if their kill is queued up in the same trigger before their ability was triggered. 
 
 When a player is killed to death, they are eliminated from the game. If they are killed to banishment, they may still participate as a ghost. Should the dying player be the last owner of a group, the group is disbanded. 
 
-**Attributes:** Killing abilities are affected by defense and absences attributes that match the subtype of the killing ability. The killing ability checks for defense and absences attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion. 
+**Attributes:** Killing abilities are affected by defense and absence attributes that match the subtype of the killing ability. The killing ability checks for defense and absence attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion. 
 
 **Visits:** When killing another player, a visit to that player occurs.
 
@@ -834,7 +842,7 @@ Target | Player | First target of the ability
 <tr><td>True Banish</td><td><code>True Banish {Player}</code></td></tr>
 </tbody></table>
 
-**Triggers:** The killing ability will emit the "On Defense" trigger if an defense is used to evade a killing ability, as well as the matching specific variant (On Absence Defense, On Active Defense, On Passive Defense, On Partial Defense, On Recruitment Defense). Additionally upon a successful killing (i.e. not just the queuing, but also the successful execution), the triggers listed in the table above are executed.
+**Triggers:** The killing ability will emit the "On Defense" trigger if a defense is used to evade a killing ability, as well as the matching specific variant (On Absence Defense, On Active Defense, On Passive Defense, On Partial Defense, On Recruitment Defense). Additionally, upon a successful killing (i.e. not just the queuing, but also the successful execution), the triggers listed in the table above are executed.
 
 ### Investigating
 
@@ -846,7 +854,7 @@ Target | Player | First target of the ability
 
 **Redirections:** The target of all investigating subtypes can be affected by redirections, though the feedback (if it mentions the target) will not be affected by that.
 
-**Success:** Most subtypes are always succesful (unless obstructed), exceptions are listed under subtypes.
+**Success:** Most subtypes are always successful (unless obstructed), exceptions are listed under subtypes.
 
 **Feedback:** 
 
@@ -879,6 +887,35 @@ Count | `Investigate {Role} Count <Disguise Levels>` | The amount of times a cer
 Player Count | `Investigate {Player} Count` | The amount of players in a selector. | Number
 
 **Triggers:** There are no triggers associated with Investigating.
+
+### Targeting
+
+**Summary:** Targeting is an extremely basic Game Action that updates the current acting element's target field, a field present for every acting element. Elements can store a variety of values into their target field (though they are limited to storing a single value, and cannot store a list). An acting element can retrieve its own current target value through the `@Target` selector, though it may also be retrieved through property access.
+
+**Attributes:** There are no attribute interactions specific to targeting.
+
+**Visits:** A visit occurs for the `target` subtype.
+
+**Redirections:** The `target` subtype may be affected by redirections.
+
+**Success:** Besides obstructions targeting is always successful, unless there is a syntax error or the target is invalid. Furthermore, the ability will fail when attempting to target more than one value.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | The selected target (`target` subtype)
+
+**Subtypes:** 
+
+Subtype | Syntax | Feedback
+--- | --- | ---
+Target | `Target {*} ({**})` | Sets a palyers target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option. The former must be a selector of matching type.
+Untarget | `Untarget` | Removes the player's target.
+
+**Triggers:** There are no triggers associated with targeting.
 
 ### Ability Template
 
