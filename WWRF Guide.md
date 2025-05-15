@@ -591,10 +591,6 @@ Selector | Meaning
 @VoteText | A text representation of the option that was voted on in `On Vote Add` and `On Vote Remove`.
 @OldVoteText | A text representation of the option that was *previously* voted on in `On Vote Change`.
 @NewVoteText | A text representation of the option that was voted on in `On Vote Change`.
-``​`<String>`​`` | A basic string.
-
-Selector | Meaning
---- | ---
 ``​`<String>`​`` | The text.
 %String[any]% | Refers to a string stored as host information. Replace [any] with any text or nothing.
 
