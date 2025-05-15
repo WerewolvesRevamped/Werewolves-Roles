@@ -185,6 +185,10 @@ Selector | Meaning
 @Ind | Refers to the current element in a `For Each` ability.
 @Voters | Refers to all players that voted for the winning option in `On Poll Closed`, `On Poll Skipped` and `On Poll Win`.
 @OtherVoters | @Voters without the poll winner.
+@Voter | Refers to the player that voted in `On Vote Add`, `On Vote Remove` and `On Poll Change`.
+@Vote | Refers to the player that was voted on in `On Vote Add` and `On Vote Remove`.
+@OldVote | Refers to the player that was *previously* voted on in `On Vote Change`.
+@NewVote | Refers to the player that was voted on in `On Vote Change`.
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a player if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 @ID:\<ID\> | Refers to a specific player based on discord id. Useful for testing.
@@ -584,6 +588,13 @@ String type represents an arbitrary text. Can take any value, for example ``​`
 
 Selector | Meaning
 --- | ---
+@VoteText | A text representation of the option that was voted on in `On Vote Add` and `On Vote Remove`.
+@OldVoteText | A text representation of the option that was *previously* voted on in `On Vote Change`.
+@NewVoteText | A text representation of the option that was voted on in `On Vote Change`.
+``​`<String>`​`` | A basic string.
+
+Selector | Meaning
+--- | ---
 ``​`<String>`​`` | The text.
 %String[any]% | Refers to a string stored as host information. Replace [any] with any text or nothing.
 
@@ -682,6 +693,8 @@ On Removal | Triggers when the current attribute is removed through remove apply
 On End | Triggers when the game ends. | ⛔
 On Emitted<br>On {String} Emitted | Triggers when an emitting action was used to emit a specific value. | ⛔
 On End Emitted<br>On {String} End Emitted | Triggers when an end phase emitting action was used to emit a specific value. | ⛔
+On Vote Add<br>On Vote Remove | Triggers when a vote is added or removed for a poll. | @Voter<be>@Vote<be>@VoteText
+On Vote Change | Triggers when a vote is added and removed for a poll within 15 seconds by the same player - in this case On Vote Add/Remove are replaced by a single On Vote Change. | @Voter<br>@OldVote<br>@OldVoteText<br>@NewVote<br>@NewVoteText
 
 ## Trigger Parameters
 
