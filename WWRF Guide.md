@@ -693,7 +693,7 @@ On Removal | Triggers when the current attribute is removed through remove apply
 On End | Triggers when the game ends. | ⛔
 On Emitted<br>On {String} Emitted | Triggers when an emitting action was used to emit a specific value. | ⛔
 On End Emitted<br>On {String} End Emitted | Triggers when an end phase emitting action was used to emit a specific value. | ⛔
-On Vote Add<br>On Vote Remove | Triggers when a vote is added or removed for a poll. | @Voter<be>@Vote<be>@VoteText
+On Vote Add<br>On Vote Remove | Triggers when a vote is added or removed for a poll. | @Voter<br>@Vote<br>@VoteText
 On Vote Change | Triggers when a vote is added and removed for a poll within 15 seconds by the same player - in this case On Vote Add/Remove are replaced by a single On Vote Change. | @Voter<br>@OldVote<br>@OldVoteText<br>@NewVote<br>@NewVoteText
 
 ## Trigger Parameters
