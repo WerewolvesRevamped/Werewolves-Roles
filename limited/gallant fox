@@ -24,6 +24,7 @@ Passive Start Night: [Attribute: has `Marker`]
   • Protect @Target from `Attacks & Lynches` through Active Defense (~NextDay)
   • Reveal `A Gallant Fox has protected @Target[player]` to #wolfpack
   • Remove `Marker` from @Self
+On Active Defense: Learn `You protected a member of the wolfpack` [Condition: @Target is in #Wolfpack]
 
 __Card__
 The Gallant Fox may shield another vilager from harm, its choice anonymously revealed to the pack.
