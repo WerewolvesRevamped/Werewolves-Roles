@@ -3,7 +3,5 @@ __Basics__
 Applied by the Monarch. Grants an additional vote on polls, and negates a vote.
 
 __Formalized__
-Passive Start Day:
-  • Manipulate `Lynch` Poll (@Self has `-1` votes) (~PhaseAttribute)
-  • Manipulate `Election` Poll (@Self has `-1` votes) (~PhaseAttribute)
-  • Manipulate @Self's `special public voting power` to `1` (~PhaseAttribute)
+Passive Start Day: Manipulate @Self's `special public voting power` to `1` (~PhaseAttribute)
+Starting: Manipulate @Self's `special public voting power` to `1` (~PhaseAttribute)
