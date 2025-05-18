@@ -691,6 +691,7 @@ On Emitted<br>On {String} Emitted | Triggers when an emitting action was used to
 On End Emitted<br>On {String} End Emitted | Triggers when an end phase emitting action was used to emit a specific value. | ⛔
 On Vote Add<br>On Vote Remove | Triggers when a vote is added or removed for a poll. | @Voter<br>@Vote<br>@VoteText
 On Vote Change | Triggers when a vote is added and removed for a poll within 15 seconds by the same player - in this case On Vote Add/Remove are replaced by a single On Vote Change. | @Voter<br>@OldVote<br>@OldVoteText<br>@NewVote<br>@NewVoteText
+On Hammer | Triggers when a poll causes a hammer. | ⛔
 
 ## Trigger Parameters
 
