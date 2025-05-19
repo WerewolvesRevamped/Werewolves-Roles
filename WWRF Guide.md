@@ -47,6 +47,8 @@
   - [Killing](#killing)
   - [Investigating](#investigating)
   - [Targeting](#targeting)
+  - [Disguising](#disguising)
+  - [Protecting](#protecting)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -927,24 +929,28 @@ Target | Player | The selected target (`target` subtype)
 
 **Subtypes:** 
 
-Subtype | Syntax | Feedback
+Subtype | Syntax | Function
 --- | --- | ---
-Target | `Target {*} ({**})` | Sets a palyers target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option. The former must be a selector of matching type.
+Target | `Target {*} ({**})` | Sets a players target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option. The former must be a selector of matching type.
 Untarget | `Untarget` | Removes the player's target.
 
 **Triggers:** There are no triggers associated with targeting.
 
 ### Disguising
 
-**Summary:** Disguising is an Attribute Applier type action that applies a disguise attribute to another player. Disguises affect the outcome of [Investigating](#Investigating) abilities.
+**Summary:** Disguising is an Attribute Applier type action that applies a disguise attribute to another player. Disguises affect the outcome of [Investigating](#investigating) abilities.
 
-**Attributes:** Disguising creates disguise attributes. Each disguise attribute stores a role and the strength of the disguise. Disguises must store a valid role. For more info, see [Investigating](#Investigating).
+**Attributes:** Disguising creates disguise attributes. Each disguise attribute stores a role and the strength of the disguise. Disguises must store a valid role. For more info, see [Investigating](#investigating).
 
 Property | Value
 --- | ---
 Attribute Type | `disguise`
-Value 1 | `{Role}` 
-Value 2 | `[weak\|strong]`
+(1) Disguise Role | `{Role}` 
+(2) Disguise Strength | `[weak\|strong]`
+
+Disguises result in an investigating ability seeing another role besides what they would usually see. This can also affect role adjacent results such as a team investigating - in this case the disguise's team is seen.
+
+Whenever a disguise is used to affect an investigation, an attribute usage is tracked.
 
 **Visits:** Disguising causes a visit to the player getting disguised.
 
@@ -962,14 +968,86 @@ Target | Player | First target of the ability
 
 **Subtypes:** 
 
-Subtype | Syntax | Feedback
---- | --- | ---
+Subtype | Syntax
+--- | ---
 Weakly | `Weakly Disguise {Player} as {Role} {(Duration?)}`
 Strongly | `Strongly Disguise {Player} as {Role} {(Duration?)}`
 
 **Triggers:** There are no triggers associated with targeting.
 
+### Protecting
 
+**Summary:** Protecting is an Attribute Applier type action that applies a defense or absend attribute to another player. Defenses/Absences affect the outcome of [Killing](#killing) abilities.
+
+**Attributes:** Protecting creates defense/absence attributes. Each defense/absence attribute stores several properties defining which killings they defend from. When a killing occurs, first defenses are filtered based on their properties to find which apply to the current killing. Then the killing ability checks for defense and absence attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion.
+
+Defense and Absence attributes are fairly similar, with the difference that the Absence stores an absence location instead of a defense subtype.
+
+Property | Value
+--- | ---
+Attribute Type | `defense`
+(1) Defense Type (Defense Attribute)<br>(1) Absence Location (Absence Attribute) | `[active\|passive\|partial\|recruitment]`<br>`<Source Reference>`
+(2) Killing Subtype Filter | `[attacks\|kills\|lynches\|attacks_lynches\|all\|banishments]`
+(3) Selector Filter | `{Player}`
+(4) Phase Filter | `[day\|night\|all]`
+
+The values in the attribute correspond to the values set in the protecting ability; for a list of all possible syntax variants, see below. Each killing goes through the following checks:  
+- Does the subtype of the killing match an allowed killing subtype? For this the following killing subtypes are allowed in the following killing subtype filters:
+  - `attack`: can be defended against with `attacks`, `kills`, `attacks_lynches` and `all` filters.
+  - `kill`: can be defended against with `kills` and `all` filters.
+  - `lynch`: can be defended against with `lynches`, `attacks_lynches` and `all` filters.
+  - `banish`: can be defended against with `banishments` filters.
+  - `true kill` / `true banish`: can not be protected against.
+- Does the player executing the killing match the selector filter? For this the defense stores a player type selector, which is parsed at runtime when the defense is evaluated and checks if the killing player occurs within this selector (For example, the selector `@(Attr:Marker)` may be stored. This is then resolved at execution time of the defense and it is checked if the killing player occurs within this selector).
+- Is the killing occurring in an allowed phase? Some defenses only work at `day` or `night`, while others work in `all` phases.
+
+Absences are evaluated just like defenses are and work extremely similarly to defenses with one exception: whenever a killing is used, all absences are checked - any absences where the absence location is set to the player that is currently getting hit by the killing, will be affected by the killing too. Both killings are executed separately. For example, Player A may be absent at Player B when Player B is getting attacked. That means Player A will be attacked as well, however, both attacks are still executed individually and may also be affected by other defenses.
+
+Absences are not recursive. That means that a Player C who is absent at Player A, will _not_ get attacked by the attack on Player B, which is affecting Player A.
+
+Players may be absent at non-player locations (e.g. at a public channel), however in that case there is no chance to get attacked/killed through the absence, as non-player locations can not be targeted by killings.
+
+Whenever a defense or absence is used to evade an attack an attribute usage is tracked.
+
+**Visits:**  When applying a defense/absence, a visit occurs to the target. When applying an absence __NO__ visit occurs to the absence location \[note: this may be unintentional\].
+
+**Redirections:** Protecting may be redirected. For the absence subtype, both the absence location and the target of the defense may be redirected.
+
+**Success:** Besides obstructions, protecting is always successful. The absence subtype will additionally fail if the specified absence location yields more than a single value.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
+**Subtypes:** 
+
+There are 4 basic subtypes and the special absence subtype. There are several syntax variants that are the same for all the subtypes, so they are not individually listed. Instead, `<ProtectingSubtype>` may be substituted with one of the following:
+- `Active Defense`
+- `Passive Defense`
+- `Partial Defense`
+- `Recruitment Defense`
+- `Absence at {Location}`
+
+Allowed values for `<KillingSubtypeFilter>` are the following (for functionality, see above):
+- `Attacks`
+- `Kills`
+- `Lynches`
+- `Attacks & Lynches`
+- `All`
+- `Banishments`
+
+Syntax | Killing Subtype Filter Value | Selector Filter Value | Phase Filter Value
+--- | --- | --- | ---
+``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `[Day|Night]`
+``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `All`
+``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `[Day|Night]`
+``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `All`
+
+**Triggers:** When a defense is used, two triggers are run for the player who created the defense (This means a player may apply a defense to another player and use this trigger to get notified when that player's defense is used). Each defense usage triggers the `On Defense` trigger, and then additionally, depending on subtype, one of the following: `On Absence Defense`, `On Active Defense`, `On Passive Defense`, `On Partial Defense` or `On Recruitment Defense`.
 
 
 
