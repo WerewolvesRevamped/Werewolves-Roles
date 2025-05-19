@@ -500,7 +500,7 @@ Selector | Meaning
 
 ### Active Attribute Type
 
-Active Attribute type is the counterpart to the attribute type, which refers to active attribute instances. To be able to correctly resolve some types of active attribute selectors as "on element" is required (the element on which the attribute is applied). What is passed here is based on the ability. There are various variants of advanced active attribute selectors, so they are all listed in the same taböle.
+Active Attribute type is the counterpart to the attribute type, which refers to active attribute instances. To be able to correctly resolve some types of active attribute selectors as "on element" is required (the element on which the attribute is applied). What is passed here is based on the ability. There are various variants of advanced active attribute selectors, so they are all listed in the same table.
 
 Selector | Meaning
 --- | ---
