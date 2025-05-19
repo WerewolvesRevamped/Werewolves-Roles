@@ -977,7 +977,7 @@ Strongly | `Strongly Disguise {Player} as {Role} {(Duration?)}`
 
 ### Protecting
 
-**Summary:** Protecting is an Attribute Applier type action that applies a defense or absend attribute to another player. Defenses/Absences affect the outcome of [Killing](#killing) abilities.
+**Summary:** Protecting is an Attribute Applier type action that applies a defense or absence attribute to another player. Defenses/Absences affect the outcome of [Killing](#killing) abilities.
 
 **Attributes:** Protecting creates defense/absence attributes. Each defense/absence attribute stores several properties defining which killings they defend from. When a killing occurs, first defenses are filtered based on their properties to find which apply to the current killing. Then the killing ability checks for defense and absence attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion.
 
@@ -992,7 +992,7 @@ Attribute Type | `defense`
 (4) Phase Filter | `[day\|night\|all]`
 
 The values in the attribute correspond to the values set in the protecting ability; for a list of all possible syntax variants, see below. Each killing goes through the following checks:  
-- Does the subtype of the killing match an allowed killing subtype? For this the following killing subtypes are allowed in the following killing subtype filters:
+- Does the subtype of the killing match an allowed killing subtype? For this, the following killing subtypes are allowed in the following killing subtype filters:
   - `attack`: can be defended against with `attacks`, `kills`, `attacks_lynches` and `all` filters.
   - `kill`: can be defended against with `kills` and `all` filters.
   - `lynch`: can be defended against with `lynches`, `attacks_lynches` and `all` filters.
@@ -1007,7 +1007,7 @@ Absences are not recursive. That means that a Player C who is absent at Player A
 
 Players may be absent at non-player locations (e.g. at a public channel), however in that case there is no chance to get attacked/killed through the absence, as non-player locations can not be targeted by killings.
 
-Whenever a defense or absence is used to evade an attack an attribute usage is tracked.
+Whenever a defense or absence is used to evade an attack, an attribute usage is tracked.
 
 **Visits:**  When applying a defense/absence, a visit occurs to the target. When applying an absence __NO__ visit occurs to the absence location \[note: this may be unintentional\].
 
@@ -1042,9 +1042,9 @@ Allowed values for `<KillingSubtypeFilter>` are the following (for functionality
 
 Syntax | Killing Subtype Filter Value | Selector Filter Value | Phase Filter Value
 --- | --- | --- | ---
-``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `[Day|Night]`
+``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `[Day\|Night]`
 ``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `All`
-``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `[Day|Night]`
+``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `[Day\|Night]`
 ``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `All`
 
 **Triggers:** When a defense is used, two triggers are run for the player who created the defense (This means a player may apply a defense to another player and use this trigger to get notified when that player's defense is used). Each defense usage triggers the `On Defense` trigger, and then additionally, depending on subtype, one of the following: `On Absence Defense`, `On Active Defense`, `On Passive Defense`, `On Partial Defense` or `On Recruitment Defense`.
