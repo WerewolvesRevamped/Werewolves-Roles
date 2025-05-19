@@ -736,25 +736,27 @@ Phase Specific Scaling | `Odd: x<Number>, Even: x<Number>` | To specify differen
 
 ### Other Parameters
 
-Other trigger paramaters are marked by curly brackets: {}. Curly brackets in this section do __not__ signfiy type markers like in the rest of the document. When using several other parameters their curly bracket blocks are combined, e.g. `{Forced, Direct}`.
+Other trigger parameters are marked by curly brackets: {}. Curly brackets in this section do __not__ signify type markers like in the rest of the document. When using several other parameters, their curly bracket blocks are combined, e.g. `{Forced, Direct}`.
 
-To make a prompting trigger forced, a Trigger Compulsion cane set by specifying `{Forced}`. By default a forced trigger randomly selects a target where necessary. If a forced trigger should select a specific target use `{Forced: <Default Target>}` instead.
+To make a prompting trigger forced, a Trigger Compulsion can be set by specifying `{Forced}`. By default, a forced trigger randomly selects a target where necessary. If a forced trigger should select a specific target, use `{Forced: <Default Target>}` instead.
 
 To make a trigger unaffected by redirections, specify `{Direct}`.
 
-To make a trigger no perform a vist (which also makes it unaffected by redirections!), specify `{Visitless}`.
+To make a trigger not perform a visit (which also makes it unaffected by redirections!), specify `{Visitless}`.
+
+To make it so that a trigger's prompt is deleted when it is ignored/not executed, specify `{Vanishing}`.
 
 ### Prompt Overwrites
 
 Prompt overwrites are marked by vertical brackets: ||.
 
-By default a prompting trigger will generate a prompt message code name and look it up in the prompt message file. To overwrite the default behaivor, you can specify the name of a custom prompt. For example, `|custom.prompt.1|` would look up the prompt text for `custom.prompt.1`.
+By default, a prompting trigger will generate a prompt message code name and look it up in the prompt message file. To overwrite the default behavior, you can specify the name of a custom prompt. For example, `|custom.prompt.1|` would look up the prompt text for `custom.prompt.1`.
 
 To additionally mark a prompt as silent (which skips the ping), you may specify `silent:` before the prompt name, e.g. `|silent:custom.prompt.1|`.
 
 ## Conditions
 
-Conditions are a part of the formalization that can be used in several places (Restrictions and Process/Evaluate) to limit execution of abilities to certain situations.
+Conditions are a part of the formalization that can be used in several places (Restrictions and Process/Evaluate) to limit the execution of abilities to certain situations.
 
 The following conditions exist:
 
@@ -764,7 +766,7 @@ Equality | `{Any} is {Any}` | Compares two values with each other, passes if equ
 Less/Greater Than | `{Number} [>\|<] {Number}` | Compares two numbers with each other, passes if the first value is greater/less than the second. When comparing lists, the first value of each list is used.
 No Equality | `{Any} is not {Any}` | Compares two values with each other, passes if different.
 Existence | `{Any} exists` | Checks if a specified selector evaluates to at least one element.
-Attribute | `{Actor} has {Attribute}` | Checks if a specifed actor has a specified attribute.
+Attribute | `{Actor} has {Attribute}` | Checks if a specified actor has a specified attribute.
 Membership | `{Player} is in {Group}` | Checks if a specified player is in a specified group.
 Selector | `{Any} is part of {Any}` | Checks if a specified element is part of another selector.
 Inversion | `not (<Condition>)` | Passes if the specified condition is false.
