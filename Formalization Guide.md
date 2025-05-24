@@ -535,6 +535,26 @@ To receive a single role attribute use `Role Attribute: '<Attribute Name>'`
 
 Role attributes are defined the same way as other attributes, but operate differently from other attributes in that they are part of the role, not the player and can thus be hidden by disguises.
 
+---
+---
+### Identity
+
+A role can have a different identity
+
+For identity use `Identity: '<Role Name>'`
+
+When a role has a different identity its initial DM, info message and channel all appear as that role, though they will still get prompted and seen as their actual role.
+
+---
+---
+### Include
+
+A role can include another role's trigger, dynamically
+
+To include another role use `Include: <Role>`
+
+This way a role can be included, you can use static role references or selectors. Only triggers of the other role are included.
+
 ----
 ----
 ### Target Types
