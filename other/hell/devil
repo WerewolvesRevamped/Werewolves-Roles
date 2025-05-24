@@ -45,10 +45,12 @@ Choice `Attack` Chosen:
   • Increment Counter for #hell  
   • Target @Selection (Player)
   • Apply `Marker` to @Self
+  • Reveal `Attacking @Selection` to @Self
 Choice `Protect` Chosen:
   • Apply `Soulless` to @Chooser (~Persistent)
   • Increment Counter for #hell  
   • Protect @Selection from `Attacks` through Active Defense (~Phase)
+  • Reveal `Protecting @Selection` to @Self
 Choice `Investigate` Chosen:
   • Process: Role Investigate @Selection (WD, SD)
   • Evaluate:
