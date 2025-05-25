@@ -6,7 +6,7 @@ Removing players' votes is an immediate ability. Players with removed votes may 
 The Grandma's vote appears to be a normal vote, but can count as 0 or 2 votes, depending on whether the Grandma chooses to use their power. The Grandma must select either exactly two players simultaneously, or no players at all.
 The two chosen players will be added to a private channel, where the Grandma can anonymously talk to them. At the end of the day, the players are removed and the votes are restored (even if the Grandma is dead at that point).
 If the Grandma selects a player with several votes (e.g. another Grandma), the targeted player only loses 1 of their votes.
-Players with negative votes or no vote will experience no change in vote value (and the Grandma is informed), but are still added to the channel. The Mayor's extra vote can never be removed by the Grandma.
+Players with negative votes or no vote will experience no change in vote value (and the Grandma is informed), but are still added to the channel. Special extra votes, such as the Mayor's vote, can never be removed by the Grandma.
 The Grandma may select themself. The Grandma is not affected by redirections.
 
 __Simplified__
