@@ -22,6 +22,7 @@ Include: %Role%
 Starting:
   • Apply `Wolfish` to @Self
   • Strongly Disguise @Self as %Role% [Quantity: 1]
+  • Learn `You are imitating %Role%`
 End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
 
 __Card__
