@@ -13,7 +13,7 @@ The Psychopath has a list with one third of all the players on it. If all player
 The Psychopath is strongly disguised as a role of their choosing. Additionally, they may either investigate or weakly disguise others each day.
 
 __Formalized__
-Starting:
+Starting: {Visitless}
   • Set Counter to ceil $total/3
   • Apply `PsychopathList` to @Self
   • For Each &All:
@@ -21,7 +21,7 @@ Starting:
       ◦ Decrement Counter
       ◦ Apply `PsychopathList` to &Ind->Members->RandomPlayer
   • Emit `Build List`
-On `Build List` Emitted: [Condition: @Self->Counter > 0]
+On `Build List` Emitted: [Condition: @Self->Counter > 0] {Visitless}
   • Decrement Counter
   • Apply `PsychopathList` to @(AttrSelf:!PsychopathList,SelectAll:False)
   • Emit `Build List`
@@ -40,4 +40,4 @@ Choice `Investigate` Chosen: Role Investigate @Selection (WD, SD)
 Choice `Disguise` Chosen: Weakly Disguise @Selection as @SecondarySelection (~NextNight)
 
 __Card__
-The Psychopath tries to get rid of everyone on their list, through whichever means neccesary.
+The Psychopath tries to get rid of everyone on their list, through whichever means necessary.

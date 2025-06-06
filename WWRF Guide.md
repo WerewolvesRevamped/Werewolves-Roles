@@ -30,6 +30,7 @@
   - [String Type](#string-type)
   - [Null Type](#null-type)
   - [Phase Type](#phase-type)
+  - [Duration Type](#duration-type)
   - [Actor Pseudo-Type](#actor-pseudo-type)
   - [Any Pseudo-Type](#any-pseudo-type)
   - [Variables](#variables)
@@ -45,6 +46,9 @@
 - [Abilities](#abilities)
   - [Killing](#killing)
   - [Investigating](#investigating)
+  - [Targeting](#targeting)
+  - [Disguising](#disguising)
+  - [Protecting](#protecting)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -53,22 +57,22 @@
 
 
 ## Introduction
-Werewolves Revamped is automated using "formalization" - i.e. all roles and similiar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
+Werewolves Revamped is automated using "formalization" - i.e., all roles and similar are written in a formal way in a custom language (WWRF) which can be interpreted by the bot.
 
-WWRF is designed with a "Trigger > Condition > Action" model: there are certains events that emit a "trigger" (a phase starting, a player being killed, etc) and there are game "actions" which change the game state and my emit triggers themselves (e.g. killing a player, creating a group, manipulating voting values). All elements in WWR are designed by combining triggers and actions (and optionally including conditions that limit the execution of the action to certain cases). Actions are differentiated between prompting actions, which prompt the player for an input and are only executed once such an input is provided and automatic actions which are executed without player interaction (and potentially even without the players knowledge)
+WWRF is designed with a "Trigger > Condition > Action" model: there are certains events that emit a "trigger" (a phase starting, a player being killed, etc) and there are game "actions" which change the game state and my emit triggers themselves (e.g. killing a player, creating a group, manipulating voting values). All elements in WWR are designed by combining triggers and actions (and optionally including conditions that limit the execution of the action to certain cases). Actions are differentiated between prompting actions, which prompt the player for an input and are only executed once such an input is provided, and automatic actions, which are executed without player interaction (and potentially even without the players knowledge)
 
-For example, the Fortune Teller has a prompting investigation actions which is triggered by the night starting. The Wolf Cub has an automatic poll creating action which is triggered by their death.
+For example, the Fortune Teller has a prompting investigation action which is triggered by the night starting. The Wolf Cub has an automatic poll creating action which is triggered by their death.
 
 ## Game Elements
 
 Game Elements are all the components that make up the game. This includes players, roles, groups, polls, teams and more.
 
-We differentiate between active and passive game elements. Active elements can be modified, while passive elements remain static. Passive elements are what is defined in this repository, and active elements are instances of a passive element created during the game. Outside a game only passive elements exist. Some game elements exist in both passive and active form.
+We differentiate between active and passive game elements. Active elements can be modified, while passive elements remain static. Passive elements are what is defined in this repository, and active elements are instances of a passive element created during the game. Outside a game, only passive elements exist. Some game elements exist in both passive and active form.
 
-For example, the concept of a lynch poll, as defined in this repository is a passive game element, whereas one specific lynch poll within a game is an active game element.
-Passive game elements store general information about the element (e.g. a role's description), whereas active elements store game data (e.g. a player's date).
+For example, the concept of a lynch poll, as defined in this repository, is a passive game element, whereas one specific lynch poll within a game is an active game element.
+Passive game elements store general information about the element (e.g. a role's description), whereas active elements store game data (e.g., a player's date).
 
-Furthermore we differentiate between acting active elements and non-acting active elements. Acting elements are those that are able to execute (i.e. create) abilities.
+Furthermore, we differentiate between acting active elements and non-acting active elements. Acting elements are those that are able to execute (i.e., create) abilities.
 
 For example, a player can create an ability by using their role's abilities. A display, on the other hand, cannot create or execute abilities.
 
@@ -89,23 +93,23 @@ Displays | ✅ | ✅ | ⛔ |
 Locations | ✅ | ⛔ | ⛔ |  
 Choices | ⛔ | ✅ | ⛔ |  
 
-∗ Roles can be instantiated in two ways: when they are assigned to a player, the player sort of becomes the instantiated version of the role, though of course there is more data on the player. Alternatively if a role is assigned as an extra role mid-game it is instantiated as a role type attribute.  
-⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead the team's active and passive data is stored in the same element.  
+∗ Roles can be instantiated in two ways: when they are assigned to a player, the player sort of becomes the instantiated version of the role, though of course there is more data on the player. Alternatively, if a role is assigned as an extra role mid-game it is instantiated as a role type attribute.  
+⁑ While Teams are both active and passive, they are not instantiated as there can only ever be one of each team. Instead, the team's active and passive data is stored in the same element.  
 ⁂ While Polls are both active and passive, and while they are instantiated, their data is still stored on the passive poll, meaning that if a poll updates its counter or target it will affect all polls of the same type.
 
-The format of various game elements are described in more detail below.
+The format of various game elements is described in more detail below.
 
 Active game elements generally always support two values that can be modified and accessed through various methods:
-- Target: A value that can store a variety of types and can be modified through targetting.
+- Target: A value that can store a variety of types and can be modified through targeting.
 - Counter: A numeric value that can be modified through counting.
 
 ## Types
 
 In many cases roles or other game elements need to deal with values, for example player inputs or constants used for comparisons. Each value has a certain type which must be defined or inferred.
 
-For example, a role investigation takes one input value: a player that is to be investigated. A disguise takes two inputs: a player that should be disguised and a role they should be disguised as. These inputs may be player submissions, but may also be builtin to the role (for example for a Tanner both the role and the player are user submitted, but for a Disguised Fox the player is always set to themselves, whereas the role is user submitted).
+For example, a role investigation takes one input value: a player that is to be investigated. A disguise takes two inputs: a player that should be disguised and a role they should be disguised as. These inputs may be player submissions, but may also be built into the role (for example, for a Tanner both the role and the player are user submitted, but for a Disguised Fox the player is always set to themselves, whereas the role is user submitted).
 
-Each value needs to be annotated with its respective type, however most of the time the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. Check for each ability what types it expects and when annotation may be necessary. Annotation is done be appending the type surrounded by square brackets, for example: ``​`Citizen`[role]``.
+Each value needs to be annotated with its respective type; however, most of the time, the WWRF parser can do this - in the investigation example the target must always be a player, so the value is always annotated as a player type. For some other abilities, this is less clear, however. In these cases, the type can sometimes be inferred from the contents of the value itself (sometimes at parse time, sometimes at runtime) and other times the type has to be manually annotated. Check for each ability what types it expects and when annotation may be necessary. Annotation is done be appending the type surrounded by square brackets, for example: ``​`Citizen`[role]``.
 
 Values are split into two categories: constant values (e.g. `Citizen`, referring to the citizen role) or selectors (e.g. `@Self`, referring to the current game element). Furthermore, there is a differentiation between basic selectors (e.g. `@Self` or `@Target`) which refer to a specifc value based on context and advanced selectors (e.g. `@(Role:Citizen)`, returning all players with the citizen role) which select values according to a specified query.
 
@@ -143,16 +147,16 @@ Null | ⛔ | ⛔ | ⛔ | ✅
 Phase | `Day 1` | ⛔ | ⛔ | ⛔
 
 ∗ Players can not be referenced using a constant value, as that would require this player to be present in every game.  
-⁑ Locations are a special type which unifies several other types into a single type. The following types can be interpreted as a location: group, base location, active extra role, player, attribute.  
+⁑ Locations are a special type that unifies several other types into a single type. The following types can be interpreted as a location: group, base location, active extra role, player, attribute.  
 ⁂ Results are a special type which is returned after executing an ability, depending on context different types can be extracted from it. It always stores at least a success type (for if the ability succeeded) and an info type (for the ability feedback) and depending on the ability potentially other abilities.  
-⁑⁑ Info is a special type which is a text containing several selectors. All selectors contained within the info text must either be annotated or support run-time annotation. The info type is used when a text output is generated. As part of the text output process all selectors contained within the info type are evaluated and converted to text.  
+⁑⁑ Info is a special type that is a text containing several selectors. All selectors contained within the info text must either be annotated or support run-time annotation. The info type is used when a text output is generated. As part of the text output process, all selectors contained within the info type are evaluated and converted to text.  
 ⁑⁑∗ An Ability Subtype contains the info of the ability type _and_ the subtype, not just the latter.  
 
 Some types additionally support property accesses using the `<Selector>-><Property>`, e.g. `@Target->Role` retrieves a targets role.
 
 Many types default to not just being a single value, but actually a list, though this will often be a list of length one, this is shown in the table above. Types that are list types will return several results if a selector matches several results (though some abilities may choose to only use the first element of the list), while types that are not list types can only return a single value. When using a property access on a list type, the property access is executed on each element in the list and a new list is returned. Lists can be created through a selector which returns several values or by adding several constant values together (e.g. `Citizen`+`Wolf` would be a simple role type list).
 
-For this document, when the syntax of any component requires a user to put a type, this syntax is used to signify the expected type: `{Type}`, where `Type` is replaced with the name of the expected type. When expecting a user to put a text that is not a specific type this format is used: `<UserInput>`, where `UserInput` describes the expected input. When a user must pick one of several possible values the syntax `[Option1|Option2]` is used, though square brackets are used in many other contexts as well.
+For this document, when the syntax of any component requires a user to put a type, this syntax is used to signify the expected type: `{Type}`, where `Type` is replaced with the name of the expected type. When expecting a user to put a text that is not a specific type, this format is used: `<UserInput>`, where `UserInput` describes the expected input. When a user must pick one of several possible values the syntax `[Option1|Option2]` is used, though square brackets are used in many other contexts as well. Optional values may be listed by appending a `?` (e.g,. `{Duration?}` denotes an optional duration type value). Adding additional characters within the brackets of an optional type means these characters are either added with the type or not added at all. For example, `{(Duration?)}` may resolve to `(~Permanent)` or no value at all.
 
 ### Player Type
 
@@ -169,7 +173,7 @@ Selector | Meaning
 @TargetDead | The current player's target (even if the target is dead).
 @Members | The current group's or team's members.
 @Attacker | A player responsible for a killing in `On Death`, `On Killed`, `On Banishment`, `On Banished` and variants.
-@This | Refers to the player for which a complex trigger featuring a target (e.g. `On <Target> Death`) triggered for.
+@This | Refers to the player for whom a complex trigger featuring a target (e.g. `On <Target> Death`) triggered for.
 @Winner | Refers to the winner of a poll in `On Poll Closed`.
 @ActionTarget | Refers to the target of an action in `On Action` and variants.
 @Executor | Refers to the executor of an action in `On Poll Closed` and `On Poll Skipped` for polls created by a group.
@@ -184,10 +188,14 @@ Selector | Meaning
 @Ind | Refers to the current element in a `For Each` ability.
 @Voters | Refers to all players that voted for the winning option in `On Poll Closed`, `On Poll Skipped` and `On Poll Win`.
 @OtherVoters | @Voters without the poll winner.
+@Voter | Refers to the player that voted in `On Vote Add`, `On Vote Remove` and `On Poll Change`.
+@Vote | Refers to the player that was voted on in `On Vote Add` and `On Vote Remove`.
+@OldVote | Refers to the player that was *previously* voted on in `On Vote Change`.
+@NewVote | Refers to the player that was voted on in `On Vote Change`.
 @Result[1-7] | Refers to the result of a processed ability, which will be cast to a player if possible.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 @ID:\<ID\> | Refers to a specific player based on discord id. Useful for testing.
-%Player[N]% | Refers to a player stored as host information.
+%Player[any]% | Refers to a player stored as host information. Replace [any] with any text or nothing.
 \<ID\> | When submitting a player as Host Information you may use the discord id directly as a format.
 
 The advanced player selector has the format @(Property:Value) and searches for players where a certain property matches a certain value. For example, `@(Role:Citizen)` will return all players who's role is `Citizen`. All properties may be inverted using an `!` at the start of the value, e.g. `@(Role:!Citizen)` will return all players who's role is __not__ `Citizen`.
@@ -202,9 +210,9 @@ FullCat | Matches both Class and Category (e.g. `@(FullCat:Townsfolk-Power)`), m
 OrigRole | The player's original role.
 OrigCat | The player's original role's category.
 OrigClass | The player's original role's class.
-OrigAlign | The player's original role's default alignment (it should be noted that this may differ even without a role change necessary as `Align` checks for the players current alignment, not the player's current role's default alignment).
+OrigAlign | The player's original role's default alignment (it should be noted that this may differ even without a role change necessary, as `Align` checks for the player's current alignment, not the player's current role's default alignment).
 OrigFullCat | Matches both class and category of the player's original role.
-Group | Checks for membership of a certain group.
+Group | Checks for membership in a certain group.
 Attr/Attribute | Checks whether the player has a certain custom attribute.
 AttrSelf | Checks whether the player has a certain attribute which was applied by the current player.
 AttrRole | Checks whether the player has a certain role type attribute.
@@ -222,8 +230,8 @@ OriginalRole | The player's original role.
 Alignment | The player's current alignment.
 Target | The player's target.
 Counter | The player's counter.
-PublicVotingPower | Evaluates the player'S current public voting power.
-PrivateVotingPower | Evaluates the player'S current private voting power.
+PublicVotingPower | Evaluates the player's current public voting power.
+PrivateVotingPower | Evaluates the player's current private voting power.
 RandomPlayer | Selects a random player from a list of players (e.g. `@All->RandomPlayer` would return an entirely random player).
 MostFreqRole | Returns the most common role amongst a group of players (e.g. `@(Group:Wolfpack)->MostFreqRole` would return the most common role in the wolfpack).
 Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the player. 
@@ -245,7 +253,7 @@ Selector | Meaning
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
 ^All | Refers to all roles
 ``​`<RoleName>`​`` | Constant role 
-%Role[N]% | Refers to a role stored as host information.
+%Role[any]% | Refers to a role stored as host information. Replace [any] with any text or nothing.
 
 The advanced role selector has the format ^(Property:Value) and searches for roles where a certain property matches a certain value. For example, `^(Cat:Killing)` will return all killing roles. All properties may be inverted using an `!` at the start of the value, e.g. `^(Team:!Townsfolk)` will return all roles who's are __not__ part of townsfolk.
 
@@ -255,7 +263,7 @@ Cat/Category | The role's category.
 Type | The role's type (most commonly Default and Limited).
 Class | The role's class.
 Team | The role's team.
-Count | Returns the amount of roles.
+Count | Returns the number of roles.
 
 Roles support a few property accesses:
 
@@ -265,8 +273,8 @@ Category | The role's category.
 Class | The role's class.
 Team | The role's team.
 Type | The role's type.
-Players | All players that have this role.
-Count | Returns the amount of roles.
+Players | All players who have this role.
+Count | Returns the number of roles.
 
 ### Active Extra Role Type
 
@@ -279,7 +287,7 @@ Selector | Meaning
 
 ### Group Type
 
-Group types refer to the active instance of a group. Currently there is only the active group type, though when a group name is passed and no active group exists for this group yet, some contexts may automatically create an active instance of the group so the group type is able to return an active instance.
+Group types refer to the active instance of a group. Currently, there is only the active group type, though when a group name is passed and no active group exists for this group yet, some contexts may automatically create an active instance of the group so the group type is able to return an active instance.
 
 Selector | Meaning
 --- | ---
@@ -294,7 +302,7 @@ Target | The group's target.
 Counter | The group's counter.
 Members | All members of the group.
 Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the group. 
-Count | Returns the amount of groups.
+Count | Returns the number of groups.
 
 ### Alignment Type
 
@@ -327,7 +335,7 @@ Target | The team's target.
 Counter | The team's counter.
 Members | All members of the team.
 Attr(\<AttributeName\>) | Returns a certain custom attribute that is applied to the team. 
-Count | Returns the amount of teams.
+Count | Returns the number of teams.
 
 ### Location Type
 
@@ -337,10 +345,10 @@ Selector | Type | Meaning
 --- | --- | ---
 `#<LocationName>` | Base Location | Name of a base location, such as town square.
 `#<GroupName>` | Group | Name of a group.
-``​`<RoleName>`​`` | Active Extra Role | Refers to an active extra role name with the specified name which was __created by the current game element__. 
+``​`<RoleName>`​`` | Active Extra Role | Refers to an active extra role name with the specified name, which was __created by the current game element__. 
 @Self | Player/Group | Refers to the current player (for players, active extra roles), to the player the current attribute is attached to (for attributes) or to the current group (for groups).
-@AttackLocation | Player/Group | Either `@Attacker` or `@AttackSource` depending on which can be resolved to a location.
-Any Player Selector | Player | If none of the previous selectors matches the specified selector, the value is treated as a player type - all player selectors are valid.
+@AttackLocation | Player/Group | Either `@Attacker` or `@AttackSource`, depending on which can be resolved to a location.
+Any Player Selector | Player | If none of the previous selectors match the specified selector, the value is treated as a player type - all player selectors are valid.
 
 Locations support a property result __only__ when they are a group type location, in which case they support normal group type property accesses.
 
@@ -359,14 +367,14 @@ Success type represents whether an ability succeeded or not. It can take exactly
 
 ### Result Type
 
-Result type is a special type that encompasses several other values. In some contexts it will automatically be cast to one of its values, but generally in most contexts it is necessary to use property access to retrieve one of the values making up the result. Results are returned by an ability when storing its result through a Process ability.
+Result type is a special type that encompasses several other values. In some contexts, it will automatically be cast to one of its values, but generally in most contexts it is necessary to use property access to retrieve one of the values making up the result. Results are returned by an ability when storing its result through a Process ability.
 
 Selector | Meaning
 --- | ---
 @Result[1-7] | Refers to the result of a processed ability.
 @ActionResult | Refers to the result of an action in `On Action` and variants.
 
-Results support a couple of property accesses, however not all properties are present in each result:
+Results support a couple of property accesses; however, not all properties are present in each result:
 
 Selector | Meaning
 --- | ---
@@ -379,11 +387,11 @@ Result | The result's result as a single value which may take several types.
 Success | Whether the ability succeeded (always present).
 Target | The primary target of an ability.
 Message | The ability feedback a player would receive (always present).
-Count | Returns the amount of results.
+Count | Returns the number of results.
 
 ### Info Type
 
-Info type is a special type - it is plain text including selectors. The selectors are parsed into text if possible, for example: ``​`Your current target is @Target`​`` would inform a player of their current target. For selectors to be parsed into text correctly they must be surrounded by spaces in both directions so that they can correctly be identified.
+Info type is a special type - it is plain text including selectors. The selectors are parsed into text if possible, for example: ``​`Your current target is @Target`​`` would inform a player of their current target. For selectors to be parsed into text correctly, they must be surrounded by spaces in both directions so that they can correctly be identified.
 
 Selector | Meaning
 --- | ---
@@ -391,7 +399,7 @@ Selector | Meaning
 %PartialRoleList% | Refers to a role list info text stored as host information.
 ``​`<Info>`​`` | Normal info, potentially containing other selectors.
 
-Each type uses a different method to get parsed to text - for discord elements a respective discord reference is generated (ping, channel link) while other types are usually just their name in title case.
+Each type uses a different method to get parsed to text - for discord elements, a respective discord reference is generated (ping, channel link) while other types are usually just their name in title case.
 
 ### Ability Type Type
 
@@ -406,7 +414,7 @@ The following ability types exist: killing, investigating, targeting, disguising
 
 ### Ability Subtype Type
 
-Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first followed by the type. Subtype that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True Kill Killing`).
+Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first, followed by the type. Subtype that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True Kill Killing`).
 
 Selector | Meaning
 --- | ---
@@ -450,6 +458,8 @@ Abilities | ⛔
 Emit | ⛔
 Storing | ⛔
 Displaying | Create<br>Change
+Win | ⛔
+Locking | Lock<br>Unlock
 
 ### Ability Category Type
 
@@ -470,7 +480,7 @@ Selector | Meaning
 @Selection | Refers to a selection submitted by a player through a prompt.
 @SecondarySelection | Refers to a selection submitted by a player through a prompt.
 \<Number\> | A number.
-%Number[N]% | Refers to a number stored as host information.
+%Number[any]% | Refers to a number stored as host information. Replace [any] with any text or nothing.
 \<Variable\> | A [variable](#variables) that is evaluated to a number.
 \<Number\>/\<Number\> | A division of two numbers (both of which can be one of the above options), rounded to the nearest full number.
 
@@ -490,14 +500,14 @@ Selector | Meaning
 
 ### Active Attribute Type
 
-Active Attribute type is the counterpart to the attribute type which refers to active attribute instances. To be able to correctly resolve some types of active attribute selectors as "on element" is required (the element on which the attribute is applied). What is passed here is based on the ability. There are various variants of advanced active attribute selectors, so they are all listed in the same taböle.
+Active Attribute type is the counterpart to the attribute type, which refers to active attribute instances. To be able to correctly resolve some types of active attribute selectors as "on element" is required (the element on which the attribute is applied). What is passed here is based on the ability. There are various variants of advanced active attribute selectors, so they are all listed in the same table.
 
 Selector | Meaning
 --- | ---
 @ThisAttr | Refers to the current attribute.
 ``​`<AttributeName>`​`` | Searches for a custom attribute 
 ``​`<AttributeName>:Self`​`` | Searches for a custom attribute, applied by the current player.
-``​`<AttributeName>:<SourceReference>`​`` | Searches for a custom attribute, applied by a certain source specified by its reference. This is not very usable most of the time as most source references are different each game, however team names can be used. See [sources](#sources).
+``​`<AttributeName>:<SourceReference>`​`` | Searches for a custom attribute, applied by a certain source specified by its reference. This is not very usable most of the time as most source references are different each game, however, team names can be used. See [sources](#sources).
 ``​`<AttributeName>:<SourceName>`​`` | Searches for a custom attribute, applied by a certain source specified by its name. See [sources](#sources).
 ``​`<AttributeName>::<Val1>`​`` | Searches for a custom  attribute, with a specific value in Value 1.
 ``​`<AttributeName>:Self:<Val1>`​`` | Combination of the above.
@@ -579,6 +589,14 @@ Selector | Meaning
 
 String type represents an arbitrary text. Can take any value, for example ``​`This is a text.`​``.
 
+Selector | Meaning
+--- | ---
+@VoteText | A text representation of the option that was voted on in `On Vote Add` and `On Vote Remove`.
+@OldVoteText | A text representation of the option that was *previously* voted on in `On Vote Change`.
+@NewVoteText | A text representation of the option that was voted on in `On Vote Change`.
+``​`<String>`​`` | The text.
+%String[any]% | Refers to a string stored as host information. Replace [any] with any text or nothing.
+
 ### Null Type
 
 Null type is a special type that should not be used manually. When inferring the type of a target at runtime, but no target is set, a null type list with zero elements is instead returned. This is to ensure that abilities relying on a target gracefully fail instead of erroring. Null type always takes the form of an empty list.
@@ -594,9 +612,13 @@ Value | Meaning
 Day \<Number\> | A day phase.
 Night \<Number\> | A night phase.
 
+### Duration Type
+
+Duration type is a type only used by attribute applying abilities. Durations take the form of `~<Name>`. A full list of available attribute durations can be found in the [attribute section](#Attributes).
+
 ### Actor Pseudo-Type
 
-Actor pseudo-type is not an actual type, but is sometimes the expected input. In that case the input can take the form of any acting game element. The following types may be specified when an actor type is expected: player, group, team, active attribute, active extra role.
+Actor pseudo-type is not an actual type, but is sometimes the expected input. In that case, the input can take the form of any acting game element. The following types may be specified when an actor type is expected: player, group, team, active attribute, active extra role.
 
 ### Any Pseudo-Type
 
@@ -674,6 +696,9 @@ On Removal | Triggers when the current attribute is removed through remove apply
 On End | Triggers when the game ends. | ⛔
 On Emitted<br>On {String} Emitted | Triggers when an emitting action was used to emit a specific value. | ⛔
 On End Emitted<br>On {String} End Emitted | Triggers when an end phase emitting action was used to emit a specific value. | ⛔
+On Vote Add<br>On Vote Remove | Triggers when a vote is added or removed for a poll. | @Voter<br>@Vote<br>@VoteText
+On Vote Change | Triggers when a vote is added and removed for a poll within 15 seconds by the same player - in this case On Vote Add/Remove are replaced by a single On Vote Change. | @Voter<br>@OldVote<br>@OldVoteText<br>@NewVote<br>@NewVoteText
+On Hammer | Triggers when a poll causes a hammer. | ⛔
 
 ## Trigger Parameters
 
@@ -718,35 +743,37 @@ Phase Specific Scaling | `Odd: x<Number>, Even: x<Number>` | To specify differen
 
 ### Other Parameters
 
-Other trigger paramaters are marked by curly brackets: {}. Curly brackets in this section do __not__ signfiy type markers like in the rest of the document. When using several other parameters their curly bracket blocks are combined, e.g. `{Forced, Direct}`.
+Other trigger parameters are marked by curly brackets: {}. Curly brackets in this section do __not__ signify type markers like in the rest of the document. When using several other parameters, their curly bracket blocks are combined, e.g. `{Forced, Direct}`.
 
-To make a prompting trigger forced, a Trigger Compulsion cane set by specifying `{Forced}`. By default a forced trigger randomly selects a target where necessary. If a forced trigger should select a specific target use `{Forced: <Default Target>}` instead.
+To make a prompting trigger forced, a Trigger Compulsion can be set by specifying `{Forced}`. By default, a forced trigger randomly selects a target where necessary. If a forced trigger should select a specific target, use `{Forced: <Default Target>}` instead.
 
 To make a trigger unaffected by redirections, specify `{Direct}`.
 
-To make a trigger no perform a vist (which also makes it unaffected by redirections!), specify `{Visitless}`.
+To make a trigger not perform a visit (which also makes it unaffected by redirections!), specify `{Visitless}`.
+
+To make it so that a trigger's prompt is deleted when it is ignored/not executed, specify `{Vanishing}`.
 
 ### Prompt Overwrites
 
 Prompt overwrites are marked by vertical brackets: ||.
 
-By default a prompting trigger will generate a prompt message code name and look it up in the prompt message file. To overwrite the default behaivor, you can specify the name of a custom prompt. For example, `|custom.prompt.1|` would look up the prompt text for `custom.prompt.1`.
+By default, a prompting trigger will generate a prompt message code name and look it up in the prompt message file. To overwrite the default behavior, you can specify the name of a custom prompt. For example, `|custom.prompt.1|` would look up the prompt text for `custom.prompt.1`.
 
 To additionally mark a prompt as silent (which skips the ping), you may specify `silent:` before the prompt name, e.g. `|silent:custom.prompt.1|`.
 
 ## Conditions
 
-Conditions are a part of the formalization that can be used in several places (Restrictions and Process/Evaluate) to limit execution of abilities to certain situations.
+Conditions are a part of the formalization that can be used in several places (Restrictions and Process/Evaluate) to limit the execution of abilities to certain situations.
 
 The following conditions exist:
 
 Name | Syntax | Explanation
 --- | --- | ---
-Equality | `{Any} is {Any}` | Compares two values with each other, passes if equal.
-Less/Greater Than | `{Number} [>\|<] {Number}` | Compares two numbers with each other, passes if the first value is greater/less than the second.
+Equality | `{Any} is {Any}` | Compares two values with each other, passes if equal. When comparing lists, equality is only checked for the first value of each list (e.g. [a,b] = [a,c] will pass).
+Less/Greater Than | `{Number} [>\|<] {Number}` | Compares two numbers with each other, passes if the first value is greater/less than the second. When comparing lists, the first value of each list is used.
 No Equality | `{Any} is not {Any}` | Compares two values with each other, passes if different.
 Existence | `{Any} exists` | Checks if a specified selector evaluates to at least one element.
-Attribute | `{Actor} has {Attribute}` | Checks if a specifed actor has a specified attribute.
+Attribute | `{Actor} has {Attribute}` | Checks if a specified actor has a specified attribute.
 Membership | `{Player} is in {Group}` | Checks if a specified player is in a specified group.
 Selector | `{Any} is part of {Any}` | Checks if a specified element is part of another selector.
 Inversion | `not (<Condition>)` | Passes if the specified condition is false.
@@ -769,12 +796,12 @@ Attributes are acting active game elements that are applied onto another game el
 
 Attributes come in three categories:  
 • Role Type Attribute: Role type attributes are a type of attribute which represent an additional role applied to a player. For most purposes this additional role acts as a normal role would, making it an acting attribute.  
-• Custom Type Attribute: Custom type attributes are attributes which are formalized in a passive attribute. In there, formalization defines certain acting behaivor for the attribute.  
-• Default Attributes: The remaining attribute types are fully "built-in" to the bot and cover things such as disguises and vote manipulations as well as many more. While these attributes support all the fields of the other attribute types, they "choose" to not use any features which would qualify them as an "acting" game element and can thus be considered to be non-acting. All their functionality is built-in to the various abilities (see [abilities](#abilities))  
+• Custom Type Attribute: Custom type attributes are attributes which are formalized in a passive attribute. In there, formalization defines certain acting behavior for the attribute.  
+• Default Attributes: The remaining attribute types are fully "built-in" to the bot and cover things such as disguises and vote manipulations as well as many more. While these attributes support all the fields of the other attribute types, they "choose" not to use any features which would qualify them as an "acting" game element and can thus be considered to be non-acting. All their functionality is built into the various abilities (see [abilities](#abilities))  
 
 The different types of attributes are explained in more detail in their respective ability sections.
 
-Attributes can be defined to last forever, or to only be temporary. This is achieved through an attribute duration which can be passed in most abilities that create attributes. Some abilities have preset durations for their attributes, and some have default values that can be overwritten. This is explained in detail for each ability in their respective sections.
+Attributes can be defined to last forever or to only be temporary. This is achieved through an attribute duration, which can be passed in most abilities that create attributes. Some abilities have preset durations for their attributes, and some have default values that can be overwritten. This is explained in detail for each ability in their respective sections.
 
 The following ability durations exist:
 
@@ -797,15 +824,15 @@ Name | Explanation
 Abilities are used by all active game elements to take action in a game. While some abilities are unique, there are three major categories of abilities:
 - Attribute Appliers: Many abilities apply an attribute - the attribute then takes care of the main impact of the ability.
 - Game Action: Abilities of this type update some part of the game (besides attributes) directly.
-- Game Logic: Abilities of this type don't directly affect the game, instead they are used in combination with other abilities to determine how those abilities are executed.
+- Game Logic: Abilities of this type don't directly affect the game, instead, they are used in combination with other abilities to determine how those abilities are executed.
 
 ### Killing
 
-**Summary:** Killing is a Game Logic type action - it can modify the aliveness status of a player. By default, killing abilities are queued up and executing at the very end of a trigger. For example, a player that is killed during an "End Night" trigger may still execute their own "End Night" ability, even if their kill is queued up in the same trigger before their ability was triggered. 
+**Summary:** Killing is a Game Logic type action - it can modify the aliveness status of a player. By default, killing abilities are queued up and executed at the very end of a trigger. For example, a player that is killed during an "End Night" trigger may still execute their own "End Night" ability, even if their kill is queued up in the same trigger before their ability was triggered. 
 
 When a player is killed to death, they are eliminated from the game. If they are killed to banishment, they may still participate as a ghost. Should the dying player be the last owner of a group, the group is disbanded. 
 
-**Attributes:** Killing abilities are affected by defense and absences attributes that match the subtype of the killing ability. The killing ability checks for defense and absences attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion. 
+**Attributes:** Killing abilities are affected by defense and absence attributes that match the subtype of the killing ability. The killing ability checks for defense and absence attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion. 
 
 **Visits:** When killing another player, a visit to that player occurs.
 
@@ -834,7 +861,7 @@ Target | Player | First target of the ability
 <tr><td>True Banish</td><td><code>True Banish {Player}</code></td></tr>
 </tbody></table>
 
-**Triggers:** The killing ability will emit the "On Defense" trigger if an defense is used to evade a killing ability, as well as the matching specific variant (On Absence Defense, On Active Defense, On Passive Defense, On Partial Defense, On Recruitment Defense). Additionally upon a successful killing (i.e. not just the queuing, but also the successful execution), the triggers listed in the table above are executed.
+**Triggers:** The killing ability will emit the "On Defense" trigger if a defense is used to evade a killing ability, as well as the matching specific variant (On Absence Defense, On Active Defense, On Passive Defense, On Partial Defense, On Recruitment Defense). Additionally, upon a successful killing (i.e. not just the queuing, but also the successful execution), the triggers listed in the table above are executed.
 
 ### Investigating
 
@@ -846,7 +873,7 @@ Target | Player | First target of the ability
 
 **Redirections:** The target of all investigating subtypes can be affected by redirections, though the feedback (if it mentions the target) will not be affected by that.
 
-**Success:** Most subtypes are always succesful (unless obstructed), exceptions are listed under subtypes.
+**Success:** Most subtypes are always successful (unless obstructed), exceptions are listed under subtypes.
 
 **Feedback:** 
 
@@ -880,29 +907,188 @@ Player Count | `Investigate {Player} Count` | The amount of players in a selecto
 
 **Triggers:** There are no triggers associated with Investigating.
 
+### Targeting
+
+**Summary:** Targeting is an extremely basic Game Action that updates the current acting element's target field, a field present for every acting element. Elements can store a variety of values into their target field (though they are limited to storing a single value, and cannot store a list). An acting element can retrieve its own current target value through the `@Target` selector, though it may also be retrieved through property access.
+
+**Attributes:** There are no attribute interactions specific to targeting.
+
+**Visits:** A visit occurs for the `target` subtype.
+
+**Redirections:** The `target` subtype may be affected by redirections.
+
+**Success:** Besides obstructions, targeting is always successful, unless there is a syntax error or the target is invalid. Furthermore, the ability will fail when attempting to target more than one value.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | The selected target (`target` subtype)
+
+**Subtypes:** 
+
+Subtype | Syntax | Function
+--- | --- | ---
+Target | `Target {*} ({**})` | Sets a players target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option. The former must be a selector of matching type.
+Untarget | `Untarget` | Removes the player's target.
+
+**Triggers:** There are no triggers associated with targeting.
+
+### Disguising
+
+**Summary:** Disguising is an Attribute Applier type action that applies a disguise attribute to another player. Disguises affect the outcome of [Investigating](#investigating) abilities.
+
+**Attributes:** Disguising creates disguise attributes. Each disguise attribute stores a role and the strength of the disguise. Disguises must store a valid role. For more info, see [Investigating](#investigating).
+
+Property | Value
+--- | ---
+Attribute Type | `disguise`
+(1) Disguise Role | `{Role}` 
+(2) Disguise Strength | `[weak\|strong]`
+
+Disguises result in an investigating ability seeing another role besides what they would usually see. This can also affect role adjacent results such as a team investigating - in this case the disguise's team is seen.
+
+Whenever a disguise is used to affect an investigation, an attribute usage is tracked.
+
+**Visits:** Disguising causes a visit to the player getting disguised.
+
+**Redirections:** Disguisings may be redirected.
+
+**Success:** Besides obstructions, disguising is always successful.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
+**Subtypes:** 
+
+Subtype | Syntax
+--- | ---
+Weakly | `Weakly Disguise {Player} as {Role} {(Duration?)}`
+Strongly | `Strongly Disguise {Player} as {Role} {(Duration?)}`
+
+**Triggers:** There are no triggers associated with targeting.
+
+### Protecting
+
+**Summary:** Protecting is an Attribute Applier type action that applies a defense or absence attribute to another player. Defenses/Absences affect the outcome of [Killing](#killing) abilities.
+
+**Attributes:** Protecting creates defense/absence attributes. Each defense/absence attribute stores several properties defining which killings they defend from. When a killing occurs, first defenses are filtered based on their properties to find which apply to the current killing. Then the killing ability checks for defense and absence attributes in the following order: Absence -> Active Defense -> Passive Defense -> Partial Defense -> Recruitment Defense. The first matching attribute that is found is used for the evasion.
+
+Defense and Absence attributes are fairly similar, with the difference that the Absence stores an absence location instead of a defense subtype.
+
+Property | Value
+--- | ---
+Attribute Type | `defense`
+(1) Defense Type (Defense Attribute)<br>(1) Absence Location (Absence Attribute) | `[active\|passive\|partial\|recruitment]`<br>`<Source Reference>`
+(2) Killing Subtype Filter | `[attacks\|kills\|lynches\|attacks_lynches\|all\|banishments]`
+(3) Selector Filter | `{Player}`
+(4) Phase Filter | `[day\|night\|all]`
+
+The values in the attribute correspond to the values set in the protecting ability; for a list of all possible syntax variants, see below. Each killing goes through the following checks:  
+- Does the subtype of the killing match an allowed killing subtype? For this, the following killing subtypes are allowed in the following killing subtype filters:
+  - `attack`: can be defended against with `attacks`, `kills`, `attacks_lynches` and `all` filters.
+  - `kill`: can be defended against with `kills` and `all` filters.
+  - `lynch`: can be defended against with `lynches`, `attacks_lynches` and `all` filters.
+  - `banish`: can be defended against with `banishments` filters.
+  - `true kill` / `true banish`: can not be protected against.
+- Does the player executing the killing match the selector filter? For this the defense stores a player type selector, which is parsed at runtime when the defense is evaluated and checks if the killing player occurs within this selector (For example, the selector `@(Attr:Marker)` may be stored. This is then resolved at execution time of the defense and it is checked if the killing player occurs within this selector).
+- Is the killing occurring in an allowed phase? Some defenses only work at `day` or `night`, while others work in `all` phases.
+
+Absences are evaluated just like defenses are and work extremely similarly to defenses with one exception: whenever a killing is used, all absences are checked - any absences where the absence location is set to the player that is currently getting hit by the killing, will be affected by the killing too. Both killings are executed separately. For example, Player A may be absent at Player B when Player B is getting attacked. That means Player A will be attacked as well, however, both attacks are still executed individually and may also be affected by other defenses.
+
+Absences are not recursive. That means that a Player C who is absent at Player A, will _not_ get attacked by the attack on Player B, which is affecting Player A.
+
+Players may be absent at non-player locations (e.g. at a public channel), however in that case there is no chance to get attacked/killed through the absence, as non-player locations can not be targeted by killings.
+
+Whenever a defense or absence is used to evade an attack, an attribute usage is tracked.
+
+**Visits:**  When applying a defense/absence, a visit occurs to the target. When applying an absence __NO__ visit occurs to the absence location \[note: this may be unintentional\].
+
+**Redirections:** Protecting may be redirected. For the absence subtype, both the absence location and the target of the defense may be redirected.
+
+**Success:** Besides obstructions, protecting is always successful. The absence subtype will additionally fail if the specified absence location yields more than a single value.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
+**Subtypes:** 
+
+There are 4 basic subtypes and the special absence subtype. There are several syntax variants that are the same for all the subtypes, so they are not individually listed. Instead, `<ProtectingSubtype>` may be substituted with one of the following:
+- `Active Defense`
+- `Passive Defense`
+- `Partial Defense`
+- `Recruitment Defense`
+- `Absence at {Location}`
+
+Allowed values for `<KillingSubtypeFilter>` are the following (for functionality, see above):
+- `Attacks`
+- `Kills`
+- `Lynches`
+- `Attacks & Lynches`
+- `All`
+- `Banishments`
+
+Syntax | Killing Subtype Filter Value | Selector Filter Value | Phase Filter Value
+--- | --- | --- | ---
+``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `[Day\|Night]`
+``Protect {Player} from `<KillingSubtypeFilter>` by {Player} through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `{Player}` | `All`
+``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `[Day\|Night]`
+``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `All`
+
+**Triggers:** When a defense is used, two triggers are run for the player who created the defense (This means a player may apply a defense to another player and use this trigger to get notified when that player's defense is used). Each defense usage triggers the `On Defense` trigger, and then additionally, depending on subtype, one of the following: `On Absence Defense`, `On Active Defense`, `On Passive Defense`, `On Partial Defense` or `On Recruitment Defense`.
+
+
+
+
 ### Ability Template
 
 **Summary:** 
 
-**Attributes:** 
+**Attributes:** There are no attribute interactions specific to targeting.
 
 **Visits:** 
 
-**Redirections:** 
+**Redirections:** The target of a ABILITY may be redirected.
 
-**Success:** 
+**Success:** Besides obstructions, ABILITY is always successful.
 
 **Feedback:**
 
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
 **Subtypes:** 
 
-**Triggers:** 
+Subtype | Syntax | Feedback
+--- | --- | ---
+
+**Triggers:** There are no triggers associated with targeting.
+
+
+
+
+
  
 ## Game Element Formats
 
 ### Roles Format
 
-Roles are the main holder of WWRF information. Their formalization is formatted as follows:
+Roles are the main holders of WWRF information. Their formalization is formatted as follows:
 
 ```
 **<Role Name>** | <Role Group> <Role Category> <Role Team>
