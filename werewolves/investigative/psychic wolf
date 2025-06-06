@@ -12,6 +12,7 @@ Inherit: `Pack Lycan`
 Immediate Night: |psychic_wolf.1|
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate: 
+    ‣ @Result is `Failure`: `Investigation failed`
     ‣ @Result is @SecondarySelection[role]: `@Selection as @SecondarySelection: Correct`
     ‣ Otherwise: `@Selection as @SecondarySelection: Incorrect`
 
