@@ -1,6 +1,6 @@
 **Psychopath** | Unaligned Investigative
 __Basics__
-At the start of the game, the Psychopath is given a list with one quarter of the game's players (rounded up) on it. If all players on the list are dead, and the Psychopath is still alive, the Psychopath wins.
+At the start of the game, the Psychopath is given a list with one third of the game's players (rounded up) on it. If all players on the list are dead, and the Psychopath is still alive, the Psychopath wins.
 __Details__
 When the Psychopath wins, the Psychopath ascends and stops playing. The game continues. The Psychopath can’t win when they are dead. 
 The Psychopath's list will always contain at least one player from every team that has at least two players. Which players are on the list is determined arbitrarily.
@@ -9,12 +9,12 @@ Additionally, the Psychopath may choose to either investigate or weakly disguise
 The Psychopath is nonaligned.
 
 __Simplified__
-The Psychopath has a list with one quarter of all the players on it. If all players on that list are dead, the Psychopath wins and stops playing. The game continues.
+The Psychopath has a list with one third of all the players on it. If all players on that list are dead, the Psychopath wins and stops playing. The game continues.
 The Psychopath is strongly disguised as a role of their choosing. Additionally, they may either investigate or weakly disguise others each day.
 
 __Formalized__
 Starting:
-  • Set Counter to ceil $total/4
+  • Set Counter to ceil $total/3
   • Apply `PsychopathList` to @Self
   • For Each &All:
     ‣ &Ind->Members->Count > 1:
