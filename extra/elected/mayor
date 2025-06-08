@@ -14,7 +14,7 @@ The Mayor gains an additional secret channel, which is reused for any subsequent
 __Simplified__
 The Mayor is elected before the reporter and the guardian. They are able to post in #story_time.
 When more than two-thirds of players remain alive, they may decide that a second player will be lynched during the next day.
-When there are two-thirds of fewer players still alive, they instead get 2 votes on the public polls.
+When two-thirds of the total players or fewer are still alive, they instead get 2 votes on the public polls.
 
 __Formalized__
 Starting:
