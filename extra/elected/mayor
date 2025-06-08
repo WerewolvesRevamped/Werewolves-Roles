@@ -17,9 +17,7 @@ When more than two-thirds of players remain alive, they may decide that a second
 When two-thirds of the total players or fewer are still alive, they instead get 2 votes on the public polls.
 
 __Formalized__
-Starting:
-  • Set Counter to ceil $total/3 for @ThisAttr
-  • Increment Counter by ceil $total/3 for @ThisAttr
+Starting: Set Counter to ceil $total/1.5 for @ThisAttr
 Passive End Phase: [Attribute: @ThisAttr lacks `Marker`, Condition: not ($living > @ThisAttr->Counter)]
   • Announce `Mayor may no longer decree double lynches`
   • Apply `Marker` to @ThisAttr
