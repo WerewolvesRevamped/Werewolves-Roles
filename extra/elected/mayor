@@ -20,7 +20,7 @@ __Formalized__
 Starting:
   • Set Counter to ceil $total/3
   • Increment Counter by ceil $total/3
-Passive: [Attribute: lacks `Marker`, Condition: not ($alive > @Self->Counter)]
+Passive: [Attribute: lacks `Marker`, Condition: not ($living > @Self->Counter)]
   • Announce `Mayor may no longer decree double lynches`
   • Apply `Marker` to @Self
 Immediate Night: Add `Lynch` Poll ⟨$living>@Self->Counter ⇒ x1⟩
