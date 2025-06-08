@@ -20,7 +20,7 @@ __Formalized__
 Starting:
   • Set Counter to ceil $total/3 for @ThisAttr
   • Increment Counter by ceil $total/3 for @ThisAttr
-Passive: [Attribute: lacks `Marker`, Condition: not ($living > @ThisAttr->Counter)]
+Passive End Phase: [Attribute: lacks `Marker`, Condition: not ($living > @ThisAttr->Counter)]
   • Announce `Mayor may no longer decree double lynches`
   • Apply `Marker` to @ThisAttr
 Immediate Night: Add `Lynch` Poll ⟨$living>@ThisAttr->Counter ⇒ x1⟩
