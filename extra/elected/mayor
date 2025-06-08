@@ -18,13 +18,13 @@ When two-thirds of the total players or fewer are still alive, they instead get 
 
 __Formalized__
 Starting:
-  • Set Counter to ceil $total/3
-  • Increment Counter by ceil $total/3
-Passive: [Attribute: lacks `Marker`, Condition: not ($living > @Self->Counter)]
+  • Set Counter to ceil $total/3 for @ThisAttr
+  • Increment Counter by ceil $total/3 for @ThisAttr
+Passive: [Attribute: lacks `Marker`, Condition: not ($living > @ThisAttr->Counter)]
   • Announce `Mayor may no longer decree double lynches`
-  • Apply `Marker` to @Self
-Immediate Night: Add `Lynch` Poll ⟨$living>@Self->Counter ⇒ x1⟩
-Passive Start Day: Manipulate @Self's `special public voting power` to `1` (~Phase) ⟨$living≤@Self->Counter ⇒ x1⟩
+  • Apply `Marker` to @ThisAttr
+Immediate Night: Add `Lynch` Poll ⟨$living>@ThisAttr->Counter ⇒ x1⟩
+Passive Start Day: Manipulate @Self's `special public voting power` to `1` (~Phase) ⟨$living≤@ThisAttr->Counter ⇒ x1⟩
 End Phase: Revoke @ThisAttr from @Self {Vanishing} |silent:granting.resign|
 
 __Card__
