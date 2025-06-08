@@ -8,7 +8,7 @@ The Mayor's extra vote cannot be nullified, stolen, or removed under any circums
 If the Mayor would normally have a negative vote, the extra vote becomes a negative vote too.
 The Mayor may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
 Choosing a double lynch is an immediate action.
-If the number of living players becomes two-thirds of all players or fewer, the Mayor immediately gains the extra vote and loses the ability to choose whether there is an additional lynch. If this happens after they have chosen to have an additional lynch, but before the lynch poll occurs, the additional poll will still be created.
+If the number of living players are no more than two-thirds of the total players, the Mayor immediately gains the extra vote and loses the ability to choose whether there is an additional lynch. If this happens after they have chosen to have an additional lynch, but before the lynch poll occurs, the additional poll will still be created.
 The Mayor gains an additional secret channel, which is reused for any subsequent Mayors.
 
 __Simplified__
