@@ -1,7 +1,7 @@
 **Mayor** | Extra Elected
 __Basics__
 The Mayor can post in #story_time.
-When only two-thirds or fewer players remain alive, the Mayor receives an extra vote in polls.
+When the number of living players are two-thirds of the total players or fewer, the Mayor receives an extra vote in polls.
 When there are more living players than that, each night, the Mayor instead chooses whether a second lynch will take place during the next day.
 __Details__
 The Mayor's extra vote cannot be nullified, stolen, or removed under any circumstances.
