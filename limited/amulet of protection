@@ -24,7 +24,7 @@ End Day: {Forced: @Self} |amulet.1|
   • Otherwise:
     ‣ Transfer @ThisAttr from @Self to @Selection
     ‣ Conversation Reset
-Passive: [Condition: not (@(Role:Amulet-Crafter) exists)]
+Passive: [Condition: not (@(Role:Amulet-Crafter) exists)] {Visitless}
   • Revoke @ThisAttr from @Self
 
 __Card__
