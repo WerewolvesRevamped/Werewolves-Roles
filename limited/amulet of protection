@@ -21,7 +21,7 @@ Passive Start Night:
 End Day: {Forced: @Self} |amulet.1|
   • Conversation Reset
   • @Selection has `HeldAmulet`: True Kill @Self
-  • Otherwise: Transfer `Amulet of Protection` from @Self to @Selection
+  • Otherwise: Transfer @ThisAttr from @Self to @Selection
 
 __Card__
 Created by the amulet crafter, the Amulet of Protection protects its holder.
