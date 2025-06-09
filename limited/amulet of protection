@@ -20,7 +20,7 @@ Passive Start Night:
   • Obstruct @Self (~Phase)
 End Day: {Forced: @Self} |amulet.1|
   • Conversation Reset
-  • @Target has `HeldAmulet`: True Kill @Self
+  • @Selection has `HeldAmulet`: True Kill @Self
   • Otherwise: Transfer `Amulet of Protection` from @Self to @Selection
 
 __Card__
