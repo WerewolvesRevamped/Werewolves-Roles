@@ -14,7 +14,9 @@ When the Greater Coyote dies, the coyotes are disbanded and join the wolfpack in
 __Formalized__
 Unique Role
 Inherit: `Coyotes`
-Starting: Apply `CoyoteTrigger` to &Werewolf
+Starting:
+  • Apply `CoyoteTrigger` to &Werewolf
+  • Join #Coyotes as `Owner`
 Passive Start Night: &Werewolf has `CoyoteTrigger`: Create `Coyotes` Poll in #Coyotes [Temporal: Night 2+]
 On Poll Closed: Attack @Winner 
 
