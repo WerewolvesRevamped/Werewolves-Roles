@@ -18,7 +18,7 @@ Passive Start Night:
   • Protect @Self from `Attacks` through Passive Defense during Night (~NextNight)
   • Apply `HeldAmulet` to @Self
   • Obstruct @Self (~NextNight)
-End Day: {Forced: @Self}
+End Day: {Forced: @Self} |amulet.1|
   • Conversation Reset
   • @Target has `HeldAmulet`: True Kill @Self
   • Otherwise: Transfer `Amulet of Protection` from @Self to @Selection
