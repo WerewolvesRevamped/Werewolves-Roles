@@ -18,12 +18,14 @@ Passive Start Night:
   • Apply `HeldAmulet` to @Self
   • Protect @Self from `Attacks` through Passive Defense during Night (~Phase)
   • Obstruct @Self (~Phase)
-End Day: [Condition: @(Role:Amulet-Crafter) exists] {Forced: @Self} |amulet.1|
+End Day: {Forced: @Self} |amulet.1|
   • Conversation Reset
   • @Selection has `HeldAmulet`: True Kill @Self
   • Otherwise:
     ‣ Transfer @ThisAttr from @Self to @Selection
     ‣ Conversation Reset
+Passive: [Condition: not (@(Role:Amulet-Crafter) exists)]
+  • Revoke @ThisAttr from @Self
 
 __Card__
 Created by the amulet crafter, the Amulet of Protection protects its holder.
