@@ -18,7 +18,7 @@ Passive Start Night:
   • Apply `HeldAmulet` to @Self
   • Protect @Self from `Attacks` through Passive Defense during Night (~Phase)
   • Obstruct @Self (~Phase)
-End Day: {Forced: @Self} |amulet.1|
+End Day: [Condition: @(Role:Amulet-Crafter) exists] {Forced: @Self} |amulet.1|
   • Conversation Reset
   • @Selection has `HeldAmulet`: True Kill @Self
   • Otherwise:
