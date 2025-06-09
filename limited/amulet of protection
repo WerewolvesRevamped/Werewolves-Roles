@@ -16,8 +16,8 @@ If you fail to pass the amulet to a player who has not previously had the amulet
 __Formalized__
 Starting:
   • Protect @Self from `Attacks` through Passive Defense during Night (~NextNight)
-  • Obstruct @Self (~NextNight)
   • Apply `HeldAmulet` to @Self
+  • Obstruct @Self (~NextNight)
 End Day: {Forced: @Self}
   • Conversation Reset
   • @Target has `HeldAmulet`: True Kill @Self
