@@ -14,7 +14,7 @@ As long as you hold the amulet, you cannot die by attacks during the night, but 
 If you fail to pass the amulet to a player who has not previously had the amulet, the amulet shatters, and you die.
 
 __Formalized__
-Starting:
+Passive Start Night:
   • Protect @Self from `Attacks` through Passive Defense during Night (~NextNight)
   • Apply `HeldAmulet` to @Self
   • Obstruct @Self (~NextNight)
