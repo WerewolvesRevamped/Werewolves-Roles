@@ -19,8 +19,8 @@ Immediate Night: |investigating.role.1|
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
     ‣ @Result1 is `Success`: `@Selection is a Threat`
-    ‣ @Result2 is `Killing`[category]: `@Selection has a Threatening Presence`
-    ‣ Otherwise: `@Selection does not have a Threatening Presence`
+    ‣ @Result2 is `Killing`: `@Selection is a Threat`
+    ‣ Otherwise: `@Selection is not a Threat`
 
 __Card__
 The Keen Coyote has a very highly developed eye for detail, being able to make accurate character judgements.
