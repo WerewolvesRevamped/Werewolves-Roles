@@ -18,6 +18,7 @@ Immediate Night: |investigating.role.1|
     ‣ Attribute Investigate @Selection for `Lycan` (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
+    ‣ @Result2 is `Failure`: `Investigation failed`
     ‣ @Result1 is `Success`: `@Selection is a Threat`
     ‣ @Result2 is `Killing`: `@Selection is a Threat`
     ‣ Otherwise: `@Selection is not a Threat`
