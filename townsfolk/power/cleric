@@ -16,7 +16,7 @@ Immediate Night: [Quantity: 1, Condition: not (@(AttrRole:Mayor) exists), Tempor
     • Protect @Self from `Attacks` through Active Defense (~Phase)
     • Target @Selection
 Passive Start Day: Process: Untarget
-On Active Defense: Reveal `@Target survived because they were blessed` to @AttackLocation
+On Active Defense: Reveal `@Attacked survived because they were blessed` to @AttackLocation
 
 __Card__
 When all hope seems lost, the Cleric can once protect some of town.
