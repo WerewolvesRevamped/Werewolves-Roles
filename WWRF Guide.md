@@ -411,7 +411,7 @@ Selector | Meaning
 @VisitSubtype | The ability type of a visit in `On Visited`.
 ``​`<AbilityType>`​`` | The name of an ability type.
 
-The following ability types exist: killing, investigating, targeting, disguising, protecting, applying, redirecting, manipulating, whispering, joining, granting, loyalty, obstructing, poll, announcement, changing, choices, ascend, descend, disband, counting, reset, cancel, feedback, success, failure, log, process_evaluate, abilities, emit, storing, displaying.
+The following ability types exist: killing, investigating, targeting, disguising, protecting, applying, redirecting, manipulating, whispering, joining, granting, loyalty, obstructing, poll, announcement, changing, choices, ascend, descend, disband, counting, reset, cancel, feedback, success, failure, log, process_evaluate, abilities, emit, storing, displaying, win, locking, executing.
 
 ### Ability Subtype Type
 
@@ -461,6 +461,7 @@ Storing | ⛔
 Displaying | Create<br>Change
 Win | ⛔
 Locking | Lock<br>Unlock
+Executing | ⛔
 
 ### Ability Category Type
 
