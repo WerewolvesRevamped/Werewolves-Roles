@@ -14,8 +14,6 @@ __Formalized__
 Immediate Night: [Quantity: 1, Condition: not (@(AttrRole:Mayor) exists), Temporal: Night 2+]
     • Protect @Selection from `Attacks` through Active Defense (~Phase)
     • Protect @Self from `Attacks` through Active Defense (~Phase)
-    • Target @Selection
-Passive Start Day: Process: Untarget
 On Active Defense: Reveal `@Attacked survived because they were blessed` to @AttackLocation
 
 __Card__
