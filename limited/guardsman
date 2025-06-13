@@ -16,8 +16,9 @@ Immediate Night: Protect @Self from `Attacks` through Passive Defense (~Phase) [
 On Passive Defense: 
   • Attack @Attacker
   • Learn `You Counterattacked`
-  • @Attacker->Alignment is `Townsfolk`: Apply `Marker` to @Self
-  • @Attacker->Alignment is `Townsfolk`: Reveal `You killed a townsfolk` to @Self
+  • @Attacker->Alignment is `Townsfolk`:
+    ‣ Apply `Marker` to @Self
+    ‣ Reveal `You killed a townsfolk` to @Self
 Passive End Day: Increment Counter [Attribute: has `Marker`]
 Passive End Night: True Kill @Self [Condition: @Self->Counter is 1]
 
