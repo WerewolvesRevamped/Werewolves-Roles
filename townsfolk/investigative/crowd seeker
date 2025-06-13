@@ -15,6 +15,7 @@ Immediate Night:
   • Action: ⟨x3⟩ |crowd_seeker.1|
   • Process: Role Investigate @Selection (SD, WD)
   • Evaluate:
+    ‣ @Result is `Failure`: `Investigation failed`
     ‣ @Result is @SecondarySelection[role]: `@Selection as @SecondarySelection[role]: Correct`
     ‣ Otherwise: `@Selection as @SecondarySelection[role]: Incorrect`
 

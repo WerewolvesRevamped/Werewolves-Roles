@@ -173,6 +173,7 @@ Selector | Meaning
 @TargetDead | The current player's target (even if the target is dead).
 @Members | The current group's or team's members.
 @Attacker | A player responsible for a killing in `On Death`, `On Killed`, `On Banishment`, `On Banished` and variants.
+@Attacked | A player getting attacked in `On Defense` and variants.
 @This | Refers to the player for whom a complex trigger featuring a target (e.g. `On <Target> Death`) triggered for.
 @Winner | Refers to the winner of a poll in `On Poll Closed`.
 @ActionTarget | Refers to the target of an action in `On Action` and variants.
@@ -410,7 +411,7 @@ Selector | Meaning
 @VisitSubtype | The ability type of a visit in `On Visited`.
 ``​`<AbilityType>`​`` | The name of an ability type.
 
-The following ability types exist: killing, investigating, targeting, disguising, protecting, applying, redirecting, manipulating, whispering, joining, granting, loyalty, obstructing, poll, announcement, changing, choices, ascend, descend, disband, counting, reset, cancel, feedback, success, failure, log, process_evaluate, abilities, emit, storing, displaying.
+The following ability types exist: killing, investigating, targeting, disguising, protecting, applying, redirecting, manipulating, whispering, joining, granting, loyalty, obstructing, poll, announcement, changing, choices, ascend, descend, disband, counting, reset, cancel, feedback, success, failure, log, process_evaluate, abilities, emit, storing, displaying, win, locking, executing.
 
 ### Ability Subtype Type
 
@@ -460,6 +461,7 @@ Storing | ⛔
 Displaying | Create<br>Change
 Win | ⛔
 Locking | Lock<br>Unlock
+Executing | ⛔
 
 ### Ability Category Type
 
@@ -678,7 +680,7 @@ On {Player} Banishment | Triggers when a player from a specific selector is bani
 On Banished | Triggers when the current player is banished?? Do not use. | @Attacker<br>@DeathType<br>@AttackSource
 On {Player} Banished | Triggers when a player from a specific selector is banished?? Do not use. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
 On Lynch | Triggers when the current played is lynched. | @Attacker<br>@DeathType<br>@AttackSource
-On Defense<br>On Active Defense<br>On Passive Defense<br>On Partial Defense<br>On Recruitment Defense<br>On Absence Defense | Triggers when one of the current player's defenses of the specified (or any) type is used. Performs a Source Name match - this requires the defense to have been created by the same role the trigger is in. | @Attacker<br>@DeathType<br>@AttackSource
+On Defense<br>On Active Defense<br>On Passive Defense<br>On Partial Defense<br>On Recruitment Defense<br>On Absence Defense | Triggers when one of the current player's defenses of the specified (or any) type is used. Performs a Source Name match - this requires the defense to have been created by the same role the trigger is in. This triggers even if the defense is applied to another player. | @Attacker<br>@Attacked<br>@DeathType<br>@AttackSource
 On Visited<br>On Visited [{AbilityType}]<br>On Visited [{AbilitySubtype}]<br>On Visited [!{AbilityType}]<br>On Visited [!{AbilitySubtype}] | Triggers when the current player is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@SecondVisitParameter<br>@VisitType<br>@VisitSubtype 
 On {Player} Visited<br>On {Player} Visited [{AbilityType}]<br>On {Player} Visited [{AbilitySubtype}]<br>On {Player} Visited [!{AbilityType}]<br>On {Player} Visited [!{AbilitySubtype}] | Triggers when a player from a specific selector is visited. Can be filtered to limit it to or to exclude specific ability types or subtypes. | @Visitor<br>@VisitParameter<br>@SecondVisitParameter<br>@VisitType<br>@VisitSubtype<br>@This
 On Action<br>On Action [{AbilityType}]<br>On Action [{AbilitySubtype}]<br>On Action [!{AbilityType}]<br>On Action [!{AbilitySubtype}] | Triggers when the current player performs an action. Can be filtered to limit it to or to exclude specific ability types or subtypes. Performs a Source Name match - this requires the action to be performed from the same role the trigger is in. | @ActionTarget<br>@ActionResult<br>@ActionFeedback<br>@ActionAbilityType
