@@ -6,7 +6,7 @@ Additionally, they are granted an extra vote.
 __Details__
 The Monarch can *only* be elected once, usually this is during Day 0, but if no Monarch is elected, the election will reoccur until a Monarch is elected. After a Monarch is elected, there will not be any further Monarch elections for the remainder of the game. However, if the Monarch dies, the role is passed on to their heir. The Monarch must select another player as their heir; they can update this target once per phase, with 1 emergency change to be used whenever the Monarch wants. If no heir is selected, a random player is chosen. However, this only applies to the original Monarch; players who gain the Monarch role through the heir mechanic may opt to not select an heir.
 The heir is not aware of being selected by the Monarch.
-The heir's vote appears normally on votes: however, an additional vote is counted internally, and the total vote count in the vote results will be correct. This extra vote is a special vote that works as the Mayor's extra vote does-
+The heir's vote appears normally on votes: however, an additional vote is counted internally, and the total vote count in the vote results will be correct. This extra vote is a special vote that works as the Mayor's extra vote does.
 When the heir becomes the new Monarch, they are *not* revealed.
 Picking an heir is an immediate ability.
 
