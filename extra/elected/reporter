@@ -20,9 +20,9 @@ Passive Start Night: For Each @Dead:
 On @All Death:
   • Process: Apply `Reported` to @This (~Persistent)
   • Evaluate: Learn `@This - @This->OriginalRole`
-End Phase:
+End Phase: |silent:granting.resign|
   • Announce `@Self resigned as Reporter`
-  • Revoke @ThisAttr from @Self {Vanishing} |silent:granting.resign|
+  • Revoke @ThisAttr from @Self {Vanishing} 
 
 __Card__
 The Reporter is elected to find out the truth behind the dead.
