@@ -2,9 +2,9 @@
 __Basics__
 The Monarch is elected during Day 0.
 They may select a heir, who will inherit the Monarch role, should the Monarch die.
-Additionally, they are granted an extra vote.
+Additionally, the heir is granted an extra vote.
 __Details__
-The Monarch can *only* be elected once, usually this is during Day 0, but if no Monarch is elected, the election will reoccur until a Monarch is elected. After a Monarch is elected, there will not be any further Monarch elections for the remainder of the game. However, if the Monarch dies, the role is passed on to their heir. The Monarch must select another player as their heir; they can update this target once per phase, with 1 emergency change to be used whenever the Monarch wants. If no heir is selected, a random player is chosen. However, this only applies to the original Monarch; players who gain the Monarch role through the heir mechanic may opt to not select an heir.
+The Monarch can *only* be elected once, usually this is during Day 0, but if no Monarch is elected, the election will reoccur until a Monarch is elected. After a Monarch is elected, there will not be any further Monarch elections for the remainder of the game. However, if the Monarch dies, the role is passed on to their heir. The Monarch must select another player as their heir; they can update this target once per phase, with 1 emergency change to be used whenever the Monarch wants. If at any point no heir is selected, a random player is chosen. However, this only applies to the original Monarch; players who gain the Monarch role through the heir mechanic may opt to not select an heir.
 The heir is not aware of being selected by the Monarch.
 The heir's vote appears normally on votes: however, an additional vote is counted internally, and the total vote count in the vote results will be correct. This extra vote is a special vote that works as the Mayor's extra vote does.
 When the heir becomes the new Monarch, they are *not* revealed.
@@ -17,6 +17,7 @@ Additionally, that player is granted an extra vote.
 
 __Formalized__
 Starting: Apply `Heir` to @Selection (~Persistent) [Condition: @Selection is not @Self] {Forced: @Others} |monarch.1|
+Passive: Apply `Heir` to @All->RandomPlayer (~Persistent) [Condition: not (@(AttrSelf:Heir) exists)]
 Immediate: [Temporal: Night 1+, Condition: @Selection is not @Self] |silent:monarch.2|
   • Remove `Heir` from @(AttrSelf:Heir)
   • Apply `Heir` to @Selection (~Persistent)
