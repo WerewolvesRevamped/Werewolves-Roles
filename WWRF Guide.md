@@ -70,7 +70,7 @@ Game Elements are all the components that make up the game. This includes player
 We differentiate between active and passive game elements. Active elements can be modified, while passive elements remain static. Passive elements are what is defined in this repository, and active elements are instances of a passive element created during the game. Outside a game, only passive elements exist. Some game elements exist in both passive and active form.
 
 For example, the concept of a lynch poll, as defined in this repository, is a passive game element, whereas one specific lynch poll within a game is an active game element.
-Passive game elements store general information about the element (e.g. a role's description), whereas active elements store game data (e.g., a player's date).
+Passive game elements store general information about the element (e.g., a role's description), whereas active elements store game data (e.g., a player's date).
 
 Furthermore, we differentiate between acting active elements and non-acting active elements. Acting elements are those that are able to execute (i.e., create) abilities.
 
