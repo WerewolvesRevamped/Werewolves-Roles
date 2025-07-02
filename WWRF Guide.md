@@ -415,7 +415,7 @@ The following ability types exist: killing, investigating, targeting, disguising
 
 ### Ability Subtype Type
 
-Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first, followed by the type. Subtype that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True Kill Killing`).
+Ability Subtype type is a type that represents the exact ability subtype. This is made up as a combination of the ability subtype and the ability type (e.g. `Attack Killing`), with the subtype coming first, followed by the type. Subtypes that are comprised of multiple words must have their spaces replaced by `-`'s (e.g. `True-Kill Killing`).
 
 Selector | Meaning
 --- | ---
