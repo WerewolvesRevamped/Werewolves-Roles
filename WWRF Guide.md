@@ -31,6 +31,7 @@
   - [Null Type](#null-type)
   - [Phase Type](#phase-type)
   - [Duration Type](#duration-type)
+  - [Variable String Type](#variable-string-pseudo-type)
   - [Actor Pseudo-Type](#actor-pseudo-type)
   - [Any Pseudo-Type](#any-pseudo-type)
   - [Variables](#variables)
@@ -49,6 +50,7 @@
   - [Targeting](#targeting)
   - [Disguising](#disguising)
   - [Protecting](#protecting)
+  - [Applying](#applying)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -603,7 +605,7 @@ Selector | Meaning
 
 Null type is a special type that should not be used manually. When inferring the type of a target at runtime, but no target is set, a null type list with zero elements is instead returned. This is to ensure that abilities relying on a target gracefully fail instead of erroring. Null type always takes the form of an empty list.
 
-Technically null types also support property accesses, however each property access will simply return an empty list as well.
+Technically, null types also support property accesses, however each property access will simply return an empty list as well.
 
 ### Phase Type
 
@@ -617,6 +619,10 @@ Night \<Number\> | A night phase.
 ### Duration Type
 
 Duration type is a type only used by attribute applying abilities. Durations take the form of `~<Name>`. A full list of available attribute durations can be found in the [attribute section](#Attributes).
+
+### Variable String Pseudo-Type
+
+Variable String pseudo-type represents an arbitrary text that is sometimes the expected input. Can take any value, for example ``​`This is a text.`​``. [Variables](#variables) within this text are resolved.
 
 ### Actor Pseudo-Type
 
@@ -635,6 +641,7 @@ Variable | Meaning
 $total | Amount of players in the game.
 $living | Amount of living players.
 $phase | The current phase as a number.
+$phname | The current phase as a text.
 
 ## Sources
 
@@ -1050,6 +1057,45 @@ Syntax | Killing Subtype Filter Value | Selector Filter Value | Phase Filter Val
 ``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `All`
 
 **Triggers:** When a defense is used, two triggers are run for the player who created the defense (This means a player may apply a defense to another player and use this trigger to get notified when that player's defense is used). Each defense usage triggers the `On Defense` trigger, and then additionally, depending on subtype, one of the following: `On Absence Defense`, `On Active Defense`, `On Passive Defense`, `On Partial Defense` or `On Recruitment Defense`.
+
+### Applying
+
+**Summary:** Applying is an Attribute Applier type action that applies (or removes/changes) custom type attributes to another game element. While applying itself is a fairly basic action, custom type attributes can have a major impact on the game as they are acting game elements themselves, i.e. they may grant the game element they are applied to additional powers or may apply other effects onto it.
+
+**Attributes:** Applying creates custom type attributes. Custom type attributes are acting game elements that can store a target/counter/etc, however their basic attribute properties are the following:
+
+Property | Value
+--- | ---
+Attribute Type | `custom`
+(1) Custom Type | `<Attribute Name>`<br>The name of the passive attribute that this active attribute is instantiated from.
+(2) Value #1<br>(3) Value #2<br>(4) Value #3 | `{Any}`<br>These values may be used by the custom attribute to whatever fits their purpose.
+
+**Visits:** Applying causes a visit to the selected game element.
+
+**Redirections:** Applyings may be redirected.
+
+**Success:** Besides obstructions, Applying is almost always successful. An unapplying (remove applying) may fail when not a single attribute can be removed, a change applying may fail when the attribute that is to be changed cannot be found.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
+**Subtypes:** 
+
+There are 3 subtypes for applying. Add applying adds an attribute through a reference to a passive attribute. Remove applying and change applying, remove/change an already applied attribute through a reference to an active attribute.  
+When add applying up to three attribute parameters may be optionally specified. These will be stored into Value #1, Value #2, and Value #3, respectively. When setting these values initially, only Variable String input is supported, however when using change applying any type is supported and parsed.
+
+Subtype | Syntax
+--- | ---
+add | `Add {Attribute} to {Actor} {(Duration?)}`<br>`Add {Attribute} to {Actor} {(Duration?)} ({VariableString})`<br>`Add {Attribute} to {Actor} {(Duration?)} ({VariableString}, {VariableString})`<br>`Add {Attribute} to {Actor} {(Duration?)} ({VariableString}, {VariableString}, {VariableString})`
+remove | `Remove {Active Attribute} from {Actor}`
+change/change_parsed | ``Change {Active Attribute} value `[1\|2\|3]` to {Any} for {Actor}``<br>``Change {Active Attribute} value `[1\|2\|3]` to {Any} for {Actor}``
+
+**Triggers:** An add applying triggers a `Starting` trigger for the applied attribute. A remove applying triggers a `On Removal` trigger for the removed attribute.
 
 
 
