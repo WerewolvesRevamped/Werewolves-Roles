@@ -51,6 +51,7 @@
   - [Disguising](#disguising)
   - [Protecting](#protecting)
   - [Applying](#applying)
+  - [Redirecting](#redirecting)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -471,9 +472,7 @@ Ability Category type is a type for categories of abilities, but currently only 
 
 Selector | Meaning
 --- | ---
-@VisitType | The ability type of a visit in `On Visited`.
-@ActionAbilityType | The ability type of an ability in `On Action`.
-``​`<AbilityType>`​`` | The name of an ability type.
+``​`<AbilityType>`​`` | The name of an ability category.
 
 ### Number Type
 
@@ -1070,6 +1069,8 @@ Attribute Type | `custom`
 (1) Custom Type | `<Attribute Name>`<br>The name of the passive attribute that this active attribute is instantiated from.
 (2) Value #1<br>(3) Value #2<br>(4) Value #3 | `{Any}`<br>These values may be used by the custom attribute to whatever fits their purpose.
 
+Whenever a custom attribute's trigger is triggered an attribute usage is tracked.
+
 **Visits:** Applying causes a visit to the selected game element.
 
 **Redirections:** Applyings may be redirected.
@@ -1096,6 +1097,51 @@ remove | `Remove {Active Attribute} from {Actor}`
 change/change_parsed | ``Change {Active Attribute} value `[1\|2\|3]` to {Any} for {Actor}``<br>``Change {Active Attribute} value `[1\|2\|3]` to {Any} for {Actor}``
 
 **Triggers:** An add applying triggers a `Starting` trigger for the applied attribute. A remove applying triggers a `On Removal` trigger for the removed attribute.
+
+### Redirecting
+
+**Summary:** Redirecting is an Attribute Applier type actions that applies a redirection attribute to another player. Redirection attributes can change the target of other abilities. When an ability that is affected by redirections (which, by default, is all) is used on a player that has a redirection attribute applied, the target is changed to whomever the redirection points to.
+
+**Attributes:** Redirecting creates redirection attribute. Each redirection attribute stores the target to which abilities would be redirected to, a selector that filters which players are affected and an ability type, subtype or category that limits the redirection to certain abilities.
+
+Property | Value
+--- | ---
+Attribute Type | `redirection`
+(1) Target | `{Player}`
+(2) Affected Sources | `{Player}`
+(3) Affected Abilities | `{Ability Type\|Ability Subtype\|Ability Category}`
+
+Both Target and Affected Sources are stored as selectors and only resolved when a redirection is being evaluated. This means that when using a selector, the selected players may differ from when the attribute is getting created to when it is actually getting evaluated.
+
+Whenever a redirection attribute redirects an ability, an attribute usage is tracked.
+
+The whispering ability type cannot be affected by redirections.
+
+**Visits:** Applying a redirection does not cause a visit.
+
+**Redirections:** Applying a redirection cannot be redirected.
+
+**Success:** Redirecting is always successful, unless the abilities attempt to target several players.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | Target of the ability
+
+**Subtypes:**
+
+There are no subtypes of redirecting, but there are a few syntax variants.
+
+Syntax | Explanation
+--- | ---
+`Redirect {Ability Type\|Ability Subtype\|Ability Category} to {Player} {(Duration?)}` | Simplified syntax, affected sources defaults to `@All`.
+`Redirect {Ability Type\|Ability Subtype\|Ability Category} from {Player} to {Player} {(Duration?)}` | Full syntax
+
+**Triggers:** When an ability is redirected, a `On Redirect` trigger is triggered for the player that has the redirection applied.
+
 
 
 
