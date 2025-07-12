@@ -52,6 +52,7 @@
   - [Protecting](#protecting)
   - [Applying](#applying)
   - [Redirecting](#redirecting)
+  - [Manipulating](#manipulating)
 - [Game Element Formats](#game-element-formats)
   - [Roles Format](#roles-format)
   - [Teams Format](#teams-format)
@@ -1100,7 +1101,7 @@ change/change_parsed | ``Change {Active Attribute} value `[1\|2\|3]` to {Any} fo
 
 ### Redirecting
 
-**Summary:** Redirecting is an Attribute Applier type actions that applies a redirection attribute to another player. Redirection attributes can change the target of other abilities. When an ability that is affected by redirections (which, by default, is all) is used on a player that has a redirection attribute applied, the target is changed to whomever the redirection points to.
+**Summary:** Redirecting is an Attribute Applier type action that applies a redirection attribute to another player. Redirection attributes can change the target of other abilities. When an ability that is affected by redirections (which, by default, is all) is used on a player that has a redirection attribute applied, the target is changed to whomever the redirection points to.
 
 **Attributes:** Redirecting creates redirection attribute. Each redirection attribute stores the target to which abilities would be redirected to, a selector that filters which players are affected and an ability type, subtype or category that limits the redirection to certain abilities.
 
@@ -1142,7 +1143,43 @@ Syntax | Explanation
 
 **Triggers:** When an ability is redirected, a `On Redirect` trigger is triggered for the player that has the redirection applied.
 
+### Manipulating
 
+**Summary:** Manipulating is an Attribute Applier type action that applies a manipulation attribute. The ability is also known as 'Vote Manipulation' as manipulation attributes affect how many votes an affected player has on certain polls. Vote manipulations can be absolute or relative. When evaluating the amount of votes a player has, all manipulations are handeled in order. Absolute manipulations set the vote value to their number, while relative manipulations increment/decrement the number. This means, that if an absolute manipulation is applied before a relative manipulation, the latter will still be applied, but relative to the absolute value from the absolute manipulation.
+
+**Attributes:** Manipulating creates manipulation attributes. Manipulation attributes store whether they are a absolute/relative manipulation and a subtype, which can be either public, private or special. Public and private manipulations affect only public/private polls respectively. Special manipulations also only affect public polls, but are applied to the vote value after all public manipulations have been evaluated.
+
+Property | Value
+--- | ---
+Attribute Type | `manipulation`
+(1) Manipulation Type | `[absolute\|relaitve]`
+(2) Manipulation Subtype | `[public\|special\|private]`
+(3) Value | `<Number>`
+
+No attribute usages are tracked for manipulation attributes.
+
+**Visits:** Manipulating causes a visit to the selected player.
+
+**Redirections:** The target of a Manipulating may be redirected.
+
+**Success:** Besides obstructions, Manipulating is always successful.
+
+**Feedback:**
+
+Name | Type | Value
+--- | --- | ---
+Message | String | -
+Success | Success | -
+Target | Player | First target of the ability
+
+**Subtypes:** 
+
+Subtype | Syntax
+--- | ---
+absolute | `Manipulate {Player}'s [public\|special public\|private] voting power to {Number} {(Duration?)}`
+relative | `Manipulate {Player}'s [public\|special public\|private] voting power by {Number} {(Duration?)}`
+
+**Triggers:** There are no triggers associated with manipulating.
 
 
 
