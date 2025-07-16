@@ -1145,9 +1145,9 @@ Syntax | Explanation
 
 ### Manipulating
 
-**Summary:** Manipulating is an Attribute Applier type action that applies a manipulation attribute. The ability is also known as 'Vote Manipulation' as manipulation attributes affect how many votes an affected player has on certain polls. Vote manipulations can be absolute or relative. When evaluating the amount of votes a player has, all manipulations are handeled in order. Absolute manipulations set the vote value to their number, while relative manipulations increment/decrement the number. This means, that if an absolute manipulation is applied before a relative manipulation, the latter will still be applied, but relative to the absolute value from the absolute manipulation.
+**Summary:** Manipulating is an Attribute Applier type action that applies a manipulation attribute. The ability is also known as 'Vote Manipulation' as manipulation attributes affect how many votes an affected player has on certain polls. Vote manipulations can be absolute or relative. When evaluating the amount of votes a player has, all manipulations are handeled in order of application, with oldest first. Absolute manipulations set the vote value to their number, while relative manipulations increment/decrement the number. This means, that if an absolute manipulation is applied before a relative manipulation, the latter will still be applied, but relative to the absolute value from the absolute manipulation.
 
-**Attributes:** Manipulating creates manipulation attributes. Manipulation attributes store whether they are a absolute/relative manipulation and a subtype, which can be either public, private or special. Public and private manipulations affect only public/private polls respectively. Special manipulations also only affect public polls, but are applied to the vote value after all public manipulations have been evaluated.
+**Attributes:** Manipulating creates manipulation attributes. Manipulation attributes store whether they are an absolute/relative manipulation and a subtype, which can be either public, private or special. Public and private manipulations affect only public/private polls, respectively. Special manipulations also only affect public polls, but are applied to the vote value after all public manipulations have been evaluated.
 
 Property | Value
 --- | ---
