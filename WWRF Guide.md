@@ -711,7 +711,7 @@ On Hammer | Triggers when a poll causes a hammer. | ⛔
 
 ## Trigger Parameters
 
-Triggers can be further limited/extended with additional paramaters. There are two primary types of trigger parameters: restrictions and scaling. The former restricts the execution of all abilities attached to the trigger to certain situations, whereas the latter changes the amount of times the abilities attached to the trigger are executed.
+Triggers can be further limited/extended with additional parameters. There are two primary types of trigger parameters: restrictions and scaling. The former restricts the execution of all abilities attached to the trigger to certain situations, whereas the latter changes the amount of times the abilities attached to the trigger are executed.
 
 These parameters are always attached to the trigger and thus always apply equally to all actions of the trigger.
 
