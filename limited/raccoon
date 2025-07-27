@@ -3,7 +3,7 @@ __Basics__
 Each day, the Raccoon may strongly disguise two players as roles of the Raccoon’s choosing.
 The Raccoon wins when its disguised players have been investigated twice.
 __Details__
-Each day, the Raccoon may strongly disguise two players as roles of the Raccoon’s choosing until the next day phase. The Tanuki is informed each time one of its disguised players is investigated.
+Each day, the Raccoon may strongly disguise two players as roles of the Raccoon’s choosing until the next day phase. The Raccoon is informed each time one of its disguised players is investigated.
 The Raccoon ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Raccoons until the end of the next night. The Raccoon descends if there are no investigation roles alive.
 
 __Simplified__
@@ -15,7 +15,9 @@ Immediate Day: Strongly Disguise @Selection as @SecondarySelection (~NextDay) �
 On @(AttrDisguise:Self) Visited [Investigating]:
   • Increment Counter
   • Learn `One of your disguised players has been investigated`
-  • @Self->Counter is 2: Ascend
+  • @Self->Counter is 2:
+    ‣ Strongly Disguise @All as `Raccoon` (~NextNight)
+    ‣ Ascend
 Passive: Descend [Condition: @(Cat:Investigative)->Count is 0]
 
 __Card__
