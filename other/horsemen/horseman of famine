@@ -11,8 +11,8 @@ Each night, the Horseman of Famine may doom two players, disguising them as a Ho
 
 __Formalized__
 Inherit: `Horsemen`
-Immediate Night: ⟨x2⟩
-• Apply `Doomed` to @Selection (~Persistent) (Famine) |horseman_of_famine.1|
+Immediate Night: ⟨x2⟩ |horseman_of_famine.1|
+• Apply `Doomed` to @Selection (~Persistent) (Famine)
 • Emit `ApocalypseCheck` for @(Align:Horsemen)
 
 __Card__
