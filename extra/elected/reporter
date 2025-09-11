@@ -13,13 +13,13 @@ __Simplified__
 When there is a Mayor, a Reporter is elected. They will be able to see the starting roles of all players who have died.
 
 __Formalized__
-Passive Start Night: For Each @Dead:
+Passive Start Night: For Each @Dead: {Visitless}
   • not (@Ind has `Reported`):
-    ‣ Apply `Reported` to @Ind (~Persistent) {Visitless}
-    ‣ Learn `@Ind - @Ind->OriginalRole` {Visitless}
-On @All Death:
-  • Process: Apply `Reported` to @This (~Persistent) {Visitless}
-  • Evaluate: Learn `@This - @This->OriginalRole` {Visitless}
+    ‣ Apply `Reported` to @Ind (~Persistent)
+    ‣ Learn `@Ind - @Ind->OriginalRole`
+On @All Death:{Visitless}
+  • Process: Apply `Reported` to @This (~Persistent)
+  • Evaluate: Learn `@This - @This->OriginalRole`
 End Phase: |silent:granting.resign|
   • Announce `@Self resigned as Reporter`
   • Revoke @ThisAttr from @Self {Vanishing} 
