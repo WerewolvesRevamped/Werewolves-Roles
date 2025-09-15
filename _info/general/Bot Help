@@ -9,7 +9,7 @@ __CCs__
 
 __Other__
 `$i <role name>` or `.<role name>` Short info about role
-`$d <role name>` or `;<role name>` Long info about role
+`$id <role name>` or `;<role name>` Long info about role
 `$list` List of all players
 `$alive` List of all living players
 `$roll` Returns a random player
