@@ -23,9 +23,9 @@ Passive End Phase: [Attribute: @ThisAttr lacks `Marker`, Condition: not ($living
   • Apply `Marker` to @ThisAttr
 Immediate Night: Add `Lynch` Poll ⟨$living>@ThisAttr->Counter ⇒ x1⟩
 Passive Start Day: Manipulate @Self's `special public voting power` to `1` (~Phase) ⟨$living≤@ThisAttr->Counter ⇒ x1⟩
-End Phase: |silent:granting.resign|
+End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Mayor`
-  • Revoke @ThisAttr from @Self {Vanishing} 
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Mayor is elected to lead the town.

@@ -15,9 +15,9 @@ The Guardian is elected when there is a Mayor and a Reporter. Each night, they m
 
 __Formalized__
 Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) [Succession: No Target Succession] ⟨x1, $living>15 ⇒ x2⟩
-End Phase: |silent:granting.resign|
+End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Guardian`
-  • Revoke @ThisAttr from @Self {Vanishing} 
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Guardian is elected to protect the town from harm.
