@@ -17,12 +17,12 @@ Passive Start Night: For Each @Dead: {Visitless}
   • not (@Ind has `Reported`):
     ‣ Apply `Reported` to @Ind (~Persistent)
     ‣ Learn `@Ind - @Ind->OriginalRole`
-On @All Death:{Visitless}
+On @All Death: {Visitless}
   • Process: Apply `Reported` to @This (~Persistent)
   • Evaluate: Learn `@This - @This->OriginalRole`
-End Phase: |silent:granting.resign|
+End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Reporter`
-  • Revoke @ThisAttr from @Self {Vanishing} 
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Reporter is elected to find out the truth behind the dead.
