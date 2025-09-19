@@ -1,0 +1,6 @@
+**Cursebearer Link** | Attribute
+__Basics__
+An attribute marking a wolf that is linked to a cursebearer.
+
+__Formalized__
+On Death: Reveal `@Self has died` to @ThisAttr->Source
