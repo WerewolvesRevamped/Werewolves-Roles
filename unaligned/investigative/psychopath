@@ -41,8 +41,8 @@ Choice `Investigate` Chosen: |investigating.role.1|
     ‣ Attribute Investigate @Selection for `Lycan` (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
-    ‣ @Result1 is Success: `@Selection is a Threat`
-    ‣ @Result2 is Killing[category]: `@Selection is a Threat`
+    ‣ @Result1 is `Success`: `@Selection is a Threat`
+    ‣ @Result2 is `Killing`[category]: `@Selection is a Threat`
     ‣ Otherwise: `@Selection is Not a Threat`
 Choice `Disguise` Chosen: Weakly Disguise @Selection as @SecondarySelection (~NextNight)
 
