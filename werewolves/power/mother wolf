@@ -1,11 +1,15 @@
 **Mother Wolf** | Werewolf Power
 __Basics__
-
+The Mother Wolf may mark a player during the night. Should that player fail to survive the day, the Mother Wolf's ritual will protect all pack members during the following night.
 __Details__
-
+At night, the Mother Wolf may choose which player to mark. The player is marked at the start of the following day. If the player is not alive at the start of the day, they will not be marked and the ability is not used up.
+If a successfully marked player dies at any point during the day, the Mother Wolf's ritual will protect all wolfpack members from attacks for the duration of the following night.
+The Mother Wolf does not need to be alive for the ritual to activate, but does need to be alive to mark a player.
+If a marked player does not die during the day, the ritual will not activate. The ability will still be used up.
+The Mother Wolf is a lycan and a member of the pack.
 
 __Simplified__
-
+If a player marked by the Mother Wolf fails to survive the day, the Mother Wolf will protect all pack members during the following night.
 
 __Formalised__
 
