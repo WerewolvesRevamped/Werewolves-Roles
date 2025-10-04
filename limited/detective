@@ -3,12 +3,13 @@ __Basics:__
 The Detective tries to connect a list of players with a list of roles. During the day, the Detective may check the role of a player. When the list of roles is correctly connected to the list of players, the Detective wins.
 __Details:__
 The Detective starts out with a part of the role list and a part of the player list. These lists are a third of the role list and player list, excluding the Detective and rounded up. The rolelist and playerlist will always contain at least one player from every team that has at least two players. Which players are on the list and how they are sorted is determined arbitrarily.
-Each day, the Detective may choose between checking a player's current role or learning the final role of a dead player. If they guess a player's current role correctly, it is confirmed. The Detective is not affected by any disguises, obstructions, or redirections.
-Each night, the Detective must try to submit the entire list that has been received (players and roles). When a player and role are paired up correctly, the player will be unable to perform any actions for the next day and night. A player can only have this effect applied at the Detective's first correct guess. Any subsequent guesses don't do anything to the guessed player.
-If the Detective guesses wrong, they are informed of the amount of how many guesses (but not which ones) were correct. The Detective may submit a partial configuration, but only a complete configuration can let them ascend.
+Each day, the Detective may choose between guessing a player's current role or learning the final role of a dead player. If they guess a player's current role correctly, it is confirmed.
+Each night, the Detective must try to pair all the players from the player list with their corresponding role from the role list. When a player and role are paired up correctly, the player will be unable to perform any actions for the next day and night. A player will only have this effect applied at the Detective's first correct pairing; any subsequent correct pairings have no effect on the guessed player.
+If the Detective submits a fully or partially incorrect list, they are told the number of correct pairs they made, but not which pairs these were. The Detective may submit a partial configuration, but only a complete configuration can result in ascension.
+The Detective is not affected by any disguises, obstructions, or redirections.
 
 __Simplified__
-The Detective wins by matching roles to players and guessing correctly.
+The Detective wins by correctly matching roles to players.
 Each day, the Detective may either guess one player's current role or learn the final role of a dead player.
 Each night, the Detective must submit a role list containing predetermined roles and players.
 
