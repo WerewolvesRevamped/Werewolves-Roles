@@ -1,15 +1,15 @@
 **Barber** | Townsfolk Killing
 __Basics__
-Once per game, the Barber may choose to immediately attack one player during the day.
+Once per game, the Barber may choose to attack one player during the day.
 __Details__
-After Day 1, at any time during the day, the Barber may once attack another player. 
-The Barber’s attack is an immediate ability. It is not revealed that the attack was executed by a Barber.
+After Day 1, the Barber may choose to attack another player. They may only do so once per game.
+The Barber’s attack is an end day ability. It is not revealed that the attack was executed by a Barber.
 
 __Simplified__
-After Day 1, the Barber may once per game choose to immediately attack one player during the day.
+After Day 1, the Barber may once per game choose to attack one player at the end of the day.
 
 __Formalized__
-Immediate Day: Attack @Selection [Temporal: Day 2+, Quantity: 1]
+End Day: Attack @Selection [Temporal: Day 2+, Quantity: 1]
 
 __Card__
 The Barber dreams of one day making a big scene and killing that annoying client.
