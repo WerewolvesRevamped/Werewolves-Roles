@@ -1,14 +1,16 @@
-**Detective** | Unaligned Investigative | Limited
-__Basics__
-During the day, the Detective compiles information on other players. At night, they try to solve the mystery by guessing the contents of the role list. If their guess is correct, the Detective wins.
-__Details__
-Each day, the Detective has to choose between guessing one player's current role or learning the final role of a dead player. If they guess a player's current role correctly, it is confirmed. The Detective is not affected by any disguises, obstructions, or redirections.
-Each night, the Detective must try to submit the contents (players and their roles) of the entire starting role configuration in their secret channel. If their guess is correct, they ascend and win the game. If their guess is wrong, they are informed how many guesses (but not which ones) were correct. The Detective may submit a partial configuration, but only a complete configuration can let them ascend.
-In games with a partial or private role list, the Detective may receive a role list similar to that of the knowledgeable wolf at the start of the game.
+**Detective** | Unaligned Investigative
+__Basics:__
+The Detective tries to connect a list of players with a list of roles. During the day, the Detective may check the role of a player. When the list of roles is correctly connected to the list of players, the Detective wins.
+__Details:__
+The Detective starts out with a part of the role list and a part of the player list. These lists are a third of the role list and player list, excluding the Detective and rounded up. The rolelist and playerlist will always contain at least one player from every team that has at least two players. Which players are on the list and how they are sorted is determined arbitrarily.
+Each day, the Detective may choose between checking a player's current role or learning the final role of a dead player. If they guess a player's current role correctly, it is confirmed. The Detective is not affected by any disguises, obstructions, or redirections.
+Each night, the Detective must try to submit the entire list that has been received (players and roles). When a player and role are paired up correctly, the player will be unable to perform any actions for the next day and night. A player can only have this effect applied at the Detective's first correct guess. Any subsequent guesses don't do anything to the guessed player.
+If the Detective guesses wrong, they are informed of the amount of how many guesses (but not which ones) were correct. The Detective may submit a partial configuration, but only a complete configuration can let them ascend.
 
 __Simplified__
-The Detective wins by figuring out the original roles of all players.
+The Detective wins by matching roles to players and guessing correctly.
 Each day, the Detective may either guess one player's current role or learn the final role of a dead player.
+Each night, the Detective must submit a role list containing predetermined roles and players.
 
 __Formalized__
 Passive Start Day: `Detective` Choice Creation (CurrentRole, FinalRole)
@@ -27,4 +29,4 @@ Immediate Night:
   • Otherwise: Learn `@Self->Counter correct guesses`
 
 __Card__
-A new face in town, the Detective tries to find out everyone's occupation through research.
+A new face in town, the Detective tries to find out some occupations through research.
