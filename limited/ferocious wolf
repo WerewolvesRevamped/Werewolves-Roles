@@ -13,7 +13,7 @@ __Simplified__
 If the wolfpack's attack fails, the Ferocious Wolf may attack a different player.
 
 __Formalised__
-Immediate Night: Target @Selection (Player) |silent:targeting.target.player|
+Immediate Night: Target @Selection (Player)
 On `Attack` Emitted: Attack @Target [Quantity: 1, Condition: @Target exists, Attribute: @Target lacks `PackTarget`]
 Start Day: Process: Untarget
 
