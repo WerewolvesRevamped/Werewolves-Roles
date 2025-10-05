@@ -6,25 +6,20 @@ When everyone is dead, unaligned, or soulless, the Devil wins.
 __Details__
 During the first phase, the Devil may choose a role as a weak disguise. This defaults to citizen.
 
-At the start of the game, the Devil's soul is added to the hell team's soul pool. The Devil then becomes soulless.
-The Devil may use souls from the pool to protect or attack somebody. If the Devil is attacked while a soul is in the pool, a soul will automatically be used to protect the Devil. 
-See `$info souls` for a detailed explanation.
+The Devil, all other members of the Hell team, and players who have sold their soul through the wager are soulless. The souls of soulless players form Hell's soul pool. Soulless players cannot be sent the wager or attacked by any member of the Hell team (attempted attacks will silently fail).
+The Devil and other members of the Hell team may use souls from the pool to protect or attack somebody. Protecting or attack a player occurs at the end of a phase. If any member is attacked while a soul is in the pool, a soul will automatically be used to protect them. 
 
-The wager is sent at the start of the night. The wager cannot be sent to a soulless player or redirected.
-During the night, the Devil can anonymously communicate with the wager recipient.
-The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the wager recipient's own role; or they may do nothing. The result of a wager investigation is visible to both the wager recipient and the Devil, and both investigations are affected by disguises. 
-If a player sells their soul, a soul is added to the hell team's soul pool. The player then becomes soulless.
-See `$info wager` for a detailed explanation.
-
-Soulless players cannot be attacked by the Devil, including via the wager. Attempting to attack a soulless player using the wager fails silently.
+During the day, the Devil must choose a player to send the wager to. The wager is sent at the start of the night, and cannot be redirected or sent to soulless players.
+The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the wager recipient's own role; or they may do nothing. Protections and attacks are executed by the Devil.
+The result of a wager investigation is visible to both the wager recipient and the Devil, and both investigations are affected by disguises. 
+A player who receives the wager for a second time must sell their soul to protect or kill a player. This defaults to protecting themself.
 
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion or recruitment of a member will fail in some manner.
 
 __Simplified__
-Each day, the Devil may choose one player to send the wager to, who may then choose one of four options: attack, protect, investigate or ignore.
-Should they choose to attack or protect, their soul is sold and added to the hell team's pool.
+Each day, the Devil may choose one player to send the wager to, who may then choose one of four options: attack, protect, investigate or ignore. Should they choose to attack or protect, their soul is sold and added to the hell team's pool.
 If they choose to investigate, the Devil will learn their role, and both will learn the role of the player chosen for investigation.
-The hell team can use obtained souls for protection or to attack players.
+The Hell team can use souls for to protect or attack players.
 
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion of a member will fail in some manner.
 
