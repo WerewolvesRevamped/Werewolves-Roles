@@ -9,8 +9,8 @@ __Simplified__
 A Scarecrow will pass on their role to another player, whom they have chosen as a target, when they die. If their target is part of the townsfolk or a wolf, their role is erased and replaced by a farmer role of the same alignment. Otherwise, a Scarecrow role is granted on top of their current role.
 
 __Formalized__
-Immediate: Target @Selection (Player) |silent:targeting.target.player|
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
+Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 On Death: [Condition: @Target exists]
   • @Target->Alignment is `Townsfolk`: Role Change @Target to `Farmer`
   • @Target->Alignment is `Werewolf`: Role Change @Target to `Farming Wolf`
