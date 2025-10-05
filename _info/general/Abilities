@@ -13,11 +13,11 @@ __Other Ability Types__
 <?Whispering:> Whispers
 <?CategoryGroup:> Joining
 <?Extra:> Granting
-<?Soul:> Loyalty
-<?BotDeveloper:> Obstructions
+<?Loyalty:> Loyalty
+<?Obstructions:> Obstructions
 <?VotingBooth:> Poll Manipulations
-<?KWList:> Announcements
+<?Announcement:> Announcements
 <?CategoryAlign:> Role Changes
-<?LookAlike:> Ability Copying
+<?Copying:> Ability Copying
 <?UnalignedPlaceholder:> Choices
 <?Spell:> Other Ability Types

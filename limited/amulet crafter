@@ -1,24 +1,19 @@
-**Amulet Crafter** | Townsfolk Killing | Limited
+**Amulet Crafter** | Townsfolk Miscellaneous | Limited
 __Basics__
-At the start of the game, the Amulet Crafter is the first holder of the *Amulet of Protection*. Whoever holds the amulet is protected from attacks during the night, but must pass it to another player during the day.
+At the start of the first night, the Amulet Crafter grants the *Amulet of Protection* to a random player unknown to them. Whoever holds the amulet is protected from attacks during the night, but may not use any ability for this duration. Additionally, they must pass it to another player during the day.
 __Details__
-If the Amulet Crafter or the current holder die, the amulet shatters. When the amulet shatters, the current holder is attacked. Afterwards, the amulet is out of play and won't be passed anymore. The Amulet Crafter may also manually choose to shatter the amulet at the end of the night, but may not do so during Night 1.
-The Amulet Crafter must pass the amulet during Day 0.
-When passing the amulet, up to three players may be specified (either at once or separately) and the amulet will be passed to the first player who has not previously had the amulet. Selecting a target is an immediate effect and, should the selection fail, the holder is immediately informed (and if applicable, the next selection is attempted). However, passing the amulet is an end-day ability. If the holder of the amulet does not or cannot choose a player to pass the amulet to, it shatters at the end of the day, instead of being passed. 
+Whoever holds the amulet during the day must pass it to a player who has not previously held the amulet. Selecting a target and passing the amulet is an end-day ability. Should the holder select an invalid or no target, the amulet shatters, resulting in the holder dying and the amulet disappearing. This is not an attack.
+A player is blocked from using any of their abilities for the entire night while holding the amulet. This includes the abilities of their primary role, any group abilities they would otherwise execute, and abilities associated with any extra roles they hold.
 Holders of the amulet do not know who gave them the amulet, nor do they know who has previously held it.
+If the Amulet Crafter or the current holder dies, the amulet disappears and is out of play.
 
 __Simplified__
-At the start of the game, the Amulet Crafter is the first holder of the *Amulet of Protection*. Whoever holds the amulet is protected from attacks during the night, but must pass it to another player on the following day and may only hold the amulet once. When the Amulet Crafter dies, or chooses to, the amulet shatters, destroying it and attacking the holder.
+At the start of the first night, the Amulet Crafter grants the *Amulet of Protection* to a random player unknown to them. Whoever holds the amulet is protected from attacks during the night, but may not use any ability for this duration. Additionally, they must pass it to another player during the day. When the Amulet Crafter dies, the amulet disappears.
 
 __Formalized__
 Unique Role
-Starting: Grant `Amulet of Protection` to @Self
-On Death:
-  • Attack @(Role:Amulet-of-Protection)
-  • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
-End Night: [Quantity: 1, Condition: @(Role:Amulet-of-Protection) exists, Temporal: Night 2+]
-  • Attack @(Role:Amulet-of-Protection)
-  • Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
+Passive Start Night: Grant `Amulet of Protection` to @All->RandomPlayer [Temporal: Night 1]
+On Death: Revoke `Amulet of Protection` from @(Role:Amulet-of-Protection)
 
 __Card__
-The Amulet Crafter's amulet protects, but its spell- work is unstable, exploding if its owner falls.
+The Amulet Crafter's amulet protects, but its spell- work is unstable, vanishing if its owner falls.

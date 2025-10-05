@@ -1,0 +1,23 @@
+**Farmer** | Townsfolk Miscellaneous | Limited
+__Basics__
+The Farmer will pass on their role to another player when they die.
+__Details__
+When the Farmer dies, they will pass on their role to a target they have selected. If their target is part of the townsfolk team, the target's role is erased, and they become a Farmer. If they are part of the werewolf team, their role is erased, and they become a farming wolf. If their target is part of another team, then they are granted the scarecrow role on top of their current role. The alignment of their target is never changed or affected.
+The Farmer can select a player and update their targeted player once per phase, with 1 emergency change to be used whenever the Farmer wants. If the Farmer is not targeting a living player when they die, a random target is selected. 
+
+__Simplified__
+The Farmer will pass on their role to another player, whom they have chosen as a target, when they die. If their target is part of the townsfolk or a wolf, their role is erased and replaced by a Farmer role of the same alignment. Otherwise, a scarecrow role is granted on top of their current role.
+
+__Formalized__
+Immediate: Target @Selection (Player) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
+On Death:
+  • not (@Target exists) :
+    ‣ Target @Others->Random Player (Player)
+    ‣ Continue
+  • @Target->Alignment is `Townsfolk`: Role Change @Target to `Farmer`
+  • @Target->Alignment is `Werewolf`: Role Change @Target to `Farming Wolf`
+  • Otherwise: Grant `Scarecrow` to @Target
+
+__Card__
+Should the Farmer die, someone has to take up their job.
