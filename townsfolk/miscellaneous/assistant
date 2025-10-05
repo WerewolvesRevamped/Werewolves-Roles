@@ -11,8 +11,8 @@ The Assistant may select a player to redirect one werewolf action to. The action
 They will be informed when their ability is used.
 
 __Formalized__
-Immediate: Target @Selection (Player) |silent:targeting.target.player|
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
+Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 Starting: Redirect `non-killing abilities` from @(Attr:Wolfish) to @Target (~UntilUse)
 On Redirect: Learn `Redirect was used`
 
