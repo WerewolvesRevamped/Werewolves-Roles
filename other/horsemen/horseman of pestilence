@@ -11,8 +11,8 @@ Each night, the Horseman of Pestilence may doom a player, blocking their ability
 
 __Formalized__
 Inherit: `Horsemen`
-Immediate Night:
-• Apply `Doomed` to @Selection (~Persistent) (Pestilence) |horseman_of_pestilence.1|
+Immediate Night: |horseman_of_pestilence.1|
+• Apply `Doomed` to @Selection (~Persistent) (Pestilence)
 • Emit `ApocalypseCheck` for @(Align:Horsemen)
 
 __Card__
