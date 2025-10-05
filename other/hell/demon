@@ -3,12 +3,10 @@ __Basics__
 The Demon wins with the devil. It joins a channel with the devil to communicate securely.
 The Demon can use the hell team's soul pool.
 __Details__
-During the first phase, the Demon may choose a role as a weak disguise. This defaults to citizen.
+During the first phase, the Devil may choose a role as a weak disguise. This defaults to citizen.
 
-At the start of the game, the Demon's soul is added to the hell team's soul pool. The Demon then becomes soulless.
-The Demon may use souls from the pool to protect or attack a player. 
-If the Demon is attacked while a soul is in the pool, a soul will automatically be used to protect the Demon. 
-See `$info souls` for a detailed explanation.
+The Demon, all other members of the Hell team, and players who have sold their soul through the wager are soulless. The souls of soulless players form Hell's soul pool. Soulless players cannot be attacked by any member of the Hell team (attempted attacks will silently fail).
+The Demon may use souls from the pool to protect or attack somebody. Protecting or attack a player occurs at the end of a phase. If the Demon is attacked at night while a soul is in the pool, a soul will automatically be used to protect them. 
 
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion or recruitment of a member will fail in some manner.
 
