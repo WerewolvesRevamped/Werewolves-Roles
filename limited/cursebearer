@@ -17,6 +17,11 @@ Starting:
   • Strongly Disguise @Self as %Role%
   • Obstruct Role Changing for @Self (~Permanent)
   • Obstruct Joining for @Self (~Permanent)
+On @All Death:
+  • Remove `Marker` from @Self
+  • For Each @All:
+    ‣ @Ind->Role is %Role%: Apply `Marker` to @Self
+  • not (@Self has `Marker`): Obstruct @Self (~Permanent)
 
 __Card__
 Cursebearer can use some of the powers of the wolf that cursed it.
