@@ -7,7 +7,7 @@ __Details__
 During the first phase, the Devil may choose a role as a weak disguise. This defaults to citizen.
 
 The Devil, all other members of the Hell team, and players who have sold their soul through the wager are soulless. The souls of soulless players form Hell's soul pool. Soulless players cannot be sent the wager or attacked by any member of the Hell team (attempted attacks will silently fail).
-The Devil and other members of the Hell team may use souls from the pool to protect or attack somebody. Protecting or attack a player occurs at the end of a phase. If any member is attacked at night while a soul is in the pool, a soul will automatically be used to protect them. 
+The Devil and other members of the Hell team may use souls from the pool to protect or attack somebody. Protecting or attacking a player occurs at the end of a phase. If any member is attacked at night while a soul is in the pool, a soul will automatically be used to protect them. 
 
 During the day, the Devil must choose a player to send the wager to. The wager is sent at the start of the night, and cannot be redirected or sent to soulless players.
 The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the wager recipient's own role; or they may do nothing. Protections and attacks are executed by the Devil.
