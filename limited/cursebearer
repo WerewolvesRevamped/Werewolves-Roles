@@ -2,7 +2,7 @@
 __Basics__
 The Cursebearer is a member of the townsfolk team who imitates and is seen as a wolf role.
 __Details__
-The Cursebearer imitates another in-play werewolf team role. They are strongly disguised as that role and are a lycan if that role is. Additionally, they can use all the powers that role can use, with some exceptions: any power that would result in joining the wolfpack or in a role change fails; any power that would result in the Cursebearer's role changing instead results in a loss of power as described below.
+The Cursebearer imitates another in-play werewolf team role. They are strongly disguised as that role and are a lycan if that role is. Additionally, they can use all the powers that role can use, with some exceptions: any power that would result in joining a group or in a role change fails; any power that would result in the Cursebearer's role changing instead results in a loss of power as described below.
 When the last player that originally started out with the role that the Cursebearer is imitating dies, the Cursebearer is informed and loses their power.
 When the Cursebearer loses their power they will not be able to use any of their abilities anymore, but they will keep their disguise and they will still be seen as a lycan if they were imitating a lycan.
 
@@ -12,7 +12,11 @@ If no players with that role remain, the Cursebearer can't use its powers anymor
 
 __Formalized__
 Role Attribute: `Lycan`
-Starting: Strongly Disguise @Self as %Role%
+Include: %Role%
+Starting:
+  • Strongly Disguise @Self as %Role%
+  • Obstruct Role Changing for @Self (~Permanent)
+  • Obstruct Joining for @Self (~Permanent)
 
 __Card__
 Cursebearer can use some of the powers of the wolf that cursed it.
