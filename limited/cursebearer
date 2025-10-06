@@ -18,11 +18,14 @@ Starting:
   • Obstruct Role Changing for @Self (~Permanent)
   • Obstruct Joining for @Self (~Permanent)
 On @All Death:
-  • Remove `CursebearerMarker` from @Self
-  • For Each @All: @Ind->Role is %Role%: Apply `CursebearerMarker` to @Self
-  • @Self has `CursebearerMarker`: Emit `PowerLoss`
+  • Process:
+    ‣ Remove `CursebearerMarker` from @Self
+    ‣ For Each @All: @Ind->Role is %Role%: Apply `CursebearerMarker` to @Self
+  • Evaluate:
+    ‣ not (@Self has `CursebearerMarker`): Emit `PowerLoss`
 On Action [Role Changing]: Emit `PowerLoss`
 On `PowerLoss` Emitted:
+  • Learn `You have lost your powers`
   • Remove `Obstruction:Self` from @Self
   • Role Change @Self to `Citizen`
   • Strongly Disguise @Self as %Role% (~Permanent)
