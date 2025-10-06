@@ -12,7 +12,7 @@ __Formalized__
 Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
 On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 On Death:
-  • not (@Target exists) :
+  • not (@Target exists):
     ‣ Target @Others->Random Player (Player)
     ‣ Continue
   • @Target->Alignment is `Townsfolk`: Role Change @Target to `Farmer`
