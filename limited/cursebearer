@@ -2,17 +2,33 @@
 __Basics__
 The Cursebearer is a member of the townsfolk team who imitates and is seen as a wolf role.
 __Details__
-The Cursebearer imitates another in-play werewolf team role. They are strongly disguised as that role and are a lycan if that role is. Additionally, they can use all the powers that role can use, with some exceptions: any power that would result in joining the wolfpack or in a role change fails; any power that would result in the Cursebearer's role changing instead results in a loss of power as described below.
+The Cursebearer imitates another in-play werewolf team role. They are strongly disguised as that role and are a lycan. Additionally, they can use all the powers that role can use, with some exceptions: any power that would result in joining a group or in a role change fails; any power that would result in a role change instead results in a loss of power of the Cursebearer as described below.
 When the last player that originally started out with the role that the Cursebearer is imitating dies, the Cursebearer is informed and loses their power.
-When the Cursebearer loses their power they will not be able to use any of their abilities anymore, but they will keep their disguise and they will still be seen as a lycan if they were imitating a lycan.
+When the Cursebearer loses their power, they turn into a citizen and they will not be able to use any of their abilities anymore. They will keep their disguise but won't be seen as a lycan anymore.
 
 __Simplified__
-The Cursebearer is a member of the townsfolk team who imitates and is seen as a in-play werewolf team role. They may use the powers of this role.
+The Cursebearer is a member of the townsfolk team who imitates and is seen as an in-play werewolf team role. They may use the powers of this role.
 If no players with that role remain, the Cursebearer can't use its powers anymore, but retains the disguise.
 
 __Formalized__
 Role Attribute: `Lycan`
-Starting: Strongly Disguise @Self as %Role%
+Include: %Role%
+Starting:
+  • Strongly Disguise @Self as %Role%
+  • Obstruct Role Changing for @Self (~Permanent)
+  • Obstruct Joining for @Self (~Permanent)
+On @All Death:
+  • Process:
+    ‣ Remove `CursebearerMarker` from @Self
+    ‣ For Each @All: @Ind->Role is %Role%: Apply `CursebearerMarker` to @Self
+  • Evaluate:
+    ‣ not (@Self has `CursebearerMarker`): Emit `PowerLoss`
+On Action [Role Changing]: Emit `PowerLoss`
+On `PowerLoss` Emitted:
+  • Learn `You have lost your powers`
+  • Remove `Obstruction:Self` from @Self
+  • Role Change @Self to `Citizen`
+  • Strongly Disguise @Self as %Role% (~Permanent)
 
 __Card__
 Cursebearer can use some of the powers of the wolf that cursed it.
