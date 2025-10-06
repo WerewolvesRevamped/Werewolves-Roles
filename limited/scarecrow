@@ -11,7 +11,10 @@ A Scarecrow will pass on their role to another player, whom they have chosen as 
 __Formalized__
 Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
 On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
-On Death: [Condition: @Target exists]
+On Death:
+  • not (@Target exists):
+    ‣ Target @Others->Random Player (Player)
+    ‣ Continue
   • @Target->Alignment is `Townsfolk`: Role Change @Target to `Farmer`
   • @Target->Alignment is `Werewolf`: Role Change @Target to `Farming Wolf`
   • Otherwise: Grant `Scarecrow` to @Target
