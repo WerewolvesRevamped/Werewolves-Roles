@@ -173,6 +173,7 @@ Selector | Meaning
 @Others | @All without @Self.
 @Dead | All dead players.
 @DeadAlive | All players.
+@Nobody | Nobody / empty selector.
 @Target | The current player's target (must be alive).
 @TargetDead | The current player's target (even if the target is dead).
 @Members | The current group's or team's members.
@@ -940,7 +941,7 @@ Target | Player | The selected target (`target` subtype)
 
 Subtype | Syntax | Function
 --- | --- | ---
-Target | `Target {*} ({**})` | Sets a players target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option. The former must be a selector of matching type.
+Target | `Target {*} ({**})` | Sets a players target, specify a selector (`{*}`) and additionally annotate the type (`{**}`), the latter of which must be one of the following values: Player, Dead, Role, Attribute, Category, Full Category, Boolean, Option, Player Optional. The former must be a selector of matching type. Player Optional is a special variant of Player in which 'nobody' is accepted as an input and leads to resetting the target/untargetting.
 Untarget | `Untarget` | Removes the player's target.
 
 **Triggers:** There are no triggers associated with targeting.
