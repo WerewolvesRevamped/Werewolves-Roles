@@ -14,9 +14,7 @@ When there is a Mayor, a Gravekeeper is elected. They can check ghosts to see th
 
 __Formalized__
 Haunted Role
-Immediate Night:
-  • Process: @Selection[player]->OriginalRole
-  • Evaluate: @Result
+Immediate Night: Learn `@Selection[ghost] - @Selection->OriginalRole[role]`
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Gravekeeper`
   • Revoke @ThisAttr from @Self
