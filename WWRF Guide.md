@@ -172,7 +172,8 @@ Selector | Meaning
 @All | All living players.
 @Others | @All without @Self.
 @Dead | All dead players.
-@DeadAlive | All players.
+@Ghostly | All ghostly players.
+@DeadAlive | All players (dead, alive, ghostly).
 @Nobody | Nobody / empty selector.
 @Target | The current player's target (must be alive).
 @TargetDead | The current player's target (even if the target is dead).
