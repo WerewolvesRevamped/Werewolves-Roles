@@ -11,7 +11,9 @@ The Revenant is elected before the poltergeist and the banshee.
 They may decide whether a banishment will take place, but may not decide on banishments on successive  days.
 
 __Formalized__
-TBD
+End Phase: {Vanishing} |silent:granting.resign|
+  • Announce `@Self resigned as Revenant`
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Revenant is elected to lead the graveyard.
