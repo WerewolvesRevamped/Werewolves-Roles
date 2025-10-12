@@ -2,13 +2,13 @@
 Available Options: @Ghostly, Abstain
 Allowed Voters: @Ghostly
 Passive Start Night: [Temporal: Night 2+, Condition: @Ghostly exists]
-  • (@(AttrRole:Revenant) exists) and (@(AttrRole:Poltergeist) exists) and (not (@(AttrRole:Guardian) exists)):
+  • (@(AttrRole:Revenant,Ghostly:True) exists) and (@(AttrRole:Poltergeist,Ghostly:True) exists) and (not (@(AttrRole:Banshee,Ghostly:True) exists)):
     ‣ Target `Banshee` (Role)
     ‣ Create Poll in #graveyard_votes as `Banshee Election`
-  • (@(AttrRole:Revenant) exists) and (not (@(AttrRole:Poltergeist) exists)):
+  • (@(AttrRole:Revenant,Ghostly:True) exists) and (not (@(AttrRole:Poltergeist,Ghostly:True) exists)):
     ‣ Target `Poltergeist` (Role)
     ‣ Create Poll in #graveyard_votes as `Poltergeist Election`
-  • not (@(AttrRole:Revenant) exists):
+  • not (@(AttrRole:Revenant,Ghostly:True) exists):
     ‣ Target `Revenant` (Role)
     ‣ Create Poll in #graveyard_votes as `Revenant Election`
 On Poll Closed:
