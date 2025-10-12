@@ -17,7 +17,9 @@ Haunted Role
 Immediate Night:
   • Process: @Selection[player]->OriginalRole
   • Evaluate: @Result
-End Phase: Revoke `Banshee` from @Self
+End Phase: {Vanishing} |silent:granting.resign|
+  • Announce `@Self resigned as Gravekeeper`
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Gravekeeper is elected to find out the truth behind the dead.
