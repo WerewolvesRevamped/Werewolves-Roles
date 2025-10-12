@@ -11,6 +11,7 @@ The Revenant is elected before the poltergeist and the banshee.
 They may decide whether a banishment will take place, but may not decide on banishments on successive  days.
 
 __Formalized__
+Start Night: Create `Banishment` Poll in #graveyard_votes
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Revenant`
   • Revoke @ThisAttr from @Self
