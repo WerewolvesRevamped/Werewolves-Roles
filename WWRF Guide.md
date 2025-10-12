@@ -226,6 +226,7 @@ AttrRole | Checks whether the player has a certain role type attribute.
 AttrDisguise | Checks whether the player has a disguise applied by a certain player. As value specify a player selector which will have `@` prepended, so e.g. just `Self`.
 AliveOnly | Special field. Set it to `False` to also search for dead players.
 SelectAll | Special field. Set it to `False` to return a single random player from the selector instead of all players.
+Ghostly | Special field. Set it to `True` to search for ghostly players (only).
 
 Players support a variety of property accesses:
 
@@ -642,6 +643,9 @@ Variable | Meaning
 --- | ---
 $total | Amount of players in the game.
 $living | Amount of living players.
+$dead | Amount of dead players.
+$ghostly | Amount of ghostly players.
+$haunting | Boolean value that reflects whether haunting is enabled.
 $phase | The current phase as a number.
 $phname | The current phase as a text.
 
