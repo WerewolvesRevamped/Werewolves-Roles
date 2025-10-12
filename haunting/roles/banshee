@@ -14,7 +14,9 @@ They may decide to haunt a player, ability blocking them.
 __Formalized__
 Haunted Role
 Immediate Day: Obstruct @Selection (~DelayedPhase)
-End Phase: Revoke `Banshee` from @Self
+End Phase: {Vanishing} |silent:granting.resign|
+  • Announce `@Self resigned as Banshee`
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Banshee is elected to disrupt the living.
