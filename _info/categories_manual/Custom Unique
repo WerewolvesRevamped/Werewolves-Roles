@@ -2,6 +2,7 @@
 *Unique roles are roles that can only occur once per game.*
 
 __List:__
+<?AmuletCrafter:> Amulet Crafter
 <?Chef:> Chef
 <?Cupid:> Cupid
 <?CultLeader:> Cult Leader
@@ -11,5 +12,4 @@ __List:__
 <?Medium:> Medium
 <?WhiteWerewolf:> White Werewolf
 
-<?AmuletCrafter:> *Amulet Crafter*
 <?GreaterCoyote:> *Greater Coyote*
