@@ -32,6 +32,8 @@
   - [Phase Type](#phase-type)
   - [Duration Type](#duration-type)
   - [Variable String Type](#variable-string-pseudo-type)
+  - [Ghost Pseudo-Type](#ghost-pseudo-type)
+  - [Dead Pseudo-Type](#ghost-pseudo-type)
   - [Actor Pseudo-Type](#actor-pseudo-type)
   - [Any Pseudo-Type](#any-pseudo-type)
   - [Variables](#variables)
@@ -166,13 +168,16 @@ For this document, when the syntax of any component requires a user to put a typ
 
 Player type is one of the most common types and refers to a player of the game (active). This type is also known under `player_attr` (referring to a player when acting through an extra role) or `player_group` (referring to a player when acting through a group).
 
+When prompted, players may only submit living players as a player type, even if the player type can otherwise deal with dead or ghostly players. To allow a player to submit dead or ghostly players, the [ghost pseudo-type](#ghost-pseudo-type) or the [dead pseudo-type](#dead-pseudo-type) needs to be used.
+
 Selector | Meaning
 --- | ---
 @Self | The current player (Alternatively, the player who an attribute is applied on when using from an attribute).
 @All | All living players.
 @Others | @All without @Self.
 @Dead | All dead players.
-@DeadAlive | All players.
+@Ghostly | All ghostly players.
+@DeadAlive | All players (dead, alive, ghostly).
 @Nobody | Nobody / empty selector.
 @Target | The current player's target (must be alive).
 @TargetDead | The current player's target (even if the target is dead).
@@ -225,6 +230,7 @@ AttrRole | Checks whether the player has a certain role type attribute.
 AttrDisguise | Checks whether the player has a disguise applied by a certain player. As value specify a player selector which will have `@` prepended, so e.g. just `Self`.
 AliveOnly | Special field. Set it to `False` to also search for dead players.
 SelectAll | Special field. Set it to `False` to return a single random player from the selector instead of all players.
+Ghostly | Special field. Set it to `True` to search for ghostly players (only).
 
 Players support a variety of property accesses:
 
@@ -625,6 +631,14 @@ Duration type is a type only used by attribute applying abilities. Durations tak
 
 Variable String pseudo-type represents an arbitrary text that is sometimes the expected input. Can take any value, for example ``​`This is a text.`​``. [Variables](#variables) within this text are resolved.
 
+### Ghost Pseudo-Type
+
+Ghost pseudo-type is not an actual type, but can be specified as a type annotation. The type is equivalent to the player type, but specifying the ghost pseudo-type allows players to submit ghostly players when prompted (prompts for player type restrict the input to living players).
+
+### Dead Pseudo-Type
+
+Dead pseudo-type is not an actual type, but can be specified as a type annotation. The type is equivalent to the player type, but specifying the dead pseudo-type allows players to submit dead players when prompted (prompts for player type restrict the input to living players).
+
 ### Actor Pseudo-Type
 
 Actor pseudo-type is not an actual type, but is sometimes the expected input. In that case, the input can take the form of any acting game element. The following types may be specified when an actor type is expected: player, group, team, active attribute, active extra role.
@@ -641,6 +655,9 @@ Variable | Meaning
 --- | ---
 $total | Amount of players in the game.
 $living | Amount of living players.
+$dead | Amount of dead players.
+$ghostly | Amount of ghostly players.
+$haunting | Boolean value that reflects whether haunting is enabled.
 $phase | The current phase as a number.
 $phname | The current phase as a text.
 
