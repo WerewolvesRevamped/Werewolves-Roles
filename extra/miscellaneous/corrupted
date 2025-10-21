@@ -2,7 +2,7 @@
 __Basics__
 When a corrupt wolf corrupts a player, that player becomes Corrupted for the duration of the current night and the following day phase.
 __Details__
-During the night the corrupt wolf may select a player to corrupt. That player will become Corrupted and will be added to the Corrupted channel.
+During the night, the corrupt wolf may select a player to corrupt. That player will become Corrupted and will be added to the Corrupted channel.
 
 __Simplified__
 When a corrupt wolf corrupts a player, that player becomes Corrupted until the end of the following day.
