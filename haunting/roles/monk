@@ -1,0 +1,13 @@
+**Monk** | Townsfolk Miscellaneous | Haunted
+__Basics__
+The Monk will survive the first attempt to banish it.
+__Details__
+The Monk is informed if they were banished, and will lose its ability henceforth.
+__Simplified__
+The Monk will survive the first attempt to banish it. They will learn when the protection is used.
+__Formalized__
+Haunted Role
+Starting: Protect @Self from `Banishes` through Passive Defense during Night (~UntilUse)
+On Passive Defense: Learn `Defense Used`
+__Card__
+With strong spiritual power, the Monk can resist being banished.
