@@ -1,6 +1,6 @@
 **Banshee** | Extra Elected | Haunted
 __Basics__
-Each day, the Banshee may select one player to haunt in the following night, ability blocking them. 
+Each night, the Banshee may select one living player to haunt for the remainder of the night, ability blocking them. 
 __Details__
 The Banshee may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
 Choosing a player to haunt is an immediate action. 
@@ -13,7 +13,7 @@ They may decide to haunt a player, ability blocking them.
 
 __Formalized__
 Ghostly Role
-Immediate Day: Obstruct @Selection (~DelayedPhase)
+Immediate Day: Obstruct @Selection (~DelayedPhase) [Attribute: @Selection lacks `BansheeObstructed`]
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Banshee`
   • Revoke @ThisAttr from @Self
