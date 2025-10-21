@@ -12,9 +12,9 @@ Passive Start Day: [Temporal: Day 1+, Condition: $haunting is False]
     ‣ Target `Mayor` (Role)
     ‣ Create Poll in #voting_booth as `Mayor Election`
 Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True]
-  • (@(AttrRole:Mayor) exists) and (@(AttrRole:Gravekeeper) exists) and (not (@(AttrRole:Guardian) exists)):
-    ‣ Target `Guardian` (Role)
-    ‣ Create Poll in #voting_booth as `Guardian Election`
+  • (@(AttrRole:Mayor) exists) and (@(AttrRole:Gravekeeper) exists) and (not (@(AttrRole:Prophet) exists)):
+    ‣ Target `Prophet` (Role)
+    ‣ Create Poll in #voting_booth as `Prophet Election`
   • (@(AttrRole:Mayor) exists) and (not (@(AttrRole:Gravekeeper) exists)):
     ‣ Target `Gravekeeper` (Role)
     ‣ Create Poll in #voting_booth as `Gravekeeper Election`
