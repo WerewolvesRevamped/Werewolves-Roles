@@ -20,9 +20,12 @@ Immediate Night:
   • Protect @Self from `Attacks` through Absence at #tavern during Night (~Phase) [Succession: No Target Succession]
   • Lock #Tavern
   • Reveal `The tavern is *haunted* and has been locked for the night!` to #Tavern
+  • Add @Ghostly to #Tavern-Haunting
+  • Whisper from #Tavern-Haunting to #Tavern as `Ghosts` (~Phase)
   • Apply `Marker` to @ThisAttr
 Passive Start Day: [Attribute: @ThisAttr has `Marker`]
   • Unlock #Tavern
+  • Remove @Ghostly from #Tavern-Haunting
   • Reveal `The tavern has been reopened!` to #Tavern
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Poltergeist`
