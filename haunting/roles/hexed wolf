@@ -1,0 +1,18 @@
+**Hexed Wolf** | Werewolf Investigative | Haunted
+__Basics__
+The Hexed Wolf may learn the roles of those who lynched it, and send that info back to the wolfpack.
+__Details__
+Everyone who lynches a Hexed Wolf will be hexed. While the Hexed Wolf is a ghost, at night it may investigate a hexed player to learn their role. It is affected by weak disguises.
+Afterwards the Hexed Wolf will send the identity of a hexed player to wolfpack. The wolfpack will learn both the player and the role they were investigated as.
+Both of these are immediate actions.
+The Hexed Wolf is a member of the wolfpack and a lycan.
+
+__Simplified__
+Everyone who lynches a Hexed Wolf will be hexed. While the Hexed Wolf is a ghost, at night it may investigate a hexed player to learn their role.
+Afterwards the Hexed Wolf will send the identity of a hexed player to wolfpack. The wolfpack will learn both the player and the role they were investigated as.
+__Formalized__
+Haunted Role
+Inherit: `Pack Lycan`
+
+__Card__
+Your identity may be forfeit if you lynch a Hexed Wolf.
