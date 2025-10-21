@@ -15,6 +15,7 @@ The Poltergeist is elected before the banshee, but after the banisher.
 They may decide whether to haunt the tavern at night, protecting themselves from banishments and potentially giving some info to the living players.
 
 __Formalized__
+Ghostly Role
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Poltergeist`
   • Revoke @ThisAttr from @Self
