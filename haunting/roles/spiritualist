@@ -9,7 +9,13 @@ __Simplified__
 After the Spiritualist dies, they can whisper to one player each night.
 
 __Formalized__
-TBD
+Ghostly Role
+Immediate Night: [Attribute: @Selection lacks `SpiritTouched`] {Direct} |spiritualist.1|
+  • Conversation Reset `Spirit Touched`
+  • Grant `Spirit Touched` to @Selection
+  • Whisper to `Spirit Touched` as Corrupt Wolf (~NextDay)
+  • Apply `SpiritTouched` to @Selection
+Passive Start Night: Conversation Reset `Spirit Touched`
 
 __Card__
 The Spiritualist can whisper to the living while dead.
