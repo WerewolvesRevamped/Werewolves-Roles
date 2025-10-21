@@ -12,7 +12,7 @@ The Banshee is elected after the revenant and the poltergeist.
 They may decide to haunt a player, ability blocking them.
 
 __Formalized__
-Haunted Role
+Ghostly Role
 Immediate Day: Obstruct @Selection (~DelayedPhase)
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Banshee`
