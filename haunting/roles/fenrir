@@ -10,8 +10,9 @@ __Simplified__
 Every other night, Fenrir may banish one ghost. Fenrir may still do so while a ghost themself.
 
 __Formalized__
+Haunted Role
 Inherit: `Pack Lycan`
-End Night: Banish @Selection[ghost] [Succession: No Succession, Status: Any]
+End Night: Banish @Selection[ghost] [Succession: No Succession]
 
 __Card__
 Fenrir is beyond the mortal world: they may banish ghosts.
