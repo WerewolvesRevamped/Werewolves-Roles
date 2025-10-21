@@ -3,6 +3,7 @@ __Basics__
 The Monk will survive the first attempt to banish it.
 __Details__
 The Monk is informed if they were banished, and will lose its ability henceforth.
+The defence is only present during night phase.
 __Simplified__
 The Monk will survive the first attempt to banish it. They will learn when the protection is used.
 __Formalized__
