@@ -1,6 +1,6 @@
 **Revenant** | Extra Elected | Haunted
 __Basics__
-Each day, the Revenant may decide whether a banishment will take place during the next night. There may not be banishments in successive nights. 
+Each night, the Revenant may decide whether a banishment will take place during the next day. There may not be banishments on successive days. 
 __Details__
 The Revenant may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
 Choosing a banishment is an immediate action. 
@@ -12,7 +12,7 @@ They may decide whether a banishment will take place, but may not decide on bani
 
 __Formalized__
 Ghostly Role
-Start Night: Create `Banishment` Poll in #graveyard_votes
+Start Day: Create `Banishment` Poll in #graveyard_votes
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Revenant`
   • Revoke @ThisAttr from @Self
