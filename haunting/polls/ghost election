@@ -1,7 +1,7 @@
 **Ghost Election** | Poll
 Available Options: @Ghostly, Abstain
 Allowed Voters: @Ghostly
-Passive Start Night: [Temporal: Night 2+, Condition: @Ghostly exists]
+Passive Start Day: [Temporal: Day 1+, Condition: @Ghostly->Count > 1]
   • (@(AttrRole:Revenant,Ghostly:True) exists) and (@(AttrRole:Poltergeist,Ghostly:True) exists) and (not (@(AttrRole:Banshee,Ghostly:True) exists)):
     ‣ Target `Banshee` (Role)
     ‣ Create Poll in #graveyard_votes as `Banshee Election`
