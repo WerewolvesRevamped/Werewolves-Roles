@@ -1,0 +1,18 @@
+**Spirit Touched** | Extra Miscellaneous | Haunted
+__Basics__
+When a spiritualist selects a player, that player becomes Spirit Touched for the duration of the current night and the following day phase.
+__Details__
+During the night, the spiritualist may select a player. That player will become Spirit Touched and will be added to the Spirit Touched channel.
+The Spiritualist and the Spirit Touched can speak to each other for that duration.
+
+__Simplified__
+When a spiritualist selects a player, that player becomes Spirit Touched until the end of the following day.
+  
+__Formalized__
+Passive End Day:
+  • Conversation Reset
+  • Revoke @ThisAttr from @Self
+On Death: Conversation Reset
+
+__Card__
+The Spirit Touched has been the target of a Spiritualist
