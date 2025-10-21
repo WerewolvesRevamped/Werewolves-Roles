@@ -13,7 +13,7 @@ Ghostly Role
 Immediate Night: [Attribute: @Selection lacks `SpiritTouched`] {Direct} |spiritualist.1|
   • Conversation Reset `Spirit Touched`
   • Grant `Spirit Touched` to @Selection
-  • Whisper to `Spirit Touched` as Corrupt Wolf (~NextDay)
+  • Whisper to `Spirit Touched` as `Spiritualist` (~NextDay)
   • Apply `SpiritTouched` to @Selection
 Passive Start Night: Conversation Reset `Spirit Touched`
 
