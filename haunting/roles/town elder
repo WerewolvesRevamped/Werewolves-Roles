@@ -1,0 +1,15 @@
+**Town Elder** | Townsfolk Miscellaneous | Haunted
+__Basics__
+The Town Elder will survive the first night attack against them, but death will be due to old age, causing them to become banished witout becoming a ghost first.
+__Details__
+The Town Elder will not be notified of their defence being used.
+If the Town Elder dies *before* using their defence (i.e. lynching or day kill), then they will become a ghost as normal.
+
+__Simplified__
+The Town Elder will survive the first night attack against them, but death will be due to old age, causing them to become banished witout becoming a ghost first.
+
+__Formalized__
+Starting: Protect @Self from `Attacks` through Passive Defense during Night (~UntilUse)
+
+__Card__
+The Town Elder can survive one attack before dying of old age.
