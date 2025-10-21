@@ -1,21 +1,29 @@
 **Poltergeist** | Extra Elected | Haunted
 __Basics__
-Each day, the Poltergeist may decide whether to haunt the tavern in the next night. 
+Each night, the Poltergeist may decide whether to haunt the tavern.
 __Details__
 The Poltergeist may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
-Choosing to haunt the tavern is an end day action. If the Poltergeist choose to haunt the tavern, the tavern channel will be locked at the start of the night and it will be announced the tavern is haunted.
-If the Poltergeist's living allies coordinate with the Poltergeist, they can use the haunting ability to send info from the graveyard to the living. 
+Choosing to haunt the tavern is an immediate action. If the Poltergeist chooses to haunt the tavern, the tavern channel will be locked and it will be announced that the tavern is haunted.
+Each ghostly player may send a single anonymous message to the tavern, to haunt the living.
 Once the night ends, the haunting ends, and the tavern will be unlocked.
 While the Poltergeist is haunting the tavern, it is *absent* and will evade banishments (excluding the nightly banishment poll).
-Other roles which spend their night at the tavern (i.e. Alcoholic) must stay at home while the Poltergeist is haunting and are thus *not* absent.
+Other roles that spend their night at the tavern (i.e., Alcoholic) must stay at home while the Poltergeist is haunting and are thus *not* absent.
 The Poltergeist gains an additional secret channel, which is reused for any subsequent Poltergeists.
 
 __Simplified__
-The Poltergeist is elected before the banshee, but after the banisher.
-They may decide whether to haunt the tavern at night, protecting themselves from banishments and potentially giving some info to the living players.
+The Poltergeist is elected before the banshee, but after the revenant.
+They may decide whether to haunt the tavern at night, protecting themselves from banishments and passing info to the living players.
 
 __Formalized__
 Ghostly Role
+Immediate Night:
+  • Protect @Self from `Attacks` through Absence at #tavern during Night (~Phase) [Succession: No Target Succession]
+  • Lock #Tavern
+  • Reveal `The tavern is *haunted* and has been locked for the night!` to #Tavern
+  • Apply `Marker` to @ThisAttr
+Passive Start Day: [Attribute: @ThisAttr has `Marker`]
+  • Unlock #Tavern
+  • Reveal `The tavern has been reopened!` to #Tavern
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Poltergeist`
   • Revoke @ThisAttr from @Self
