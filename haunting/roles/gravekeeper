@@ -4,6 +4,7 @@ The Gravekeeper may check the original roles of ghosts.
 __Details__
 Each night, the Gravekeeper may check one ghost for their original role. They cannot check ghosts who have been banished.
 The roles given are always the role that player was originally assigned; a dog who chooses to become a fortune teller, then gets turned into an undead and finally dies will be shown to the Gravekeeper as 'dog'.
+Investigating a player is an immediate ability.
 The Gravekeeper is immune to disguises and redirections.  
 The Gravekeeper is a replacement for the Reporter in *haunting* games and is elected on the first full day with a living Mayor and no living Gravekeeper.  
 The Gravekeeper may resign at the end of any phase. 
