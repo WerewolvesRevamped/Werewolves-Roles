@@ -1,15 +1,15 @@
 **Hexed Wolf** | Werewolf Investigative | Haunted
 __Basics__
-The Hexed Wolf may learn the roles of those who lynched it, and send that info back to the wolfpack.
+The Hexed Wolf may learn the roles of those who lynched them and send that info back to the wolfpack.
 __Details__
-Everyone who lynches a Hexed Wolf will be hexed. While the Hexed Wolf is a ghost, at night it may investigate a hexed player to learn their role. It is affected by weak disguises.
-Afterwards the Hexed Wolf will send the identity of a hexed player to wolfpack. The wolfpack will learn both the player and the role they were investigated as. The role sent back can be the same or different than the one it investigated earlier.
-Both of these are immediate actions.
+Everyone who lynches a Hexed Wolf will be hexed. During the night, while the Hexed Wolf is a ghost, they may investigate a hexed player to learn their role. This is affected by weak disguises.
+The Hexed Wolf may send the identity of a hexed player to wolfpack. The Hexed Wolf investigates the player, but receives no result; the wolfpack will learn both the player and the role.
+Both of the Hexed Wolf's abilities are immediate actions, but it must conduct its first investigation to unlock its second.
 The Hexed Wolf is a member of the wolfpack and a lycan.
 
 __Simplified__
 Everyone who lynches a Hexed Wolf will be hexed. While the Hexed Wolf is a ghost, at night it may investigate a hexed player to learn their role.
-Afterwards the Hexed Wolf will send the identity of a hexed player to wolfpack. The wolfpack will learn both the player and the role they were investigated as.
+The Hexed Wolf may send the identity of a hexed player to wolfpack. The wolfpack will learn both the player and the role they were investigated as.
 
 __Formalized__
 Haunted Role
