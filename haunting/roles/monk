@@ -1,9 +1,9 @@
 **Monk** | Townsfolk Miscellaneous | Haunted
 __Basics__
-The Monk will survive the first attempt to banish it.
+The Monk will survive the first attempt to banish it during the night.
 __Details__
-The Monk is informed if they were banished, and will lose its ability henceforth.
-The defence is only present during the night.
+The Monk is informed of the attempt to banish them.
+Attempts to banish the Monk during the day will still succeed.
 
 __Simplified__
 The Monk will survive the first attempt to banish it. They will learn when the protection is used.
