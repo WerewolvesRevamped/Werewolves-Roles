@@ -20,7 +20,7 @@ Immediate Night: |poltergeist.1|
   • Protect @Self from `Attacks` through Absence at #tavern during Night (~Phase) 
   • Lock #Tavern
   • Reveal `The tavern is *haunted* and has been locked for the night!` to #Tavern
-  • Add @Ghostly to #Tavern-Haunting (~Phase)
+  • Apply `TavernHaunting` to @Ghostly (~Phase)
   • Whisper from #Tavern-Haunting to #Tavern as `Ghosts` (~Phase)
   • Apply `Marker` to @ThisAttr
 Passive Start Day: [Attribute: @ThisAttr has `Marker`]
