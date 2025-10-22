@@ -20,7 +20,7 @@ Passive Start Day: [Temporal: Day 1+, Condition: $haunting is False]
   • Create `Medium` Poll in #Medium-Question
 End Night: Target @Selection (Player) [Condition: $haunting is True] |medium.1|
 Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True]
-  • Announce `Can @Target be trusted?` to #Medium-Question
+  • Reveal `Can @Target be trusted?` to #Medium-Question
   • Create `Medium` Poll in #Medium-Question
 
 __Card__
