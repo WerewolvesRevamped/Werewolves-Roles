@@ -10,7 +10,7 @@ The Monk will survive the first attempt to banish it. They will learn when the p
 
 __Formalized__
 Haunted Role
-Starting: Protect @Self from `Banish` through Passive Defense during Night (~UntilUse)
+Starting: Protect @Self from `Banishments` through Passive Defense during Night (~UntilUse)
 On Passive Defense: Learn `Defense Used`
 
 __Card__
