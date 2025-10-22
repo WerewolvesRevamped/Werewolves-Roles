@@ -1,15 +1,15 @@
 **Reaper* | Solo Killing - Nightmare Team | Haunted
 __Basics__
-The Reaper can banish players to steal their powers.
+Every other night, the Reaper may banish one ghost, stealing their powers in the process.
 __Details__
-Banishing is an end night action.
-The Reaper cannot banish on consecutive nights.
-When the Reaper banishes a player, it gains their role as its own extra role. If the gained role had abilities with limited uses, the Reaper regains all its uses once obtained.
-The Reaper wins when it is the last player alive.
-When the Reaper dies it does not become a ghost and is immediately banished.
+The Reaper cannot banish on consecutive nights. If the Reaper chooses not to banish, they will once again have the option to banish in the following night.
+When the Reaper banishes a player, they gain the player's role as an extra role. If the gained role had abilities with limited uses, the Reaper regains all uses once obtained.
+Banishing is an end-night ability.
+The Reaper wins when they are the last player alive.
+When the Reaper dies, they do not become a ghost: they are immediately banished.
 
 __Simplified__
-The Reaper can banish players to steal their powers. It can do so on non-consecutive nights.
+Every other night, the Reaper can banish players to steal their powers.
 The Reaper wins when it is the last player alive.
 
 __Formalized__
