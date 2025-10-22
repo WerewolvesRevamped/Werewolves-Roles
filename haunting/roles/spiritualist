@@ -1,9 +1,9 @@
 **Spiritualist** | Townsfolk Power | Haunted
 __Basics__
-When the Spiritualist becomes a ghost, they can whisper to a living player each night.
+Once the Spiritualist becomes a ghost, they can whisper to a living player each night.
 __Details__
-Each night, while they are a ghost, they may choose a player (immediate ability). For the rest of the night, as well as the following day, the Spiritualist may anonymously whisper with their target.
-The Spiritualist may only pick each target once.
+Each night, if they are a ghost, the Spiritualist may select a player. From the moment of selection until the end of the following day, the Spiritualist may anonymously whisper with their target.
+The Spiritualist may only pick each target once. Selecting a player is an immediate ability.
 
 __Simplified__
 After the Spiritualist dies, they can whisper to one player each night.
