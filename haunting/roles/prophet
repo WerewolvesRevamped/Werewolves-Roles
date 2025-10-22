@@ -1,21 +1,20 @@
 **Prophet** | Extra Elected | Haunted
 __Basics__
-The Prophet may once perform a miracle of resurrection and a miracle of protection each.
+The Prophet may perform two miracles - the miracle of protection and the miracle of resurrection - once each.
 __Details__
 The Prophet is a replacement for the Guardian in *haunting* games and is elected on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
-During the night the Prophet can perform a miracle of resurrection or a miracle of protection, but only one at a time.
-The Prophet can perform each miracle once each. These limitations carry on to future elected Prophets.
-The miracle of protection can protect one player from dying to all attacks that night.
-The miracle of resurrection can turn one ghostly player back into a living player.
-Both miracles are end night actions but before attacks and banishes.
-Miracles are announced in story time.
+During the night the Prophet can perform the miracle of resurrection or the miracle of protection. The Prophet can only perform one miracle during a night. Peforming a miracle is an end night action, but miracles take effect before end night attacks and banishments.
+The Prophet can perform each miracle once. These limitations carry over to future elected Prophets.
+The miracle of protection protects the targeted player from all attacks.
+The miracle of resurrection transforms the targeted ghostly player back into a living player.
+Miracles are announced in story time. The type of miracle performed, but not the target, is announced.
 The Prophet may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
 The Prophet gains an additional secret channel, which is reused for any subsequent Prophets.
 
 __Simplified__
-The Prophet may perform a miracle of resurrection and a miracle of protection once each. It can do so during night but only one at a time.
-They are both end night actions that are announced in story time.
-The Prophet is elected  on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
+The Prophet may perform the miracle of resurrection and the miracle of protection once each. They can perform only one miracle in a given night.
+Performing a miracle is an end night action that is announced in story time.
+The Prophet is elected on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
 
 __Formalized__
 Ghostly Role
