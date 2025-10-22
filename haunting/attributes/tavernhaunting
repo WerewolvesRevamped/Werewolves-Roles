@@ -3,5 +3,6 @@ __Basics__
 An attribute marking players who are currently haunting the tavern.
 
 __Formalized__
+Haunted Attribute
 Starting: Add @Self to #Tavern-Haunting (~Phase)
 On `Ghosts` Whisper: Remove @Self from #Tavern-Haunting
