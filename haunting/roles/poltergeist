@@ -23,9 +23,11 @@ Immediate Night: |poltergeist.1|
   • Apply `TavernHaunting` to @Ghostly (~Phase)
   • Whisper from #Tavern-Haunting to #Tavern as `Ghosts` (~Phase)
   • Apply `Marker` to @ThisAttr
+  • Remove `Absence:Alcoholic` from @(Role:Alcoholic)
 Passive Start Day: [Attribute: @ThisAttr has `Marker`]
   • Unlock #Tavern
   • Reveal `The tavern has been reopened!` to #Tavern
+Passive Start Day: Process: Protect @(Role:Alcoholic) from `Attacks` through Absence at #tavern during Night [Condition: @(Role:Bartender) exists]
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Poltergeist`
   • Revoke @ThisAttr from @Self
