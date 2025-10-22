@@ -2,15 +2,15 @@
 __Basics__
 Each night, the Medium may ask the dead players one question.
 __Details__
-During each night the Medium has access to a second secret channel, where they can ask a question, once day starts the channel is locked, and a Yes/No poll is created. 
-All dead participants are able to vote on it during the day. Of course, there can be members of all teams in the dead participants.
-The question needs to be one simple yes/no question without any hidden meaning to it. Not voting as a dead participant should not give the Medium any information. 
-Once the day ends, the poll is closed, and the Medium gains access to the second secret channel again.
-In *Haunting mode*, medium may only select a player and ask whether they can be trusted and ghostly players do not learn the medium's identity.
+During each night, the Medium has access to a second secret channel where they can ask a question; once day starts, the channel is locked and a Yes/No poll is created. All dead participants are able to vote on the poll.
+The Medium may only ask one question per night. The question needs to be one simple "yes or no" question without any further or hidden meaning.
+Once the day ends, the poll is closed and the Medium gains access to the second secret channel again.
+
+In *haunting* games, the Medium may only ask whether a given player "can be trusted". Ghostly players do not learn the Medium's identity. Banished players cannot vote.
 
 __Simplified__
 Each night, the Medium may ask the dead players a yes or no question.
-The dead players will be able to vote during the day, and when it ends the Medium learns the result, but not who voted what.
+The dead players will be able to vote during the day; when day ends the Medium learns the result, but not who voted how.
 
 __Formalized__
 Unique Role
