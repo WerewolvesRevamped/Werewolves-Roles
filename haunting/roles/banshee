@@ -1,6 +1,6 @@
 **Banshee** | Extra Elected | Haunted
 __Basics__
-Each night, the Banshee may select one living player to haunt for the remainder of the night, preventing them from using any active abilities. 
+Each night, the Banshee may select one living player to haunt for the remainder of the night, preventing them from using any active (or reactive) abilities. 
 __Details__
 The Banshee may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
 Choosing a player to haunt is an immediate action. 
@@ -9,7 +9,7 @@ The Banshee gains an additional secret channel, which is reused for any subseque
 
 __Simplified__
 The Banshee is elected after the revenant and the poltergeist.
-They may decide to haunt a player, preventing them from using any active abilities.
+They may decide to haunt a player, preventing them from using any active (or reactive) abilities.
 
 __Formalized__
 Ghostly Role
