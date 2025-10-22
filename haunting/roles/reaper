@@ -7,11 +7,14 @@ The Reaper cannot banish on consecutive nights.
 When the Reaper banishes a player, it gains their role as its own extra role. If the gained role had abilities with limited uses, the Reaper regains all its uses once obtained.
 The Reaper wins when it is the last player alive.
 When the Reaper dies it does not become a ghost and is immediately banished.
+
 __Simplified__
 The Reaper can banish players to steal their powers. It can do so on non-consecutive nights.
 The Reaper wins when it is the last player alive.
+
 __Formalized__
 Haunted Role
+End Night: Banish @Selection
 
 __Card__
 The Reaper can banish players to steal their powers.
