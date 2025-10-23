@@ -4,6 +4,7 @@ Each night, the Revenant may decide whether a banishment will take place during 
 __Details__
 The Revenant may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
 Choosing a banishment is an immediate action. 
+If there is no Revenant and a ghost election occurs, a Revenant is elected.
 The Revenant gains an additional secret channel, which is reused for any subsequent Revenants.
 
 __Simplified__
