@@ -8,6 +8,7 @@ Each ghostly player may send a single anonymous message to the tavern.
 Once the night ends, the haunting ends and the tavern will be unlocked.
 Whilst the Poltergeist is haunting the tavern, it is *absent* and will evade banishments (excluding the nightly banishment poll).
 Other roles that spend their night at the tavern (i.e., Alcoholic) must stay at home while the Poltergeist is haunting and are thus *not* absent.
+The Poltergeist is elected in the first ghost election in which a Revenant already exists.
 The Poltergeist gains an additional secret channel, which is reused for any subsequent Poltergeists.
 
 __Simplified__
