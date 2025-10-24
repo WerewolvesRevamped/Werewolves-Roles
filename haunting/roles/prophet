@@ -18,8 +18,8 @@ Performing a miracle is an end night action that is announced in story time.
 The Prophet is elected on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
 
 __Formalized__
-Ghostly Role
-Passive Start Night: `Miracle` Choice Creation (Resurrection, Protection) [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `Marker2`] |prophet.1|
+Passive Start Night: `Miracle` Choice Creation (Resurrection, Protection) [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `Marker2`]
+Immediate Night: `Miracle` Choice Choose @Chosen [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `Marker2`] |prophet.1|
 End Night: [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr has `Marker2`] |prophet.2|
   • Resurrect @Selection[ghostly]
   • Apply `Marker` to @ThisAttr
