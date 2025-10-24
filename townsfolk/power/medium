@@ -6,7 +6,7 @@ During each night, the Medium has access to a second secret channel where they c
 The Medium may only ask one question per night. The question needs to be one simple "yes or no" question without any further or hidden meaning.
 Once the day ends, the poll is closed and the Medium gains access to the second secret channel again.
 
-In *haunting* games, the Medium may only ask whether a given player "can be trusted". Ghostly players do not learn the Medium's identity. Banished players cannot vote.
+In *haunting* games, the Medium may only ask whether a specific living player "can be trusted". Ghostly players do not learn the Medium's identity. Banished players cannot vote.
 
 __Simplified__
 Each night, the Medium may ask the dead players a yes or no question.
@@ -18,10 +18,12 @@ Passive Start Night: Join #Medium-Question [Condition: $haunting is False]
 Passive Start Day: [Temporal: Day 1+, Condition: $haunting is False]
   • Leave #Medium-Question
   • Create `Medium` Poll in #Medium-Question
+Passive Start Night: Process: Untarget [Condition: $haunting is True]
 End Night: Target @Selection (Player) [Condition: $haunting is True] |medium.1|
-Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True]
+Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True, Condition: @Target exists]
   • Reveal `Can @Target be trusted?` to #Medium-Question
-  • Create `Medium` Poll in #Medium-Question
+  • Create `Medium Haunted` Poll in #Medium-Question as `Medium`
+On Poll Skipped: Learn `Can @Target be trusted? @Winner[string]`
 
 __Card__
 The Medium attempts to communicate with the dead - with limited success.
