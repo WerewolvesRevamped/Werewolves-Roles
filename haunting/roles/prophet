@@ -19,7 +19,23 @@ The Prophet is elected on the first full day with a living Mayor and Gravekeeper
 
 __Formalized__
 Ghostly Role
-
+Passive Start Night: `Miracle` Choice Creation (Resurrection, Protection) [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `Marker2`] |prophet.1|
+End Night: [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr has `Marker2`] |prophet.2|
+  • Resurrect @Selection[ghostly]
+  • Apply `Marker` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Resurrection**`
+Pre-End Night: [Attribute: @ThisAttr has `Marker`, Attribute: @ThisAttr lacks `Marker2`] |prophet.3|
+  • Protect @Selection from `Attacks` through Active Defense (~Phase)
+  • Apply `Marker2` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Protection**`
+On `Resurrection` End Emitted:
+  • Resurrect @Selection[ghostly]
+  • Apply `Marker` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Resurrection**`
+On `Protection` End Emitted:
+  • Protect @Selection from `Attacks` through Active Defense (~Phase)
+  • Apply `Marker2` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Protection**`
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Prophet`
   • Revoke @ThisAttr from @Self
