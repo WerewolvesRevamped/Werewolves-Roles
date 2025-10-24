@@ -18,23 +18,24 @@ Performing a miracle is an end night action that is announced in story time.
 The Prophet is elected on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
 
 __Formalized__
-Passive Start Night: `Miracle` Choice Creation (Resurrection, Protection) [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `Marker2`]
-Immediate Night: `Miracle` Choice Choose @Chosen [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `Marker2`] |prophet.1|
-End Night: [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr has `Marker2`] |prophet.2|
-  • Resurrect @Selection[ghostly]
+Passive Start Night: `Miracle` Choice Creation for @ThisAttr (Resurrection, Protection) [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `MarkerAlt`]
+Immediate Night: `Miracle` Choice Choose @Chosen [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `MarkerAlt`] |prophet.1|
+Choice Chosen: End Emit @Option for @ThisAttr
+End Night: [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr has `MarkerAlt`] |prophet.2|
+  • Resurrect @Selection[ghost]
   • Apply `Marker` to @ThisAttr
   • Announce `@Self has performed a **Miracle of Resurrection**`
-Pre-End Night: [Attribute: @ThisAttr has `Marker`, Attribute: @ThisAttr lacks `Marker2`] |prophet.3|
+Pre-End Night: [Attribute: @ThisAttr has `Marker`, Attribute: @ThisAttr lacks `MarkerAlt`] |prophet.3|
   • Protect @Selection from `Attacks` through Active Defense (~Phase)
-  • Apply `Marker2` to @ThisAttr
+  • Apply `MarkerAlt` to @ThisAttr
   • Announce `@Self has performed a **Miracle of Protection**`
-On `Resurrection` End Emitted:
-  • Resurrect @Selection[ghostly]
+On `Resurrection` End Emitted: |prophet.2|
+  • Resurrect @Selection[ghost]
   • Apply `Marker` to @ThisAttr
   • Announce `@Self has performed a **Miracle of Resurrection**`
-On `Protection` End Emitted:
+On `Protection` End Emitted: |prophet.3|
   • Protect @Selection from `Attacks` through Active Defense (~Phase)
-  • Apply `Marker2` to @ThisAttr
+  • Apply `MarkerAlt` to @ThisAttr
   • Announce `@Self has performed a **Miracle of Protection**`
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Prophet`
