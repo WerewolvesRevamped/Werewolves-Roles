@@ -15,7 +15,7 @@ __Simplified__
 When there is a Mayor, a Gravekeeper is elected. They can check ghosts to see their starting roles.
 
 __Formalized__
-Immediate Night: Learn `@Selection[ghost] - @Selection->OriginalRole[role]`
+Immediate Night: Learn `@Selection[ghost] - @Selection->OriginalRole[role]` |gravekeeper.1|
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Gravekeeper`
   • Revoke @ThisAttr from @Self
