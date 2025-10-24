@@ -1,19 +1,18 @@
 **Revenant** | Extra Elected | Haunted
 __Basics__
-Each night, the Revenant may decide whether a banishment will take place during the next day. There may not be banishments on successive days. 
+When there is a Revenant, a banishment will take place on all odd days.
 __Details__
 The Revenant may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
-Choosing a banishment is an immediate action. 
 If there is no Revenant and a ghost election occurs, a Revenant is elected.
 The Revenant gains an additional secret channel, which is reused for any subsequent Revenants.
 
 __Simplified__
 The Revenant is elected before the poltergeist and the banshee.
-They may decide whether a banishment will take place, but may not decide on banishments on successive days.
+When there is a Revenant, a banishment will take place on all odd days.
 
 __Formalized__
 Ghostly Role
-Start Day: Create `Banishment` Poll in #graveyard_votes
+Passive Start Day: Create `Banishment` Poll in #graveyard_votes [Temporal: Day 3+] ⟨Odd: x1⟩
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Revenant`
   • Revoke @ThisAttr from @Self
