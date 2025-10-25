@@ -25,8 +25,8 @@ Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True, Condition: @
   • Reveal `Can @Target be trusted?` to #Medium-Question
   • Create `Medium Haunted` Poll in #Medium-Question as `Medium`
 On Poll Skipped:
-  • @Winner[string] is ``[string]: Learn `Can @Target be trusted? No Response`
-  • Otherwise: Learn `Can @Target be trusted? @Winner[string]`
+  • @Winner exists: Learn `Can @Target be trusted? @Winner[string]`
+  • Otherwise: Learn `Can @Target be trusted? No Response`
 
 __Card__
 The Medium attempts to communicate with the dead - with limited success.
