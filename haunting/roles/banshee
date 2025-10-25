@@ -14,7 +14,7 @@ They may decide to haunt a player, preventing them from using any active (or rea
 
 __Formalized__
 Ghostly Role
-Immediate Day: Obstruct @Selection (~DelayedPhase) [Attribute: @Selection lacks `BansheeObstructed`]
+Immediate Night: Obstruct @Selection (~Phase) [Attribute: @Selection lacks `BansheeObstructed`]
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Banshee`
   • Revoke @ThisAttr from @Self
