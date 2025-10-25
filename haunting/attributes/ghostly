@@ -1,7 +1,7 @@
 **Ghostly** | Attribute
 __Basics__
 A Ghostly player may not use any of their abilities while alive; instead, they can use them while they are a ghost.
-They may target both living as well as ghostly participants. 
+This does not affect which players they can target, so for most roles they may only target living players even while they are a ghost.
 
 __Formalized__
 Haunted Attribute
