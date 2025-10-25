@@ -1,0 +1,7 @@
+**Nightmare Team**
+__Basics__
+The team wins when all players are dead, unaligned or part of the nightmare team. By default, members of the Nightmare Team are part of the purgatory group.
+
+__Formalized__
+Win Condition: @(Alignment:Nightmare), @(Class:Unaligned)
+On Join: Add @Joiner to #Purgatory
