@@ -695,6 +695,7 @@ Start Night<br>End Night<br>Start Day<br>End Day<br>Immediate Night<br>Immediate
 Second Pre-End Night<br>Third Pre-End Night<br>Fourth Pre-End Night<br>Second Pre-End Day<br>Third Pre-End Day<br>Fourth Pre-End Day | Prompting triggers for different timings. Higher numbers are evaluated first (Fourth > Third > Second > Pre > End) | ⛔
 Passive End Day<br>Passive End Night<br>Passive Start Day<br>Passive Start Night<br>Passive Start Phase<br>Passive End Phase | Non-prompting triggers for different timings. | ⛔
 Starting | Triggers at the start of the game, and whenever a new group/role/team/attribute/etc is created. | ⛔
+On Assigned | Triggers whenever an extra role is created or assigned to a new player. | ⛔
 Passive | Triggers whenever a significant change occurs (game start, phase change, somebody dies/changes roles) and can be used with conditions that should theoretically be checked constantly. | ⛔
 On Death | Triggers when the current player dies. | @Attacker<br>@DeathType<br>@AttackSource
 On {Player} Death | Triggers when a player from a specific selector dies. | @Attacker<br>@DeathType<br>@AttackSource<br>@This
