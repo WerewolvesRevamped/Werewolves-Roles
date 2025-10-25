@@ -6,10 +6,12 @@ When the Immortal is elected as Mayor, they are instead immediately banished and
 All Nightmare Team members share a channel for communication.
 Choosing a voting power is an end night action.
 The Immortal is a member of the nightmare team and purgatory channel. The nightmare team wins when all other players are dead or unaligned.
+If there is no reaper, the Immortal may choose to become a reaper.
 
 __Simplified__
 The Immortal cannot die by any means, unless they are elected Mayor. Each night they can choose to have a voting power of 1, 2, or 3 for the following day.
 When The Immortal dies from becoming Mayor, they do not become a ghost, they are instead immediately banished.
+If there is no reaper, the Immortal may choose to become a reaper.
 
 __Formalized__
 Haunted Role
@@ -18,7 +20,7 @@ End Night: Manipulate @Self's `public voting power` to @Selection (~NextDay) [Co
 On Poll `Election` Win:
   • True Kill @Self
   • True Banish @Self
-Immediate Night: Role Change @Self to `Reaper` [Condition: not (@(Role:Reaper) exists)] |immortal.2|
+Immediate: Role Change @Self to `Reaper` [Condition: not (@(Role:Reaper) exists)] |immortal.2|
 
 __Card__
 The Immortal cooperates with the Reaper so that they will never go to the afterlife.
