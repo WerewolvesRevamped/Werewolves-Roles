@@ -15,7 +15,7 @@ On Visited [!Targeting]:
   • Attack @Visitor
   • Increment Counter
   • @Self->Counter > 1: Ascend
-On Visited [Attacking]: Cancel with Failure [Temporal: Night]
+On Visited [Killing]: Cancel with Failure [Temporal: Night]
 
 __Card__
 The Bear does not wish to be disturbed, and viciously attacks those that do.
