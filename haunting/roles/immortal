@@ -18,6 +18,7 @@ End Night: Manipulate @Self's `public voting power` to @Selection (~NextDay) [Co
 On Poll `Election` Win:
   • True Kill @Self
   • True Banish @Self
+Immediate Night: Role Change @Self to `Reaper` [Condition: not (@(Role:Reaper) exists)] |immortal.2|
 
 __Card__
 The Immortal cooperates with the Reaper so that they will never go to the afterlife.
