@@ -9,7 +9,7 @@ When they are attacked, the Pyronner will not die, but will be vulnerable to fut
 __Formalized__
 Starting:
   • Join #Pyros
-  • Protect @Self from `Attacks` through Passive (~UntilUse)
+  • Protect @Self from `Attacks` through Passive Defense (~UntilUse)
 Passive Start Night: `Pyronner` Choice Creation (Powder, Unpowder, Ignite)
 Immediate Night: `Pyronner` Choice Choose @Chosen |pyromancer.1|
 Choice `Powder` Chosen: |pyromancer.2|
