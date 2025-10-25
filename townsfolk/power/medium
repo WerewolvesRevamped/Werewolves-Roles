@@ -21,6 +21,7 @@ Passive Start Day: [Temporal: Day 1+, Condition: $haunting is False]
 Passive Start Night: Process: Untarget [Condition: $haunting is True]
 End Night: Target @Selection (Player) [Condition: $haunting is True] |medium.1|
 Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True, Condition: @Target exists]
+  • Add @Ghostly to #Medium-Question
   • Reveal `Can @Target be trusted?` to #Medium-Question
   • Create `Medium Haunted` Poll in #Medium-Question as `Medium`
 On Poll Skipped:
