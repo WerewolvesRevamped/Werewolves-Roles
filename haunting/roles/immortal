@@ -15,10 +15,9 @@ __Formalized__
 Haunted Role
 Starting: Protect @Self from `All` through Passive Defense (~Permanent)
 End Night: Manipulate @Self's `public voting power` to @Selection (~NextDay) [Condition: (@Selection > 0) and (@Selection < 4)] |immortal.1|
-On Poll Win:
-  • @Self is part of @(AttrRole:Mayor):
-    ‣ True Kill @Self
-    ‣ True Banish @Self
+On Poll `Election` Win:
+  • True Kill @Self
+  • True Banish @Self
 
 __Card__
 The Immortal cooperates with the Reaper so that they will never go to the afterlife.
