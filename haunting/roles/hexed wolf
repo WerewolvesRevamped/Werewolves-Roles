@@ -15,6 +15,7 @@ __Formalized__
 Haunted Role
 Inherit: `Pack Lycan`
 On Poll `Lynch` Win: Apply `Hexed` to @Voters
+On Lynch: Apply `Hexed` to @Voters [Condition: @Attacker exists, Condition: @Attacker is part of @All]
 Immediate Night: Role Investigate @Selection (SD, WD) [Attribute: @Selection has `Hexed`, Status: Ghostly] |hexed_wolf.1|
 Immediate Night: [Attribute: @Selection has `Hexed`, Status: Ghostly] |hexed_wolf.2|
   • Process: Role Investigate @Selection (SD, WD) 
