@@ -12,7 +12,10 @@ __Simplified__
 If a player marked by the Ritualist Wolf fails to survive the day, the Ritualist Wolf will protect all pack members during the following night.
 
 __Formalised__
-
+End Night: Target @Selection (Player) [Attribute: lacks `Marker`]
+Start Day: Apply `Marker` to @Self [Condition: @Target exists]
+On @Target Death: Apply `Ritual` to #Wolfpack [Temporal: Day]
+Passive Start Night: Process: Untarget
 
 __Card__
 The Ritualist Wolf knows some powerful protective magic.
