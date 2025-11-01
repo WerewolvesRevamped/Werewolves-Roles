@@ -3,24 +3,26 @@ __Basics__
 The Reporter is notified of the roles of the dead.
 __Details__
 The Reporter has access to a secret channel with the roles of the dead.
-The roles given are always the role that player was originally assigned; a dog who chooses to become a fortune teller, then gets turned into an undead and finally dies will be shown to the Reporter as 'dog'.
+The roles given are always the role that the player was originally assigned; a dog who chooses to become a fortune teller, then gets turned into an undead and finally dies will be shown to the Reporter as 'dog'.
 The Reporter is immune to disguises and redirections.  
 The Reporter is elected on the first full day with a living Mayor and no living Reporter. 
 The Reporter may resign at the end of any phase. 
 The Reporter gains an additional secret channel, which is reused for any subsequent Reporters.
 
 __Simplified__
-When there is a Mayor, a Reporter is elected. They will be able to see the starting roles of all players that have died.
+When there is a Mayor, a Reporter is elected. They will be able to see the starting roles of all players who have died.
 
 __Formalized__
-Passive Start Night: For Each @Dead:
+Passive Start Night: For Each @Dead: {Visitless}
   • not (@Ind has `Reported`):
     ‣ Apply `Reported` to @Ind (~Persistent)
     ‣ Learn `@Ind - @Ind->OriginalRole`
-On @All Death:
-  • Apply `Reported` to @This (~Persistent)
-  • Learn `@This - @This->OriginalRole`
-End Phase: Revoke @ThisAttr from @Self |silent:granting.resign|
+On @All Death: {Visitless}
+  • Process: Apply `Reported` to @This (~Persistent)
+  • Evaluate: Learn `@This - @This->OriginalRole`
+End Phase: {Vanishing} |silent:granting.resign|
+  • Announce `@Self resigned as Reporter`
+  • Revoke @ThisAttr from @Self
 
 __Card__
 The Reporter is elected to find out the truth behind the dead.

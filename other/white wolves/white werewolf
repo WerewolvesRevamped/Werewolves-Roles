@@ -18,11 +18,11 @@ The White Werewolf imitates the most common werewolf role, being disguised as su
 __Formalized__
 Unique Role
 Inherit: `Pack Lycan`
-Starting: Apply `Wolfish` to @Self
-Passive Start Day: [Quantity: 1]
-  • Target @(Group:Wolfpack,Align:Werewolf,Cat:!Group)->MostFreqRole (Role)
-  • Grant @Target to @Self
-  • Strongly Disguise @Self as @Target
+Include: %Role%
+Starting:
+  • Apply `Wolfish` to @Self
+  • Strongly Disguise @Self as %Role% [Quantity: 1]
+  • Learn `You are imitating %Role%`
 End Night: Attack @Selection [Condition: @Selection is in #Wolfpack, Succession: No Succession, Temporal: Night 2+]
 
 __Card__

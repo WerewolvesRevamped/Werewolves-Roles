@@ -1,21 +1,25 @@
 **Plague Carrier** | Solo Miscellaneous - Plague Team
 __Basics__ 
-The Plague Carrier wins with the plague bearers and joins a channel with them to communicate securely.
+The Plague Carrier learns the roles of players who will die to the plague.
 __Details__
-The Plague Carrier does not have any special abilities. If somebody tries to copy a plague bearer, a Plague Carrier is created instead. 
+At the start of each night, the Plague Carrier will learn the roles of the players who will die to the plague at the end of that night. The Plague Carrier does not learn which player has which role. 
+If more than one player with the same role would die, the Plague Carrier learns that role multiple times.
 The Plague Carrier starts out contaminated, but will never die due to the plague.
 A plague bearer may not attempt to directly contaminate the Plague Carrier using one of their rodents.
-If the last plague bearer dies, and there are rodents left, the Plague Carrier stops being contaminated and becomes a plague bearer.
-At the start of every phase, the Plague Carrier is told the amount of living contaminated players.
+If the last plague bearer dies, and there are rodents remaining, the Plague Carrier stops being contaminated and becomes a plague bearer.
+At the start of every phase, members of the plague team are told the amount of living contaminated players.
 
 __Simplified__
 The Plague Carrier wins with the plague bearers and joins a channel with them. The Plague Carrier is a carrier of the plague, but can't die from it.
-At the start of every phase, the Plague Carrier is told the amount of living contaminated players.
+At the start of every night, the Plague Carrier is told the roles of players who will die from the plague that night.
 
 __Formalized__
 Starting: Apply `Contaminated` to @Self (~Persistent) (EarlyStage, $phase)
-Passive Start Phase: Investigate @(Attr:Contaminated) Player Count
 Passive: Role Change @Self to `Plague Bearer` [Condition: (not (@(Role:Plague-Bearer) exists)) and (#Plague-Pit->Counter > 0)]
+Passive End Day: 
+  • For Each @(Attr:Contaminated):
+    ‣ (@Ind->Attr(Contaminated)->Value1 is `MiddleStage`) and (@Self->Role is not `Plague Carrier`):
+      ◦ Learn `A @Ind->Role is going to die of the plague`
 
 __Card__
 The Plague Carrier is the sickly sidekick of the plague bearer.

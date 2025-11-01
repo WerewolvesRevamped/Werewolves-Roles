@@ -2,7 +2,7 @@
 __Basics__
 The Jury is a trusted townsfolk group, with the special ability to investigate players. If fewer than two Jurors remain, the Jury is disbanded.
 __Members__
-<?Juror:> *Juror*
+<?Juror:> Juror
 
 __Formalized__
 Unique Group
