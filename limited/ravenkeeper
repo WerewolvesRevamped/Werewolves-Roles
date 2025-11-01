@@ -3,7 +3,7 @@ __Basics__
 Each night, the Ravenkeeper may assign one of its ravens to a player. The Ravenkeeper will learn if an ability is used on any of the players with a raven.
 __Details__
 The Ravenkeeper starts out with 1 raven for every 5 players in the game (rounded down). Each night, the Ravenkeeper may assign one raven to another player. Assigning a raven is an *immediate effect*.
-The first time an ability is used on a player with a raven, the raven returns to the Ravenkeeper and lets the Ravenkeeper learn the type of ability that was used and which player it was used on. Ravens can usually only report on one ability, except when several abilities are used at the same time. In this case, the Ravenkeeper will learn all the ability types except duplicates. 
+The first time an ability is used on a player with a raven, the raven returns to the Ravenkeeper and lets the Ravenkeeper learn the type of ability that was used and which player it was used on. Ravens can only report on one ability. If several abilities are used at the same time, the Ravenkeeper will learn only of arbitrary one ability type.
 The Ravenkeeper is affected by *redirections*, though the Ravenkeeper will know a raven got redirected when it returns and reports on an ability.
 If there are several Ravenkeepers, their ravens are separate.
 During the day, the Ravenkeeper may recall a raven. Recalling is an immediate effect.
