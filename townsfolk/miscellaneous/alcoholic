@@ -11,7 +11,7 @@ At night, the Alcoholic is immune against all attacks, but dies when the Bartend
 __Formalized__
 Require: `Bartender`
 Starting: Protect @Self from `Attacks` through Absence at #tavern during Night
-On @(Role:Bartender) Death: Remove `Absence:Alcoholic` from @Self [Condition: not (@(Role:Bartender) exists)]
+On @(Role:Bartender) Death: Process: Remove `Absence:Alcoholic` from @Self [Condition: not (@(Role:Bartender) exists)]
 Passive End Night: Kill @Self [Condition: not (@(Role:Bartender) exists)]
 
 __Card__
