@@ -25,8 +25,8 @@ Immediate Night:
     ‣ Attribute Investigate @Selection for `GroupMembership:Wolfpack`
   • Evaluate:
     ‣ (@Result1 is `Werewolf`) or (@Result3 is True): Failure
-    ‣ @Result2 is `Baker`+`Butcher`: Role Change @Selection to `Bloody Butcher`
-    ‣ @Result2 is `Cult Member`+`Cult Leader`: Role Change @Selection to `Cultist Wolf`
+    ‣ @Result2->Role is part of `Baker`+`Butcher`: Role Change @Selection to `Bloody Butcher`
+    ‣ @Result2->Role is part of `Cult Member`+`Cult Leader`: Role Change @Selection to `Cultist Wolf`
     ‣ Otherwise: Role Change @Selection to `Wolf`
 
 __Card__
