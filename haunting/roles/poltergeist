@@ -26,12 +26,19 @@ Immediate Night: |poltergeist.1|
   • Apply `Marker` to @ThisAttr
   • Remove `Absence:Alcoholic` from @(Role:Alcoholic)
 Passive Start Day: [Attribute: @ThisAttr has `Marker`]
+  • Remove @(Group:Tavern-Haunting) from #Tavern-Haunting
   • Unlock #Tavern
   • Reveal `The tavern has been reopened!` to #Tavern
+  • Remove `Marker` from @ThisAttr
 Passive Start Day: Process: Protect @(Role:Alcoholic) from `Attacks` through Absence at #tavern during Night [Condition: @(Role:Bartender) exists]
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Poltergeist`
   • Revoke @ThisAttr from @Self
+On Banish: [Attribute: @ThisAttr has `Marker`]
+  • Remove @(Group:Tavern-Haunting) from #Tavern-Haunting
+  • Unlock #Tavern
+  • Reveal `The tavern has been reopened!` to #Tavern
+  • Remove `Marker` from @ThisAttr
 
 __Card__
 The Poltergeist is elected to haunt the living.
