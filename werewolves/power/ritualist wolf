@@ -14,7 +14,7 @@ If a player marked by the Ritualist Wolf fails to survive the day, the Ritualist
 __Formalized__
 Inherit: `Pack Lycan`
 End Night: Target @Selection (Player) [Attribute: lacks `Marker`]
-Start Day: Apply `Marker` to @Self [Condition: @Target exists]
+Passive Start Day: Apply `Marker` to @Self [Condition: @Target exists]
 On @Target Death: Apply `Ritual` to #Wolfpack [Temporal: Day]
 Passive Start Night: Process: Untarget
 
