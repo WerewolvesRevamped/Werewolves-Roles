@@ -16,7 +16,7 @@ __Formalized__
 Inherit: `Pack Lycan`
 Immediate Night: Target @Selection (Player)
 On `Attack` Emitted: Attack @Target [Quantity: 1, Condition: @Target exists, Attribute: @Target lacks `PackTarget`]
-Passive Start Day: Process: Untarget
+Passive End Day: Process: Untarget
 
 __Card__
 The Ferocious Wolf hates to see a victim escape its grasp.
