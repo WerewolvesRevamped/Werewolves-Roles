@@ -18,7 +18,7 @@ They may decide whether to haunt the tavern at night, protecting themselves from
 __Formalized__
 Ghostly Role
 Immediate Night: |poltergeist.1|
-  • Protect @Self from `Attacks` through Absence at #tavern during Night (~Phase) 
+  • Protect @Self from `Banishments` through Absence at #tavern during Night (~Phase) 
   • Lock #Tavern
   • Reveal `The tavern is *haunted* and has been locked for the night!` to #Tavern
   • Apply `TavernHaunting` to @Ghostly (~Phase)
