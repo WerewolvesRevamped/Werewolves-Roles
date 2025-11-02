@@ -6,7 +6,7 @@ At night, the Ferocious Wolf may choose a player. If the wolfpack attack fails, 
 If the Ferocious Wolf attacks a player using this ability, they may not use the ability again, even if their attack fails.
 The chosen player must not be the wolfpack target: if the Ferocious Wolf's chosen player wins a wolfpack poll, the Ferocious Wolf's ability will not trigger and will not be used up.
 If there are multiple wolfpack polls, only one must fail for the Ferocious Wolf's ability to trigger.
-If there are no wolfpack polls, or the wolfpack does not attack a target, the Ferocious Wolf's ability will not trigger.
+If there are no wolfpack polls or the wolfpack does not attack a target, the Ferocious Wolf's ability will not trigger.
 The Ferocious Wolf is a lycan and a member of the pack.
 
 __Simplified__
@@ -14,8 +14,10 @@ If the wolfpack's attack fails, the Ferocious Wolf may attack a different player
 
 __Formalized__
 Inherit: `Pack Lycan`
-Immediate Night: Target @Selection (Player)
-On `Attack` Emitted: Attack @Target [Quantity: 1, Condition: @Target exists, Attribute: @Target lacks `PackTarget`]
+Immediate Night: Target @Selection (Player) [Attribute: lacks `Marker`]
+On `Attack` Emitted: [Quantity: 1, Condition: @Target exists, Attribute: @Target lacks `PackTarget`]
+  • Attack @Target 
+  • Apply `Marker` to @Self
 Passive End Day: Process: Untarget
 
 __Card__
