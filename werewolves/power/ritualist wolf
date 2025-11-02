@@ -15,7 +15,7 @@ __Formalized__
 Inherit: `Pack Lycan`
 End Night: Target @Selection (Player) [Attribute: lacks `Marker`]
 Passive Start Day: Apply `Marker` to @Self [Condition: @Target exists]
-On @Target Death: Apply `Ritual` to #Wolfpack [Temporal: Day]
+On @Target Death: Apply `Ritual` to #Wolfpack (~NextNight) [Temporal: Day]
 Passive Start Night: Process: Untarget
 
 __Card__
