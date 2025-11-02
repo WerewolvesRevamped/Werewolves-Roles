@@ -15,7 +15,7 @@ If the wolfpack's attack fails, the Ferocious Wolf may attack a different player
 __Formalized__
 Immediate Night: Target @Selection (Player)
 On `Attack` Emitted: Attack @Target [Quantity: 1, Condition: @Target exists, Attribute: @Target lacks `PackTarget`]
-Start Day: Process: Untarget
+Passive Start Day: Process: Untarget
 
 __Card__
 The Ferocious Wolf hates to see a victim escape its grasp.
