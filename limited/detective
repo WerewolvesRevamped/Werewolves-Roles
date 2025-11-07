@@ -46,7 +46,7 @@ Choice `CurrentRole` Chosen: |detective.1|
     ‣ Otherwise: `@Selection as @SecondarySelection[role]: Incorrect`
 Choice `FinalRole` Chosen: |detective.2|
   • Process: Role Investigate @Selection[Dead]
-  • Evaluate: `@Selection final role: @Result->Role`
+  • Evaluate: Learn `@Selection final role: @Result->Role`
 Passive Start Night:
   • Process:
     ‣ Set Counter to 0
