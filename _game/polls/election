@@ -1,7 +1,7 @@
 **Election** | Poll
 Available Options: @All, Abstain
 Allowed Voters: @All
-Passive Start Day: [Temporal: Day 1+]
+Passive Start Day: [Temporal: Day 1+, Condition: $haunting is False]
   • (@(AttrRole:Mayor) exists) and (@(AttrRole:Reporter) exists) and (not (@(AttrRole:Guardian) exists)):
     ‣ Target `Guardian` (Role)
     ‣ Create Poll in #voting_booth as `Guardian Election`
@@ -11,7 +11,16 @@ Passive Start Day: [Temporal: Day 1+]
   • not (@(AttrRole:Mayor) exists):
     ‣ Target `Mayor` (Role)
     ‣ Create Poll in #voting_booth as `Mayor Election`
+Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True]
+  • (@(AttrRole:Mayor) exists) and (@(AttrRole:Gravekeeper) exists) and (not (@(AttrRole:Prophet) exists)):
+    ‣ Target `Prophet` (Role)
+    ‣ Create Poll in #voting_booth as `Prophet Election`
+  • (@(AttrRole:Mayor) exists) and (not (@(AttrRole:Gravekeeper) exists)):
+    ‣ Target `Gravekeeper` (Role)
+    ‣ Create Poll in #voting_booth as `Gravekeeper Election`
+  • not (@(AttrRole:Mayor) exists):
+    ‣ Target `Mayor` (Role)
+    ‣ Create Poll in #voting_booth as `Mayor Election`
 On Poll Closed:
   • Grant @Target to @Winner 
   • Announce `@Winner was elected as @Target[role]`
-

@@ -1,0 +1,7 @@
+**Tethered** | Attribute
+__Basics__
+A Tethered player will survive the first time they are banished.
+
+__Formalized__
+Haunted Attribute
+Starting: Protect @Self from `Banishments` through Passive Defense during Night (~UntilUse)

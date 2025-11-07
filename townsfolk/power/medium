@@ -2,21 +2,31 @@
 __Basics__
 Each night, the Medium may ask the dead players one question.
 __Details__
-During each night the Medium has access to a second secret channel, where they can ask a question, once day starts the channel is locked, and a Yes/No poll is created. 
-All dead participants are able to vote on it during the day. Of course, there can be members of all teams in the dead participants.
-The question needs to be one simple yes/no question without any hidden meaning to it. Not voting as a dead participant should not give the Medium any information. 
-Once the day ends, the poll is closed, and the Medium gains access to the second secret channel again.
+During each night, the Medium has access to a second secret channel where they can ask a question; once day starts, the channel is locked and a Yes/No poll is created. All dead participants are able to vote on the poll.
+The Medium may only ask one question per night. The question needs to be one simple "yes or no" question without any further or hidden meaning.
+Once the day ends, the poll is closed and the Medium gains access to the second secret channel again.
+
+In *haunting* games, the Medium submits a specific living player. The ghosts will be asked whether the selected player "can be trusted". Ghostly players do not learn the Medium's identity. Banished players cannot vote.
 
 __Simplified__
 Each night, the Medium may ask the dead players a yes or no question.
-The dead players will be able to vote during the day, and when it ends the Medium learns the result, but not who voted what.
+The dead players will be able to vote during the day; when day ends the Medium learns the result, but not who voted how.
 
 __Formalized__
 Unique Role
-Passive Start Night: Join #Medium-Question
-Passive Start Day: [Temporal: Day 1+]
+Passive Start Night: Join #Medium-Question [Condition: $haunting is False]
+Passive Start Day: [Temporal: Day 1+, Condition: $haunting is False]
   • Leave #Medium-Question
   • Create `Medium` Poll in #Medium-Question
+Passive Start Night: Process: Untarget [Condition: $haunting is True]
+End Night: Target @Selection (Player) [Condition: $haunting is True] |medium.1|
+Passive Start Day: [Temporal: Day 1+, Condition: $haunting is True, Condition: @Target exists]
+  • Add @Ghostly to #Medium-Question
+  • Reveal `Can @Target be trusted?` to #Medium-Question
+  • Create `Medium Haunted` Poll in #Medium-Question as `Medium`
+On Poll Skipped:
+  • @Winner exists: Learn `Can @Target be trusted? @Winner[string]`
+  • Otherwise: Learn `Can @Target be trusted? No Response`
 
 __Card__
 The Medium attempts to communicate with the dead - with limited success.
