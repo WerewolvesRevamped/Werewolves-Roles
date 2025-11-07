@@ -3,4 +3,4 @@ __Basics__
 An attribute used to mark players correctly guessed by the detective.
 
 __Formalized__
-No Abilities
+Starting: Obstruct @Self (~NextNight)
