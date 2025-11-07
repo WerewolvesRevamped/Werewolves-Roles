@@ -14,6 +14,7 @@ Each day, the Detective may either guess one player's current role or learn the 
 Each night, the Detective must submit a role list containing predetermined roles and players.
 
 __Formalized__
+Unique Role
 Starting: {Visitless}
   • Set Counter to ceil $total/3
   • Apply `DetectiveList` to @Self
@@ -54,12 +55,15 @@ End Night: [Attribute: @Selection has `DetectiveList`] ⟨@(AttrSelf:DetectiveLi
   • Process: Role Investigate @Selection
   • Evaluate:
     ‣ @Result is `Failure`: `Guess failed`
-    ‣ @Result is @SecondarySelection[role]:
+    ‣ (@Result is @SecondarySelection[role]) and (@Selection has `DetectiveGuessed`):
       ◦ Increment Counter by 1
       ◦ Apply `DetectiveGuessed` to @Selection
+    ‣ @Result is @SecondarySelection[role]:
+      ◦ Increment Counter by 1
+      ◦ Apply `DetectiveFailed` to @Selection (~Phase)
     ‣ Otherwise:
       ◦ Increment Counter by 0
-      ◦ Apply `DetectiveFailed` to @Selection
+      ◦ Apply `DetectiveFailed` to @Selection (~Phase)
 Passive End Night: Learn `You guessed @Self->Counter players correctly`
 
 __Card__
