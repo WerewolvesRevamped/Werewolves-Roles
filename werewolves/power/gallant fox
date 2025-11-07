@@ -1,12 +1,13 @@
-**Gallant Fox** | Werewolf Power | Limited
+**Gallant Fox** | Werewolf Power
 __Basics__
-Each day, the Gallant Fox may select a player other than themselves to protect from attacks and the lynch during the following night and day phases, and the chosen player will be announced to the wolfpack. Once per game, the Gallant Fox may alternatively join the wolfpack as a regular wolf.
+Each day, the Gallant Fox may select a player to protect for the next two phases. The chosen player will be announced to the wolfpack. Once per game, the Gallant Fox may alternatively join the wolfpack as a regular wolf.
 __Details__
-The chosen player will be protected from attacks and lynches during the following night and day phase, though not the current day phase. The protection does not wear off early if the Gallant Fox dies or changes role. The Gallant Fox may not protect the same player consecutively.
+The chosen player will be protected from attacks and lynches during the following night and day phase, though not the current day phase. The Gallant Fox may not protect the same player consecutively, and may not protect themself.
 If the Gallant Fox survives the day, the wolfpack is informed at the start of the night that the Gallant Fox has chosen to protect a player, as well as who that player is.
-The Gallant Fox is neither a lycan, nor a member of the wolfpack.
-If the Gallant Fox chooses to join the wolfpack, they may not select a player to protect, and will lose their power as their role will change to wolf.
-Joining the wolfpack and choosing a target to protect are immediate abilities.
+If the Gallant Fox protects a member of the wolfpack, and the protection prevents the target from dying, the Gallant Fox is informed that their target is a member of the wolfpack.
+The Gallant Fox is neither a lycan nor a member of the wolfpack.
+If the Gallant Fox chooses to join the wolfpack, they may not select a player to protect, and will lose their power. Their role will change to wolf.
+Joining the wolfpack and protecting a target are immediate abilities; protection does not end early if the Gallant Fox dies or changes role.
 
 __Simplified__
 The Gallant Fox and the wolfpack do not know each other.
@@ -23,6 +24,7 @@ Passive Start Night: [Attribute: has `Marker`]
   • Protect @Target from `Attacks & Lynches` through Active Defense (~NextDay)
   • Reveal `A Gallant Fox has protected @Target[player]` to #wolfpack
   • Remove `Marker` from @Self
+On Active Defense: Learn `You protected a member of the wolfpack` [Condition: @Target is in #Wolfpack]
 
 __Card__
 The Gallant Fox may shield another vilager from harm, its choice anonymously revealed to the pack.

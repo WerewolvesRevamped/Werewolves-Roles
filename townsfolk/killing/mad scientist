@@ -1,28 +1,31 @@
 **Mad Scientist** | Townsfolk Killing
 __Basics__
-The Mad Scientist has two test subjects, from two different teams. If killed, their targeted subject will also die.
+The Mad Scientist has two test subjects, one player from the townsfolk and one werewolf. If killed, their subjects will also die.
 __Details__
-At the start of the game, the Mad Scientist is assigned two players, called test subjects, with which they share an additional secret channel. The test subjects do not know the identity of the Mad Scientist. They interrogate their subjects and, before the Mad Scientist dies, they must choose one of the two assigned players to take with them to their death.
-If the Mad Scientist has not targeted a subject when they die, a random subject will be killed.  
-The two subjects always start on two different teams, and never as unaligned.
-The Mad Scientist can choose a target, even if the target is already dead. Attacking the other player is an immediate ability.
+At the start of the game, the Mad Scientist is assigned two players, called test subjects. The test subjects share an additional channel with the Mad Scientist but do not know their identity.
+When the Mad Scientist dies, they attack both of their test subjects. Attacking the test subjects is an immediate ability.
 When the Mad Scientist kills, they are revealed as the Mad Scientist.
+Both test subjects are strongly disguised as the Mad Scientist.
 
 __Simplified__
-The Mad Scientist has two subjects, from two different teams, one of which they must choose to die with them when they are killed.
+The Mad Scientist has two subjects (townsfolk and werewolf). When the Mad Scientist dies, both subjects are attacked.
 
 __Formalized__
 Unique Role
 Starting:
-  • Grant `Test Subject` to %Player1% 
-  • Grant `Test Subject` to %Player2% 
-  • Join #Laboratory
-  • Process: Shuffle %Player1% %Player2% 
-  • Evaluate: Target @Result (Player)
-Immediate: Target @Selection (Player) [Attribute: @Selection has `Test Subject`]
-On Death: 
-  • Process: Attack @Target
-  • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed @Target`
+  • Apply `LaboratoryMember` to %Player1%
+  • Apply `LaboratoryMember` to %Player2%
+  • Apply `LaboratoryMember` to @Self
+  • Grant `Test Subject` to @(AttrSelf:LaboratoryMember,Role:!Mad-Scientist)
+  • Add @(AttrSelf:LaboratoryMember,Group:!Laboratory,SelectAll:False) to #Laboratory
+  • Add @(AttrSelf:LaboratoryMember,Group:!Laboratory,SelectAll:False) to #Laboratory
+  • Add @(AttrSelf:LaboratoryMember,Group:!Laboratory,SelectAll:False) to #Laboratory
+On Death: [Condition: %Player1% exists]
+  • Process: Attack %Player1%
+  • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed %Player1%`
+On Death: [Condition: %Player2% exists]
+  • Process: Attack %Player2%
+  • Evaluate: @Result is `Success`: Announce `Mad Scientist @Self killed %Player2%`
 
 __Card__
-The Mad Scientist loves to experiment on their test subjects, no matter the concequences.
+The Mad Scientist loves to experiment on their test subjects, no matter the consequences.

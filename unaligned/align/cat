@@ -14,6 +14,7 @@ For each Cat, there is a corresponding dog. The Cat will align with the opposite
 
 __Formalized__
 Unique Role
+Require: `Dog`
 Starting: Target @(Role:Dog,SelectAll:False) (Player)
 On @Target Action [Alignment Changing]: [Temporal: Night 1, Quantity: 1]
   • @Target->Alignment is `Townsfolk`: Alignment Change @Self to `Werewolf`

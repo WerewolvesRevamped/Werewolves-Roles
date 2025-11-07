@@ -11,6 +11,7 @@ At the start of the second night after being contaminated, the player is informe
 At the end of the second night after being contaminated, the player will die. This is not an attack. Should the player still be alive afterwards, they remain contaminated, and will die at the end of the next night.
 If no members of the plague team or channel remain, all players stop being contaminated: they are not informed of this.
 If the Plague Bearer attempts to use a rodent on the Plague Doctor, the attempt fails, the Plague Doctor immediately dies (this is not an attack), and the rodent is *not* used up.
+At the start of every phase, members of the plague team are told the amount of living contaminated players.
 
 __Simplified__
 Each night, the Plague Bearer may send a rodent to a player to give them the plague.
@@ -19,7 +20,7 @@ At the start of the second night after being contaminated, the player is informe
 The Plague Bearer wins when all other players are dead, unaligned or Plague Team.
 
 __Formalized__
-Starting: Increment Counter by round $total/5 for #Plague-Pit
+Starting: Increment Counter by round $total/5 for #Plague-Pit [Temporal: Day 0]
 Immediate Night: [Condition: #Plague-Pit->Counter > 0]
   • @Selection->Role is `Plague Doctor`: Kill @Selection
   • @Selection has `Contaminated`:

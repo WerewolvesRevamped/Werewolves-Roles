@@ -12,9 +12,11 @@ See `$info souls` for a detailed explanation.
 
 The wager is sent at the start of the night. The wager cannot be sent to a soulless player or redirected.
 During the night, the Devil can anonymously communicate with the wager recipient.
-The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the Wager Recipient's own role; or they may do nothing. The result of a wager investigation is visible to both the wager recipient and the Devil. 
+The wager recipient may sell their soul to protect or kill a player; they may choose to investigate the role of a player, at the cost of the devil learning the wager recipient's own role; or they may do nothing. The result of a wager investigation is visible to both the wager recipient and the Devil, and both investigations are affected by disguises. 
 If a player sells their soul, a soul is added to the hell team's soul pool. The player then becomes soulless.
 See `$info wager` for a detailed explanation.
+
+Soulless players cannot be attacked by the Devil, including via the wager. Attempting to attack a soulless player using the wager fails silently.
 
 Members of the Hell team cannot betray the team in any way. Any attempts at conversion or recruitment of a member will fail in some manner.
 
@@ -38,16 +40,18 @@ Start Night: [Attribute: @Selection lacks `Soulless`] {Direct} |devil.1|
   • Grant `Wager Recipient` to @Selection
   • Whisper to `Wager Recipient` as `Devil` (~Phase)
   • `Wager` Choice Creation for `Wager Recipient` (Attack, Protect, Investigate, Ignore)
-Choice `Attack` Chosen: [Attribute: @Selection lacks `Soulless`]
+Choice `Attack` Chosen: |wager.2|
   • Apply `Soulless` to @Chooser (~Persistent)
   • Increment Counter for #hell  
   • Target @Selection (Player)
   • Apply `Marker` to @Self
-Choice `Protect` Chosen:
+  • Reveal `Attacking @Selection` to @Self
+Choice `Protect` Chosen: |wager.3|
   • Apply `Soulless` to @Chooser (~Persistent)
   • Increment Counter for #hell  
   • Protect @Selection from `Attacks` through Active Defense (~Phase)
-Choice `Investigate` Chosen:
+  • Reveal `Protecting @Selection` to @Self
+Choice `Investigate` Chosen: |wager.4|
   • Process: Role Investigate @Selection (WD, SD)
   • Evaluate:
     ‣ Reveal `@Selection is @Result->Role` to `Wager Recipient`
@@ -57,7 +61,7 @@ Choice `Investigate` Chosen: {Direct}
   • Evaluate: Reveal `@(AttrRole:Wager-Recipient) is @Result->Role` to @Self
 Passive End Night: [Attribute: has `Marker`]
   • Remove `Marker` from @Self
-  • @Target->Alignment is not `Hell`[alignment]: Attack @Target
+  • (@Target->Alignment is not `Hell`[alignment]) and (not (@Target has `Soulless`)): Attack @Target
 
 __Card__
 The Devil deals in souls, each soul making it more and more powerful.

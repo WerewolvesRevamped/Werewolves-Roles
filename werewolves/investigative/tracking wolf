@@ -18,6 +18,7 @@ Immediate Night:
     ‣ Class Investigate @Selection (SD)
     ‣ Category Investigate @Selection (SD)
   • Evaluate:
+    ‣ @Result1 is `Failure`: `Investigation failed`
     ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Investigative[category]`): `@Selection is a Major Threat`
     ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Killing[category]`): `@Selection is a Major Threat`
     ‣ (@Result1 is `Townsfolk[class]`) and (@Result2 is `Power[category]`): `@Selection is a Significant Threat`
