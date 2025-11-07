@@ -1,0 +1,6 @@
+**Detective Guessed** | Attribute
+__Basics__
+An attribute used to mark players correctly guessed by the detective.
+
+__Formalized__
+Starting: Obstruct @Self (~NextNight)
