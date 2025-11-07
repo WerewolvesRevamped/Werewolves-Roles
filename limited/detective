@@ -46,6 +46,20 @@ Choice `CurrentRole` Chosen: |detective.1|
 Choice `FinalRole` Chosen: |detective.2|
   • Process: Role Investigate @Selection[Dead]
   • Evaluate: `@Selection final role: @Result->Role`
+Second Pre-End Night:
+  • Set Counter to 0
+  • Remove `DetectiveFailed` from @(AttrSelf:DetectiveFailed)
+Pre-End Night: ⟨@(AttrSelf:DetectiveList,AliveOnly:False)->Count⟩
+  • Process: @Selection
+  • Evaluate:
+    ‣ @Result is `Failure`: `Guess failed`
+    ‣ @Result is @SecondarySelection[role]:
+      ◦ Increment Counter by 1
+      ◦ Apply `DetectiveGuessed` to @Selection
+    ‣ Otherwise:
+      ◦ Increment Counter by 0
+      ◦ Apply `DetectiveFailed` to @Selection
+End Night: Learn `You guessed @Self->Counter players correctly`
 
 __Card__
 A new face in town, the Detective tries to find out some occupations through research.
