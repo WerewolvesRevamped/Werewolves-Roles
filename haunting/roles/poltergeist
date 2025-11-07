@@ -34,7 +34,7 @@ Passive Start Day: Process: Protect @(Role:Alcoholic) from `Attacks` through Abs
 End Phase: {Vanishing} |silent:granting.resign|
   • Announce `@Self resigned as Poltergeist`
   • Revoke @ThisAttr from @Self
-On Banish: [Attribute: @ThisAttr has `Marker`]
+On Banishment: [Attribute: @ThisAttr has `Marker`]
   • Remove @(Group:Tavern-Haunting) from #Tavern-Haunting
   • Unlock #Tavern
   • Reveal `The tavern has been reopened!` to #Tavern
