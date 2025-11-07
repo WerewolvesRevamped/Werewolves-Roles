@@ -65,6 +65,7 @@ End Night: [Attribute: @Selection has `DetectiveList`] ⟨@(AttrSelf:DetectiveLi
       ◦ Increment Counter by 0
       ◦ Apply `DetectiveFailed` to @Selection (~Phase)
 Passive End Night: Learn `You guessed @Self->Counter players correctly`
+Passive End Night: Ascend [Condition: @Self->Counter is @(AttrSelf:DetectiveList,AliveOnly:False)->Count]
 
 __Card__
 A new face in town, the Detective tries to find out some occupations through research.
