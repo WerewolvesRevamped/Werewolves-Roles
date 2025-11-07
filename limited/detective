@@ -46,7 +46,7 @@ Choice `CurrentRole` Chosen: |detective.1|
 Choice `FinalRole` Chosen: |detective.2|
   • Process: Role Investigate @Selection[Dead]
   • Evaluate: `@Selection final role: @Result->Role`
-Second Pre-End Night:
+Passive Start Night:
   • Set Counter to 0
   • Remove `DetectiveFailed` from @(AttrSelf:DetectiveFailed)
 Pre-End Night: ⟨@(AttrSelf:DetectiveList,AliveOnly:False)->Count⟩
