@@ -50,7 +50,7 @@ Passive Start Night:
   • Process:
     ‣ Set Counter to 0
     ‣ Remove `DetectiveFailed` from @(AttrSelf:DetectiveFailed)
-Pre-End Night: ⟨@(AttrSelf:DetectiveList,AliveOnly:False)->Count⟩
+End Night: ⟨@(AttrSelf:DetectiveList,AliveOnly:False)->Count⟩
   • Process: Role Investigate @Selection
   • Evaluate:
     ‣ @Result is `Failure`: `Guess failed`
@@ -60,7 +60,7 @@ Pre-End Night: ⟨@(AttrSelf:DetectiveList,AliveOnly:False)->Count⟩
     ‣ Otherwise:
       ◦ Increment Counter by 0
       ◦ Apply `DetectiveFailed` to @Selection
-End Night: Learn `You guessed @Self->Counter players correctly`
+Passive End Night: Learn `You guessed @Self->Counter players correctly`
 
 __Card__
 A new face in town, the Detective tries to find out some occupations through research.
