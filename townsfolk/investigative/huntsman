@@ -13,7 +13,7 @@ __Formalized__
 Immediate Night: |investigating.role.1|
   • Process: Attribute Investigate @Selection for `GroupMembership:Wolfpack`
   • Evaluate:
-    ‣ @Result is True: `@Selection is a member of the Wolfpack`
+    ‣ @Result is True: `@Selection is a member of the wolfpack`
     ‣ Otherwise: `@Selection is not a member of the wolfpack`
 
 __Card__
