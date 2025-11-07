@@ -1,6 +1,6 @@
 **Raven** | Attribute
 __Basics__
-The Raven attribute is applied by the ravenkeeper. If a player with a Raven is visited the ravenkeeper will be informed what action was performed.
+The Raven attribute is applied by the ravenkeeper. If a player with a Raven is visited, the ravenkeeper will be informed what action was performed.
 
 __Formalized__
 Starting: Set Counter to 1 for @ThisAttr {Visitless}
