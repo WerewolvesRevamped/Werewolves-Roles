@@ -1,6 +1,6 @@
 **Detective Failed** | Attribute
 __Basics__
-An attribute used to mark players incorrectly guessed by the detective.
+An attribute used to mark players incorrectly guessed by the detective, or correctly guessed but not for the first time.
 
 __Formalized__
 No Abilities
