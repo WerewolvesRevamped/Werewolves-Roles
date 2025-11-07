@@ -745,9 +745,10 @@ Trigger Scalings can be one of the following:
 
 Name | Syntax | Explanation | Example
 --- | --- | --- | ---
-Static Scaling | `x<Number>` | Specify a number (`Value`) that determines how many times the trigger will be executed. | `x2`
-Dynamic Scaling | `[$total\|$living]/<Number>` | The trigger will be executed exactly as many times as the player count divided by the specified `Number`, rounded down. | `$total/2`
-Dynamic Scaling | `[$total\|$living]<Comparison><Number> ⇒ <Count>` | A comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Number` is a constant number specifying a player amount and `Count` is the amount of executions. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value. | `$total<10 ⇒ 1, $total≥10 ⇒ 2, 3`
+Static Scaling | `x<Number>` | Specify a number (`Number`) that determines how many times the trigger will be executed. | `x2`
+Number Scaling | `{Number}` | Specify a value that parses to a number that determines how many times the trigger will be executed. | `@All->Count`
+Dynamic Scaling | `[$total\|$living]/{Number}` | The trigger will be executed exactly as many times as the player count divided by the specified `Number`, rounded down. | `$total/2`
+Dynamic Scaling | `{Number}<Comparison>{Number} ⇒ {Count}` | A comma separated list of conditions, where `Comparison` may be `<`, `>`, `≤`, `≥` or `=` and `Number` is a constant number specifying a player amount and `Count` is the amount of executions. The default value for scaling is 1, but each failed condition sets the value to 0, so a condition should be specified first, followed by a default value. | `$total<10 ⇒ 1, $total≥10 ⇒ 2, 3`
 Phase Specific Scaling | `Odd: x<Number>, Even: x<Number>` | To specify different multiplicities of trigger executions in even and odd phases. | `Odd: x1, Even: x2`
 
 ### Other Parameters
