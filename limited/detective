@@ -51,7 +51,7 @@ Passive Start Night:
     ‣ Set Counter to 0
     ‣ Remove `DetectiveFailed` from @(AttrSelf:DetectiveFailed)
 Pre-End Night: ⟨@(AttrSelf:DetectiveList,AliveOnly:False)->Count⟩
-  • Process: @Selection
+  • Process: Role Investigate @Selection
   • Evaluate:
     ‣ @Result is `Failure`: `Guess failed`
     ‣ @Result is @SecondarySelection[role]:
