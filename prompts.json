@@ -20,7 +20,6 @@
     "poll.addition": "Would you like a poll to be added?",
     "process_evaluate.role": "Please submit a role.",
     "process_evaluate.player": "Please submit a player.",
-    "role_block.1": "You may choose a player to role-block.",
     "obstructing.standard.1": "Which player would you like to obstruct?",
     "granting.remove": "You may remove a role.",
     
@@ -33,7 +32,6 @@
     "targeting.emergency.player": "Once per game, you may change your target a second time in a phase. Reply to this prompt to do so and ignore the prompt if you do not want to use your emergency use yet.",
     "disguising.emergency": "Once per game, you may change your disguise a second time in a phase. Reply to this prompt to do so and ignore the prompt if you do not want to use your emergency use yet.",
     "granting.resign": "You may resign from your position during any phase.",
-    "spy.1": "You may choose a player to spy on.",
     
     "comment_4": "Role-specific Custom Prompts",
     "amulet.1": "You must choose a player to pass the amulet too. If you do not, or if this player has previously held the amulet you die.",
@@ -73,9 +71,6 @@
     "dog.1": "You may choose one of these alignments. You will immediately change into the alignment you choose.",
     "monarch.1": "You must select an heir. Please specify who should be your heir.",
     "monarch.2": "You may update your heir.",
-    "framer.1": "You may choose a player to disguise as an in-play mafia role.",
-    "lawyer.1": "You may choose a player to disguise as an in-play town role.",
-    "veteran.1": "Would you like to stay alert tonight?",
     "apocolyptic_horseman.1": "You may choose a player to attack tonight.",
     "horseman_of_death.1": "You may doom a player, they will die tomorrow night.",
     "horseman_of_war.1": "You may doom two players, they will both lose their vote and be disqualified from election tomorrow.",
