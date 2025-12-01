@@ -14,11 +14,11 @@ Once per game, at night, the Witch may attack one player.
 __Formalized__
 Starting: Display `Potions` (yes, yes)
 End Night: [Quantity: 1] |witch.pod|
+  • Attack @Selection
   • Update `Potions` value `2` to `no`
-  • Attack @Selection 
 Immediate Night: [Quantity: 3] ⟨x3⟩ |witch.pol|
-  • Update `Potions` value `1` to `no`
   • Protect @Selection from `Attacks` through Active Defense (~Phase)
+  • Update `Potions` value `1` to `no`
   • not (@Self has `Marker`):
     ‣ Protect @Self from `Attacks` through Active Defense (~Phase)
     ‣ Apply `Marker` to @Self
