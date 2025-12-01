@@ -15,21 +15,19 @@ The Firebug is a member of the pyro team and channel.
 
 __Formalized__
 Starting: Join #Pyros
-Immediate Night: |firebug.1|
+Passive Start Night: `Wisp` Choice Creation (Bug, Ward)
+Immediate Night: `Wisp` Choice Choose @Chosen |firebug.1|
+Choice `Ward` Chosen: |firebug.2|
   • Protect @Selection from `Attacks` through Active Defense (~Phase) 
-  • Apply `Warded` to @Selection (~NextDay)
-On @(AttrSelf:Warded) Visited [Attack Killing]:
-  • not (@Visitor->Alignment is `Pyro`):
-    ‣ Apply `Powdered` to @Visitor (~Persistent)
-    ‣ Attack @(Attr:Powdered,Align:!Pyro)
-    ‣ Remove `Warded:Self` from @(AttrSelf:Warded)
-    ‣ Learn `You counterattacked`
-    ‣ @(Attr:Powdered,Align:Pyro) exists: 
-      ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
-      ◦ Reveal `You were ignited by @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
-Passive Start Day: [Condition: @(AttrSelf:Warded) exists]
-  • Apply `Powdered` to @(AttrSelf:Warded) (~Persistent)
-  • Learn `You powdered`
+Choice `Bug` Chosen: |firebug.3|
+  • Apply `Bugged` to @Selection (~NextDay)
+On @(AttrSelf:Bugged) Visited [Attack Killing]: [Condition: not (@Visitor->Alignment is `Pyro`)]
+  • Attack @(Attr:Powdered,Align:!Pyro)
+  • Remove `Bugged:Self` from @(AttrSelf:Bugged)
+  • Learn `You counterattacked`
+  • @(Attr:Powdered,Align:Pyro) exists: 
+    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited by @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
 Passive: Role Change @Self to `Pyromancer` [Condition: not (@(Role:Pyromancer) exists)]
 
 __Card__
