@@ -5,6 +5,7 @@ __Details__
 The Cursebearer imitates another in-play werewolf team role. They are strongly disguised as that role and are a lycan. Additionally, they can use all the powers that role can use, with some exceptions: any power that would result in joining a group or in a role change fails; any power that would result in a role change instead results in a loss of power of the Cursebearer as described below.
 When the last player that originally started out with the role that the Cursebearer is imitating dies, the Cursebearer is informed and loses their power.
 When the Cursebearer loses their power, they turn into a citizen and they will not be able to use any of their abilities anymore. They will keep their disguise but won't be seen as a lycan anymore.
+All players with the role the Cursebearer is imitating learn that a Cursebearer is imitating their role.
 **This role may __not__ be used together with White Werewolf.**
 
 __Simplified__
