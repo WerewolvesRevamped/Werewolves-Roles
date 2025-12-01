@@ -20,10 +20,10 @@ Immediate Night: `Wisp` Choice Choose @Chosen |firebug.2|
 Choice `Ward` Chosen: |firebug.1|
   • Protect @Selection from `Attacks` through Active Defense (~Phase) 
 Choice `Bug` Chosen: |firebug.3|
-  • Apply `Warded` to @Selection (~NextDay)
-On @(AttrSelf:Warded) Visited [Attack Killing]: [Condition: not (@Visitor->Alignment is `Pyro`)]
+  • Apply `Bugged` to @Selection (~NextDay)
+On @(AttrSelf:Bugged) Visited [Attack Killing]: [Condition: not (@Visitor->Alignment is `Pyro`)]
   • Attack @(Attr:Powdered,Align:!Pyro)
-  • Remove `Warded:Self` from @(AttrSelf:Warded)
+  • Remove `Bugged:Self` from @(AttrSelf:Bugged)
   • Learn `You counterattacked`
   • @(Attr:Powdered,Align:Pyro) exists: 
     ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
