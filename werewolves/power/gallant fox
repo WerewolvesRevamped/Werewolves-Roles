@@ -6,8 +6,8 @@ The chosen player will be protected from attacks and lynches during the followin
 If the Gallant Fox survives the day, the wolfpack is informed at the start of the night that the Gallant Fox has chosen to protect a player, as well as who that player is.
 If the Gallant Fox protects a member of the wolfpack, and the protection prevents the target from dying, the Gallant Fox is informed that their target is a member of the wolfpack.
 The Gallant Fox is neither a lycan nor a member of the wolfpack.
-If the Gallant Fox chooses to join the wolfpack, they may not select a player to protect, and will lose their power. Their role will change to wolf.
-Joining the wolfpack and protecting a target are immediate abilities; protection does not end early if the Gallant Fox dies or changes role.
+If the Gallant Fox chooses to join the wolfpack, they may not select a player to protect, and will lose their power; their role will change to wolf.
+Joining the wolfpack is an immediate abilities, but protecting their target is an end-day ability.
 
 __Simplified__
 The Gallant Fox and the wolfpack do not know each other.

@@ -1,0 +1,8 @@
+**Haunted** | Attribute
+__Basics__
+A Haunted player may use their abilities both while alive as well as while they are a ghost.
+This does not affect which players they can target, so for most roles they may only target living players even while they are a ghost.
+
+__Formalized__
+Haunted Attribute
+Starting: Activate @Self always
