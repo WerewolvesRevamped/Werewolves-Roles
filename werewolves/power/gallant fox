@@ -20,7 +20,7 @@ Choice `Join Pack` Chosen: Role Change @Self to `Wolf`
 Choice `Protect Player` Chosen: [Succession: No Target Succession]
   • Target @Selection (Player)
   • Apply `Marker` to @Self
-Passive Start Night: [Attribute: has `Marker`]
+Passive Start Night: [Attribute: has `Marker`, Condition: @Target exists]
   • Protect @Target from `Attacks & Lynches` through Active Defense (~NextDay)
   • Reveal `A Gallant Fox has protected @Target[player]` to #wolfpack
   • Remove `Marker` from @Self
