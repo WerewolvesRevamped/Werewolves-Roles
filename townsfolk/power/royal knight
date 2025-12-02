@@ -10,7 +10,7 @@ __Simplified__
 After Day 1, the Royal Knight may silently cancel the lynch once.
 
 __Formalized__
-Immediate: Silently cancel `Lynch` Poll [Quantity: 1, Temporal: Night 2+]
+Immediate: Protect @Self from `Lynches` through Passive Defense (~NextDay) [Quantity: 1, Temporal: Night 2+]
 
 __Card__
 The Royal Knight may grant forgiveness to themself in an act of gross judicial overstep.
