@@ -34,6 +34,8 @@
   - [Variable String Type](#variable-string-pseudo-type)
   - [Ghost Pseudo-Type](#ghost-pseudo-type)
   - [Dead Pseudo-Type](#ghost-pseudo-type)
+  - [Player Optional Pseudo-Type](#player-optional-pseudo-type)
+  - [Player Any Pseudo-Type](#player-any-pseudo-type)
   - [Actor Pseudo-Type](#actor-pseudo-type)
   - [Any Pseudo-Type](#any-pseudo-type)
   - [Variables](#variables)
@@ -169,6 +171,8 @@ For this document, when the syntax of any component requires a user to put a typ
 Player type is one of the most common types and refers to a player of the game (active). This type is also known under `player_attr` (referring to a player when acting through an extra role) or `player_group` (referring to a player when acting through a group).
 
 When prompted, players may only submit living players as a player type, even if the player type can otherwise deal with dead or ghostly players. To allow a player to submit dead or ghostly players, the [ghost pseudo-type](#ghost-pseudo-type) or the [dead pseudo-type](#dead-pseudo-type) needs to be used.
+To allow submission of players, regardless of living status, use [player any pseudo-type](#player-any-pseudo-type).
+To allow submission of living players, as well as "nobody", use [player optional pseudo-type](#player-optional-pseudo-type)
 
 Selector | Meaning
 --- | ---
@@ -638,6 +642,14 @@ Ghost pseudo-type is not an actual type, but can be specified as a type annotati
 ### Dead Pseudo-Type
 
 Dead pseudo-type is not an actual type, but can be specified as a type annotation. The type is equivalent to the player type, but specifying the dead pseudo-type allows players to submit dead players when prompted (prompts for player type restrict the input to living players).
+
+### Player Optional Pseudo-Type
+
+Player optional pseudo-type is not an actual type, but can be specified as a type annotation. The type is equivalent to the player type, but specifying the player optional pseudo-type allows players to also submit "nobody" when prompted (prompts for player type restrict the input to living players).
+
+### Player Any Pseudo-Type
+
+Player any pseudo-type is not an actual type, but can be specified as a type annotation. The type is equivalent to the player type, but specifying the player any pseudo-type allows players to submit living, dead and ghostly (living status doesnt matter) players when prompted (prompts for player type restrict the input to living players).
 
 ### Actor Pseudo-Type
 
