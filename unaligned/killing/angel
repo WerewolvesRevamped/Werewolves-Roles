@@ -13,25 +13,27 @@ The Angel wins when they are lynched: the game continues afterwards. In addition
 The Angel may select a player that dies when the Angel is lynched, but only if the target is voting for the Angel. 
 
 __Formalized__
-Immediate: Target @Selection (Player) |silent:targeting.target.player|
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
+Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 On Lynch:
   • (@Attacker exists) and (@Attacker is part of @All): 
     ‣ Target @Attacker
-    ‣ Emit `Win`
+    ‣ Kill @Target
+    ‣ Announce `Angel @Self killed @Target`
+    ‣ Delete `Lynch` Poll
+    ‣ Ascend
 On Poll `Lynch` Win:
   • (@OtherVoters exists) and (@Target exists) and (@Target is part of @OtherVoters): 
-    ‣ Emit `Win`
+    ‣ Kill @Target
+    ‣ Announce `Angel @Self killed @Target`
+    ‣ Delete `Lynch` Poll
+    ‣ Ascend
   • @OtherVoters exists: 
     ‣ Target @OtherVoters->RandomPlayer (Player)
-    ‣ Emit `Win`
-On `Win` Emitted:
-  • Kill @Target
-  • Announce `Angel @Self killed @Target`
-  • Delete `Lynch` Poll
-  • Ascend
-  
-
+    ‣ Kill @Target
+    ‣ Announce `Angel @Self killed @Target`
+    ‣ Delete `Lynch` Poll
+    ‣ Ascend
 
 __Card__
 The Angel wants to go back to heaven, taking their 'saviour' with them.

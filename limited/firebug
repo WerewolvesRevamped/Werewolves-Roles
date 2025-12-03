@@ -1,35 +1,34 @@
 **Firebug** | Solo Killing - Pyro Team | Limited
 __Basics__
-Each night, the Firebug may ward one player.
+Each night, the Firebug may bug one player or ward a member of the pyro team.
 __Details__
-When the Firebug wards a player, that player is protected from attacks for the night. Should anyone other than a member of the pyro team try to attack the warded player, the attack backfires, powdering the attacker and igniting all powdered players. This is considered an attack executed by the Firebug. If the warded player is not attacked for the entire night, they are powdered at the start of the next day (assuming the Firebug survives the night). The Firebug learns which action it took.
+If the Firebug bugs a player and the bugged player is attacked, the Firebug will ignite all currently powdered players. If a powdered player survives the attack, they remain powdered. Bugging players does not protect them or affect attacks against them in any way.
+If the Firebug wards a player, that player is protected from attacks for the night.
 If a Firebug is powdered and ignited, and thus attacked, the ignition fails and the attacker is informed.
-Warding is an immediate ability.
+Bugging and warding are immediate abilities.
 The Firebug is a member of the pyro team and channel. The pyro team wins when all other players are dead or unaligned.
-When the last original Pyromancer dies, the Firebug turns into a Pyromancer.
+If the last original Pyromancer dies, the Firebug turns into a Pyromancer.
 
 __Simplified__
-Each night, the Firebug may ward one player. If a warded player is attacked, the attack backfires, causing an ignition. Otherwise, the warded player is powdered at the end of the night.
+Each night, the Firebug may bug or ward a player. Attacking a bugged player causes an ignition, whilst warding protects a player.
 The Firebug is a member of the pyro team and channel.
 
 __Formalized__
 Starting: Join #Pyros
-Immediate Night: |firebug.1|
+Passive Start Night: `Wisp` Choice Creation (Bug, Ward)
+Immediate Night: `Wisp` Choice Choose @Chosen |firebug.1|
+Choice `Ward` Chosen: |firebug.2|
   • Protect @Selection from `Attacks` through Active Defense (~Phase) 
-  • Apply `Warded` to @Selection (~NextDay)
-On @(AttrSelf:Warded) Visited [Attack Killing]:
-  • not (@Visitor->Alignment is `Pyro`):
-    ‣ Apply `Powdered` to @Visitor (~Persistent)
-    ‣ Attack @(Attr:Powdered,Align:!Pyro)
-    ‣ Remove `Warded:Self` from @(AttrSelf:Warded)
-    ‣ Learn `You counterattacked`
-    ‣ @(Attr:Powdered,Align:Pyro) exists: 
-      ◦ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
-      ◦ Reveal `You were ignited by @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
-Passive Start Day: [Condition: @(AttrSelf:Warded) exists]
-  • Apply `Powdered` to @(AttrSelf:Warded) (~Persistent)
-  • Learn `You powdered`
+Choice `Bug` Chosen: |firebug.3|
+  • Apply `Bugged` to @Selection (~NextDay)
+On @(AttrSelf:Bugged) Visited [Attack Killing]: [Condition: not (@Visitor->Alignment is `Pyro`)]
+  • Attack @(Attr:Powdered,Align:!Pyro)
+  • Remove `Bugged:Self` from @(AttrSelf:Bugged)
+  • Learn `You counterattacked`
+  • @(Attr:Powdered,Align:Pyro) exists: 
+    ‣ Learn `Ignition failed on @(Attr:Powdered,Align:Pyro)`
+    ‣ Reveal `You were ignited by @(Attr:Powdered,Align:Pyro)` to @(Attr:Powdered,Align:Pyro)
 Passive: Role Change @Self to `Pyromancer` [Condition: not (@(Role:Pyromancer) exists)]
 
 __Card__
-The Firebug protects villagers with a fiery shield. Any harm done to them would turn into a hot mess.
+The Firebug sets traps for those who mean them wrong.

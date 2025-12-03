@@ -11,9 +11,12 @@ The Farming Wolf will pass on their role to another player, whom they have chose
 
 __Formalized__
 Inherit: `Lycan`
-Immediate: Target @Selection (Player) |silent:targeting.target.player|
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |silent:targeting.emergency.player|
-On Death: [Condition: @Target exists]
+Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
+On Death:
+  • not (@Target exists):
+    ‣ Target @Others->Random (Player)
+    ‣ Continue
   • @Target->Alignment is `Townsfolk`: Role Change @Target to `Farmer`
   • @Target->Alignment is `Werewolf`: Role Change @Target to `Farming Wolf`
   • Otherwise: Grant `Scarecrow` to @Target

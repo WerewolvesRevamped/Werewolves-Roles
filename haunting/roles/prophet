@@ -1,0 +1,45 @@
+**Prophet** | Extra Elected | Haunted
+__Basics__
+The Prophet may perform two miracles - the miracle of protection and the miracle of resurrection - once each.
+__Details__
+The Prophet is a replacement for the Guardian in *haunting* games and is elected on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
+During the night the Prophet can perform the miracle of resurrection or the miracle of protection. The Prophet can only perform one miracle during a night. Peforming a miracle is an end night action, but miracles take effect before end night attacks and banishments.
+The Prophet can perform each miracle once. These limitations carry over to future elected Prophets.
+The miracle of protection protects the targeted player from all attacks.
+The miracle of resurrection transforms the targeted ghostly player back into a living player.
+Miracles are announced in story time. The type of miracle performed, but not the target, is announced.
+The Prophet may choose to resign at any point during a phase, but will only lose the role at the end of the phase.
+The Prophet is elected on the first full day with a living Mayor, a living Gravekeeper and no living Prophet.
+The Prophet gains an additional secret channel, which is reused for any subsequent Prophets.
+
+__Simplified__
+The Prophet may perform the miracle of resurrection and the miracle of protection once each. They can perform only one miracle in a given night.
+Performing a miracle is an end night action that is announced in story time.
+The Prophet is elected on the first full day with a living Mayor and Gravekeeper, but no living Prophet.
+
+__Formalized__
+Passive Start Night: `Miracle` Choice Creation for @ThisAttr (Resurrection, Protection) [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `MarkerAlt`]
+Immediate Night: `Miracle` Choice Choose @Chosen [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr lacks `MarkerAlt`] |prophet.1|
+Choice Chosen: End Emit @Option for @ThisAttr
+End Night: [Attribute: @ThisAttr lacks `Marker`, Attribute: @ThisAttr has `MarkerAlt`] |prophet.2|
+  • Resurrect @Selection[ghost]
+  • Apply `Marker` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Resurrection**`
+Pre-End Night: [Attribute: @ThisAttr has `Marker`, Attribute: @ThisAttr lacks `MarkerAlt`] |prophet.3|
+  • Protect @Selection from `Attacks` through Active Defense (~Phase)
+  • Apply `MarkerAlt` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Protection**`
+On `Resurrection` End Emitted: |prophet.2|
+  • Resurrect @Selection[ghost]
+  • Apply `Marker` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Resurrection**`
+On `Protection` End Emitted: |prophet.3|
+  • Protect @Selection from `Attacks` through Active Defense (~Phase)
+  • Apply `MarkerAlt` to @ThisAttr
+  • Announce `@Self has performed a **Miracle of Protection**`
+End Phase: {Vanishing} |silent:granting.resign|
+  • Announce `@Self resigned as Prophet`
+  • Revoke @ThisAttr from @Self
+
+__Card__
+The Prophet performs miracles for all its followers to see.

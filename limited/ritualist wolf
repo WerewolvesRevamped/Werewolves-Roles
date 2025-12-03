@@ -1,0 +1,22 @@
+**Ritualist Wolf** | Werewolf Power | Limited
+__Basics__
+The Ritualist Wolf may mark a player during the night. Should that player fail to survive the day, the Ritualist Wolf's ritual will protect all pack members during the following night.
+__Details__
+At night, the Ritualist Wolf may choose which player to mark. The player is marked at the start of the following day. If the player is not alive at the start of the day, they will not be marked and the ability is not used up.
+If a successfully marked player dies at any point during the day, the Ritualist Wolf's ritual will protect all wolfpack members from attacks for the duration of the following night.
+The Ritualist Wolf does not need to be alive for the ritual to activate, but does need to be alive to mark a player.
+If a marked player does not die during the day, the ritual will not activate. The ability will still be used up.
+The Ritualist Wolf is a lycan and a member of the pack.
+
+__Simplified__
+If a player marked by the Ritualist Wolf fails to survive the day, the Ritualist Wolf will protect all pack members during the following night.
+
+__Formalized__
+Inherit: `Pack Lycan`
+End Night: Target @Selection (Player) [Attribute: lacks `Marker`]
+Passive Start Day: Apply `Marker` to @Self [Condition: @Target exists]
+On @Target Death: Apply `Ritual` to #Wolfpack (~NextNight) [Temporal: Day]
+Passive Start Night: Process: Untarget
+
+__Card__
+The Ritualist Wolf knows some powerful protective magic.

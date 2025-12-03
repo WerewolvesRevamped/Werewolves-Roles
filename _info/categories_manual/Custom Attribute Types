@@ -11,41 +11,4 @@ Manipulation [Manipulation Subtype (vote/poll), Manipulation Value]
 Obstruction [Affected Abilities, Obstruction Feedback]
 
 __Main Custom Attributes__
-Contaminated [Stage, AppliedPhase]
-Demonized
-Doomed [Doom Type]
-Enchanted
-Lycan
-Powdered
-PsychopathList
-Soulless
-Waiter
-Wolfish
-*Charmed*
-*Poisoned* [Activeness]
-*Raven*
-*Warded*
-~~Bitten~~
-
-__Technical Custom Attributes__
-ArchivistCandidate1
-ArchivistCandidate2
-ArchivistOption
-ArchivistSeen
-Eaten
-Exorcised
-FoodType [Food Type]
-HasDoomed
-HeraldSelected
-OracleSelected
-*BaronessSpying*
-*CoyoteTrigger*
-*CureAvailable*
-*DetectiveGuess* [Role]
-*HeldAmulet*
-*RavenInformation* [Visitor]
-*ShatterAmulet*
-~~Thieved~~
-
-\* refers to custom attributes exclusive to limited roles
-strikethrough refers to custom attributes exclusive to mini/variant/temporary roles
+@Query;Element=Attributes;$.Name@

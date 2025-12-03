@@ -1,0 +1,26 @@
+**Immortal** | Solo Power - Nightmare Team | Haunted
+__Basics__
+The Immortal cannot die by any means, but will be banished if they are elected. Each night they can choose to have a voting power of 1, 2, or 3 for the following day.
+__Details__
+When the Immortal is elected as any elected role, they are immediately banished and eliminated from the game.
+All Nightmare Team members share a channel for communication.
+Choosing a voting power is an end night action.
+The Immortal is a member of the nightmare team and the purgatory channel. The nightmare team wins when all other players are dead or unaligned.
+If there is no reaper, the Immortal may choose to become a reaper. This is an immediate action.
+
+__Simplified__
+The Immortal cannot die by any means, unless they are elected. Each night they can choose to have a voting power of 1, 2, or 3 for the following day.
+When the Immortal is elected they are immediately banished.
+If there is no reaper, the Immortal may choose to become a reaper.
+
+__Formalized__
+Haunted Role
+Starting: Protect @Self from `All` through Passive Defense (~Permanent)
+End Night: Manipulate @Self's `public voting power` to @Selection (~NextDay) [Condition: (@Selection > 0) and (@Selection < 4)] |immortal.1|
+On Poll `Election` Win:
+  • True Kill @Self
+  • True Banish @Self
+Immediate: Role Change @Self to `Reaper` [Condition: not (@(Role:Reaper) exists)] |immortal.2|
+
+__Card__
+The Immortal cooperates with the Reaper so that they will never go to the afterlife.

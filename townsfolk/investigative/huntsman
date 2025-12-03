@@ -10,7 +10,11 @@ Each night, the Huntsman may check a target to determine if they are part of the
 They are not affected by any disguises, but are affected by redirections.
 
 __Formalized__
-Immediate Night: Attribute Investigate @Selection for `GroupMembership:Wolfpack`
+Immediate Night: |investigating.role.1|
+  • Process: Attribute Investigate @Selection for `GroupMembership:Wolfpack`
+  • Evaluate:
+    ‣ @Result is True: `@Selection is a member of the wolfpack`
+    ‣ Otherwise: `@Selection is not a member of the wolfpack`
 
 __Card__
 The Huntsman likes to track wolves, and is also pretty good at it.

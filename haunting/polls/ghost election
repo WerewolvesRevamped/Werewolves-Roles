@@ -1,0 +1,16 @@
+**Ghost Election** | Poll
+Available Options: @Ghostly, Abstain
+Allowed Voters: @Ghostly
+Passive Start Day: [Temporal: Day 1+, Condition: @Ghostly->Count > 1]
+  • (@(AttrRole:Revenant,Ghostly:True) exists) and (@(AttrRole:Poltergeist,Ghostly:True) exists) and (not (@(AttrRole:Banshee,Ghostly:True) exists)):
+    ‣ Target `Banshee` (Role)
+    ‣ Create Poll in #graveyard_votes as `Banshee Election`
+  • (@(AttrRole:Revenant,Ghostly:True) exists) and (not (@(AttrRole:Poltergeist,Ghostly:True) exists)):
+    ‣ Target `Poltergeist` (Role)
+    ‣ Create Poll in #graveyard_votes as `Poltergeist Election`
+  • not (@(AttrRole:Revenant,Ghostly:True) exists):
+    ‣ Target `Revenant` (Role)
+    ‣ Create Poll in #graveyard_votes as `Revenant Election`
+On Poll Closed:
+  • Grant @Target to @Winner 
+  • Announce `@Winner was elected as @Target[role]`

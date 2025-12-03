@@ -1,6 +1,6 @@
 **Heir** | Attribute
 __Basics__
-Applied by the Monarch. Grants an additional vote on polls, and negates a vote.
+Applied by the Monarch. Grants an additional vote on public polls. 
 
 __Formalized__
 Starting: Manipulate @Self's `special public voting power` to `1` (~Attribute)

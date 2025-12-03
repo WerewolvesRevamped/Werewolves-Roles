@@ -1,0 +1,7 @@
+**Elections** | Werewolves Revamped
+__Basics__
+Each day, an election takes place where all the living players can choose one player to elect.
+__Details__
+The three elected roles are: Mayor, Reporter, Guardian.
+Each of these roles is elected when all previous positions are occupied.
+All elected roles may choose to resign at the end of any phase.

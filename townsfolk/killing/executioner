@@ -11,8 +11,8 @@ __Simplified__
 After Day 1, whenever the Executioner is chosen to be lynched, it will be prevented, and a player chosen by the Executioner will be lynched in their place.
 
 __Formalized__
-Immediate: Target @Selection (Player) 
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1] |targeting.emergency.player|
+Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 Starting: Protect @Self from `Lynches` through Passive Defense (~UntilUse)
 On Passive Defense:
   • Process: Lynch @Target
