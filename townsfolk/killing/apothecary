@@ -3,7 +3,7 @@ __Basics__
 Each night, the Apothecary may poison a player, killing them at the end of the next night. Alternatively, they may cure the player they last poisoned.
 __Details__
 The Apothecary starts the game with three flasks of poison and a single antidote.
-When the Apothecary poisons a player, that player will be killed at the end of the next night (this is not an attack). Poison is applied at start day, so the Apothecary will only poison a player if the Apothecary survives the night. 
+When the Apothecary poisons a player, that player will be killed at the end of the next night (this is not an attack).
 Instead of poisoning a player, the Apothecary may also use their antidote to cure the player they have previously poisoned, saving them from death.
 Players are not notified of being poisoned or cured.
 Both actions are immediate abilities.
@@ -28,7 +28,7 @@ Choice `Poison` Chosen:
 Choice `Cure` Chosen: [Condition: @Selection has `Poisoned`]
   • Remove `Poisoned` from @Selection 
   • Remove `CureAvailable` from @Self
-Passive Start Day: [Attribute: has `Marker`]
+Passive End Night: [Attribute: has `Marker`]
   • Apply `Poisoned` to @Target (~Persistent)
   • Remove `Marker` from @Self
 
