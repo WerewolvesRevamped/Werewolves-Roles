@@ -1,6 +1,6 @@
 **Guardian** | Extra Elected
 __Basics__
-The Guardian protects the town. When there are 15 or fewer players, the Guardian may choose one player. This player cannot be killed by attacks during the current night. When there are more than 15 players, they may choose up to two.
+The Guardian protects the town. When the number of living players are two-thirds of the total players or fewer, the Guardian may choose one player. This player cannot be killed by attacks during the current night. When there are more player than that, they may choose up to two.
 __Details__
 The Guardian chooses their protected player(s) during the night, and they will be protected from attacks during the current night. 
 They may not protect a player who was protected by a Guardian in the previous night, but may protect themself and/or alternate between two or more players. 
@@ -11,7 +11,7 @@ The Guardian may resign at the end of any phase.
 The Guardian gains an additional secret channel, which is reused for any subsequent Guardians.
 
 __Simplified__
-The Guardian is elected when there is a Mayor and a Reporter. Each night, they may protect a player from attacks. When there are 15 or more players, they may protect two.
+The Guardian is elected when there is a Mayor and a Reporter. Each night, they may protect a player from attacks. When more than two-thirds of players remain alive, they may protect two.
 
 __Formalized__
 Starting: Set Counter to ceil $total/1.5 for @ThisAttr
