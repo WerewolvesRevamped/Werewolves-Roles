@@ -20,7 +20,9 @@ __Members__
 <?Wolf:> Wolf
 <?WolfCub:> Wolf Cub
 
+<?FerociousWolf:> *Ferocious Wolf*
 <?HorrifyingWolf:> *Horrifying Wolf*
+<?RitualistWolf:> *Ritualist Wolf*
 
 *Traitors*
 <?CupidWolf:> Cupid Wolf (T)
@@ -34,7 +36,13 @@ On Poll Closed:
     ‣ Attack @Winner
     ‣ Remove `CoyoteTrigger` from &Werewolf
   • Evaluate:
-    ‣ (@Result is `Failure`) or (@Winner->Alignment is not `Townsfolk`[alignment]):
+    ‣ @Result is `Failure`:
+      ◦ Remove `PackTarget` from @(Attr:PackTarget)
+      ◦ Apply `PackTarget` to @Winner
+      ◦ Emit `Attack` for @(Role:Ferocious-Wolf)
+      ◦ Apply `CoyoteTrigger` to &Werewolf
+      ◦ Reveal `@Executor is attacking: @Result` to #Wolfpack
+    ‣ @Winner->Alignment is not `Townsfolk`[alignment]:
       ◦ Apply `CoyoteTrigger` to &Werewolf
       ◦ Reveal `@Executor is attacking: @Result` to #Wolfpack
     ‣ Otherwise: Reveal `@Executor is attacking: @Result` to #Wolfpack
