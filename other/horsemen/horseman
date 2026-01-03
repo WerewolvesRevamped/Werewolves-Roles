@@ -1,6 +1,6 @@
 **Horseman** | Solo Miscellaneous - Horsemen Team
 __Basics__
-At the end of Day 0, the Horseman becomes one of the other Horseman roles.
+At the end of Day 0, the Horseman becomes one of the other horsemen roles.
 __Details__
 The Horseman can not immediately become an Apocalyptic Horseman.
 Each Horseman can doom one or several player(s) every night, the effect and amount of which depends on the type of Horseman.
@@ -8,7 +8,7 @@ For more information, check `$i doom`.
 The Horsemen win when everyone else is dead.
 
 __Simplified__
-At the end of Day 0, the Horseman becomes one of the other Horseman roles.
+At the end of Day 0, the Horseman becomes one of the other horsemen roles.
 
 __Formalized__
 Starting: Target %Role%
