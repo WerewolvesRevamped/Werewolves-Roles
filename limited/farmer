@@ -9,8 +9,8 @@ __Simplified__
 The Farmer will pass on their role to another player, whom they have chosen as a target, when they die. If their target is part of the townsfolk or a wolf, their role is erased and replaced by a Farmer role of the same alignment. Otherwise, a scarecrow role is granted on top of their current role.
 
 __Formalized__
-Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
-On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
+Immediate: Target @Selection (Player Optional) [Condition: @Selection is not @Self] |silent:targeting.target.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1, Condition: @Selection is not @Self] |silent:targeting.emergency.player|
 On Death:
   • not (@Target exists):
     ‣ Target @Others->RandomPlayer (Player)
