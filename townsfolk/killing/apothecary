@@ -29,7 +29,7 @@ Choice `Cure` Chosen: [Condition: @Selection has `Poisoned`]
   • Remove `Poisoned` from @Selection 
   • Remove `CureAvailable` from @Self
 Passive End Night: [Attribute: has `Marker`]
-  • Apply `Poisoned` to @Target (~Persistent)
+  • Apply `Poisoned` to @Target (~Persistent) (Inactive)
   • Remove `Marker` from @Self
 
 __Card__
