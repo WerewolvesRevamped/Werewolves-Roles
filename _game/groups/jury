@@ -10,7 +10,7 @@ Passive Start Night: Create `Jury` Poll in #Jury
 On Poll Closed:
   • Process: Role Investigate @Winner (SD, WD)
   • Evaluate:
-    ‣ Reveal `@Winner is @Result->Role` to #Jury
+    ‣ Reveal `@Executor is investigating: @Winner is @Result->Role` to #Jury
     ‣ @Result->Role->Alignment is not `Townsfolk`[alignment]: Announce `Jury saw @Result->Role`
 On @Members Death:
   • @Members->Count < 2: Disband
