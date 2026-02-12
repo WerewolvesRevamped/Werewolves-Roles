@@ -18,7 +18,7 @@ Starting: Apply `Contaminated` to @Self (~Persistent) (EarlyStage, $phase)
 Passive: Role Change @Self to `Plague Bearer` [Condition: (not (@(Role:Plague-Bearer) exists)) and (#Plague-Pit->Counter > 0)]
 Passive End Day: 
   • For Each @(Attr:Contaminated):
-    ‣ (@Ind->Attr(Contaminated)->Value1 is `MiddleStage`) and (@Self->Role is not `Plague Carrier`):
+    ‣ (@Ind->Attr(Contaminated)->Value1 is `MiddleStage`) and (@Ind->Role is not `Plague Carrier`):
       ◦ Learn `A @Ind->Role is going to die of the plague`
 
 __Card__
