@@ -22,7 +22,10 @@ Choice `Disguise Self` Chosen:
   • Strongly Disguise @Self as @Selection (~NextNight)
   • Target @Selection (Role)
   • Apply `Marker` to @Self
-Passive Start Night: [Attribute: has `Marker`]
+Passive End Day: [Attribute: lacks `Marker`]
+  • Strongly Disguise @Self as `Citizen` (~NextNight)
+  • Target `Citizen` (Role)
+Passive Start Night:
   • Remove `Marker` from @Self
   • Reveal `A Disguised Fox has disguised themselves as @Target[role]` to #wolfpack
 
