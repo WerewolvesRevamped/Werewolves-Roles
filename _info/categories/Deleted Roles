@@ -2,4 +2,4 @@
 *These roles are roles that have been deleted from the rule book and can no longer occur.*
 
 __List:__
-@Query;Type=deleted;$.Emoji $.Name ($.ClassCat)@
+@Query;Type=archived;$.Emoji $.Name ($.ClassCat)@
