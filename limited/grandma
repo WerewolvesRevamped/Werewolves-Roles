@@ -16,9 +16,9 @@ __Formalized__
 Unique Role
 Starting:
   • Whisper to #Grandma's-House as `Grandma`
-  • Manipulate @Self's `hidden public voting power` to `-1`
+  • Manipulate @Self's `hidden public voting power` to `0`
 Immediate Night:
-  • Manipulate @Self's `hidden public voting power` to `1` (~NextDay)
+  • Manipulate @Self's `hidden public voting power` to `2` (~NextDay)
   • Add @Selection to #Grandma's-House (~NextDay)
   • Add @SecondarySelection to #Grandma's-House (~NextDay)
   • Evaluate:
