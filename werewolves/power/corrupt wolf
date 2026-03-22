@@ -18,7 +18,6 @@ Immediate Night: [Condition: (@SecondarySelection > -2) and (@SecondarySelection
   • Conversation Reset `Corrupted`
   • Grant `Corrupted` to @Selection
   • Manipulate @Selection's `hidden public voting power` to @SecondarySelection (~NextDay)
-  • Manipulate @Selection's `hidden public voting power` by `-1` (~NextDay)
   • Whisper to `Corrupted` as `Corrupt Wolf` (~NextDay)
 Passive Start Night: Conversation Reset `Corrupted`
 
