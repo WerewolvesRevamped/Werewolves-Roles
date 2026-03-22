@@ -29,9 +29,8 @@ On `Build List` Emitted: [Condition: @Self->Counter is 0]
   • Process:
     ‣ Remove `PsychopathList` from @Self
     ‣ Decrement Counter
-    ‣ Shuffle @(AttrSelf:PsychopathList)
-    ‣ Format @(AttrSelf:PsychopathList) as `\n- $ `
-  • Evaluate: Learn `Psychopath List: @Result4`
+    ‣ Format @(AttrSelf:PsychopathList,Random:True) as `\n- $ `
+  • Evaluate: Learn `Psychopath List: @Result3`
 Passive: Ascend [Condition: not (@(AttrSelf:PsychopathList) exists)]
 Immediate: Strongly Disguise @Self as @Selection
 On Action [Disguising]: Strongly Disguise @Self as @Selection [Quantity: 1]
