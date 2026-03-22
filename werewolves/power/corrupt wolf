@@ -17,7 +17,8 @@ Inherit: `Pack Lycan`
 Immediate Night: [Condition: (@SecondarySelection > -2) and (@SecondarySelection < 3)] {Direct} |corrupt_wolf.1|
   • Conversation Reset `Corrupted`
   • Grant `Corrupted` to @Selection
-  • Manipulate @Selection's `public voting power` to @SecondarySelection (~NextDay)
+  • Manipulate @Selection's `hidden public voting power` to @SecondarySelection (~NextDay)
+  • Manipulate @Selection's `hidden public voting power` by `-1` (~NextDay)
   • Whisper to `Corrupted` as `Corrupt Wolf` (~NextDay)
 Passive Start Night: Conversation Reset `Corrupted`
 
