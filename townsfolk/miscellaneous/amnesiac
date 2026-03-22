@@ -13,8 +13,10 @@ At the start of the game, the Amnesiac will be told three townsfolk roles. At th
 __Formalized__
 Starting: Target %Role1% (Role)
 Starting:
-  • Process: Shuffle %Role1% %Role2% %Role3%
-  • Evaluate: Learn `You will turn into one of these roles: @Result`
+  • Process:
+    ‣ Shuffle %Role1% %Role2% %Role3%
+    ‣ Format @Result1 as `\n- $` split by `, ` as `role` 
+  • Evaluate: Learn `Amnesiac List: @Result2 \n\n*You will turn into one of these roles.*`
 Passive Start Night: Role Change @Self to @Target [Temporal: Night 2]
 
 __Card__
