@@ -13,15 +13,7 @@ The Keen Coyote can perceive players each night to determine their alignment.
 
 __Formalized__
 Inherit: `Coyotes`
-Immediate Night: |investigating.role.1|
-  • Process:
-    ‣ Attribute Investigate @Selection for `Lycan` (SD)
-    ‣ Category Investigate @Selection (SD)
-  • Evaluate:
-    ‣ @Result2 is `Failure`: `Investigation failed`
-    ‣ @Result1 is `Success`: `@Selection is a Threat`
-    ‣ @Result2 is `Killing`: `@Selection is a Threat`
-    ‣ Otherwise: `@Selection is not a Threat`
+Immediate Night: Alignment Investigate @Selection (SD)
 
 __Card__
 The Keen Coyote has a developed eye for detail, able to make accurate character judgments.
