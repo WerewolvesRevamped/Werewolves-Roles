@@ -1016,6 +1016,8 @@ Subtype | Syntax
 Weakly | `Weakly Disguise {Player} as {Role} {(Duration?)}`
 Strongly | `Strongly Disguise {Player} as {Role} {(Duration?)}`
 
+When not specifying a duration, the default duration is `permanent`.
+
 **Triggers:** There are no triggers associated with targeting.
 
 ### Protecting
@@ -1090,6 +1092,8 @@ Syntax | Killing Subtype Filter Value | Selector Filter Value | Phase Filter Val
 ``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> during [Day\|Night] {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `[Day\|Night]`
 ``Protect {Player} from `<KillingSubtypeFilter>` through <ProtectingSubtype> {(Duration?)}`` | `<KillingSubtypeFilter>` | `@All` | `All`
 
+When not specifying a duration, the default duration is `permanent`.
+
 **Triggers:** When a defense is used, two triggers are run for the player who created the defense (This means a player may apply a defense to another player and use this trigger to get notified when that player's defense is used). Each defense usage triggers the `On Defense` trigger, and then additionally, depending on subtype, one of the following: `On Absence Defense`, `On Active Defense`, `On Passive Defense`, `On Partial Defense` or `On Recruitment Defense`.
 
 ### Applying
@@ -1130,6 +1134,8 @@ Subtype | Syntax
 add | `Add {Attribute} to {Actor} {(Duration?)}`<br>`Add {Attribute} to {Actor} {(Duration?)} ({VariableString})`<br>`Add {Attribute} to {Actor} {(Duration?)} ({VariableString}, {VariableString})`<br>`Add {Attribute} to {Actor} {(Duration?)} ({VariableString}, {VariableString}, {VariableString})`
 remove | `Remove {Active Attribute} from {Actor}`
 change/change_parsed | ``Change {Active Attribute} value `[1\|2\|3]` to {Any} for {Actor}``<br>``Change {Active Attribute} value `[1\|2\|3]` to {Any} for {Actor}``
+
+When not specifying a duration, the default duration is `permanent`.
 
 **Triggers:** An add applying triggers a `Starting` trigger for the applied attribute. A remove applying triggers a `On Removal` trigger for the removed attribute.
 
@@ -1175,6 +1181,8 @@ Syntax | Explanation
 `Redirect {Ability Type\|Ability Subtype\|Ability Category} to {Player} {(Duration?)}` | Simplified syntax, affected sources defaults to `@All`.
 `Redirect {Ability Type\|Ability Subtype\|Ability Category} from {Player} to {Player} {(Duration?)}` | Full syntax
 
+When not specifying a duration, the default duration is `permanent`.
+
 **Triggers:** When an ability is redirected, a `On Redirect` trigger is triggered for the player that has the redirection applied.
 
 ### Manipulating
@@ -1213,6 +1221,8 @@ Subtype | Syntax
 absolute | `Manipulate {Player}'s [public\|special public\|hidden public\|private] voting power to {Number} {(Duration?)}`
 relative | `Manipulate {Player}'s [public\|special public\|hidden public\|private] voting power by {Number} {(Duration?)}`
 
+When not specifying a duration, the default duration is `permanent`.
+
 **Triggers:** There are no triggers associated with manipulating.
 
 
@@ -1241,6 +1251,8 @@ Target | Player | First target of the ability
 
 Subtype | Syntax | Feedback
 --- | --- | ---
+
+When not specifying a duration, the default duration is `permanent`.
 
 **Triggers:** There are no triggers associated with targeting.
 
