@@ -1,6 +1,5 @@
 **Banishment** | Poll
 Available Options: @Ghostly, Abstain
 Allowed Voters: @Ghostly
-On Poll Closed:
-  • Banish @Winner
-  • Announce `@Winner was banished.`
+On Poll Closed: Banish @Winner
+Passive Start Day: Create Poll in #graveyard_votes [Temporal: Day 3+, Condition: @(AttrRole:Revenant,Ghostly:True) exists] ⟨Odd: x1⟩
