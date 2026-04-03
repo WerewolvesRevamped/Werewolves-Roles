@@ -189,7 +189,9 @@ Selector | Meaning
 @Attacker | A player responsible for a killing in `On Death`, `On Killed`, `On Banishment`, `On Banished` and variants.
 @Attacked | A player getting attacked in `On Defense` and variants.
 @This | Refers to the player for whom a complex trigger featuring a target (e.g. `On <Target> Death`) triggered for.
-@Winner | Refers to the winner of a poll in `On Poll Closed`.
+@Winner | Refers to the winner of a poll in `On Poll Closed` and `On Poll Skipped`.
+@Winner1 | Refers to the first winner of a poll in `On Poll Closed` and `On Poll Skipped`.
+@Winner2 | Refers to the second winner of a poll in `On Poll Closed` and `On Poll Skipped`.
 @ActionTarget | Refers to the target of an action in `On Action` and `On Visit` and variants.
 @Executor | Refers to the executor of an action in `On Poll Closed` and `On Poll Skipped` for polls created by a group.
 @Selection | Refers to a selection submitted by a player through a prompt.
@@ -729,8 +731,8 @@ On {Player} Action<br>On {Player} Action [{AbilityType}]<br>On {Player} Action [
 On Disbandment | Triggers when the current group is disbanded. | ⛔
 On Redirect | Triggers when the current player has redirected an ability. | @Visitor
 On Betrayal | Triggers when a player changes role while being part of the current group | ⛔
-On Poll Closed | Triggers when a poll created by the current player/group/poll through poll creation is closed and a winner exists. | @Winner, @Voters, @OtherVoters, @Executor
-On Poll Skipped | Triggers when a poll created by the current player/group/poll through poll creation is closed and no winner exists. | @Voters, @OtherVoters, @Executor
+On Poll Closed | Triggers when a poll created by the current player/group/poll through poll creation is closed and a winner exists. | @Winner, @Winner1, @Winner2, @Voters, @OtherVoters, @Executor
+On Poll Skipped | Triggers when a poll created by the current player/group/poll through poll creation is closed and no winner exists, or only a non-player winner exists. | @Winner, @Winner1, @Winner2, @Voters, @OtherVoters, @Executor
 On Poll Win | Triggers when the current player wins a poll. | @Voters, @OtherVoters
 On Poll {Poll} Win | Triggers when the current player wins a specific poll. | @Voters, @OtherVoters
 On Role Change | Triggers when the current player changes role. | @RoleChanger
