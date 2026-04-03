@@ -2,6 +2,7 @@
     "comment_1": "Generic Default Prompts",
     "investigating.role.1": "Which player would you like to investigate?",
     "investigating.attribute.1": "Which player would you like to investigate?",
+    "investigating.alignment.1": "Which player would you like to investigate?",
     "disguising.weakly.1": "You may weakly disguise yourself. Which role would you like to disguise yourself as?",
     "disguising.weakly.2": "You may weakly disguise another player. Please specify a player and a role, separated by `;`.",
     "disguising.strongly.1": "You may strongly disguise yourself. Which role would you like to disguise yourself as?",
