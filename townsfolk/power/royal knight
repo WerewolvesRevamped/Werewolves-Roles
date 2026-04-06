@@ -1,13 +1,12 @@
 **Royal Knight** | Townsfolk Power
 __Basics__
-Once per game, the Royal Knight may cancel the lynch.
+Once per game, the Royal Knight may save themself from the lynch.
 __Details__
-After Day 1, the Royal Knight may pardon themself from the current or upcoming lynch. If there are several lynches, the Royal Knight's pardon only applies to one of them: they may choose which one.
-Pardoning themself causes the Royal Knight to survive the lynch. Pardoning is an immediate ability.
+After Day 1, the Royal Knight may pardon themself from the current or upcoming lynch. If the Royal Knight is lynched several times, they will die as usual. Pardoning is an immediate ability.
 The fact that the Royal Knight was pardoned is not announced, and is indistinguishable from other situations in which the winner of the lynch poll is not lynched.
 
 __Simplified__
-After Day 1, the Royal Knight may silently cancel the lynch once.
+After Day 1, the Royal Knight may save themself from the lynch.
 
 __Formalized__
 Immediate: Protect @Self from `Lynches` through Passive Defense (~NextDay) [Quantity: 1, Temporal: Night 2+]
