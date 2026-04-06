@@ -4,4 +4,5 @@ Allowed Voters: @All
 Starting:
   • Execute `ListSubstitutes` to #substitutes
   • Execute `ListRoles` to #dead_spectator
+Starting: [Condition: $haunting is True]
   • Reveal `In Haunting the elections differ. Instead of a Reporter, there is a Gravekeeper. Instead of a Guardian, there is a Prophet.` to #voting_booth
