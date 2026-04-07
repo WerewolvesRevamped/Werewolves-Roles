@@ -15,8 +15,9 @@ Starting:
   • Join #Flutes
   • Redirect `all` from @(Attr:Enchanted) to @Target
   • Redirect `all` from @(Attr:Charmed) to @Target
-Immediate: Target @Selection (Player) 
-On Action [Targeting]: Target @Selection (Player) [Quantity: 1]
+Immediate: Target @Selection (Player Optional) [Condition: not (@Target exists)] |targeting.target.player|
+Immediate: Target @Selection (Player Optional) [Condition: @Target exists] |silent:targeting.change.player|
+On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 On Redirect: Learn `An ability was redirected`
 Passive: not (@(Role:Flute-Player) exists): Role Change @Self to `Flute Player`
 
