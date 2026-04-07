@@ -11,6 +11,8 @@
     "targeting.target.1": "You may submit a new target.",
     "targeting.target.player": "Who would you like to target?",
     "targeting.target.role": "Which role would you like to target?",
+    "targeting.target.player.change": "You are currently targeting %t, if you'd like to change your target, please respond to the prompt, otherwise you may ignore the prompt.",
+    "targeting.target.role.change": "You are currently targeting %t, if you'd like to change your target, please respond to the prompt, otherwise you may ignore the prompt.",
     "protecting.absence.1": "Who do you want to sleep with?",
     "protecting.active_defense.1": "Who would you like to protect?",
     "choices.choosing": "You may choose one of the options",
