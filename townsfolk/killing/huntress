@@ -10,7 +10,8 @@ __Simplified__
 The Huntress may select a player to attack with their dying breath.
 
 __Formalized__
-Immediate: Target @Selection (Player Optional) |silent:targeting.target.player|
+Immediate: Target @Selection (Player Optional) [Condition: not (@Target exists)] |targeting.target.player|
+Immediate: Target @Selection (Player Optional) [Condition: @Target exists] |silent:targeting.change.player|
 On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
 On Killed: [Condition: @Target exists]
   • Process: Attack @Target
