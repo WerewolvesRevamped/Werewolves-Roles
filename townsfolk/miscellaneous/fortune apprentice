@@ -14,6 +14,10 @@ On @(Cat:Investigative,Align:Townsfolk,Attr:!FortuneApprenticeSelected) Death: [
   • Process:
     ‣ Apply `FortuneApprenticeSelected` to @This (~Phase)
     ‣ Target @This->Role (Role)
+On @(Cat:Investigative,Align:Townsfolk,Attr:!FortuneApprenticeSelected) Changed: [Condition: not (@Target exists)]
+  • Process:
+    ‣ Apply `FortuneApprenticeSelected` to @This (~Phase)
+    ‣ Target @This->Role (Role)
 Passive Start Day: Role Change @Self to @Target [Condition: @Target exists]
 
 __Card__
