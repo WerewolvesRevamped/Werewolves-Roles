@@ -16,20 +16,23 @@ __Formalized__
 Immediate: Target @Selection (Player Optional) [Condition: not (@Target exists)] |targeting.target.player|
 Immediate: Target @Selection (Player Optional) [Condition: @Target exists] |silent:targeting.change.player|
 On Action [Targeting]: Target @Selection (Player Optional) [Quantity: 1] |silent:targeting.emergency.player|
-On Lynch:
+On Lynch: [Attribute: lacks `Marker`]
   • (@Attacker exists) and (@Attacker is part of @All): 
+    ‣ Apply `Marker` to @Self
     ‣ Target @Attacker
     ‣ Kill @Target
     ‣ Announce `Angel @Self killed @Target`
     ‣ Delete `Lynch` Poll
     ‣ Ascend
-On Poll `Lynch` Win:
+On Poll `Lynch` Win: [Attribute: lacks `Marker`]
   • (@OtherVoters exists) and (@Target exists) and (@Target is part of @OtherVoters): 
+    ‣ Apply `Marker` to @Self
     ‣ Kill @Target
     ‣ Announce `Angel @Self killed @Target`
     ‣ Delete `Lynch` Poll
     ‣ Ascend
   • @OtherVoters exists: 
+    ‣ Apply `Marker` to @Self
     ‣ Target @OtherVoters->RandomPlayer (Player)
     ‣ Kill @Target
     ‣ Announce `Angel @Self killed @Target`
