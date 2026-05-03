@@ -10,6 +10,7 @@ __Simplified__
 The Cultist Wolf is a wolfpack member who is a part of the cult.
 
 __Formalized__
+Inherit: `Pack Lycan`
 Starting:
   • Join #Cult
   • Strongly Disguise @Self as @Self->OriginalRole
