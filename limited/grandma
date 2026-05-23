@@ -1,6 +1,6 @@
 **Grandma** | Townsfolk Power | Limited
 __Basics__
-Each night, the Grandma may choose exactly two players. The next day, these selected players have no vote: the Grandma will have two votes instead.
+Each night, the Grandma may choose exactly two other players. The next day, these selected players have no vote: the Grandma will have two votes instead.
 __Details__
 Removing players' votes is an immediate ability. Players with removed votes may still vote on public polls, and their vote will appear normally in visible vote counts, but their vote will not count.
 The Grandma's vote appears to be a normal vote in visible vote counts, but will count as 0 or 2 votes, depending on whether the Grandma chooses to use their power. The Grandma must select either exactly two players simultaneously, or no players at all.
@@ -15,7 +15,7 @@ Each night, the Grandma may choose exactly two players. The next day, these sele
 __Formalized__
 Unique Role
 Starting: Manipulate @Self's `hidden public voting power` to `0`
-Immediate Night:
+Immediate Night: [Condition: not (@Selection is @Self), Condition: not (@SecondarySelection is @Self)]
   • Manipulate @Self's `hidden public voting power` to `2` (~NextDay)
   • Evaluate:
     ‣ @Selection->PublicVotingPower > 0: Manipulate @Selection's `hidden public voting power` by `-1` (~NextDay)
