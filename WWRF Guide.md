@@ -303,6 +303,8 @@ Selector | Meaning
 @ThisAttr | Refers to the current active extra role.
 ``​`<RoleName>`​`` | Refers to an active extra role name with the specified name which was __created by the current game element__. 
 
+Active extra roles support a few property accesses - the same as [active attribute type](#active-attribute-type).
+
 ### Group Type
 
 Group types refer to the active instance of a group. Currently, there is only the active group type, though when a group name is passed and no active group exists for this group yet, some contexts may automatically create an active instance of the group so the group type is able to return an active instance.
