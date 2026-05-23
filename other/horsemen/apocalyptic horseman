@@ -14,8 +14,8 @@ The Apocalyptic Horseman is not affected by obstructions.
 __Formalized__
 Starting: Protect @Self from `All` through Passive Defense during Night
 Starting: End Emit `Apocalypse Attack` [Attribute: @Self lacks `Marker`, Temporal: Night]
-On `Apocalypse Attack` End Emitted: Attack @Selection |apocolyptic_horseman.1|
-End Night: Attack @Selection [Attribute: @Self lacks `Marker`] |apocolyptic_horseman.1|
+On `Apocalypse Attack` End Emitted: Attack @Selection |apocolyptic_horseman.1| {Visitless}
+End Night: Attack @Selection [Attribute: @Self lacks `Marker`] |apocolyptic_horseman.1| {Visitless}
 
 __Card__
 The Apocalyptic Horseman unleashes its fury upon its enemies.
