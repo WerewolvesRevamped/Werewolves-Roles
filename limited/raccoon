@@ -14,7 +14,7 @@ The Raccoon can use as many disguises per day as it wants, but only has five tot
 The Raccoon ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Raccoons until the end of the next night. The Raccoon descends if there are no investigation roles alive or at the start of a day when it has no remaining disguises.
 
 __Formalized__
-Starting: Set Counter to 0
+Starting: Set Counter to 5
 Immediate Day: [Condition: @Self->Counter > 0] |raccoon.1|
   • Strongly Disguise @Selection as @SecondarySelection (~NextDay)
   • Process: Decrement Counter
