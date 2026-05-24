@@ -74,6 +74,7 @@
     "flute_player.1": "Who would you like to enchant?",
     "chef.1": "Who would you like to send food to? And, would you like to poison the food? List a player name, as well as 'yes' (poison) or 'no' (charmed), separated by `;`.",
     "dog.1": "You may choose one of these alignments. You will immediately change into the alignment you choose.",
+    "raccoon.1": "You may strongly disguise another player. Please specify a player and a role, separated by `;`. You may only disguise 5 times throughout the entire game - you have %c disguises left.",
     "monarch.1": "You must select an heir. Please specify who should be your heir.",
     "monarch.2": "You may update your heir.",
     "apocolyptic_horseman.1": "You may choose a player to attack tonight.",
