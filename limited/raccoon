@@ -16,10 +16,10 @@ The Raccoon ascends when its disguised players have been investigated twice. Whe
 __Formalized__
 Starting: Set Counter to 5
 Immediate Day: [Condition: @Self->Counter > 0] |raccoon.1|
-  • Process: Decrement Counter
+  • Decrement Counter
   • Strongly Disguise @Selection as @SecondarySelection (~NextDay)
 On Action [Disguising]: [Condition: @Self->Counter > 0] |silent:raccoon.1|
-  • Process: Decrement Counter
+  • Decrement Counter
   • Strongly Disguise @Selection as @SecondarySelection (~NextDay)
 On @(AttrDisguise:Self) Visited [Investigating]: [Attribute: has `Marker`]
   • Strongly Disguise @All as `Raccoon` (~NextNight)
