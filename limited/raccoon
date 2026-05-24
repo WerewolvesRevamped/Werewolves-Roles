@@ -1,14 +1,17 @@
 **Raccoon** | Unaligned Power | Limited
 __Basics__
-Each day, the Raccoon may strongly disguise two players as roles of the Raccoon’s choosing.
+Each day, the Raccoon may strongly disguise players as roles of the Raccoon’s choosing.
 The Raccoon wins when its disguised players have been investigated twice.
 __Details__
-Each day, the Raccoon may strongly disguise two players as roles of the Raccoon’s choosing until the next day phase. The Raccoon is informed each time one of its disguised players is investigated.
-The Raccoon ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Raccoons until the end of the next night. The Raccoon descends if there are no investigation roles alive.
+Each day, the Raccoon may strongly disguise players as roles of the Raccoon’s choosing until the next day phase. The Raccoon is informed each time one of its disguised players is investigated.
+Disguising is an immediate action.
+The Raccoon can use as many disguises per day as it wants, but only has 5 total disguises to use.
+The Raccoon ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Raccoons until the end of the next night. The Raccoon descends if there are no investigation roles alive or at the start of a day when it has no remaining disguises.
 
 __Simplified__
-Each day, the Raccoon may strongly disguise two players as roles of the Raccoon’s choosing until the next day phase.
-The Raccoon ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Raccoons until the end of the next night. The Raccoon descends if there are no investigation roles alive.
+Each day, the Raccoon may strongly disguise players as roles of the Raccoon’s choosing until the next day phase.
+The Raccoon can use as many disguises per day as it wants, but only has x total disguises to use.
+The Raccoon ascends when its disguised players have been investigated twice. When it ascends, all players are strongly disguised as Raccoons until the end of the next night. The Raccoon descends if there are no investigation roles alive or at the start of a day when it has no remaining disguises.
 
 __Formalized__
 Immediate Day: Strongly Disguise @Selection as @SecondarySelection (~NextDay) ⟨x2⟩
