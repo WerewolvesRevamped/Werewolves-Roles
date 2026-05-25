@@ -1,0 +1,16 @@
+**Ice King** | Solo Power - Ice Royals Team | Limited
+__Basics__
+Each night, the Ice King may freeze a player, taking their vote. Each day, the Ice King may cast invisible votes against a player.
+When everyone is dead, unaligned, frozen or an ice royal, the Ice King wins.
+__Details__
+Freezing a player is an immediate ability. When a player is frozen, their vote counts as zero internally on both public and private polls, but will appear as normal in visible vote counts. 
+During the day, the Ice King may cast a certain amount of invisible votes against another player on the lynch poll(s). They choose the number of votes, but can cast at most as many votes as there are living frozen players. Casting invisible votes is an immediate ability.
+If the Ice King is attacked by a frozen player, the attack fails.
+
+__Simplified__
+Each night, the Ice King may freeze a player, taking their vote. Frozen players cannot attack the Ice King.
+Each day, the Ice King may cast invisible votes against a player.
+When everyone is dead, unaligned, frozen or an ice royal, the Ice King wins.
+
+__Formalized__
+The Ice King wants to freeze people into Ice Sculptures.
