@@ -1,0 +1,20 @@
+**Bitter Hag** | Solo Killing - Coven Team | Limited
+__Basics__
+When no solo roles remain, the hags turn into Bitter Hags.
+The Bitter Hag wins if all remaining players are dead, unaligned or hags.
+__Details__
+When hags become Bitter Hags, they gain a new secret channel with any other Bitter Hags. Each Bitter Hag may protect, investigate and attack a player every night.
+Investigating and protecting is an immediate ability. The Bitter Hag's investigation is not affected by redirections or disguises. They may not protect the same player in consecutive nights.
+Attacking is an end night ability.
+
+__Simplified__
+When no solo roles remain, the hags turn into Bitter Hags. The Bitter Hag wins if all remaining players are dead, unaligned or hags. Each Bitter Hag may protect, investigate and attack a player once per night.
+
+__Formalized__
+Starting: Join #Bitter-Hags
+Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase)
+Immediate Night: Alignment Investigate @Selection
+End Night: Attack @Selection
+
+__Card__
+The Bitter Hag seeks revenge on all who have wronged them.
