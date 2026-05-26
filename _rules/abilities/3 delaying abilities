@@ -1,5 +1,4 @@
 **Delaying Abilities** | Ability Information
-Delaying Immediate Abilities is possible in three ways:
+Delaying Immediate Abilities is possible in two ways:
 1) Phase Delaying: An immediate ability can be chosen one phase before it has to be executed (e.g. a Fortune Teller choosing a target during the day). If this is the case, the Game Masters will execute the immediate ability at an arbitrary time during its phase (the time can not be chosen).
 2) End Delaying: An immediate ability may be executed roughly 15 minutes before the next phase change, if requested. If several conflicting immediate abilities are delayed this way, the order in which they were requested is preserved. Abilities delayed this way can be cancelled/rerequested.
-3) Conditional Delaying: For both of the previous delaying methods, as well as for end effects players may specify conditions (e.g. "send wager to X unless they get lynched, in that case send to Y"). Any conditions other than "if X is (not) lynched/elected" may be rejected by the Hosts.
