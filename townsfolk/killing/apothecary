@@ -5,7 +5,7 @@ __Details__
 The Apothecary starts the game with three flasks of poison and a single antidote.
 When the Apothecary poisons a player, that player will be killed at the end of the next night (this is not an attack).
 Instead of poisoning a player, the Apothecary may also use their antidote to cure the player they have previously poisoned, saving them from death.
-Players are not notified of being poisoned or cured.
+Players are not notified of being poisoned or cured. Poison persists even if the Apothecary dies.
 Both actions are immediate abilities.
 
 __Simplified__
