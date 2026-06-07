@@ -20,4 +20,4 @@ On Killed: [Condition: @Target exists, Condition: @ThisAttr->Source is part of @
   • Evaluate: @Result is `Success`: Announce `Fletcher's Customer @Self killed @Target`
 
 __Card__
-The Fletcher's Customer has been taught defend themselves with a bow and arrow.
+The Fletcher's Customer has been taught to defend themselves with a bow and arrow.
