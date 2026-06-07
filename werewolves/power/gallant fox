@@ -27,4 +27,4 @@ Passive Start Night: [Attribute: has `Marker`, Condition: @Target exists]
 On Active Defense: Learn `You protected a member of the wolfpack` [Condition: @Target is in #Wolfpack]
 
 __Card__
-The Gallant Fox may shield another vilager from harm, its choice anonymously revealed to the pack.
+The Gallant Fox may shield another villager from harm, its choice anonymously revealed to the pack.
