@@ -10,9 +10,9 @@ Examples of visits:
 - The Amulet of Protection is passed from one player to another
 - A Huntress targets another player
 - A Huntress kills a player on death
-- A Witch protects players (split into three separate visits executed simultaneously, one per player)
+- A Witch protects players (split into three separate visits executed in order, one per player)
 - The Cult attacks (visit from the chosen attacker to the target)
-- The Oracle checks players (split into two separate visits executed simultaneously, one per player)
+- The Oracle checks players (split into two separate visits executed in order, one per player)
 - The Fletcher selects a customer
 - Fletcher's Customer selects a target
 - The Assistant redirects an ability (visit from the ability user to the assistant, as well as a visit from the ability user to the final target)
