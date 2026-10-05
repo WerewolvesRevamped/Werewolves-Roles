@@ -10,7 +10,7 @@ Inspecting a player is an immediate ability. The Cat is affected by weak disguis
 The Cat is nonaligned until it aligns with a team.
 
 __Simplified__
-For each Cat, there is a corresponding dog. The Cat will align with the opposite team to that which the dog chose.
+For each Cat, there is a corresponding dog. The Cat will align with the opposite team to that which the dog chose. During later nights, they may check one player's role.
 
 __Formalized__
 Unique Role
