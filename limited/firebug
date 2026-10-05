@@ -2,7 +2,7 @@
 __Basics__
 Each night, the Firebug may bug one player or ward a member of the pyro team.
 __Details__
-If the Firebug bugs a player and the bugged player is attacked, the Firebug will ignite all currently powdered players. If a powdered player survives the attack, they remain powdered. Bugging players does not protect them or affect attacks against them in any way.
+If the Firebug bugs a player and the bugged player is attacked until the end of the next day, the Firebug will ignite all currently powdered players. If a powdered player survives the attack, they remain powdered. Bugging players does not protect them or affect attacks against them in any way.
 If the Firebug wards a player, that player is protected from attacks for the night.
 If a Firebug is powdered and ignited, and thus attacked, the ignition fails and the attacker is informed.
 Bugging and warding are immediate abilities.
@@ -10,7 +10,7 @@ The Firebug is a member of the pyro team and channel. The pyro team wins when al
 If the last original Pyromancer dies, the Firebug turns into a Pyromancer.
 
 __Simplified__
-Each night, the Firebug may bug or ward a player. Attacking a bugged player causes an ignition, whilst warding protects a player.
+Each night, the Firebug may bug or ward a player. Attacking a bugged player causes an ignition until the next day, whilst warding protects a player for the night.
 The Firebug is a member of the pyro team and channel.
 
 __Formalized__
