@@ -15,8 +15,8 @@ The Firebug is a member of the pyro team and channel.
 
 __Formalized__
 Starting: Join #Pyros
-Passive Start Night: `Wisp` Choice Creation (Bug, Ward)
-Immediate Night: `Wisp` Choice Choose @Chosen |firebug.1|
+Passive Start Night: `Firebug` Choice Creation (Bug, Ward)
+Immediate Night: `Firebug` Choice Choose @Chosen |firebug.1|
 Choice `Ward` Chosen: |firebug.2|
   • Protect @Selection from `Attacks` through Active Defense (~Phase) 
 Choice `Bug` Chosen: |firebug.3|
