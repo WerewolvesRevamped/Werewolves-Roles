@@ -20,10 +20,10 @@ __Formalized__
 Starting:
   • Set Counter to round $total/5
   • Display `Vials` (Counter)
-Immediate Night:
+Immediate Night: |plague_doctor.1|
   • (@Selection has `Contaminated`) and (@Selection->Alignment is not `Plague`):
     ‣ Learn `@Selection[player] has had the plague since phase @Selection->Attr(Contaminated)->Value2`
-Immediate Day: [Condition: @Self->Counter > 0]
+Immediate Day: [Condition: @Self->Counter > 0] |plague_doctor.2|
   • Remove `Contaminated` from @Selection 
   • Decrement Counter
 Passive: Ascend [Condition: (not (@(Attr:Contaminated) exists)) and (not (@(Role:Plague-Bearer) exists)) or (#Plague-Pit->Counter is 0)]
