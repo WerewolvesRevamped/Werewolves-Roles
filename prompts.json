@@ -77,6 +77,7 @@
     "raccoon.1": "You may strongly disguise another player. Please specify a player and a role, separated by `;`. You may only disguise 5 times throughout the entire game - you have %c disguises left.",
     "plague_doctor.1": "Who do you want to check for symptoms of the plague?",
     "plague_doctor.2": "Who do you want to cure of the plague?",
+    "hag.1": "You may specialise by specifying one of the following: Cautious Hag, Prophetic Hag or Vicious Hag",
     "monarch.1": "You must select an heir. Please specify who should be your heir.",
     "monarch.2": "You may update your heir.",
     "apocolyptic_horseman.1": "You may choose a player to attack tonight.",
