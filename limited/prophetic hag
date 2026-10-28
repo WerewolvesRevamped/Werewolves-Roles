@@ -15,7 +15,7 @@ If the last solo role dies, the Prophetic Hag becomes a bitter hag.
 
 __Formalized__
 Inherit: `Coven`
-Immediate Night: Alignment Investigate @Selection {Direct}
+Immediate Night: Role Investigate @Selection {Direct}
 
 __Card__
 The Prophetic Hag has learnt to use a powerful spell to see the truth in others.
