@@ -1,20 +1,4 @@
 **Coven** | Ability Set
-Starting: Strongly Disguise @Self as `Hag`
-On Visited [Role Changing]:
-  • @Self has `Unwrongable`: Cancel with Failure
-On Killed:
-  • (@Attacker->Class is not `Unaligned`) and (not (@Attacker->Alignment has `Wronger`)):
-    ‣ Announce `Hags were wronged by @Attacker->Alignment`
-    ‣ Apply `Wronger` to @Attacker->Alignment
-    ‣ Increment Counter
-On Lynch:
-  • For Each @Voters:
-    ‣ (@Ind->Class is not `Unaligned`) and (not (@Ind->Alignment has `Wronger`)):
-      ◦ Announce `Hags were wronged by @Ind->Alignment`
-      ◦ Apply `Wronger` to @Ind->Alignment 
-      ◦ Increment Counter
-On Role Change:
-  • (@RoleChanger->Class is not `Unaligned`) and (not (@RoleChanger->Alignment has `Wronger`)):
-    ‣ Announce `Hags were wronged by @Attacker->Alignment`
-    ‣ Apply `Wronger` to @RoleChanger->Alignment
-    ‣ Increment Counter
+On @(Class:Solo) Death: Role Change @Self to `Bitter Hag` [Condition: not (@(Class:Solo) exists)]
+On Visited [Killing]: Cancel with Failure [Condition: @Visitor->Class is `Solo`]
+On Visited: Learn `Solo @Visitor visited you!` [Condition: @Visitor->Class is `Solo`]

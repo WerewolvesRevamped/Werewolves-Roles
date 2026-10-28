@@ -12,9 +12,9 @@ When no solo roles remain, the hags turn into Bitter Hags. The Bitter Hag wins i
 
 __Formalized__
 Starting: Join #Bitter-Hags
-Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase)
-Immediate Night: Alignment Investigate @Selection
-End Night: Attack @Selection
+Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) [Succession: No Target Succession]
+Immediate Night: Role Investigate @Selection {Direct}
+End Night: Attack @Selection [Succession: No Succession]
 
 __Card__
 The Bitter Hag seeks revenge on all who have wronged them.

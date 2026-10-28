@@ -244,6 +244,7 @@ Property | Meaning
 --- | ---
 Role | The player's current role.
 Category | The player's current role's category.
+Class | The player's current role's class.
 OriginalRole | The player's original role.
 Alignment | The player's current alignment.
 Target | The player's target.
