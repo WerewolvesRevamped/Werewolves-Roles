@@ -13,7 +13,8 @@ The Hag learns of solo powers being used on it, and cannot be killed by solo rol
 If the last solo role dies, the Hag becomes a bitter hag.
 
 __Formalized__
-N/A
+Include: `Coven`
+Immediate Night: Role Change @Self to @Selection [Condition: @Selection is part of `Vicious Hag`+`Cautious Hag`+`Prophetic Hag`] |hag.1|
 
 __Card__
 A normal Hag has not yet received their spellcasting ability.
