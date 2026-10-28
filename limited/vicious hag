@@ -14,7 +14,7 @@ The Vicious Hag learns of solo powers being used on it, and cannot be killed by 
 If the last solo role dies, the Vicious Hag becomes a bitter hag.
 
 __Formalized__
-Include: `Coven`
+Inherit: `Coven`
 End Night: Attack @Selection [Succession: No Succession]
 
 __Card__
