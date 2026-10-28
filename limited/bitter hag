@@ -13,7 +13,7 @@ When no solo roles remain, the hags turn into Bitter Hags. The Bitter Hag wins i
 __Formalized__
 Starting: Join #Bitter-Hags
 Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) [Succession: No Target Succession]
-Immediate Night: Alignment Investigate @Selection {Direct}
+Immediate Night: Role Investigate @Selection {Direct}
 End Night: Attack @Selection [Succession: No Succession]
 
 __Card__
