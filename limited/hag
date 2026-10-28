@@ -14,7 +14,7 @@ If the last solo role dies, the Hag becomes a bitter hag.
 
 __Formalized__
 Include: `Coven`
-Immediate Night: Role Change @Self to @Selection [Condition: @Selection is part of `Vicious Hag`+`Cautious Hag`+`Prophetic Hag`] |hag.1|
+Immediate Night: Role Change @Self to @Selection [Condition: @Selection[role] is part of `Vicious Hag`+`Cautious Hag`+`Prophetic Hag`] |hag.1|
 
 __Card__
 A normal Hag has not yet received their spellcasting ability.
