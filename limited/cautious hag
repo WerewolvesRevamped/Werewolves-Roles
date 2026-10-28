@@ -14,7 +14,7 @@ The Cautious Hag learns of solo powers being used on it, and cannot be killed by
 If the last solo role dies, the Cautious Hag becomes a bitter hag.
 
 __Formalized__
-Include: `Coven`
+Inherit: `Coven`
 Immediate Night: Protect @Selection from `Attacks` through Active Defense (~Phase) [Succession: No Target Succession]
 
 __Card__
